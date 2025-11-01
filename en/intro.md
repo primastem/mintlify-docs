@@ -17,11 +17,11 @@ sidebar_position: 10
 
 Parents recognize the importance of information technology for the successful development of a child but also strive to maintain a balance between learning and children’s health.
 
-![kids](//images/kids.png)
+![kids](../images/kids.png)
 
 Research shows that early and frequent interaction with screens can reduce cognitive abilities and academic performance.
 
-![graph](images/graph_2.jpg)
+![graph](../images/graph_2.jpg)
 
 *Source: Programme for International Student Assessment (PISA), [2022 Results (Volume I)](https://www.oecd-ilibrary.org/education/pisa-2022-results-volume-i_53f23881-en)*
 
@@ -61,14 +61,7 @@ With PrimaSTEM, children learn:
 
 ---
 **Video presentation:** [youtu.be/Ztq_I1WBiVo](https://youtu.be/Ztq_I1WBiVo)
-<div
-  style={{
-    position: 'relative',
-    paddingBottom: '56.25%',
-    height: 0,
-    overflow: 'hidden',
-  }}
->
+
   <iframe
     src="https://www.youtube.com/embed/Ztq_I1WBiVo?si=a54tevy8tUEQMOva"
     style={{
@@ -82,7 +75,7 @@ With PrimaSTEM, children learn:
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
-</div>
+
 ---
 
 **Mathematical drawing using a variable and negative numbers:** [youtu.be/6Zoyku27mO8](https://youtu.be/6Zoyku27mO8)
@@ -143,6 +136,6 @@ PrimaSTEM is designed for children and looks like a game, but is a flexible tool
 
 The child acquires mathematical and algorithmic foundations, serving as excellent preparation for school and a first experience with programming languages (Scratch, Logo, or Minecraft).
 
-![Spirale](images/robot_spiral_01.jpg)
+![Spirale](../images/robot_spiral_01.jpg)
 
 *Example result: a spiral drawn when dynamically changing a variable in a loop.*
