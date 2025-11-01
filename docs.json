@@ -1,5 +1,5 @@
 {
- "$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://mintlify.com/docs.json",
   "theme": "palm",
   "name": "docs.PrimaSTEM.com",
   "colors": {
@@ -52,7 +52,7 @@
   },
   "footer": {
     "socials": {
-      "youtube": "https://x.com/mintlify",
+      "youtube": "https://www.youtube.com/@primastem",
       "linkedin": "https://linkedin.com/company/primastem"
     }
   }
