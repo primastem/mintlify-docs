@@ -1,0 +1,59 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "palm",
+  "name": "docs.PrimaSTEM.com",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Start",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "en/intro",
+              "en/usermanual"
+            ]
+          },
+                    {
+            "group": "Teachers guides",
+            "pages": [
+              "en/teachersguide",
+              "en/mathdrawings",
+              "en/cognitive",
+              "en/nfc"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Update firmware",
+        "href": "https://primastem.github.io/update/"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "PrimaSTEM.com",
+      "href": "https://primastem.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "youtube": "https://www.youtube.com/@primastem",
+      "linkedin": "https://linkedin.com/company/primastem"
+    }
+  }
+}

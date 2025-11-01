@@ -2,35 +2,72 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "palm",
   "name": "docs.PrimaSTEM.com",
+  "description": "Documentation of PrimaSTEM - coding and math, screen-free for ages 4–10",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
+ "navigation": {
+    "languages": [
       {
-        "tab": "Start",
+        "language": "en",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Documentation",
             "pages": [
-              "en/intro",
-              "en/usermanual"
-            ]
-          },
-                    {
-            "group": "Teacher guides",
-            "pages": [
+              "en/intro", 
+              "en/usermanual", 
               "en/teachersguide",
               "en/mathdrawings",
+              "en/nfc",
               "en/cognitive",
-              "en/nfc"
-            ]
+              "en/contacts"
+                      ]
           }
-        ]
+                  ]
+      },
+            {
+        "language": "fr",
+        "groups": [
+          {
+            "group": "Documentation",
+            "pages": [
+              "fr/intro", 
+              "fr/usermanual", 
+              "fr/teachersguide",
+              "fr/mathdrawings",
+              "fr/nfc",
+              "fr/cognitive",
+              "fr/contacts"
+                      ]
+          }
+                  ]
+      },
+      {
+        "language": "ru",
+      "groups": [
+          {
+            "group": "Документация",
+            "pages": [
+              "ru/intro", 
+              "ru/usermanual", 
+              "ru/teachersguide",
+              "ru/mathdrawings",
+              "ru/nfc",
+              "ru/cognitive",
+              "ru/contacts"
+                      ]
+          }
+                  ]
       }
     ]
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://doc.primastem.com"
   },
   "navbar": {
     "links": [
@@ -49,6 +86,17 @@
     "socials": {
       "youtube": "https://www.youtube.com/@primastem",
       "linkedin": "https://linkedin.com/company/primastem"
+    }
+  },
+
+  "contextual": {
+    "options": ["copy", "view", "perplexity", "chatgpt", "claude"]
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "I can't be found",
+      "description": "What ever **happened** to this _page_?"
     }
   }
 }
