@@ -16,8 +16,8 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
-              "quickstart",
+              "en/intro",
+              "en/user_manual",
               "development"
             ]
           },
