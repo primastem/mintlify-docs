@@ -7,7 +7,7 @@ sidebar_position: 10
 
 **PrimaSTEM** is a tool for teaching children from age 4 the basics of programming, logic, and mathematics without screen devices.
 
-![PrimaSTEM](images/main_04.png)
+![PrimaSTEM](../images/main_04.png)
 
 *Controller, programming blocks, robot, and program execution results.*
 
@@ -17,7 +17,7 @@ sidebar_position: 10
 
 Parents recognize the importance of information technology for the successful development of a child but also strive to maintain a balance between learning and children’s health.
 
-![kids](images/kids.png)
+![kids](//images/kids.png)
 
 Research shows that early and frequent interaction with screens can reduce cognitive abilities and academic performance.
 
