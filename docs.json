@@ -17,7 +17,7 @@
             "group": "Get Started",
             "pages": [
               "en/intro",
-              "en/user_manual",
+              "en/usermanual",
               "development"
             ]
           },
