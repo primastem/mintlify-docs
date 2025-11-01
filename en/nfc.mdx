@@ -1,11 +1,6 @@
----
-sidebar_label: 'Command chips'
-sidebar_position: 50
----
-
 # Command Chips
 
-## **Basic commands (25 pieces)**
+## **Basic commands**
 
 | Command or Value | Quantity | NFC code |
 | --- | --- | --- |
@@ -21,9 +16,8 @@ sidebar_position: 50
 | Repeat Random number (1 to 6) | 1 | rrnd |
 | Function | 3 | cfun |
 | Random Move | 1 | crnd |
-| ***Total*** | ***25*** | |
 
-## **Extended commands and values (67 pieces)**
+## **Extended commands and values**
 
 | Command or Value | Quantity | NFC code |
 | --- | --- | --- |
@@ -93,18 +87,18 @@ sidebar_position: 50
 | Blank NFC tag | 1 |  
 | Distance calibration | 1 | ccal |
 | Set default step length | 1 | clen |
-| ***Total*** | ***67*** | |
 
 ## **Other possible commands and operations**
 
 | Command / Value | Quantity | NFC code |
 | --- | --- | --- |
-| Factorial | 1 | fact |
-| Sound sample | 1 | csou |
+| Factorial |  | fact |
+| Sound control sample |   | csou |
+| Sound robot sample |   | x000 (001-999) |
 
 ## **How to Write Data to NFC tag**
 
-You can do self token just write text code of to NFC token. You can do any numbers (from 0 to 999), any repeats and any numbers for arithmetic.
+You can do self token just write text code of to NFC token. You can do any numbers (from 000 to 999), any repeats and any numbers for arithmetic.
 
 For writing text Data to NFC token please go to Android Play Store and install **RFID NFC Reader** or **NFC Tools** at your phone.
 
@@ -127,7 +121,6 @@ Instruction about writing NFC tag here - [youtu.be/UbKaQxZs8JA](https://youtu.be
       width: '100%',
       height: '100%',
     }}
-    frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />

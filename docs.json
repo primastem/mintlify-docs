@@ -11,45 +11,22 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Start",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
               "en/intro",
-              "en/usermanual",
-              "development"
+              "en/usermanual"
             ]
           },
-          {
-            "group": "Essentials",
+                    {
+            "group": "Teacher guides",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "en/teachersguide",
+              "en/mathdrawings",
+              "en/cognitive",
+              "en/nfc"
             ]
           }
         ]
@@ -58,14 +35,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Update firmware",
-          "href": "https://primastem.github.io/update/",
-          "icon": "update"
-        },
-        {
           "anchor": "PrimaSTEM.com",
-          "href": "https://primastem.com/",
-          "icon": "www"
+          "href": "https://primastem.com/"
         }
       ]
     }
@@ -77,14 +48,14 @@
   "navbar": {
     "links": [
       {
-        "label": "@ support",
-        "href": "mailto:primastem@gmail.com"
+        "label": "Update firmware",
+        "href": "https://primastem.github.io/update/"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "PrimaSTEM.com",
+      "href": "https://primastem.com"
     }
   },
   "footer": {
