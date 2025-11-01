@@ -1,5 +1,5 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://newdocs.primastem.com/docs.json",
   "theme": "aspen",
   "name": "docs.PrimaSTEM.com",
   "colors": {
@@ -58,19 +58,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Update firmware",
+          "href": "https://primastem.github.io/update/",
+          "icon": "update"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "PrimaSTEM.com",
+          "href": "https://primastem.com/",
+          "icon": "www"
         }
       ]
     }
