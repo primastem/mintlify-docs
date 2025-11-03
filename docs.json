@@ -67,7 +67,7 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "https://doc.primastem.com"
+    "href": "https://docs.primastem.com"
   },
   "navbar": {
     "links": [
