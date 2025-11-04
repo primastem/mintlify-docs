@@ -22,7 +22,7 @@
         "anchor": "Hello world :)",
         "icon": "book-open",
         "pages": [
-          "introduction"
+          "index"
         ]
       }
  ],
