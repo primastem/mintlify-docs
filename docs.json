@@ -65,16 +65,7 @@
     ]
   },
 
-"global": {
-      "anchors": [
-        {
-          "anchor": "Hello world :)",
-          "href": "introduction",
-          "icon": "book-open-cover"
-        }
-      ]
-    },
-  
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
