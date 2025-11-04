@@ -1,16 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   
-  "theme": "almond",
+  "theme": "maple",
   
   "name": "docs.PrimaSTEM.com",
   
   "description": "Documentation of PrimaSTEM - coding and math, screen-free for ages 4–10",
   
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5aa02c",
+    "light": "#68b833",
+    "dark": "#4d8825"
   },
   
   "favicon": "/favicon.svg",
@@ -94,7 +94,8 @@
   "footer": {
     "socials": {
       "youtube": "https://www.youtube.com/@primastem",
-      "linkedin": "https://linkedin.com/company/primastem"
+      "linkedin": "https://linkedin.com/company/primastem",
+      "discord": "https://discord.gg/QRZWtpdBQd"
     }
   },
 
