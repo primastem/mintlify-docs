@@ -1,16 +1,33 @@
 {
   "$schema": "https://mintlify.com/docs.json",
+  
   "theme": "palm",
+  
   "name": "docs.PrimaSTEM.com",
+  
   "description": "Documentation of PrimaSTEM - coding and math, screen-free for ages 4–10",
+  
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
+  
   "favicon": "/favicon.svg",
+  
  "navigation": {
-    "languages": [
+
+ "anchors": [
+      {
+        "anchor": "Hello world :)",
+        "icon": "book-open",
+        "pages": [
+          "introduction"
+        ]
+      }
+ ],
+   
+  "languages": [
       {
         "language": "en",
         "groups": [
@@ -100,5 +117,10 @@
       "title": "I can't be found",
       "description": "What ever **happened** to this _page_?"
     }
-  }
+  },
+
+  "styling": {
+  "eyebrows": "breadcrumbs"
+}
+  
 }
