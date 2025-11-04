@@ -17,16 +17,6 @@
   
  "navigation": {
 
- "anchors": [
-      {
-        "anchor": "Hello world :)",
-        "icon": "book-open",
-        "pages": [
-          "index"
-        ]
-      }
- ],
-   
   "languages": [
       {
         "language": "en",
