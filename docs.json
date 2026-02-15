@@ -100,7 +100,7 @@
   },
 
   "contextual": {
-    "options": ["copy", "view", "perplexity", "chatgpt", "claude"]
+    "options": ["perplexity", "chatgpt", "claude", "copy", "view"]
   },
   "errors": {
     "404": {
@@ -108,6 +108,21 @@
       "title": "I can't be found",
       "description": "What ever **happened** to this _page_?"
     }
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "interaction": {
+    "drilldown": true
+  },
+  "metadata": {
+    "timestamp": true
   }
   
 }
