@@ -104,13 +104,17 @@
   },
   "errors": {
     "404": {
-      "redirect": false,
+      "redirect": true,
       "title": "I can't be found",
       "description": "What ever **happened** to this _page_?"
     }
   },
   "background": {
-    "decoration": "gradient"
+    "decoration": "grid",
+    "color": {
+      "dark": "#303030",
+      "light": "#fafafa"
+    }
   },
   "appearance": {
     "default": "system"
@@ -123,6 +127,11 @@
   },
   "metadata": {
     "timestamp": true
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-QGPVQ44DNN"
+    }
   }
   
 }
