@@ -16,61 +16,64 @@
   "favicon": "/favicon.svg",
   
  "navigation": {
-
   "languages": [
-      {
-        "language": "en",
-        "groups": [
-          {
-            "group": "Documentation",
-            "pages": [
-              "en/intro", 
-              "en/usermanual", 
-              "en/teachersguide",
-              "en/mathdrawings",
-              "en/nfc",
-              "en/cognitive",
-              "en/contacts"
-                      ]
-          }
-                  ]
-      },
-            {
-        "language": "fr",
-        "groups": [
-          {
-            "group": "Documentation",
-            "pages": [
-              "fr/intro", 
-              "fr/usermanual", 
-              "fr/teachersguide",
-              "fr/mathdrawings",
-              "fr/nfc",
-              "fr/cognitive",
-              "fr/contacts"
-                      ]
-          }
-                  ]
-      },
-      {
-        "language": "ru",
+    {
+      "language": "en",
+      "default": true,
       "groups": [
-          {
-            "group": "Документация",
-            "pages": [
-              "ru/intro", 
-              "ru/usermanual", 
-              "ru/teachersguide",
-              "ru/mathdrawings",
-              "ru/nfc",
-              "ru/cognitive",
-              "ru/contacts"
-                      ]
-          }
-                  ]
-      }
-    ]
-  },
+        {
+          "group": "Documentation",
+          "icon": "file-doc",
+          "pages": [
+            "en/intro",
+            "en/usermanual",
+            "en/teachersguide",
+            "en/mathdrawings",
+            "en/nfc",
+            "en/cognitive",
+            "en/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "groups": [
+        {
+          "group": "Documentation",
+          "icon": "file-doc",
+          "pages": [
+            "fr/intro",
+            "fr/usermanual",
+            "fr/teachersguide",
+            "fr/mathdrawings",
+            "fr/nfc",
+            "fr/cognitive",
+            "fr/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "ru",
+      "groups": [
+        {
+          "group": "Документация",
+          "icon": "file-doc",
+          "pages": [
+            "ru/intro",
+            "ru/usermanual",
+            "ru/teachersguide",
+            "ru/mathdrawings",
+            "ru/nfc",
+            "ru/cognitive",
+            "ru/contacts"
+          ]
+        }
+      ]
+    }
+  ]
+},
 
 
   "logo": {
@@ -83,19 +86,19 @@
       {
         "label": "Update firmware",
         "href": "https://primastem.github.io/update/"
+      },
+      {
+        "label": "PrimaSTEM.com",
+        "href": "https://primastem.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "PrimaSTEM.com",
-      "href": "https://primastem.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
       "youtube": "https://www.youtube.com/@primastem",
       "linkedin": "https://linkedin.com/company/primastem",
-      "instagram": "https://www.instagram.com/primastem.robot"
+      "instagram": "https://www.instagram.com/primastem.robot",
+      "website": "https://primastem.com/"
     }
   },
 
@@ -110,7 +113,7 @@
     }
   },
   "background": {
-    "decoration": "grid",
+    "decoration": "gradient",
     "color": {
       "dark": "#303030",
       "light": "#fafafa"
