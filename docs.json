@@ -103,7 +103,7 @@
   },
 
   "contextual": {
-    "options": ["perplexity", "chatgpt", "claude", "copy", "view"]
+    "options": ["copy", "chatgpt", "claude", "view"]
   },
   "errors": {
     "404": {
