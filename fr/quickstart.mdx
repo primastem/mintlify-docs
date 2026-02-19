@@ -3,94 +3,94 @@ title: 'Démarrage rapide'
 description: 'Commencez à créer une documentation incroyable en moins de 5 minutes'
 ---
 
-## Configurer votre développement
+## Configuration du développement
 
-Apprenez à mettre à jour votre documentation localement et à la déployer publiquement.
+Découvrez comment mettre à jour votre documentation localement et la publier publiquement.
 
-### Modifier et prévisualiser
+### Modification et aperçu
 
 <AccordionGroup>
-  <Accordion icon="github" title="Cloner votre documentation localement">
-    Pendant le processus d'intégration, nous avons créé un dépôt sur votre Github avec
-    le contenu de votre documentation. Vous pouvez trouver ce dépôt sur votre
-    [tableau de bord](https://dashboard.mintlify.com). Pour cloner le dépôt
+  <Accordion icon="github" title="Clonez votre documentation localement">
+    Lors du processus d'intégration, nous avons créé un dépôt sur votre Github avec
+    le contenu de votre documentation. Vous pouvez trouver ce dépôt sur
+    le [tableau de bord](https://dashboard.mintlify.com). Pour cloner le dépôt
     localement, suivez ces
     [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
     dans votre terminal.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Prévisualiser les modifications">
-    La prévisualisation vous aide à vous assurer que vos modifications s'affichent comme prévu. Nous avons créé une
-    interface en ligne de commande pour rendre ces modifications localement.
+  <Accordion icon="rectangle-terminal" title="Aperçu des modifications">
+    L'aperçu vous aide à vérifier que vos modifications apparaissent comme prévu. Nous avons créé
+    une interface en ligne de commande pour afficher ces modifications localement.
     1. Installez
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) pour prévisualiser la
-    documentation localement avec cette commande : ``` npm i -g mintlify ```
+    [Mintlify CLI](https://www.npmjs.com/package/mintlify) pour afficher localement
+    les modifications de documentation avec cette commande : ``` npm i -g mintlify ```
     2. Exécutez la commande suivante à la racine de votre documentation (là où
-    `docs.json` se trouve) : ``` mintlify dev ```
+    se trouve `docs.json`) : ``` mintlify dev ```
     <Note>
-      Si vous utilisez actuellement l'ancien fichier de configuration ```mint.json```, veuillez mettre à jour Mintlify CLI :
+      Si vous utilisez actuellement un fichier de configuration obsolète ```mint.json```, veuillez mettre à jour Mintlify CLI :
 
 
       ```npm i -g mintlify@latest```
-      Et exécutez la nouvelle commande de mise à niveau dans votre dépôt de documentation :
+      Puis exécutez la nouvelle commande de mise à niveau dans le dépôt de votre documentation :
 
       ```mintlify upgrade```
-      Vous devriez maintenant utiliser le nouveau fichier de configuration ```docs.json```. N'hésitez pas à supprimer le fichier ```mint.json``` de votre dépôt.
+      Vous devez maintenant utiliser le nouveau fichier de configuration ```docs.json```. N'hésitez pas à supprimer le fichier ```mint.json``` de votre dépôt.
     </Note>
   </Accordion>
 </AccordionGroup>
 
-### Déployer vos modifications
+### Déploiement de vos modifications
 
 <AccordionGroup>
 
-<Accordion icon="message-bot" title="Installer notre application Github">
-  Notre application Github déploie automatiquement vos modifications sur votre site de documentation,
-  vous n'avez donc pas besoin de gérer les déploiements vous-même. Vous pouvez trouver le lien d'installation sur
+<Accordion icon="message-bot" title="Installez notre application Github">
+  Notre application Github déploie automatiquement vos modifications sur le site de documentation,
+  vous n'avez donc pas à gérer les déploiements vous-même. Le lien d'installation se trouve sur
   votre [tableau de bord](https://dashboard.mintlify.com). Une fois le bot installé avec succès,
-  il devrait y avoir une coche à côté du hachage de commit du dépôt.
+  une coche devrait apparaître à côté du hachage de commit du dépôt.
 </Accordion>
-<Accordion icon="rocket" title="Pousser vos modifications">
+<Accordion icon="rocket" title="Poussez vos modifications">
   [Committez et poussez vos modifications vers
   Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  pour que vos modifications soient mises à jour sur votre site de documentation. Si vous poussez et ne voyez pas
+  pour mettre à jour votre site de documentation. Si vous avez poussé des modifications et ne voyez pas
   que l'application Github a déployé vos modifications avec succès, vous pouvez également
   mettre à jour manuellement votre documentation via notre [tableau de bord](https://dashboard.mintlify.com).
 </Accordion>
 
 </AccordionGroup>
 
-## Mettre à jour votre documentation
+## Mise à jour de votre documentation
 
-Ajoutez du contenu directement dans vos fichiers avec la syntaxe MDX et les composants React. Vous pouvez utiliser n'importe lequel de nos composants, ou même créer les vôtres.
+Ajoutez du contenu directement dans vos fichiers en utilisant la syntaxe MDX et les composants React. Vous pouvez utiliser n'importe lesquels de nos composants ou même créer les vôtres.
 
 <CardGroup>
 
-<Card title="Ajouter du contenu avec MDX" icon="file" href="/essentials/markdown">
-  Ajoutez du contenu à votre documentation avec la syntaxe MDX.
+<Card title="Ajout de contenu avec MDX" icon="file" href="/essentials/markdown">
+  Ajoutez du contenu à votre documentation en utilisant la syntaxe MDX.
 </Card>
 
 <Card
-  title="Ajouter des blocs de code"
+  title="Ajout de blocs de code"
   icon="square-code"
   href="/essentials/code"
 >
-  Ajoutez du code directement dans votre documentation avec la coloration syntaxique.
+  Ajoutez du code directement dans votre documentation avec coloration syntaxique.
 </Card>
 
 <Card
-  title="Ajouter des images"
+  title="Ajout d'images"
   icon="image"
   href="/essentials/images"
 >
-  Ajoutez des images à votre documentation pour les rendre plus engageantes.
+  Ajoutez des images à votre documentation pour la rendre plus attrayante.
 </Card>
 
 <Card
-  title="Ajouter des composants personnalisés"
+  title="Ajout de composants personnalisés"
   icon="puzzle-piece"
   href="/essentials/reusable-snippets"
 >
-  Ajoutez des modèles à votre documentation pour les rendre plus réutilisables.
+  Ajoutez des modèles à votre documentation pour la rendre plus réutilisable.
 </Card>
 
 </CardGroup>

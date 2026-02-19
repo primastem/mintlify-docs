@@ -1,0 +1,135 @@
+---
+title: 'Kommandobrickor'
+description: 'NFC-koder'
+icon: 'nfc'
+---
+
+# Kommandobrickor
+
+## **Grundläggande kommandon**
+
+Kommando eller Värde | Antal | NFC-kod
+--- | --- | ---
+Framåt | 5 | cfor
+Vänster | 4 | clef
+Höger | 4 | crig
+Bakåt | 1 | cbac
+Upprepa 2 | 2 | r002
+Upprepa 3 | 1 | r003
+Upprepa 4 | 1 | r004
+Upprepa 5 | 1 | r005
+Upprepa 6 | 1 | r006
+Upprepa Slumpmässigt tal (från 1 till 6) | 1 | rrnd
+Funktion | 3 | cfun
+Slumpmässig rörelse | 1 | crnd
+
+
+## **Utökade kommandon och värden**
+
+Kommando eller Värde | Antal | NFC-kod
+--- | --- | ---
+Upprepa 7 | 1 | r007
+Upprepa 8 | 1 | r008
+Upprepa 9 | 1 | r009
+Upprepa 10 | 1 | r010
+Upprepa 18 | 1 | r018
+Upprepa 36 | 1 | r036
+Upprepa 72 | 1 | r072
+Upprepa 180 | 1 | r180
+Upprepa 360 | 1 | r360
+1 | 1 | n001
+2 | 1 | n002
+3 | 1 | n003
+4 | 1 | n004
+5 | 1 | n005
+6 | 1 | n006
+7 | 1 | n007
+8 | 1 | n008
+9 | 1 | n009
+10 | 1 | n010
+15 | 1 | n015
+20 | 1 | n020
+30 | 1 | n030
+36 | 1 | n036
+40 | 1 | n040
+45 | 1 | n045
+50 | 1 | n050
+60 | 1 | n060
+72 | 1 | n072
+90 | 1 | n090
+100 | 2 | n100
+108 | 1 | n108
+120 | 1 | n120
+135 | 1 | n135
+144 | 1 | n144
+150 | 1 | n150
+180 | 1 | n180
+360 | 1 | n360
++1 | 1 | a001
++2 | 1 | a002
++3 | 1 | a003
++5 | 1 | a005
++10 | 1 | a010
++15 | 1 | a015
++20 | 1 | a020
++50 | 1 | a050
++100 | 1 | a100
+-1 | 1 | s001
+-2 | 1 | s002
+-3 | 1 | s003
+-5 | 1 | s005
+-10 | 1 | s010
+-15 | 1 | s015
+-20 | 1 | s020
+-50 | 1 | s050
+-100 | 1 | s100
+*2 | 1 | m002
+*3 | 1 | m003
+/2 | 1 | d002
+/3 | 1 | d003
+X^2 | 1 | e002
+X^3 | 1 | e003
+Kvadratroten ur X | 1 | sqrt
+Paus | 1 | cwat
+Avståndskalibrering | 1 | ccal
+Ställ in standard steglängd | 1 | clen
+
+## **Möjliga ytterligare kommandon och operationer**
+
+Kommando / Värde | Antal | NFC-kod
+--- | --- | ---
+Fakultet | 1 | fact
+Robot ljudexempel | 1 | xXXX (här XXX - tal från 001 till 999)
+Panel ljudexempel | 1 | csou
+Volymnivå | 1 | clvl
+
+## **Hur man skriver data till en NFC-tag**
+
+Du kan skapa din egen token — skriv helt enkelt en textkod på en NFC-tag. Du kan använda vilka tal som helst (från 0 till 999), vilka upprepningar som helst och vilka tal som helst för aritmetiska operationer.
+
+För att skriva textdata till en NFC-tag, öppna Google Play Store och installera appen **RFID NFC Reader** eller **NFC Tools** på din telefon.
+
+Instruktioner för skrivning av en NFC-tag finns här — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+
+<div
+  style={{
+    position: 'relative',
+    paddingBottom: '56.25%',
+    height: 0,
+    overflow: 'hidden',
+  }}
+>
+  <iframe
+    src="https://www.youtube.com/embed/UbKaQxZs8JA?si=WT8wWYBe_Ql7TovQ"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+    }}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>

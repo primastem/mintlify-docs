@@ -1,0 +1,170 @@
+---
+title: "Användarmanual"
+description: '**PrimaSTEM** — ett utbildningsset för att lära barn från 4 års ålder grunderna i logik, programmering och matematik.'
+icon: 'book-open'
+---
+
+## Tekniska Specifikationer och Paketinnehåll
+
+![primastem](../images/hello.png)
+
+- Lekrobot
+- Fjärrkontroll för robot
+- Kommando-, värde- och aritmetiska operationschips för att skapa program
+
+> Paketinnehåll och utseende kan variera något. Vänligen kontrollera vid köp.
+
+### Lekrobot
+
+Dimensioner: D=125 мм, H=44 мм.
+
+![robot](../images/robot.png)
+
+Roboten är utrustad med en strömknapp, LED-lampor, en högtalare, en funktionsknapp och en USB-C-port för laddning av batteriet.
+
+En markör med diameter på upp till 10 мм kan installeras i mitten av roboten för att rita enkla former under rörelse.
+
+Utseendet kan variera något beroende på konfiguration, men huvudfunktionaliteten behålls.
+
+### Fjärrkontroll
+
+Dimensioner: L=317 мм, W=217 мм, H=62 мм.
+
+![control](../images/control.png)
+
+Fjärrkontrollen innehåller 11 dubbla fack för insättning av kommando- och värdechips: 6 för huvudprogrammet (övre delen), 5 för underprogrammet (nedre delen).
+Fjärrkontrollen har två knappar: till vänster — ström, till höger — "Kör / Stoppa" för att starta och stoppa programmet.
+
+Efter att du har placerat kommando- och värdechips i facken, tryck "Kör": roboten kommer att köra programmet. Aktiva kommandon belyses av LED-lampor mellan facken.
+
+Om ett chip är felaktigt installerat signalerar fjärrkontrollen med en röd LED, men programmet fortsätter (till exempel när ett värdechip installeras utan kommando).
+
+Fjärrkontrollen är utrustad med en USB-C-port för laddning och en högtalare för ljuduppspelning.
+
+### Instruktionschips
+
+Dimensioner: LxW=33 мм.
+
+Setet inkluderar chips för att skapa program.
+Varje chip är ett kommando med en tydlig betydelse och instruktion. Sekvensen av block bestämmer robotens beteende.
+
+![coding chips](../images/tokens.png)
+
+Chipsen är indelade i **kommandon**, **värden** och **aritmetiska**.
+
+#### Kommandochips
+
+Grundläggande block för att komponera kontrollprogrammet:
+
+- **Framåt** — rörelse framåt (15 см som standard)
+- **Höger** — sväng 90° medurs
+- **Vänster** — sväng 90° moturs
+- **Bakåt** — rörelse bakåt (15 см som standard)
+- **Funktion** — kör underprogrammet från den nedre delen av fjärrkontrollen
+- **Slumpmässig Rörelse** — en av åtgärderna för att flytta roboten: Framåt, Vänster, Höger eller Bakåt (på "standardsteg")
+- **Upprepningschips (Loopar)** - Chips med siffror från 2 till 6 (efter antalet prickar) och upprepningspiktogram med siffran inuti. Chipet med en tärning betyder ett slumpmässigt antal upprepningar från 1 till 6.
+
+> Numeriska värde- och aritmetikchips används också för att utöka programmeringen: till exempel att upprepa ett kommando eller ändra rörelsevinkel/distans.
+
+#### Värdechips
+
+Vinkel- och distanschips: 30°, 36°, 45°, samt multipler (60°, 72°, etc.).
+Vinklar i grader, distanser i millimeter.
+Som standard — 90° och 100 мм (15 см).
+
+#### Aritmetiska Operationschips
+
+Ändrar parametrarna för rörelsekommandon:
+
+- Addition (+)
+- Subtraktion (−)
+- Multiplikation (*)
+- Division (/)
+- Kvadratrot (√)
+- Potens (^)
+
+## Anslutning mellan Fjärrkontroll och Robot
+
+Det rekommenderas att först slå på roboten, sedan fjärrkontrollen.
+
+Placera roboten på en plan yta före anslutning: efter parkoppling blir LED-lamporna vita. Om det inte finns någon anslutning blinkar de rött.
+
+Kontrollera anslutningen: installera chipet "Framåt" och tryck "Kör".
+
+Om det inte finns någon anslutning, starta om båda enheterna eller ladda dem. Tillfällig anslutningsförlust kan uppstå nära starka elektromagnetiska fältkällor (mobiltelefon, WiFi-punkt).
+
+> **Efter uppdatering av enheternas programvara** kan parkoppling krävas: slå på roboten, sedan fjärrkontrollen, tryck och håll "Kör"-knappen på fjärrkontrollen i 10–15 sekunder, tills ett ljudsignal hörs.
+
+## Hur Fungerar Det?
+
+För att programmera rörelse, installera kommandochips i fjärrkontrollens fack (till exempel "Framåt", "Vänster", "Funktion" etc.).
+Du kan ställa in kommandovärden och antal upprepningar, samt värden för vinklar, distanser och aritmetiska operationer.
+
+För gemensam installation av ett kommando och värde (upprepning) är facken förenade med "broar" med indikatorer.
+
+  *Nedan visas ett program som använder en loop som exempel för att upprepa en liknande kodsektion. Programmet skapar en kvadratisk rörelserutt för roboten:*
+
+![control with chips](../images/manual1a.excalidraw.svg)
+
+Kommandon installeras först i den övre delen av fjärrkontrollen (6 fack) och körs från vänster till höger. Tomma fack eller fel ignoreras (till exempel två kommandon i ett block eller ett värde utan kommando).
+
+Sekvensen av block bestämmer robotens rörelse.
+
+Tryck "Kör" för att starta programmet.
+
+Som standard:
+- "Framåt" — 15 см.
+- "Vänster/Höger" — 90°.
+- Loopar (upprepningar) upprepar kommandot flera gånger.
+- "Funktion" anropar underprogrammet från den nedre delen av fjärrkontrollen (5 fack).
+- Du kan anropa ett underprogram flera gånger via en loop genom att lägga till ett upprepningschip till "Funktion" (exempel visas ovan).
+
+### Viktiga Funktioner:
+
+- **Avbryt** programkörningen genom att trycka "Kör" igen under rörelse.
+- Fjärrkontrollen kommer ihåg det senaste **inställda värdet** (distans/vinkel) för rörelsekommandot tills avstängning: till exempel, om "Framåt" = "200", körs alla efterföljande "Framåt"-kommandon med detta värde.
+- Värden efter aritmetik sparas också.
+- Ändra "**standarddistans**" kan göras med ett servicechip: till exempel, för 12,5 см, installera chipet "Standarddistans" med värdet 125. Värdet sparas efter avstängning.
+- Fjärrkontrollen och roboten **stängs av automatiskt** efter 10 minuters inaktivitet.
+- Om roboten inte används på 1–3 minuter gör den små rörelser för att signalera att den är aktiv och redo.
+- **Ögonblinkningsljudet** på roboten kan slås på och av med ett enkelt tryck på robotknappen.
+- **Fjärrkontrollens ljud** kan slås på och av genom att hålla "Kör"-knappen i 5 sekunder.
+- **Efter en programvaruuppdatering** kan kalibrering av robotrörelse behövas.
+- **Återställning av robotprogramvara** är möjlig genom att hålla knappen i 10 sekunder.
+- **Parkoppling av fjärrkontroll och robot** kan vara nödvändig efter uppdatering av enheternas programvara, upprättas genom att hålla "Kör"-knappen på fjärrkontrollen i 10-15 sekunder.
+
+### Robotkalibrering:
+
+- Markera robotens exakta riktning på bordsytan.
+- Med hjälp av vilket program som helst måste du få roboten att svänga 8 gånger på standardvinkeln - 90 grader medurs (till exempel utföra högersväng 8 gånger), roboten ska göra två fulla varv på 360 grader = 90*8.
+- Utvärdera sedan avvikelsevinkeln från robotens ursprungliga position och kör kommandot "Kalibrering" med värdet som behövs för normalisering: om roboten stannar före den ursprungliga markeringen, lägg till den aritmetiska operationen "+ vinkel" (till exempel +10), om roboten stannar efter markeringen, lägg till "- vinkel" (till exempel -5).
+- Kalibrering kan utföras flera gånger för att uppnå bästa resultat.
+- Observera! Återställning av robotkalibrering utförs genom att trycka på kontrollknappen i mer än 10 sekunder.
+
+<Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 см i diameter">
+1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, sätt in chipet "Kalibrering" i fjärrkontrollen och tryck "Kör".
+2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och chipet med nödvändigt värde, sedan "Kör". Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 мм). Efter detta kommer robotens rörelsedistans att vara exakt.*
+</Accordion>
+
+### Programmering av NFC-chips
+
+Du kan ändra eller **skapa dina egna chips** - kommandon, digitala värden eller aritmetiska operationer med hjälp av en telefon med NFC och ett program för läsning-skrivning av taggar, till exempel "NFC Tools". Du kan skriva ett värde till en tom digital NFC-tagg - chip med hjälp av en mobiltelefon med NFC som enkel text i form av 4 tecken.
+
+## Viktigt!
+
+> Setet **är inte avsett för barn under 4 år** och innehåller små delar — **kvävningsrisk**! Använd **endast under uppsikt** av vuxna!
+
+Enheten innehåller Li-ion-batterier. **Ladda endast under uppsikt** av vuxna med standard USB 5V och USB-C-kabel.
+
+Laddning av fjärrkontroll och robot (1 timme) räcker för 1–2 lektioner; full laddning (2–3 timmar) — för 3 lektioner på 30–45 minuter. Över tid kan batterikapaciteten minska, utbyte mot nya 16340 Li-ion-batterier är möjligt.
+
+Om setet inte används på länge, ladda batterierna **varje 2-3 månad**. Vid djup urladdning kan batterierna skadas och behöva bytas ut.
+
+**Öppna inte enheten** själv — vid fel eller behov av batteribyte, kontakta säljaren eller specialställen för elektronikreparation.
+
+Förvara och använd setet i ett torrt rum vid en temperatur på +10…+30°C, luftfuktighet 45–60%. Undvik direkt solljus, fukt och damm.
+
+Undvik stötar och vibrationer. Transportera och förvara enheten i originalförpackningen vid en temperatur på +5…+35°C, skyddad från mekanisk skada och fukt.
+
+p.s.: PrimaSTEM är ett praktiskt verktyg för att lära sig programmering, som utvecklar kreativt tänkande och logik.
+Detaljerad information om funktionalitet finns i **Lärarhandledningen**.

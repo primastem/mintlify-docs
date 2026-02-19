@@ -1,0 +1,170 @@
+---
+title: "Brukerhåndbok"
+description: '**PrimaSTEM** — et læringssett for å undervise barn fra 4 år i grunnleggende logikk, programmering og matematikk.'
+icon: 'book-open'
+---
+
+## Tekniske Spesifikasjoner og Pakkeinnhold
+
+![primastem](../images/hello.png)
+
+- Lekerobot
+- Fjernkontroll for robot
+- Kommando-, verdi- og aritmetiske operasjonsbrikker for å lage programmer
+
+> Pakkeinnhold og utseende kan variere litt. Vennligst sjekk ved kjøp.
+
+### Lekerobot
+
+Dimensjoner: D=125 мм, H=44 мм.
+
+![robot](../images/robot.png)
+
+Roboten er utstyrt med en på/av-knapp, LED-lys, en høyttaler, en funksjonsknapp og en USB-C-port for lading av batteriet.
+
+En markør med diameter på opptil 10 мм kan settes inn i midten av roboten for å tegne enkle former under bevegelse.
+
+Utseendet kan variere litt avhengig av konfigurasjon, men hovedfunksjonaliteten beholdes.
+
+### Fjernkontroll
+
+Dimensjoner: L=317 мм, W=217 мм, H=62 мм.
+
+![control](../images/control.png)
+
+Fjernkontrollen inneholder 11 dobbeltspor for innsetting av kommando- og verdibrikker: 6 for hovedprogrammet (øvre del), 5 for underprogrammet (nedre del).
+Fjernkontrollen har to knapper: til venstre — på/av, til høyre — "Utfør / Stopp" for å starte og stoppe programmet.
+
+Etter at du har plassert kommando- og verdibrikker i sporene, trykk "Utfør": roboten vil utføre programmet. Aktive kommandoer belyses av LED-lys mellom sporene.
+
+Hvis en brikke er feil installert, signaliserer fjernkontrollen med en rød LED, men programmet fortsetter (for eksempel når en verdibrikke settes inn uten kommando).
+
+Fjernkontrollen er utstyrt med en USB-C-port for lading og en høyttaler for lydavspilling.
+
+### Instruksjonsbrikker
+
+Dimensjoner: LxW=33 мм.
+
+Settet inkluderer brikker for å lage programmer.
+Hver brikke er en kommando med en klar betydning og instruksjon. Rekkefølgen på blokkene bestemmer robotens oppførsel.
+
+![coding chips](../images/tokens.png)
+
+Brikkene er delt inn i **kommandoer**, **verdier** og **aritmetiske**.
+
+#### Kommandobrikker
+
+Grunnleggende blokker for å sette sammen kontrollprogrammet:
+
+- **Fremover** — bevegelse fremover (15 см som standard)
+- **Høyre** — sving på 90° med klokken
+- **Venstre** — sving på 90° mot klokken
+- **Bakover** — bevegelse bakover (15 см som standard)
+- **Funksjon** — utførelse av underprogrammet fra den nedre delen av fjernkontrollen
+- **Tilfeldig Bevegelse** — en av handlingene for å flytte roboten: Fremover, Venstre, Høyre eller Bakover (på "standardsteg")
+- **Gjentakelsesbrikker (Løkker)** - Brikker med tall fra 2 til 6 (etter antall prikker) og gjentakelsespiktogrammer med tallet inni. Brikken med en terning betyr et tilfeldig antall gjentakelser fra 1 til 6.
+
+> Numeriske verdi- og aritmetikkbrikker brukes også for å utvide programmeringen: for eksempel å gjenta en kommando eller endre bevegelsesvinkel/distanse.
+
+#### Verdibrikker
+
+Vinkel- og distansebrikker: 30°, 36°, 45°, samt multipler (60°, 72°, etc.).
+Vinkler i grader, distanser i millimeter.
+Som standard — 90° og 100 мм (15 см).
+
+#### Aritmetiske Operasjonsbrikker
+
+Endrer parametrene for bevegelseskommandoer:
+
+- Addisjon (+)
+- Subtraksjon (−)
+- Multiplikasjon (*)
+- Divisjon (/)
+- Kvadratrot (√)
+- Potens (^)
+
+## Tilkobling mellom Fjernkontroll og Robot
+
+Det anbefales å slå på roboten først, deretter fjernkontrollen.
+
+Plasser roboten på en flat overflate før tilkobling: etter sammenkobling blir LED-lysene hvite. Hvis det ikke er tilkobling, blinker de rødt.
+
+Sjekk tilkoblingen: sett inn brikken "Fremover" og trykk "Utfør".
+
+Hvis det ikke er tilkobling, start begge enhetene på nytt eller lad dem opp. Midlertidig tap av tilkobling kan oppstå nær sterke elektromagnetiske feltkilder (mobiltelefon, WiFi-punkt).
+
+> **Etter oppdatering av enhetens programvare** kan sammenkobling være nødvendig: slå på roboten, deretter fjernkontrollen, trykk og hold "Utfør"-knappen på fjernkontrollen i 10–15 sekunder, til en lydsignal høres.
+
+## Hvordan Fungerer Det?
+
+For å programmere bevegelse, sett kommandobrikker i fjernkontrollens spor (for eksempel "Fremover", "Venstre", "Funksjon" osv.).
+Du kan angi kommandoverdier og antall gjentakelser, samt verdier for vinkler, distanser og aritmetiske operasjoner.
+
+For felles installasjon av en kommando og verdi (gjentakelse) er sporene forbundet med "broer" med indikatorer.
+
+  *Nedenfor vises et program som bruker en løkke som eksempel for å gjenta en lignende kodeseksjon. Programmet lager en kvadratisk bevegelsesrute for roboten:*
+
+![control with chips](../images/manual1a.excalidraw.svg)
+
+Kommandoer settes først inn i den øvre delen av fjernkontrollen (6 spor) og utføres fra venstre mot høyre. Tomme spor eller feil ignoreres (for eksempel to kommandoer i én blokk eller en verdi uten kommando).
+
+Rekkefølgen på blokkene bestemmer robotens bevegelse.
+
+Trykk "Utfør" for å starte programmet.
+
+Som standard:
+- "Fremover" — 15 см.
+- "Venstre/Høyre" — 90°.
+- Løkker (gjentakelser) gjentar kommandoen flere ganger.
+- "Funksjon" kaller underprogrammet fra den nedre delen av fjernkontrollen (5 spor).
+- Du kan kalle et underprogram flere ganger via en løkke ved å legge til en gjentakelsesbrikke til "Funksjon" (eksempel vist ovenfor).
+
+### Viktige Funksjoner:
+
+- **Avbryt** programutførelsen ved å trykke "Utfør" igjen under bevegelse.
+- Fjernkontrollen husker den siste **innstilte verdien** (distanse/vinkel) for bevegelseskommandoen til strømme av: for eksempel, hvis "Fremover" = "200", utføres alle påfølgende "Fremover"-kommandoer med denne verdien.
+- Verdier etter aritmetikk lagres også.
+- Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 см, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av.
+- Fjernkontrollen og roboten **slår seg automatisk av** etter 10 minutter med inaktivitet.
+- Hvis roboten ikke brukes på 1–3 minutter, utfører den små bevegelser for å signalisere at den er aktiv og klar.
+- **Øyeblunkelyden** til roboten kan slås på og av med et enkelt trykk på robotknappen.
+- **Fjernkontrollens lyd** kan slås på og av ved å holde "Utfør"-knappen i 5 sekunder.
+- **Etter en programvareoppdatering** kan kalibrering av robotbevegelse være nødvendig.
+- **Tilbakestilling av robotprogramvare** er mulig ved å holde knappen i 10 sekunder.
+- **Sammenkobling av fjernkontroll og robot** kan være nødvendig etter oppdatering av enhetens programvare, etableres ved å holde "Utfør"-knappen på fjernkontrollen i 10-15 sekunder.
+
+### Robotkalibrering:
+
+- Merk den nøyaktige retningen til roboten på bordoverflaten.
+- Ved hjelp av et hvilket som helst program må du oppnå at roboten snur 8 ganger på standardvinkelen - 90 grader med klokken (for eksempel utføre høyresving 8 ganger), roboten skal gjøre to fulle omdreininger på 360 grader = 90*8.
+- Deretter må du vurdere avviksvinkelen fra robotens opprinnelige posisjon og utføre kommandoen "Kalibrering" med verdien som trengs for normalisering: hvis roboten stopper før den opprinnelige markeringen, legg til den aritmetiske operasjonen "+ vinkel" (for eksempel +10), hvis roboten stopper etter markeringen, legg til "- vinkel" (for eksempel -5).
+- Kalibrering kan utføres flere ganger for å oppnå best resultat.
+- Merk! Tilbakestilling av robotkalibrering utføres ved å trykke på kontrollknappen i mer enn 10 sekunder.
+
+<Accordion icon="rectangle-terminal" title="Kalibrering av første enhetsversjon (MVP) med robot på 10 см i diameter">
+1. For å kalibrere gyroskopet, plasser roboten på en horisontal overflate, sett inn brikken "Kalibrering" i fjernkontrollen og trykk "Utfør".
+2. For å kalibrere bevegelsesdistanse, mål den faktiske banen med kommandoen "Fremover", sett inn "Kalibrering" og brikken med nødvendig verdi, deretter "Utfør". Du kan skrive verdien til en hvilken som helst digital NFC-brikke ved hjelp av en mobiltelefon med NFC som tekst i formen nXXX (for eksempel, n095 for 95 мм). Etter dette vil robotens bevegelsesdistanse være nøyaktig.*
+</Accordion>
+
+### Programmering av NFC-brikker
+
+Du kan endre eller **lage dine egne brikker** - kommandoer, digitale verdier eller aritmetiske operasjoner ved hjelp av en telefon med NFC og et program for lesing-skriving av tagger, for eksempel "NFC Tools". Du kan skrive en verdi til en tom digital NFC-tagg - brikke ved hjelp av en mobiltelefon med NFC som enkel tekst i form av 4 tegn.
+
+## Viktig!
+
+> Settet **er ikke beregnet for barn under 4 år** og inneholder små deler — **kvelningsfare**! Bruk **kun under tilsyn** av voksne!
+
+Enheten inneholder Li-ion-batterier. **Lad kun under tilsyn** av voksne ved hjelp av standard USB 5V og USB-C-kabel.
+
+Lading av fjernkontroll og robot (1 time) er nok til 1–2 leksjoner; full ladning (2–3 timer) — til 3 leksjoner på 30–45 minutter. Over tid kan batterikapasiteten reduseres, utskifting med nye 16340 Li-ion-batterier er mulig.
+
+Hvis settet ikke brukes på lenge, lad batteriene **hver 2-3 måned**. Ved dyp utlading kan batteriene bli ødelagt og kreve utskifting.
+
+**Ikke åpne enheten** selv — ved feil eller behov for batteribytte, kontakt forhandleren eller spesialsteder for elektronikkreparasjon.
+
+Oppbevar og bruk settet i et tørt rom ved en temperatur på +10…+30°C, luftfuktighet 45–60%. Unngå direkte sollys, fuktighet og støv.
+
+Unngå støt og vibrasjoner. Transporter og oppbevar enheten i originalemballasjen ved en temperatur på +5…+35°C, beskyttet mot mekanisk skade og fuktighet.
+
+p.s.: PrimaSTEM er et praktisk verktøy for å lære programmering, som utvikler kreativ tenkning og logikk.
+Detaljert informasjon om funksjonalitet finnes i **Lærerveiledningen**.

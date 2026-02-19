@@ -1,0 +1,170 @@
+---
+title: "Benutzerhandbuch"
+description: '**PrimaSTEM** — ein Lernset zur Vermittlung der Grundlagen von Logik, Programmierung und Mathematik für Kinder ab 4 Jahren.'
+icon: 'book-open'
+---
+
+## Technische Spezifikationen und Lieferumfang
+
+![primastem](../images/hello.png)
+
+- Spielroboter
+- Fernbedienung für Roboter
+- Befehls-, Wert- und arithmetische Operationschips zur Programmerstellung
+
+> Lieferumfang und Aussehen können leicht variieren. Bitte beim Kauf überprüfen.
+
+### Spielroboter
+
+Abmessungen: D=125 мм, H=44 мм.
+
+![robot](../images/robot.png)
+
+Der Roboter ist mit einem Ein-/Ausschalter, LEDs, einem Lautsprecher, einer Funktionstaste und einem USB-C-Anschluss zum Aufladen des Akkus ausgestattet.
+
+In der Mitte des Roboters kann ein Marker mit einem Durchmesser von bis zu 10 мм eingesetzt werden, um während der Bewegung einfache Formen zu zeichnen.
+
+Das Aussehen kann je nach Ausstattung leicht variieren, die Hauptfunktionen bleiben erhalten.
+
+### Fernbedienung
+
+Abmessungen: L=317 мм, W=217 мм, H=62 мм.
+
+![control](../images/control.png)
+
+Die Fernbedienung enthält 11 Doppelschächte zum Einsetzen von Befehls- und Wertchips: 6 für das Hauptprogramm (oberer Teil), 5 für das Unterprogramm (unterer Teil).
+Die Fernbedienung hat zwei Tasten: links — Ein-/Ausschalter, rechts — "Ausführen / Stoppen" zum Starten und Stoppen des Programms.
+
+Nachdem Sie Befehls- und Wertchips in die Schächte eingesetzt haben, drücken Sie "Ausführen": Der Roboter führt das Programm aus. Aktive Befehle werden durch LEDs zwischen den Schächten beleuchtet.
+
+Wenn ein Chip falsch eingesetzt ist, signalisiert die Fernbedienung mit einer roten LED, aber das Programm wird fortgesetzt (z. B. wenn ein Wertchip ohne Befehl eingesetzt wird).
+
+Die Fernbedienung ist mit einem USB-C-Anschluss zum Aufladen und einem Lautsprecher zur Klangwiedergabe ausgestattet.
+
+### Befehlschips - Anweisungen
+
+Abmessungen: LxW=33 мм.
+
+Das Set enthält Chips zur Programmerstellung.
+Jeder Chip ist ein Befehl mit einer klaren Bedeutung und Anweisung. Die Reihenfolge der Blöcke bestimmt das Verhalten des Roboters.
+
+![coding chips](../images/tokens.png)
+
+Die Chips unterteilen sich in **Befehle**, **Werte** und **arithmetische** Chips.
+
+#### Befehlschips
+
+Grundbausteine zur Erstellung des Steuerprogramms:
+
+- **Vorwärts** — Vorwärtsbewegung (standardmäßig 15 см)
+- **Rechts** — Drehung um 90° im Uhrzeigersinn
+- **Links** — Drehung um 90° gegen den Uhrzeigersinn
+- **Rückwärts** — Rückwärtsbewegung (standardmäßig 15 см)
+- **Funktion** — Ausführung des Unterprogramms aus dem unteren Teil der Fernbedienung
+- **Zufällige Bewegung** — eine der Aktionen zur Roboterbewegung: Vorwärts, Links, Rechts oder Rückwärts (auf "Standardschritt")
+- **Wiederholungschips (Schleifen)** - Chips mit Zahlen von 2 bis 6 (entsprechend der Anzahl der Punkte) und Wiederholungspiktogrammen mit der Zahl darin. Der Chip mit einem Würfel bedeutet eine zufällige Anzahl von Wiederholungen von 1 bis 6.
+
+> Zahlenwert- und Arithmetikchips werden ebenfalls zur Programmerweiterung verwendet: z. B. zum Wiederholen eines Befehls oder Ändern des Bewegungswinkels/der Distanz.
+
+#### Wertchips
+
+Winkel- und Distanzchips: 30°, 36°, 45°, sowie Vielfache (60°, 72°, etc.).
+Winkel in Grad, Distanzen in Millimetern.
+Standardmäßig — 90° und 100 мм (15 см).
+
+#### Chips für arithmetische Operationen
+
+Ändern die Parameter von Bewegungsbefehlen:
+
+- Addition (+)
+- Subtraktion (−)
+- Multiplikation (*)
+- Division (/)
+- Quadratwurzel (√)
+- Potenz (^)
+
+## Verbindung zwischen Fernbedienung und Roboter
+
+Es wird empfohlen, zuerst den Roboter und dann die Fernbedienung einzuschalten.
+
+Stellen Sie den Roboter vor dem Verbinden auf eine ebene Fläche: Nach der Verbindung werden die LEDs weiß. Wenn keine Verbindung besteht, blinken sie rot.
+
+Überprüfen Sie die Verbindung: Setzen Sie den Chip "Vorwärts" ein und drücken Sie "Ausführen".
+
+Wenn keine Verbindung besteht, starten Sie beide Geräte neu oder laden Sie sie auf. In der Nähe von starken elektromagnetischen Feldquellen (Mobiltelefon, WiFi-Hotspot) kann es zu vorübergehendem Verbindungsverlust kommen.
+
+> **Nach einer Software-Aktualisierung der Geräte** kann eine Paarung erforderlich sein: Schalten Sie den Roboter ein, dann die Fernbedienung, drücken und halten Sie die Taste "Ausführen" auf der Fernbedienung für 10–15 Sekunden, bis ein Tonsignal ertönt.
+
+## Wie funktioniert es?
+
+Zur Programmierung der Bewegung setzen Sie Befehlschips in die Schächte der Fernbedienung ein (z. B. "Vorwärts", "Links", "Funktion" usw.).
+Sie können Befehlswerte und Wiederholungsanzahlen sowie Winkel-, Distanz- und arithmetische Operationswerte einstellen.
+
+Zur gemeinsamen Installation eines Befehls und eines Werts (Wiederholung) sind die Schächte durch "Brücken" mit Anzeigen verbunden.
+
+  *Unten ist ein Programm dargestellt, das als Beispiel eine Schleife zur Wiederholung eines ähnlichen Codeabschnitts verwendet. Das Programm erstellt eine quadratische Bewegungsroute für den Roboter:*
+
+![control with chips](../images/manual1a.excalidraw.svg)
+
+Befehle werden zuerst in den oberen Teil der Fernbedienung (6 Schächte) eingesetzt und von links nach rechts ausgeführt. Leere Schächte oder Fehler werden ignoriert (z. B. zwei Befehle in einem Block oder ein Wert ohne Befehl).
+
+Die Reihenfolge der Blöcke bestimmt die Bewegung des Roboters.
+
+Drücken Sie "Ausführen", um das Programm zu starten.
+
+Standardmäßig:
+- "Vorwärts" — 15 см.
+- "Links/Rechts" — 90°.
+- Schleifen (Wiederholungen) wiederholen den Befehl mehrmals.
+- "Funktion" ruft das Unterprogramm aus dem unteren Teil der Fernbedienung auf (5 Schächte).
+- Sie können ein Unterprogramm mehrmals über eine Schleife aufrufen, indem Sie einen Wiederholungschip zu "Funktion" hinzufügen (Beispiel oben gezeigt).
+
+### Wichtige Funktionen:
+
+- **Unterbrechen** Sie die Programmausführung, indem Sie während der Bewegung erneut "Ausführen" drücken.
+- Die Fernbedienung speichert den letzten **eingestellten Wert** (Distanz/Winkel) für den Bewegungsbefehl bis zum Ausschalten: z. B. wenn "Vorwärts" = "200", werden alle folgenden "Vorwärts"-Befehle mit diesem Wert ausgeführt.
+- Werte nach arithmetischen Operationen werden ebenfalls gespeichert.
+- Die "**Standarddistanz**" kann mit einem Servicechip geändert werden: z. B. für 12,5 см setzen Sie den Chip "Standarddistanz" mit dem Wert 125. Der Wert bleibt nach dem Ausschalten erhalten.
+- Fernbedienung und Roboter **schalten sich automatisch ab** nach 10 Minuten Inaktivität.
+- Wenn der Roboter 1–3 Minuten nicht verwendet wird, führt er kleine Bewegungen aus, um Betriebsbereitschaft zu signalisieren.
+- Der **Augenblinzelton** des Roboters kann durch einfaches Drücken der Robotertaste ein- und ausgeschaltet werden.
+- Der **Ton der Fernbedienung** kann durch 5-sekündiges Halten der Taste "Ausführen" ein- und ausgeschaltet werden.
+- **Nach einer Software-Aktualisierung** kann eine Kalibrierung der Roboterbewegung erforderlich sein.
+- **Zurücksetzen der Roboter-Software** durch 10-sekündiges Halten der Taste möglich.
+- **Paarung von Fernbedienung und Roboter** kann nach einer Software-Aktualisierung der Geräte erforderlich sein, wird durch 10-15-sekündiges Halten der Taste "Ausführen" auf der Fernbedienung hergestellt.
+
+### Roboter-Kalibrierung:
+
+- Markieren Sie auf der Tischoberfläche die genaue Ausrichtung des Roboters.
+- Mit einem beliebigen Programm müssen Sie 8 Roboter-Drehungen um den Standardwinkel - 90 Grad im Uhrzeigersinn erreichen (z. B. 8-mal Rechtsdrehung ausführen), der Roboter sollte zwei volle Umdrehungen von 360 Grad = 90*8 machen.
+- Bewerten Sie dann den Abweichungswinkel von der ursprünglichen Roboterposition und führen Sie den Befehl "Kalibrierung" mit dem zur Normalisierung erforderlichen Wert aus: Wenn der Roboter vor der ursprünglichen Marke stoppt, fügen Sie die arithmetische Operation "+ Winkel" hinzu (z. B. +10), wenn der Roboter nach der Marke stoppt, fügen Sie "- Winkel" hinzu (z. B. -5).
+- Die Kalibrierung kann mehrmals durchgeführt werden, um das beste Ergebnis zu erzielen.
+- Achtung! Das Zurücksetzen der Roboter-Kalibrierung erfolgt durch Drücken der Steuerungstaste für mehr als 10 Sekunden.
+
+<Accordion icon="rectangle-terminal" title="Kalibrierung der ersten Geräteversion (MVP) mit Roboter von 10 см Durchmesser">
+1. Zur Kalibrierung des Gyroskops stellen Sie den Roboter auf eine horizontale Fläche, setzen Sie den Chip "Kalibrierung" in die Fernbedienung ein und drücken Sie "Ausführen".
+2. Zur Kalibrierung der Bewegungsdistanz messen Sie den tatsächlichen Weg mit dem Befehl "Vorwärts", setzen Sie "Kalibrierung" und den Chip mit dem erforderlichen Wert ein, dann "Ausführen". Sie können den Wert auf einen beliebigen digitalen NFC-Chip mit einem Mobiltelefon mit NFC als Text in der Form nXXX schreiben (z. B. n095 für 95 мм). Danach ist die Bewegungsdistanz des Roboters präzise.*
+</Accordion>
+
+### Programmierung von NFC-Chips
+
+Sie können **eigene Chips ändern oder erstellen** - Befehle, digitale Werte oder arithmetische Operationen mit einem Telefon mit NFC und einem Lese-Schreib-Programm für Tags, z. B. "NFC Tools". Sie können einen Wert auf einen leeren digitalen NFC-Tag - Chip mit einem Mobiltelefon mit NFC als einfachen Text in Form von 4 Zeichen schreiben.
+
+## Wichtig!
+
+> Das Set **ist nicht für Kinder unter 4 Jahren geeignet** und enthält Kleinteile — **Erstickungsgefahr**! Verwenden Sie es **nur unter Aufsicht** von Erwachsenen!
+
+Das Gerät enthält Li-ion-Akkus. **Laden Sie nur unter Aufsicht** von Erwachsenen mit standardmäßigem USB 5V und USB-C-Kabel.
+
+Die Ladung von Fernbedienung und Roboter (1 Stunde) reicht für 1–2 Lektionen; eine Vollladung (2–3 Stunden) — für 3 Lektionen à 30–45 Minuten. Mit der Zeit kann die Akkukapazität abnehmen, ein Austausch gegen neue 16340 Li-ion-Akkus ist möglich.
+
+Wenn das Set längere Zeit nicht verwendet wird, laden Sie die Akkus **alle 2-3 Monate** auf. Bei Tiefentladung können die Akkus beschädigt werden und müssen ersetzt werden.
+
+**Öffnen Sie das Gerät nicht** selbst — bei Defekt oder необходимости des Akkutauschs wenden Sie sich an den Verkäufer oder an spezielle Elektronik-Reparaturstellen.
+
+Lagern und verwenden Sie das Set in einem trockenen Raum bei einer Temperatur von +10…+30°C, Luftfeuchtigkeit 45–60%. Vermeiden Sie direkte Sonneneinstrahlung, Feuchtigkeit und Staub.
+
+Vermeiden Sie Stöße und Vibrationen. Transportieren und lagern Sie das Gerät in der Originalverpackung bei einer Temperatur von +5…+35°C, geschützt vor mechanischen Beschädigungen und Feuchtigkeit.
+
+p.s.: PrimaSTEM ist ein praktisches Werkzeug zum Erlernen der Programmierung, das kreatives Denken und Logik fördert.
+Detaillierte Informationen zur Funktionalität finden Sie im **Lehrerhandbuch**.

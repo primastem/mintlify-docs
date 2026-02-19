@@ -1,0 +1,96 @@
+---
+title: 'Quick Start'
+description: 'Start creating amazing documentation in less than 5 minutes'
+---
+
+## Development Setup
+
+Learn how to update your documentation locally and publish it publicly.
+
+### Editing and Preview
+
+<AccordionGroup>
+  <Accordion icon="github" title="Clone your documentation locally">
+    During the onboarding process, we created a repository on your Github with
+    the contents of your documentation. You can find this repository on
+    your [dashboard](https://dashboard.mintlify.com). To clone the repository
+    locally, follow these
+    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    in your terminal.
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="Preview changes">
+    Preview helps ensure your changes look as intended. We've created
+    a command-line interface for locally displaying these changes.
+    1. Install
+    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to locally preview
+    documentation changes with this command: ``` npm i -g mintlify ```
+    2. Run the following command in the root of your documentation (where
+    `docs.json` is located): ``` mintlify dev ```
+    <Note>
+      If you're currently using a legacy ```mint.json``` configuration file, please update Mintlify CLI:
+
+
+      ```npm i -g mintlify@latest```
+      And run the new upgrade command in your documentation repository:
+
+      ```mintlify upgrade```
+      You should now use the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+### Deploying Your Changes
+
+<AccordionGroup>
+
+<Accordion icon="message-bot" title="Install our Github app">
+  Our Github app automatically deploys your changes to the documentation site,
+  so you don't need to manage deployments yourself. The install link is located on
+  your [dashboard](https://dashboard.mintlify.com). Once the bot is successfully installed,
+  a checkmark should appear next to the repository commit hash.
+</Accordion>
+<Accordion icon="rocket" title="Push your changes">
+  [Commit and push your changes to
+  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
+  to update your documentation site. If you've pushed changes and don't see
+  that the Github app successfully deployed your changes, you can also
+  manually update your documentation via our [dashboard](https://dashboard.mintlify.com).
+</Accordion>
+
+</AccordionGroup>
+
+## Updating Your Documentation
+
+Add content directly into your files using MDX syntax and React components. You can use any of our components or even create your own.
+
+<CardGroup>
+
+<Card title="Adding Content with MDX" icon="file" href="/essentials/markdown">
+  Add content to your documentation using MDX syntax.
+</Card>
+
+<Card
+  title="Adding Code Blocks"
+  icon="square-code"
+  href="/essentials/code"
+>
+  Add code directly into your documentation with syntax highlighting.
+</Card>
+
+<Card
+  title="Adding Images"
+  icon="image"
+  href="/essentials/images"
+>
+  Add images to your documentation to make it more engaging.
+</Card>
+
+<Card
+  title="Adding Custom Components"
+  icon="puzzle-piece"
+  href="/essentials/reusable-snippets"
+>
+  Add templates to your documentation to make it more reusable.
+</Card>
+
+</CardGroup>

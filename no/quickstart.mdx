@@ -1,0 +1,96 @@
+---
+title: 'Hurtigstart'
+description: 'Begynn å lage fantastisk dokumentasjon på mindre enn 5 minutter'
+---
+
+## Utviklingsoppsett
+
+Lær hvordan du oppdaterer dokumentasjonen din lokalt og publiserer den offentlig.
+
+### Redigering og forhåndsvisning
+
+<AccordionGroup>
+  <Accordion icon="github" title="Klon dokumentasjonen din lokalt">
+    Under onboarding-prosessen opprettet vi et repository på Github med
+    innholdet i dokumentasjonen din. Du finner dette repositoryet på
+    [dashbordet](https://dashboard.mintlify.com). For å klone repositoryet
+    lokalt, følg disse
+    [instruksjonene](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    i terminalen din.
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="Forhåndsvis endringer">
+    Forhåndsvisning hjelper deg med å sikre at endringene dine ser ut som tiltenkt. Vi har opprettet
+    et kommandolinjegrensesnitt for lokalt å vise disse endringene.
+    1. Installer
+    [Mintlify CLI](https://www.npmjs.com/package/mintlify) for å forhåndsvise
+    dokumentasjonsendringer lokalt med denne kommandoen: ``` npm i -g mintlify ```
+    2. Kjør følgende kommando i roten av dokumentasjonen din (der
+    `docs.json` er plassert): ``` mintlify dev ```
+    <Note>
+      Hvis du for øyeblikket bruker en foreldet ```mint.json``` konfigurasjonsfil, vennligst oppdater Mintlify CLI:
+
+
+      ```npm i -g mintlify@latest```
+      Og kjør den nye oppgraderingskommandoen i dokumentasjons-repositoryet ditt:
+
+      ```mintlify upgrade```
+      Du bør nå bruke den nye ```docs.json``` konfigurasjonsfilen. Du kan gjerne slette ```mint.json``` filen fra repositoryet ditt.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+### Distribuere endringene dine
+
+<AccordionGroup>
+
+<Accordion icon="message-bot" title="Installer Github-appen vår">
+  Github-appen vår distribuerer automatisk endringene dine til dokumentasjonsnettstedet,
+  så du trenger ikke å administrere distribusjoner selv. Installeringslenken finnes på
+    [dashbordet](https://dashboard.mintlify.com). Når boten er installert,
+  skal et merke vises ved siden av repositoryets commit-hash.
+</Accordion>
+<Accordion icon="rocket" title="Push endringene dine">
+  [Commit og push endringene dine til
+  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
+  for å oppdatere dokumentasjonsnettstedet ditt. Hvis du har pushet endringer og ikke ser
+  at Github-appen har distribuert endringene dine, kan du også
+  manuelt oppdatere dokumentasjonen via [dashbordet](https://dashboard.mintlify.com).
+</Accordion>
+
+</AccordionGroup>
+
+## Oppdatere dokumentasjonen din
+
+Legg til innhold direkte i filene dine ved hjelp av MDX-syntaks og React-komponenter. Du kan bruke hvilken som helst av komponentene våre eller til og med lage dine egne.
+
+<CardGroup>
+
+<Card title="Legge til innhold med MDX" icon="file" href="/essentials/markdown">
+  Legg til innhold i dokumentasjonen din ved hjelp av MDX-syntaks.
+</Card>
+
+<Card
+  title="Legge til kodeblokker"
+  icon="square-code"
+  href="/essentials/code"
+>
+  Legg til kode direkte i dokumentasjonen din med syntaksutheving.
+</Card>
+
+<Card
+  title="Legge til bilder"
+  icon="image"
+  href="/essentials/images"
+>
+  Legg til bilder i dokumentasjonen din for å gjøre den mer engasjerende.
+</Card>
+
+<Card
+  title="Legge til tilpassede komponenter"
+  icon="puzzle-piece"
+  href="/essentials/reusable-snippets"
+>
+  Legg til maler i dokumentasjonen din for å gjøre den mer gjenbrukbar.
+</Card>
+
+</CardGroup>

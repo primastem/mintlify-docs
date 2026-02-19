@@ -1,0 +1,170 @@
+---
+title: "Gebruikershandleiding"
+description: '**PrimaSTEM** — een educatieve set voor het onderwijzen van kinderen vanaf 4 jaar in de basis van logica, programmering en wiskunde.'
+icon: 'book-open'
+---
+
+## Technische Specificaties en Inhoud van de Verpakking
+
+![primastem](../images/hello.png)
+
+- Speelrobot
+- Afstandsbediening voor robot
+- Commando-, waarde- en rekenkundige operatiechips voor het maken van programma's
+
+> Inhoud van de verpakking en uiterlijk kunnen licht variëren. Controleer bij aankoop.
+
+### Speelrobot
+
+Afmetingen: D=125 мм, H=44 мм.
+
+![robot](../images/robot.png)
+
+De robot is uitgerust met een aan/uit-knop, LED's, een luidspreker, een functieknop en een USB-C-poort voor het opladen van de batterij.
+
+Een marker met een diameter van maximaal 10 мм kan in het midden van de robot worden geplaatst om eenvoudige vormen te tekenen tijdens het bewegen.
+
+Het uiterlijk kan licht variëren afhankelijk van de configuratie, maar de hoofdfuncties blijven behouden.
+
+### Afstandsbediening
+
+Afmetingen: L=317 мм, W=217 мм, H=62 мм.
+
+![control](../images/control.png)
+
+De afstandsbediening bevat 11 dubbele sleuven voor het plaatsen van commando- en waardechips: 6 voor het hoofdprogramma (bovenste deel), 5 voor het subprogramma (onderste deel).
+De afstandsbediening heeft twee knoppen: links — aan/uit, rechts — "Uitvoeren / Stoppen" voor het starten en stoppen van het programma.
+
+Nadat u commando- en waardechips in de sleuven heeft geplaatst, drukt u op "Uitvoeren": de robot voert het programma uit. Actieve commando's worden verlicht door LED's tussen de sleuven.
+
+Als een chip niet correct is geplaatst, signaleert de afstandsbediening dit met een rode LED, maar het programma gaat door (bijvoorbeeld bij het plaatsen van een waardechip zonder commando).
+
+De afstandsbediening is uitgerust met een USB-C-poort voor opladen en een luidspreker voor geluidsweergave.
+
+### Instructiechips
+
+Afmetingen: LxW=33 мм.
+
+De set bevat chips voor het maken van programma's.
+Elke chip is een commando met een duidelijke betekenis en instructie. De volgorde van de blokken bepaalt het gedrag van de robot.
+
+![coding chips](../images/tokens.png)
+
+De chips zijn onderverdeeld in **commando's**, **waarden** en **rekenkundige**.
+
+#### Commandochips
+
+Basisblokken voor het samenstellen van het besturingsprogramma:
+
+- **Vooruit** — beweging vooruit (15 см standaard)
+- **Rechts** — draaiing van 90° met de klok mee
+- **Links** — draaiing van 90° tegen de klok in
+- **Achteruit** — beweging achteruit (15 см standaard)
+- **Functie** — uitvoering van het subprogramma uit het onderste deel van de afstandsbediening
+- **Willekeurige Beweging** — een van de acties om de robot te verplaatsen: Vooruit, Links, Rechts of Achteruit (op "standaardstap")
+- **Herhalingschips (Lussen)** - Chips met getallen van 2 tot 6 (naar aantal punten) en herhalingspictogrammen met het getal erin. De chip met een dobbelsteen betekent een willekeurig aantal herhalingen van 1 tot 6.
+
+> Numerieke waarde- en rekenkundige chips worden ook gebruikt om de programmering uit te breiden: bijvoorbeeld een commando herhalen of de bewegingshoek/afstand wijzigen.
+
+#### Waardechips
+
+Hoek- en afstandschips: 30°, 36°, 45°, evenals veelvouden (60°, 72°, etc.).
+Hoeken in graden, afstanden in millimeters.
+Standaard — 90° en 100 мм (15 см).
+
+#### Rekenkundige Operatiechips
+
+Wijzigen de parameters van bewegingscommando's:
+
+- Optellen (+)
+- Aftrekken (−)
+- Vermenigvuldigen (*)
+- Delen (/)
+- Wortel (√)
+- Macht (^)
+
+## Verbinding tussen Afstandsbediening en Robot
+
+Het wordt aanbevolen om eerst de robot aan te zetten, vervolgens de afstandsbediening.
+
+Plaats de robot op een vlakke ondergrond voordat u verbinding maakt: na koppeling worden de LED's wit. Als er geen verbinding is, knipperen ze rood.
+
+Controleer de verbinding: plaats de chip "Vooruit" en druk op "Uitvoeren".
+
+Als er geen verbinding is, start beide apparaten opnieuw op of laad ze op. Tijdelijk verlies van verbinding kan optreden in de buurt van sterke elektromagnetische veldbronnen (mobiele telefoon, WiFi-punt).
+
+> **Na het bijwerken van de apparaatsoftware** kan koppeling vereist zijn: zet de robot aan, vervolgens de afstandsbediening, druk en houd de knop "Uitvoeren" op de afstandsbediening 10–15 seconden ingedrukt, tot een geluidssignaal klinkt.
+
+## Hoe Werkt Het?
+
+Voor het programmeren van beweging plaatst u commandochips in de sleuven van de afstandsbediening (bijvoorbeeld "Vooruit", "Links", "Functie" enz.).
+U kunt commandowaarden en aantal herhalingen instellen, evenals waarden voor hoeken, afstanden en rekenkundige bewerkingen.
+
+Voor gezamenlijke installatie van een commando en waarde (herhaling) zijn de sleuven verbonden door "bruggen" met indicatoren.
+
+  *Hieronder wordt een programma getoond dat als voorbeeld een lus gebruikt om een vergelijkbaar codegedeelte te herhalen. Het programma creëert een vierkante bewegingsroute voor de robot:*
+
+![control with chips](../images/manual1a.excalidraw.svg)
+
+Commando's worden eerst in het bovenste deel van de afstandsbediening geplaatst (6 sleuven) en worden van links naar rechts uitgevoerd. Lege sleuven of fouten worden genegeerd (bijvoorbeeld twee commando's in één blok of een waarde zonder commando).
+
+De volgorde van de blokken bepaalt de beweging van de robot.
+
+Druk op "Uitvoeren" om het programma te starten.
+
+Standaard:
+- "Vooruit" — 15 см.
+- "Links/Rechts" — 90°.
+- Lussen (herhalingen) herhalen het commando meerdere keren.
+- "Functie" roept het subprogramma aan uit het onderste deel van de afstandsbediening (5 sleuven).
+- U kunt een subprogramma meerdere keren aanroepen via een lus door een herhalingschip aan "Functie" toe te voegen (voorbeeld hierboven getoond).
+
+### Belangrijke Functies:
+
+- **Onderbreek** de programmaweergave door tijdens het bewegen opnieuw op "Uitvoeren" te drukken.
+- De afstandsbediening onthoudt de laatste **ingestelde waarde** (afstand/hoek) voor het bewegingscommando tot uitschakeling: bijvoorbeeld, als "Vooruit" = "200", worden alle volgende "Vooruit"-commando's met deze waarde uitgevoerd.
+- Waarden na rekenkunde worden ook opgeslagen.
+- Wijzig de "**standaardafstand**" met een servicechip: bijvoorbeeld, voor 12,5 см, plaats de chip "Standaardafstand" met waarde 125. De waarde wordt opgeslagen na uitschakeling.
+- De afstandsbediening en robot **schakelen automatisch uit** na 10 minuten inactiviteit.
+- Als de robot 1–3 minuten niet wordt gebruikt, voert hij kleine bewegingen uit om te signaleren dat hij actief en klaar is.
+- Het **oogknippergeluid** van de robot kan worden in- en uitgeschakeld met een enkele druk op de robotknop.
+- Het **geluid van de afstandsbediening** kan worden in- en uitgeschakeld door de knop "Uitvoeren" 5 seconden ingedrukt te houden.
+- **Na een software-update** kan kalibratie van de robotbeweging nodig zijn.
+- **Resetten van robotsoftware** is mogelijk door de knop 10 seconden ingedrukt te houden.
+- **Koppeling van afstandsbediening en robot** kan nodig zijn na het bijwerken van de apparaatsoftware, wordt ingesteld door de knop "Uitvoeren" op de afstandsbediening 10-15 seconden ingedrukt te houden.
+
+### Robotkalibratie:
+
+- Markeer de exacte richting van de robot op het tafeloppervlak.
+- Met behulp van een willekeurig programma moet u de robot 8 keer laten draaien op de standaardhoek - 90 graden met de klok mee (bijvoorbeeld 8 keer rechts draaien uitvoeren), de robot moet twee volledige omwentelingen van 360 graden maken = 90*8.
+- Evalueer vervolgens de afwijkingshoek van de oorspronkelijke positie van de robot en voer het commando "Kalibratie" uit met de waarde die nodig is voor normalisatie: als de robot stopt vóór de oorspronkelijke markering, voegt u de rekenkundige bewerking "+ hoek" toe (bijvoorbeeld +10), als de robot stopt na de markering, voegt u "- hoek" toe (bijvoorbeeld -5).
+- Kalibratie kan meerdere keren worden uitgevoerd om het beste resultaat te bereiken.
+- Let op! Het resetten van de robotkalibratie wordt uitgevoerd door de bedieningsknop langer dan 10 seconden ingedrukt te houden.
+
+<Accordion icon="rectangle-terminal" title="Kalibratie van de eerste apparaatversie (MVP) met robot van 10 см diameter">
+1. Om de gyroscoop te kalibreren, plaatst u de robot op een horizontaal oppervlak, steekt u de chip "Kalibratie" in de afstandsbediening en drukt u op "Uitvoeren".
+2. Om de bewegingsafstand te kalibreren, meet u het feitelijke pad met het commando "Vooruit", plaatst u "Kalibratie" en de chip met de vereiste waarde, vervolgens "Uitvoeren". U kunt de waarde op een digitale NFC-chip schrijven met behulp van een mobiele telefoon met NFC als tekst in de vorm nXXX (bijvoorbeeld, n095 voor 95 мм). Daarna is de bewegingsafstand van de robot nauwkeurig.*
+</Accordion>
+
+### Programmering van NFC-chips
+
+U kunt **eigen chips wijzigen of maken** - commando's, digitale waarden of rekenkundige bewerkingen met behulp van een telefoon met NFC en een programma voor het lezen-schrijven van tags, bijvoorbeeld "NFC Tools". U kunt een waarde op een lege digitale NFC-tag - chip schrijven met behulp van een mobiele telefoon met NFC als eenvoudige tekst in de vorm van 4 tekens.
+
+## Belangrijk!
+
+> De set **is niet bestemd voor kinderen jonger dan 4 jaar** en bevat kleine onderdelen — **verstikkingsgevaar**! Gebruik **alleen onder toezicht** van volwassenen!
+
+Het apparaat bevat Li-ion-batterijen. **Laad alleen onder toezicht** van volwassenen op met standaard USB 5V en USB-C-kabel.
+
+Opladen van de afstandsbediening en robot (1 uur) is voldoende voor 1–2 lessen; volledige lading (2–3 uur) — voor 3 lessen van 30–45 minuten. Na verloop van tijd kan de batterijcapaciteit afnemen, vervanging door nieuwe 16340 Li-ion-batterijen is mogelijk.
+
+Als de set langere tijd niet wordt gebruikt, laad de batterijen dan **om de 2-3 maanden** op. Bij diepe ontlading kunnen de batterijen defect raken en vervanging vereisen.
+
+**Open het apparaat niet** zelf — neem bij storing of behoefte aan batterijvervanging contact op met de verkoper of gespecialiseerde elektronica-reparatiecentra.
+
+Bewaar en gebruik de set in een droge ruimte bij een temperatuur van +10…+30°C, luchtvochtigheid 45–60%. Vermijd direct zonlicht, vocht en stof.
+
+Vermijd schokken en trillingen. Vervoer en bewaar het apparaat in de originele verpakking bij een temperatuur van +5…+35°C, beschermd tegen mechanische schade en vocht.
+
+p.s.: PrimaSTEM is een praktisch hulpmiddel voor het leren van programmeren, dat creatief denken en logica ontwikkelt.
+Gedetailleerde informatie over functionaliteit is te vinden in de **Leerkrachtengids**.

@@ -55,6 +55,132 @@
       ]
     },
     {
+      "language": "de",
+      "groups": [
+        {
+          "group": "Dokumentation",
+          "icon": "file-doc",
+          "pages": [
+            "de/intro",
+            "de/usermanual",
+            "de/teachersguide",
+            "de/mathdrawings",
+            "de/nfc",
+            "de/cognitive",
+            "de/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "groups": [
+        {
+          "group": "Documentación",
+          "icon": "file-doc",
+          "pages": [
+            "es/intro",
+            "es/usermanual",
+            "es/teachersguide",
+            "es/mathdrawings",
+            "es/nfc",
+            "es/cognitive",
+            "es/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "nl",
+      "groups": [
+        {
+          "group": "Documentatie",
+          "icon": "file-doc",
+          "pages": [
+            "nl/intro",
+            "nl/usermanual",
+            "nl/teachersguide",
+            "nl/mathdrawings",
+            "nl/nfc",
+            "nl/cognitive",
+            "nl/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "it",
+      "groups": [
+        {
+          "group": "Documentazione",
+          "icon": "file-doc",
+          "pages": [
+            "it/intro",
+            "it/usermanual",
+            "it/teachersguide",
+            "it/mathdrawings",
+            "it/nfc",
+            "it/cognitive",
+            "it/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "groups": [
+        {
+          "group": "Dokumentasjon",
+          "icon": "file-doc",
+          "pages": [
+            "no/intro",
+            "no/usermanual",
+            "no/teachersguide",
+            "no/mathdrawings",
+            "no/nfc",
+            "no/cognitive",
+            "no/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "sv",
+      "groups": [
+        {
+          "group": "Dokumentation",
+          "icon": "file-doc",
+          "pages": [
+            "sv/intro",
+            "sv/usermanual",
+            "sv/teachersguide",
+            "sv/mathdrawings",
+            "sv/nfc",
+            "sv/cognitive",
+            "sv/contacts"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "jp",
+      "groups": [
+        {
+          "group": "日本語のドキュメント",
+          "icon": "file-doc",
+          "pages": [
+            "jp/intro",
+            "jp/usermanual",
+            "jp/teachersguide",
+            "jp/mathdrawings",
+            "jp/nfc",
+            "jp/cognitive",
+            "jp/contacts"
+          ]
+        }
+      ]
+    },
+    {
       "language": "ru",
       "groups": [
         {
@@ -90,6 +216,10 @@
       {
         "label": "PrimaSTEM.com",
         "href": "https://primastem.com"
+      },
+      {
+        "label": "primastem@gmail.com",
+        "href": "mailto:primastem@gmail.com"
       }
     ]
   },

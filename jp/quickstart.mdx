@@ -1,0 +1,94 @@
+---
+title: 'クイックスタート'
+description: '5 分以内に素晴らしいドキュメントの作成を開始'
+---
+
+## 開発セットアップ
+
+ドキュメントをローカルで更新し、公開する方法を学びます。
+
+### 編集とプレビュー
+
+<AccordionGroup>
+  <Accordion icon="github" title="ドキュメントをローカルにクローン">
+    オンボーディングプロセス中に、ドキュメントの内容を含むリポジトリを
+    Github 上に作成しました。このリポジトリは
+    [ダッシュボード](https://dashboard.mintlify.com) で確認できます。リポジトリを
+    ローカルにクローンするには、ターミナルで以下の
+    [手順](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    に従ってください。
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="変更のプレビュー">
+    プレビューを使用すると、変更が意図した通りに表示されることを確認できます。これらの変更を
+    ローカルで表示するためのコマンドラインインターフェースを作成しました。
+    1. [Mintlify CLI](https://www.npmjs.com/package/mintlify) をインストールして、
+    ローカルでドキュメントの変更をプレビューします：``` npm i -g mintlify ```
+    2. ドキュメントのルート（`docs.json` がある場所）で以下のコマンドを実行します：
+    ``` mintlify dev ```
+    <Note>
+      現在レガシーな ```mint.json``` 設定ファイルを使用している場合は、Mintlify CLI を更新してください：
+
+
+      ```npm i -g mintlify@latest```
+      その後、ドキュメントリポジトリで新しいアップグレードコマンドを実行します：
+
+      ```mintlify upgrade```
+      これで新しい ```docs.json``` 設定ファイルを使用する必要があります。リポジトリから ```mint.json``` ファイルを削除してください。
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+### 変更のデプロイ
+
+<AccordionGroup>
+
+<Accordion icon="message-bot" title="Github アプリをインストール">
+  Github アプリは変更を自動的にドキュメントサイトにデプロイするため、
+    デプロイを自分で管理する必要はありません。インストールリンクは
+    [ダッシュボード](https://dashboard.mintlify.com) にあります。bot が正常にインストールされると、
+    リポジトリのコミットハッシュの横にチェックマークが表示されます。
+</Accordion>
+<Accordion icon="rocket" title="変更をプッシュ">
+  変更を [Git にコミットしてプッシュ](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
+  して、ドキュメントサイトを更新します。変更をプッシュしたが、Github アプリが
+    変更を正常にデプロイしていない場合は、[ダッシュボード](https://dashboard.mintlify.com) から
+    手動でドキュメントを更新することもできます。
+</Accordion>
+
+</AccordionGroup>
+
+## ドキュメントの更新
+
+MDX 構文と React コンポーネントを使用して、ファイルに直接コンテンツを追加します。当社のコンポーネントを使用するか、独自に作成することができます。
+
+<CardGroup>
+
+<Card title="MDX でコンテンツを追加" icon="file" href="/essentials/markdown">
+  MDX 構文を使用してドキュメントにコンテンツを追加します。
+</Card>
+
+<Card
+  title="コードブロックの追加"
+  icon="square-code"
+  href="/essentials/code"
+>
+  シンタックスハイライトを使用して、ドキュメントにコードを直接追加します。
+</Card>
+
+<Card
+  title="画像の追加"
+  icon="image"
+  href="/essentials/images"
+>
+  ドキュメントをより魅力的にするために画像を追加します。
+</Card>
+
+<Card
+  title="カスタムコンポーネントの追加"
+  icon="puzzle-piece"
+  href="/essentials/reusable-snippets"
+>
+  ドキュメントをより再利用可能にするためにテンプレートを追加します。
+</Card>
+
+</CardGroup>

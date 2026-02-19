@@ -1,0 +1,96 @@
+---
+title: 'Snelstart'
+description: 'Begin met het maken van geweldige documentatie in minder dan 5 minuten'
+---
+
+## Ontwikkeling instellen
+
+Leer hoe u uw documentatie lokaal kunt bijwerken en openbaar kunt publiceren.
+
+### Bewerken en voorbeeld
+
+<AccordionGroup>
+  <Accordion icon="github" title="Kloon uw documentatie lokaal">
+    Tijdens het onboarding-proces hebben we een repository op uw Github gemaakt met
+    de inhoud van uw documentatie. U vindt deze repository op
+    uw [dashboard](https://dashboard.mintlify.com). Om de repository
+    lokaal te klonen, volgt u deze
+    [instructies](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    in uw terminal.
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="Wijzigingen voorbeeld">
+    Voorbeeld helpt ervoor te zorgen dat uw wijzigingen eruitzien zoals bedoeld. We hebben
+    een command-line interface gemaakt om deze wijzigingen lokaal weer te geven.
+    1. Installeer
+    [Mintlify CLI](https://www.npmjs.com/package/mintlify) om lokaal een voorbeeld van
+    documentatiewijzigingen weer te geven met dit commando: ``` npm i -g mintlify ```
+    2. Voer het volgende commando uit in de root van uw documentatie (waar
+    `docs.json` zich bevindt): ``` mintlify dev ```
+    <Note>
+      Als u momenteel een verouderd ```mint.json``` configuratiebestand gebruikt, werk dan Mintlify CLI bij:
+
+
+      ```npm i -g mintlify@latest```
+      En voer het nieuwe upgrade-commando uit in uw documentatie-repository:
+
+      ```mintlify upgrade```
+      U moet nu het nieuwe ```docs.json``` configuratiebestand gebruiken. Verwijder gerust het ```mint.json``` bestand uit uw repository.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+### Uw wijzigingen implementeren
+
+<AccordionGroup>
+
+<Accordion icon="message-bot" title="Installeer onze Github-app">
+  Onze Github-app implementeert uw wijzigingen automatisch naar de documentatiesite,
+  dus u hoeft implementaties niet zelf te beheren. De installatielink bevindt zich op
+  uw [dashboard](https://dashboard.mintlify.com). Zodra de bot succesvol is geïnstalleerd,
+  zou er een vinkje moeten verschijnen naast de repository commit-hash.
+</Accordion>
+<Accordion icon="rocket" title="Push uw wijzigingen">
+  [Commit en push uw wijzigingen naar
+  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
+  om uw documentatiesite bij te werken. Als u wijzigingen heeft gepusht en niet ziet
+  dat de Github-app uw wijzigingen succesvol heeft geïmplementeerd, kunt u ook
+  uw documentatie handmatig bijwerken via ons [dashboard](https://dashboard.mintlify.com).
+</Accordion>
+
+</AccordionGroup>
+
+## Uw documentatie bijwerken
+
+Voeg inhoud rechtstreeks toe aan uw bestanden met MDX-syntax en React-componenten. U kunt elk van onze componenten gebruiken of zelfs uw eigen componenten maken.
+
+<CardGroup>
+
+<Card title="Inhoud toevoegen met MDX" icon="file" href="/essentials/markdown">
+  Voeg inhoud toe aan uw documentatie met MDX-syntax.
+</Card>
+
+<Card
+  title="Codeblokken toevoegen"
+  icon="square-code"
+  href="/essentials/code"
+>
+  Voeg code rechtstreeks toe aan uw documentatie met syntaxhighlighting.
+</Card>
+
+<Card
+  title="Afbeeldingen toevoegen"
+  icon="image"
+  href="/essentials/images"
+>
+  Voeg afbeeldingen toe aan uw documentatie om deze aantrekkelijker te maken.
+</Card>
+
+<Card
+  title="Aangepaste componenten toevoegen"
+  icon="puzzle-piece"
+  href="/essentials/reusable-snippets"
+>
+  Voeg sjablonen toe aan uw documentatie om deze herbruikbaarder te maken.
+</Card>
+
+</CardGroup>

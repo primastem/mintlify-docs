@@ -1,0 +1,170 @@
+---
+title: "Manuale Utente"
+description: '**PrimaSTEM** — un kit educativo per insegnare ai bambini dai 4 anni in su le basi della logica, della programmazione e della matematica.'
+icon: 'book-open'
+---
+
+## Specifiche Tecniche e Contenuto della Confezione
+
+![primastem](../images/hello.png)
+
+- Robot giocattolo
+- Telecomando per robot
+- Gettoni di comandi, valori e operazioni aritmetiche per creare programmi
+
+> Il contenuto e l'aspetto possono variare leggermente. Si prega di verificare al momento dell'acquisto.
+
+### Robot Giocattolo
+
+Dimensioni: D=125 мм, H=44 мм.
+
+![robot](../images/robot.png)
+
+Il robot è dotato di un pulsante di accensione, LED, un altoparlante, un pulsante funzione e una porta USB-C per la ricarica della batteria.
+
+Un pennarello con diametro fino a 10 мм può essere installato al centro del robot per disegnare forme semplici durante il movimento.
+
+L'aspetto può variare leggermente a seconda della configurazione, ma le funzionalità principali rimangono invariate.
+
+### Telecomando
+
+Dimensioni: L=317 мм, W=217 мм, H=62 мм.
+
+![control](../images/control.png)
+
+Il telecomando contiene 11 slot doppi per inserire gettoni di comandi e valori: 6 per il programma principale (parte superiore), 5 per il sottoprogramma (parte inferiore).
+Il telecomando ha due pulsanti: a sinistra — accensione, a destra — "Esegui / Arresta" per avviare e arrestare il programma.
+
+Dopo aver posizionato i gettoni di comandi e valori negli slot, premere "Esegui": il robot eseguirà il programma. I comandi attivi sono illuminati da LED tra gli slot.
+
+Se un gettone è inserito in modo errato, il telecomando lo segnala con un LED rosso, ma il programma continua (ad esempio, quando un gettone valore è inserito senza un comando).
+
+Il telecomando è dotato di una porta USB-C per la ricarica e di un altoparlante per la riproduzione del suono.
+
+### Gettoni - Istruzioni
+
+Dimensioni: LxW=33 мм.
+
+Il kit include gettoni per creare programmi.
+Ogni gettone è un comando con un significato chiaro e un'istruzione. La sequenza dei blocchi determina il comportamento del robot.
+
+![coding chips](../images/tokens.png)
+
+I gettoni sono suddivisi in **comandi**, **valori** e **aritmetici**.
+
+#### Gettoni di Comandi
+
+Blocchi base per comporre il programma di controllo:
+
+- **Avanti** — movimento in avanti (15 см per impostazione predefinita)
+- **Destra** — rotazione di 90° in senso orario
+- **Sinistra** — rotazione di 90° in senso antiorario
+- **Indietro** — movimento all'indietro (15 см per impostazione predefinita)
+- **Funzione** — esecuzione del sottoprogramma dalla parte inferiore del telecomando
+- **Movimento Casuale** — una delle azioni per spostare il robot: Avanti, Sinistra, Destra o Indietro (su "passo predefinito")
+- **Gettoni di Ripetizione (Cicli)** - Gettoni con numeri da 2 a 6 (in base al numero di punti) e pittogrammi di ripetizione con il numero all'interno. Il gettone con un dado significa un numero casuale di ripetizioni da 1 a 6.
+
+> Vengono utilizzati anche gettoni di valori numerici e aritmetica per espandere la programmazione: ad esempio, ripetere un comando o modificare l'angolo/distanza di movimento.
+
+#### Gettoni di Valori
+
+Gettoni di angoli e distanze: 30°, 36°, 45°, nonché multipli (60°, 72°, ecc.).
+Angoli in gradi, distanze in millimetri.
+Per impostazione predefinita — 90° e 100 мм (15 см).
+
+#### Gettoni di Operazioni Aritmetiche
+
+Modificano i parametri dei comandi di movimento:
+
+- Addizione (+)
+- Sottrazione (−)
+- Moltiplicazione (*)
+- Divisione (/)
+- Radice Quadrata (√)
+- Potenza (^)
+
+## Connessione tra Telecomando e Robot
+
+Si consiglia di accendere prima il robot, quindi il telecomando.
+
+Posizionare il robot su una superficie piana prima della connessione: dopo l'accoppiamento, i LED diventano bianchi. Se non c'è connessione, lampeggiano in rosso.
+
+Verificare la connessione: inserire il gettone "Avanti" e premere "Esegui".
+
+Se non c'è connessione, riavviare entrambi i dispositivi o ricaricarli. È possibile una perdita temporanea di connessione vicino a fonti di forte campo elettromagnetico (telefono cellulare, punto WiFi).
+
+> **Dopo l'aggiornamento del software dei dispositivi** potrebbe essere necessario l'accoppiamento: accendere il robot, quindi il telecomando, premere e tenere premuto il pulsante "Esegui" sul telecomando per 10–15 secondi, fino all'emissione di un segnale acustico.
+
+## Come Funziona?
+
+Per programmare il movimento, inserire nei slot del telecomando i gettoni di comandi (ad esempio, "Avanti", "Sinistra", "Funzione" ecc.).
+È possibile impostare valori dei comandi e quantità di ripetizioni, nonché valori di angoli, distanze e operazioni aritmetiche.
+
+Per l'installazione congiunta di un comando e di un valore (ripetizione), gli slot sono uniti da "ponti" con indicatori.
+
+  *Di seguito è mostrato un programma che utilizza come esempio un ciclo per ripetere una sezione di codice simile. Il programma crea un percorso di movimento del robot a quadrato:*
+
+![control with chips](../images/manual1a.excalidraw.svg)
+
+I comandi vengono inseriti per primi nella parte superiore del telecomando (6 slot) e vengono eseguiti da sinistra a destra. Gli slot vuoti o gli errori vengono ignorati (ad esempio, due comandi in un blocco o un valore senza comando).
+
+La sequenza dei blocchi determina il movimento del robot.
+
+Premere "Esegui" per avviare il programma.
+
+Per impostazione predefinita:
+- "Avanti" — 15 см.
+- "Sinistra/Destra" — 90°.
+- I cicli (ripetizioni) ripetono il comando più volte.
+- "Funzione" chiama il sottoprogramma dalla parte inferiore del telecomando (5 slot).
+- È possibile chiamare un sottoprogramma più volte tramite un ciclo aggiungendo un gettone di ripetizione a "Funzione" (esempio mostrato sopra).
+
+### Funzioni Importanti:
+
+- **Interrompere** l'esecuzione del programma premendo "Esegui" di nuovo durante il movimento.
+- Il telecomando memorizza l'ultimo **valore impostato** (distanza/angolo) per il comando di movimento fino allo spegnimento: ad esempio, se "Avanti" = "200", tutti i comandi "Avanti" successivi vengono eseguiti con questo valore.
+- I valori dopo le operazioni aritmetiche vengono anche salvati.
+- Modificare la "**distanza predefinita**" è possibile con un gettone di servizio: ad esempio, per 12,5 см, inserire il gettone "Distanza predefinita" con valore 125. Il valore viene salvato dopo lo spegnimento.
+- Il telecomando e il robot **si spengono automaticamente** dopo 10 minuti di inattività.
+- Se il robot non viene utilizzato per 1–3 minuti, esegue piccoli movimenti per segnalare che è attivo e pronto.
+- Il **suono di battito di ciglia** del robot può essere attivato e disattivato con una singola pressione del pulsante sul robot.
+- Il **suono del telecomando** può essere attivato e disattivato tenendo premuto il pulsante "Esegui" per 5 secondi.
+- **Dopo un aggiornamento software** potrebbe essere necessaria la calibrazione del movimento del robot.
+- **Reset del software del robot** è possibile tenendo premuto il pulsante per 10 secondi.
+- **Accoppiamento del telecomando e del robot** può essere necessario dopo l'aggiornamento del software dei dispositivi, viene stabilito tenendo premuto il pulsante "Esegui" sul telecomando per 10-15 secondi.
+
+### Calibrazione del Robot:
+
+- Segnare sulla superficie del tavolo l'orientamento esatto del robot.
+- Con qualsiasi programma è necessario ottenere 8 rotazioni del robot sull'angolo predefinito - 90 gradi in senso orario (ad esempio eseguire una rotazione a destra 8 volte), il robot deve compiere due giri completi di 360 gradi = 90*8.
+- Quindi valutare l'angolo di deviazione dalla posizione iniziale del robot ed eseguire il comando "Calibrazione" con il valore necessario per la normalizzazione: se il robot si ferma prima del segno iniziale, aggiungere l'operazione aritmetica "+ angolo" (ad esempio +10), se il robot si ferma dopo il segno, aggiungere "- angolo" (ad esempio -5).
+- La calibrazione può essere eseguita più volte per ottenere il miglior risultato.
+- Attenzione! Il reset della calibrazione del robot viene eseguito premendo il pulsante di controllo per più di 10 secondi.
+
+<Accordion icon="rectangle-terminal" title="Calibrazione della prima versione del dispositivo (MVP) con robot di 10 см di diametro">
+1. Per calibrare il giroscopio, posizionare il robot su una superficie orizzontale, inserire il gettone "Calibrazione" nel telecomando e premere "Esegui".
+2. Per calibrare la distanza di movimento, misurare il percorso effettivo con il comando "Avanti", inserire "Calibrazione" e il gettone con il valore necessario, quindi "Esegui". È possibile scrivere il valore su qualsiasi gettone NFC digitale utilizzando un telefono cellulare con NFC come testo nella forma nXXX (ad esempio, n095 per 95 мм). Dopo questo, la distanza di movimento del robot sarà precisa.*
+</Accordion>
+
+### Programmazione dei Gettoni NFC
+
+È possibile modificare o **creare i propri gettoni** - comandi, valori digitali o operazioni aritmetiche utilizzando un telefono con NFC e un programma di lettura-scrittura di tag, ad esempio "NFC Tools". È possibile scrivere un valore su un tag NFC digitale vuoto - gettone utilizzando un telefono cellulare con NFC come semplice testo nella forma di 4 caratteri.
+
+## Importante!
+
+> Il kit **non è destinato a bambini di età inferiore ai 4 anni** e contiene piccole parti — **rischio di soffocamento**! Utilizzare **solo sotto la supervisione** di adulti!
+
+Il dispositivo contiene batterie Li-ion. **Ricaricare solo sotto la supervisione** di adulti utilizzando USB 5V standard e cavo USB-C.
+
+La ricarica del telecomando e del robot (1 ora) è sufficiente per 1–2 lezioni; una carica completa (2–3 ore) — per 3 lezioni da 30–45 minuti. Nel tempo, la capacità delle batterie può diminuire, è possibile la sostituzione con nuove batterie 16340 Li-ion.
+
+Se il kit non viene utilizzato per lungo tempo, ricaricare le batterie **ogni 2-3 mesi**. In caso di scaricamento profondo, le batterie potrebbero danneggiarsi e richiedere la sostituzione.
+
+**Non aprire il dispositivo** autonomamente — in caso di guasto o necessità di sostituire le batterie, rivolgersi al venditore o a centri specializzati per la riparazione di elettronica.
+
+Conservare e utilizzare il kit in un ambiente asciutto a una temperatura di +10…+30°C, umidità 45–60%. Evitare la luce solare diretta, l'umidità e la polvere.
+
+Evitare urti e vibrazioni. Trasportare e conservare il dispositivo nella confezione originale a una temperatura di +5…+35°C, proteggendo da danni meccanici e umidità.
+
+p.s.: PrimaSTEM è uno strumento pratico per imparare la programmazione, sviluppando il pensiero creativo e la logica.
+Informazioni dettagliate sulla funzionalità sono contenute nella **Guida per l'Insegnante**.

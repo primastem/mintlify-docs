@@ -1,0 +1,318 @@
+---
+title: "Lärarhandledning"
+description: "Denna handledning beskriver systemfunktionaliteten som behövs för att skapa lektioner och tillämpa dem i utbildningsprocessen."
+icon: "book"
+---
+
+PrimaSTEM är ett pedagogiskt verktyg för barn i åldrarna 4-12 år som hjälper dem att lära sig programmering utan datorer, surfplattor eller telefoner. Det utvecklar logik, programmeringsfärdigheter och matematik.
+
+Lektioner med PrimaSTEM gör programmering enkel och visuell för barn. Även små barn finner processen begriplig och taktil - grunderna i programmering, logik och matematik behärskas i lekform.
+
+Att leka med PrimaSTEM främjar utvecklingen av nyckelfärdigheter: logiskt tänkande, algoritmik, programmering, matematik, geometri, samt kreativ och socio-emotionell utveckling. PrimaSTEM-satsen är ett förberedande steg innan man bekantar sig med blockbaserade programmeringsspråk som [Scratch](https://en.wikipedia.org/wiki/Scratch_(programming_language)) eller [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language)).
+
+## Lär känna utbildningssatsen
+
+### Var kan PrimaSTEM användas?
+
+Användning är effektiv i följande utbildningsprogram:
+
+- Förskoleutbildningscentrum
+- Förskolor med Montessori-metodik
+- Grundskola
+- Hemundervisning
+- Specialiserade utvecklingscentrum
+- Fritidsgrupper
+- Nybörjarprogrammeringsklubbar
+- Barns utbildningsläger
+
+### Vad behöver du veta för att komma igång?
+
+Innan du arbetar med satsen rekommenderar vi lärare och föräldrar att läsa igenom [användarmanualen](usermanual) och denna handledning. Inga särskilda programmeringskunskaper krävs - materialet ger nödvändiga grunder för att börja undervisningen.
+
+## Forskning och värdet av satsen
+
+PrimaSTEM är inspirerat av programmeringsspråket [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language)), skapat av [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), och Montessori-pedagogik. LOGO och sköldpaddsroboten gjorde programmering visuell och tillgänglig för barn.
+
+![PrimaSTEM](../images/primastem-map1.png)
+
+PrimaSTEM-kommandobrickorna implementerar detta tillvägagångssätt. Lärandet blir intuitivt genom enkel taktil kontroll, utan skärmar eller text.
+
+Genom att observera roboten lär sig barn att förstå varje kommando och behärska algoritmer i praktiken.
+
+Roboten har en viktig egenskap: den har en riktning, vilket gör att barnet kan identifiera sig med den och lättare förstå den grundläggande logiken i hur program fungerar.
+
+Alla kommandon är enkla och tydliga: de anger i vilken exakt riktning roboten ska röra sig. Att lära roboten att "agera" eller "tänka" får barn att reflektera över sina egna handlingar och tankar, vilket gör programmeringsinlärningsprocessen mer effektiv.
+
+PrimaSTEM-brickor är en visuell och förenklad representation av programmeringsspråk. I början av lärandet finns inga texter eller siffror - bara grundläggande kommandon.
+
+### Varför trä?
+
+🌱 Kontrollenheten och roboten är tillverkade av trä. Praktiken har visat att barn föredrar att leka med leksaker i trä - de är säkra, hållbara och skapar en individuell användningshistoria.
+
+## Programmeringskoncept med PrimaSTEM
+
+Fysiska PrimaSTEM-brickor är analoga med instruktioner i riktiga programmeringsspråk och demonstrerar viktiga koncept.
+
+### Algoritmer
+
+**Algoritmer** är en sekvens av precisa kommandon (brickor) som utgör ett program.
+
+### Kö
+
+Kommandon på PrimaSTEM-kontrollenheten utförs strikt från vänster till höger, vilket visuellt demonstrerar exekveringskön.
+
+### Felkorrigering (debugging)
+
+Ett fel är lätt att åtgärda: byt helt enkelt ut brickan. Detta tillvägagångssätt utvecklar färdigheten att självständigt debugga program.
+
+### Funktion
+
+En funktion (underrutin) är en uppsättning kommandon i den nedre delen av kontrollenheten, som anropas från huvudprogrammet med "**Funktion**"-brickan.
+
+## Tillämpning i andra ämnen
+
+PrimaSTEM hjälper till att behärska andra färdigheter:
+
+- **Kommunikation**: Grupp lek främjar samarbete.
+- **Motorik**: Arbeta med brickor förbättrar koordination.
+- **Sociala färdigheter**: Barn lär sig självförtroende och samarbetsproblemlösning.
+- **Matematik**: Grundläggande matematiska begrepp behärskas.
+- **Logik**: Barn lär sig bygga sekvenser och förutsäga resultat.
+
+> Genom att bygga en kedja av brickor behärskar barnet programmering taktilt, visuellt och mentalt. Efter att ha tryckt på "Kör"-knappen rör sig roboten och resultatet jämförs med barnets förväntan. Denna omfattande upplevelse påskyndar lärandet.
+
+## Lär känna roboten och kontrollenheten
+
+### Roboten
+
+Berätta för barn att roboten är deras vän som de kan programmera. Förklara: den har inga egna tankar och utför bara deras instruktioner - som en hushållsapparat som måste slås på.
+
+![robot](../images/robot.excalidraw.svg)
+
+### Kontrollenheten
+
+Förklara att kontrollenheten skickar kommandon till roboten. Visa hur man installerar kommandobrickor och programmerar roboten.
+
+![control](../images/control.excalidraw.svg)
+
+> Huvudprogrammet byggs i den övre raden av kontrollenheten (6 celler). Den nedre raden (5 celler) är avsedd för funktionsunderrutinen och används med "**Funktion**"-kommandot.
+
+### Kommandobrickor
+
+Brickor är kommandon för roboten som sätts in i kontrollenheten. Efter att ha tryckt på "Kör" utför roboten sekvensen. Varje bricka är ett separat kommando som lär barn beräkningstänkande och programdesign. Det är viktigt att barn förstår vad roboten gör när varje kommando aktiveras. Detta lär dem programdesign och förutsägelse av robotåtgärder. Förklara för barn: brickor får inte tappas eller skadas, utan dem kan roboten inte röra sig.
+
+## 1 - Första programmet
+
+### Orsak och verkan
+
+Huvudmålet är att visa barn sambandet mellan kommando och åtgärd. Låt barnet sätta in "Framåt"-brickan i den första cellen på kontrollenheten och trycka på "Kör". Barnet ska se överensstämmelsen mellan brickan och åtgärden.
+
+![forvard](../images/guide1a.excalidraw.svg)
+
+### Entydiga instruktioner
+
+Upprepa stegen med varje riktning (**framåt**, sväng **vänster**, sväng **höger**) tills barnet lär sig känna igen varje bricka.
+
+### Första uppgiften
+
+Bred ut spelbrädet eller skapa ett 10×10 cm rutnät med tejp eller en markör. Placera roboten på startcellen. Be barnet skapa ett program för att flytta en cell framåt. Om fel bricka valdes, returnera roboten och föreslå att resonera om ett nytt alternativ.
+
+## 2 - Program och debugging
+
+### Händelsekö
+
+Placera ett mål två celler framför roboten.
+
+![task-forvard*2](../images/guide2d.excalidraw.svg)
+
+Låt barnet skapa ett program med två brickor för att nå målet.
+
+![forvard*2](../images/guide2a.excalidraw.svg)
+
+### Sekvens av tre brickor
+
+Den här gången är målet en cell framåt och en cell till höger.
+
+![task-forvard-right-forvard](../images/guide2e.excalidraw.svg)
+
+Låt barnet välja rätt kommandosekvens själv.
+
+![forvard-right-forvard](../images/guide2b.excalidraw.svg)
+
+Oroa dig inte om fel bricka valdes. Returnera helt enkelt roboten till sin ursprungliga position och be barnet resonera om sitt val och prova nya alternativ.
+
+### Debugging - hitta felet
+
+Placera ankomstpunkten en ruta framför roboten och en ruta till vänster om den.
+
+![task-forvard-left-forvard](../images/guide2f.excalidraw.svg)
+
+Skapa den här gången ett program för att lösa problemet genom att avsiktligt infoga en felaktig sväng i sekvensen.
+
+![forvard-right-forvard](../images/guide2b.excalidraw.svg)
+
+Be barnet förutsäga det felaktiga kommandot i programmet och självständigt förutsäga det felaktiga resultatet, och låt dem sedan trycka på "**Kör**"-knappen för att bekräfta sin antagande.
+
+Efter att barnet har bekräftat att den presenterade sekvensen var felaktig, antingen genom resonemang eller verifiering, låt dem ändra det felaktiga kommandot till det korrekta och därmed debugga programmet.
+
+![forvard-left-forvard](../images/guide2с.excalidraw.svg)
+
+## 3 - Program med funktion
+
+### "Funktion"-kommando
+
+När de grundläggande kommandona behärskas, introducera **Funktion**-kommandobrickan. Detta är en upprepningsbar uppsättning kommandon som kan anropas från huvudprogrammet.
+
+> För att förklara hur detta fungerar kan du använda tornmetaforen (under funktionsbrickan är andra kommandon staplade på varandra), vilket förklarar att fler instruktioner kan placeras inuti en enda bricka.
+
+Visa ett exempel: placera först två "Framåt"-brickor i de övre cellerna och kör programmet - roboten kör två celler.
+
+![forvard*2](../images/guide3a.excalidraw.svg)
+
+Placera nu samma två "Framåt"-brickor i funktionen (nedre raden) och använd "Funktion" i huvudprogrammet. Resultatet blir detsamma, men nu är en del av programmet dold i en underrutin.
+
+![function-forvard*2](../images/guide3b.excalidraw.svg)
+
+Skapa därefter sekvensen: **Framåt - Framåt - Höger - Framåt - Framåt**.
+
+![forvard2-right-forvard2](../images/guide3c.excalidraw.svg)
+
+Be barnen hitta de upprepande delarna och "dölja" dem i funktionen. Den slutliga sekvensen: i huvuddelen - **Funktion - Höger - Funktion**, nedtill - **Framåt - Framåt**.
+
+![function-right-function](../images/guide3d.excalidraw.svg)
+
+### Lösa uppgifter med funktion
+
+Ge barnet 3 "**Framåt**"-brickor och 2 "**Funktion**"-brickor.
+
+![chip-forwards-functions](../images/guide3e.excalidraw.svg)
+
+Uppgiften - kör framåt 5 celler.
+
+![goal-5step](../images/guide3f.excalidraw.svg)
+
+Låt barnet förstå att det behöver använda funktionen för upprepad åtgärd för att lösa denna uppgift.
+
+Om sekvensen är felaktig, returnera helt enkelt roboten till sin ursprungliga position och be barnet resonera om den korrekta lösningen på uppgiften och prova nya alternativ.
+
+![function-task](../images/guide3g.excalidraw.svg)
+
+## 4 - Slumpmässighet
+
+### "Slumpmässig riktning"-kommando
+
+För att introducera begreppet slumpmässighet, ta 4 riktningsbrickor: "**Framåt**", "**Vänster**", "**Höger**" och "**Bakåt**", placera dem i en ogenomskinlig låda eller påse, blanda dem och be barnen dra 1 bricka utan att titta och visa den för gruppen, sedan returnera den. Förklara för barnen vad slumpmässighet från fyra tillstånd är med detta exempel.
+
+Visa sedan barnen "**Slumpmässig rörelse**"-kommandobrickan.
+
+Förklara att denna bricka gör nästan samma sak som de gjorde tidigare när de drog slumpmässiga brickor från påsen: den väljer slumpmässigt en riktning som roboten ska köra och flyttar den sedan 1 logiskt steg - en cell. Det vill säga att roboten kan flytta sig 1 cell framåt, höger, vänster eller bakåt.
+
+Placera "**Slumpmässig rörelse**"-brickan i den övre cellen och kör programmet flera gånger - roboten rör sig olika varje gång.
+
+![rnd-move](../images/guide4a.excalidraw.svg)
+
+Lek med barnen: låt dem gissa vart roboten ska köra innan du kör kommandot.
+
+Betona att detta är **slumpmässighet** och du kan inte alltid gissa riktningen korrekt.
+
+Försök göra ett litet spel med "**Slumpmässig rörelse**"-brickan tillsammans med barnen.
+
+## 5 - Loopar (kommandoupprepningar)
+
+### Lär känna numeriska loopar
+
+Visa barnen värdebrickorna, fråga om de känner till siffror, om de har sett en tärning för brädspel, om de har spelat sådana spel.
+
+![repeat-chips](../images/guide5a.excalidraw.svg)
+
+Placera två "Framåt"-brickor i de övre cellerna och kör - roboten kör två celler.
+
+![forvard*2](../images/guide5b.excalidraw.svg)
+
+Låt nu en "Framåt" vara kvar och placera "loop 2"-brickan under den. Resultatet blir detsamma: åtgärden upprepas två gånger.
+
+![forvard-repeat2](../images/guide5c.excalidraw.svg)
+
+Installera 4 "**Framåt**"-kommandon, titta på resultatet, och be sedan barnen använda värdebrickor - **loopar** - för att upprepa robotens rörelse i 4 celler.
+
+Både enkla uppgiftslösningar med installation av "**Framåt**"-brickan och loopvärde 4 är möjliga, samt andra alternativ: till exempel "**Framåt**" med loopnummer 3 och ett annat "**Framåt**"-kommando.
+
+![repeat-task](../images/guide5d.excalidraw.svg)
+
+### Funktionsanropsloop
+
+Försök med barnen att tillämpa en loop med värden på "Funktion"-kommandot: till exempel få roboten att gå i sicksack med hjälp av "Funktion"-kommandot med ett loopvärde på 5 och funktionssekvensen i den nedre delen av kontrollenheten med kommandona "**Framåt**", "**Höger**", "**Framåt**", "**Vänster**".
+
+Skapa först med funktionen ett program för "trappsteg"-rörelse - "framåt", "höger", "framåt", "vänster" och kör det.
+
+Lägg sedan till en loop med nummer 5 till funktionen, och upprepar därmed funktionen flera gånger, roboten rör sig i trappsteg åt höger - uppåt.
+
+![step-task](../images/guide5e.excalidraw.svg)
+
+Roboten kör i trappsteg diagonalt åt höger och uppåt och gör 5 trappsteg på vägen.
+
+![step-task-result](../images/guide5f.excalidraw.svg)
+
+## 6 - Slumpmässiga tal
+
+### Begreppet slumpmässigt tal
+
+Bland brickorna finns "Slumpmässigt loopnummer" (med en tärningsbild). Den väljer ett slumpmässigt värde från 1 till 6. Lek en lek med att dra loopbrickor från en påse.
+
+![rnd-repeat-chip](../images/guide6a.excalidraw.svg)
+
+För att introducera begreppet slumpmässigt tal, ta 4 loopbrickor: "**2**", "**3**", "**4**" och "**5**", placera dem i en ogenomskinlig låda eller påse, blanda dem och be barnen dra 1 bricka utan att titta och visa den, nämna värdena, sedan returnera den. Lek en lek: vem drar det högsta värdet. Förklara för barnen vad slumpmässighet från fyra tillstånd är med detta exempel.
+
+Visa sedan barnen "**Slumpmässigt loopnummer**"-värdebrickan. Förklara att denna bricka gör nästan samma sak som de gjorde tidigare, genom att dra slumpmässiga värdebrickor från påsen: den väljer slumpmässigt 1 av 6 tal (från 1 till 6), som en tärning, för att överföra till roboten och upprepa åtgärder.
+
+Placera "**Framåt**"-brickan i den övre cellen på kontrollenheten och "**Slumpmässigt loopnummer**"-brickan under den. Be barnen trycka på "**Kör**"-knappen. Returnera roboten till sin ursprungliga plats. Upprepa denna uppgift flera gånger.
+
+![rnd-forvard](../images/guide6b.excalidraw.svg)
+
+Lek: vars robot kör längst.
+
+Gör barnen uppmärksamma på att roboten rör sig ett slumpmässigt antal celler: från 1 till 6. Betona att detta är slumpmässighet och du kan inte i förväg veta hur långt roboten kör.
+
+## 7 - Tal: avstånd och vinklar
+
+### Lär känna tal
+
+Utan att installera numeriska värden för kommandon (ovanför eller under kommandot i dubbelcellen) använder roboten standard rörelseparametrar: utan parametrar rör sig roboten 15 cm framåt och svänger 90°. Dessa värden kan ändras med värdebrickor.
+
+Exempel: Lägg till värdet **200** till "**Framåt**"-kommandot och se hur långt roboten kör. Lägg till värdet **180** till "**sväng**"-kommandot och utvärdera ändringarna.
+
+![example1](../images/example1.excalidraw.svg)
+
+> **Viktigt:** Kontrollenheten sparar det senaste värdet som angivits för rörelse- och svängkommandon. Om ett kommando används utan ett nytt värde gäller det senaste sparade värdet tills kontrollenheten stängs av. Att ange ett nytt värde ändrar standardvärdet. Standardvärden (150 mm = 15 cm och 90°) kan återställas genom att ange dem explicit eller genom att starta om kontrollenheten.
+
+Att ändra parametrar möjliggör mer komplexa banor och rörelsescenarier. Se exempel på [sidan för matematiska ritningar](mathdrawings).
+
+## 8 – Aritmetik
+
+### Aritmetiska operationer
+
+Aritmetiska operationer med tal möjliggör dynamisk ändring av värden i programmet för rörelsekommandon (Framåt, Bakåt, Vänster, Höger), vilket gör robotkontrollen mer flexibel.
+
+När en aritmetisk operation läggs till ändrar kontrollenheten det sparade talet för rörelsekommandot och skickar det nya värdet till roboten.
+
+Exempel:
+
+![example2](../images/example2.excalidraw.svg)
+
+"Framåt 200" — roboten rör sig 20 cm, "Framåt +100" — ytterligare 30 cm. Totalt avstånd: 50 cm.
+
+Att använda sådana operationer i en loop möjliggör progressioner.
+
+> Om resultatet av en aritmetisk operation blir negativt utför roboten den motsatta åtgärden: istället för att röra sig framåt rör den sig bakåt; istället för att svänga vänster svänger den höger.
+
+Tillgängligt: addition (+), subtraktion (−), multiplikation (*), division (/), kvadratrot (√), exponentiering (^).
+
+Mönsterexempel visas på [sidan för matematiska ritningar](mathdrawings).
+
+---
+
+## Lek och lär tillsammans med barnen!
+
+Du känner dina elever bäst. PrimaSTEM är ett universellt verktyg för spelbaserat lärande. Använd det för att undervisa i programmering, logik och andra ämnen. Allt beror på din fantasi!
+
+p/s: Tack för att du använder PrimaSTEM och för ditt intresse! Vi väntar på din feedback, [skriv till oss](contacts.md) om dina erfarenheter och intryck.

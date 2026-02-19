@@ -1,0 +1,135 @@
+---
+title: 'Befehls-Chips'
+description: 'NFC-Codes'
+icon: 'nfc'
+---
+
+# Befehls-Chips
+
+## **Grundlegende Befehle**
+
+Befehl oder Wert | Anzahl | NFC-Code
+--- | --- | ---
+Vorwärts | 5 | cfor
+Links | 4 | clef
+Rechts | 4 | crig
+Rückwärts | 1 | cbac
+Wiederholen 2 | 2 | r002
+Wiederholen 3 | 1 | r003
+Wiederholen 4 | 1 | r004
+Wiederholen 5 | 1 | r005
+Wiederholen 6 | 1 | r006
+Wiederholen Zufällige Zahl (von 1 bis 6) | 1 | rrnd
+Funktion | 3 | cfun
+Zufällige Bewegung | 1 | crnd
+
+
+## **Erweiterte Befehle und Werte**
+
+Befehl oder Wert | Anzahl | NFC-Code
+--- | --- | ---
+Wiederholen 7 | 1 | r007
+Wiederholen 8 | 1 | r008
+Wiederholen 9 | 1 | r009
+Wiederholen 10 | 1 | r010
+Wiederholen 18 | 1 | r018
+Wiederholen 36 | 1 | r036
+Wiederholen 72 | 1 | r072
+Wiederholen 180 | 1 | r180
+Wiederholen 360 | 1 | r360
+1 | 1 | n001
+2 | 1 | n002
+3 | 1 | n003
+4 | 1 | n004
+5 | 1 | n005
+6 | 1 | n006
+7 | 1 | n007
+8 | 1 | n008
+9 | 1 | n009
+10 | 1 | n010
+15 | 1 | n015
+20 | 1 | n020
+30 | 1 | n030
+36 | 1 | n036
+40 | 1 | n040
+45 | 1 | n045
+50 | 1 | n050
+60 | 1 | n060
+72 | 1 | n072
+90 | 1 | n090
+100 | 2 | n100
+108 | 1 | n108
+120 | 1 | n120
+135 | 1 | n135
+144 | 1 | n144
+150 | 1 | n150
+180 | 1 | n180
+360 | 1 | n360
++1 | 1 | a001
++2 | 1 | a002
++3 | 1 | a003
++5 | 1 | a005
++10 | 1 | a010
++15 | 1 | a015
++20 | 1 | a020
++50 | 1 | a050
++100 | 1 | a100
+-1 | 1 | s001
+-2 | 1 | s002
+-3 | 1 | s003
+-5 | 1 | s005
+-10 | 1 | s010
+-15 | 1 | s015
+-20 | 1 | s020
+-50 | 1 | s050
+-100 | 1 | s100
+*2 | 1 | m002
+*3 | 1 | m003
+/2 | 1 | d002
+/3 | 1 | d003
+X^2 | 1 | e002
+X^3 | 1 | e003
+Quadratwurzel aus X | 1 | sqrt
+Pause | 1 | cwat
+Entfernungskalibrierung | 1 | ccal
+Standard-Schrittlänge festlegen | 1 | clen
+
+## **Mögliche zusätzliche Befehle und Operationen**
+
+Befehl / Wert | Anzahl | NFC-Code
+--- | --- | ---
+Fakultät | 1 | fact
+Robot-Sound-Beispiel | 1 | xXXX (hier XXX - Zahl von 001 bis 999)
+Pult-Sound-Beispiel | 1 | csou
+Lautstärkepegel | 1 | clvl
+
+## **So schreiben Sie Daten auf einen NFC-Tag**
+
+Sie können Ihren eigenen Token erstellen — schreiben Sie einfach einen Textcode auf einen NFC-Tag. Sie können beliebige Zahlen (von 0 bis 999), beliebige Wiederholungen und beliebige Zahlen für arithmetische Operationen verwenden.
+
+Um Textdaten auf einen NFC-Tag zu schreiben, öffnen Sie den Google Play Store und installieren Sie die App **RFID NFC Reader** oder **NFC Tools** auf Ihrem Telefon.
+
+Anleitungen zum Schreiben eines NFC-Tags finden Sie hier — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+
+<div
+  style={{
+    position: 'relative',
+    paddingBottom: '56.25%',
+    height: 0,
+    overflow: 'hidden',
+  }}
+>
+  <iframe
+    src="https://www.youtube.com/embed/UbKaQxZs8JA?si=WT8wWYBe_Ql7TovQ"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+    }}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>
