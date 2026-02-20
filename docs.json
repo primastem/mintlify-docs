@@ -265,6 +265,9 @@
     "ga4": {
       "measurementId": "G-QGPVQ44DNN"
     }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
   }
   
 }
