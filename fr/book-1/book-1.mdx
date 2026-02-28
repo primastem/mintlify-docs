@@ -20,7 +20,7 @@ Le but de l'appareil est de programmer les mouvements d'un petit robot coccinell
 
 Vous placez les commandes sur le pupitre, créant ainsi un programme de mouvement du robot. Lorsque le programme est prêt, appuyez sur le bouton — et le robot exécutera les instructions !
 
-![](images/20251117_161829.jpg)
+![](../../images/book-1/20251117_161829.jpg)
 
 ### Sommaire du guide
 
@@ -128,7 +128,7 @@ Dans les deux cas, il est préférable de mener les séances avec PrimaSTEM dans
 
 Un petit robot coccinelle en bois avec deux yeux.
 
-![](images/robot.excalidraw.svg)
+![](../../images/book-1/robot.excalidraw.svg)
 
 Il possède trois points d'appui : deux roues et un support à l'arrière qui lui permettent de garder l'équilibre.
 
@@ -136,12 +136,12 @@ Il possède trois points d'appui : deux roues et un support à l'arrière qui lu
 
 | Commande | Dessin                              | Description                                                                                     |
 | ------- | ----------------------------------- | -------------------------------------------------------------------------------------------- |
-| Tout droit | ![](images/forward.excalidraw.svg)  | Le robot avance d'une case — un pas logique (par défaut égal à 15 cm)              |
-| À gauche  | ![](images/left.excalidraw.svg)     | Le robot tourne de 90° à gauche                                                           |
-| À droite | ![](images/right.excalidraw.svg)    | Le robot tourne de 90° à droite                                                          |
-| En arrière | ![](images/back.excalidraw.svg)     | Le robot recule d'une case — un pas logique par défaut                                |
-| Fonction | ![](images/function.excalidraw.svg) | Le robot exécute la séquence de commandes située dans la ligne de fonction                    |
-| Répétition № | ![](images/repeatN.excalidraw.svg)  | Le robot répète la commande installée dans la cellule jumelée un certain nombre de fois — №      |
+| Tout droit | ![](../../images/book-1/forward.excalidraw.svg)  | Le robot avance d'une case — un pas logique (par défaut égal à 15 cm)              |
+| À gauche  | ![](../../images/book-1/left.excalidraw.svg)     | Le robot tourne de 90° à gauche                                                           |
+| À droite | ![](../../images/book-1/right.excalidraw.svg)    | Le robot tourne de 90° à droite                                                          |
+| En arrière | ![](../../images/book-1/back.excalidraw.svg)     | Le robot recule d'une case — un pas logique par défaut                                |
+| Fonction | ![](../../images/book-1/function.excalidraw.svg) | Le robot exécute la séquence de commandes située dans la ligne de fonction                    |
+| Répétition № | ![](../../images/book-1/repeatN.excalidraw.svg)  | Le robot répète la commande installée dans la cellule jumelée un certain nombre de fois — №      |
 
 ### Pupitre de commande à distance
 
@@ -149,7 +149,7 @@ Le pupitre permet de contrôler le robot en plaçant des blocs de commande (jeto
 
 Les 6 cellules jumelées supérieures (A), reliées par une ligne d'exécution (E), constituent la séquence principale du programme. Le programme commence par la cellule située à gauche (D) et se termine au-dessus du bouton START (B), qui permet d'envoyer les instructions au robot et de lancer le programme.
 
-![](images/control.excalidraw.svg)
+![](../../images/book-1/control.excalidraw.svg)
 
 Les 5 cellules inférieures (C) permettent de programmer une séquence de mouvements exécutée par le bloc « [ ] » — la « fonction ». Chaque cellule jumelée est associée à une LED (F) qui s'allume lors de l'installation d'un jeton et clignote lors de l'exécution de l'instruction en cours.
 
@@ -183,7 +183,7 @@ Si un jeton est ajouté après une cellule vide, l'instruction correspondante se
 
 Si un jeton incorrect est placé (par exemple, « Répétition » sans commande dans une cellule jumelée) ou une combinaison de jetons de mouvement dans une cellule jumelée (par exemple, deux jetons de commande dans une seule cellule jumelée), alors la LED s'allumera en rouge et cette partie du programme sera ignorée lors de l'exécution.
 
-![](images/control-with-tokens.excalidraw.svg)
+![](../../images/book-1/control-with-tokens.excalidraw.svg)
 
 Une fois la séquence établie, appuyez sur le bouton « START » pour lancer le programme.
 
@@ -197,15 +197,15 @@ Le bloc « [ ] », également appelé bloc « Fonction », est utilisé pour rem
 
 Le bloc « Fonction » permet d'exécuter des séquences plus complexes et de passer à des tâches plus difficiles. Pour créer une fonction, insérez une séquence de mouvements dans le champ prévu à cet effet — 5 cellules jumelées dans la partie inférieure du pupitre. Cette séquence est exécutée de gauche à droite chaque fois qu'un bloc « Fonction » est rencontré dans la séquence principale (en haut).
 
-![](images/control-function.excalidraw.svg)
+![](../../images/book-1/control-function.excalidraw.svg)
 
 Dans l'exemple ci-dessous, le bloc « Fonction » remplace un mouvement tout droit suivi d'un virage à droite. Le programme principal appelle la « Fonction » 2 fois, puis répète la « Fonction » encore 2 fois à l'aide du jeton « Répéter 2 ».
 
-![](images/control-run-square.excalidraw.svg)
+![](../../images/book-1/control-run-square.excalidraw.svg)
 
 Résultat du mouvement :
 
-![](images/robot-square.excalidraw.svg)
+![](../../images/book-1/robot-square.excalidraw.svg)
 
 ## Cartes utilisées
 
@@ -227,11 +227,11 @@ Pour raconter de petites histoires sur les déplacements du robot, vous pouvez u
 
 Carte en damier
 
-![](images/map1-2026-01-12_19-08.png)
+![](../../images/book-1/map1-2026-01-12_19-08.png)
 
 Carte en couleur
 
-![](images/map2-2026-01-12_19-08.png)
+![](../../images/book-1/map2-2026-01-12_19-08.png)
 
 ## Explications techniques
 
@@ -298,13 +298,13 @@ Les enfants doivent tracer sur la grille le chemin que doit parcourir la souris 
 
 La souris se déplace par les cases de la grille (remarque : on ne peut pas se déplacer en diagonale). Ici, il faut comprendre que le chemin de la souris est divisé en étapes : elle se déplace d'une case à la fois. On dit qu'elle se déplace pas à pas.
 
-![](images/lesson1_1.png)
+![](../../images/book-1/lesson1_1.png)
 
 Dans l'exemple ci-dessus, seul le chemin bleu est correct. Le court chemin rouge est erroné car il inclut une diagonale. Le long chemin rouge est erroné car il ne mène pas au point souhaité.
 
 ### Discussion en groupe...
 
-![](images/lesson1_3.png)
+![](../../images/book-1/lesson1_3.png)
 
 Par exemple, dans l'exemple ci-dessus, tous les chemins tracés sont corrects car ils permettent tous à la souris d'atteindre le fromage.
 
@@ -349,7 +349,7 @@ Une fois l'exercice terminé, demandez aux élèves de montrer le chemin qu'ils 
 
 Pour cette séance, formez de petits groupes d'élèves. Asseyez-vous autour d'une table basse ou au sol. Sortez la carte quadrillée, le pupitre, le robot et les jetons. Présentez à tour de rôle PrimaSTEM à tous les élèves et groupes.
 
-![](images/primastem-map1-sm.jpg)
+![](../../images/book-1/primastem-map1-sm.jpg)
 
 ### Présentation
 
@@ -369,11 +369,11 @@ Une fois que vous avez expliqué le vocabulaire, effectuez la manipulation vous-
 
 | Image                                              | Description                                                                    |
 | -------------------------------------------------- | --------------------------------------------------------------------------- |
-| ![](images/forward.excalidraw.svg) | Le jeton de commande **« Avancer »** fait avancer le robot d'une case |
+| ![](../../images/book-1/forward.excalidraw.svg) | Le jeton de commande **« Avancer »** fait avancer le robot d'une case |
 
 Placez le robot sur l'une des cases de la carte. Insérez le jeton dans la première cellule du programme, comme sur le schéma ci-dessous, puis appuyez sur le bouton blanc — START.
 
-![](images/control-forward.excalidraw.svg)
+![](../../images/book-1/control-forward.excalidraw.svg)
 
 Le robot avancera d'une case.
 
@@ -381,13 +381,13 @@ Le robot avancera d'une case.
 
 | Image                                           | Description                                                                                                                                                                                |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](images/left.excalidraw.svg) | Le jeton avec une flèche tournant en arc de cercle autour du centre — **« Gauche »** fait tourner le robot à gauche, dans le sens inverse des aiguilles d'une montre. Le pas de rotation par défaut est de 90 degrés. |
+| ![](../../images/book-1/left.excalidraw.svg) | Le jeton avec une flèche tournant en arc de cercle autour du centre — **« Gauche »** fait tourner le robot à gauche, dans le sens inverse des aiguilles d'une montre. Le pas de rotation par défaut est de 90 degrés. |
 
 Retirez le jeton « Avancer » du pupitre et donnez le jeton « Gauche ». Cette fois, vous pouvez laisser l'enfant insérer le jeton dans la première cellule du programme, puis appuyer sur le bouton blanc — START. Le robot restera sur place et fera un quart de tour à gauche.
 
 | Image                                            | Description                                                     |
 | ------------------------------------------------ | ------------------------------------------------------------ |
-| ![](images/right.excalidraw.svg) | Le jeton **« Droite »** fait tourner le robot à droite. |
+| ![](../../images/book-1/right.excalidraw.svg) | Le jeton **« Droite »** fait tourner le robot à droite. |
 
 Demandez à un autre enfant de retirer le jeton « Gauche » du pupitre et de mettre à sa place le jeton « Droite », puis d'appuyer sur le bouton blanc — START. Le robot restera sur place et fera un quart de tour à droite.
 
@@ -432,7 +432,7 @@ Déterminez quelle direction du robot est la bonne pour accomplir la mission.
 2. L'« enfant-robot » se place sur la case rouge 1, il doit atteindre la case violette 3.
 3. L'« enfant-robot » se place sur la case rouge 1, il doit atteindre la case bleue 4.
 
-![](images/lesson3-map.png)
+![](../../images/book-1/lesson3-map.png)
 
 > Pour assurer la pérennité du matériel de la carte, demandez à l'enfant de retirer ses chaussures.
 
@@ -465,20 +465,20 @@ On donne aux enfants une fiche avec un programme composé d'une séquence d'inst
 
 Avec ce programme, le robot avancera trois fois tout droit :
 
-![](images/lesson4-1.excalidraw.svg)
+![](../../images/book-1/lesson4-1.excalidraw.svg)
 
 Ici, c'est le même programme, le robot avancera aussi trois fois tout droit.
 Seulement cette fois, il n'est pas orienté de la même façon au début : il regarde vers la droite. Il avancera donc trois fois vers la droite :
 
-![](images/lesson4-2.excalidraw.svg)
+![](../../images/book-1/lesson4-2.excalidraw.svg)
 
 Avec ce programme, nous introduisons la rotation du robot. Cette fois, le robot commence par tourner à droite, puis avance de deux cases :
 
-![](images/lesson4-3.excalidraw.svg)
+![](../../images/book-1/lesson4-3.excalidraw.svg)
 
 Et enfin, un exercice plus complexe avec deux changements de direction pour le robot. Il commence par avancer d'une case tout droit, puis tourne à droite, avance d'une case, puis tourne à gauche et avance de deux cases :
 
-![](images/lesson4-4.excalidraw.svg)
+![](../../images/book-1/lesson4-4.excalidraw.svg)
 
 ### Note pour l'animateur
 
@@ -511,7 +511,7 @@ Au final : vous devez obtenir sur une feuille de papier 2 programmes de commande
 
 Exemple :
 
-![](images/lesson5-1.excalidraw.svg)
+![](../../images/book-1/lesson5-1.excalidraw.svg)
 
 **Reproduisez les programmes notés dans la réalité à l'aide de PrimaSTEM.**
 
@@ -541,7 +541,7 @@ Le robot coccinelle est à la maison et nous voulons l'amener à la montagne. Ic
 
 > Si vous n'avez pas la bonne carte, dessinez les points de destination nécessaires de façon schématique sur du papier, éventuellement avec les enfants, et fixez-les sur la carte avec du ruban adhésif.
 
-![](images/lesson6-2.excalidraw.svg)
+![](../../images/book-1/lesson6-2.excalidraw.svg)
 
 Commencez par demander aux enfants par quelles cases ils veulent faire passer le robot pour atteindre la montagne. Encore une fois, les possibilités sont nombreuses et nous préférerons les itinéraires les plus courts par souci d'économie d'énergie et de temps.
 
@@ -556,13 +556,13 @@ Demandez aux enfants d'écrire, dans l'ordre, les mouvements (le programme) que 
 
 **Voici le résultat attendu du programme :**
 
-![](images/lesson6-1.excalidraw.svg)
+![](../../images/book-1/lesson6-1.excalidraw.svg)
 
 ### 3ème étape : vérification
 
 Comme pour tout programmeur qui se respecte, il convient de vérifier si le programme fonctionne. Demandez aux enfants de reproduire leur programme sur le pupitre et de le lancer.
 
-![](images/lesson6-3.excalidraw.svg)
+![](../../images/book-1/lesson6-3.excalidraw.svg)
 
 Le robot arrive-t-il à la montagne ? Si non, pourquoi ? Laissez les enfants essayer de corriger leurs erreurs dans le programme s'il y en a.
 
@@ -585,13 +585,13 @@ Pour cette séance, formez de petits groupes d'élèves. Asseyez-vous autour d'u
 
 Montrez aux enfants le jeton de commande « Fonction ».
 
-![](images/function.excalidraw.svg)
+![](../../images/book-1/function.excalidraw.svg)
 
 Il sert à remplacer plusieurs commandes de mouvement : « Avancer », « Gauche », « Droite » ou « Arrière ». Il permet aussi de répéter plusieurs fois un même petit fragment de programme.
 
 Commencez par une démonstration. Créez un programme comme sur l'illustration ci-dessous.
 
-![](images/lesson7-1.excalidraw.svg)
+![](../../images/book-1/lesson7-1.excalidraw.svg)
 
 Quand on utilise la commande « Fonction », tout se passe comme si à la place du jeton « Fonction » nous avions mis ce qui se trouve à l'intérieur du cadre [-----], dans la partie inférieure du pupitre de commande.
 Dans notre exemple, le robot avancera deux fois tout droit.
@@ -600,20 +600,20 @@ Dans notre exemple, le robot avancera deux fois tout droit.
 
 Maintenant, ajoutez un bloc avec la commande « Droite » à la fin de votre programme principal, comme sur l'illustration ci-dessous.
 
-![](images/lesson7-2.excalidraw.svg)
+![](../../images/book-1/lesson7-2.excalidraw.svg)
 
 Avant de lancer le programme, demandez aux enfants ce qui va se passer. Tout se passe comme si le programme était composé de deux blocs rouges « Avancer », puis d'un bloc « Droite ». Le robot avancera de deux cases et fera un virage à droite (un quart de tour).
 
 Et pour le final : **la boucle** !
 Reproduisez le programme avec quatre blocs « Fonction », comme sur l'illustration ci-dessous.
 
-![](images/lesson7-3.excalidraw.svg)
+![](../../images/book-1/lesson7-3.excalidraw.svg)
 
 Avant de lancer le programme, demandez aux enfants ce qui va se passer, puis lancez le programme pour vérifier.
 
 **Le robot effectue une boucle** :
 
-![](images/robot-square.excalidraw.svg)
+![](../../images/book-1/robot-square.excalidraw.svg)
 
 **Note pour l'animateur :** Quand vous commencez à découvrir la notion de bloc « fonction », il est très utile de regarder les LED qui clignotent pendant l'exécution du programme. On peut ainsi suivre l'instruction en cours d'exécution et voir comment le robot se déplace simultanément.
 
@@ -645,7 +645,7 @@ Le robot se trouve au drapeau et nous voulons l'amener à la case nuit, représe
 
 Commencez par demander aux enfants par quelles cases ils veulent faire passer le robot pour atteindre la montagne (case environ à mi-chemin). Les possibilités sont nombreuses et cette fois nous préférerons les itinéraires où les séquences d'instructions se répètent afin d'utiliser la commande « Fonction ».
 
-![](images/function.excalidraw.svg)
+![](../../images/book-1/function.excalidraw.svg)
 
 Une fois le chemin défini, interrogez les enfants sur les mouvements que le robot devra faire, case par case, et modélisez l'exécution du programme en déplaçant le robot avec les mains.
 
@@ -665,13 +665,13 @@ Guidez les enfants dans la création d'un programme avec un bloc « Fonction »,
 
 Exemple d'itinéraire et son programme :
 
-![](images/lesson8_1.png)
+![](../../images/book-1/lesson8_1.png)
 
 ### 3ème étape : vérification
 
 Aidez les enfants à reproduire leur programme sur le pupitre de commande pour vérification, comme sur l'illustration :
 
-![](images/lesson8_2.excalidraw.svg)
+![](../../images/book-1/lesson8_2.excalidraw.svg)
 
 Le robot arrive-t-il à la case « Nuit » ? Si non, pourquoi ?
 Laissez les enfants essayer de corriger leurs erreurs dans le programme s'il y en a.
@@ -694,17 +694,17 @@ Pour cette séance, formez de petits groupes d'élèves. Asseyez-vous autour d'u
 
 Nous aimerions que le robot atteigne la montagne (chemin gris).
 
-![](images/lesson9-1.excalidraw.svg)
+![](../../images/book-1/lesson9-1.excalidraw.svg)
 
 Montrez aux enfants la séquence de mouvements sur le pupitre qui contient une erreur :
 
-![](images/lesson9-2.excalidraw.svg)
+![](../../images/book-1/lesson9-2.excalidraw.svg)
 
 Avec ce programme, le robot se rend dans la forêt. En testant le programme, les enfants doivent essayer de trouver l'erreur et de la corriger.
 
 Exemple d'un programme correct et corrigé :
 
-![](images/lesson9-3.excalidraw.svg)
+![](../../images/book-1/lesson9-3.excalidraw.svg)
 
 ---
 
@@ -749,17 +749,17 @@ Et enfin, demandez aux enfants de corriger l'erreur en écrivant le programme de
 #### Exemple 1
 Dans cet exemple, on s'est trompé d'instruction à la fin.
 
-![](images/lesson10-1.excalidraw.svg)
+![](../../images/book-1/lesson10-1.excalidraw.svg)
 
 #### Exemple 2
 Dans cet exemple, on a ajouté une instruction en trop au début.
 
-![](images/lesson10-2.excalidraw.svg)
+![](../../images/book-1/lesson10-2.excalidraw.svg)
 
 #### Exemple 3
 Dans cet exemple, on a oublié une instruction au début.
 
-![](images/lesson10-3.excalidraw.svg)
+![](../../images/book-1/lesson10-3.excalidraw.svg)
 
 ---
 
@@ -834,7 +834,7 @@ Ce travail est sous licence CC BY-SA 4.0. Pour voir une copie de cette licence, 
 
 Cette licence oblige les réutilisateurs à créditer le créateur. Elle permet aux réutilisateurs de distribuer, remixer, adapter et s'appuyer sur le matériel sur n'importe quel support ou format, même à des fins commerciales. Si d'autres remixent, adaptent ou s'appuient sur le matériel, ils doivent licencier le matériel modifié selon des termes identiques.
 
-![](images/copyright.png)
+![](../../images/book-1/copyright.png)
 
 ---
 
@@ -855,3 +855,5 @@ Lien de l'annexe — [Annexe 3 — Tracer le chemin pour une séquence donnée](
 ## Annexe 4 — Trouver et corriger l'erreur dans le programme
 
 Lien de l'annexe — [Annexe 4 — Trouver et corriger l'erreur dans le programme](attachment-4)
+
+
