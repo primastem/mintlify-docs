@@ -257,7 +257,7 @@
     "library": "lucide"
   },
   "interaction": {
-    "drilldown": true
+    "drilldown": false
   },
   "metadata": {
     "timestamp": true
