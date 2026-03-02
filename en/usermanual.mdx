@@ -1,7 +1,8 @@
 ---
 title: "User Manual"
-description: '**PrimaSTEM** — an educational kit for teaching children from age 4 the basics of logic, programming, and mathematics.'
-icon: 'book-open'
+description: "**PrimaSTEM** — an educational kit for teaching children from age 4 the basics of logic, programming, and mathematics."
+icon: "book-open"
+mode: "wide"
 ---
 
 ## Technical Specifications and Package Contents
@@ -32,8 +33,7 @@ Dimensions: L=317 мм, W=217 мм, H=62 мм.
 
 ![control](../images/usermanual/control.png)
 
-The remote control contains 11 dual slots for inserting command and value chips: 6 for the main program (upper part), 5 for the subroutine (lower part).
-The remote has two buttons: on the left — power, on the right — "Execute / Stop" for starting and stopping the program.
+The remote control contains 11 dual slots for inserting command and value chips: 6 for the main program (upper part), 5 for the subroutine (lower part). The remote has two buttons: on the left — power, on the right — "Execute / Stop" for starting and stopping the program.
 
 After placing command and value chips in the slots, press "Execute": the robot will run the program. Active commands are illuminated by LEDs between the slots.
 
@@ -45,8 +45,7 @@ The remote is equipped with a USB-C port for charging and a speaker for sound ou
 
 Dimensions: LxW=33 мм.
 
-The set includes chips for creating programs.
-Each chip is a command with a clear meaning and instruction. The sequence of blocks determines the robot's behavior.
+The set includes chips for creating programs. Each chip is a command with a clear meaning and instruction. The sequence of blocks determines the robot's behavior.
 
 ![coding chips](../images/usermanual/tokens.png)
 
@@ -68,9 +67,7 @@ Basic blocks for composing the control program:
 
 #### Value Chips
 
-Angle and distance chips: 30°, 36°, 45°, as well as multiples (60°, 72°, etc.).
-Angles in degrees, distances in millimeters.
-By default — 90° and 100 мм (15 см).
+Angle and distance chips: 30°, 36°, 45°, as well as multiples (60°, 72°, etc.). Angles in degrees, distances in millimeters. By default — 90° and 100 мм (15 см).
 
 #### Arithmetic Operation Chips
 
@@ -78,7 +75,7 @@ Modify movement command parameters:
 
 - Addition (+)
 - Subtraction (−)
-- Multiplication (*)
+- Multiplication (\*)
 - Division (/)
 - Square Root (√)
 - Power (^)
@@ -97,12 +94,11 @@ If there is no connection, restart both devices or charge them. Temporary connec
 
 ## How It Works?
 
-To program movement, place command chips in the remote slots (for example, "Forward", "Left", "Function", etc.).
-You can set command values and repeat counts, as well as angle, distance, and arithmetic operation values.
+To program movement, place command chips in the remote slots (for example, "Forward", "Left", "Function", etc.). You can set command values and repeat counts, as well as angle, distance, and arithmetic operation values.
 
 For joint installation of a command and value (repeat), slots are connected by "bridges" with indicators.
 
-  *Below is a program using a loop as an example to repeat a similar code section. The program creates a square movement path for the robot:*
+_Below is a program using a loop as an example to repeat a similar code section. The program creates a square movement path for the robot:_
 
 ![control with chips](../images/usermanual/manual1a.excalidraw.svg)
 
@@ -113,6 +109,7 @@ The sequence of blocks determines the robot's movement.
 Press "Execute" to start the program.
 
 By default:
+
 - "Forward" — 15 см.
 - "Left/Right" — 90°.
 - Loops (repeats) repeat the command multiple times.
@@ -136,14 +133,14 @@ By default:
 ### Robot Calibration:
 
 - Mark the exact orientation of the robot on the table surface.
-- Using any program, achieve 8 robot turns at the default angle - 90 degrees clockwise (for example, execute a right turn 8 times), the robot should make two full 360-degree rotations = 90*8.
+- Using any program, achieve 8 robot turns at the default angle - 90 degrees clockwise (for example, execute a right turn 8 times), the robot should make two full 360-degree rotations = 90\*8.
 - Then evaluate the deviation angle from the robot's initial position and execute the "Calibration" command with the value needed for normalization: if the robot stops before the initial mark, add the arithmetic operation "+ angle" (for example +10), if the robot stops after the mark, add "- angle" (for example -5).
 - Calibration can be performed multiple times to achieve the best result.
 - Attention! Robot calibration reset is performed by pressing the control button for more than 10 seconds.
 
 <Accordion icon="rectangle-terminal" title="Calibration of the first device version (MVP) with 10 см diameter robot">
-1. To calibrate the gyroscope, place the robot on a horizontal surface, insert the "Calibration" chip into the remote and press "Execute".
-2. To calibrate the movement distance, measure the actual path with the "Forward" command, place "Calibration" and the chip with the required value, then "Execute". You can write the value to any digital NFC chip using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 мм). After this, the robot's movement distance will be accurate.*
+  1. To calibrate the gyroscope, place the robot on a horizontal surface, insert the "Calibration" chip into the remote and press "Execute".
+  2. To calibrate the movement distance, measure the actual path with the "Forward" command, place "Calibration" and the chip with the required value, then "Execute". You can write the value to any digital NFC chip using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 мм). After this, the robot's movement distance will be accurate.\*
 </Accordion>
 
 ### Programming NFC Chips
@@ -166,6 +163,4 @@ Store and use the set in a dry room at a temperature of +10…+30°C, humidity 4
 
 Avoid shocks and vibrations. Transport and store the device in its original packaging at a temperature of +5…+35°C, protecting from mechanical damage and moisture.
 
-p.s.: PrimaSTEM is a practical tool for learning programming, developing creative thinking and logic.
-Detailed information about functionality is contained in the **Teacher's Guide**.
-
+p.s.: PrimaSTEM is a practical tool for learning programming, developing creative thinking and logic. Detailed information about functionality is contained in the **Teacher's Guide**.
