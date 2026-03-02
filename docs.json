@@ -259,13 +259,13 @@
     }
   },
   "appearance": {
-    "default": "system"
+    "default": "light"
   },
   "icons": {
     "library": "lucide"
   },
   "interaction": {
-    "drilldown": false
+    "drilldown": true
   },
   "metadata": {
     "timestamp": true
