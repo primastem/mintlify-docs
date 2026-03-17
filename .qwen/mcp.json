@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "primastem": {
-      "command": "npx",
-      "args": ["-y", "@primastem/mcp-server"]
-    }
-  }
-}
