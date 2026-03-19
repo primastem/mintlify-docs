@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(export PATH=\"$PATH:/c/Users/andrei/AppData/Local/Microsoft/WinGet/Packages/jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe\")",
-      "Bash(bash /tmp/install_statusline.sh)"
+      "Bash(bash /tmp/install_statusline.sh)",
+      "Bash(bash /c/Users/andrei/.claude/statusline.sh)",
+      "Bash(bash ~/.claude/statusline.sh)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(command -v python3)",
+      "Bash(command -v python)",
+      "Bash(winget list:*)",
+      "Bash(ls /c/Users/andrei/.claude/statusline*)"
     ]
   }
 }
