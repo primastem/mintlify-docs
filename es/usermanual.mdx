@@ -17,19 +17,19 @@ mode: "wide"
 
 ### Robot de Juego
 
-Dimensiones: D=125 мм, H=44 мм.
+Dimensiones: D=125 mm, H=44 mm.
 
 ![robot](../images/usermanual/robot.png)
 
 El robot está equipado con un botón de encendido, LEDs, un altavoz, un botón de función y un puerto USB-C para cargar la batería.
 
-Un marcador de hasta 10 мм de diámetro puede instalarse en el centro del robot para dibujar figuras simples durante el movimiento.
+Un marcador de hasta 10 mm de diámetro puede instalarse en el centro del robot para dibujar figuras simples durante el movimiento.
 
 El aspecto puede variar ligeramente según la configuración, pero la funcionalidad principal se mantiene.
 
 ### Mando a Distancia
 
-Dimensiones: L=317 мм, W=217 мм, H=62 мм.
+Dimensiones: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
@@ -44,7 +44,7 @@ El mando está equipado con un puerto USB-C para carga y un altavoz para reprodu
 
 ### Fichas - Instrucciones
 
-Dimensiones: LxW=33 мм.
+Dimensiones: LxW=33 mm.
 
 El conjunto incluye fichas para crear programas.
 Cada ficha es un comando con un significado claro y una instrucción. La secuencia de bloques determina el comportamiento del robot.
@@ -57,10 +57,10 @@ Las fichas se dividen en **comandos**, **valores** y **aritméticas**.
 
 Bloques básicos para componer el programa de control:
 
-- **Adelante** — movimiento hacia adelante (15 см por defecto)
+- **Adelante** — movimiento hacia adelante (15 cm por defecto)
 - **Derecha** — giro de 90° en sentido horario
 - **Izquierda** — giro de 90° en sentido antihorario
-- **Atrás** — movimiento hacia atrás (15 см por defecto)
+- **Atrás** — movimiento hacia atrás (15 cm por defecto)
 - **Función** — ejecución del subprograma de la parte inferior del mando
 - **Movimiento Aleatorio** — una de las acciones para mover el robot: Adelante, Izquierda, Derecha o Atrás (en "paso por defecto")
 - **Fichas de Repetición (Bucles)** - Fichas con números del 2 al 6 (según la cantidad de puntos) y pictogramas de repetición con el número dentro. La ficha con un dado significa un número aleatorio de repeticiones del 1 al 6.
@@ -71,7 +71,7 @@ Bloques básicos para componer el programa de control:
 
 Fichas de ángulos y distancias: 30°, 36°, 45°, así como múltiplos (60°, 72°, etc.).
 Ángulos en grados, distancias en milímetros.
-Por defecto — 90° y 100 мм (15 см).
+Por defecto — 90° y 100 mm (15 cm).
 
 #### Fichas de Operaciones Aritméticas
 
@@ -114,7 +114,7 @@ La secuencia de bloques determina el movimiento del robot.
 Pulse "Ejecutar" para iniciar el programa.
 
 Por defecto:
-- "Adelante" — 15 см.
+- "Adelante" — 15 cm.
 - "Izquierda/Derecha" — 90°.
 - Los bucles (repeticiones) repiten el comando varias veces.
 - "Función" llama al subprograma de la parte inferior del mando (5 ranuras).
@@ -125,7 +125,7 @@ Por defecto:
 - **Interrumpir** la ejecución del programa pulsando "Ejecutar" de nuevo durante el movimiento.
 - El mando recuerda el último **valor establecido** (distancia/ángulo) para el comando de movimiento hasta el apagado: por ejemplo, si "Adelante" = "200", todos los siguientes comandos "Adelante" se ejecutan con este valor.
 - Los valores después de aritmética también se guardan.
-- Cambiar la "**distancia por defecto**" se puede hacer con una ficha de servicio: por ejemplo, para 12,5 см, coloque la ficha "Distancia por defecto" con valor 125. El valor se guarda después del apagado.
+- Cambiar la "**distancia por defecto**" se puede hacer con una ficha de servicio: por ejemplo, para 12,5 cm, coloque la ficha "Distancia por defecto" con valor 125. El valor se guarda después del apagado.
 - El mando y el robot **se apagan automáticamente** después de 10 minutos de inactividad.
 - Si el robot no se usa durante 1–3 minutos, realiza pequeños movimientos para señalar que está activo y listo.
 - El **sonido de parpadeo de ojos** del robot se puede activar y desactivar con una pulsación simple del botón del robot.
@@ -142,9 +142,9 @@ Por defecto:
 - La calibración puede realizarse varias veces para obtener un mejor resultado.
 - ¡Atención! El reinicio de calibración del robot se realiza pulsando el botón de control durante más de 10 segundos.
 
-<Accordion icon="rectangle-terminal" title="Calibración de la primera versión del dispositivo (MVP) con robot de 10 см de diámetro">
+<Accordion icon="rectangle-terminal" title="Calibración de la primera versión del dispositivo (MVP) con robot de 10 cm de diámetro">
 1. Para calibrar el giroscopio, coloque el robot sobre una superficie horizontal, inserte la ficha "Calibración" en el mando y pulse "Ejecutar".
-2. Para calibrar la distancia de movimiento, mida la ruta real con el comando "Adelante", coloque "Calibración" y la ficha con el valor necesario, luego "Ejecutar". Puede escribir el valor en cualquier ficha NFC digital usando un teléfono móvil con NFC como texto en forma de nXXX (por ejemplo, n095 para 95 мм). Después de esto, la distancia de movimiento del robot será precisa.*
+2. Para calibrar la distancia de movimiento, mida la ruta real con el comando "Adelante", coloque "Calibración" y la ficha con el valor necesario, luego "Ejecutar". Puede escribir el valor en cualquier ficha NFC digital usando un teléfono móvil con NFC como texto en forma de nXXX (por ejemplo, n095 para 95 mm). Después de esto, la distancia de movimiento del robot será precisa.*
 </Accordion>
 
 ### Programación de Fichas NFC

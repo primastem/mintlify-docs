@@ -9,7 +9,8 @@
       "Bash(command -v python3)",
       "Bash(command -v python)",
       "Bash(winget list:*)",
-      "Bash(ls /c/Users/andrei/.claude/statusline*)"
+      "Bash(ls /c/Users/andrei/.claude/statusline*)",
+      "PowerShell($files = @\\('no\\\\usermanual.mdx','de\\\\usermanual.mdx','es\\\\usermanual.mdx','it\\\\usermanual.mdx','nl\\\\usermanual.mdx','sv\\\\usermanual.mdx','jp\\\\usermanual.mdx'\\); foreach \\($f in $files\\) { $p = Join-Path $PWD $f; $c = Get-Content -Raw -Encoding UTF8 $p; $c = $c -replace 'мм','mm' -replace 'см','cm'; [System.IO.File]::WriteAllText\\($p, $c, [System.Text.UTF8Encoding]::new\\($false\\)\\) })"
     ]
   }
 }

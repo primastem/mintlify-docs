@@ -17,19 +17,19 @@ mode: "wide"
 
 ### Robot ludique
 
-Dimensions : D=125 мм, H=44 мм.
+Dimensions : D=125 mm, H=44 mm.
 
 ![robot](../images/usermanual/robot.png)
 
 Le robot est équipé d'un bouton d'alimentation, de LED, d'un haut-parleur, d'un bouton de fonction et d'un port USB-C pour charger la batterie.
 
-Un marqueur d'un diamètre maximal de 10 мм peut être installé au centre du robot pour dessiner des formes simples pendant ses déplacements.
+Un marqueur d'un diamètre maximal de 10 mm peut être installé au centre du robot pour dessiner des formes simples pendant ses déplacements.
 
 L'apparence peut varier légèrement selon la configuration, mais les fonctionnalités principales restent identiques.
 
 ### Télécommande
 
-Dimensions : L=317 мм, W=217 мм, H=62 мм.
+Dimensions : L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
@@ -44,7 +44,7 @@ La télécommande est équipée d'un port USB-C pour la recharge et d'un haut-pa
 
 ### Jetons - instructions
 
-Dimensions : LxW=33 мм.
+Dimensions : LxW=33 mm.
 
 L'ensemble comprend des jetons pour créer des programmes.
 Chaque jeton est une commande avec une signification précise et une instruction. La séquence des blocs détermine le comportement du robot.
@@ -57,10 +57,10 @@ Les jetons se divisent en **commandes**, **valeurs** et **arithmétiques**.
 
 Blocs de base pour composer le programme de contrôle :
 
-- **Avancer** — mouvement vers l'avant (15 см par défaut)
+- **Avancer** — mouvement vers l'avant (15 cm par défaut)
 - **Droite** — rotation de 90° dans le sens horaire
 - **Gauche** — rotation de 90° dans le sens antihoraire
-- **Reculer** — mouvement vers l'arrière (15 см par défaut)
+- **Reculer** — mouvement vers l'arrière (15 cm par défaut)
 - **Fonction** — exécution du sous-programme de la partie inférieure de la télécommande
 - **Mouvement aléatoire** — une des actions pour déplacer le robot : Avancer, Gauche, Droite ou Reculer (sur "pas par défaut")
 - **Jetons de répétition (boucles)** - Jetons avec des nombres de 2 à 6 (selon le nombre de points) et des pictogrammes de répétition avec le nombre à l'intérieur. Le jeton avec un dé signifie un nombre aléatoire de répétitions de 1 à 6.
@@ -71,7 +71,7 @@ Blocs de base pour composer le programme de contrôle :
 
 Jetons d'angles et de distances : 30°, 36°, 45°, ainsi que des multiples (60°, 72°, etc.).
 Angles en degrés, distances en millimètres.
-Par défaut — 90° et 100 мм (15 см).
+Par défaut — 90° et 100 mm (15 cm).
 
 #### Jetons d'opérations arithmétiques
 
@@ -114,7 +114,7 @@ La séquence des blocs détermine le déplacement du robot.
 Appuyez sur "Exécuter" pour lancer le programme.
 
 Par défaut :
-- "Avancer" — 15 см.
+- "Avancer" — 15 cm.
 - "Gauche/Droite" — 90°.
 - Les boucles (répétitions) répètent la commande plusieurs fois.
 - "Fonction" appelle le sous-programme de la partie inférieure de la télécommande (5 emplacements).
@@ -125,7 +125,7 @@ Par défaut :
 - **Interrompre** l'exécution du programme en appuyant à nouveau sur "Exécuter" pendant le déplacement.
 - La télécommande mémorise la dernière **valeur définie** (distance/angle) pour la commande de déplacement jusqu'à l'extinction : par exemple, si "Avancer" = "200", toutes les commandes "Avancer" suivantes sont exécutées avec cette valeur.
 - Les valeurs après une opération arithmétique sont également conservées.
-- Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 см, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction.
+- Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction.
 - La télécommande et le robot **s'éteignent automatiquement** après 10 minutes d'inactivité.
 - Si le robot n'est pas utilisé pendant 1–3 minutes, il effectue de petits mouvements pour signaler qu'il est actif et prêt.
 - Le **son de clignement des yeux** du robot peut être activé ou désactivé par une pression simple sur le bouton du robot.
@@ -142,9 +142,9 @@ Par défaut :
 - Le calibrage peut être effectué plusieurs fois pour obtenir un meilleur résultat.
 - Attention ! La réinitialisation du calibrage du robot s'effectue en appuyant sur le bouton de contrôle pendant plus de 10 secondes.
 
-<Accordion icon="rectangle-terminal" title="Calibrage de la première version de l'appareil (MVP) avec robot de 10 см de diamètre">
+<Accordion icon="rectangle-terminal" title="Calibrage de la première version de l'appareil (MVP) avec robot de 10 cm de diamètre">
 1. Pour calibrer le gyroscope, placez le robot sur une surface horizontale, insérez le jeton "Calibrage" dans la télécommande et appuyez sur "Exécuter".
-2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibrage" et le jeton avec la valeur nécessaire, puis "Exécuter". Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 мм). Après cela, la distance de déplacement du robot sera précise.*
+2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibrage" et le jeton avec la valeur nécessaire, puis "Exécuter". Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 mm). Après cela, la distance de déplacement du robot sera précise.*
 </Accordion>
 
 ### Programmation des jetons NFC

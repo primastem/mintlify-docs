@@ -4,119 +4,49 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Multilingual documentation site for **PrimaSTEM** — an educational robotics product for children ages 4+. Built with [Mintlify](https://mintlify.com). Deployed at https://docs.primastem.com via Mintlify's GitHub App (auto-deploys on push to `main`).
+Multilingual documentation site for **PrimaSTEM** — a screen-free coding and math educational kit for children ages 4+. Built with [Mintlify](https://mintlify.com). Deployed at https://docs.primastem.com via Mintlify's GitHub App (auto-deploys on push to `main`).
 
 ## Development Commands
 
 Requires Node.js v19+ and Mintlify CLI installed globally:
 
 ```bash
-npm i -g mintlify
+npm i -g mintlify          # install once
+mintlify dev               # local dev server at http://localhost:3000
+mintlify dev --port 3333   # custom port
+mintlify broken-links      # validate all internal links
+mintlify install           # reinstall deps if dev server fails
+npm i -g mintlify@latest   # update CLI
 ```
-
-| Command | Purpose |
-|---------|---------|
-| `mintlify dev` | Start local dev server at http://localhost:3000 |
-| `mintlify dev --port 3333` | Custom port |
-| `mintlify broken-links` | Validate all internal links |
-| `mintlify install` | Reinstall dependencies |
-| `npm i -g mintlify@latest` | Update CLI |
 
 ## Architecture
 
 ### Configuration
 
-`docs.json` is the main Mintlify config (not `mint.json`). It defines:
-- Theme (`maple`), brand colors, favicon
-- Navigation structure per language (10 languages)
-- Navbar links, footer socials
-- GA4 integration (`G-QGPVQ44DNN`)
+`docs.json` is the sole config file (not `mint.json`). It controls:
+- Theme (`maple`), brand colors (`#5aa02c`), favicon
+- Navigation structure per language — all 10 languages declared under `navigation.languages`
+- Navbar links, footer socials, GA4 (`G-QGPVQ44DNN`)
+
+When adding a page, register it in `docs.json` under the correct language group. Pages not listed there won't appear in the sidebar (e.g. `en/quickstart.mdx` currently exists but is not in navigation).
 
 ### Language Structure
 
-Content is organized by language code at the root level. Each language folder has an identical section structure:
+10 languages at root level: `en/` `ru/` `de/` `fr/` `es/` `it/` `nl/` `no/` `sv/` `jp/`
 
-```
-en/  fr/  de/  es/  it/  jp/  nl/  no/  ru/  sv/
-└── intro.mdx, usermanual.mdx, teachersguide.mdx,
-    mathdrawings.mdx, nfc.mdx, cognitive.mdx,
-    contacts.mdx, book-1/
-```
-
-`index.mdx` is the landing page (multilingual selector). Navigation for all languages is declared in `docs.json` under `navigation.languages`.
-
-### Content Format
-
-Files use `.mdx` (Markdown + React components). Common Mintlify components used throughout:
-`<Card>`, `<CardGroup>`, `<Accordion>`, `<AccordionGroup>`, `<Info>`, `<Tip>`, `<Note>`, `<Frame>`, `<CodeGroup>`
-
-### Assets
-
-Images live in `images/` organized by section (e.g. `images/intro/`, `images/book-1/`). Diagrams use Excalidraw — the library file is at `excalidraw/primastem.library.excalidrawlib`.
-
-### Adding Content in a New Language
-
-1. Create the language folder (e.g. `pt/`)
-2. Mirror the structure from `en/`
-3. Add the language navigation block in `docs.json` under `navigation.languages`
-
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
-## Commands
-
-```bash
-# Install Mintlify CLI (once)
-npm i -g mintlify
-
-# Preview docs locally (run from repo root, where docs.json is)
-mintlify dev
-
-# If dev server fails, reinstall dependencies
-mintlify install
-```
-
-Changes pushed to `main` deploy automatically to production via GitHub App.
-
-## Architecture
-
-This is a **Mintlify documentation site** for [PrimaSTEM](https://primastem.com) — a screen-free coding and math educational kit for children aged 4+.
-
-### Configuration
-
-`docs.json` is the central config file. It controls:
-- Theme, colors, logo, favicon
-- Navigation structure per language
-- Navbar links, footer socials, integrations (GA4)
-
-### Multilingual structure
-
-All content lives in language-specific folders at the root: `en/`, `ru/`, `de/`, `fr/`, `es/`, `it/`, `nl/`, `no/`, `sv/`, `jp/`.
-
-Each language folder contains the **same set of pages**:
+Each folder has the same pages:
 - `intro.mdx` — product introduction
 - `usermanual.mdx` — technical specs and usage
 - `teachersguide.mdx` — guide for educators
-- `book-1/book-1.mdx` — main workbook (with attachments in `book-1/`)
-- `mathdrawings.mdx` — math drawing activities
-- `nfc.mdx` — NFC chip usage
-- `cognitive.mdx` — cognitive development context
-- `contacts.mdx` — contact info
+- `book-1/book-1.mdx` — main workbook; `book-1/attachment-{1-4}.mdx` — supplementary sheets
+- `mathdrawings.mdx`, `nfc.mdx`, `cognitive.mdx`, `contacts.mdx`
 
-When adding or updating content, **apply changes to all language folders** to keep them in sync.
+`index.mdx` at root is the multilingual landing/selector page.
 
-### Images
+**When editing content, apply changes to all language folders to keep them in sync.**
 
-Shared across all languages — stored in `images/` with subfolders matching page names (e.g., `images/intro/`, `images/usermanual/`). Reference from `.mdx` files as `../images/<folder>/<file>`.
+### Page Frontmatter
 
-### Excalidraw
-
-The `excalidraw/` folder contains a custom Excalidraw library (`primastem.library.excalidrawlib`) used for creating diagrams in the docs.
-
-### Page frontmatter
-
-Each `.mdx` page uses frontmatter:
 ```yaml
 ---
 title: "..."
@@ -125,3 +55,19 @@ icon: "..."   # lucide icon name
 mode: "wide"  # most pages use wide mode
 ---
 ```
+
+### Content Format
+
+Files use `.mdx`. Common Mintlify components: `<Card>`, `<CardGroup>`, `<Accordion>`, `<AccordionGroup>`, `<Info>`, `<Tip>`, `<Note>`, `<Frame>`, `<CodeGroup>`.
+
+### Assets
+
+Images in `images/` with subfolders per section (`images/intro/`, `images/book-1/`, etc.). Reference from `.mdx` as `../images/<folder>/<file>` (relative path). Images are shared across all languages — do not duplicate them per language.
+
+Diagrams use Excalidraw; library file at `excalidraw/primastem.library.excalidrawlib`.
+
+### Adding a New Language
+
+1. Create language folder (e.g. `pt/`)
+2. Copy and translate all pages from `en/`
+3. Add navigation block in `docs.json` under `navigation.languages`

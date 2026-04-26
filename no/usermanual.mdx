@@ -17,19 +17,19 @@ mode: "wide"
 
 ### Lekerobot
 
-Dimensjoner: D=125 мм, H=44 мм.
+Dimensjoner: D=125 mm, H=44 mm.
 
 ![robot](../images/usermanual/robot.png)
 
 Roboten er utstyrt med en på/av-knapp, LED-lys, en høyttaler, en funksjonsknapp og en USB-C-port for lading av batteriet.
 
-En markør med diameter på opptil 10 мм kan settes inn i midten av roboten for å tegne enkle former under bevegelse.
+En markør med diameter på opptil 10 mm kan settes inn i midten av roboten for å tegne enkle former under bevegelse.
 
 Utseendet kan variere litt avhengig av konfigurasjon, men hovedfunksjonaliteten beholdes.
 
 ### Fjernkontroll
 
-Dimensjoner: L=317 мм, W=217 мм, H=62 мм.
+Dimensjoner: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
@@ -44,7 +44,7 @@ Fjernkontrollen er utstyrt med en USB-C-port for lading og en høyttaler for lyd
 
 ### Instruksjonsbrikker
 
-Dimensjoner: LxW=33 мм.
+Dimensjoner: LxW=33 mm.
 
 Settet inkluderer brikker for å lage programmer.
 Hver brikke er en kommando med en klar betydning og instruksjon. Rekkefølgen på blokkene bestemmer robotens oppførsel.
@@ -57,10 +57,10 @@ Brikkene er delt inn i **kommandoer**, **verdier** og **aritmetiske**.
 
 Grunnleggende blokker for å sette sammen kontrollprogrammet:
 
-- **Fremover** — bevegelse fremover (15 см som standard)
+- **Fremover** — bevegelse fremover (15 cm som standard)
 - **Høyre** — sving på 90° med klokken
 - **Venstre** — sving på 90° mot klokken
-- **Bakover** — bevegelse bakover (15 см som standard)
+- **Bakover** — bevegelse bakover (15 cm som standard)
 - **Funksjon** — utførelse av underprogrammet fra den nedre delen av fjernkontrollen
 - **Tilfeldig Bevegelse** — en av handlingene for å flytte roboten: Fremover, Venstre, Høyre eller Bakover (på "standardsteg")
 - **Gjentakelsesbrikker (Løkker)** - Brikker med tall fra 2 til 6 (etter antall prikker) og gjentakelsespiktogrammer med tallet inni. Brikken med en terning betyr et tilfeldig antall gjentakelser fra 1 til 6.
@@ -71,7 +71,7 @@ Grunnleggende blokker for å sette sammen kontrollprogrammet:
 
 Vinkel- og distansebrikker: 30°, 36°, 45°, samt multipler (60°, 72°, etc.).
 Vinkler i grader, distanser i millimeter.
-Som standard — 90° og 100 мм (15 см).
+Som standard — 90° og 100 mm (15 cm).
 
 #### Aritmetiske Operasjonsbrikker
 
@@ -114,7 +114,7 @@ Rekkefølgen på blokkene bestemmer robotens bevegelse.
 Trykk "Utfør" for å starte programmet.
 
 Som standard:
-- "Fremover" — 15 см.
+- "Fremover" — 15 cm.
 - "Venstre/Høyre" — 90°.
 - Løkker (gjentakelser) gjentar kommandoen flere ganger.
 - "Funksjon" kaller underprogrammet fra den nedre delen av fjernkontrollen (5 spor).
@@ -125,7 +125,7 @@ Som standard:
 - **Avbryt** programutførelsen ved å trykke "Utfør" igjen under bevegelse.
 - Fjernkontrollen husker den siste **innstilte verdien** (distanse/vinkel) for bevegelseskommandoen til strømme av: for eksempel, hvis "Fremover" = "200", utføres alle påfølgende "Fremover"-kommandoer med denne verdien.
 - Verdier etter aritmetikk lagres også.
-- Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 см, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av.
+- Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 cm, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av.
 - Fjernkontrollen og roboten **slår seg automatisk av** etter 10 minutter med inaktivitet.
 - Hvis roboten ikke brukes på 1–3 minutter, utfører den små bevegelser for å signalisere at den er aktiv og klar.
 - **Øyeblunkelyden** til roboten kan slås på og av med et enkelt trykk på robotknappen.
@@ -142,9 +142,9 @@ Som standard:
 - Kalibrering kan utføres flere ganger for å oppnå best resultat.
 - Merk! Tilbakestilling av robotkalibrering utføres ved å trykke på kontrollknappen i mer enn 10 sekunder.
 
-<Accordion icon="rectangle-terminal" title="Kalibrering av første enhetsversjon (MVP) med robot på 10 см i diameter">
+<Accordion icon="rectangle-terminal" title="Kalibrering av første enhetsversjon (MVP) med robot på 10 cm i diameter">
 1. For å kalibrere gyroskopet, plasser roboten på en horisontal overflate, sett inn brikken "Kalibrering" i fjernkontrollen og trykk "Utfør".
-2. For å kalibrere bevegelsesdistanse, mål den faktiske banen med kommandoen "Fremover", sett inn "Kalibrering" og brikken med nødvendig verdi, deretter "Utfør". Du kan skrive verdien til en hvilken som helst digital NFC-brikke ved hjelp av en mobiltelefon med NFC som tekst i formen nXXX (for eksempel, n095 for 95 мм). Etter dette vil robotens bevegelsesdistanse være nøyaktig.*
+2. For å kalibrere bevegelsesdistanse, mål den faktiske banen med kommandoen "Fremover", sett inn "Kalibrering" og brikken med nødvendig verdi, deretter "Utfør". Du kan skrive verdien til en hvilken som helst digital NFC-brikke ved hjelp av en mobiltelefon med NFC som tekst i formen nXXX (for eksempel, n095 for 95 mm). Etter dette vil robotens bevegelsesdistanse være nøyaktig.*
 </Accordion>
 
 ### Programmering av NFC-brikker

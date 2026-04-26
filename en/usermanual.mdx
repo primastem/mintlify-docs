@@ -17,19 +17,19 @@ mode: "default"
 
 ### Play Robot
 
-Dimensions: D=125 мм, H=44 мм.
+Dimensions: D=125 mm, H=44 mm.
 
 ![robot](../images/usermanual/robot.png)
 
 The robot is equipped with a power button, LEDs, a speaker, a function button, and a USB-C port for charging the battery.
 
-A marker with a diameter of up to 10 мм can be installed in the center of the robot to draw simple shapes while moving.
+A marker with a diameter of up to 10 mm can be installed in the center of the robot to draw simple shapes while moving.
 
 Appearance may vary slightly depending on the configuration, but core functionality remains the same.
 
 ### Remote Control
 
-Dimensions: L=317 мм, W=217 мм, H=62 мм.
+Dimensions: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
@@ -43,7 +43,7 @@ The remote is equipped with a USB-C port for charging and a speaker for sound ou
 
 ### Instruction Chips
 
-Dimensions: LxW=33 мм.
+Dimensions: LxW=33 mm.
 
 The set includes chips for creating programs. Each chip is a command with a clear meaning and instruction. The sequence of blocks determines the robot's behavior.
 
@@ -55,10 +55,10 @@ Chips are divided into **commands**, **values**, and **arithmetic**.
 
 Basic blocks for composing the control program:
 
-- **Forward** — forward movement (15 см by default)
+- **Forward** — forward movement (15 cm by default)
 - **Right** — 90° clockwise turn
 - **Left** — 90° counterclockwise turn
-- **Backward** — backward movement (15 см by default)
+- **Backward** — backward movement (15 cm by default)
 - **Function** — executes the subroutine from the lower part of the remote
 - **Random Movement** — one of the actions to move the robot: Forward, Left, Right, or Backward (on "default step")
 - **Repeat Chips (Loops)** - Chips with numbers from 2 to 6 (by number of dots) and repeat pictograms with the number inside. The chip with a die means a random number of repeats from 1 to 6.
@@ -67,7 +67,7 @@ Basic blocks for composing the control program:
 
 #### Value Chips
 
-Angle and distance chips: 30°, 36°, 45°, as well as multiples (60°, 72°, etc.). Angles in degrees, distances in millimeters. By default — 90° and 100 мм (15 см).
+Angle and distance chips: 30°, 36°, 45°, as well as multiples (60°, 72°, etc.). Angles in degrees, distances in millimeters. By default — 90° and 100 mm (15 cm).
 
 #### Arithmetic Operation Chips
 
@@ -110,7 +110,7 @@ Press "Execute" to start the program.
 
 By default:
 
-- "Forward" — 15 см.
+- "Forward" — 15 cm.
 - "Left/Right" — 90°.
 - Loops (repeats) repeat the command multiple times.
 - "Function" calls the subroutine from the lower part of the remote (5 slots).
@@ -121,7 +121,7 @@ By default:
 - **Interrupt** program execution by pressing "Execute" again during movement.
 - The remote remembers the last **set value** (distance/angle) for the movement command until power-off: for example, if "Forward" = "200", all subsequent "Forward" commands are executed with this value.
 - Values after arithmetic operations are also saved.
-- Change the "**default distance**" using a service chip: for example, for 12.5 см, place the "Default Distance" chip with value 125. The value is saved after power-off.
+- Change the "**default distance**" using a service chip: for example, for 12.5 cm, place the "Default Distance" chip with value 125. The value is saved after power-off.
 - The remote and robot **automatically power off** after 10 minutes of inactivity.
 - If the robot is not used for 1–3 minutes, it makes small movements to signal it is active and ready.
 - Robot **eye blink sound** can be turned on and off with a single press of the robot button.
@@ -138,9 +138,9 @@ By default:
 - Calibration can be performed multiple times to achieve the best result.
 - Attention! Robot calibration reset is performed by pressing the control button for more than 10 seconds.
 
-<Accordion title="Calibration of the first device version (MVP) with 10 см diameter robot" icon="rectangle-terminal">
+<Accordion title="Calibration of the first device version (MVP) with 10 cm diameter robot" icon="rectangle-terminal">
   1. To calibrate the gyroscope, place the robot on a horizontal surface, insert the "Calibration" chip into the remote and press "Execute".
-  2. To calibrate the movement distance, measure the actual path with the "Forward" command, place "Calibration" and the chip with the required value, then "Execute". You can write the value to any digital NFC chip using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 мм). After this, the robot's movement distance will be accurate.\*
+  2. To calibrate the movement distance, measure the actual path with the "Forward" command, place "Calibration" and the chip with the required value, then "Execute". You can write the value to any digital NFC chip using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 mm). After this, the robot's movement distance will be accurate.\*
 </Accordion>
 
 ### Programming NFC Chips

@@ -17,19 +17,19 @@ mode: "wide"
 
 ### Lekrobot
 
-Dimensioner: D=125 мм, H=44 мм.
+Dimensioner: D=125 mm, H=44 mm.
 
 ![robot](../images/usermanual/robot.png)
 
 Roboten är utrustad med en strömknapp, LED-lampor, en högtalare, en funktionsknapp och en USB-C-port för laddning av batteriet.
 
-En markör med diameter på upp till 10 мм kan installeras i mitten av roboten för att rita enkla former under rörelse.
+En markör med diameter på upp till 10 mm kan installeras i mitten av roboten för att rita enkla former under rörelse.
 
 Utseendet kan variera något beroende på konfiguration, men huvudfunktionaliteten behålls.
 
 ### Fjärrkontroll
 
-Dimensioner: L=317 мм, W=217 мм, H=62 мм.
+Dimensioner: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
@@ -44,7 +44,7 @@ Fjärrkontrollen är utrustad med en USB-C-port för laddning och en högtalare 
 
 ### Instruktionschips
 
-Dimensioner: LxW=33 мм.
+Dimensioner: LxW=33 mm.
 
 Setet inkluderar chips för att skapa program.
 Varje chip är ett kommando med en tydlig betydelse och instruktion. Sekvensen av block bestämmer robotens beteende.
@@ -57,10 +57,10 @@ Chipsen är indelade i **kommandon**, **värden** och **aritmetiska**.
 
 Grundläggande block för att komponera kontrollprogrammet:
 
-- **Framåt** — rörelse framåt (15 см som standard)
+- **Framåt** — rörelse framåt (15 cm som standard)
 - **Höger** — sväng 90° medurs
 - **Vänster** — sväng 90° moturs
-- **Bakåt** — rörelse bakåt (15 см som standard)
+- **Bakåt** — rörelse bakåt (15 cm som standard)
 - **Funktion** — kör underprogrammet från den nedre delen av fjärrkontrollen
 - **Slumpmässig Rörelse** — en av åtgärderna för att flytta roboten: Framåt, Vänster, Höger eller Bakåt (på "standardsteg")
 - **Upprepningschips (Loopar)** - Chips med siffror från 2 till 6 (efter antalet prickar) och upprepningspiktogram med siffran inuti. Chipet med en tärning betyder ett slumpmässigt antal upprepningar från 1 till 6.
@@ -71,7 +71,7 @@ Grundläggande block för att komponera kontrollprogrammet:
 
 Vinkel- och distanschips: 30°, 36°, 45°, samt multipler (60°, 72°, etc.).
 Vinklar i grader, distanser i millimeter.
-Som standard — 90° och 100 мм (15 см).
+Som standard — 90° och 100 mm (15 cm).
 
 #### Aritmetiska Operationschips
 
@@ -114,7 +114,7 @@ Sekvensen av block bestämmer robotens rörelse.
 Tryck "Kör" för att starta programmet.
 
 Som standard:
-- "Framåt" — 15 см.
+- "Framåt" — 15 cm.
 - "Vänster/Höger" — 90°.
 - Loopar (upprepningar) upprepar kommandot flera gånger.
 - "Funktion" anropar underprogrammet från den nedre delen av fjärrkontrollen (5 fack).
@@ -125,7 +125,7 @@ Som standard:
 - **Avbryt** programkörningen genom att trycka "Kör" igen under rörelse.
 - Fjärrkontrollen kommer ihåg det senaste **inställda värdet** (distans/vinkel) för rörelsekommandot tills avstängning: till exempel, om "Framåt" = "200", körs alla efterföljande "Framåt"-kommandon med detta värde.
 - Värden efter aritmetik sparas också.
-- Ändra "**standarddistans**" kan göras med ett servicechip: till exempel, för 12,5 см, installera chipet "Standarddistans" med värdet 125. Värdet sparas efter avstängning.
+- Ändra "**standarddistans**" kan göras med ett servicechip: till exempel, för 12,5 cm, installera chipet "Standarddistans" med värdet 125. Värdet sparas efter avstängning.
 - Fjärrkontrollen och roboten **stängs av automatiskt** efter 10 minuters inaktivitet.
 - Om roboten inte används på 1–3 minuter gör den små rörelser för att signalera att den är aktiv och redo.
 - **Ögonblinkningsljudet** på roboten kan slås på och av med ett enkelt tryck på robotknappen.
@@ -142,9 +142,9 @@ Som standard:
 - Kalibrering kan utföras flera gånger för att uppnå bästa resultat.
 - Observera! Återställning av robotkalibrering utförs genom att trycka på kontrollknappen i mer än 10 sekunder.
 
-<Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 см i diameter">
+<Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 cm i diameter">
 1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, sätt in chipet "Kalibrering" i fjärrkontrollen och tryck "Kör".
-2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och chipet med nödvändigt värde, sedan "Kör". Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 мм). Efter detta kommer robotens rörelsedistans att vara exakt.*
+2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och chipet med nödvändigt värde, sedan "Kör". Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 mm). Efter detta kommer robotens rörelsedistans att vara exakt.*
 </Accordion>
 
 ### Programmering av NFC-chips
