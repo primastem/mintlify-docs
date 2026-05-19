@@ -1,0 +1,534 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777211462535,
+  "projectRoot": "C:\\Users\\andrei\\Documents\\GitHub\\mintlify-docs",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "api-reference": {
+      "path": "api-reference",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1777211462426,
+      "keyFiles": [
+        "introduction.mdx",
+        "openapi.json"
+      ]
+    },
+    "de": {
+      "path": "de",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462427,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "en": {
+      "path": "en",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462427,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "es": {
+      "path": "es",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462428,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "essentials": {
+      "path": "essentials",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1777211462429,
+      "keyFiles": [
+        "code.mdx",
+        "images.mdx",
+        "markdown.mdx",
+        "navigation.mdx",
+        "reusable-snippets.mdx"
+      ]
+    },
+    "excalidraw": {
+      "path": "excalidraw",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777211462429,
+      "keyFiles": [
+        "primastem.library.excalidrawlib"
+      ]
+    },
+    "fr": {
+      "path": "fr",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462429,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "images": {
+      "path": "images",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1777211462431,
+      "keyFiles": [
+        "hero-dark.png",
+        "hero-light.png",
+        "icon.svg"
+      ]
+    },
+    "it": {
+      "path": "it",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462436,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "jp": {
+      "path": "jp",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462440,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "logo": {
+      "path": "logo",
+      "purpose": null,
+      "fileCount": 7,
+      "lastAccessed": 1777211462446,
+      "keyFiles": [
+        "dark.cdr",
+        "dark.svg",
+        "light.cdr",
+        "light.svg",
+        "light_back.svg"
+      ]
+    },
+    "nl": {
+      "path": "nl",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462459,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "no": {
+      "path": "no",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462461,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "ru": {
+      "path": "ru",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462467,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    },
+    "snippets": {
+      "path": "snippets",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777211462474,
+      "keyFiles": [
+        "snippet-intro.mdx"
+      ]
+    },
+    "sv": {
+      "path": "sv",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777211462476,
+      "keyFiles": [
+        "cognitive.mdx",
+        "contacts.mdx",
+        "intro.mdx",
+        "mathdrawings.mdx",
+        "nfc.mdx"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 12,
+      "lastAccessed": 1777222749628,
+      "type": "directory"
+    },
+    {
+      "path": "fr\\usermanual.mdx",
+      "accessCount": 10,
+      "lastAccessed": 1777213508431,
+      "type": "file"
+    },
+    {
+      "path": "en\\usermanual.mdx",
+      "accessCount": 6,
+      "lastAccessed": 1777214673840,
+      "type": "file"
+    },
+    {
+      "path": "docs.json",
+      "accessCount": 5,
+      "lastAccessed": 1777228130178,
+      "type": "file"
+    },
+    {
+      "path": "ru\\book-1\\book-1.mdx",
+      "accessCount": 4,
+      "lastAccessed": 1777215599653,
+      "type": "file"
+    },
+    {
+      "path": "en\\book-1\\book-1.mdx",
+      "accessCount": 4,
+      "lastAccessed": 1777222716375,
+      "type": "file"
+    },
+    {
+      "path": "fr\\book-1\\book-1.mdx",
+      "accessCount": 4,
+      "lastAccessed": 1777222721436,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 3,
+      "lastAccessed": 1777211524099,
+      "type": "file"
+    },
+    {
+      "path": "en\\intro.mdx",
+      "accessCount": 2,
+      "lastAccessed": 1777212883226,
+      "type": "file"
+    },
+    {
+      "path": "en",
+      "accessCount": 1,
+      "lastAccessed": 1777211950755,
+      "type": "directory"
+    },
+    {
+      "path": "images\\teachersguide\\robot.excalidraw.svg",
+      "accessCount": 1,
+      "lastAccessed": 1777211962175,
+      "type": "file"
+    },
+    {
+      "path": "images\\book-1\\lesson4-1.excalidraw.svg",
+      "accessCount": 1,
+      "lastAccessed": 1777211985603,
+      "type": "file"
+    },
+    {
+      "path": "images\\teachersguide\\control.excalidraw.svg",
+      "accessCount": 1,
+      "lastAccessed": 1777211986323,
+      "type": "file"
+    },
+    {
+      "path": "ru\\intro.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212882960,
+      "type": "file"
+    },
+    {
+      "path": "ru\\usermanual.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212899872,
+      "type": "file"
+    },
+    {
+      "path": "ru\\teachersguide.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212915221,
+      "type": "file"
+    },
+    {
+      "path": "en\\teachersguide.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212915426,
+      "type": "file"
+    },
+    {
+      "path": "ru\\nfc.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212931419,
+      "type": "file"
+    },
+    {
+      "path": "en\\nfc.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212931748,
+      "type": "file"
+    },
+    {
+      "path": "ru\\cognitive.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212964558,
+      "type": "file"
+    },
+    {
+      "path": "en\\cognitive.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212965407,
+      "type": "file"
+    },
+    {
+      "path": "ru\\contacts.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212971715,
+      "type": "file"
+    },
+    {
+      "path": "en\\contacts.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212972412,
+      "type": "file"
+    },
+    {
+      "path": "ru\\mathdrawings.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212972922,
+      "type": "file"
+    },
+    {
+      "path": "en\\mathdrawings.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777212973651,
+      "type": "file"
+    },
+    {
+      "path": "ru\\book-1\\attachment-1.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213018196,
+      "type": "file"
+    },
+    {
+      "path": "en\\book-1\\attachment-1.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213019025,
+      "type": "file"
+    },
+    {
+      "path": "ru\\book-1\\attachment-2.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213019980,
+      "type": "file"
+    },
+    {
+      "path": "en\\book-1\\attachment-2.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213020094,
+      "type": "file"
+    },
+    {
+      "path": "ru\\book-1\\attachment-3.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213032184,
+      "type": "file"
+    },
+    {
+      "path": "en\\book-1\\attachment-3.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213032823,
+      "type": "file"
+    },
+    {
+      "path": "ru\\book-1\\attachment-4.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213033350,
+      "type": "file"
+    },
+    {
+      "path": "en\\book-1\\attachment-4.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213034040,
+      "type": "file"
+    },
+    {
+      "path": "fr\\intro.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213396861,
+      "type": "file"
+    },
+    {
+      "path": "fr\\contacts.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213397327,
+      "type": "file"
+    },
+    {
+      "path": "fr\\mathdrawings.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213397849,
+      "type": "file"
+    },
+    {
+      "path": "fr\\nfc.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213398054,
+      "type": "file"
+    },
+    {
+      "path": "fr\\cognitive.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213411298,
+      "type": "file"
+    },
+    {
+      "path": "fr\\teachersguide.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213428466,
+      "type": "file"
+    },
+    {
+      "path": "fr\\book-1\\attachment-1.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213523203,
+      "type": "file"
+    },
+    {
+      "path": "fr\\book-1\\attachment-2.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213523764,
+      "type": "file"
+    },
+    {
+      "path": "fr\\book-1\\attachment-3.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213527781,
+      "type": "file"
+    },
+    {
+      "path": "fr\\book-1\\attachment-4.mdx",
+      "accessCount": 1,
+      "lastAccessed": 1777213528308,
+      "type": "file"
+    },
+    {
+      "path": "no",
+      "accessCount": 1,
+      "lastAccessed": 1777213936106,
+      "type": "directory"
+    },
+    {
+      "path": "de",
+      "accessCount": 1,
+      "lastAccessed": 1777213936791,
+      "type": "directory"
+    },
+    {
+      "path": "es",
+      "accessCount": 1,
+      "lastAccessed": 1777213937535,
+      "type": "directory"
+    },
+    {
+      "path": "it",
+      "accessCount": 1,
+      "lastAccessed": 1777213938283,
+      "type": "directory"
+    },
+    {
+      "path": "nl",
+      "accessCount": 1,
+      "lastAccessed": 1777213939020,
+      "type": "directory"
+    },
+    {
+      "path": "sv",
+      "accessCount": 1,
+      "lastAccessed": 1777213940048,
+      "type": "directory"
+    },
+    {
+      "path": "jp",
+      "accessCount": 1,
+      "lastAccessed": 1777213940424,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
