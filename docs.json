@@ -1,218 +1,219 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  
   "theme": "maple",
-  
   "name": "docs.PrimaSTEM.com",
-  
   "description": "Documentation of PrimaSTEM - coding and math, screen-free",
-  
   "colors": {
     "primary": "#5aa02c",
     "light": "#68b833",
     "dark": "#4d8825"
   },
-  
   "favicon": "/favicon.svg",
-  
- "navigation": {
-  "languages": [
-    {
-      "language": "en",
-      "default": true,
-      "groups": [
-        {
-          "group": "Documentation",
-          "icon": "file-doc",
-          "pages": [
-            "en/intro",
-            "en/usermanual",
-            "en/teachersguide",
-            "en/book-1/book-1",
-            "en/mathdrawings",
-            "en/nfc",
-            "en/sounds_reference",
-            "en/cognitive",
-            "en/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "fr",
-      "groups": [
-        {
-          "group": "Documentation",
-          "icon": "file-doc",
-          "pages": [
-            "fr/intro",
-            "fr/usermanual",
-            "fr/teachersguide",
-            "fr/book-1/book-1",
-            "fr/mathdrawings",
-            "fr/nfc",
-            "fr/cognitive",
-            "fr/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "de",
-      "groups": [
-        {
-          "group": "Dokumentation",
-          "icon": "file-doc",
-          "pages": [
-            "de/intro",
-            "de/usermanual",
-            "de/teachersguide",
-            "de/book-1/book-1",
-            "de/mathdrawings",
-            "de/nfc",
-            "de/cognitive",
-            "de/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "es",
-      "groups": [
-        {
-          "group": "Documentación",
-          "icon": "file-doc",
-          "pages": [
-            "es/intro",
-            "es/usermanual",
-            "es/teachersguide",
-            "es/book-1/book-1",
-            "es/mathdrawings",
-            "es/nfc",
-            "es/cognitive",
-            "es/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "nl",
-      "groups": [
-        {
-          "group": "Documentatie",
-          "icon": "file-doc",
-          "pages": [
-            "nl/intro",
-            "nl/usermanual",
-            "nl/teachersguide",
-            "nl/book-1/book-1",
-            "nl/mathdrawings",
-            "nl/nfc",
-            "nl/cognitive",
-            "nl/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "it",
-      "groups": [
-        {
-          "group": "Documentazione",
-          "icon": "file-doc",
-          "pages": [
-            "it/intro",
-            "it/usermanual",
-            "it/teachersguide",
-            "it/book-1/book-1",
-            "it/mathdrawings",
-            "it/nfc",
-            "it/cognitive",
-            "it/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "no",
-      "groups": [
-        {
-          "group": "Dokumentasjon",
-          "icon": "file-doc",
-          "pages": [
-            "no/intro",
-            "no/usermanual",
-            "no/teachersguide",
-            "no/book-1/book-1",
-            "no/mathdrawings",
-            "no/nfc",
-            "no/cognitive",
-            "no/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "sv",
-      "groups": [
-        {
-          "group": "Dokumentation",
-          "icon": "file-doc",
-          "pages": [
-            "sv/intro",
-            "sv/usermanual",
-            "sv/teachersguide",
-            "sv/book-1/book-1",
-            "sv/mathdrawings",
-            "sv/nfc",
-            "sv/cognitive",
-            "sv/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "jp",
-      "groups": [
-        {
-          "group": "日本語のドキュメント",
-          "icon": "file-doc",
-          "pages": [
-            "jp/intro",
-            "jp/usermanual",
-            "jp/teachersguide",
-            "jp/book-1/book-1",
-            "jp/mathdrawings",
-            "jp/nfc",
-            "jp/cognitive",
-            "jp/contacts"
-          ]
-        }
-      ]
-    },
-    {
-      "language": "ru",
-      "groups": [
-        {
-          "group": "Документация",
-          "icon": "file-doc",
-          "pages": [
-            "ru/intro",
-            "ru/usermanual",
-            "ru/teachersguide",
-            "ru/book-1/book-1",
-            "ru/mathdrawings",
-            "ru/nfc",
-            "ru/cognitive",
-            "ru/contacts"
-          ]
-        }
-      ]
-    }
-  ]
-},
-
-
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "default": true,
+        "groups": [
+          {
+            "group": "Documentation",
+            "icon": "file-doc",
+            "pages": [
+              "en/intro",
+              "en/usermanual",
+              "en/teachersguide",
+              "en/book-1/book-1",
+              "en/mathdrawings",
+              "en/nfc",
+              "en/sounds_reference",
+              "en/cognitive",
+              "en/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "groups": [
+          {
+            "group": "Documentation",
+            "icon": "file-doc",
+            "pages": [
+              "fr/intro",
+              "fr/usermanual",
+              "fr/teachersguide",
+              "fr/book-1/book-1",
+              "fr/mathdrawings",
+              "fr/nfc",
+              "fr/sounds_reference",
+              "fr/cognitive",
+              "fr/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "de",
+        "groups": [
+          {
+            "group": "Dokumentation",
+            "icon": "file-doc",
+            "pages": [
+              "de/intro",
+              "de/usermanual",
+              "de/teachersguide",
+              "de/book-1/book-1",
+              "de/mathdrawings",
+              "de/nfc",
+              "de/sounds_reference",
+              "de/cognitive",
+              "de/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "es",
+        "groups": [
+          {
+            "group": "Documentación",
+            "icon": "file-doc",
+            "pages": [
+              "es/intro",
+              "es/usermanual",
+              "es/teachersguide",
+              "es/book-1/book-1",
+              "es/mathdrawings",
+              "es/nfc",
+              "es/sounds_reference",
+              "es/cognitive",
+              "es/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "nl",
+        "groups": [
+          {
+            "group": "Documentatie",
+            "icon": "file-doc",
+            "pages": [
+              "nl/intro",
+              "nl/usermanual",
+              "nl/teachersguide",
+              "nl/book-1/book-1",
+              "nl/mathdrawings",
+              "nl/nfc",
+              "nl/sounds_reference",
+              "nl/cognitive",
+              "nl/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "it",
+        "groups": [
+          {
+            "group": "Documentazione",
+            "icon": "file-doc",
+            "pages": [
+              "it/intro",
+              "it/usermanual",
+              "it/teachersguide",
+              "it/book-1/book-1",
+              "it/mathdrawings",
+              "it/nfc",
+              "it/sounds_reference",
+              "it/cognitive",
+              "it/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "no",
+        "groups": [
+          {
+            "group": "Dokumentasjon",
+            "icon": "file-doc",
+            "pages": [
+              "no/intro",
+              "no/usermanual",
+              "no/teachersguide",
+              "no/book-1/book-1",
+              "no/mathdrawings",
+              "no/nfc",
+              "no/sounds_reference",
+              "no/cognitive",
+              "no/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "sv",
+        "groups": [
+          {
+            "group": "Dokumentation",
+            "icon": "file-doc",
+            "pages": [
+              "sv/intro",
+              "sv/usermanual",
+              "sv/teachersguide",
+              "sv/book-1/book-1",
+              "sv/mathdrawings",
+              "sv/nfc",
+              "sv/sounds_reference",
+              "sv/cognitive",
+              "sv/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "jp",
+        "groups": [
+          {
+            "group": "日本語のドキュメント",
+            "icon": "file-doc",
+            "pages": [
+              "jp/intro",
+              "jp/usermanual",
+              "jp/teachersguide",
+              "jp/book-1/book-1",
+              "jp/mathdrawings",
+              "jp/nfc",
+              "jp/sounds_reference",
+              "jp/cognitive",
+              "jp/contacts"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "ru",
+        "groups": [
+          {
+            "group": "Документация",
+            "icon": "file-doc",
+            "pages": [
+              "ru/intro",
+              "ru/usermanual",
+              "ru/teachersguide",
+              "ru/book-1/book-1",
+              "ru/mathdrawings",
+              "ru/nfc",
+              "ru/sounds_reference",
+              "ru/cognitive",
+              "ru/contacts"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
@@ -238,9 +239,13 @@
       "website": "https://primastem.com/"
     }
   },
-
   "contextual": {
-    "options": ["copy", "chatgpt", "claude", "view"]
+    "options": [
+      "copy",
+      "chatgpt",
+      "claude",
+      "view"
+    ]
   },
   "errors": {
     "404": {
@@ -275,5 +280,4 @@
   "styling": {
     "eyebrows": "breadcrumbs"
   }
-  
 }
