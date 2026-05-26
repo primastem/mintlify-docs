@@ -1,11 +1,32 @@
 ---
 title: "Audio Files Reference"
 description: "PrimaSTEM Audio Files Reference"
-icon: "speacker"
+icon: "volume-2"
 mode: "default"
 ---
 
 Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, HE, RU
+
+---
+
+## How NFC Codes and Audio Files Relate
+
+Each audio file in the firmware has a code that matches its filename (e.g. `cfor` → `cfor.mp3`).
+When the remote or robot reads an NFC chip, it looks up this code and plays the corresponding file.
+
+However, some NFC chip codes are **composite** — they don't have their own audio file.
+Instead, the device splits them into a sequence of existing files to save firmware space.
+
+| NFC chip code | Played as |
+| --- | --- |
+| `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
+| `a001` (+1) | `xplu.mp3` + `n001.mp3` |
+| `s005` (−5) | `xmin.mp3` + `n005.mp3` |
+| `m002` (×2) | `xmul.mp3` + `n002.mp3` |
+| `d003` (÷3) | `xdiv.mp3` + `n003.mp3` |
+| `e002` (X²) | `xpow.mp3` + `n002.mp3` |
+
+The full list of physical NFC chip codes and kit contents is in [Command Chips](/en/nfc).
 
 ---
 
