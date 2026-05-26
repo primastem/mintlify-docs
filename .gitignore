@@ -1,0 +1,31 @@
+# Claude Code — local permissions & settings (personal, not for repo)
+.claude/settings.local.json
+
+# OMC (Mintlify session state) — session and checkpoint data
+.omc/sessions/
+.omc/state/
+
+# VS Code — personal workspace settings (keep extensions.json for team)
+.vscode/settings.json
+
+# Environment variables
+.env
+.env.local
+.env*.local
+
+# Node
+node_modules/
+.npm
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Mintlify build cache
+.mintlify/
+
+# Logs
+*.log
+npm-debug.log*
