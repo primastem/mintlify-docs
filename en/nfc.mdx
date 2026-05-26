@@ -5,51 +5,59 @@ icon: "nfc"
 mode: "default"
 ---
 
-# Command Chips
+## 🧭 Movement
 
-## **Basic Commands**
-
-| Command or Value | NFC Code |
+| Command | NFC Code |
 | --- | --- |
-| Forward | cfor |
-| Left | clef |
-| Right | crig |
-| Backward | cbac |
-| Repeat 2 | r002 |
-| Repeat 3 | r003 |
-| Repeat 4 | r004 |
-| Repeat 5 | r005 |
-| Repeat 6 | r006 |
-| Repeat Random Number (from 1 to 6) | rrnd |
-| Function | cfun |
-| Random Movement | crnd |
+| Forward | `cfor` |
+| Left | `clef` |
+| Right | `crig` |
+| Backward | `cbac` |
+| Random Movement | `crnd` |
 
-## **Extended Commands and Values**
+## 🔁 Repeat & Control
 
-| Command or Value | NFC Code |
+| Command | NFC Code |
 | --- | --- |
 | Repeat 2–999 | `r002`–`r999` |
+| Repeat Random Number (1 to 6) | `rrnd` |
+| Function | `cfun` |
+| Pause | `cwat` |
+
+## 🔢 Numbers
+
+| Value | NFC Code |
+| --- | --- |
 | Numbers 1–999 | `n001`–`n999` |
+
+## 🧮 Math Operations
+
+| Operation | NFC Code |
+| --- | --- |
 | +1 to +999 | `a001`–`a999` |
 | −1 to −999 | `s001`–`s999` |
 | ×N | `m002`–`m999` |
 | ÷N | `d002`–`d999` |
 | X^N | `e002`–`e999` |
 | Square Root of X | `sqrt` |
-| Pause | `cwat` |
+| Factorial | `fact` |
+
+## ⚙️ Settings
+
+| Command | NFC Code |
+| --- | --- |
 | Calibration | `ccal` |
 | Set Default Step Length for map | `clen` |
 
-## **Possible Additional Commands and Operations**
+## 🔧 Advanced
 
-| Command / Value | NFC Code |
+| Command | NFC Code |
 | --- | --- |
-| Factorial | fact |
-| Robot Sound Sample | xXXX (where XXX is a number from 001 to 999) |
-| Panel Sound Sample | csou |
-| Volume Level | clvl |
+| Audio Sample (see [Audio Files Reference](/en/sounds_reference)) | `xNNN` |
+| Panel Sound Sample | `csou` |
+| Volume Level | `clvl` |
 
-## **How to Write Data to an NFC Tag**
+## How to Write Data to an NFC Tag
 
 You can create your own token — simply write a text code to an NFC tag. You can use any numbers (from 0 to 999), any repetitions, and any numbers for arithmetic operations.
 
