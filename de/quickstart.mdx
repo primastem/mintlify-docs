@@ -1,97 +1,169 @@
 ---
-title: 'Schnellstart'
-description: 'Erstellen Sie in weniger als 5 Minuten erstaunliche Dokumentation'
-mode: "default"
+title: "Schnellstart"
+description: "Wie PrimaSTEM funktioniert — Roboter, Steuerung, Tokens. Ein Schnellstart."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Entwicklung einrichten
+PrimaSTEM ist ein bildschirmfreies Lernset für Programmierung, Logik und Mathematik für Kinder von 4 bis 10+ Jahren. Diese Seite erklärt kurz, **wie das Gerät funktioniert**.
 
-Erfahren Sie, wie Sie Ihre Dokumentation lokal aktualisieren und öffentlich veröffentlichen.
+## 1. Was ist in der Box
 
-### Bearbeiten und Vorschau
+<CardGroup cols={3}>
+  <Card title="Roboter" icon="bug">
+    Holz-Marienkäfer-Roboter auf zwei Rädern. Markerhalter oben. Lautsprecher, USB-C, Bluetooth.
+  </Card>
+  <Card title="Steuerung" icon="grid-3x3">
+    Holzpanel mit gepaarten Steckplätzen für das Programm. Mehrfarbige LEDs, ▶ Start/Stopp-Taste, Lautsprecher, USB-C, Bluetooth.
+  </Card>
+  <Card title="Code-Tokens" icon="square-stack">
+    Pappquadrate mit NFC-Aufklebern — jedes = ein Befehl im Programm des Roboters.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Klonen Sie Ihre Dokumentation lokal">
-    Während des Onboarding-Prozesses haben wir ein Repository auf Ihrem Github mit
-    dem Inhalt Ihrer Dokumentation erstellt. Sie finden dieses Repository auf
-    Ihrem [Dashboard](https://dashboard.mintlify.com). Um das Repository
-    lokal zu klonen, folgen Sie diesen
-    [Anweisungen](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in Ihrem Terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Änderungen in der Vorschau anzeigen">
-    Die Vorschau hilft sicherzustellen, dass Ihre Änderungen wie beabsichtigt aussehen. Wir haben
-    eine Befehlszeilenschnittstelle zum lokalen Anzeigen dieser Änderungen erstellt.
-    1. Installieren Sie
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify), um lokal eine Vorschau von
-    Dokumentationsänderungen mit diesem Befehl anzuzeigen: ``` npm i -g mintlify ```
-    2. Führen Sie den folgenden Befehl im Stammverzeichnis Ihrer Dokumentation aus (dort, wo
-    `docs.json` sich befindet): ``` mintlify dev ```
-    <Note>
-      Wenn Sie derzeit eine veraltete ```mint.json``` Konfigurationsdatei verwenden, aktualisieren Sie bitte Mintlify CLI:
+## 2. Einschalten
 
+<Steps>
+  <Step title="Roboter, dann Steuerung einschalten" icon="power">
+    Jedes Gerät gibt einen kurzen Ton aus; die grüne Betriebsanzeige bedeutet eingeschaltet.
+  </Step>
+  <Step title="Verbunden = weiß" icon="check">
+    Verfügbare Steckplätze der Steuerung leuchten **weiß**, die Augen des Roboters blinken **weiß**. Fertig.
+  </Step>
+  <Step title="Beide blau = Kopplung nötig" icon="bluetooth">
+    Halten Sie **▶ Start** an der Steuerung **>10 Sekunden** gedrückt — die Geräte koppeln sich und der Roboter startet neu.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      Und führen Sie den neuen Upgrade-Befehl in Ihrem Dokumentations-Repository aus:
+## 3. Wie ein Programm aufgebaut ist
 
-      ```mintlify upgrade```
-      Sie sollten jetzt die neue ```docs.json``` Konfigurationsdatei verwenden. Löschen Sie gerne die ```mint.json``` Datei aus Ihrem Repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+Die Steuerung hat **zwei Reihen gepaarter Steckplätze**. Sie setzen Tokens in die weiß leuchtenden Felder — daraus entsteht ein Programm. Drücken Sie **▶ Start** — der Roboter führt es aus.
 
-### Bereitstellen Ihrer Änderungen
+<Frame caption="Steuerung — die Buchstaben A–F werden unten erklärt">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Steuerung mit Beschriftung A bis F" />
+</Frame>
 
-<AccordionGroup>
+| Markierung | Bedeutung |
+| :---: | --- |
+| **A** | **Hauptprogramm** — 6 gepaarte Steckplätze, von links nach rechts ausgeführt |
+| **B** | **▶ Start / Stopp** — Ausführen; nochmal drücken während der Bewegung = Stopp |
+| **C** | **Funktion** — 5 gepaarte Steckplätze, aufgerufen durch das „Funktion"-Token |
+| **D** | Eine **Zelle** des Paares |
+| **E** | **Ausführungslinie**, die die gepaarten Zellen verbindet |
+| **F** | **Mehrfarbige LED** an jeder Zelle |
 
-<Accordion icon="message-bot" title="Installieren Sie unsere Github-App">
-  Unsere Github-App stellt Ihre Änderungen automatisch auf der Dokumentations-Website bereit,
-  sodass Sie Bereitstellungen nicht selbst verwalten müssen. Der Installationslink befindet sich auf
-  Ihrem [Dashboard](https://dashboard.mintlify.com). Sobald der Bot erfolgreich installiert ist,
-  sollte ein Häkchen neben dem Repository-Commit-Hash erscheinen.
-</Accordion>
-<Accordion icon="rocket" title="Pushen Sie Ihre Änderungen">
-  [Committen und pushen Sie Ihre Änderungen zu
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  um Ihre Dokumentations-Website zu aktualisieren. Wenn Sie Änderungen gepusht haben und nicht sehen,
-  dass die Github-App Ihre Änderungen erfolgreich bereitgestellt hat, können Sie auch
-  Ihre Dokumentation manuell über unser [Dashboard](https://dashboard.mintlify.com) aktualisieren.
-</Accordion>
+**Paar = zwei logisch verbundene Zellen.** Reihenfolge oben/unten egal — der Befehl kann in jede der beiden Zellen gelegt werden, Wiederholung/Zahl/Arithmetik in die andere. Ist die zweite Zelle leer, werden Standardwerte verwendet: Schritt 15 cm und Drehung 90° — für kleine Kinder reicht das.
 
-</AccordionGroup>
+LED-Farben während der Ausführung:
 
-## Aktualisieren Ihrer Dokumentation
+| ⚪ Weiß | 🟢 Grün | 🔵 Blau | 🔴 Rot |
+| :---: | :---: | :---: | :---: |
+| Bereit (Steckplatz frei) | Befehl gesetzt | Befehl + Zahl / Wiederholung / Arithmetik | Fehler — wird übersprungen |
 
-Fügen Sie Inhalt direkt in Ihre Dateien mit MDX-Syntax und React-Komponenten hinzu. Sie können jede unserer Komponenten verwenden oder sogar Ihre eigenen erstellen.
+Leere Steckplätze und rote Paare werden übersprungen. LEDs blinken an der aktuell ausgeführten Zelle.
 
-<CardGroup>
+## 4. Tokens — nach Gruppen
 
-<Card title="Inhalt mit MDX hinzufügen" icon="file" href="/essentials/markdown">
-  Fügen Sie Inhalt zu Ihrer Dokumentation mit MDX-Syntax hinzu.
-</Card>
+| Gruppe | Was die Tokens tun |
+| --- | --- |
+| **Bewegung** | Vorwärts · Rückwärts · Links · Rechts |
+| **Wiederholung** | Zwei Pfeile im Kreis + Punkte 2–6 innen (wie ein Würfel, für die Kleinen) oder Ziffern. In Paar mit einem Befehl — wiederholt ihn. |
+| **Zahlen** | `1`–`999`. Setzen die Bewegungsdistanz in mm oder den Drehwinkel in Grad. |
+| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! |
+| **Funktion** | Ruft die untere Reihe als Unterprogramm auf. Mit Wiederholungs-Token — läuft entsprechend oft. |
+| **Schritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. |
 
-<Card
-  title="Code-Blöcke hinzufügen"
-  icon="square-code"
-  href="/essentials/code"
->
-  Fügen Sie Code direkt in Ihre Dokumentation mit Syntaxhervorhebung hinzu.
-</Card>
+## 5. Standardwerte und gespeicherter Wert
 
-<Card
-  title="Bilder hinzufügen"
-  icon="image"
-  href="/essentials/images"
->
-  Fügen Sie Bilder zu Ihrer Dokumentation hinzu, um sie ansprechender zu gestalten.
-</Card>
+<Note>
+**Vorwärts = 150 mm (15 cm), Drehung = 90°.** Das **„Schritt"**-Token ändert die „Standard"-Distanz und behält sie nach dem Ausschalten. Praktisch für Spielraster anderer Roboter.
 
-<Card
-  title="Benutzerdefinierte Komponenten hinzufügen"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Fügen Sie Vorlagen zu Ihrer Dokumentation hinzu, um sie wiederverwendbarer zu machen.
-</Card>
+Während einer Sitzung behält jeder Bewegungsbefehl seinen **eigenen** gespeicherten Wert:
 
+- **eine Zahl** im Paar mit dem Befehl → ersetzt den letzten gespeicherten Wert oder den Standard
+- **ein Arithmetik-Token** → modifiziert ihn (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **leer** im Paar → nimmt den letzten gespeicherten Wert oder den Standard
+
+Gespeicherte Werte werden beim Ausschalten zurückgesetzt; der Standardwert (Schritt) bleibt.
+</Note>
+
+## 6. Der Roboter zeichnet, was Sie programmieren
+
+Probieren Sie diese Beispiele — Sie sehen, wozu das Gerät fähig ist. Stecken Sie einen Marker in die Mitte des Roboters — er **zeichnet** während der Fahrt.
+
+<CardGroup cols={2}>
+  <Card title="Stern — Zahlen + Wiederholung">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Stern-Programm auf der Steuerung" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Vom Roboter gezeichneter Stern" />
+    </Frame>
+  </Card>
+  <Card title="Spirale — Arithmetik in einer Schleife">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Spiral-Programm auf der Steuerung" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Vom Roboter gezeichnete Spirale" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Mehr Beispiele unter [Mathematische Zeichnungen](mathdrawings).
+
+## 7. Wie man mit PrimaSTEM unterrichtet
+
+<Tip>
+**Tokens-Befehle einer nach dem anderen einführen, in dieser Reihenfolge:**
+
+**Vorwärts → Drehungen → Wiederholungen → Funktion → Zahlen → Arithmetik.**
+
+Jedes nächste — erst nach sicherem Beherrschen des vorigen. Der vollständige 12-Lektionen-Plan mit Alter, Dauer und Materialien für die Kleinen — im [Buch 1](book-1/book-1).
+
+**Gruppenarbeit:** wir empfehlen ein Set pro **2–3 Kinder**.
+
+**Karten:** jedes Raster, das für andere Lernroboter gemacht ist, passt. Die Zellengröße wird mit dem **„Schritt"**-Token plus Zahl gesetzt (z. B. 100, 120, 150, 200 mm).
+
+**Trick für 10 Schritte statt 6.** Legen Sie das **Funktion [ ]**-Token in den letzten (6.) Steckplatz der oberen Reihe und befestigen Sie es mit Malerkrepp. Das Programm läuft dann als eine lange Kette: 5 obere Schritte + 5 untere = **10 Schritte am Stück**. Praktisch für kleine Kinder, die ein längeres Programm brauchen, aber noch nicht reif sind für das Funktionskonzept.
+</Tip>
+
+## 8. Weitere Möglichkeiten
+
+<CardGroup cols={2}>
+  <Card title="Marker und Zeichnen" icon="pen-line">
+    Stecken Sie einen Marker in den Roboter — er **zeichnet** seinen Weg auf Papier: von einer einfachen Bahn bis zu Polygonen, Sternen, Spiralen und Fraktalen.
+  </Card>
+  <Card title="Sprachausgabe" icon="volume-2">
+    Die Steuerung spricht jedes Token aus — Stimme **in beliebigen lokalen Sprachen**, derzeit **17 unterstützt**, weitere auf Anfrage! Hilft kleinen Kindern und Nichtlesern. Mit Alphabet-Buchstaben und Orten (Haus, Schule, Laden, Wald usw.)
+  </Card>
+  <Card title="Klang-NFC-Sticker und Karten" icon="map">
+    Kleben Sie NFC-Tags auf Ihre Karte, programmieren Sie vom Handy aus jeden verfügbaren Klang. Der Roboter hat eine Antenne unten — beim Stopp auf einem Tag spielt er den aufgenommenen Klang ab.
+  </Card>
+  <Card title="Offene NFC-Plattform" icon="nfc">
+    Schreiben Sie eigene Tokens — jeder 13.56-MHz-NFC-Tag (günstig, überall im Handel) + ein Text-Code aus unserer Dokumentation — alles zusammen 10 Sekunden. Kostenlose Handy-App (NFC Tools).
+  </Card>
+</CardGroup>
+
+## Weiterlesen
+
+<CardGroup cols={2}>
+  <Card title="Bedienungsanleitung" icon="book-open" href="usermanual">
+    Vollständige technische Spezifikationen, Kopplung, Kalibrierung, Sicherheit.
+  </Card>
+  <Card title="Lehrerhandbuch" icon="book" href="teachersguide">
+    Pädagogik, Einsatz im Unterricht, Programmierkonzepte durch Spielen.
+  </Card>
+  <Card title="Buch 1 — Lektionen" icon="graduation-cap" href="book-1/book-1">
+    12 fertige Lektionen für kleine Kinder — mit Alter, Dauer und druckbaren Materialien.
+  </Card>
+  <Card title="Befehls-Tokens" icon="nfc" href="nfc">
+    Alle NFC-Codes — zum Erstellen eigener Tokens mit dem Handy.
+  </Card>
+  <Card title="Mathematische Zeichnungen" icon="pen-line" href="mathdrawings">
+    Geometrische Figuren, Fraktale, Spiralen — Programme und Ergebnisse.
+  </Card>
+  <Card title="Audio-Wörterbuch" icon="volume-2" href="sounds_reference">
+    Wörter — Orte und Begriffe, Alphabet, Musiknoten, Systemklänge. Zum Aufnehmen eigener Tokens und zur Wiedergabe.
+  </Card>
 </CardGroup>

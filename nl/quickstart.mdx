@@ -1,97 +1,169 @@
 ---
-title: 'Snelstart'
-description: 'Begin met het maken van geweldige documentatie in minder dan 5 minuten'
-mode: "default"
+title: "Snelstart"
+description: "Hoe PrimaSTEM werkt — robot, bediening, kaartjes. Snelstart."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Ontwikkeling instellen
+PrimaSTEM is een schermloze educatieve set voor het leren van programmeren, logica en wiskunde, voor kinderen van 4 tot 10+ jaar. Deze pagina legt kort uit **hoe het apparaat werkt**.
 
-Leer hoe u uw documentatie lokaal kunt bijwerken en openbaar kunt publiceren.
+## 1. Wat zit er in de doos
 
-### Bewerken en voorbeeld
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Houten lieveheersbeestje-robot op twee wielen. Bovenop een houder voor de stift. Luidspreker, USB-C, Bluetooth.
+  </Card>
+  <Card title="Bediening" icon="grid-3x3">
+    Paneel met gepaarde sleuven voor het programma. Veelkleurige indicatoren, ▶ Start/Stop-knop, luidspreker, USB-C, Bluetooth.
+  </Card>
+  <Card title="Codekaartjes" icon="square-stack">
+    Kartonnen vierkantjes met NFC-stickers — elk = één commando voor het programma van de robot.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Kloon uw documentatie lokaal">
-    Tijdens het onboarding-proces hebben we een repository op uw Github gemaakt met
-    de inhoud van uw documentatie. U vindt deze repository op
-    uw [dashboard](https://dashboard.mintlify.com). Om de repository
-    lokaal te klonen, volgt u deze
-    [instructies](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in uw terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Wijzigingen voorbeeld">
-    Voorbeeld helpt ervoor te zorgen dat uw wijzigingen eruitzien zoals bedoeld. We hebben
-    een command-line interface gemaakt om deze wijzigingen lokaal weer te geven.
-    1. Installeer
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) om lokaal een voorbeeld van
-    documentatiewijzigingen weer te geven met dit commando: ``` npm i -g mintlify ```
-    2. Voer het volgende commando uit in de root van uw documentatie (waar
-    `docs.json` zich bevindt): ``` mintlify dev ```
-    <Note>
-      Als u momenteel een verouderd ```mint.json``` configuratiebestand gebruikt, werk dan Mintlify CLI bij:
+## 2. Aanzetten
 
+<Steps>
+  <Step title="Zet eerst de robot aan, dan de bediening" icon="power">
+    Beide geven een korte toon; het groene aan-lampje op elk apparaat = aan.
+  </Step>
+  <Step title="Verbonden = wit" icon="check">
+    De beschikbare sleuven op de bediening lichten **wit** op, de ogen van de robot knipperen **wit**. Klaar.
+  </Step>
+  <Step title="Beide blauw = koppelen nodig" icon="bluetooth">
+    Houd **▶ Start** op de bediening **>10 seconden** ingedrukt — de apparaten koppelen en de robot start opnieuw.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      En voer het nieuwe upgrade-commando uit in uw documentatie-repository:
+## 3. Hoe een programma werkt
 
-      ```mintlify upgrade```
-      U moet nu het nieuwe ```docs.json``` configuratiebestand gebruiken. Verwijder gerust het ```mint.json``` bestand uit uw repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+De bediening heeft **twee rijen met gepaarde sleuven**. Je plaatst kaartjes in de sleuven die wit oplichten — dat is het programma. Druk op **▶ Start** — de robot voert het uit.
 
-### Uw wijzigingen implementeren
+<Frame caption="Schema van de bediening — letters A–F worden hieronder uitgelegd">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Bediening met letters A tot F" />
+</Frame>
 
-<AccordionGroup>
+| Letter | Wat het is |
+| :---: | --- |
+| **A** | **Hoofdprogramma** — 6 gepaarde sleuven, van links naar rechts uitgevoerd |
+| **B** | **▶ Start / Stop** — starten; nogmaals indrukken tijdens beweging = stop |
+| **C** | **Functie** — 5 gepaarde sleuven, aangeroepen door het kaartje «Functie» |
+| **D** | Eén **cel** van het paar |
+| **E** | **Uitvoeringslijn** die de gepaarde cellen verbindt |
+| **F** | **Veelkleurige LED** op elke cel |
 
-<Accordion icon="message-bot" title="Installeer onze Github-app">
-  Onze Github-app implementeert uw wijzigingen automatisch naar de documentatiesite,
-  dus u hoeft implementaties niet zelf te beheren. De installatielink bevindt zich op
-  uw [dashboard](https://dashboard.mintlify.com). Zodra de bot succesvol is geïnstalleerd,
-  zou er een vinkje moeten verschijnen naast de repository commit-hash.
-</Accordion>
-<Accordion icon="rocket" title="Push uw wijzigingen">
-  [Commit en push uw wijzigingen naar
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  om uw documentatiesite bij te werken. Als u wijzigingen heeft gepusht en niet ziet
-  dat de Github-app uw wijzigingen succesvol heeft geïmplementeerd, kunt u ook
-  uw documentatie handmatig bijwerken via ons [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+**Paar = twee logisch gekoppelde cellen.** De volgorde boven/onder maakt niet uit — het commando kan in een van beide cellen, herhaling/getal/rekenkundig kaartje in de andere. Is de tweede cel leeg, dan worden standaardwaarden gebruikt: stap 15 cm en draai 90° — genoeg voor jonge kinderen.
 
-</AccordionGroup>
+LED-kleuren tijdens uitvoering:
 
-## Uw documentatie bijwerken
+| ⚪ Wit | 🟢 Groen | 🔵 Blauw | 🔴 Rood |
+| :---: | :---: | :---: | :---: |
+| Wacht (sleuf vrij) | Commando ingesteld | Commando + getal / herhaling / rekenkunde | Fout — overgeslagen |
 
-Voeg inhoud rechtstreeks toe aan uw bestanden met MDX-syntax en React-componenten. U kunt elk van onze componenten gebruiken of zelfs uw eigen componenten maken.
+Lege sleuven en rode paren worden overgeslagen. De LED's knipperen op de cel die op dat moment wordt uitgevoerd.
 
-<CardGroup>
+## 4. Kaartjes — per groep
 
-<Card title="Inhoud toevoegen met MDX" icon="file" href="/essentials/markdown">
-  Voeg inhoud toe aan uw documentatie met MDX-syntax.
-</Card>
+| Groep | Wat de kaartjes doen |
+| --- | --- |
+| **Beweging** | Vooruit · Achteruit · Links · Rechts |
+| **Herhaling** | Twee pijlen in een lus + binnenin punten 2–6 (als op een dobbelsteen, voor de kleintjes) of met cijfers. In paar met een commando — herhaalt het. |
+| **Getallen** | `1`–`999`. Bepalen de beweegafstand in mm of de draaihoek in graden. |
+| **Rekenkunde** | `+N` `−N` `×N` `÷N` `√` `^N` — één kaartje = bewerking + getal. Wijzigt de opgeslagen waarde van beweging of draaiing. Een negatief resultaat keert de richting om! |
+| **Functie** | Roept de onderste rij aan als subprogramma. Met herhaling-kaartje — wordt zo vaak uitgevoerd. |
+| **Stap** | Servicekaartje + Getal = wijzigt de standaardstap (bijvoorbeeld getal 100, in millimeters, voor een 10-cm-raster). Blijft na uitschakelen behouden. |
 
-<Card
-  title="Codeblokken toevoegen"
-  icon="square-code"
-  href="/essentials/code"
->
-  Voeg code rechtstreeks toe aan uw documentatie met syntaxhighlighting.
-</Card>
+## 5. Standaardwaarden en opgeslagen waarde
 
-<Card
-  title="Afbeeldingen toevoegen"
-  icon="image"
-  href="/essentials/images"
->
-  Voeg afbeeldingen toe aan uw documentatie om deze aantrekkelijker te maken.
-</Card>
+<Note>
+**Vooruit = 150 mm (15 cm), draai = 90°.** Het kaartje **«Stap»** wijzigt de «standaard»-afstand en bewaart deze na uitschakelen. Handig voor speelvelden van andere robots.
 
-<Card
-  title="Aangepaste componenten toevoegen"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Voeg sjablonen toe aan uw documentatie om deze herbruikbaarder te maken.
-</Card>
+Tijdens één sessie houdt elk bewegingscommando **zijn eigen** opgeslagen waarde:
 
+- **een getal** in het paar met het commando → vervangt de laatst opgeslagen of standaard waarde
+- **een rekenkundig kaartje** → wijzigt deze (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **leeg** in het paar → neemt de laatst opgeslagen of standaard waarde
+
+Opgeslagen waarden worden bij uitschakelen gereset; de standaardwaarde (stap) blijft.
+</Note>
+
+## 6. De robot tekent wat je programmeert
+
+Probeer deze voorbeelden — je ziet waartoe het apparaat in staat is. Steek een stift in het midden van de robot — hij **tekent** terwijl hij beweegt.
+
+<CardGroup cols={2}>
+  <Card title="Ster — getallen + herhaling">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Programma van de ster op de bediening" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Door de robot getekende ster" />
+    </Frame>
+  </Card>
+  <Card title="Spiraal — rekenkunde in een lus">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Programma van de spiraal op de bediening" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Door de robot getekende spiraal" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Meer voorbeelden in [Wiskundige tekeningen](mathdrawings).
+
+## 7. Hoe te onderwijzen met PrimaSTEM
+
+<Tip>
+**Introduceer de commando-kaartjes één voor één, in deze volgorde:**
+
+**Vooruit → Draaien → Herhalingen → Functie → Getallen → Rekenkunde.**
+
+Elke volgende — pas nadat de vorige goed beheerst wordt. Het volledige 12-lessen-plan met leeftijd, duur en materialen voor jonge kinderen — in [Boek 1](book-1/book-1).
+
+**Groepswerk:** we adviseren één set per **2–3 kinderen**.
+
+**Speelvelden:** elk raster gemaakt voor andere educatieve robots werkt. De celgrootte stel je in met het kaartje **«Stap»** met een getal (bijvoorbeeld 100, 120, 150, 200 mm).
+
+**Truc voor 10 stappen in plaats van 6.** Leg het kaartje **Functie [ ]** in de laatste (6e) sleuf van de bovenste rij en plak het vast met schilderstape. Het programma loopt nu als één lange ketting: 5 stappen boven + 5 onder = **10 stappen achter elkaar**. Handig voor de kleintjes die een langer programma nodig hebben, maar voor wie het nog te vroeg is voor het functie-concept.
+</Tip>
+
+## 8. Extra mogelijkheden
+
+<CardGroup cols={2}>
+  <Card title="Stift en tekenen" icon="pen-line">
+    Steek een stift in de robot — hij **tekent** zijn pad op papier: van een eenvoudig traject tot veelhoeken, sterren, spiralen en fractals.
+  </Card>
+  <Card title="Stem" icon="volume-2">
+    De bediening spreekt elk kaartje uit — stem **in elke lokale taal**, momenteel **17 ondersteund**, we voegen er op verzoek meer toe! Helpt jonge kinderen en niet-lezers. Bevat letters van het alfabet en plaatsen (Huis, School, Winkel, Bos, enz.)
+  </Card>
+  <Card title="NFC-geluidsstickers en speelvelden" icon="map">
+    Plak NFC-tags op je speelveld, programmeer vanaf je telefoon elk beschikbaar geluid. De robot heeft een antenne onderaan — als hij op een tag stopt, speelt hij het opgenomen geluid af.
+  </Card>
+  <Card title="Open NFC-platform" icon="nfc">
+    Maak je eigen kaartjes — elke 13.56 MHz NFC-tag (goedkoop, in elke marktplaats te koop) + een tekstcode uit onze documentatie — alles bij elkaar 10 seconden. Gratis app voor telefoon (NFC Tools).
+  </Card>
+</CardGroup>
+
+## Wat hierna te lezen
+
+<CardGroup cols={2}>
+  <Card title="Gebruikershandleiding" icon="book-open" href="usermanual">
+    Volledige technische specificaties, koppeling, kalibratie, veiligheid.
+  </Card>
+  <Card title="Lerarenhandleiding" icon="book" href="teachersguide">
+    Pedagogie, gebruik in de klas, programmeerconcepten door spel.
+  </Card>
+  <Card title="Boek 1 — Lessen" icon="graduation-cap" href="book-1/book-1">
+    12 kant-en-klare lessen voor jonge kinderen — met leeftijd, duur en printbare materialen.
+  </Card>
+  <Card title="Commandokaartjes" icon="nfc" href="nfc">
+    Alle NFC-codes — om je eigen kaartjes met de telefoon te maken.
+  </Card>
+  <Card title="Wiskundige tekeningen" icon="pen-line" href="mathdrawings">
+    Geometrische figuren, fractals, spiralen — programma's en resultaten.
+  </Card>
+  <Card title="Audiowoordenboek" icon="volume-2" href="sounds_reference">
+    Woorden — plaatsen en begrippen, alfabet, muzieknoten, systeemgeluiden. Om eigen kaartjes op te nemen en af te spelen.
+  </Card>
 </CardGroup>

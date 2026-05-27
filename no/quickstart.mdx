@@ -1,97 +1,169 @@
 ---
-title: 'Hurtigstart'
-description: 'Begynn å lage fantastisk dokumentasjon på mindre enn 5 minutter'
-mode: "default"
+title: "Hurtigstart"
+description: "Hvordan PrimaSTEM fungerer — robot, kontrollpanel, brikker. Hurtigstart."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Utviklingsoppsett
+PrimaSTEM er et skjermfritt læringssett for programmering, logikk og matematikk, for barn fra 4 til 10+ år. Denne siden forklarer kort **hvordan enheten fungerer**.
 
-Lær hvordan du oppdaterer dokumentasjonen din lokalt og publiserer den offentlig.
+## 1. Hva er i esken
 
-### Redigering og forhåndsvisning
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Marihøne-robot i tre på to hjul. Tusjholder på toppen. Høyttaler, USB-C, Bluetooth.
+  </Card>
+  <Card title="Kontrollpanel" icon="grid-3x3">
+    Panel med parede spor for programmet. Flerfargede indikatorer, ▶ Start/Stopp-knapp, høyttaler, USB-C, Bluetooth.
+  </Card>
+  <Card title="Kodebrikker" icon="square-stack">
+    Pappkvadrater med NFC-klistremerker — hver = én kommando i robotens program.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Klon dokumentasjonen din lokalt">
-    Under onboarding-prosessen opprettet vi et repository på Github med
-    innholdet i dokumentasjonen din. Du finner dette repositoryet på
-    [dashbordet](https://dashboard.mintlify.com). For å klone repositoryet
-    lokalt, følg disse
-    [instruksjonene](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    i terminalen din.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Forhåndsvis endringer">
-    Forhåndsvisning hjelper deg med å sikre at endringene dine ser ut som tiltenkt. Vi har opprettet
-    et kommandolinjegrensesnitt for lokalt å vise disse endringene.
-    1. Installer
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) for å forhåndsvise
-    dokumentasjonsendringer lokalt med denne kommandoen: ``` npm i -g mintlify ```
-    2. Kjør følgende kommando i roten av dokumentasjonen din (der
-    `docs.json` er plassert): ``` mintlify dev ```
-    <Note>
-      Hvis du for øyeblikket bruker en foreldet ```mint.json``` konfigurasjonsfil, vennligst oppdater Mintlify CLI:
+## 2. Slå på
 
+<Steps>
+  <Step title="Slå på roboten først, så kontrollpanelet" icon="power">
+    Hver gir en kort lyd; det grønne strømlyset på hver enhet = på.
+  </Step>
+  <Step title="Tilkoblet = hvit" icon="check">
+    Tilgjengelige spor på kontrollpanelet lyser **hvitt**, robotens øyne blinker **hvitt**. Klart.
+  </Step>
+  <Step title="Begge blå = paring nødvendig" icon="bluetooth">
+    Hold **▶ Start** på panelet i **mer enn 10 sekunder** — enhetene parer seg og roboten starter på nytt.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      Og kjør den nye oppgraderingskommandoen i dokumentasjons-repositoryet ditt:
+## 3. Hvordan et program fungerer
 
-      ```mintlify upgrade```
-      Du bør nå bruke den nye ```docs.json``` konfigurasjonsfilen. Du kan gjerne slette ```mint.json``` filen fra repositoryet ditt.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+Panelet har **to rader med parede spor**. Du plasserer brikker i sporene som lyser hvitt — det blir programmet. Trykk **▶ Start** — roboten utfører det.
 
-### Distribuere endringene dine
+<Frame caption="Skjema for kontrollpanelet — bokstavene A–F forklares under">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Kontrollpanel med merker A til F" />
+</Frame>
 
-<AccordionGroup>
+| Merke | Hva det er |
+| :---: | --- |
+| **A** | **Hovedprogram** — 6 parede spor, kjøres fra venstre til høyre |
+| **B** | **▶ Start / Stopp** — start; trykk igjen mens roboten beveger seg = stopp |
+| **C** | **Funksjon** — 5 parede spor, kalles av «Funksjon»-brikken |
+| **D** | Én **celle** i et par |
+| **E** | **Utførelseslinje** som forbinder de parede cellene |
+| **F** | **Flerfarget LED** på hver celle |
 
-<Accordion icon="message-bot" title="Installer Github-appen vår">
-  Github-appen vår distribuerer automatisk endringene dine til dokumentasjonsnettstedet,
-  så du trenger ikke å administrere distribusjoner selv. Installeringslenken finnes på
-    [dashbordet](https://dashboard.mintlify.com). Når boten er installert,
-  skal et merke vises ved siden av repositoryets commit-hash.
-</Accordion>
-<Accordion icon="rocket" title="Push endringene dine">
-  [Commit og push endringene dine til
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for å oppdatere dokumentasjonsnettstedet ditt. Hvis du har pushet endringer og ikke ser
-  at Github-appen har distribuert endringene dine, kan du også
-  manuelt oppdatere dokumentasjonen via [dashbordet](https://dashboard.mintlify.com).
-</Accordion>
+**Par = to logisk koblede celler.** Rekkefølgen topp/bunn spiller ingen rolle — kommandoen kan legges i hvilken som helst av de to cellene, gjentakelse/tall/regning i den andre. Hvis den andre cellen er tom, brukes standardverdier: steg 15 cm og sving 90° — nok for små barn.
 
-</AccordionGroup>
+LED-farger under utførelse:
 
-## Oppdatere dokumentasjonen din
+| ⚪ Hvit | 🟢 Grønn | 🔵 Blå | 🔴 Rød |
+| :---: | :---: | :---: | :---: |
+| Venter (spor ledig) | Kommando satt | Kommando + tall / gjentakelse / regning | Feil — hoppes over |
 
-Legg til innhold direkte i filene dine ved hjelp av MDX-syntaks og React-komponenter. Du kan bruke hvilken som helst av komponentene våre eller til og med lage dine egne.
+Tomme spor og røde par hoppes over. LED-ene blinker på cellen som kjøres akkurat nå.
 
-<CardGroup>
+## 4. Brikker — etter gruppe
 
-<Card title="Legge til innhold med MDX" icon="file" href="/essentials/markdown">
-  Legg til innhold i dokumentasjonen din ved hjelp av MDX-syntaks.
-</Card>
+| Gruppe | Hva brikkene gjør |
+| --- | --- |
+| **Bevegelse** | Fremover · Bakover · Venstre · Høyre |
+| **Gjentakelse** | To piler i sirkel + inni prikker 2–6 (som på en terning, for de små) eller med tall. I par med en kommando — gjentar den. |
+| **Tall** | `1`–`999`. Bestemmer bevegelsesavstand i mm eller dreievinkel i grader. |
+| **Regning** | `+N` `−N` `×N` `÷N` `√` `^N` — én brikke = operasjon + tall. Endrer den lagrede verdien for bevegelse eller dreining. Et negativt resultat reverserer retningen! |
+| **Funksjon** | Kaller den nederste raden som underprogram. Med gjentakelse-brikke — kjøres angitt antall ganger. |
+| **Steg** | Servicebrikke + Tall = endrer standardsteget (f.eks. tall 100, i millimeter, for et 10-cm-rutenett). Bevares etter avslåing. |
 
-<Card
-  title="Legge til kodeblokker"
-  icon="square-code"
-  href="/essentials/code"
->
-  Legg til kode direkte i dokumentasjonen din med syntaksutheving.
-</Card>
+## 5. Standardverdier og lagret verdi
 
-<Card
-  title="Legge til bilder"
-  icon="image"
-  href="/essentials/images"
->
-  Legg til bilder i dokumentasjonen din for å gjøre den mer engasjerende.
-</Card>
+<Note>
+**Fremover = 150 mm (15 cm), sving = 90°.** «**Steg**»-brikken endrer «standard»-avstanden og bevarer den etter avslåing. Praktisk for spillkart fra andre roboter.
 
-<Card
-  title="Legge til tilpassede komponenter"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Legg til maler i dokumentasjonen din for å gjøre den mer gjenbrukbar.
-</Card>
+I løpet av én økt holder hver bevegelseskommando på **sin egen** lagrede verdi:
 
+- **et tall** i paret med kommandoen → erstatter siste lagrede verdi eller standardverdi
+- **en regnebrikke** → endrer den (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **tomt** i paret → tar siste lagrede verdi eller standardverdi
+
+Lagrede verdier nullstilles når panelet slås av; standardverdien (steg) består.
+</Note>
+
+## 6. Roboten tegner det du programmerer
+
+Prøv disse eksemplene — du ser hva enheten kan. Sett en tusj midt i roboten — den **tegner** mens den beveger seg.
+
+<CardGroup cols={2}>
+  <Card title="Stjerne — tall + gjentakelse">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Stjerneprogram på panelet" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Stjerne tegnet av roboten" />
+    </Frame>
+  </Card>
+  <Card title="Spiral — regning i en løkke">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Spiralprogram på panelet" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Spiral tegnet av roboten" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Flere eksempler under [Matematiske tegninger](mathdrawings).
+
+## 7. Hvordan undervise med PrimaSTEM
+
+<Tip>
+**Innfør kommandobrikker én og én, i denne rekkefølgen:**
+
+**Fremover → Svinger → Gjentakelser → Funksjon → Tall → Regning.**
+
+Hver neste — først etter at den forrige er trygt mestret. Den fullstendige planen med 12 økter med alder, varighet og materialer for de små — i [Bok 1](book-1/book-1).
+
+**Gruppearbeid:** vi anbefaler ett sett per **2–3 barn**.
+
+**Kart:** alle rutenett laget for andre læringsroboter fungerer. Cellestørrelsen settes med **«Steg»**-brikken og et tall (f.eks. 100, 120, 150, 200 mm).
+
+**Triks for 10 steg i stedet for 6.** Plasser **Funksjon [ ]**-brikken i siste (6.) spor i øvre rad og fest den med malertape. Programmet kjøres nå som én lang kjede: 5 øvre steg + 5 nedre = **10 steg etter hverandre**. Praktisk for de små som trenger et lengre program, men ennå er for unge for funksjonsbegrepet.
+</Tip>
+
+## 8. Flere muligheter
+
+<CardGroup cols={2}>
+  <Card title="Tusj og tegning" icon="pen-line">
+    Sett en tusj i roboten — den **tegner** sin bane på papir: fra en enkel kurve til mangekanter, stjerner, spiraler og fraktaler.
+  </Card>
+  <Card title="Stemme" icon="volume-2">
+    Panelet sier hver brikke høyt — stemme **på hvilket som helst lokalt språk**, for tiden **17 støttet**, vi legger til flere på forespørsel! Hjelper små barn og de som ennå ikke leser. Inneholder alfabetbokstaver og steder (Hus, Skole, Butikk, Skog osv.)
+  </Card>
+  <Card title="Lyd-NFC-klistremerker og kart" icon="map">
+    Lim NFC-merker på kartet ditt, programmer fra telefonen hvilken som helst tilgjengelig lyd. Roboten har en antenne under — stopper den på et merke, spiller den den innspilte lyden.
+  </Card>
+  <Card title="Åpen NFC-plattform" icon="nfc">
+    Lag dine egne brikker — hvilken som helst 13.56 MHz NFC-tag (billige, selges på alle markedsplasser) + en tekstkode fra dokumentasjonen vår — alt sammen tar 10 sekunder. Gratis telefonapp (NFC Tools).
+  </Card>
+</CardGroup>
+
+## Hva du leser videre
+
+<CardGroup cols={2}>
+  <Card title="Brukerhåndbok" icon="book-open" href="usermanual">
+    Fullstendige tekniske spesifikasjoner, paring, kalibrering, sikkerhet.
+  </Card>
+  <Card title="Lærerveiledning" icon="book" href="teachersguide">
+    Pedagogikk, klasseromsbruk, programmeringsbegreper gjennom lek.
+  </Card>
+  <Card title="Bok 1 — Leksjoner" icon="graduation-cap" href="book-1/book-1">
+    12 ferdige leksjoner for små barn — med alder, varighet og utskriftsmateriell.
+  </Card>
+  <Card title="Kommandobrikker" icon="nfc" href="nfc">
+    Alle NFC-koder — for å lage dine egne brikker med telefonen.
+  </Card>
+  <Card title="Matematiske tegninger" icon="pen-line" href="mathdrawings">
+    Geometriske figurer, fraktaler, spiraler — programmer og resultater.
+  </Card>
+  <Card title="Lydordbok" icon="volume-2" href="sounds_reference">
+    Ord — steder og begreper, alfabet, musikknoter, systemlyder. For å spille inn egne brikker og avspilling.
+  </Card>
 </CardGroup>

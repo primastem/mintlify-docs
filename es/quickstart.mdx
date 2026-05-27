@@ -1,97 +1,169 @@
 ---
-title: 'Inicio rápido'
-description: 'Comienza a crear documentación increíble en menos de 5 minutos'
-mode: "default"
+title: "Inicio rápido"
+description: "Cómo funciona PrimaSTEM — robot, mando, fichas. Inicio rápido."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Configuración de desarrollo
+PrimaSTEM es un kit educativo sin pantalla para aprender programación, lógica y matemáticas, para niños de 4 a 10+ años. Esta página explica brevemente **cómo funciona el dispositivo**.
 
-Aprende cómo actualizar tu documentación localmente y publicarla públicamente.
+## 1. Qué hay en la caja
 
-### Edición y vista previa
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Robot-mariquita de madera sobre dos ruedas. Encima, una ranura para el rotulador. Altavoz, USB-C, Bluetooth.
+  </Card>
+  <Card title="Mando" icon="grid-3x3">
+    Panel con ranuras emparejadas para el programa. Indicadores multicolor, botón ▶ Inicio/Parada, altavoz, USB-C, Bluetooth.
+  </Card>
+  <Card title="Fichas de código" icon="square-stack">
+    Cuadrados de cartón con etiquetas NFC — cada una = un comando para el programa del robot.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clona tu documentación localmente">
-    Durante el proceso de incorporación, creamos un repositorio en tu Github con
-    el contenido de tu documentación. Puedes encontrar este repositorio en
-    tu [panel de control](https://dashboard.mintlify.com). Para clonar el repositorio
-    localmente, sigue estas
-    [instrucciones](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    en tu terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Vista previa de cambios">
-    La vista previa ayuda a asegurar que tus cambios se vean como se pretende. Hemos creado
-    una interfaz de línea de comandos para mostrar estos cambios localmente.
-    1. Instala
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) para obtener una vista previa local
-    de los cambios de documentación con este comando: ``` npm i -g mintlify ```
-    2. Ejecuta el siguiente comando en la raíz de tu documentación (donde
-    se encuentra `docs.json`): ``` mintlify dev ```
-    <Note>
-      Si actualmente estás usando un archivo de configuración heredado ```mint.json```, actualiza Mintlify CLI:
+## 2. Encendido
 
+<Steps>
+  <Step title="Enciende el robot, luego el mando" icon="power">
+    Cada uno emite un sonido breve; el indicador verde de encendido en cada dispositivo = encendido.
+  </Step>
+  <Step title="Conectado = blanco" icon="check">
+    Las ranuras disponibles del mando se iluminan en **blanco**, los ojos del robot parpadean en **blanco**. Listo.
+  </Step>
+  <Step title="Ambos en azul = hace falta emparejar" icon="bluetooth">
+    Mantén pulsado **▶ Inicio** en el mando durante **más de 10 segundos** — los dispositivos se emparejan y el robot se reinicia.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      Y ejecuta el nuevo comando de actualización en el repositorio de tu documentación:
+## 3. Cómo funciona un programa
 
-      ```mintlify upgrade```
-      Ahora debes usar el nuevo archivo de configuración ```docs.json```. Siéntete libre de eliminar el archivo ```mint.json``` de tu repositorio.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+El mando tiene **dos filas de ranuras emparejadas**. Colocas las fichas en las ranuras que se iluminan en blanco — eso es el programa. Pulsas **▶ Inicio** — el robot lo ejecuta.
 
-### Implementación de tus cambios
+<Frame caption="Diagrama del mando — las letras A–F se explican abajo">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Mando con etiquetas A a F" />
+</Frame>
 
-<AccordionGroup>
+| Letra | Qué es |
+| :---: | --- |
+| **A** | **Programa principal** — 6 ranuras emparejadas, se ejecuta de izquierda a derecha |
+| **B** | **▶ Inicio / Parada** — arranca; pulsar de nuevo durante el movimiento = parar |
+| **C** | **Función** — 5 ranuras emparejadas, se llama con la ficha «Función» |
+| **D** | Una **celda** del par |
+| **E** | **Línea de ejecución** que conecta las celdas en pareja |
+| **F** | **LED multicolor** en cada celda |
 
-<Accordion icon="message-bot" title="Instala nuestra aplicación de Github">
-  Nuestra aplicación de Github implementa automáticamente tus cambios en el sitio de documentación,
-  por lo que no necesitas gestionar las implementaciones tú mismo. El enlace de instalación se encuentra en
-  tu [panel de control](https://dashboard.mintlify.com). Una vez que el bot esté instalado correctamente,
-  debería aparecer una marca de verificación junto al hash de confirmación del repositorio.
-</Accordion>
-<Accordion icon="rocket" title="Envía tus cambios">
-  [Confirma y envía tus cambios a
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  para actualizar tu sitio de documentación. Si has enviado cambios y no ves
-  que la aplicación de Github haya implementado tus cambios correctamente, también puedes
-  actualizar manualmente tu documentación a través de nuestro [panel de control](https://dashboard.mintlify.com).
-</Accordion>
+**Pareja = dos celdas lógicamente vinculadas.** El orden arriba/abajo no importa — el comando se puede colocar en cualquiera de las dos celdas, la repetición/número/aritmética en la otra. Si la segunda celda está vacía, se usan los valores por defecto: paso 15 cm y giro 90° — suficiente para los más pequeños.
 
-</AccordionGroup>
+Colores LED durante la ejecución:
 
-## Actualización de tu documentación
+| ⚪ Blanco | 🟢 Verde | 🔵 Azul | 🔴 Rojo |
+| :---: | :---: | :---: | :---: |
+| Espera (ranura libre) | Comando puesto | Comando + número / repetición / aritmética | Error — se omite |
 
-Agrega contenido directamente en tus archivos usando sintaxis MDX y componentes React. Puedes usar cualquiera de nuestros componentes o incluso crear los tuyos propios.
+Las ranuras vacías y las parejas rojas se omiten. Los LED parpadean en la celda que se ejecuta en ese instante.
 
-<CardGroup>
+## 4. Fichas — por grupos
 
-<Card title="Agregar contenido con MDX" icon="file" href="/essentials/markdown">
-  Agrega contenido a tu documentación usando sintaxis MDX.
-</Card>
+| Grupo | Qué hacen las fichas |
+| --- | --- |
+| **Movimiento** | Adelante · Atrás · Izquierda · Derecha |
+| **Repetición** | Dos flechas en círculo + dentro puntos 2–6 (como un dado, para los pequeños) o con cifras. En pareja con un comando — lo repite. |
+| **Números** | `1`–`999`. Definen la distancia de movimiento en mm o el ángulo de giro en grados. |
+| **Aritmética** | `+N` `−N` `×N` `÷N` `√` `^N` — una ficha = operación + número. Modifica el valor guardado de movimiento o giro. ¡Un resultado negativo invierte la dirección! |
+| **Función** | Llama a la fila inferior como subprograma. Con ficha de repetición — se ejecuta el número indicado de veces. |
+| **Paso** | Ficha de servicio + Número = cambia el paso por defecto (por ejemplo número 100, en milímetros, para una cuadrícula de 10 cm). Se conserva al apagar. |
 
-<Card
-  title="Agregar bloques de código"
-  icon="square-code"
-  href="/essentials/code"
->
-  Agrega código directamente en tu documentación con resaltado de sintaxis.
-</Card>
+## 5. Valores por defecto y valor guardado
 
-<Card
-  title="Agregar imágenes"
-  icon="image"
-  href="/essentials/images"
->
-  Agrega imágenes a tu documentación para hacerla más atractiva.
-</Card>
+<Note>
+**Adelante = 150 mm (15 cm), giro = 90°.** La ficha **«Paso»** cambia la distancia «por defecto» y se conserva al apagar. Útil para tableros de cualquier robot.
 
-<Card
-  title="Agregar componentes personalizados"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Agrega plantillas a tu documentación para hacerla más reutilizable.
-</Card>
+Durante una sesión, cada comando de movimiento guarda **su propio** valor:
 
+- **un número** en la pareja con el comando → reemplaza el último valor guardado o el de por defecto
+- **una ficha aritmética** → lo modifica (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **vacío** en la pareja → toma el último valor guardado o el de por defecto
+
+Los valores guardados se reinician al apagar el mando; el valor por defecto (paso) se mantiene.
+</Note>
+
+## 6. El robot dibuja lo que tú programas
+
+Prueba estos ejemplos — verás de qué es capaz el dispositivo. Pon un rotulador en el centro del robot — **dibuja** mientras se mueve.
+
+<CardGroup cols={2}>
+  <Card title="Estrella — números + repetición">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Programa de la estrella en el mando" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Estrella dibujada por el robot" />
+    </Frame>
+  </Card>
+  <Card title="Espiral — aritmética en bucle">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Programa de la espiral en el mando" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Espiral dibujada por el robot" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Más ejemplos en [Dibujos matemáticos](mathdrawings).
+
+## 7. Cómo enseñar con PrimaSTEM
+
+<Tip>
+**Introduce las fichas-comandos una a una, en este orden:**
+
+**Adelante → Giros → Repeticiones → Función → Números → Aritmética.**
+
+Cada siguiente — solo después de dominar la anterior. El plan completo de 12 sesiones con edad, duración y material para los más pequeños — en [Libro 1](book-1/book-1).
+
+**Trabajo en grupo:** recomendamos un kit por cada **2–3 niños**.
+
+**Tableros:** sirve cualquier cuadrícula hecha para otros robots educativos. El tamaño de la celda se establece con la ficha **«Paso»** y un número (por ejemplo 100, 120, 150, 200 mm).
+
+**Truco para 10 pasos en lugar de 6.** Coloca la ficha **Función [ ]** en la última (6ª) ranura de la fila superior y fíjala con cinta de pintor. El programa funciona ahora como una larga cadena: 5 pasos arriba + 5 abajo = **10 pasos seguidos**. Útil para los pequeños que necesitan un programa más largo, pero a los que aún es pronto introducir la función como concepto.
+</Tip>
+
+## 8. Funciones adicionales
+
+<CardGroup cols={2}>
+  <Card title="Rotulador y dibujo" icon="pen-line">
+    Inserta un rotulador en el robot — **dibuja** su recorrido en papel: desde una trayectoria simple hasta polígonos, estrellas, espirales y fractales.
+  </Card>
+  <Card title="Voz" icon="volume-2">
+    El mando dice cada ficha — voz **en cualquier idioma local**, actualmente **17 admitidos**, ¡añadimos cualquier otro a petición! Ayuda a los pequeños y a los que aún no leen. Incluye letras del alfabeto y lugares (Casa, Escuela, Tienda, Bosque, etc.)
+  </Card>
+  <Card title="Pegatinas y tableros NFC sonoros" icon="map">
+    Pega etiquetas NFC en tu tablero, programa desde el móvil cualquier sonido disponible. El robot tiene una antena debajo — al parar sobre una etiqueta, reproduce el sonido grabado.
+  </Card>
+  <Card title="Plataforma NFC abierta" icon="nfc">
+    Crea tus propias fichas — cualquier etiqueta NFC de 13.56 MHz (baratas, se venden en cualquier marketplace) + un código de texto de nuestra documentación — todo junto lleva 10 segundos. Aplicación gratuita para móvil (NFC Tools).
+  </Card>
+</CardGroup>
+
+## Qué leer a continuación
+
+<CardGroup cols={2}>
+  <Card title="Manual de usuario" icon="book-open" href="usermanual">
+    Especificaciones técnicas completas, emparejamiento, calibración, seguridad.
+  </Card>
+  <Card title="Guía del profesor" icon="book" href="teachersguide">
+    Pedagogía, uso en clase, conceptos de programación a través del juego.
+  </Card>
+  <Card title="Libro 1 — Lecciones" icon="graduation-cap" href="book-1/book-1">
+    12 sesiones listas para los más pequeños — con edad, duración y material imprimible.
+  </Card>
+  <Card title="Fichas de comando" icon="nfc" href="nfc">
+    Todos los códigos NFC — para crear tus propias fichas con el móvil.
+  </Card>
+  <Card title="Dibujos matemáticos" icon="pen-line" href="mathdrawings">
+    Figuras geométricas, fractales, espirales — programas y resultados.
+  </Card>
+  <Card title="Diccionario de audio" icon="volume-2" href="sounds_reference">
+    Palabras — lugares y conceptos, alfabeto, notas musicales, sonidos del sistema. Para grabar tus propias fichas y reproducir.
+  </Card>
 </CardGroup>

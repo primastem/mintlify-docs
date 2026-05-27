@@ -1,97 +1,169 @@
 ---
-title: 'Démarrage rapide'
-description: 'Commencez à créer une documentation incroyable en moins de 5 minutes'
-mode: "default"
+title: "Démarrage rapide"
+description: "Comment fonctionne PrimaSTEM — robot, télécommande, jetons. Démarrage rapide."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Configuration du développement
+PrimaSTEM est un kit éducatif pour l'apprentissage de la programmation, de la logique et des mathématiques sans écran, pour les enfants de 4 à 10+ ans. Cette page explique brièvement **comment fonctionne l'appareil**.
 
-Découvrez comment mettre à jour votre documentation localement et la publier publiquement.
+## 1. Contenu de la boîte
 
-### Modification et aperçu
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Robot-coccinelle en bois sur deux roues. Logement pour marqueur sur le dessus. Haut-parleur, USB-C, Bluetooth.
+  </Card>
+  <Card title="Télécommande" icon="grid-3x3">
+    Panneau avec emplacements appariés pour le programme. Indicateurs multicolores, bouton ▶ Start/Stop, haut-parleur, USB-C, Bluetooth.
+  </Card>
+  <Card title="Jetons de code" icon="square-stack">
+    Carrés en carton avec étiquettes NFC — chacun = une seule commande pour le programme du robot.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clonez votre documentation localement">
-    Lors du processus d'intégration, nous avons créé un dépôt sur votre Github avec
-    le contenu de votre documentation. Vous pouvez trouver ce dépôt sur
-    le [tableau de bord](https://dashboard.mintlify.com). Pour cloner le dépôt
-    localement, suivez ces
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    dans votre terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Aperçu des modifications">
-    L'aperçu vous aide à vérifier que vos modifications apparaissent comme prévu. Nous avons créé
-    une interface en ligne de commande pour afficher ces modifications localement.
-    1. Installez
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) pour afficher localement
-    les modifications de documentation avec cette commande : ``` npm i -g mintlify ```
-    2. Exécutez la commande suivante à la racine de votre documentation (là où
-    se trouve `docs.json`) : ``` mintlify dev ```
-    <Note>
-      Si vous utilisez actuellement un fichier de configuration obsolète ```mint.json```, veuillez mettre à jour Mintlify CLI :
+## 2. Allumage
 
+<Steps>
+  <Step title="Allumez le robot, puis la télécommande" icon="power">
+    Chacun émet un court son ; le voyant vert d'alimentation sur chaque appareil = allumé.
+  </Step>
+  <Step title="Connecté = blanc" icon="check">
+    Les emplacements disponibles de la télécommande s'allument en **blanc**, les yeux du robot clignotent en **blanc**. C'est prêt.
+  </Step>
+  <Step title="Les deux en bleu = appairage nécessaire" icon="bluetooth">
+    Maintenez **▶ Start** sur la télécommande pendant **plus de 10 secondes** — les appareils s'appairent et le robot redémarre.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      Puis exécutez la nouvelle commande de mise à niveau dans le dépôt de votre documentation :
+## 3. Comment fonctionne un programme
 
-      ```mintlify upgrade```
-      Vous devez maintenant utiliser le nouveau fichier de configuration ```docs.json```. N'hésitez pas à supprimer le fichier ```mint.json``` de votre dépôt.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+La télécommande a **deux rangées d'emplacements appariés**. Placez les jetons dans les emplacements qui s'allument en blanc — vous obtenez un programme. Appuyez sur **▶ Start** — le robot l'exécute.
 
-### Déploiement de vos modifications
+<Frame caption="Schéma de la télécommande — les lettres A–F sont expliquées ci-dessous">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Schéma de la télécommande avec les lettres A à F" />
+</Frame>
 
-<AccordionGroup>
+| Lettre | Signification |
+| :---: | --- |
+| **A** | **Programme principal** — 6 emplacements appariés, exécutés de gauche à droite |
+| **B** | **▶ Start / Stop** — lancement ; deuxième appui pendant le mouvement = arrêt |
+| **C** | **Fonction** — 5 emplacements appariés, appelés par le jeton « Fonction » |
+| **D** | Une **cellule** d'une paire |
+| **E** | **Ligne d'exécution** reliant les cellules en paire |
+| **F** | **Indicateur LED multicolore** sur chaque cellule |
 
-<Accordion icon="message-bot" title="Installez notre application Github">
-  Notre application Github déploie automatiquement vos modifications sur le site de documentation,
-  vous n'avez donc pas à gérer les déploiements vous-même. Le lien d'installation se trouve sur
-  votre [tableau de bord](https://dashboard.mintlify.com). Une fois le bot installé avec succès,
-  une coche devrait apparaître à côté du hachage de commit du dépôt.
-</Accordion>
-<Accordion icon="rocket" title="Poussez vos modifications">
-  [Committez et poussez vos modifications vers
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  pour mettre à jour votre site de documentation. Si vous avez poussé des modifications et ne voyez pas
-  que l'application Github a déployé vos modifications avec succès, vous pouvez également
-  mettre à jour manuellement votre documentation via notre [tableau de bord](https://dashboard.mintlify.com).
-</Accordion>
+**Une paire = deux cellules logiquement liées.** L'ordre haut/bas n'a pas d'importance — la commande peut être placée dans n'importe laquelle des deux cellules, le jeton de répétition, de nombre ou d'arithmétique dans l'autre. Si la deuxième cellule est vide, les valeurs par défaut sont utilisées : pas de 15 cm et rotation de 90° — suffisant pour les petits enfants.
 
-</AccordionGroup>
+Couleurs des LED pendant l'exécution :
 
-## Mise à jour de votre documentation
+| ⚪ Blanc | 🟢 Vert | 🔵 Bleu | 🔴 Rouge |
+| :---: | :---: | :---: | :---: |
+| Attente (emplacement libre) | Commande prête | Commande + nombre / répétition / arithmétique | Erreur — ignorée |
 
-Ajoutez du contenu directement dans vos fichiers en utilisant la syntaxe MDX et les composants React. Vous pouvez utiliser n'importe lesquels de nos composants ou même créer les vôtres.
+Les emplacements vides et les paires rouges sont ignorés. Les LED clignotent sur la cellule en cours d'exécution.
 
-<CardGroup>
+## 4. Jetons — par groupe
 
-<Card title="Ajout de contenu avec MDX" icon="file" href="/essentials/markdown">
-  Ajoutez du contenu à votre documentation en utilisant la syntaxe MDX.
-</Card>
+| Groupe | Ce que font les jetons |
+| --- | --- |
+| **Mouvement** | Avant · Arrière · Gauche · Droite |
+| **Répétition** | Deux flèches en boucle + à l'intérieur points 2–6 (comme un dé, pour les petits) ou avec chiffres. En paire avec une commande — la répète. |
+| **Nombres** | `1`–`999`. Définissent la distance de mouvement en mm ou l'angle de rotation en degrés. |
+| **Arithmétique** | `+N` `−N` `×N` `÷N` `√` `^N` — un jeton = opération + nombre. Modifie la valeur enregistrée du mouvement ou de la rotation. Un résultat négatif inverse la direction ! |
+| **Fonction** | Appelle la rangée inférieure comme un sous-programme. Avec un jeton de répétition, exécute autant de fois que demandé. |
+| **Pas** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. |
 
-<Card
-  title="Ajout de blocs de code"
-  icon="square-code"
-  href="/essentials/code"
->
-  Ajoutez du code directement dans votre documentation avec coloration syntaxique.
-</Card>
+## 5. Valeurs par défaut et valeur enregistrée
 
-<Card
-  title="Ajout d'images"
-  icon="image"
-  href="/essentials/images"
->
-  Ajoutez des images à votre documentation pour la rendre plus attrayante.
-</Card>
+<Note>
+**Avant = 150 mm (15 cm), rotation = 90°.** Le jeton **« Pas »** modifie la distance « par défaut » et la conserve après extinction. À utiliser avec les grilles de jeu d'autres robots.
 
-<Card
-  title="Ajout de composants personnalisés"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Ajoutez des modèles à votre documentation pour la rendre plus réutilisable.
-</Card>
+Pendant une session, chaque commande de mouvement conserve **sa propre** valeur enregistrée :
 
+- **un nombre** dans la paire avec la commande → remplace la dernière valeur enregistrée ou par défaut
+- **un jeton arithmétique** → la modifie (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **vide** dans la paire avec la commande → reprend la dernière valeur enregistrée ou par défaut
+
+Les valeurs enregistrées se réinitialisent à l'extinction de la télécommande ; la valeur par défaut (pas) reste.
+</Note>
+
+## 6. Le robot dessine ce que vous programmez
+
+Essayez ces exemples — vous verrez ce dont l'appareil est capable. Insérez un marqueur au centre du robot — il **dessine** en se déplaçant.
+
+<CardGroup cols={2}>
+  <Card title="Étoile — nombres + répétition">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Programme de l'étoile sur la télécommande" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Étoile dessinée par le robot" />
+    </Frame>
+  </Card>
+  <Card title="Spirale — arithmétique dans une boucle">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Programme de la spirale sur la télécommande" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Spirale dessinée par le robot" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Plus d'exemples dans la section [Dessins mathématiques](mathdrawings).
+
+## 7. Comment enseigner avec PrimaSTEM
+
+<Tip>
+**Introduisez les jetons-commandes un par un, dans cet ordre :**
+
+**Avant → Rotations → Répétitions → Fonction → Nombres → Arithmétique.**
+
+Chaque suivant — seulement après que le précédent est maîtrisé. Le plan complet de 12 séances avec âge, durée et matériel pour les petits enfants — dans le [Livre 1](book-1/book-1).
+
+**Travail en groupe :** nous recommandons un kit pour **2–3 enfants**.
+
+**Cartes :** toute grille faite pour d'autres robots éducatifs convient. La taille de la cellule est définie par le jeton **« Pas »** avec un nombre (par exemple 100, 120, 150, 200 mm).
+
+**Astuce pour 10 pas au lieu de 6.** Placez le jeton **Fonction [ ]** dans le dernier (6ᵉ) emplacement de la rangée supérieure et fixez-le avec du ruban de masquage. Le programme s'exécute maintenant comme une longue chaîne : 5 pas en haut + 5 en bas = **10 pas d'affilée**. Pratique pour les petits qui ont besoin d'un programme plus long, mais qui sont trop jeunes pour aborder la fonction comme concept.
+</Tip>
+
+## 8. Fonctionnalités supplémentaires
+
+<CardGroup cols={2}>
+  <Card title="Marqueur et dessin" icon="pen-line">
+    Insérez un marqueur dans le robot — il **dessine** son chemin sur le papier : d'une simple trajectoire aux polygones, étoiles, spirales et fractales.
+  </Card>
+  <Card title="Voix" icon="volume-2">
+    La télécommande énonce chaque jeton — voix dans **n'importe quelle langue locale**, actuellement **17 supportées**, nous en ajoutons d'autres sur demande ! Aide les jeunes enfants et les non-lecteurs. Inclut les lettres de l'alphabet et des lieux (Maison, École, Magasin, Forêt, etc.)
+  </Card>
+  <Card title="Étiquettes NFC sonores et cartes" icon="map">
+    Collez des étiquettes NFC sur votre carte, programmez n'importe quel son depuis votre téléphone. Le robot a une antenne en dessous — en s'arrêtant sur une étiquette, il joue le son enregistré.
+  </Card>
+  <Card title="Plateforme NFC ouverte" icon="nfc">
+    Créez vos propres jetons — n'importe quelle étiquette NFC 13.56 MHz (bon marché, vendue sur toutes les places de marché) + un code texte de notre documentation — tout cela prend 10 secondes. Application gratuite pour téléphone (NFC Tools).
+  </Card>
+</CardGroup>
+
+## À lire ensuite
+
+<CardGroup cols={2}>
+  <Card title="Manuel d'utilisation" icon="book-open" href="usermanual">
+    Spécifications techniques complètes, appairage, calibration, sécurité.
+  </Card>
+  <Card title="Guide de l'enseignant" icon="book" href="teachersguide">
+    Pédagogie, utilisation en classe, concepts de programmation par le jeu.
+  </Card>
+  <Card title="Livre 1 — Activités" icon="graduation-cap" href="book-1/book-1">
+    12 activités prêtes à l'emploi pour les petits enfants — avec âge, durée et matériel imprimable.
+  </Card>
+  <Card title="Jetons-commandes" icon="nfc" href="nfc">
+    Tous les codes NFC — pour créer vos propres jetons depuis votre téléphone.
+  </Card>
+  <Card title="Dessins mathématiques" icon="pen-line" href="mathdrawings">
+    Figures géométriques, fractales, spirales — programmes et résultats.
+  </Card>
+  <Card title="Dictionnaire audio" icon="volume-2" href="sounds_reference">
+    Mots — lieux et concepts, alphabet, notes musicales, sons système. Pour enregistrer vos propres jetons et la lecture.
+  </Card>
 </CardGroup>

@@ -1,97 +1,169 @@
 ---
-title: 'Quick Start'
-description: 'Start creating amazing documentation in less than 5 minutes'
-mode: "default"
+title: "Quick Start"
+description: "How PrimaSTEM works — robot, board, tokens. A quick start."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Development Setup
+PrimaSTEM is a screen-free educational kit for programming, logic, and mathematics, for children ages 4–10+. This page briefly explains **how the device works**.
 
-Learn how to update your documentation locally and publish it publicly.
+## 1. What's in the box
 
-### Editing and Preview
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Wooden ladybug-robot on two wheels. Marker slot on top. Speaker, USB-C, Bluetooth.
+  </Card>
+  <Card title="Control board" icon="grid-3x3">
+    Panel with paired slots for the program. Multi-colour indicators, ▶ Start/Stop button, speaker, USB-C, Bluetooth.
+  </Card>
+  <Card title="Code tokens" icon="square-stack">
+    Cardboard tiles with NFC stickers — each one is a single command for the robot's program.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your documentation locally">
-    During the onboarding process, we created a repository on your Github with
-    the contents of your documentation. You can find this repository on
-    your [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Preview helps ensure your changes look as intended. We've created
-    a command-line interface for locally displaying these changes.
-    1. Install
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to locally preview
-    documentation changes with this command: ``` npm i -g mintlify ```
-    2. Run the following command in the root of your documentation (where
-    `docs.json` is located): ``` mintlify dev ```
-    <Note>
-      If you're currently using a legacy ```mint.json``` configuration file, please update Mintlify CLI:
+## 2. Power on
 
+<Steps>
+  <Step title="Switch on the robot, then the board" icon="power">
+    Each plays a short sound; the green power indicator on each device means it's on.
+  </Step>
+  <Step title="Connected = white" icon="check">
+    Available slots on the board glow **white**, the robot's eyes blink **white**. You're ready.
+  </Step>
+  <Step title="Both blue = pairing needed" icon="bluetooth">
+    Hold **▶ Start** on the board for **more than 10 seconds** — the devices will pair and the robot will restart.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      And run the new upgrade command in your documentation repository:
+## 3. How a program works
 
-      ```mintlify upgrade```
-      You should now use the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+The board has **two rows of paired slots**. Place tokens in the cells that glow white — that's your program. Press **▶ Start** — the robot runs it.
 
-### Deploying Your Changes
+<Frame caption="Board layout — labels A–F are explained below">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Control board diagram with labels A through F" />
+</Frame>
 
-<AccordionGroup>
+| Label | What it is |
+| :---: | --- |
+| **A** | **Main program** — 6 pair slots, executed left → right |
+| **B** | **▶ Start / Stop** — press to run; press again mid-program to stop |
+| **C** | **Function** — 5 pair slots, called by the Function token |
+| **D** | One **cell** of a pair |
+| **E** | **Execution line** connecting paired cells |
+| **F** | **Multi-colour LED indicator** on each cell |
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to the documentation site,
-  so you don't need to manage deployments yourself. The install link is located on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot is successfully installed,
-  a checkmark should appear next to the repository commit hash.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  to update your documentation site. If you've pushed changes and don't see
-  that the Github app successfully deployed your changes, you can also
-  manually update your documentation via our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+**A pair = two logically linked cells.** Order top/bottom doesn't matter — put the command in either cell of the pair, and the repeat, number, or arithmetic tile in the other. If the second cell is empty, default values are used: 15 cm step and 90° turn — enough for young children.
 
-</AccordionGroup>
+LED colours during execution:
 
-## Updating Your Documentation
+| ⚪ White | 🟢 Green | 🔵 Blue | 🔴 Red |
+| :---: | :---: | :---: | :---: |
+| Idle (slot available) | Command set | Command + number / repeat / arithmetic | Error — skipped |
 
-Add content directly into your files using MDX syntax and React components. You can use any of our components or even create your own.
+Empty slots and red pairs are skipped. LEDs flash on the cell being executed right now.
 
-<CardGroup>
+## 4. Tokens — by group
 
-<Card title="Adding Content with MDX" icon="file" href="/essentials/markdown">
-  Add content to your documentation using MDX syntax.
-</Card>
+| Group | What the tokens do |
+| --- | --- |
+| **Movement** | Forward · Back · Left · Right |
+| **Repeat** | Two arrows in a loop + inside dots 2–6 (like a die, for young children) or numerals. In a pair with a command, repeats it. |
+| **Numbers** | `1`–`999`. Set movement distance in mm or turn angle in degrees. |
+| **Arithmetic** | `+N` `−N` `×N` `÷N` `√` `^N` — one tile per operation+number. Modifies the saved value of movement or turn. A negative result reverses the direction! |
+| **Function** | Calls the bottom row as a subroutine. With a repeat tile, runs that number of times. |
+| **Step** | Service tile + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. |
 
-<Card
-  title="Adding Code Blocks"
-  icon="square-code"
-  href="/essentials/code"
->
-  Add code directly into your documentation with syntax highlighting.
-</Card>
+## 5. Defaults & saved value
 
-<Card
-  title="Adding Images"
-  icon="image"
-  href="/essentials/images"
->
-  Add images to your documentation to make it more engaging.
-</Card>
+<Note>
+**Forward = 150 mm (15 cm), turn = 90°.** The **Step** token changes the "default" distance and persists after power-off. Use it for grid maps from any robot.
 
-<Card
-  title="Adding Custom Components"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Add templates to your documentation to make it more reusable.
-</Card>
+During one session, each movement command keeps its **own** saved value:
 
+- **a number** in the pair with the command → replaces the last saved value or default
+- **an arithmetic** tile → modifies it (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **empty** in the pair with the command → uses the last saved value or default
+
+Saved values reset when the board powers off; the default (Step) remains.
+</Note>
+
+## 6. The robot draws what you program
+
+Try these examples — you'll see what the device is capable of. Insert a marker in the centre of the robot — it **draws** while moving.
+
+<CardGroup cols={2}>
+  <Card title="Star — numbers + repeat">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Star program on the board" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Star drawn by the robot" />
+    </Frame>
+  </Card>
+  <Card title="Spiral — arithmetic in a loop">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Spiral program on the board" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Spiral drawn by the robot" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+More examples in [Drawing examples](mathdrawings).
+
+## 7. How to teach with PrimaSTEM
+
+<Tip>
+**Introduce command tokens one at a time, in this order:**
+
+**Forward → Turns → Repeat → Function → Numbers → Arithmetic.**
+
+Add each one only after the previous is confidently mastered. The full 12-lesson plan with age, duration, and materials for young children is in [Book 1](book-1/book-1).
+
+**Group work:** we recommend one kit per **2–3 children**.
+
+**Maps:** any grid map made for any educational robot will work. Set the cell size with the **Step** token plus a number (e.g. 100, 120, 150, 200 mm).
+
+**A trick for 10 steps instead of 6.** Place the **Function [ ]** token in the last (6th) slot of the top row and secure it with masking tape. The program now runs as one long chain: 5 top steps + 5 bottom = **10 steps in a row**. Useful for young children who need a longer program before they're ready to grasp the function concept.
+</Tip>
+
+## 8. More features
+
+<CardGroup cols={2}>
+  <Card title="Marker and drawing" icon="pen-line">
+    Insert a marker in the robot — it **draws** its path on paper: from a simple trajectory to polygons, stars, spirals, and fractals.
+  </Card>
+  <Card title="Voice feedback" icon="volume-2">
+    The board reads each token aloud — voice in **any local language**, currently **17 supported**, we'll add any on request. Helps young and pre-reading children. Includes alphabet letters and places (Home, School, Shop, Forest, etc.)
+  </Card>
+  <Card title="NFC sound stickers and maps" icon="map">
+    Stick NFC tags on your map, program any available sound from your phone. The robot has an antenna underneath — when it stops on a tag, it plays the recorded sound.
+  </Card>
+  <Card title="Open NFC platform" icon="nfc">
+    Write your own tokens — any 13.56 MHz NFC tag (cheap, sold on every marketplace) + a text code from our documentation — the whole thing takes 10 seconds. Free phone app (NFC Tools).
+  </Card>
+</CardGroup>
+
+## What to read next
+
+<CardGroup cols={2}>
+  <Card title="User Manual" icon="book-open" href="usermanual">
+    Full technical specifications, pairing, calibration, safety.
+  </Card>
+  <Card title="Teacher's Guide" icon="book" href="teachersguide">
+    Pedagogy, classroom use, programming concepts through play.
+  </Card>
+  <Card title="Book 1 — Lessons" icon="graduation-cap" href="book-1/book-1">
+    12 ready-made lessons for young children — with age, duration, and printable materials.
+  </Card>
+  <Card title="Command tokens" icon="nfc" href="nfc">
+    All NFC codes — for writing your own tokens with a phone.
+  </Card>
+  <Card title="Drawing examples" icon="pen-line" href="mathdrawings">
+    Geometric figures, fractals, spirals — programs and results.
+  </Card>
+  <Card title="Audio dictionary" icon="volume-2" href="sounds_reference">
+    Words — places and concepts, alphabet, musical notes, system sounds. For recording your own tokens and playback.
+  </Card>
 </CardGroup>

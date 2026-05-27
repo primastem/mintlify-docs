@@ -1,97 +1,169 @@
 ---
-title: 'Avvio rapido'
-description: 'Inizia a creare documentazione straordinaria in meno di 5 minuti'
-mode: "default"
+title: "Avvio rapido"
+description: "Come funziona PrimaSTEM — robot, pulsantiera, tessere. Avvio rapido."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Configurazione dello sviluppo
+PrimaSTEM è un kit educativo senza schermo per imparare programmazione, logica e matematica, per bambini dai 4 ai 10+ anni. Questa pagina spiega in breve **come funziona il dispositivo**.
 
-Scopri come aggiornare la tua documentazione localmente e pubblicarla pubblicamente.
+## 1. Cosa c'è nella scatola
 
-### Modifica e anteprima
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Robot-coccinella di legno su due ruote. Sopra, un foro per il pennarello. Altoparlante, USB-C, Bluetooth.
+  </Card>
+  <Card title="Pulsantiera" icon="grid-3x3">
+    Pannello con celle accoppiate per il programma. Indicatori multicolore, pulsante ▶ Start/Stop, altoparlante, USB-C, Bluetooth.
+  </Card>
+  <Card title="Tessere di codice" icon="square-stack">
+    Quadrati di cartone con etichette NFC — ognuna = un comando del programma del robot.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clona la tua documentazione localmente">
-    Durante il processo di onboarding, abbiamo creato un repository sul tuo Github con
-    i contenuti della tua documentazione. Puoi trovare questo repository sulla
-    tua [dashboard](https://dashboard.mintlify.com). Per clonare il repository
-    localmente, segui queste
-    [istruzioni](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    nel tuo terminale.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Anteprima delle modifiche">
-    L'anteprima aiuta a garantire che le tue modifiche appaiano come previsto. Abbiamo creato
-    un'interfaccia a riga di comando per visualizzare localmente queste modifiche.
-    1. Installa
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) per visualizzare in anteprima localmente
-    le modifiche alla documentazione con questo comando: ``` npm i -g mintlify ```
-    2. Esegui il seguente comando nella root della tua documentazione (dove
-    si trova `docs.json`): ``` mintlify dev ```
-    <Note>
-      Se stai attualmente utilizzando un file di configurazione legacy ```mint.json```, aggiorna Mintlify CLI:
+## 2. Accensione
 
+<Steps>
+  <Step title="Accendi il robot, poi la pulsantiera" icon="power">
+    Ognuno emette un breve suono; l'indicatore verde di accensione su ciascun dispositivo = acceso.
+  </Step>
+  <Step title="Connesso = bianco" icon="check">
+    Le celle disponibili della pulsantiera si illuminano di **bianco**, gli occhi del robot lampeggiano di **bianco**. Pronto.
+  </Step>
+  <Step title="Entrambi blu = serve l'abbinamento" icon="bluetooth">
+    Tieni premuto **▶ Start** sulla pulsantiera per **più di 10 secondi** — i dispositivi si abbinano e il robot si riavvia.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      Ed esegui il nuovo comando di aggiornamento nel repository della tua documentazione:
+## 3. Come funziona un programma
 
-      ```mintlify upgrade```
-      Ora dovresti usare il nuovo file di configurazione ```docs.json```. Sentiti libero di eliminare il file ```mint.json``` dal tuo repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+La pulsantiera ha **due righe di celle accoppiate**. Metti le tessere nelle celle che si accendono di bianco — questo è il programma. Premi **▶ Start** — il robot lo esegue.
 
-### Distribuire le tue modifiche
+<Frame caption="Schema della pulsantiera — le lettere A–F sono spiegate sotto">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Pulsantiera con etichette da A a F" />
+</Frame>
 
-<AccordionGroup>
+| Lettera | Cos'è |
+| :---: | --- |
+| **A** | **Programma principale** — 6 celle accoppiate, eseguite da sinistra a destra |
+| **B** | **▶ Start / Stop** — avvia; premuto di nuovo durante il movimento = stop |
+| **C** | **Funzione** — 5 celle accoppiate, richiamate dalla tessera «Funzione» |
+| **D** | Una **cella** della coppia |
+| **E** | **Linea di esecuzione** che collega le celle accoppiate |
+| **F** | **LED multicolore** su ogni cella |
 
-<Accordion icon="message-bot" title="Installa la nostra app Github">
-  La nostra app Github distribuisce automaticamente le tue modifiche al sito di documentazione,
-  quindi non devi gestire le distribuzioni tu stesso. Il link di installazione si trova sulla
-  tua [dashboard](https://dashboard.mintlify.com). Una volta installato correttamente il bot,
-  dovrebbe apparire un segno di spunta accanto all'hash del commit del repository.
-</Accordion>
-<Accordion icon="rocket" title="Push delle tue modifiche">
-  [Esegui commit e push delle tue modifiche su
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  per aggiornare il tuo sito di documentazione. Se hai eseguito il push delle modifiche e non vedi
-  che l'app Github ha distribuito correttamente le tue modifiche, puoi anche
-  aggiornare manualmente la tua documentazione tramite la nostra [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+**Coppia = due celle logicamente collegate.** L'ordine sopra/sotto non conta — il comando può andare in una qualsiasi delle due celle, la ripetizione/numero/aritmetica nell'altra. Se la seconda cella è vuota, si usano i valori predefiniti: passo 15 cm e rotazione 90° — sufficienti per i piccoli.
 
-</AccordionGroup>
+Colori dei LED durante l'esecuzione:
 
-## Aggiornare la tua documentazione
+| ⚪ Bianco | 🟢 Verde | 🔵 Blu | 🔴 Rosso |
+| :---: | :---: | :---: | :---: |
+| Attesa (cella libera) | Comando inserito | Comando + numero / ripetizione / aritmetica | Errore — saltato |
 
-Aggiungi contenuto direttamente nei tuoi file usando la sintassi MDX e i componenti React. Puoi usare cualquiera dei nostri componenti o persino creare i tuoi.
+Le celle vuote e le coppie rosse vengono saltate. I LED lampeggiano sulla cella in esecuzione in quel momento.
 
-<CardGroup>
+## 4. Tessere — per gruppi
 
-<Card title="Aggiungere contenuto con MDX" icon="file" href="/essentials/markdown">
-  Aggiungi contenuto alla tua documentazione usando la sintassi MDX.
-</Card>
+| Gruppo | Cosa fanno le tessere |
+| --- | --- |
+| **Movimento** | Avanti · Indietro · Sinistra · Destra |
+| **Ripetizione** | Due frecce in cerchio + dentro punti 2–6 (come un dado, per i piccoli) o con cifre. In coppia con un comando — lo ripete. |
+| **Numeri** | `1`–`999`. Impostano la distanza di movimento in mm o l'angolo di rotazione in gradi. |
+| **Aritmetica** | `+N` `−N` `×N` `÷N` `√` `^N` — una tessera = operazione + numero. Modifica il valore salvato di movimento o rotazione. Un risultato negativo inverte la direzione! |
+| **Funzione** | Richiama la riga in basso come sottoprogramma. Con tessera di ripetizione — viene eseguita il numero indicato di volte. |
+| **Passo** | Tessera di servizio + Numero = cambia il passo predefinito (per esempio numero 100, in millimetri, per griglia da 10 cm). Si conserva allo spegnimento. |
 
-<Card
-  title="Aggiungere blocchi di codice"
-  icon="square-code"
-  href="/essentials/code"
->
-  Aggiungi codice direttamente nella tua documentazione con evidenziazione della sintassi.
-</Card>
+## 5. Valori predefiniti e valore salvato
 
-<Card
-  title="Aggiungere immagini"
-  icon="image"
-  href="/essentials/images"
->
-  Aggiungi immagini alla tua documentazione per renderla più coinvolgente.
-</Card>
+<Note>
+**Avanti = 150 mm (15 cm), rotazione = 90°.** La tessera **«Passo»** cambia la distanza «predefinita» e la conserva dopo lo spegnimento. Comodo per i tabelloni di gioco di altri robot.
 
-<Card
-  title="Aggiungere componenti personalizzati"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Aggiungi modelli alla tua documentazione per renderla più riutilizzabile.
-</Card>
+Durante una sessione, ogni comando di movimento conserva il **proprio** valore salvato:
 
+- **un numero** nella coppia con il comando → sostituisce l'ultimo valore salvato o quello predefinito
+- **una tessera aritmetica** → lo modifica (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **vuoto** nella coppia → prende l'ultimo valore salvato o quello predefinito
+
+I valori salvati si azzerano allo spegnimento della pulsantiera; il valore predefinito (passo) resta.
+</Note>
+
+## 6. Il robot disegna ciò che programmi
+
+Prova questi esempi — vedrai di cosa è capace il dispositivo. Inserisci un pennarello al centro del robot — **disegna** mentre si muove.
+
+<CardGroup cols={2}>
+  <Card title="Stella — numeri + ripetizione">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Programma della stella sulla pulsantiera" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Stella disegnata dal robot" />
+    </Frame>
+  </Card>
+  <Card title="Spirale — aritmetica in un ciclo">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Programma della spirale sulla pulsantiera" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Spirale disegnata dal robot" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Altri esempi nella sezione [Disegni matematici](mathdrawings).
+
+## 7. Come insegnare con PrimaSTEM
+
+<Tip>
+**Introduci le tessere-comandi una alla volta, in questo ordine:**
+
+**Avanti → Rotazioni → Ripetizioni → Funzione → Numeri → Aritmetica.**
+
+Ciascuna successiva — solo dopo aver padroneggiato la precedente. Il piano completo di 12 lezioni con età, durata e materiali per i piccoli — nel [Libro 1](book-1/book-1).
+
+**Lavoro di gruppo:** consigliamo un kit ogni **2–3 bambini**.
+
+**Tabelloni:** va bene qualsiasi griglia fatta per altri robot educativi. La dimensione della cella si imposta con la tessera **«Passo»** e un numero (per esempio 100, 120, 150, 200 mm).
+
+**Trucco per 10 passi invece di 6.** Metti la tessera **Funzione [ ]** nell'ultima (6ª) cella della riga superiore e fissala con nastro carta. Il programma scorre ora come una lunga catena: 5 passi sopra + 5 sotto = **10 passi di fila**. Comodo per i piccoli che hanno bisogno di un programma più lungo, ma per i quali è ancora presto introdurre la funzione come concetto.
+</Tip>
+
+## 8. Funzionalità aggiuntive
+
+<CardGroup cols={2}>
+  <Card title="Pennarello e disegno" icon="pen-line">
+    Inserisci un pennarello nel robot — **disegna** il suo percorso sulla carta: da una traiettoria semplice fino a poligoni, stelle, spirali e frattali.
+  </Card>
+  <Card title="Voce" icon="volume-2">
+    La pulsantiera pronuncia ogni tessera — voce **in qualsiasi lingua locale**, attualmente **17 supportate**, ne aggiungiamo altre su richiesta! Aiuta i piccoli e chi non legge ancora. Include lettere dell'alfabeto e luoghi (Casa, Scuola, Negozio, Bosco, ecc.)
+  </Card>
+  <Card title="Etichette NFC sonore e tabelloni" icon="map">
+    Incolla le etichette NFC sul tuo tabellone, programma dal telefono qualsiasi suono disponibile. Il robot ha un'antenna sotto — fermandosi su un'etichetta riproduce il suono registrato.
+  </Card>
+  <Card title="Piattaforma NFC aperta" icon="nfc">
+    Crea le tue tessere — qualsiasi etichetta NFC 13.56 MHz (economiche, in vendita su tutti i marketplace) + un codice di testo dalla nostra documentazione — in tutto ci vogliono 10 secondi. App gratuita per telefono (NFC Tools).
+  </Card>
+</CardGroup>
+
+## Cosa leggere dopo
+
+<CardGroup cols={2}>
+  <Card title="Manuale d'uso" icon="book-open" href="usermanual">
+    Specifiche tecniche complete, abbinamento, calibrazione, sicurezza.
+  </Card>
+  <Card title="Guida per l'insegnante" icon="book" href="teachersguide">
+    Pedagogia, uso in classe, concetti di programmazione attraverso il gioco.
+  </Card>
+  <Card title="Libro 1 — Lezioni" icon="graduation-cap" href="book-1/book-1">
+    12 lezioni pronte per i piccoli — con età, durata e materiali stampabili.
+  </Card>
+  <Card title="Tessere-comando" icon="nfc" href="nfc">
+    Tutti i codici NFC — per creare le proprie tessere con il telefono.
+  </Card>
+  <Card title="Disegni matematici" icon="pen-line" href="mathdrawings">
+    Figure geometriche, frattali, spirali — programmi e risultati.
+  </Card>
+  <Card title="Dizionario audio" icon="volume-2" href="sounds_reference">
+    Parole — luoghi e concetti, alfabeto, note musicali, suoni di sistema. Per registrare le proprie tessere e riprodurre.
+  </Card>
 </CardGroup>

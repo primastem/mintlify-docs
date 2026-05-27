@@ -1,97 +1,169 @@
 ---
-title: 'Snabbstart'
-description: 'Börja skapa fantastisk dokumentation på mindre än 5 minuter'
-mode: "default"
+title: "Snabbstart"
+description: "Hur PrimaSTEM fungerar — robot, kontrollpanel, brickor. Snabbstart."
+icon: "rocket"
+mode: "wide"
 ---
 
-## Utvecklingskonfiguration
+PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matematik, för barn från 4 till 10+ år. Den här sidan förklarar kort **hur enheten fungerar**.
 
-Lär dig hur du uppdaterar din dokumentation lokalt och publicerar den offentligt.
+## 1. Vad finns i lådan
 
-### Redigering och förhandsvisning
+<CardGroup cols={3}>
+  <Card title="Robot" icon="bug">
+    Robot i form av en nyckelpiga i trä på två hjul. Pennhållare ovanpå. Högtalare, USB-C, Bluetooth.
+  </Card>
+  <Card title="Kontrollpanel" icon="grid-3x3">
+    Panel med parade fack för programmet. Flerfärgade indikatorer, ▶ Start/Stopp-knapp, högtalare, USB-C, Bluetooth.
+  </Card>
+  <Card title="Kodbrickor" icon="square-stack">
+    Kartongkvadrater med NFC-klistermärken — varje = ett kommando i robotens program.
+  </Card>
+</CardGroup>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Klona din dokumentation lokalt">
-    Under onboarding-processen skapade vi ett repository på din Github med
-    innehållet i din dokumentation. Du hittar detta repository på
-    din [dashboard](https://dashboard.mintlify.com). För att klona repositoryt
-    lokalt, följ dessa
-    [instruktioner](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    i din terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Förhandsgranska ändringar">
-    Förhandsvisning hjälper till att säkerställa att dina ändringar ser ut som avsett. Vi har skapat
-    ett kommandoradsgränssnitt för att lokalt visa dessa ändringar.
-    1. Installera
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) för att lokalt förhandsvisa
-    dokumentationsändringar med detta kommando: ``` npm i -g mintlify ```
-    2. Kör följande kommando i roten av din dokumentation (där
-    `docs.json` finns): ``` mintlify dev ```
-    <Note>
-      Om du för närvarande använder en föråldrad ```mint.json``` konfigurationsfil, vänligen uppdatera Mintlify CLI:
+## 2. Slå på
 
+<Steps>
+  <Step title="Sätt på roboten först, sedan panelen" icon="power">
+    Var och en spelar ett kort ljud; den gröna strömlampan på varje enhet = på.
+  </Step>
+  <Step title="Anslutet = vitt" icon="check">
+    Tillgängliga fack på panelen lyser **vitt**, robotens ögon blinkar **vitt**. Klart.
+  </Step>
+  <Step title="Båda blå = parning behövs" icon="bluetooth">
+    Håll **▶ Start** på panelen i **mer än 10 sekunder** — enheterna paras och roboten startar om.
+  </Step>
+</Steps>
 
-      ```npm i -g mintlify@latest```
-      Och kör det nya uppgraderingskommandot i ditt dokumentations-repository:
+## 3. Hur ett program fungerar
 
-      ```mintlify upgrade```
-      Du bör nu använda den nya ```docs.json``` konfigurationsfilen. Känn dig fri att ta bort ```mint.json``` filen från ditt repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+Panelen har **två rader med parade fack**. Du placerar brickor i de fack som lyser vitt — det blir programmet. Tryck **▶ Start** — roboten utför det.
 
-### Distribuera dina ändringar
+<Frame caption="Panelens layout — bokstäverna A–F förklaras nedan">
+  <img src="../images/book-1/control.excalidraw.svg" alt="Kontrollpanel med beteckningar A till F" />
+</Frame>
 
-<AccordionGroup>
+| Beteckning | Vad det är |
+| :---: | --- |
+| **A** | **Huvudprogram** — 6 parade fack, körs från vänster till höger |
+| **B** | **▶ Start / Stopp** — start; tryck igen under rörelse = stopp |
+| **C** | **Funktion** — 5 parade fack, anropas av brickan «Funktion» |
+| **D** | En **cell** i ett par |
+| **E** | **Exekveringslinje** som kopplar ihop de parade cellerna |
+| **F** | **Flerfärgad LED** på varje cell |
 
-<Accordion icon="message-bot" title="Installera vår Github-app">
-  Vår Github-app distribuerar automatiskt dina ändringar till dokumentationswebbplatsen,
-  så du behöver inte hantera distributioner själv. Installationslänken finns på
-  din [dashboard](https://dashboard.mintlify.com). När boten är installerad,
-  ska en bock visas bredvid repositoryts commit-hash.
-</Accordion>
-<Accordion icon="rocket" title="Pusha dina ändringar">
-  [Commita och pusha dina ändringar till
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  för att uppdatera din dokumentationswebbplats. Om du har pushat ändringar och inte ser
-  att Github-appen har distribuerat dina ändringar, kan du också
-    manuellt uppdatera din dokumentation via vår [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+**Par = två logiskt sammankopplade celler.** Ordningen topp/botten spelar ingen roll — kommandot kan läggas i någon av de två cellerna, upprepning/tal/aritmetik i den andra. Är den andra cellen tom används standardvärden: steg 15 cm och vändning 90° — räcker för små barn.
 
-</AccordionGroup>
+LED-färger under utförandet:
 
-## Uppdatera din dokumentation
+| ⚪ Vit | 🟢 Grön | 🔵 Blå | 🔴 Röd |
+| :---: | :---: | :---: | :---: |
+| Vänteläge (fack ledigt) | Kommando satt | Kommando + tal / upprepning / aritmetik | Fel — hoppas över |
 
-Lägg till innehåll direkt i dina filer med MDX-syntaks och React-komponenter. Du kan använda vilken av våra komponenter som helst eller till och med skapa dina egna.
+Tomma fack och röda par hoppas över. LED-erna blinkar på den cell som körs just nu.
 
-<CardGroup>
+## 4. Brickor — efter grupp
 
-<Card title="Lägga till innehåll med MDX" icon="file" href="/essentials/markdown">
-  Lägg till innehåll i din dokumentation med MDX-syntaks.
-</Card>
+| Grupp | Vad brickorna gör |
+| --- | --- |
+| **Rörelse** | Framåt · Bakåt · Vänster · Höger |
+| **Upprepning** | Två pilar i en cirkel + inuti punkter 2–6 (som på en tärning, för de små) eller med siffror. I par med ett kommando — upprepar det. |
+| **Tal** | `1`–`999`. Anger rörelsesträcka i mm eller vridningsvinkel i grader. |
+| **Aritmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — en bricka = operation + tal. Ändrar det sparade värdet för rörelse eller vridning. Ett negativt resultat vänder riktningen! |
+| **Funktion** | Anropar nedre raden som subprogram. Med upprepningsbricka — körs angivet antal gånger. |
+| **Steg** | Servicebricka + Tal = ändrar standardsteget (t.ex. tal 100, i millimeter, för ett 10 cm rutnät). Behålls efter avstängning. |
 
-<Card
-  title="Lägga till kodblock"
-  icon="square-code"
-  href="/essentials/code"
->
-  Lägg till kod direkt i din dokumentation med syntaxmarkering.
-</Card>
+## 5. Standardvärden och sparat värde
 
-<Card
-  title="Lägga till bilder"
-  icon="image"
-  href="/essentials/images"
->
-  Lägg till bilder i din dokumentation för att göra den mer engagerande.
-</Card>
+<Note>
+**Framåt = 150 mm (15 cm), vändning = 90°.** **«Steg»**-brickan ändrar «standard»-sträckan och behåller den efter avstängning. Använd för spelplaner från andra robotar.
 
-<Card
-  title="Lägga till anpassade komponenter"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Lägg till mallar i din dokumentation för att göra den mer återanvändbar.
-</Card>
+Under en session behåller varje rörelsekommando **sitt eget** sparade värde:
 
+- **ett tal** i paret med kommandot → ersätter det senast sparade eller standardvärdet
+- **en aritmetisk bricka** → ändrar det (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **tomt** i paret → tar det senast sparade eller standardvärdet
+
+Sparade värden nollställs när panelen stängs av; standardvärdet (steg) finns kvar.
+</Note>
+
+## 6. Roboten ritar det du programmerar
+
+Prova dessa exempel — du ser vad enheten klarar. Sätt en penna mitt i roboten — den **ritar** medan den rör sig.
+
+<CardGroup cols={2}>
+  <Card title="Stjärna — tal + upprepning">
+    <Frame>
+      <img src="../images/mathdrawings/star5.excalidraw.svg" alt="Stjärnprogram på panelen" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/star5draw.excalidraw.svg" alt="Stjärna ritad av roboten" />
+    </Frame>
+  </Card>
+  <Card title="Spiral — aritmetik i en loop">
+    <Frame>
+      <img src="../images/mathdrawings/spiral.excalidraw.svg" alt="Spiralprogram på panelen" />
+    </Frame>
+    <Frame>
+      <img src="../images/mathdrawings/spiraldraw.excalidraw.svg" alt="Spiral ritad av roboten" />
+    </Frame>
+  </Card>
+</CardGroup>
+
+Fler exempel i [Matematiska teckningar](mathdrawings).
+
+## 7. Så lär du ut med PrimaSTEM
+
+<Tip>
+**Inför kommandobrickor en i taget, i denna ordning:**
+
+**Framåt → Vändningar → Upprepningar → Funktion → Tal → Aritmetik.**
+
+Varje nästa — endast efter att den förra behärskas säkert. Den fullständiga 12-lektionsplanen med ålder, längd och material för de små — i [Bok 1](book-1/book-1).
+
+**Grupparbete:** vi rekommenderar ett set per **2–3 barn**.
+
+**Spelplaner:** alla rutnät gjorda för andra utbildningsrobotar fungerar. Cellstorleken ställs in med **«Steg»**-brickan plus ett tal (t.ex. 100, 120, 150, 200 mm).
+
+**Knep för 10 steg i stället för 6.** Placera brickan **Funktion [ ]** i sista (6:e) facket på övre raden och fäst den med målartejp. Programmet körs nu som en lång kedja: 5 steg upptill + 5 nedtill = **10 steg i rad**. Praktiskt för de små som behöver ett längre program men ännu inte är redo för funktionskonceptet.
+</Tip>
+
+## 8. Ytterligare möjligheter
+
+<CardGroup cols={2}>
+  <Card title="Penna och rita" icon="pen-line">
+    Sätt en penna i roboten — den **ritar** sin bana på papper: från en enkel kurva till mångkanter, stjärnor, spiraler och fraktaler.
+  </Card>
+  <Card title="Röst" icon="volume-2">
+    Panelen säger varje bricka — röst **på vilket lokalt språk som helst**, för närvarande **17 stöds**, vi lägger till fler på begäran! Hjälper små barn och dem som ännu inte läser. Innehåller alfabetsbokstäver och platser (Hus, Skola, Affär, Skog osv.)
+  </Card>
+  <Card title="Ljud-NFC-klistermärken och kartor" icon="map">
+    Klistra NFC-taggar på din karta, programmera från telefonen valfritt tillgängligt ljud. Roboten har en antenn undertill — stannar den på en tagg spelar den upp det inspelade ljudet.
+  </Card>
+  <Card title="Öppen NFC-plattform" icon="nfc">
+    Skapa egna brickor — vilken 13.56 MHz NFC-tagg som helst (billig, säljs på alla marknadsplatser) + en textkod från vår dokumentation — allt tar 10 sekunder. Gratis telefonapp (NFC Tools).
+  </Card>
+</CardGroup>
+
+## Vad du läser härnäst
+
+<CardGroup cols={2}>
+  <Card title="Användarmanual" icon="book-open" href="usermanual">
+    Fullständiga tekniska specifikationer, parning, kalibrering, säkerhet.
+  </Card>
+  <Card title="Lärarvägledning" icon="book" href="teachersguide">
+    Pedagogik, klassrumsanvändning, programmeringsbegrepp genom lek.
+  </Card>
+  <Card title="Bok 1 — Lektioner" icon="graduation-cap" href="book-1/book-1">
+    12 färdiga lektioner för små barn — med ålder, längd och utskriftsmaterial.
+  </Card>
+  <Card title="Kommandobrickor" icon="nfc" href="nfc">
+    Alla NFC-koder — för att skapa egna brickor med telefonen.
+  </Card>
+  <Card title="Matematiska teckningar" icon="pen-line" href="mathdrawings">
+    Geometriska figurer, fraktaler, spiraler — program och resultat.
+  </Card>
+  <Card title="Ljudordbok" icon="volume-2" href="sounds_reference">
+    Ord — platser och begrepp, alfabet, musiknoter, systemljud. För att spela in egna brickor och avspela.
+  </Card>
 </CardGroup>

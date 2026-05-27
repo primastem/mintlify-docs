@@ -19,6 +19,7 @@
             "group": "Documentation",
             "icon": "file-doc",
             "pages": [
+              "en/quickstart",
               "en/intro",
               "en/usermanual",
               "en/teachersguide",
@@ -39,6 +40,7 @@
             "group": "Documentation",
             "icon": "file-doc",
             "pages": [
+              "fr/quickstart",
               "fr/intro",
               "fr/usermanual",
               "fr/teachersguide",
@@ -59,6 +61,7 @@
             "group": "Dokumentation",
             "icon": "file-doc",
             "pages": [
+              "de/quickstart",
               "de/intro",
               "de/usermanual",
               "de/teachersguide",
@@ -79,6 +82,7 @@
             "group": "Documentación",
             "icon": "file-doc",
             "pages": [
+              "es/quickstart",
               "es/intro",
               "es/usermanual",
               "es/teachersguide",
@@ -99,6 +103,7 @@
             "group": "Documentatie",
             "icon": "file-doc",
             "pages": [
+              "nl/quickstart",
               "nl/intro",
               "nl/usermanual",
               "nl/teachersguide",
@@ -119,6 +124,7 @@
             "group": "Documentazione",
             "icon": "file-doc",
             "pages": [
+              "it/quickstart",
               "it/intro",
               "it/usermanual",
               "it/teachersguide",
@@ -139,6 +145,7 @@
             "group": "Dokumentasjon",
             "icon": "file-doc",
             "pages": [
+              "no/quickstart",
               "no/intro",
               "no/usermanual",
               "no/teachersguide",
@@ -159,6 +166,7 @@
             "group": "Dokumentation",
             "icon": "file-doc",
             "pages": [
+              "sv/quickstart",
               "sv/intro",
               "sv/usermanual",
               "sv/teachersguide",
@@ -179,6 +187,7 @@
             "group": "日本語のドキュメント",
             "icon": "file-doc",
             "pages": [
+              "jp/quickstart",
               "jp/intro",
               "jp/usermanual",
               "jp/teachersguide",
@@ -199,6 +208,7 @@
             "group": "Документация",
             "icon": "file-doc",
             "pages": [
+              "ru/quickstart",
               "ru/intro",
               "ru/usermanual",
               "ru/teachersguide",
