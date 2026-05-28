@@ -1,0 +1,14 @@
+# Internal files — not part of the public docs site
+
+# AI assistant instructions
+CLAUDE.md
+
+# GitHub readme
+README.md
+
+# Backups
+docs_original.json
+favicon_original.svg
+
+# Excalidraw source files (kept for editing, not for site)
+excalidraw/

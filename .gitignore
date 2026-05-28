@@ -33,3 +33,6 @@ npm-debug.log*
 # Team notes — internal project memory, NOT for public repo
 # (architecture, partner plans, open questions, internal style guides)
 team-notes/
+
+# CLAUDE.md — AI assistant instructions (internal, contains project philosophy)
+CLAUDE.md
