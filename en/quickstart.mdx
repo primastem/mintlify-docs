@@ -35,6 +35,8 @@ PrimaSTEM is a screen-free educational kit for programming, logic, and mathemati
   </Step>
 </Steps>
 
+**Try this first:** place a **Forward** token in slot 1 (any cell of the pair). Press **▶ Start**. The robot moves 15 cm forward and stops. *That's a program — one command.*
+
 ## 3. How a program works
 
 The board has **two rows of paired slots**. Place tokens in the cells that glow white — that's your program. Press **▶ Start** — the robot runs it.
@@ -85,6 +87,15 @@ During one session, each movement command keeps its **own** saved value:
 - **empty** in the pair with the command → uses the last saved value or default
 
 Saved values reset when the board powers off; the default (Step) remains.
+
+**Quick reference:**
+
+- `Forward` alone        → 150 mm (15 cm) — default
+- `Forward` + `100`      → 100 mm — replaces previous
+- `Forward` + `+50`      → 150 mm  (previous 100 + 50) — modifies
+- `Left` alone           → 90° — default
+- `Left` + `45`          → 45° — replaces previous
+- `Left` + `−10`         → 35°  (previous 45° − 10°) — modifies
 </Note>
 
 ## 6. The robot draws what you program

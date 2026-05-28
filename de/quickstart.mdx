@@ -35,6 +35,8 @@ PrimaSTEM ist ein bildschirmfreies Lernset für Programmierung, Logik und Mathem
   </Step>
 </Steps>
 
+**Probieren Sie es gleich aus:** legen Sie ein **Vorwärts**-Token in den ersten Steckplatz (in eine beliebige Zelle des Paares). Drücken Sie **▶ Start**. Der Roboter fährt 15 cm vorwärts und hält. *Das ist schon ein Programm — ein einziger Befehl.*
+
 ## 3. Wie ein Programm aufgebaut ist
 
 Die Steuerung hat **zwei Reihen gepaarter Steckplätze**. Sie setzen Tokens in die weiß leuchtenden Felder — daraus entsteht ein Programm. Drücken Sie **▶ Start** — der Roboter führt es aus.
@@ -85,6 +87,15 @@ Während einer Sitzung behält jeder Bewegungsbefehl seinen **eigenen** gespeich
 - **leer** im Paar → nimmt den letzten gespeicherten Wert oder den Standard
 
 Gespeicherte Werte werden beim Ausschalten zurückgesetzt; der Standardwert (Schritt) bleibt.
+
+**Schnellreferenz:**
+
+- `Vorwärts` allein      → 150 mm (15 cm) — Standard
+- `Vorwärts` + `100`     → 100 mm — ersetzt
+- `Vorwärts` + `+50`     → 150 mm  (vorher 100 + 50) — ändert
+- `Links` allein         → 90° — Standard
+- `Links` + `45`         → 45° — ersetzt
+- `Links` + `−10`        → 35°  (vorher 45° − 10°) — ändert
 </Note>
 
 ## 6. Der Roboter zeichnet, was Sie programmieren

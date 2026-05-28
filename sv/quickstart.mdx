@@ -35,6 +35,8 @@ PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matem
   </Step>
 </Steps>
 
+**Prova detta först:** lägg en **Framåt**-bricka i första facket (i någon av cellerna i paret). Tryck **▶ Start**. Roboten kör 15 cm framåt och stannar. *Det är redan ett program — ett enda kommando.*
+
 ## 3. Hur ett program fungerar
 
 Panelen har **två rader med parade fack**. Du placerar brickor i de fack som lyser vitt — det blir programmet. Tryck **▶ Start** — roboten utför det.
@@ -85,6 +87,15 @@ Under en session behåller varje rörelsekommando **sitt eget** sparade värde:
 - **tomt** i paret → tar det senast sparade eller standardvärdet
 
 Sparade värden nollställs när panelen stängs av; standardvärdet (steg) finns kvar.
+
+**Snabbreferens:**
+
+- `Framåt` ensam         → 150 mm (15 cm) — standard
+- `Framåt` + `100`       → 100 mm — ersätter
+- `Framåt` + `+50`       → 150 mm  (föregående 100 + 50) — ändrar
+- `Vänster` ensam        → 90° — standard
+- `Vänster` + `45`       → 45° — ersätter
+- `Vänster` + `−10`      → 35°  (föregående 45° − 10°) — ändrar
 </Note>
 
 ## 6. Roboten ritar det du programmerar
