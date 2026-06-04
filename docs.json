@@ -236,6 +236,10 @@
         "href": "https://primastem.github.io/update/"
       },
       {
+        "label": "Web control for robot",
+        "href": "https://control.primastem.com"
+      },
+      {
         "label": "PrimaSTEM.com",
         "href": "https://primastem.com"
       }
