@@ -232,6 +232,10 @@
   "navbar": {
     "links": [
       {
+        "label": "Web simulator PrimaSTEM",
+        "href": "https://simulator.primastem.com"
+      },
+      {
         "label": "Update firmware",
         "href": "https://primastem.github.io/update/"
       },
