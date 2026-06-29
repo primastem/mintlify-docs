@@ -236,16 +236,16 @@
         "href": "https://simulator.primastem.com"
       },
       {
-        "label": "Update firmware",
-        "href": "https://primastem.github.io/update/"
-      },
-      {
         "label": "Web control for robot",
         "href": "https://control.primastem.com"
       },
       {
-        "label": "Scratch for PrimaSTEM",
+        "label": "Scratch for robot",
         "href": "https://scratch.primastem.com"
+      },
+            {
+        "label": "Update firmware",
+        "href": "https://primastem.github.io/update/"
       },
       {
         "label": "PrimaSTEM.com",
