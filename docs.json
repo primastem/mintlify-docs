@@ -259,7 +259,18 @@
       "linkedin": "https://linkedin.com/company/primastem",
       "instagram": "https://www.instagram.com/primastem.robot",
       "website": "https://primastem.com/"
-    }
+    },
+    "links": [
+      {
+        "header": "License",
+        "items": [
+          {
+            "label": "CC BY-SA 4.0",
+            "href": "https://creativecommons.org/licenses/by-sa/4.0/"
+          }
+        ]
+      }
+    ]
   },
   "contextual": {
     "options": [
