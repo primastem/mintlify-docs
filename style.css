@@ -1,0 +1,9 @@
+/* Custom styles for docs.primastem.com (auto-loaded by Mintlify site-wide) */
+
+/* Shrink the PrimaSTEM logo shown in the site footer to ~1.7x smaller.
+   Scoped to <footer> so the navbar/header logo stays unchanged.
+   !important overrides the theme's Tailwind height class (h-[26px]). */
+footer .nav-logo,
+#footer .nav-logo {
+  height: 15px !important;
+}
