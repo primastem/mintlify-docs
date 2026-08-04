@@ -36,3 +36,6 @@ team-notes/
 
 # CLAUDE.md — AI assistant instructions (internal, contains project philosophy)
 CLAUDE.md
+
+# Claude Code skills — internal workflow, not for public repo
+.claude/skills/
