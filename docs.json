@@ -28,8 +28,8 @@
               "en/nfc",
               "en/sounds_reference",
               "en/cognitive",
-              "en/contacts",
-              "en/resources"
+              "en/resources",
+              "en/contacts"
             ]
           }
         ]
@@ -50,8 +50,8 @@
               "fr/nfc",
               "fr/sounds_reference",
               "fr/cognitive",
-              "fr/contacts",
-              "fr/resources"
+              "fr/resources",
+              "fr/contacts"
             ]
           }
         ]
@@ -72,8 +72,8 @@
               "de/nfc",
               "de/sounds_reference",
               "de/cognitive",
-              "de/contacts",
-              "de/resources"
+              "de/resources",
+              "de/contacts"
             ]
           }
         ]
@@ -94,8 +94,8 @@
               "es/nfc",
               "es/sounds_reference",
               "es/cognitive",
-              "es/contacts",
-              "es/resources"
+              "es/resources",
+              "es/contacts"
             ]
           }
         ]
@@ -116,8 +116,8 @@
               "nl/nfc",
               "nl/sounds_reference",
               "nl/cognitive",
-              "nl/contacts",
-              "nl/resources"
+              "nl/resources",
+              "nl/contacts"
             ]
           }
         ]
@@ -138,8 +138,8 @@
               "it/nfc",
               "it/sounds_reference",
               "it/cognitive",
-              "it/contacts",
-              "it/resources"
+              "it/resources",
+              "it/contacts"
             ]
           }
         ]
@@ -160,8 +160,8 @@
               "no/nfc",
               "no/sounds_reference",
               "no/cognitive",
-              "no/contacts",
-              "no/resources"
+              "no/resources",
+              "no/contacts"
             ]
           }
         ]
@@ -182,8 +182,8 @@
               "sv/nfc",
               "sv/sounds_reference",
               "sv/cognitive",
-              "sv/contacts",
-              "sv/resources"
+              "sv/resources",
+              "sv/contacts"
             ]
           }
         ]
@@ -204,8 +204,8 @@
               "jp/nfc",
               "jp/sounds_reference",
               "jp/cognitive",
-              "jp/contacts",
-              "jp/resources"
+              "jp/resources",
+              "jp/contacts"
             ]
           }
         ]
@@ -226,8 +226,8 @@
               "ru/nfc",
               "ru/sounds_reference",
               "ru/cognitive",
-              "ru/contacts",
-              "ru/resources"
+              "ru/resources",
+              "ru/contacts"
             ]
           }
         ]
