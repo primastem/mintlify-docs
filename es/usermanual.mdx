@@ -136,10 +136,11 @@ Por defecto:
 
 ### Calibración del Robot:
 
-- Marque en la superficie de la mesa la orientación exacta del robot.
-- Con cualquier programa, logre que el robot gire 8 veces en el ángulo por defecto - 90 grados en sentido horario (por ejemplo, ejecute un giro a la derecha 8 veces), el robot debe dar dos vueltas completas de 360 grados = 90*8.
-- Luego evalúe el ángulo de desviación desde la posición inicial del robot y ejecute el comando "Calibración" con el valor necesario para normalizar: si el robot se detiene antes de la marca inicial, añada la operación aritmética "+ ángulo" (por ejemplo +10), si el robot se detiene después de la marca, añada "- ángulo" (por ejemplo -5).
-- La calibración puede realizarse varias veces para obtener un mejor resultado.
+- Primero ejecute la tarjeta «Calibración» sin número: el robot mide la polaridad de los motores, elimina las holguras y ajusta el movimiento en línea recta.
+- Luego calibre los ángulos de giro. Marque en la superficie de la mesa la orientación exacta del robot. Se necesitan 16 giros de 90° en sentido horario: componga el programa «Repetición 8 + giro a la derecha» y ejecútelo dos veces. El robot debe dar cuatro vueltas completas (90×16 = 1440°) y volver a su orientación inicial.
+- Evalúe la desviación respecto a la marca y aplique la corrección con la tarjeta «Calibración» y una ficha numérica: si el robot se detiene antes de la marca, añada «+» (por ejemplo «Calibración» + «+5»); si se pasa, añada «−» (por ejemplo «Calibración» + «−5»), luego «Ejecutar».
+- Repita hasta que el robot vuelva exactamente a su orientación inicial.
+- La calibración se guarda tras el apagado.
 - ¡Atención! El reinicio de calibración del robot se realiza pulsando el botón de control durante más de 10 segundos.
 
 <Accordion icon="rectangle-terminal" title="Calibración de la primera versión del dispositivo (MVP) con robot de 10 cm de diámetro">

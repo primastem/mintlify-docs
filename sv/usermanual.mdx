@@ -136,10 +136,11 @@ Som standard:
 
 ### Robotkalibrering:
 
-- Markera robotens exakta riktning på bordsytan.
-- Med hjälp av vilket program som helst måste du få roboten att svänga 8 gånger på standardvinkeln - 90 grader medurs (till exempel utföra högersväng 8 gånger), roboten ska göra två fulla varv på 360 grader = 90*8.
-- Utvärdera sedan avvikelsevinkeln från robotens ursprungliga position och kör kommandot "Kalibrering" med värdet som behövs för normalisering: om roboten stannar före den ursprungliga markeringen, lägg till den aritmetiska operationen "+ vinkel" (till exempel +10), om roboten stannar efter markeringen, lägg till "- vinkel" (till exempel -5).
-- Kalibrering kan utföras flera gånger för att uppnå bästa resultat.
+- Kör först kortet «Kalibrering» utan siffra: roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram.
+- Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordsytan. Det behövs 16 svängar på 90° medurs: skapa programmet «Upprepning 8 + högersväng» och kör det två gånger. Roboten ska göra fyra hela varv (90×16 = 1440°) och återgå till sin ursprungliga riktning.
+- Bedöm avvikelsen från markeringen och korrigera med kortet «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan «Kör».
+- Upprepa tills roboten återgår exakt till sin ursprungliga riktning.
+- Kalibreringen sparas efter avstängning.
 - Observera! Återställning av robotkalibrering utförs genom att trycka på kontrollknappen i mer än 10 sekunder.
 
 <Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 cm i diameter">

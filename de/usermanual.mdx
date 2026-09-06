@@ -136,10 +136,11 @@ Standardmäßig:
 
 ### Roboter-Kalibrierung:
 
-- Markieren Sie auf der Tischoberfläche die genaue Ausrichtung des Roboters.
-- Mit einem beliebigen Programm müssen Sie 8 Roboter-Drehungen um den Standardwinkel - 90 Grad im Uhrzeigersinn erreichen (z. B. 8-mal Rechtsdrehung ausführen), der Roboter sollte zwei volle Umdrehungen von 360 Grad = 90*8 machen.
-- Bewerten Sie dann den Abweichungswinkel von der ursprünglichen Roboterposition und führen Sie den Befehl "Kalibrierung" mit dem zur Normalisierung erforderlichen Wert aus: Wenn der Roboter vor der ursprünglichen Marke stoppt, fügen Sie die arithmetische Operation "+ Winkel" hinzu (z. B. +10), wenn der Roboter nach der Marke stoppt, fügen Sie "- Winkel" hinzu (z. B. -5).
-- Die Kalibrierung kann mehrmals durchgeführt werden, um das beste Ergebnis zu erzielen.
+- Führen Sie zuerst die Karte „Kalibrierung“ ohne Zahl aus: Der Roboter misst die Motorpolarität, beseitigt das Spiel und stellt die Geradeausfahrt ein.
+- Kalibrieren Sie dann die Drehwinkel. Markieren Sie auf der Tischoberfläche die genaue Ausrichtung des Roboters. Nötig sind 16 Drehungen um 90° im Uhrzeigersinn: erstellen Sie das Programm „Wiederholung 8 + Rechtsdrehung“ und führen Sie es zweimal aus. Der Roboter sollte vier volle Umdrehungen (90×16 = 1440°) machen und in die ursprüngliche Ausrichtung zurückkehren.
+- Bewerten Sie die Abweichung von der Marke und korrigieren Sie mit der Karte „Kalibrierung“ und einem Zahlenchip: Wenn der Roboter vor der Marke stoppt, fügen Sie „+“ hinzu (z. B. „Kalibrierung“ + „+5“); wenn er darüber hinausfährt, fügen Sie „−“ hinzu (z. B. „Kalibrierung“ + „−5“), dann „Ausführen“.
+- Wiederholen Sie, bis der Roboter genau in die ursprüngliche Ausrichtung zurückkehrt.
+- Die Kalibrierung bleibt nach dem Ausschalten erhalten.
 - Achtung! Das Zurücksetzen der Roboter-Kalibrierung erfolgt durch Drücken der Steuerungstaste für mehr als 10 Sekunden.
 
 <Accordion icon="rectangle-terminal" title="Kalibrierung der ersten Geräteversion (MVP) mit Roboter von 10 cm Durchmesser">

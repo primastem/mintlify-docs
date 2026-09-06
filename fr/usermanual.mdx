@@ -136,10 +136,11 @@ Par défaut :
 
 ### Calibrage du robot :
 
-- Marquez sur la surface de la table l'orientation précise du robot.
-- À l'aide de n'importe quel programme, faites tourner le robot 8 fois de l'angle par défaut - 90 degrés dans le sens horaire (par exemple, exécutez une rotation à droite 8 fois), le robot doit effectuer deux tours complets de 360 degrés = 90*8.
-- Évaluez ensuite l'angle d'écart par rapport à l'angle initial du robot et exécutez la commande "Calibrage" avec la valeur nécessaire pour normaliser : si le robot s'arrête avant la marque initiale, ajoutez l'opération arithmétique "+ angle" (par exemple +10), si le robot s'arrête après la marque, ajoutez "- angle" (par exemple -5).
-- Le calibrage peut être effectué plusieurs fois pour obtenir un meilleur résultat.
+- Exécutez d'abord la carte « Calibrage » sans chiffre : le robot mesure la polarité des moteurs, supprime les jeux et règle le déplacement en ligne droite.
+- Calibrez ensuite les angles de rotation. Marquez sur la surface de la table l'orientation précise du robot. Il faut 16 rotations de 90° dans le sens horaire : composez le programme « Répétition 8 + rotation à droite » et exécutez-le deux fois. Le robot doit effectuer quatre tours complets (90×16 = 1440°) et revenir à son orientation initiale.
+- Évaluez l'écart par rapport à la marque et corrigez avec la carte « Calibrage » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibrage » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibrage » + « −5 »), puis « Exécuter ».
+- Répétez jusqu'à ce que le robot revienne exactement à son orientation initiale.
+- Le calibrage est conservé après l'extinction.
 - Attention ! La réinitialisation du calibrage du robot s'effectue en appuyant sur le bouton de contrôle pendant plus de 10 secondes.
 
 <Accordion icon="rectangle-terminal" title="Calibrage de la première version de l'appareil (MVP) avec robot de 10 cm de diamètre">

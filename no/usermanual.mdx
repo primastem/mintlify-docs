@@ -136,10 +136,11 @@ Som standard:
 
 ### Robotkalibrering:
 
-- Merk den nøyaktige retningen til roboten på bordoverflaten.
-- Ved hjelp av et hvilket som helst program må du oppnå at roboten snur 8 ganger på standardvinkelen - 90 grader med klokken (for eksempel utføre høyresving 8 ganger), roboten skal gjøre to fulle omdreininger på 360 grader = 90*8.
-- Deretter må du vurdere avviksvinkelen fra robotens opprinnelige posisjon og utføre kommandoen "Kalibrering" med verdien som trengs for normalisering: hvis roboten stopper før den opprinnelige markeringen, legg til den aritmetiske operasjonen "+ vinkel" (for eksempel +10), hvis roboten stopper etter markeringen, legg til "- vinkel" (for eksempel -5).
-- Kalibrering kan utføres flere ganger for å oppnå best resultat.
+- Kjør først kortet «Kalibrering» uten tall: roboten måler motorpolariteten, fjerner slark og stiller inn rettlinjet bevegelse.
+- Kalibrer deretter svingvinklene. Merk robotens nøyaktige retning på bordoverflaten. Du trenger 16 svinger på 90° med klokken: sett sammen programmet «Gjentakelse 8 + høyresving» og kjør det to ganger. Roboten skal gjøre fire hele omdreininger (90×16 = 1440°) og komme tilbake til sin opprinnelige retning.
+- Vurder avviket fra markeringen og korriger med kortet «Kalibrering» og en tallbrikke: hvis roboten stopper før markeringen, legg til «+» (for eksempel «Kalibrering» + «+5»); hvis den går forbi, legg til «−» (for eksempel «Kalibrering» + «−5»), deretter «Utfør».
+- Gjenta til roboten kommer nøyaktig tilbake til sin opprinnelige retning.
+- Kalibreringen lagres etter avslåing.
 - Merk! Tilbakestilling av robotkalibrering utføres ved å trykke på kontrollknappen i mer enn 10 sekunder.
 
 <Accordion icon="rectangle-terminal" title="Kalibrering av første enhetsversjon (MVP) med robot på 10 cm i diameter">

@@ -136,10 +136,11 @@ Standaard:
 
 ### Robotkalibratie:
 
-- Markeer de exacte richting van de robot op het tafeloppervlak.
-- Met behulp van een willekeurig programma moet u de robot 8 keer laten draaien op de standaardhoek - 90 graden met de klok mee (bijvoorbeeld 8 keer rechts draaien uitvoeren), de robot moet twee volledige omwentelingen van 360 graden maken = 90*8.
-- Evalueer vervolgens de afwijkingshoek van de oorspronkelijke positie van de robot en voer het commando "Kalibratie" uit met de waarde die nodig is voor normalisatie: als de robot stopt vóór de oorspronkelijke markering, voegt u de rekenkundige bewerking "+ hoek" toe (bijvoorbeeld +10), als de robot stopt na de markering, voegt u "- hoek" toe (bijvoorbeeld -5).
-- Kalibratie kan meerdere keren worden uitgevoerd om het beste resultaat te bereiken.
+- Voer eerst de kaart "Kalibratie" zonder getal uit: de robot meet de motorpolariteit, verwijdert de speling en stelt het rechtdoor rijden in.
+- Kalibreer daarna de draaihoeken. Markeer de exacte richting van de robot op het tafeloppervlak. Er zijn 16 draaiingen van 90° met de klok mee nodig: stel het programma "Herhaling 8 + Rechts" samen en voer het twee keer uit. De robot moet vier volledige omwentelingen maken (90×16 = 1440°) en terugkeren naar zijn oorspronkelijke richting.
+- Beoordeel de afwijking van de markering en pas een correctie toe met de kaart "Kalibratie" en een cijferchip: als de robot vóór de markering stopt, voeg "+" toe (bijvoorbeeld "Kalibratie" + "+5"); als hij eroverheen gaat, voeg "−" toe (bijvoorbeeld "Kalibratie" + "−5"), daarna "Uitvoeren".
+- Herhaal tot de robot precies naar zijn oorspronkelijke richting terugkeert.
+- De kalibratie blijft na het uitschakelen behouden.
 - Let op! Het resetten van de robotkalibratie wordt uitgevoerd door de bedieningsknop langer dan 10 seconden ingedrukt te houden.
 
 <Accordion icon="rectangle-terminal" title="Kalibratie van de eerste apparaatversie (MVP) met robot van 10 cm diameter">

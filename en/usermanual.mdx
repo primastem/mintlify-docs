@@ -132,10 +132,11 @@ By default:
 
 ### Robot Calibration:
 
-- Mark the exact orientation of the robot on the table surface.
-- Using any program, achieve 8 robot turns at the default angle - 90 degrees clockwise (for example, execute a right turn 8 times), the robot should make two full 360-degree rotations = 90\*8.
-- Then evaluate the deviation angle from the robot's initial position and execute the "Calibration" command with the value needed for normalization: if the robot stops before the initial mark, add the arithmetic operation "\+ angle" (for example \+10), if the robot stops after the mark, add "- angle" (for example -5).
-- Calibration can be performed multiple times to achieve the best result.
+- First run the "Calibration" card without a number: the robot measures motor polarity, removes backlash and sets up straight-line movement.
+- Then calibrate the turn angles. Mark the exact orientation of the robot on the table surface. You need 16 turns of 90° clockwise: build the program "Repeat 8 + Right turn" and run it twice. The robot should make four full rotations (90×16 = 1440°) and return to its original orientation.
+- Assess the deviation from the mark and apply a correction with the "Calibration" card plus a number chip: if the robot stops before the mark, add "+" (for example "Calibration" + "+5"); if it goes past, add "−" (for example "Calibration" + "−5"), then "Execute".
+- Repeat until the robot returns exactly to its original orientation.
+- The calibration is saved after power-off.
 - Attention! Robot calibration reset is performed by pressing the control button for more than 10 seconds.
 
 <Accordion title="Calibration of the first device version (MVP) with 10 cm diameter robot" icon="rectangle-terminal">
