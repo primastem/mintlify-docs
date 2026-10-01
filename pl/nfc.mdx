@@ -1,0 +1,89 @@
+---
+title: "Żetony poleceń"
+description: "Kody NFC"
+icon: "puzzle"
+mode: "default"
+---
+
+## 🧭 Ruch
+
+| Polecenie | Żeton | NFC Code |
+| --- | --- | --- |
+| Naprzód | <img src="../images/book-1/forward.excalidraw.svg" width="56" /> | `cfor` |
+| Lewo | <img src="../images/book-1/left.excalidraw.svg" width="56" /> | `clef` |
+| Prawo | <img src="../images/book-1/right.excalidraw.svg" width="56" /> | `crig` |
+| Wstecz | <img src="../images/book-1/back.excalidraw.svg" width="56" /> | `cbac` |
+| Losowy ruch | <img src="../images/book-1/random.movement.excalidraw.svg" width="56" /> | `crnd` |
+
+## 🔁 Powtarzanie i sterowanie
+
+| Polecenie | Żeton | NFC Code |
+| --- | --- | --- |
+| Powtórzenie 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
+| Powtórz losową liczbę razy (od 1 do 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
+| Funkcja | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
+| Pauza |  | `cwat` |
+
+## 🔢 Liczby
+
+| Wartość | NFC Code |
+| --- | --- |
+| Liczby 1–999 | `n001`–`n999` |
+
+## 🧮 Działania matematyczne
+
+| Działanie | NFC Code |
+| --- | --- |
+| +1 do +999 | `a001`–`a999` |
+| −1 do −999 | `s001`–`s999` |
+| ×N | `m002`–`m999` |
+| ÷N | `d002`–`d999` |
+| X^N | `e002`–`e999` |
+| Pierwiastek kwadratowy z X | `sqrt` |
+| Silnia | `fact` |
+
+## ⚙️ Ustawienia
+
+| Polecenie | NFC Code |
+| --- | --- |
+| Kalibracja | `ccal` |
+| Ustaw domyślną długość kroku dla mapy | `clen` |
+
+## 🔧 Zaawansowane
+
+| Polecenie | NFC Code |
+| --- | --- |
+| Próbka audio (zobacz [Spis plików audio](/pl/sounds_reference)) | `xNNN` |
+| Dźwięk pilota | `csou` |
+| Poziom głośności | `clvl` |
+
+## Jak zapisać dane na tagu NFC
+
+Możesz zrobić własny żeton: wystarczy zapisać kod tekstowy na tagu NFC. Możesz użyć dowolnych liczb (od 0 do 999), dowolnych powtórzeń i dowolnych liczb w działaniach arytmetycznych.
+
+Aby zapisać dane tekstowe na tagu NFC, otwórz Sklep Google Play i zainstaluj na telefonie aplikację **RFID NFC Reader** lub **NFC Tools**.
+
+Instrukcja zapisu tagu NFC jest tutaj — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+
+<div
+  style={{
+  position: 'relative',
+  paddingBottom: '56.25%',
+  height: 0,
+  overflow: 'hidden',
+}}
+>
+  <iframe
+    src="https://www.youtube.com/embed/UbKaQxZs8JA?si=WT8wWYBe_Ql7TovQ"
+    style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  }}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>

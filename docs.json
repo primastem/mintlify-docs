@@ -189,6 +189,28 @@
         ]
       },
       {
+        "language": "pl",
+        "groups": [
+          {
+            "group": "Dokumentacja",
+            "icon": "file-doc",
+            "pages": [
+              "pl/quickstart",
+              "pl/intro",
+              "pl/usermanual",
+              "pl/teachersguide",
+              "pl/book-1/book-1",
+              "pl/mathdrawings",
+              "pl/nfc",
+              "pl/sounds_reference",
+              "pl/cognitive",
+              "pl/resources",
+              "pl/contacts"
+            ]
+          }
+        ]
+      },
+      {
         "language": "jp",
         "groups": [
           {
