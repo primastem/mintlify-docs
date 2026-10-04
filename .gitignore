@@ -1,9 +1,8 @@
 # Claude Code — local permissions & settings (personal, not for repo)
 .claude/settings.local.json
 
-# OMC (Mintlify session state) — session and checkpoint data
-.omc/sessions/
-.omc/state/
+# OMC (oh-my-claudecode local tool state) — sessions, checkpoints, project scan
+.omc/
 
 # VS Code — personal workspace settings (keep extensions.json for team)
 .vscode/settings.json
