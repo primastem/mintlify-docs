@@ -83,18 +83,21 @@ Modifient les paramètres des commandes de déplacement :
 - Division (/)
 - Racine carrée (√)
 - Puissance (^)
+- Factorielle (!)
+
+L'arithmétique compte jusqu'à 5000 dans les deux sens : "Avancer" peut donc aller jusqu'à 5 mètres et une rotation jusqu'à 5000°. Si le résultat dépasse 5000 ou descend sous −5000, si on divise par 0, si on prend la racine d'un nombre négatif ou la factorielle d'un nombre supérieur à 6, la cellule clignote en rouge et le nombre ne change pas. La division se fait sans décimales : 150 ÷ 4 = 37.
 
 ## Connexion entre la télécommande et le robot
 
 Il est recommandé d'allumer d'abord le robot, puis la télécommande.
 
-Placez le robot sur une surface plane avant la connexion : après l'appairage, les LED deviennent blanches. Si aucune connexion n'est établie, elles clignotent en rouge.
+Placez le robot sur une surface plane avant la connexion : après l'appairage, les LED deviennent blanches. Tant qu'il n'y a pas de connexion, le robot clignote en bleu et la télécommande s'allume en bleu clair : elle cherche le robot.
 
 Vérifiez la connexion : placez le jeton "Avancer" et appuyez sur "Exécuter".
 
 Si aucune connexion n'est établie, redémarrez les deux appareils ou rechargez-les. Une perte temporaire de connexion peut survenir à proximité de sources de champ électromagnétique intense (téléphone mobile, point WiFi).
 
-> **Après une mise à jour du logiciel des appareils**, un appairage peut être nécessaire : allumez le robot, puis la télécommande, appuyez et maintenez le bouton "Exécuter" sur la télécommande pendant 10–15 secondes, jusqu'à l'émission d'un signal sonore.
+> **Après une mise à jour du logiciel des appareils**, un appairage peut être nécessaire : allumez le robot, puis la télécommande, appuyez et maintenez le bouton "Exécuter" sur la télécommande pendant plus de 10 secondes. À la 5ᵉ seconde, un bip court retentit : ne relâchez pas, continuez à maintenir. L'appairage commence à la 10ᵉ seconde.
 
 ## Comment ça marche ?
 
@@ -125,25 +128,31 @@ Par défaut :
 - **Interrompre** l'exécution du programme en appuyant à nouveau sur "Exécuter" pendant le déplacement.
 - La télécommande mémorise la dernière **valeur définie** (distance/angle) pour la commande de déplacement jusqu'à l'extinction : par exemple, si "Avancer" = "200", toutes les commandes "Avancer" suivantes sont exécutées avec cette valeur.
 - Les valeurs après une opération arithmétique sont également conservées.
-- Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction.
-- La télécommande et le robot **s'éteignent automatiquement** après 10 minutes d'inactivité.
+- Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction. Les nombres de 1 à 999 sont acceptés. Le jeton sans nombre ramène le pas à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas.
+- La télécommande et le robot **s'éteignent automatiquement** si rien ne se passe pendant 15 minutes.
 - Si le robot n'est pas utilisé pendant 1–3 minutes, il effectue de petits mouvements pour signaler qu'il est actif et prêt.
-- Le **son de clignement des yeux** du robot peut être activé ou désactivé par une pression simple sur le bouton du robot.
-- Le **son de la télécommande** peut être activé ou désactivé en maintenant le bouton "Exécuter" pendant 5 secondes.
+- **Appui court sur le bouton du robot** : le robot lit le jeton placé sous lui et l'énonce.
+- **Tous les sons du robot** peuvent être coupés et rétablis en maintenant le bouton du robot pendant 5 secondes : attendez le bip court, puis relâchez. Le robot clignote en rouge si le son est coupé, en vert s'il est rétabli.
+- Le **son de la télécommande** peut être coupé et rétabli en maintenant le bouton "Exécuter" pendant 5 secondes : attendez le bip court, puis relâchez. Pendant l'exécution d'un programme, le maintien ne fonctionne pas.
 - **Après une mise à jour du logiciel**, un calibrage des déplacements du robot peut être nécessaire.
-- **Réinitialisation du logiciel du robot** possible en maintenant le bouton pendant 10 secondes.
-- **L'appairage de la télécommande et du robot** peut être nécessaire après une mise à jour du logiciel des appareils, établi en maintenant le bouton "Exécuter" sur la télécommande pendant 10-15 secondes.
+- **Réinitialisation des réglages du robot** : maintenez le bouton du robot pendant 10 secondes (détails dans la section « Calibrage du robot »).
+- **L'appairage de la télécommande et du robot** peut être nécessaire après une mise à jour du logiciel des appareils. Maintenez le bouton "Exécuter" sur la télécommande plus de 10 secondes : le bip à la 5ᵉ seconde signifie qu'il faut continuer à maintenir.
+- **Rotations de toute taille** : "Gauche" + 360 fait un tour complet, + 720 en fait deux. Un nombre négatif fait tourner le robot dans l'autre sens.
+- **Si on tourne le robot à la main** pendant qu'il roule, il continue dans la nouvelle direction et ne revient pas en arrière.
+- **Si le robot est bloqué** par un obstacle ou qu'on le retient, il s'arrête tout seul au bout de 3 secondes. Toutes les cellules de la télécommande clignotent 2 fois en rouge, et le programme continue.
 
 ### Calibrage du robot :
 
-- Exécutez d'abord la carte « Calibrage » sans chiffre : le robot mesure la polarité des moteurs, supprime les jeux et règle le déplacement en ligne droite.
+- Exécutez d'abord la carte « Calibrage » sans chiffre : le robot mesure la polarité des moteurs, supprime les jeux et règle le déplacement en ligne droite. La carte fonctionne jusqu'à 2 minutes. Pendant la première demi-minute, le robot doit rester immobile, ne le touchez pas. Le bouton du robot ne fonctionne pas pendant ce temps.
 - Calibrez ensuite les angles de rotation. Marquez sur la surface de la table l'orientation précise du robot. Il faut 16 rotations de 90° dans le sens horaire : composez le programme « Répétition 8 + rotation à droite » et exécutez-le deux fois. Le robot doit effectuer quatre tours complets (90×16 = 1440°) et revenir à son orientation initiale.
-- Évaluez l'écart par rapport à la marque et corrigez avec la carte « Calibrage » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibrage » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibrage » + « −5 »), puis « Exécuter ».
+- Évaluez l'écart par rapport à la marque et corrigez avec la carte « Calibrage » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibrage » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibrage » + « −5 »), puis « Exécuter ». Le nombre indique de combien de degrés le robot s'est trompé sur les 16 rotations au total. Le robot n'accepte pas plus de 90. Un nombre simple sans « + » ou « − » à côté de « Calibrage » ne fonctionne pas : la cellule clignote en rouge.
 - Répétez jusqu'à ce que le robot revienne exactement à son orientation initiale.
 - Le calibrage est conservé après l'extinction.
-- Attention ! La réinitialisation du calibrage du robot s'effectue en appuyant sur le bouton de contrôle pendant plus de 10 secondes.
+- Attention ! Réinitialisation du calibrage : maintenez le bouton du robot pendant 10 secondes, les lumières clignotent en rouge, vert, bleu et blanc. La réinitialisation efface tous les calibrages, le volume et le son coupé. Ensuite, éteignez et rallumez le robot, puis refaites le calibrage depuis le début.
 
 <Accordion icon="rectangle-terminal" title="Calibrage de la première version de l'appareil (MVP) avec robot de 10 cm de diamètre">
+Cette méthode ne concerne que la première version (MVP). Avec le nouveau firmware, « Calibrage » avec un nombre simple ne fonctionne pas : la cellule clignote en rouge.
+
 1. Pour calibrer le gyroscope, placez le robot sur une surface horizontale, insérez le jeton "Calibrage" dans la télécommande et appuyez sur "Exécuter".
 2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibrage" et le jeton avec la valeur nécessaire, puis "Exécuter". Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 mm). Après cela, la distance de déplacement du robot sera précise.*
 </Accordion>

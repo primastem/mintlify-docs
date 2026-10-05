@@ -22,7 +22,7 @@ mode: "default"
 | Répéter 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Répéter un nombre aléatoire de fois (de 1 à 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Fonction | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pause |  | `cwat` |
+| Pause (nombre = secondes ; sans nombre 1 s, 60 s au maximum) |  | `cwat` |
 
 ## 🔢 Nombres
 
@@ -42,20 +42,22 @@ mode: "default"
 | Racine carrée de X | `sqrt` |
 | Factorielle | `fact` |
 
+L'arithmétique compte jusqu'à 5000 dans les deux sens, la division se fait sans décimales. S'il n'y a pas de réponse (plus de 5000, division par 0, racine d'un nombre négatif, factorielle de plus de 6), la cellule clignote en rouge et le nombre reste le même.
+
 ## ⚙️ Paramètres
 
 | Commande | NFC Code |
 | --- | --- |
-| Calibration de distance | `ccal` |
-| Définir la longueur de pas par défaut | `clen` |
+| Calibration. Sans nombre : le robot règle ses moteurs et son gyroscope, environ 2 minutes, ne pas le toucher pendant la première demi-minute. Avec un jeton `+N` ou `−N` : correction des rotations après le test de 16 rotations. Ne fonctionne pas avec un nombre simple (cellule rouge) | `ccal` |
+| Définir la longueur de pas par défaut (1–999 mm ; sans nombre, revient à 150 mm) | `clen` |
 
 ## 🔧 Avancé
 
 | Commande | NFC Code |
 | --- | --- |
 | Échantillon audio (voir [Fichiers audio](/fr/sounds_reference)) | `xNNN` |
-| Échantillon sonore du panneau | `csou` |
-| Niveau de volume | `clvl` |
+| Son : le robot joue le son numéro N (`csou` + nombre N) | `csou` |
+| Volume de la télécommande et du robot : 0–100, au-delà de 100 = maximum | `clvl` |
 
 ## Comment écrire des données sur une étiquette NFC
 

@@ -83,18 +83,21 @@ Som standard — 90° och 150 mm (15 cm).
 - Division (/)
 - Kvadratrot (√)
 - Potens (^)
+- Fakultet (!)
+
+Aritmetiken räknar upp till 5000 åt båda hållen, så "Framåt" kan ställas in upp till 5 meter och en sväng upp till 5000°. Om svaret blir större än 5000 eller mindre än −5000, om du delar med 0, tar roten ur ett negativt tal eller fakulteten av ett tal större än 6, blinkar facket rött och talet ändras inte. Division sker utan decimaler: 150 ÷ 4 = 37.
 
 ## Anslutning mellan Fjärrkontroll och Robot
 
 Det rekommenderas att först slå på roboten, sedan fjärrkontrollen.
 
-Placera roboten på en plan yta före anslutning: efter parkoppling blir LED-lamporna vita. Om det inte finns någon anslutning blinkar de rött.
+Placera roboten på en plan yta före anslutning: efter parkoppling blir LED-lamporna vita. Medan anslutning saknas blinkar roboten blått och fjärrkontrollen lyser ljusblått: den letar efter roboten.
 
 Kontrollera anslutningen: installera chipet "Framåt" och tryck "Kör".
 
 Om det inte finns någon anslutning, starta om båda enheterna eller ladda dem. Tillfällig anslutningsförlust kan uppstå nära starka elektromagnetiska fältkällor (mobiltelefon, WiFi-punkt).
 
-> **Efter uppdatering av enheternas programvara** kan parkoppling krävas: slå på roboten, sedan fjärrkontrollen, tryck och håll "Kör"-knappen på fjärrkontrollen i 10–15 sekunder, tills ett ljudsignal hörs.
+> **Efter uppdatering av enheternas programvara** kan parkoppling krävas: slå på roboten, sedan fjärrkontrollen, tryck och håll "Kör"-knappen på fjärrkontrollen i mer än 10 sekunder. Vid 5:e sekunden hörs en kort signal: släpp inte, fortsätt hålla. Vid 10:e sekunden startar parkopplingen.
 
 ## Hur Fungerar Det?
 
@@ -125,25 +128,31 @@ Som standard:
 - **Avbryt** programkörningen genom att trycka "Kör" igen under rörelse.
 - Fjärrkontrollen kommer ihåg det senaste **inställda värdet** (distans/vinkel) för rörelsekommandot tills avstängning: till exempel, om "Framåt" = "200", körs alla efterföljande "Framåt"-kommandon med detta värde.
 - Värden efter aritmetik sparas också.
-- Ändra "**standarddistans**" kan göras med ett servicechip: till exempel, för 12,5 cm, installera chipet "Standarddistans" med värdet 125. Värdet sparas efter avstängning.
-- Fjärrkontrollen och roboten **stängs av automatiskt** efter 10 minuters inaktivitet.
+- Ändra "**standarddistans**" kan göras med ett servicechip: till exempel, för 12,5 cm, installera chipet "Standarddistans" med värdet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Chipet utan tal återställer 150 mm. Med aritmetik eller noll blinkar facket rött och steget förblir detsamma.
+- Fjärrkontrollen och roboten **stängs av automatiskt** om ingenting händer på 15 minuter.
 - Om roboten inte används på 1–3 minuter gör den små rörelser för att signalera att den är aktiv och redo.
-- **Ögonblinkningsljudet** på roboten kan slås på och av med ett enkelt tryck på robotknappen.
-- **Fjärrkontrollens ljud** kan slås på och av genom att hålla "Kör"-knappen i 5 sekunder.
+- **Kort tryck på robotknappen**: roboten läser chipet under sig och säger vad det är.
+- **Alla robotens ljud** kan slås av och på genom att hålla robotknappen i 5 sekunder: vänta på den korta signalen och släpp. Roboten blinkar rött om ljudet stängdes av och grönt om det slogs på.
+- **Fjärrkontrollens ljud** kan slås av och på genom att hålla "Kör"-knappen i 5 sekunder: vänta på den korta signalen och släpp. Medan ett program körs fungerar det inte.
 - **Efter en programvaruuppdatering** kan kalibrering av robotrörelse behövas.
-- **Återställning av robotprogramvara** är möjlig genom att hålla knappen i 10 sekunder.
-- **Parkoppling av fjärrkontroll och robot** kan vara nödvändig efter uppdatering av enheternas programvara, upprättas genom att hålla "Kör"-knappen på fjärrkontrollen i 10-15 sekunder.
+- **Återställning av robotens inställningar**: håll robotknappen i 10 sekunder (mer i avsnittet «Robotkalibrering»).
+- **Parkoppling av fjärrkontroll och robot** kan vara nödvändig efter uppdatering av enheternas programvara. Håll "Kör"-knappen på fjärrkontrollen i mer än 10 sekunder: signalen vid 5:e sekunden betyder att du ska fortsätta hålla.
+- **Svängar av alla storlekar**: "Vänster" + 360 gör ett helt varv, + 720 gör två. Ett negativt tal vrider roboten åt andra hållet.
+- **Om du vrider roboten med handen** medan den kör, fortsätter den i den nya riktningen och vänder inte tillbaka.
+- **Om roboten kör fast** mot ett hinder eller någon håller den, stannar den själv efter 3 sekunder. Alla fack på fjärrkontrollen blinkar rött 2 gånger och programmet fortsätter.
 
 ### Robotkalibrering:
 
-- Kör först kortet «Kalibrering» utan siffra: roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram.
+- Kör först kortet «Kalibrering» utan siffra: roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram. Kortet arbetar i upp till 2 minuter. Den första halvminuten måste roboten stå stilla, rör den inte. Robotknappen fungerar inte under tiden.
 - Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordsytan. Det behövs 16 svängar på 90° medurs: skapa programmet «Upprepning 8 + högersväng» och kör det två gånger. Roboten ska göra fyra hela varv (90×16 = 1440°) och återgå till sin ursprungliga riktning.
-- Bedöm avvikelsen från markeringen och korrigera med kortet «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan «Kör».
+- Bedöm avvikelsen från markeringen och korrigera med kortet «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan «Kör». Talet anger hur många grader roboten missade under alla 16 svängar tillsammans. Mer än 90 tar roboten inte emot. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: facket blinkar rött.
 - Upprepa tills roboten återgår exakt till sin ursprungliga riktning.
 - Kalibreringen sparas efter avstängning.
-- Observera! Återställning av robotkalibrering utförs genom att trycka på kontrollknappen i mer än 10 sekunder.
+- Observera! Återställning av kalibreringen: håll robotknappen i 10 sekunder, lamporna blinkar rött, grönt, blått och vitt. Återställningen raderar alla kalibreringar, volymen och avstängt ljud. Stäng sedan av och slå på roboten och gör om kalibreringen från början.
 
 <Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 cm i diameter">
+Det här sättet gäller bara den första versionen (MVP). På nya firmwareversioner fungerar «Kalibrering» med ett vanligt tal inte, facket blinkar rött.
+
 1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, sätt in chipet "Kalibrering" i fjärrkontrollen och tryck "Kör".
 2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och chipet med nödvändigt värde, sedan "Kör". Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 mm). Efter detta kommer robotens rörelsedistans att vara exakt.*
 </Accordion>

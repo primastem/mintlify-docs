@@ -34,8 +34,8 @@ PrimaSTEM ist ein bildschirmfreies Lernset für Programmierung, Logik und Mathem
   <Step title="Verbunden = weiß" icon="check">
     Verfügbare Steckplätze der Steuerung leuchten **weiß**, die Augen des Roboters blinken **weiß**. Fertig.
   </Step>
-  <Step title="Beide blau = Kopplung nötig" icon="bluetooth">
-    Halten Sie **▶ Start** an der Steuerung **>10 Sekunden** gedrückt — die Geräte koppeln sich und der Roboter startet neu.
+  <Step title="Blau und hellblau = keine Verbindung" icon="bluetooth">
+    Der Roboter blinkt blau, die Steuerung leuchtet hellblau. Kommt die Verbindung nicht zustande, halten Sie **▶ Start** an der Steuerung **länger als 10 Sekunden** gedrückt. In der 5. Sekunde ertönt ein Signal, weiter halten: Die Geräte koppeln sich und der Roboter startet neu.
   </Step>
 </Steps>
 
@@ -64,9 +64,11 @@ LED-Farben während der Ausführung:
 
 | ⚪ Weiß | 🟢 Grün | 🔵 Blau | 🔴 Rot |
 | :---: | :---: | :---: | :---: |
-| Bereit (Steckplatz frei) | Befehl gesetzt | Befehl + Zahl / Wiederholung / Arithmetik | Fehler — wird übersprungen |
+| Bereit (Steckplatz frei) | Befehl gesetzt | Befehl + Zahl / Wiederholung / Arithmetik | Fehler (siehe unten) |
 
-Leere Steckplätze und rote Paare werden übersprungen. LEDs blinken an der aktuell ausgeführten Zelle.
+Leere Steckplätze und rote Paare werden beim Auslegen übersprungen. LEDs blinken an der aktuell ausgeführten Zelle.
+
+Blinkt eine Zelle während der Ausführung rot, hat die Arithmetik kein Ergebnis: Der Roboter macht den Schritt mit der vorherigen Zahl. Blinken alle Zellen zweimal rot, ist der Roboter irgendwo angestoßen. Er hält von selbst an, und das Programm läuft weiter.
 
 ## 4. Tokens — nach Gruppen
 
@@ -75,9 +77,9 @@ Leere Steckplätze und rote Paare werden übersprungen. LEDs blinken an der aktu
 | **Bewegung** | Vorwärts · Rückwärts · Links · Rechts |
 | **Wiederholung** | Zwei Pfeile im Kreis + Punkte 2–6 innen (wie ein Würfel, für die Kleinen) oder Ziffern. In Paar mit einem Befehl — wiederholt ihn. |
 | **Zahlen** | `1`–`999`. Setzen die Bewegungsdistanz in mm oder den Drehwinkel in Grad. |
-| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! |
+| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! Rechnet bis 5000 in beide Richtungen, teilt ohne Nachkommastellen (150 ÷ 4 = 37). Gibt es kein Ergebnis (über 5000, Division durch 0, Wurzel aus einer negativen Zahl, Fakultät über 6), blinkt die Zelle rot und die Zahl bleibt unverändert. |
 | **Funktion** | Ruft die untere Reihe als Unterprogramm auf. Mit Wiederholungs-Token — läuft entsprechend oft. |
-| **Schritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. |
+| **Schritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. Zahl von 1 bis 999; ohne Zahl kehrt der Schritt zu 150 mm zurück. Mit Arithmetik oder Null blinkt die Zelle rot, der Schritt bleibt unverändert. |
 
 ## 5. Standardwerte und gespeicherter Wert
 
@@ -100,6 +102,7 @@ Gespeicherte Werte werden beim Ausschalten zurückgesetzt; der Standardwert (Sch
 - `Links` allein         → 90° — Standard
 - `Links` + `45`         → 45° — ersetzt
 - `Links` + `−10`        → 35°  (vorher 45° − 10°) — ändert
+- `Links` + `720`        → zwei volle Umdrehungen
 </Note>
 
 ## 6. Der Roboter zeichnet, was Sie programmieren

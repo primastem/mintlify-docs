@@ -22,7 +22,7 @@ mode: "default"
 | Upprepa 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Upprepa ett slumpmässigt antal gånger (från 1 till 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Funktion | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Paus |  | `cwat` |
+| Paus (tal = sekunder; utan tal 1 s, högst 60 s) |  | `cwat` |
 
 ## 🔢 Tal
 
@@ -42,20 +42,22 @@ mode: "default"
 | Kvadratroten ur X | `sqrt` |
 | Fakultet | `fact` |
 
+Aritmetiken räknar upp till 5000 åt båda hållen, division sker utan decimaler. Om svaret saknas (över 5000, division med 0, roten ur ett negativt tal, fakultet över 6) blinkar cellen rött och talet förblir detsamma.
+
 ## ⚙️ Inställningar
 
 | Kommando | NFC Code |
 | --- | --- |
-| Avståndskalibrering | `ccal` |
-| Ställ in standard steglängd | `clen` |
+| Kalibrering. Utan tal: roboten ställer in motorerna och gyroskopet, cirka 2 minuter, rör den inte den första halvminuten. Med bricka `+N` eller `−N`: korrigering av svängarna efter kontroll med 16 svängar. Med ett vanligt tal fungerar det inte (cellen röd) | `ccal` |
+| Ställ in standard steglängd (1–999 mm; utan tal återgår den till 150 mm) | `clen` |
 
 ## 🔧 Avancerat
 
 | Kommando | NFC Code |
 | --- | --- |
 | Ljudexempel (se [Ljudfiler](/sv/sounds_reference)) | `xNNN` |
-| Panel ljudexempel | `csou` |
-| Volymnivå | `clvl` |
+| Ljud: roboten spelar ljud nummer N (`csou` + tal N) | `csou` |
+| Volym för panel och robot: 0–100, över 100 = max | `clvl` |
 
 ## Hur man skriver data till en NFC-tagg
 

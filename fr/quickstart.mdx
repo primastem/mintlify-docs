@@ -34,8 +34,8 @@ PrimaSTEM est un kit éducatif pour l'apprentissage de la programmation, de la l
   <Step title="Connecté = blanc" icon="check">
     Les emplacements disponibles de la télécommande s'allument en **blanc**, les yeux du robot clignotent en **blanc**. C'est prêt.
   </Step>
-  <Step title="Les deux en bleu = appairage nécessaire" icon="bluetooth">
-    Maintenez **▶ Start** sur la télécommande pendant **plus de 10 secondes** — les appareils s'appairent et le robot redémarre.
+  <Step title="Bleu et bleu clair = pas de connexion" icon="bluetooth">
+    Le robot clignote en bleu, la télécommande s'allume en bleu clair. Si la connexion ne s'établit toujours pas, maintenez **▶ Start** sur la télécommande pendant **plus de 10 secondes**. À la 5ᵉ seconde, un bip retentit, continuez à maintenir : les appareils s'appairent et le robot redémarre.
   </Step>
 </Steps>
 
@@ -64,9 +64,11 @@ Couleurs des LED pendant l'exécution :
 
 | ⚪ Blanc | 🟢 Vert | 🔵 Bleu | 🔴 Rouge |
 | :---: | :---: | :---: | :---: |
-| Attente (emplacement libre) | Commande prête | Commande + nombre / répétition / arithmétique | Erreur — ignorée |
+| Attente (emplacement libre) | Commande prête | Commande + nombre / répétition / arithmétique | Erreur (voir ci-dessous) |
 
-Les emplacements vides et les paires rouges sont ignorés. Les LED clignotent sur la cellule en cours d'exécution.
+Les emplacements vides et les paires rouges sont ignorés lors de la mise en place. Les LED clignotent sur la cellule en cours d'exécution.
+
+Si une cellule clignote en rouge pendant l'exécution, l'arithmétique n'a pas de réponse : le robot fait le pas avec le nombre précédent. Si toutes les cellules clignotent deux fois en rouge, le robot a buté contre quelque chose. Il s'arrête tout seul et le programme continue.
 
 ## 4. Jetons — par groupe
 
@@ -75,9 +77,9 @@ Les emplacements vides et les paires rouges sont ignorés. Les LED clignotent su
 | **Mouvement** | Avant · Arrière · Gauche · Droite |
 | **Répétition** | Deux flèches en boucle + à l'intérieur points 2–6 (comme un dé, pour les petits) ou avec chiffres. En paire avec une commande — la répète. |
 | **Nombres** | `1`–`999`. Définissent la distance de mouvement en mm ou l'angle de rotation en degrés. |
-| **Arithmétique** | `+N` `−N` `×N` `÷N` `√` `^N` — un jeton = opération + nombre. Modifie la valeur enregistrée du mouvement ou de la rotation. Un résultat négatif inverse la direction ! |
+| **Arithmétique** | `+N` `−N` `×N` `÷N` `√` `^N` — un jeton = opération + nombre. Modifie la valeur enregistrée du mouvement ou de la rotation. Un résultat négatif inverse la direction ! Compte jusqu'à 5000 dans les deux sens, divise sans décimales (150 ÷ 4 = 37). S'il n'y a pas de réponse (plus de 5000, division par 0, racine d'un nombre négatif, factorielle de plus de 6), la cellule clignote en rouge et le nombre ne change pas. |
 | **Fonction** | Appelle la rangée inférieure comme un sous-programme. Avec un jeton de répétition, exécute autant de fois que demandé. |
-| **Pas** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. |
+| **Pas** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. Nombre de 1 à 999 ; sans nombre, le pas revient à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas. |
 
 ## 5. Valeurs par défaut et valeur enregistrée
 
@@ -100,6 +102,7 @@ Les valeurs enregistrées se réinitialisent à l'extinction de la télécommand
 - `Gauche` seul          → 90° — défaut
 - `Gauche` + `45`        → 45° — remplace
 - `Gauche` + `−10`       → 35°  (précédent 45° − 10°) — modifie
+- `Gauche` + `720`       → deux tours complets
 </Note>
 
 ## 6. Le robot dessine ce que vous programmez

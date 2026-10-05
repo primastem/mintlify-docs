@@ -34,8 +34,8 @@ PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matem
   <Step title="Anslutet = vitt" icon="check">
     Tillgängliga fack på panelen lyser **vitt**, robotens ögon blinkar **vitt**. Klart.
   </Step>
-  <Step title="Båda blå = parning behövs" icon="bluetooth">
-    Håll **▶ Start** på panelen i **mer än 10 sekunder** — enheterna paras och roboten startar om.
+  <Step title="Blått och ljusblått = ingen anslutning" icon="bluetooth">
+    Roboten blinkar blått, panelen lyser ljusblått. Om anslutningen inte kommer, håll **▶ Start** på panelen i **mer än 10 sekunder**. Vid 5:e sekunden hörs en signal, fortsätt hålla: enheterna paras och roboten startar om.
   </Step>
 </Steps>
 
@@ -64,9 +64,11 @@ LED-färger under utförandet:
 
 | ⚪ Vit | 🟢 Grön | 🔵 Blå | 🔴 Röd |
 | :---: | :---: | :---: | :---: |
-| Vänteläge (fack ledigt) | Kommando satt | Kommando + tal / upprepning / aritmetik | Fel — hoppas över |
+| Vänteläge (fack ledigt) | Kommando satt | Kommando + tal / upprepning / aritmetik | Fel (se nedan) |
 
-Tomma fack och röda par hoppas över. LED-erna blinkar på den cell som körs just nu.
+Tomma fack och röda par hoppas över när programmet läggs ut. LED-erna blinkar på den cell som körs just nu.
+
+Om en cell blinkar rött under körningen har aritmetiken inget svar: roboten gör steget med det föregående talet. Om alla celler blinkar rött två gånger har roboten kört fast i något. Den stannar själv och programmet fortsätter.
 
 ## 4. Brickor — efter grupp
 
@@ -75,9 +77,9 @@ Tomma fack och röda par hoppas över. LED-erna blinkar på den cell som körs j
 | **Rörelse** | Framåt · Bakåt · Vänster · Höger |
 | **Upprepning** | Två pilar i en cirkel + inuti punkter 2–6 (som på en tärning, för de små) eller med siffror. I par med ett kommando — upprepar det. |
 | **Tal** | `1`–`999`. Anger rörelsesträcka i mm eller vridningsvinkel i grader. |
-| **Aritmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — en bricka = operation + tal. Ändrar det sparade värdet för rörelse eller vridning. Ett negativt resultat vänder riktningen! |
+| **Aritmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — en bricka = operation + tal. Ändrar det sparade värdet för rörelse eller vridning. Ett negativt resultat vänder riktningen! Räknar upp till 5000 åt båda hållen, delar utan decimaler (150 ÷ 4 = 37). Om svaret saknas (över 5000, division med 0, rot ur minus, fakultet över 6) blinkar cellen rött och talet ändras inte. |
 | **Funktion** | Anropar nedre raden som subprogram. Med upprepningsbricka — körs angivet antal gånger. |
-| **Steg** | Servicebricka + Tal = ändrar standardsteget (t.ex. tal 100, i millimeter, för ett 10 cm rutnät). Behålls efter avstängning. |
+| **Steg** | Servicebricka + Tal = ändrar standardsteget (t.ex. tal 100, i millimeter, för ett 10 cm rutnät). Behålls efter avstängning. Tal från 1 till 999; utan tal går steget tillbaka till 150 mm. Med aritmetik eller noll blinkar cellen rött och steget ändras inte. |
 
 ## 5. Standardvärden och sparat värde
 
@@ -100,6 +102,7 @@ Sparade värden nollställs när panelen stängs av; standardvärdet (steg) finn
 - `Vänster` ensam        → 90° — standard
 - `Vänster` + `45`       → 45° — ersätter
 - `Vänster` + `−10`      → 35°  (föregående 45° − 10°) — ändrar
+- `Vänster` + `720`      → två hela varv
 </Note>
 
 ## 6. Roboten ritar det du programmerar

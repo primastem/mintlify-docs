@@ -83,18 +83,21 @@ Modificano i parametri dei comandi di movimento:
 - Divisione (/)
 - Radice Quadrata (√)
 - Potenza (^)
+- Fattoriale (!)
+
+L'aritmetica conta fino a 5000 in entrambe le direzioni, quindi "Avanti" può arrivare a 5 metri e una rotazione a 5000°. Se il risultato supera 5000 o scende sotto −5000, se si divide per 0, si fa la radice di un numero negativo o il fattoriale di un numero maggiore di 6, la cella lampeggia in rosso e il numero non cambia. La divisione è senza decimali: 150 ÷ 4 = 37.
 
 ## Connessione tra Telecomando e Robot
 
 Si consiglia di accendere prima il robot, quindi il telecomando.
 
-Posizionare il robot su una superficie piana prima della connessione: dopo l'accoppiamento, i LED diventano bianchi. Se non c'è connessione, lampeggiano in rosso.
+Posizionare il robot su una superficie piana prima della connessione: dopo l'accoppiamento, i LED diventano bianchi. Finché non c'è connessione, il robot lampeggia in blu e il telecomando si illumina di azzurro: sta cercando il robot.
 
 Verificare la connessione: inserire il gettone "Avanti" e premere "Esegui".
 
 Se non c'è connessione, riavviare entrambi i dispositivi o ricaricarli. È possibile una perdita temporanea di connessione vicino a fonti di forte campo elettromagnetico (telefono cellulare, punto WiFi).
 
-> **Dopo l'aggiornamento del software dei dispositivi** potrebbe essere necessario l'accoppiamento: accendere il robot, quindi il telecomando, premere e tenere premuto il pulsante "Esegui" sul telecomando per 10–15 secondi, fino all'emissione di un segnale acustico.
+> **Dopo l'aggiornamento del software dei dispositivi** potrebbe essere necessario l'accoppiamento: accendere il robot, quindi il telecomando, premere e tenere premuto il pulsante "Esegui" sul telecomando per più di 10 secondi. Al 5° secondo si sente un breve segnale: non rilasciare, continuare a tenere premuto. Al 10° secondo inizia l'accoppiamento.
 
 ## Come Funziona?
 
@@ -125,25 +128,31 @@ Per impostazione predefinita:
 - **Interrompere** l'esecuzione del programma premendo "Esegui" di nuovo durante il movimento.
 - Il telecomando memorizza l'ultimo **valore impostato** (distanza/angolo) per il comando di movimento fino allo spegnimento: ad esempio, se "Avanti" = "200", tutti i comandi "Avanti" successivi vengono eseguiti con questo valore.
 - I valori dopo le operazioni aritmetiche vengono anche salvati.
-- Modificare la "**distanza predefinita**" è possibile con un gettone di servizio: ad esempio, per 12,5 cm, inserire il gettone "Distanza predefinita" con valore 125. Il valore viene salvato dopo lo spegnimento.
-- Il telecomando e il robot **si spengono automaticamente** dopo 10 minuti di inattività.
+- Modificare la "**distanza predefinita**" è possibile con un gettone di servizio: ad esempio, per 12,5 cm, inserire il gettone "Distanza predefinita" con valore 125. Il valore viene salvato dopo lo spegnimento. Sono ammessi i numeri da 1 a 999. Il gettone senza numero riporta il passo a 150 mm. Con l'aritmetica o con lo zero la cella lampeggia in rosso e il passo resta quello di prima.
+- Il telecomando e il robot **si spengono automaticamente** se per 15 minuti non succede nulla.
 - Se il robot non viene utilizzato per 1–3 minuti, esegue piccoli movimenti per segnalare che è attivo e pronto.
-- Il **suono di battito di ciglia** del robot può essere attivato e disattivato con una singola pressione del pulsante sul robot.
-- Il **suono del telecomando** può essere attivato e disattivato tenendo premuto il pulsante "Esegui" per 5 secondi.
+- **Pressione breve del pulsante del robot**: il robot legge il gettone che ha sotto e lo dice ad alta voce.
+- **Tutti i suoni del robot** si possono disattivare e riattivare tenendo premuto il pulsante del robot per 5 secondi: attendere il breve segnale e rilasciare. Il robot lampeggia in rosso se il suono si è spento, in verde se si è acceso.
+- Il **suono del telecomando** si può disattivare e riattivare tenendo premuto il pulsante "Esegui" per 5 secondi: attendere il breve segnale e rilasciare. Mentre un programma è in esecuzione, questo non funziona.
 - **Dopo un aggiornamento software** potrebbe essere necessaria la calibrazione del movimento del robot.
-- **Reset del software del robot** è possibile tenendo premuto il pulsante per 10 secondi.
-- **Accoppiamento del telecomando e del robot** può essere necessario dopo l'aggiornamento del software dei dispositivi, viene stabilito tenendo premuto il pulsante "Esegui" sul telecomando per 10-15 secondi.
+- **Reset delle impostazioni del robot**: tenere premuto il pulsante del robot per 10 secondi (dettagli nella sezione «Calibrazione del Robot»).
+- **Accoppiamento del telecomando e del robot** può essere necessario dopo l'aggiornamento del software dei dispositivi. Tenere premuto il pulsante "Esegui" sul telecomando per più di 10 secondi: il segnale al 5° secondo significa che bisogna continuare a tenere premuto.
+- **Rotazioni di qualsiasi ampiezza**: "Sinistra" + 360 fa un giro completo, + 720 ne fa due. Un numero negativo fa girare il robot nell'altra direzione.
+- **Se si gira il robot con la mano** mentre si muove, prosegue nella nuova direzione e non si rigira verso quella di prima.
+- **Se il robot urta** un ostacolo o viene trattenuto, dopo 3 secondi si ferma da solo. Tutte le celle del telecomando lampeggiano in rosso 2 volte e il programma continua.
 
 ### Calibrazione del Robot:
 
-- Esegui prima la carta «Calibrazione» senza numero: il robot misura la polarità dei motori, elimina i giochi e imposta il movimento in linea retta.
+- Esegui prima la carta «Calibrazione» senza numero: il robot misura la polarità dei motori, elimina i giochi e imposta il movimento in linea retta. La carta lavora fino a 2 minuti. Nel primo mezzo minuto il robot deve stare fermo: non toccarlo. In questo tempo il pulsante del robot non funziona.
 - Poi calibra gli angoli di rotazione. Segna sulla superficie del tavolo l'orientamento esatto del robot. Servono 16 rotazioni di 90° in senso orario: componi il programma «Ripetizione 8 + rotazione a destra» ed eseguilo due volte. Il robot deve compiere quattro giri completi (90×16 = 1440°) e tornare all'orientamento iniziale.
-- Valuta lo scostamento dal segno e applica la correzione con la carta «Calibrazione» e un gettone numerico: se il robot si ferma prima del segno, aggiungi «+» (ad esempio «Calibrazione» + «+5»); se lo supera, aggiungi «−» (ad esempio «Calibrazione» + «−5»), poi «Esegui».
+- Valuta lo scostamento dal segno e applica la correzione con la carta «Calibrazione» e un gettone numerico: se il robot si ferma prima del segno, aggiungi «+» (ad esempio «Calibrazione» + «+5»); se lo supera, aggiungi «−» (ad esempio «Calibrazione» + «−5»), poi «Esegui». Il numero indica di quanti gradi il robot ha sbagliato in tutte le 16 rotazioni insieme. Oltre 90 il robot non lo accetta. Un numero semplice senza «+» o «−» accanto a «Calibrazione» non funziona: la cella lampeggia in rosso.
 - Ripeti finché il robot non torna esattamente all'orientamento iniziale.
 - La calibrazione viene salvata dopo lo spegnimento.
-- Attenzione! Il reset della calibrazione del robot viene eseguito premendo il pulsante di controllo per più di 10 secondi.
+- Attenzione! Reset della calibrazione: tieni premuto il pulsante del robot per 10 secondi, le luci lampeggiano in rosso, verde, blu e bianco. Il reset cancella tutte le calibrazioni, il volume e il suono disattivato. Dopo il reset spegni e riaccendi il robot, poi ripeti la calibrazione dall'inizio.
 
 <Accordion icon="rectangle-terminal" title="Calibrazione della prima versione del dispositivo (MVP) con robot di 10 cm di diametro">
+Questo metodo vale solo per la prima versione (MVP). Con il firmware nuovo «Calibrazione» con un numero semplice non funziona: la cella lampeggia in rosso.
+
 1. Per calibrare il giroscopio, posizionare il robot su una superficie orizzontale, inserire il gettone "Calibrazione" nel telecomando e premere "Esegui".
 2. Per calibrare la distanza di movimento, misurare il percorso effettivo con il comando "Avanti", inserire "Calibrazione" e il gettone con il valore necessario, quindi "Esegui". È possibile scrivere il valore su qualsiasi gettone NFC digitale utilizzando un telefono cellulare con NFC come testo nella forma nXXX (ad esempio, n095 per 95 mm). Dopo questo, la distanza di movimento del robot sarà precisa.*
 </Accordion>

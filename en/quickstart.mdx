@@ -34,8 +34,8 @@ PrimaSTEM is a screen-free educational kit for programming, logic, and mathemati
   <Step title="Connected = white" icon="check">
     Available slots on the board glow **white**, the robot's eyes blink **white**. You're ready.
   </Step>
-  <Step title="Both blue = pairing needed" icon="bluetooth">
-    Hold **▶ Start** on the board for **more than 10 seconds** — the devices will pair and the robot will restart.
+  <Step title="Blue and light blue = no connection" icon="bluetooth">
+    The robot blinks blue, the remote glows light blue. If the connection still does not come up, hold **▶ Start** on the remote for **more than 10 seconds**. You will hear a beep at the 5th second, keep holding: the devices will pair and the robot will restart.
   </Step>
 </Steps>
 
@@ -64,9 +64,11 @@ LED colours during execution:
 
 | ⚪ White | 🟢 Green | 🔵 Blue | 🔴 Red |
 | :---: | :---: | :---: | :---: |
-| Idle (slot available) | Command set | Command + number / repeat / arithmetic | Error — skipped |
+| Idle (slot available) | Command set | Command + number / repeat / arithmetic | Error (see below) |
 
-Empty slots and red pairs are skipped. LEDs flash on the cell being executed right now.
+Empty slots and red pairs are skipped when you lay out the program. LEDs flash on the cell being executed right now.
+
+If a cell blinks red during the run, the arithmetic has no answer: the robot does the step with the previous number. If all cells blink red twice, the robot has bumped into something. It stops by itself and the program continues.
 
 ## 4. Tokens — by group
 
@@ -75,9 +77,9 @@ Empty slots and red pairs are skipped. LEDs flash on the cell being executed rig
 | **Movement** | Forward · Back · Left · Right |
 | **Repeat** | Two arrows in a loop + inside dots 2–6 (like a die, for young children) or numerals. In a pair with a command, repeats it. |
 | **Numbers** | `1`–`999`. Set movement distance in mm or turn angle in degrees. |
-| **Arithmetic** | `+N` `−N` `×N` `÷N` `√` `^N` — one tile per operation+number. Modifies the saved value of movement or turn. A negative result reverses the direction! |
+| **Arithmetic** | `+N` `−N` `×N` `÷N` `√` `^N` — one tile per operation+number. Modifies the saved value of movement or turn. A negative result reverses the direction! Counts up to 5000 in both directions, divides without fractions (150 ÷ 4 = 37). If there is no answer (above 5000, division by 0, root of a negative number, factorial above 6), the cell blinks red and the number stays the same. |
 | **Function** | Calls the bottom row as a subroutine. With a repeat tile, runs that number of times. |
-| **Step** | Service tile + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. |
+| **Step** | Service tile + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. Number from 1 to 999; without a number the step goes back to 150 mm. With arithmetic or zero the cell blinks red and the step stays the same. |
 
 ## 5. Defaults & saved value
 
@@ -100,6 +102,7 @@ Saved values reset when the board powers off; the default (Step) remains.
 - `Left` alone           → 90° — default
 - `Left` + `45`          → 45° — replaces previous
 - `Left` + `−10`         → 35°  (previous 45° − 10°) — modifies
+- `Left` + `720`         → two full turns
 </Note>
 
 ## 6. The robot draws what you program

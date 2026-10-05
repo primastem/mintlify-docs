@@ -83,18 +83,21 @@ Standardmäßig — 90° und 150 mm (15 cm).
 - Division (/)
 - Quadratwurzel (√)
 - Potenz (^)
+- Fakultät (!)
+
+Die Arithmetik rechnet bis 5000 in beide Richtungen, deshalb kann "Vorwärts" bis zu 5 Meter und eine Drehung bis zu 5000° betragen. Ist das Ergebnis größer als 5000 oder kleiner als −5000, wird durch 0 geteilt, die Wurzel aus einer negativen Zahl gezogen oder die Fakultät einer Zahl über 6 berechnet, blinkt die Zelle rot und die Zahl bleibt unverändert. Geteilt wird ohne Nachkommastellen: 150 ÷ 4 = 37.
 
 ## Verbindung zwischen Fernbedienung und Roboter
 
 Es wird empfohlen, zuerst den Roboter und dann die Fernbedienung einzuschalten.
 
-Stellen Sie den Roboter vor dem Verbinden auf eine ebene Fläche: Nach der Verbindung werden die LEDs weiß. Wenn keine Verbindung besteht, blinken sie rot.
+Stellen Sie den Roboter vor dem Verbinden auf eine ebene Fläche: Nach der Verbindung werden die LEDs weiß. Solange keine Verbindung besteht, blinkt der Roboter blau und die Fernbedienung leuchtet hellblau: Sie sucht den Roboter.
 
 Überprüfen Sie die Verbindung: Setzen Sie den Chip "Vorwärts" ein und drücken Sie "Ausführen".
 
 Wenn keine Verbindung besteht, starten Sie beide Geräte neu oder laden Sie sie auf. In der Nähe von starken elektromagnetischen Feldquellen (Mobiltelefon, WiFi-Hotspot) kann es zu vorübergehendem Verbindungsverlust kommen.
 
-> **Nach einer Software-Aktualisierung der Geräte** kann eine Paarung erforderlich sein: Schalten Sie den Roboter ein, dann die Fernbedienung, drücken und halten Sie die Taste "Ausführen" auf der Fernbedienung für 10–15 Sekunden, bis ein Tonsignal ertönt.
+> **Nach einer Software-Aktualisierung der Geräte** kann eine Paarung erforderlich sein: Schalten Sie den Roboter ein, dann die Fernbedienung, drücken und halten Sie die Taste "Ausführen" auf der Fernbedienung länger als 10 Sekunden. In der 5. Sekunde ertönt ein kurzer Signalton: nicht loslassen, weiter halten. In der 10. Sekunde beginnt die Paarung.
 
 ## Wie funktioniert es?
 
@@ -125,25 +128,31 @@ Standardmäßig:
 - **Unterbrechen** Sie die Programmausführung, indem Sie während der Bewegung erneut "Ausführen" drücken.
 - Die Fernbedienung speichert den letzten **eingestellten Wert** (Distanz/Winkel) für den Bewegungsbefehl bis zum Ausschalten: z. B. wenn "Vorwärts" = "200", werden alle folgenden "Vorwärts"-Befehle mit diesem Wert ausgeführt.
 - Werte nach arithmetischen Operationen werden ebenfalls gespeichert.
-- Die "**Standarddistanz**" kann mit einem Servicechip geändert werden: z. B. für 12,5 cm setzen Sie den Chip "Standarddistanz" mit dem Wert 125. Der Wert bleibt nach dem Ausschalten erhalten.
-- Fernbedienung und Roboter **schalten sich automatisch ab** nach 10 Minuten Inaktivität.
+- Die "**Standarddistanz**" kann mit einem Servicechip geändert werden: z. B. für 12,5 cm setzen Sie den Chip "Standarddistanz" mit dem Wert 125. Der Wert bleibt nach dem Ausschalten erhalten. Erlaubt sind Zahlen von 1 bis 999. Der Chip ohne Zahl setzt den Schritt auf 150 mm zurück. Mit Arithmetik oder Null blinkt die Zelle rot, und der Schritt bleibt unverändert.
+- Fernbedienung und Roboter **schalten sich automatisch ab**, wenn 15 Minuten lang nichts passiert.
 - Wenn der Roboter 1–3 Minuten nicht verwendet wird, führt er kleine Bewegungen aus, um Betriebsbereitschaft zu signalisieren.
-- Der **Augenblinzelton** des Roboters kann durch einfaches Drücken der Robotertaste ein- und ausgeschaltet werden.
-- Der **Ton der Fernbedienung** kann durch 5-sekündiges Halten der Taste "Ausführen" ein- und ausgeschaltet werden.
+- **Kurzes Drücken der Robotertaste**: Der Roboter liest den Chip unter sich und sagt ihn an.
+- **Alle Töne des Roboters** lassen sich durch 5-sekündiges Halten der Robotertaste aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Der Roboter blinkt rot, wenn der Ton aus ist, und grün, wenn er an ist.
+- Der **Ton der Fernbedienung** lässt sich durch 5-sekündiges Halten der Taste "Ausführen" aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Während ein Programm läuft, funktioniert das Halten nicht.
 - **Nach einer Software-Aktualisierung** kann eine Kalibrierung der Roboterbewegung erforderlich sein.
-- **Zurücksetzen der Roboter-Software** durch 10-sekündiges Halten der Taste möglich.
-- **Paarung von Fernbedienung und Roboter** kann nach einer Software-Aktualisierung der Geräte erforderlich sein, wird durch 10-15-sekündiges Halten der Taste "Ausführen" auf der Fernbedienung hergestellt.
+- **Zurücksetzen der Robotereinstellungen**: Robotertaste 10 Sekunden halten (mehr dazu unter „Roboter-Kalibrierung“).
+- **Paarung von Fernbedienung und Roboter** kann nach einer Software-Aktualisierung der Geräte erforderlich sein. Halten Sie die Taste "Ausführen" auf der Fernbedienung länger als 10 Sekunden: Der Signalton in der 5. Sekunde bedeutet, dass Sie weiter halten müssen.
+- **Drehungen beliebiger Größe**: "Links" + 360 ergibt eine volle Umdrehung, + 720 zwei. Eine negative Zahl dreht den Roboter in die andere Richtung.
+- **Wenn man den Roboter während der Fahrt mit der Hand dreht**, fährt er in die neue Richtung weiter und dreht nicht zurück.
+- **Wenn der Roboter an einem Hindernis hängen bleibt** oder festgehalten wird, hält er nach 3 Sekunden von selbst an. Alle Zellen der Fernbedienung blinken 2 Mal rot, und das Programm läuft weiter.
 
 ### Roboter-Kalibrierung:
 
-- Führen Sie zuerst die Karte „Kalibrierung“ ohne Zahl aus: Der Roboter misst die Motorpolarität, beseitigt das Spiel und stellt die Geradeausfahrt ein.
+- Führen Sie zuerst die Karte „Kalibrierung“ ohne Zahl aus: Der Roboter misst die Motorpolarität, beseitigt das Spiel und stellt die Geradeausfahrt ein. Die Karte läuft bis zu 2 Minuten. In der ersten halben Minute muss der Roboter stillstehen, berühren Sie ihn nicht. Die Robotertaste funktioniert in dieser Zeit nicht.
 - Kalibrieren Sie dann die Drehwinkel. Markieren Sie auf der Tischoberfläche die genaue Ausrichtung des Roboters. Nötig sind 16 Drehungen um 90° im Uhrzeigersinn: erstellen Sie das Programm „Wiederholung 8 + Rechtsdrehung“ und führen Sie es zweimal aus. Der Roboter sollte vier volle Umdrehungen (90×16 = 1440°) machen und in die ursprüngliche Ausrichtung zurückkehren.
-- Bewerten Sie die Abweichung von der Marke und korrigieren Sie mit der Karte „Kalibrierung“ und einem Zahlenchip: Wenn der Roboter vor der Marke stoppt, fügen Sie „+“ hinzu (z. B. „Kalibrierung“ + „+5“); wenn er darüber hinausfährt, fügen Sie „−“ hinzu (z. B. „Kalibrierung“ + „−5“), dann „Ausführen“.
+- Bewerten Sie die Abweichung von der Marke und korrigieren Sie mit der Karte „Kalibrierung“ und einem Zahlenchip: Wenn der Roboter vor der Marke stoppt, fügen Sie „+“ hinzu (z. B. „Kalibrierung“ + „+5“); wenn er darüber hinausfährt, fügen Sie „−“ hinzu (z. B. „Kalibrierung“ + „−5“), dann „Ausführen“. Die Zahl gibt an, um wie viele Grad sich der Roboter über alle 16 Drehungen zusammen geirrt hat. Mehr als 90 nimmt der Roboter nicht an. Eine einfache Zahl ohne „+“ oder „−“ neben der „Kalibrierung“ funktioniert nicht: Die Zelle blinkt rot.
 - Wiederholen Sie, bis der Roboter genau in die ursprüngliche Ausrichtung zurückkehrt.
 - Die Kalibrierung bleibt nach dem Ausschalten erhalten.
-- Achtung! Das Zurücksetzen der Roboter-Kalibrierung erfolgt durch Drücken der Steuerungstaste für mehr als 10 Sekunden.
+- Achtung! Zurücksetzen der Kalibrierung: Robotertaste 10 Sekunden halten, die Lichter blinken rot, grün, blau und weiß. Das Zurücksetzen löscht alle Kalibrierungen, die Lautstärke und den ausgeschalteten Ton. Schalten Sie den Roboter danach aus und wieder ein und wiederholen Sie die Kalibrierung von vorn.
 
 <Accordion icon="rectangle-terminal" title="Kalibrierung der ersten Geräteversion (MVP) mit Roboter von 10 cm Durchmesser">
+Diese Methode gilt nur für die erste Version (MVP). Mit neuer Firmware funktioniert „Kalibrierung“ mit einer einfachen Zahl nicht: Die Zelle blinkt rot.
+
 1. Zur Kalibrierung des Gyroskops stellen Sie den Roboter auf eine horizontale Fläche, setzen Sie den Chip "Kalibrierung" in die Fernbedienung ein und drücken Sie "Ausführen".
 2. Zur Kalibrierung der Bewegungsdistanz messen Sie den tatsächlichen Weg mit dem Befehl "Vorwärts", setzen Sie "Kalibrierung" und den Chip mit dem erforderlichen Wert ein, dann "Ausführen". Sie können den Wert auf einen beliebigen digitalen NFC-Chip mit einem Mobiltelefon mit NFC als Text in der Form nXXX schreiben (z. B. n095 für 95 mm). Danach ist die Bewegungsdistanz des Roboters präzise.*
 </Accordion>

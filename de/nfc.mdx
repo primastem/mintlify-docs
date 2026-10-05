@@ -22,7 +22,7 @@ mode: "default"
 | Wiederholen 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Zufällig oft wiederholen (1 bis 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Funktion | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pause |  | `cwat` |
+| Pause (Zahl = Sekunden; ohne Zahl 1 s, höchstens 60 s) |  | `cwat` |
 
 ## 🔢 Zahlen
 
@@ -42,20 +42,22 @@ mode: "default"
 | Quadratwurzel aus X | `sqrt` |
 | Fakultät | `fact` |
 
+Die Arithmetik rechnet bis 5000 in beide Richtungen, geteilt wird ohne Nachkommastellen. Gibt es kein Ergebnis (über 5000, Division durch 0, Wurzel aus einer negativen Zahl, Fakultät über 6), blinkt die Zelle rot und die Zahl bleibt unverändert.
+
 ## ⚙️ Einstellungen
 
 | Befehl | NFC Code |
 | --- | --- |
-| Entfernungskalibrierung | `ccal` |
-| Standard-Schrittlänge festlegen | `clen` |
+| Kalibrierung. Ohne Zahl: Der Roboter stellt Motoren und Gyroskop ein, etwa 2 Minuten, in der ersten halben Minute nicht berühren. Mit Chip `+N` oder `−N`: Korrektur der Drehungen nach der Prüfung mit 16 Drehungen. Mit einer einfachen Zahl funktioniert es nicht (Zelle rot) | `ccal` |
+| Standard-Schrittlänge festlegen (1–999 mm; ohne Zahl zurück auf 150 mm) | `clen` |
 
 ## 🔧 Erweitert
 
 | Befehl | NFC Code |
 | --- | --- |
 | Audio-Beispiel (siehe [Audiodateien](/de/sounds_reference)) | `xNNN` |
-| Pult-Sound-Beispiel | `csou` |
-| Lautstärkepegel | `clvl` |
+| Ton: Der Roboter spielt den Ton mit der Nummer N (`csou` + Zahl N) | `csou` |
+| Lautstärke von Fernbedienung und Roboter: 0–100, über 100 = Maximum | `clvl` |
 
 ## So schreiben Sie Daten auf einen NFC-Tag
 

@@ -83,18 +83,21 @@ Endrer parametrene for bevegelseskommandoer:
 - Divisjon (/)
 - Kvadratrot (√)
 - Potens (^)
+- Fakultet (!)
+
+Aritmetikken regner opptil 5000 i begge retninger, så "Fremover" kan settes til opptil 5 meter og en sving til opptil 5000°. Hvis svaret er større enn 5000 eller mindre enn −5000, hvis du deler på 0, tar roten av et negativt tall eller fakultet av mer enn 6, blinker cellen rødt og tallet endres ikke. Divisjon gir ingen desimaler: 150 ÷ 4 = 37.
 
 ## Tilkobling mellom Fjernkontroll og Robot
 
 Det anbefales å slå på roboten først, deretter fjernkontrollen.
 
-Plasser roboten på en flat overflate før tilkobling: etter sammenkobling blir LED-lysene hvite. Hvis det ikke er tilkobling, blinker de rødt.
+Plasser roboten på en flat overflate før tilkobling: etter sammenkobling blir LED-lysene hvite. Så lenge det ikke er tilkobling, blinker roboten blått og fjernkontrollen lyser lyseblått: den leter etter roboten.
 
 Sjekk tilkoblingen: sett inn brikken "Fremover" og trykk "Utfør".
 
 Hvis det ikke er tilkobling, start begge enhetene på nytt eller lad dem opp. Midlertidig tap av tilkobling kan oppstå nær sterke elektromagnetiske feltkilder (mobiltelefon, WiFi-punkt).
 
-> **Etter oppdatering av enhetens programvare** kan sammenkobling være nødvendig: slå på roboten, deretter fjernkontrollen, trykk og hold "Utfør"-knappen på fjernkontrollen i 10–15 sekunder, til en lydsignal høres.
+> **Etter oppdatering av enhetens programvare** kan sammenkobling være nødvendig: slå på roboten, deretter fjernkontrollen, trykk og hold "Utfør"-knappen på fjernkontrollen i mer enn 10 sekunder. Etter 5 sekunder kommer et kort signal: ikke slipp, fortsett å holde. Etter 10 sekunder starter sammenkoblingen.
 
 ## Hvordan Fungerer Det?
 
@@ -125,25 +128,31 @@ Som standard:
 - **Avbryt** programutførelsen ved å trykke "Utfør" igjen under bevegelse.
 - Fjernkontrollen husker den siste **innstilte verdien** (distanse/vinkel) for bevegelseskommandoen til strømme av: for eksempel, hvis "Fremover" = "200", utføres alle påfølgende "Fremover"-kommandoer med denne verdien.
 - Verdier etter aritmetikk lagres også.
-- Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 cm, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av.
-- Fjernkontrollen og roboten **slår seg automatisk av** etter 10 minutter med inaktivitet.
+- Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 cm, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av. Tall fra 1 til 999 fungerer. Brikken uten tall setter steget tilbake til 150 mm. Med aritmetikk eller null blinker cellen rødt, og steget forblir som før.
+- Fjernkontrollen og roboten **slår seg automatisk av** hvis ingenting skjer på 15 minutter.
 - Hvis roboten ikke brukes på 1–3 minutter, utfører den små bevegelser for å signalisere at den er aktiv og klar.
-- **Øyeblunkelyden** til roboten kan slås på og av med et enkelt trykk på robotknappen.
-- **Fjernkontrollens lyd** kan slås på og av ved å holde "Utfør"-knappen i 5 sekunder.
+- **Kort trykk på robotknappen**: roboten leser brikken under seg og sier hva den er.
+- **Alle lydene til roboten** kan slås av og på ved å holde robotknappen i 5 sekunder: vent på det korte signalet og slipp. Roboten blinker rødt hvis lyden ble slått av, og grønt hvis den ble slått på.
+- **Fjernkontrollens lyd** kan slås av og på ved å holde "Utfør"-knappen i 5 sekunder: vent på det korte signalet og slipp. Mens et program kjører, virker ikke dette.
 - **Etter en programvareoppdatering** kan kalibrering av robotbevegelse være nødvendig.
-- **Tilbakestilling av robotprogramvare** er mulig ved å holde knappen i 10 sekunder.
-- **Sammenkobling av fjernkontroll og robot** kan være nødvendig etter oppdatering av enhetens programvare, etableres ved å holde "Utfør"-knappen på fjernkontrollen i 10-15 sekunder.
+- **Tilbakestilling av robotens innstillinger**: hold robotknappen i 10 sekunder (mer i avsnittet «Robotkalibrering»).
+- **Sammenkobling av fjernkontroll og robot** kan være nødvendig etter oppdatering av enhetens programvare. Hold "Utfør"-knappen på fjernkontrollen i mer enn 10 sekunder: signalet etter 5 sekunder betyr at du skal fortsette å holde.
+- **Svinger av alle størrelser**: "Venstre" + 360 gir en hel omdreining, + 720 gir to. Et negativt tall snur roboten den andre veien.
+- **Hvis du snur roboten med hånden** mens den kjører, fortsetter den i den nye retningen og snur ikke tilbake.
+- **Hvis roboten kjører seg fast** mot en hindring eller blir holdt fast, stopper den av seg selv etter 3 sekunder. Alle cellene på fjernkontrollen blinker rødt 2 ganger, og programmet fortsetter.
 
 ### Robotkalibrering:
 
-- Kjør først kortet «Kalibrering» uten tall: roboten måler motorpolariteten, fjerner slark og stiller inn rettlinjet bevegelse.
+- Kjør først kortet «Kalibrering» uten tall: roboten måler motorpolariteten, fjerner slark og stiller inn rettlinjet bevegelse. Kortet jobber i opptil 2 minutter. Det første halve minuttet må roboten stå helt stille, ikke rør den. Robotknappen virker ikke i denne tiden.
 - Kalibrer deretter svingvinklene. Merk robotens nøyaktige retning på bordoverflaten. Du trenger 16 svinger på 90° med klokken: sett sammen programmet «Gjentakelse 8 + høyresving» og kjør det to ganger. Roboten skal gjøre fire hele omdreininger (90×16 = 1440°) og komme tilbake til sin opprinnelige retning.
-- Vurder avviket fra markeringen og korriger med kortet «Kalibrering» og en tallbrikke: hvis roboten stopper før markeringen, legg til «+» (for eksempel «Kalibrering» + «+5»); hvis den går forbi, legg til «−» (for eksempel «Kalibrering» + «−5»), deretter «Utfør».
+- Vurder avviket fra markeringen og korriger med kortet «Kalibrering» og en tallbrikke: hvis roboten stopper før markeringen, legg til «+» (for eksempel «Kalibrering» + «+5»); hvis den går forbi, legg til «−» (for eksempel «Kalibrering» + «−5»), deretter «Utfør». Tallet viser hvor mange grader roboten bommet med på alle 16 svingene til sammen. Mer enn 90 tar ikke roboten imot. Et vanlig tall uten «+» eller «−» ved siden av «Kalibrering» virker ikke: cellen blinker rødt.
 - Gjenta til roboten kommer nøyaktig tilbake til sin opprinnelige retning.
 - Kalibreringen lagres etter avslåing.
-- Merk! Tilbakestilling av robotkalibrering utføres ved å trykke på kontrollknappen i mer enn 10 sekunder.
+- Merk! Tilbakestilling av kalibrering: hold robotknappen i 10 sekunder, lysene blinker rødt, grønt, blått og hvitt. Tilbakestillingen sletter alle kalibreringer, volumet og avslått lyd. Slå roboten av og på etterpå, og gjør kalibreringen på nytt fra begynnelsen.
 
 <Accordion icon="rectangle-terminal" title="Kalibrering av første enhetsversjon (MVP) med robot på 10 cm i diameter">
+Denne metoden gjelder bare for den første versjonen (MVP). Med ny fastvare virker ikke «Kalibrering» med et vanlig tall: cellen blinker rødt.
+
 1. For å kalibrere gyroskopet, plasser roboten på en horisontal overflate, sett inn brikken "Kalibrering" i fjernkontrollen og trykk "Utfør".
 2. For å kalibrere bevegelsesdistanse, mål den faktiske banen med kommandoen "Fremover", sett inn "Kalibrering" og brikken med nødvendig verdi, deretter "Utfør". Du kan skrive verdien til en hvilken som helst digital NFC-brikke ved hjelp av en mobiltelefon med NFC som tekst i formen nXXX (for eksempel, n095 for 95 mm). Etter dette vil robotens bevegelsesdistanse være nøyaktig.*
 </Accordion>

@@ -34,8 +34,8 @@ PrimaSTEM er et skjermfritt læringssett for programmering, logikk og matematikk
   <Step title="Tilkoblet = hvit" icon="check">
     Tilgjengelige spor på kontrollpanelet lyser **hvitt**, robotens øyne blinker **hvitt**. Klart.
   </Step>
-  <Step title="Begge blå = paring nødvendig" icon="bluetooth">
-    Hold **▶ Start** på panelet i **mer enn 10 sekunder** — enhetene parer seg og roboten starter på nytt.
+  <Step title="Blå og lyseblå = ingen tilkobling" icon="bluetooth">
+    Roboten blinker blått, panelet lyser lyseblått. Hvis tilkoblingen ikke kommer, hold **▶ Start** på panelet i **mer enn 10 sekunder**. Etter 5 sekunder kommer et signal, fortsett å holde: enhetene parer seg og roboten starter på nytt.
   </Step>
 </Steps>
 
@@ -64,9 +64,11 @@ LED-farger under utførelse:
 
 | ⚪ Hvit | 🟢 Grønn | 🔵 Blå | 🔴 Rød |
 | :---: | :---: | :---: | :---: |
-| Venter (spor ledig) | Kommando satt | Kommando + tall / gjentakelse / regning | Feil — hoppes over |
+| Venter (spor ledig) | Kommando satt | Kommando + tall / gjentakelse / regning | Feil (se nedenfor) |
 
-Tomme spor og røde par hoppes over. LED-ene blinker på cellen som kjøres akkurat nå.
+Tomme spor og røde par hoppes over når du legger ut brikkene. LED-ene blinker på cellen som kjøres akkurat nå.
+
+Hvis en celle blinker rødt mens programmet kjører, har regnestykket ikke noe svar: roboten tar steget med det forrige tallet. Hvis alle cellene blinker rødt to ganger, har roboten kjørt seg fast i noe. Den stopper av seg selv, og programmet fortsetter.
 
 ## 4. Brikker — etter gruppe
 
@@ -75,9 +77,9 @@ Tomme spor og røde par hoppes over. LED-ene blinker på cellen som kjøres akku
 | **Bevegelse** | Fremover · Bakover · Venstre · Høyre |
 | **Gjentakelse** | To piler i sirkel + inni prikker 2–6 (som på en terning, for de små) eller med tall. I par med en kommando — gjentar den. |
 | **Tall** | `1`–`999`. Bestemmer bevegelsesavstand i mm eller dreievinkel i grader. |
-| **Regning** | `+N` `−N` `×N` `÷N` `√` `^N` — én brikke = operasjon + tall. Endrer den lagrede verdien for bevegelse eller dreining. Et negativt resultat reverserer retningen! |
+| **Regning** | `+N` `−N` `×N` `÷N` `√` `^N` — én brikke = operasjon + tall. Endrer den lagrede verdien for bevegelse eller dreining. Et negativt resultat reverserer retningen! Regner opptil 5000 i begge retninger, deler uten desimaler (150 ÷ 4 = 37). Hvis det ikke finnes noe svar (over 5000, deling på 0, rot av et negativt tall, fakultet over 6), blinker cellen rødt og tallet endres ikke. |
 | **Funksjon** | Kaller den nederste raden som underprogram. Med gjentakelse-brikke — kjøres angitt antall ganger. |
-| **Steg** | Servicebrikke + Tall = endrer standardsteget (f.eks. tall 100, i millimeter, for et 10-cm-rutenett). Bevares etter avslåing. |
+| **Steg** | Servicebrikke + Tall = endrer standardsteget (f.eks. tall 100, i millimeter, for et 10-cm-rutenett). Bevares etter avslåing. Tall fra 1 til 999; uten tall går steget tilbake til 150 mm. Med regning eller null blinker cellen rødt og steget endres ikke. |
 
 ## 5. Standardverdier og lagret verdi
 
@@ -100,6 +102,7 @@ Lagrede verdier nullstilles når panelet slås av; standardverdien (steg) bestå
 - `Venstre` alene        → 90° — standard
 - `Venstre` + `45`       → 45° — erstatter
 - `Venstre` + `−10`      → 35°  (forrige 45° − 10°) — endrer
+- `Venstre` + `720`      → to hele omdreininger
 </Note>
 
 ## 6. Roboten tegner det du programmerer

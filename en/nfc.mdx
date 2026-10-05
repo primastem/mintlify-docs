@@ -22,7 +22,7 @@ mode: "default"
 | Repeat 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Repeat a random number of times (1 to 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Function | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pause |  | `cwat` |
+| Pause (number = seconds; without a number 1 s, at most 60 s) |  | `cwat` |
 
 ## 🔢 Numbers
 
@@ -42,20 +42,22 @@ mode: "default"
 | Square Root of X | `sqrt` |
 | Factorial | `fact` |
 
+Arithmetic counts up to 5000 in both directions, division drops fractions. If there is no answer (above 5000, division by 0, root of a negative number, factorial above 6), the cell blinks red and the number stays the same.
+
 ## ⚙️ Settings
 
 | Command | NFC Code |
 | --- | --- |
-| Calibration | `ccal` |
-| Set Default Step Length for map | `clen` |
+| Calibration. Without a number: the robot tunes its motors and gyroscope, about 2 minutes, do not touch it for the first half minute. With a `+N` or `−N` chip: turn correction after the 16-turn check. Does not work with a plain number (cell turns red) | `ccal` |
+| Set Default Step Length for map (1–999 mm; without a number returns to 150 mm) | `clen` |
 
 ## 🔧 Advanced
 
 | Command | NFC Code |
 | --- | --- |
 | Audio Sample (see [Audio Files Reference](/en/sounds_reference)) | `xNNN` |
-| Panel Sound Sample | `csou` |
-| Volume Level | `clvl` |
+| Sound: the robot plays sound number N (`csou` + number N) | `csou` |
+| Volume of the remote and robot: 0–100, above 100 = maximum | `clvl` |
 
 ## How to Write Data to an NFC Tag
 

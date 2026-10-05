@@ -22,7 +22,7 @@ mode: "default"
 | Herhaal 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Herhaal een willekeurig aantal keer (van 1 tot 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Functie | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pauze |  | `cwat` |
+| Pauze (getal = seconden; zonder getal 1 s, maximaal 60 s) |  | `cwat` |
 
 ## 🔢 Getallen
 
@@ -42,20 +42,22 @@ mode: "default"
 | Vierkantswortel van X | `sqrt` |
 | Faculteit | `fact` |
 
+De rekenkunde telt tot 5000 in beide richtingen, delen gaat zonder breuken. Is er geen antwoord (meer dan 5000, delen door 0, wortel uit een negatief getal, faculteit boven 6), dan knippert de cel rood en blijft het getal hetzelfde.
+
 ## ⚙️ Instellingen
 
 | Commando | NFC Code |
 | --- | --- |
-| Afstandskalibratie | `ccal` |
-| Standaard staplengte instellen | `clen` |
+| Kalibratie. Zonder getal: de robot stelt motoren en gyroscoop af, ongeveer 2 minuten, de eerste halve minuut niet aanraken. Met chip `+N` of `−N`: correctie van de draaiingen na de test met 16 draaiingen. Met een gewoon getal werkt het niet (cel rood) | `ccal` |
+| Standaard staplengte instellen (1–999 mm; zonder getal terug naar 150 mm) | `clen` |
 
 ## 🔧 Geavanceerd
 
 | Commando | NFC Code |
 | --- | --- |
 | Audiovoorbeeld (zie [Audiobestanden](/nl/sounds_reference)) | `xNNN` |
-| Paneel geluidsfragment | `csou` |
-| Volumeniveau | `clvl` |
+| Geluid: de robot speelt geluid nummer N af (`csou` + getal N) | `csou` |
+| Volume van afstandsbediening en robot: 0–100, boven 100 = maximum | `clvl` |
 
 ## Hoe gegevens naar een NFC-tag te schrijven
 
