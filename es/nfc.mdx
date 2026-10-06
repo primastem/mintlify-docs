@@ -22,7 +22,7 @@ mode: "default"
 | Repetir 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Repetir un número aleatorio de veces (de 1 a 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Función | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pausa (número = segundos; sin número 1 s, máximo 60 s) |  | `cwat` |
+| Pausa (1–999 s; sin número 1 s) |  | `cwat` |
 
 ## 🔢 Números
 
@@ -48,7 +48,7 @@ La aritmética cuenta hasta 5000 en ambos sentidos, la división es sin decimale
 
 | Comando | NFC Code |
 | --- | --- |
-| Calibración. Sin número: el robot ajusta los motores y el giroscopio, unos 2 minutos, no tocarlo durante el primer medio minuto. Con una ficha `+N` o `−N`: corrección de los giros después de la prueba de 16 giros. No funciona con un número simple (celda roja) | `ccal` |
+| Calibración (sin número: el robot ajusta los motores y el giroscopio, unos 2 minutos, no tocarlo durante el primer medio minuto; con una ficha `+N` o `−N`: corrección de los giros después de la prueba de 16 giros; no funciona con un número simple, la celda se pone roja) | `ccal` |
 | Establecer longitud de paso predeterminada (1–999 mm; sin número vuelve a 150 mm) | `clen` |
 
 ## 🔧 Avanzado
@@ -56,8 +56,8 @@ La aritmética cuenta hasta 5000 en ambos sentidos, la división es sin decimale
 | Comando | NFC Code |
 | --- | --- |
 | Muestra de audio (ver [Archivos de audio](/es/sounds_reference)) | `xNNN` |
-| Sonido: el robot reproduce el sonido número N (`csou` + número N) | `csou` |
-| Volumen del mando y del robot: 0–100, más de 100 = máximo | `clvl` |
+| Muestra de sonido (el robot reproduce el sonido número N: `csou` + número N) | `csou` |
+| Nivel de volumen (mando y robot: 0–100, más de 100 = máximo) | `clvl` |
 
 ## Cómo escribir datos en una etiqueta NFC
 

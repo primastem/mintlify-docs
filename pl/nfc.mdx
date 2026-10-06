@@ -22,7 +22,7 @@ mode: "default"
 | Powtórzenie 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Powtórz losową liczbę razy (od 1 do 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Funkcja | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pauza (liczba = sekundy; bez liczby 1 s, najwyżej 60 s) |  | `cwat` |
+| Pauza (1–999 s; bez liczby 1 s) |  | `cwat` |
 
 ## 🔢 Liczby
 
@@ -48,7 +48,7 @@ Arytmetyka liczy do 5000 w obie strony, dzielenie jest bez ułamków. Jeśli wyn
 
 | Polecenie | NFC Code |
 | --- | --- |
-| Kalibracja. Bez liczby: robot ustawia silniki i żyroskop, około 2 minut, przez pierwsze pół minuty nie dotykaj go. Z żetonem `+N` lub `−N`: poprawka obrotów po sprawdzeniu 16 obrotami. Ze zwykłą liczbą nie działa (pole czerwone) | `ccal` |
+| Kalibracja (bez liczby: robot ustawia silniki i żyroskop, około 2 minut, przez pierwsze pół minuty nie dotykaj go; z żetonem `+N` lub `−N`: poprawka obrotów po sprawdzeniu 16 obrotami; ze zwykłą liczbą nie działa, pole robi się czerwone) | `ccal` |
 | Ustaw domyślną długość kroku dla mapy (1–999 mm; bez liczby wraca do 150 mm) | `clen` |
 
 ## 🔧 Zaawansowane
@@ -56,8 +56,8 @@ Arytmetyka liczy do 5000 w obie strony, dzielenie jest bez ułamków. Jeśli wyn
 | Polecenie | NFC Code |
 | --- | --- |
 | Próbka audio (zobacz [Spis plików audio](/pl/sounds_reference)) | `xNNN` |
-| Dźwięk: robot odtwarza dźwięk o numerze N (`csou` + liczba N) | `csou` |
-| Głośność pilota i robota: 0–100, powyżej 100 = maksimum | `clvl` |
+| Dźwięk (robot odtwarza dźwięk o numerze N: `csou` + liczba N) | `csou` |
+| Poziom głośności (pilot i robot: 0–100, powyżej 100 = maksimum) | `clvl` |
 
 ## Jak zapisać dane na tagu NFC
 

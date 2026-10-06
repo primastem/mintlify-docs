@@ -34,8 +34,8 @@ PrimaSTEM ist ein bildschirmfreies Lernset für Programmierung, Logik und Mathem
   <Step title="Verbunden = weiß" icon="check">
     Verfügbare Steckplätze der Steuerung leuchten **weiß**, die Augen des Roboters blinken **weiß**. Fertig.
   </Step>
-  <Step title="Blau und hellblau = keine Verbindung" icon="bluetooth">
-    Der Roboter blinkt blau, die Steuerung leuchtet hellblau. Kommt die Verbindung nicht zustande, halten Sie **▶ Start** an der Steuerung **länger als 10 Sekunden** gedrückt. In der 5. Sekunde ertönt ein Signal, weiter halten: Die Geräte koppeln sich und der Roboter startet neu.
+  <Step title="Hellblau = keine Verbindung" icon="bluetooth">
+    Roboter und Steuerung leuchten hellblau. Kommt die Verbindung nicht zustande, halten Sie **▶ Start** an der Steuerung **länger als 10 Sekunden** gedrückt. In der 5. Sekunde ertönt ein Signal, weiter halten: Die Geräte koppeln sich und der Roboter startet neu.
   </Step>
 </Steps>
 
@@ -68,7 +68,7 @@ LED-Farben während der Ausführung:
 
 Leere Steckplätze und rote Paare werden beim Auslegen übersprungen. LEDs blinken an der aktuell ausgeführten Zelle.
 
-Blinkt eine Zelle während der Ausführung rot, hat die Arithmetik kein Ergebnis: Der Roboter macht den Schritt mit der vorherigen Zahl. Blinken alle Zellen zweimal rot, ist der Roboter irgendwo angestoßen. Er hält von selbst an, und das Programm läuft weiter.
+Blinkt eine Zelle während der Ausführung rot, hat die Arithmetik kein Ergebnis: Der Roboter macht den Schritt mit der vorherigen Zahl.
 
 ## 4. Tokens — nach Gruppen
 
@@ -102,7 +102,6 @@ Gespeicherte Werte werden beim Ausschalten zurückgesetzt; der Standardwert (Sch
 - `Links` allein         → 90° — Standard
 - `Links` + `45`         → 45° — ersetzt
 - `Links` + `−10`        → 35°  (vorher 45° − 10°) — ändert
-- `Links` + `720`        → zwei volle Umdrehungen
 </Note>
 
 ## 6. Der Roboter zeichnet, was Sie programmieren

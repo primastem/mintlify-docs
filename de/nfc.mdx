@@ -22,7 +22,7 @@ mode: "default"
 | Wiederholen 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Zufällig oft wiederholen (1 bis 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
 | Funktion | <img src="../images/book-1/function.excalidraw.svg" width="56" /> | `cfun` |
-| Pause (Zahl = Sekunden; ohne Zahl 1 s, höchstens 60 s) |  | `cwat` |
+| Pause (1–999 s; ohne Zahl 1 s) |  | `cwat` |
 
 ## 🔢 Zahlen
 
@@ -48,7 +48,7 @@ Die Arithmetik rechnet bis 5000 in beide Richtungen, geteilt wird ohne Nachkomma
 
 | Befehl | NFC Code |
 | --- | --- |
-| Kalibrierung. Ohne Zahl: Der Roboter stellt Motoren und Gyroskop ein, etwa 2 Minuten, in der ersten halben Minute nicht berühren. Mit Chip `+N` oder `−N`: Korrektur der Drehungen nach der Prüfung mit 16 Drehungen. Mit einer einfachen Zahl funktioniert es nicht (Zelle rot) | `ccal` |
+| Kalibrierung (ohne Zahl: Der Roboter stellt Motoren und Gyroskop ein, etwa 2 Minuten, in der ersten halben Minute nicht berühren; mit Chip `+N` oder `−N`: Korrektur der Drehungen nach der Prüfung mit 16 Drehungen; mit einer einfachen Zahl funktioniert es nicht, die Zelle wird rot) | `ccal` |
 | Standard-Schrittlänge festlegen (1–999 mm; ohne Zahl zurück auf 150 mm) | `clen` |
 
 ## 🔧 Erweitert
@@ -56,8 +56,8 @@ Die Arithmetik rechnet bis 5000 in beide Richtungen, geteilt wird ohne Nachkomma
 | Befehl | NFC Code |
 | --- | --- |
 | Audio-Beispiel (siehe [Audiodateien](/de/sounds_reference)) | `xNNN` |
-| Ton: Der Roboter spielt den Ton mit der Nummer N (`csou` + Zahl N) | `csou` |
-| Lautstärke von Fernbedienung und Roboter: 0–100, über 100 = Maximum | `clvl` |
+| Sound-Beispiel (der Roboter spielt den Ton mit der Nummer N: `csou` + Zahl N) | `csou` |
+| Lautstärkepegel (Fernbedienung und Roboter: 0–100, über 100 = Maximum) | `clvl` |
 
 ## So schreiben Sie Daten auf einen NFC-Tag
 
