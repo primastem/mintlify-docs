@@ -394,7 +394,7 @@
         "language": "jp",
         "groups": [
           {
-            "group": "はじめに",
+            "group": "スタートガイド",
             "icon": "rocket",
             "pages": [
               "jp/quickstart",
