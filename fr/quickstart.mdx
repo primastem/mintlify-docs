@@ -77,9 +77,9 @@ Si une cellule clignote en rouge pendant l'exécution, l'arithmétique n'a pas d
 | **Mouvement** | Avant · Arrière · Gauche · Droite |
 | **Répétition** | Deux flèches en boucle + à l'intérieur points 2–6 (comme un dé, pour les petits) ou avec chiffres. En paire avec une commande — la répète. |
 | **Nombres** | `1`–`999`. Définissent la distance de mouvement en mm ou l'angle de rotation en degrés. |
-| **Arithmétique** | `+N` `−N` `×N` `÷N` `√` `^N` — un jeton = opération + nombre. Modifie la valeur enregistrée du mouvement ou de la rotation. Un résultat négatif inverse la direction ! Compte jusqu'à 5000 dans les deux sens, divise sans décimales (150 ÷ 4 = 37). S'il n'y a pas de réponse (plus de 5000, division par 0, racine d'un nombre négatif, factorielle de plus de 6), la cellule clignote en rouge et le nombre ne change pas. |
+| **Arithmétique** | `+N` `−N` `×N` `÷N` `√` `^N` — un jeton = opération + nombre. Modifie la valeur enregistrée du mouvement ou de la rotation. Un résultat négatif inverse la direction ! |
 | **Fonction** | Appelle la rangée inférieure comme un sous-programme. Avec un jeton de répétition, exécute autant de fois que demandé. |
-| **Pas** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. Nombre de 1 à 999 ; sans nombre, le pas revient à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas. |
+| **Pas** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. |
 
 ## 5. Valeurs par défaut et valeur enregistrée
 

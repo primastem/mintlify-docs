@@ -77,9 +77,9 @@ Blinkt eine Zelle während der Ausführung rot, hat die Arithmetik kein Ergebnis
 | **Bewegung** | Vorwärts · Rückwärts · Links · Rechts |
 | **Wiederholung** | Zwei Pfeile im Kreis + Punkte 2–6 innen (wie ein Würfel, für die Kleinen) oder Ziffern. In Paar mit einem Befehl — wiederholt ihn. |
 | **Zahlen** | `1`–`999`. Setzen die Bewegungsdistanz in mm oder den Drehwinkel in Grad. |
-| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! Rechnet bis 5000 in beide Richtungen, teilt ohne Nachkommastellen (150 ÷ 4 = 37). Gibt es kein Ergebnis (über 5000, Division durch 0, Wurzel aus einer negativen Zahl, Fakultät über 6), blinkt die Zelle rot und die Zahl bleibt unverändert. |
+| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! |
 | **Funktion** | Ruft die untere Reihe als Unterprogramm auf. Mit Wiederholungs-Token — läuft entsprechend oft. |
-| **Schritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. Zahl von 1 bis 999; ohne Zahl kehrt der Schritt zu 150 mm zurück. Mit Arithmetik oder Null blinkt die Zelle rot, der Schritt bleibt unverändert. |
+| **Schritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. |
 
 ## 5. Standardwerte und gespeicherter Wert
 
