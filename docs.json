@@ -17,7 +17,7 @@
         "groups": [
           {
             "group": "Documentation",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "en/quickstart",
               "en/intro",
@@ -47,7 +47,7 @@
         "groups": [
           {
             "group": "Documentation",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "fr/quickstart",
               "fr/intro",
@@ -77,7 +77,7 @@
         "groups": [
           {
             "group": "Dokumentation",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "de/quickstart",
               "de/intro",
@@ -107,7 +107,7 @@
         "groups": [
           {
             "group": "Documentación",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "es/quickstart",
               "es/intro",
@@ -137,7 +137,7 @@
         "groups": [
           {
             "group": "Documentatie",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "nl/quickstart",
               "nl/intro",
@@ -167,7 +167,7 @@
         "groups": [
           {
             "group": "Documentazione",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "it/quickstart",
               "it/intro",
@@ -197,7 +197,7 @@
         "groups": [
           {
             "group": "Dokumentasjon",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "no/quickstart",
               "no/intro",
@@ -227,7 +227,7 @@
         "groups": [
           {
             "group": "Dokumentation",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "sv/quickstart",
               "sv/intro",
@@ -257,7 +257,7 @@
         "groups": [
           {
             "group": "Dokumentacja",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "pl/quickstart",
               "pl/intro",
@@ -287,7 +287,7 @@
         "groups": [
           {
             "group": "日本語のドキュメント",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "jp/quickstart",
               "jp/intro",
@@ -317,7 +317,7 @@
         "groups": [
           {
             "group": "Документация",
-            "icon": "file-doc",
+            "icon": "file-text",
             "pages": [
               "ru/quickstart",
               "ru/intro",
