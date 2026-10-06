@@ -16,28 +16,40 @@
         "default": true,
         "groups": [
           {
-            "group": "Documentation",
-            "icon": "file-text",
+            "group": "Getting Started",
+            "icon": "rocket",
             "pages": [
               "en/quickstart",
               "en/intro",
-              "en/usermanual",
-              "en/teachersguide",
-              "en/book-1/book-1",
-              "en/mathdrawings",
-              "en/nfc",
-              "en/sounds_reference",
-              "en/cognitive",
-              "en/resources",
-              "en/contacts"
+              "en/usermanual"
             ]
           },
           {
-            "group": "Safety & Warranty",
+            "group": "How to Teach",
+            "icon": "graduation-cap",
+            "pages": [
+              "en/teachersguide",
+              "en/book-1/book-1",
+              "en/mathdrawings",
+              "en/cognitive",
+              "en/resources"
+            ]
+          },
+          {
+            "group": "Reference",
+            "icon": "book-marked",
+            "pages": [
+              "en/nfc",
+              "en/sounds_reference"
+            ]
+          },
+          {
+            "group": "Safety & Support",
             "icon": "shield-check",
             "pages": [
               "en/safety",
-              "en/warranty"
+              "en/warranty",
+              "en/contacts"
             ]
           }
         ]
@@ -46,28 +58,40 @@
         "language": "fr",
         "groups": [
           {
-            "group": "Documentation",
-            "icon": "file-text",
+            "group": "Prise en main",
+            "icon": "rocket",
             "pages": [
               "fr/quickstart",
               "fr/intro",
-              "fr/usermanual",
-              "fr/teachersguide",
-              "fr/book-1/book-1",
-              "fr/mathdrawings",
-              "fr/nfc",
-              "fr/sounds_reference",
-              "fr/cognitive",
-              "fr/resources",
-              "fr/contacts"
+              "fr/usermanual"
             ]
           },
           {
-            "group": "Sécurité et garantie",
+            "group": "Comment enseigner",
+            "icon": "graduation-cap",
+            "pages": [
+              "fr/teachersguide",
+              "fr/book-1/book-1",
+              "fr/mathdrawings",
+              "fr/cognitive",
+              "fr/resources"
+            ]
+          },
+          {
+            "group": "Référence",
+            "icon": "book-marked",
+            "pages": [
+              "fr/nfc",
+              "fr/sounds_reference"
+            ]
+          },
+          {
+            "group": "Sécurité et assistance",
             "icon": "shield-check",
             "pages": [
               "fr/safety",
-              "fr/warranty"
+              "fr/warranty",
+              "fr/contacts"
             ]
           }
         ]
@@ -76,28 +100,40 @@
         "language": "de",
         "groups": [
           {
-            "group": "Dokumentation",
-            "icon": "file-text",
+            "group": "Erste Schritte",
+            "icon": "rocket",
             "pages": [
               "de/quickstart",
               "de/intro",
-              "de/usermanual",
-              "de/teachersguide",
-              "de/book-1/book-1",
-              "de/mathdrawings",
-              "de/nfc",
-              "de/sounds_reference",
-              "de/cognitive",
-              "de/resources",
-              "de/contacts"
+              "de/usermanual"
             ]
           },
           {
-            "group": "Sicherheit und Garantie",
+            "group": "Lehren und Lernen",
+            "icon": "graduation-cap",
+            "pages": [
+              "de/teachersguide",
+              "de/book-1/book-1",
+              "de/mathdrawings",
+              "de/cognitive",
+              "de/resources"
+            ]
+          },
+          {
+            "group": "Referenz",
+            "icon": "book-marked",
+            "pages": [
+              "de/nfc",
+              "de/sounds_reference"
+            ]
+          },
+          {
+            "group": "Sicherheit und Support",
             "icon": "shield-check",
             "pages": [
               "de/safety",
-              "de/warranty"
+              "de/warranty",
+              "de/contacts"
             ]
           }
         ]
@@ -106,28 +142,40 @@
         "language": "es",
         "groups": [
           {
-            "group": "Documentación",
-            "icon": "file-text",
+            "group": "Primeros pasos",
+            "icon": "rocket",
             "pages": [
               "es/quickstart",
               "es/intro",
-              "es/usermanual",
-              "es/teachersguide",
-              "es/book-1/book-1",
-              "es/mathdrawings",
-              "es/nfc",
-              "es/sounds_reference",
-              "es/cognitive",
-              "es/resources",
-              "es/contacts"
+              "es/usermanual"
             ]
           },
           {
-            "group": "Seguridad y garantía",
+            "group": "Cómo enseñar",
+            "icon": "graduation-cap",
+            "pages": [
+              "es/teachersguide",
+              "es/book-1/book-1",
+              "es/mathdrawings",
+              "es/cognitive",
+              "es/resources"
+            ]
+          },
+          {
+            "group": "Referencia",
+            "icon": "book-marked",
+            "pages": [
+              "es/nfc",
+              "es/sounds_reference"
+            ]
+          },
+          {
+            "group": "Seguridad y soporte",
             "icon": "shield-check",
             "pages": [
               "es/safety",
-              "es/warranty"
+              "es/warranty",
+              "es/contacts"
             ]
           }
         ]
@@ -136,28 +184,40 @@
         "language": "nl",
         "groups": [
           {
-            "group": "Documentatie",
-            "icon": "file-text",
+            "group": "Aan de slag",
+            "icon": "rocket",
             "pages": [
               "nl/quickstart",
               "nl/intro",
-              "nl/usermanual",
-              "nl/teachersguide",
-              "nl/book-1/book-1",
-              "nl/mathdrawings",
-              "nl/nfc",
-              "nl/sounds_reference",
-              "nl/cognitive",
-              "nl/resources",
-              "nl/contacts"
+              "nl/usermanual"
             ]
           },
           {
-            "group": "Veiligheid en garantie",
+            "group": "Lesgeven",
+            "icon": "graduation-cap",
+            "pages": [
+              "nl/teachersguide",
+              "nl/book-1/book-1",
+              "nl/mathdrawings",
+              "nl/cognitive",
+              "nl/resources"
+            ]
+          },
+          {
+            "group": "Naslag",
+            "icon": "book-marked",
+            "pages": [
+              "nl/nfc",
+              "nl/sounds_reference"
+            ]
+          },
+          {
+            "group": "Veiligheid en ondersteuning",
             "icon": "shield-check",
             "pages": [
               "nl/safety",
-              "nl/warranty"
+              "nl/warranty",
+              "nl/contacts"
             ]
           }
         ]
@@ -166,28 +226,40 @@
         "language": "it",
         "groups": [
           {
-            "group": "Documentazione",
-            "icon": "file-text",
+            "group": "Per iniziare",
+            "icon": "rocket",
             "pages": [
               "it/quickstart",
               "it/intro",
-              "it/usermanual",
-              "it/teachersguide",
-              "it/book-1/book-1",
-              "it/mathdrawings",
-              "it/nfc",
-              "it/sounds_reference",
-              "it/cognitive",
-              "it/resources",
-              "it/contacts"
+              "it/usermanual"
             ]
           },
           {
-            "group": "Sicurezza e garanzia",
+            "group": "Come insegnare",
+            "icon": "graduation-cap",
+            "pages": [
+              "it/teachersguide",
+              "it/book-1/book-1",
+              "it/mathdrawings",
+              "it/cognitive",
+              "it/resources"
+            ]
+          },
+          {
+            "group": "Riferimento",
+            "icon": "book-marked",
+            "pages": [
+              "it/nfc",
+              "it/sounds_reference"
+            ]
+          },
+          {
+            "group": "Sicurezza e assistenza",
             "icon": "shield-check",
             "pages": [
               "it/safety",
-              "it/warranty"
+              "it/warranty",
+              "it/contacts"
             ]
           }
         ]
@@ -196,28 +268,40 @@
         "language": "no",
         "groups": [
           {
-            "group": "Dokumentasjon",
-            "icon": "file-text",
+            "group": "Kom i gang",
+            "icon": "rocket",
             "pages": [
               "no/quickstart",
               "no/intro",
-              "no/usermanual",
-              "no/teachersguide",
-              "no/book-1/book-1",
-              "no/mathdrawings",
-              "no/nfc",
-              "no/sounds_reference",
-              "no/cognitive",
-              "no/resources",
-              "no/contacts"
+              "no/usermanual"
             ]
           },
           {
-            "group": "Sikkerhet og garanti",
+            "group": "Slik underviser du",
+            "icon": "graduation-cap",
+            "pages": [
+              "no/teachersguide",
+              "no/book-1/book-1",
+              "no/mathdrawings",
+              "no/cognitive",
+              "no/resources"
+            ]
+          },
+          {
+            "group": "Referanse",
+            "icon": "book-marked",
+            "pages": [
+              "no/nfc",
+              "no/sounds_reference"
+            ]
+          },
+          {
+            "group": "Sikkerhet og støtte",
             "icon": "shield-check",
             "pages": [
               "no/safety",
-              "no/warranty"
+              "no/warranty",
+              "no/contacts"
             ]
           }
         ]
@@ -226,28 +310,40 @@
         "language": "sv",
         "groups": [
           {
-            "group": "Dokumentation",
-            "icon": "file-text",
+            "group": "Kom igång",
+            "icon": "rocket",
             "pages": [
               "sv/quickstart",
               "sv/intro",
-              "sv/usermanual",
-              "sv/teachersguide",
-              "sv/book-1/book-1",
-              "sv/mathdrawings",
-              "sv/nfc",
-              "sv/sounds_reference",
-              "sv/cognitive",
-              "sv/resources",
-              "sv/contacts"
+              "sv/usermanual"
             ]
           },
           {
-            "group": "Säkerhet och garanti",
+            "group": "Så undervisar du",
+            "icon": "graduation-cap",
+            "pages": [
+              "sv/teachersguide",
+              "sv/book-1/book-1",
+              "sv/mathdrawings",
+              "sv/cognitive",
+              "sv/resources"
+            ]
+          },
+          {
+            "group": "Referens",
+            "icon": "book-marked",
+            "pages": [
+              "sv/nfc",
+              "sv/sounds_reference"
+            ]
+          },
+          {
+            "group": "Säkerhet och support",
             "icon": "shield-check",
             "pages": [
               "sv/safety",
-              "sv/warranty"
+              "sv/warranty",
+              "sv/contacts"
             ]
           }
         ]
@@ -256,28 +352,40 @@
         "language": "pl",
         "groups": [
           {
-            "group": "Dokumentacja",
-            "icon": "file-text",
+            "group": "Pierwsze kroki",
+            "icon": "rocket",
             "pages": [
               "pl/quickstart",
               "pl/intro",
-              "pl/usermanual",
-              "pl/teachersguide",
-              "pl/book-1/book-1",
-              "pl/mathdrawings",
-              "pl/nfc",
-              "pl/sounds_reference",
-              "pl/cognitive",
-              "pl/resources",
-              "pl/contacts"
+              "pl/usermanual"
             ]
           },
           {
-            "group": "Bezpieczeństwo i gwarancja",
+            "group": "Jak uczyć",
+            "icon": "graduation-cap",
+            "pages": [
+              "pl/teachersguide",
+              "pl/book-1/book-1",
+              "pl/mathdrawings",
+              "pl/cognitive",
+              "pl/resources"
+            ]
+          },
+          {
+            "group": "Informator",
+            "icon": "book-marked",
+            "pages": [
+              "pl/nfc",
+              "pl/sounds_reference"
+            ]
+          },
+          {
+            "group": "Bezpieczeństwo i wsparcie",
             "icon": "shield-check",
             "pages": [
               "pl/safety",
-              "pl/warranty"
+              "pl/warranty",
+              "pl/contacts"
             ]
           }
         ]
@@ -286,28 +394,40 @@
         "language": "jp",
         "groups": [
           {
-            "group": "日本語のドキュメント",
-            "icon": "file-text",
+            "group": "はじめに",
+            "icon": "rocket",
             "pages": [
               "jp/quickstart",
               "jp/intro",
-              "jp/usermanual",
-              "jp/teachersguide",
-              "jp/book-1/book-1",
-              "jp/mathdrawings",
-              "jp/nfc",
-              "jp/sounds_reference",
-              "jp/cognitive",
-              "jp/resources",
-              "jp/contacts"
+              "jp/usermanual"
             ]
           },
           {
-            "group": "安全と保証",
+            "group": "教え方",
+            "icon": "graduation-cap",
+            "pages": [
+              "jp/teachersguide",
+              "jp/book-1/book-1",
+              "jp/mathdrawings",
+              "jp/cognitive",
+              "jp/resources"
+            ]
+          },
+          {
+            "group": "リファレンス",
+            "icon": "book-marked",
+            "pages": [
+              "jp/nfc",
+              "jp/sounds_reference"
+            ]
+          },
+          {
+            "group": "安全とサポート",
             "icon": "shield-check",
             "pages": [
               "jp/safety",
-              "jp/warranty"
+              "jp/warranty",
+              "jp/contacts"
             ]
           }
         ]
@@ -316,28 +436,40 @@
         "language": "ru",
         "groups": [
           {
-            "group": "Документация",
-            "icon": "file-text",
+            "group": "Начало работы",
+            "icon": "rocket",
             "pages": [
               "ru/quickstart",
               "ru/intro",
-              "ru/usermanual",
-              "ru/teachersguide",
-              "ru/book-1/book-1",
-              "ru/mathdrawings",
-              "ru/nfc",
-              "ru/sounds_reference",
-              "ru/cognitive",
-              "ru/resources",
-              "ru/contacts"
+              "ru/usermanual"
             ]
           },
           {
-            "group": "Безопасность и гарантия",
+            "group": "Как учить",
+            "icon": "graduation-cap",
+            "pages": [
+              "ru/teachersguide",
+              "ru/book-1/book-1",
+              "ru/mathdrawings",
+              "ru/cognitive",
+              "ru/resources"
+            ]
+          },
+          {
+            "group": "Справочник",
+            "icon": "book-marked",
+            "pages": [
+              "ru/nfc",
+              "ru/sounds_reference"
+            ]
+          },
+          {
+            "group": "Безопасность и поддержка",
             "icon": "shield-check",
             "pages": [
               "ru/safety",
-              "ru/warranty"
+              "ru/warranty",
+              "ru/contacts"
             ]
           }
         ]
