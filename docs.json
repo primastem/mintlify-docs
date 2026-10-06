@@ -31,6 +31,14 @@
               "en/resources",
               "en/contacts"
             ]
+          },
+          {
+            "group": "Safety & Warranty",
+            "icon": "shield-check",
+            "pages": [
+              "en/safety",
+              "en/warranty"
+            ]
           }
         ]
       },
@@ -52,6 +60,14 @@
               "fr/cognitive",
               "fr/resources",
               "fr/contacts"
+            ]
+          },
+          {
+            "group": "Sécurité et garantie",
+            "icon": "shield-check",
+            "pages": [
+              "fr/safety",
+              "fr/warranty"
             ]
           }
         ]
@@ -75,6 +91,14 @@
               "de/resources",
               "de/contacts"
             ]
+          },
+          {
+            "group": "Sicherheit und Garantie",
+            "icon": "shield-check",
+            "pages": [
+              "de/safety",
+              "de/warranty"
+            ]
           }
         ]
       },
@@ -96,6 +120,14 @@
               "es/cognitive",
               "es/resources",
               "es/contacts"
+            ]
+          },
+          {
+            "group": "Seguridad y garantía",
+            "icon": "shield-check",
+            "pages": [
+              "es/safety",
+              "es/warranty"
             ]
           }
         ]
@@ -119,6 +151,14 @@
               "nl/resources",
               "nl/contacts"
             ]
+          },
+          {
+            "group": "Veiligheid en garantie",
+            "icon": "shield-check",
+            "pages": [
+              "nl/safety",
+              "nl/warranty"
+            ]
           }
         ]
       },
@@ -140,6 +180,14 @@
               "it/cognitive",
               "it/resources",
               "it/contacts"
+            ]
+          },
+          {
+            "group": "Sicurezza e garanzia",
+            "icon": "shield-check",
+            "pages": [
+              "it/safety",
+              "it/warranty"
             ]
           }
         ]
@@ -163,6 +211,14 @@
               "no/resources",
               "no/contacts"
             ]
+          },
+          {
+            "group": "Sikkerhet og garanti",
+            "icon": "shield-check",
+            "pages": [
+              "no/safety",
+              "no/warranty"
+            ]
           }
         ]
       },
@@ -184,6 +240,14 @@
               "sv/cognitive",
               "sv/resources",
               "sv/contacts"
+            ]
+          },
+          {
+            "group": "Säkerhet och garanti",
+            "icon": "shield-check",
+            "pages": [
+              "sv/safety",
+              "sv/warranty"
             ]
           }
         ]
@@ -207,6 +271,14 @@
               "pl/resources",
               "pl/contacts"
             ]
+          },
+          {
+            "group": "Bezpieczeństwo i gwarancja",
+            "icon": "shield-check",
+            "pages": [
+              "pl/safety",
+              "pl/warranty"
+            ]
           }
         ]
       },
@@ -229,6 +301,14 @@
               "jp/resources",
               "jp/contacts"
             ]
+          },
+          {
+            "group": "安全と保証",
+            "icon": "shield-check",
+            "pages": [
+              "jp/safety",
+              "jp/warranty"
+            ]
           }
         ]
       },
@@ -250,6 +330,14 @@
               "ru/cognitive",
               "ru/resources",
               "ru/contacts"
+            ]
+          },
+          {
+            "group": "Безопасность и гарантия",
+            "icon": "shield-check",
+            "pages": [
+              "ru/safety",
+              "ru/warranty"
             ]
           }
         ]
@@ -275,7 +363,7 @@
         "label": "Scratch for robot",
         "href": "https://scratch.primastem.com"
       },
-            {
+      {
         "label": "Update firmware",
         "href": "https://update.primastem.com/"
       },
