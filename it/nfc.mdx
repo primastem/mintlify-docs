@@ -1,5 +1,5 @@
 ---
-title: 'Gettoni di comando'
+title: 'Tessere di comando'
 description: 'Codici NFC'
 icon: 'puzzle'
 mode: "default"
@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Movimento
 
-| Comando | Gettone | NFC Code |
+| Comando | Tessera | NFC Code |
 | --- | --- | --- |
 | Avanti | <img src="../images/book-1/forward.excalidraw.svg" width="56" /> | `cfor` |
 | Sinistra | <img src="../images/book-1/left.excalidraw.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Ripetizione e Controllo
 
-| Comando | Gettone | NFC Code |
+| Comando | Tessera | NFC Code |
 | --- | --- | --- |
 | Ripeti 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Ripeti un numero casuale di volte (da 1 a 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
@@ -48,7 +48,7 @@ L'aritmetica conta fino a 5000 in entrambe le direzioni, la divisione è senza d
 
 | Comando | NFC Code |
 | --- | --- |
-| Calibrazione (senza numero: il robot regola motori e giroscopio, circa 2 minuti, nel primo mezzo minuto non toccarlo; con il gettone `+N` o `−N`: correzione delle rotazioni dopo la prova con 16 rotazioni; con un numero semplice non funziona, la cella diventa rossa) | `ccal` |
+| Calibrazione (senza numero: il robot regola motori e giroscopio, circa 2 minuti, nel primo mezzo minuto non toccarlo; con la tessera `+N` o `−N`: correzione delle rotazioni dopo la prova con 16 rotazioni; con un numero semplice non funziona, la cella diventa rossa) | `ccal` |
 | Imposta lunghezza passo predefinita (1–999 mm; senza numero torna a 150 mm) | `clen` |
 
 ## 🔧 Avanzato
@@ -57,7 +57,7 @@ L'aritmetica conta fino a 5000 in entrambe le direzioni, la divisione è senza d
 | --- | --- |
 | Campione audio (vedi [File audio](/it/sounds_reference)) | `xNNN` |
 | Campione sonoro (il robot riproduce il suono numero N: `csou` + numero N) | `csou` |
-| Livello volume (telecomando e robot: 0–100, oltre 100 = massimo) | `clvl` |
+| Livello volume (pulsantiera e robot: 0–100, oltre 100 = massimo) | `clvl` |
 
 ## Come scrivere dati su un tag NFC
 

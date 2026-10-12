@@ -10,12 +10,12 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HE
 ## Wie NFC-Codes und Audiodateien zusammenhängen
 
 Jede Audiodatei in der Firmware hat einen Code, der ihrem Dateinamen entspricht (z. B. `cfor` → `cfor.mp3`).
-Wenn die Fernbedienung oder der Roboter einen NFC-Chip liest, sucht das Gerät diesen Code und spielt die entsprechende Datei ab.
+Wenn die Steuerung oder der Roboter einen NFC-Token liest, sucht das Gerät diesen Code und spielt die entsprechende Datei ab.
 
-Einige NFC-Chip-Codes sind jedoch **zusammengesetzt** — sie haben keine eigene Audiodatei.
+Einige NFC-Token-Codes sind jedoch **zusammengesetzt** — sie haben keine eigene Audiodatei.
 Stattdessen teilt das Gerät sie in eine Sequenz vorhandener Dateien auf, um Firmware-Speicher zu sparen.
 
-| NFC chip code | Played as |
+| NFC token code | Played as |
 |---|---|
 | `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
@@ -24,7 +24,7 @@ Stattdessen teilt das Gerät sie in eine Sequenz vorhandener Dateien auf, um Fir
 | `d003` (÷3) | `xdiv.mp3` + `n003.mp3` |
 | `e002` (X²) | `xpow.mp3` + `n002.mp3` |
 
-The full list of physical NFC chip codes and kit contents is in [Befehlschips](/de/nfc).
+The full list of physical NFC token codes and kit contents is in [Befehls-Tokens](/de/nfc).
 
 ## 🤖 Roboter-Reaktionen
 
@@ -459,7 +459,7 @@ The full list of physical NFC chip codes and kit contents is in [Befehlschips](/
 |---|---|
 | x990 | Ton nach Ausführung eines leeren Programms |
 | x991 | Einschaltton |
-| x992 | Signalton in der 5. Sekunde beim Halten der Taste an Fernbedienung oder Roboter |
+| x992 | Signalton in der 5. Sekunde beim Halten der Taste an Steuerung oder Roboter |
 | x993 | Bluetooth verbunden; ertönt auch, wenn der Ton durch 5 s Halten der Taste eingeschaltet wird |
 | x994 | Bluetooth-Signal verloren; ertönt auch, wenn der Ton durch 5 s Halten der Taste ausgeschaltet wird |
 | x998 | La Marseillaise (französische Nationalhymne) |

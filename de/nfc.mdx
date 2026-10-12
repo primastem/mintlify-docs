@@ -1,5 +1,5 @@
 ---
-title: 'Befehls-Chips'
+title: 'Befehls-Tokens'
 description: 'NFC-Codes'
 icon: 'puzzle'
 mode: "default"
@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Bewegung
 
-| Befehl | Chip | NFC Code |
+| Befehl | Token | NFC Code |
 | --- | --- | --- |
 | Vorwärts | <img src="../images/book-1/forward.excalidraw.svg" width="56" /> | `cfor` |
 | Links | <img src="../images/book-1/left.excalidraw.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Wiederholung & Steuerung
 
-| Befehl | Chip | NFC Code |
+| Befehl | Token | NFC Code |
 | --- | --- | --- |
 | Wiederholen 2–999 | <img src="../images/book-1/repeatN.excalidraw.svg" width="56" /> | `r002`–`r999` |
 | Zufällig oft wiederholen (1 bis 6) | <img src="../images/book-1/repeat.random.excalidraw.svg" width="56" /> | `rrnd` |
@@ -48,7 +48,7 @@ Die Arithmetik rechnet bis 5000 in beide Richtungen, geteilt wird ohne Nachkomma
 
 | Befehl | NFC Code |
 | --- | --- |
-| Kalibrierung (ohne Zahl: Der Roboter stellt Motoren und Gyroskop ein, etwa 2 Minuten, in der ersten halben Minute nicht berühren; mit Chip `+N` oder `−N`: Korrektur der Drehungen nach der Prüfung mit 16 Drehungen; mit einer einfachen Zahl funktioniert es nicht, die Zelle wird rot) | `ccal` |
+| Kalibrierung (ohne Zahl: Der Roboter stellt Motoren und Gyroskop ein, etwa 2 Minuten, in der ersten halben Minute nicht berühren; mit Token `+N` oder `−N`: Korrektur der Drehungen nach der Prüfung mit 16 Drehungen; mit einer einfachen Zahl funktioniert es nicht, die Zelle wird rot) | `ccal` |
 | Standard-Schrittlänge festlegen (1–999 mm; ohne Zahl zurück auf 150 mm) | `clen` |
 
 ## 🔧 Erweitert
@@ -57,7 +57,7 @@ Die Arithmetik rechnet bis 5000 in beide Richtungen, geteilt wird ohne Nachkomma
 | --- | --- |
 | Audio-Beispiel (siehe [Audiodateien](/de/sounds_reference)) | `xNNN` |
 | Sound-Beispiel (der Roboter spielt den Ton mit der Nummer N: `csou` + Zahl N) | `csou` |
-| Lautstärkepegel (Fernbedienung und Roboter: 0–100, über 100 = Maximum) | `clvl` |
+| Lautstärkepegel (Steuerung und Roboter: 0–100, über 100 = Maximum) | `clvl` |
 
 ## So schreiben Sie Daten auf einen NFC-Tag
 

@@ -10,9 +10,9 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HE
 ## Hoe NFC-codes en audiobestanden samenhangen
 
 Elk audiobestand in de firmware heeft een code die overeenkomt met zijn bestandsnaam (bijv. `cfor` → `cfor.mp3`).
-Wanneer de afstandsbediening of robot een NFC-chip leest, zoekt het dit code op en speelt het overeenkomstige bestand af.
+Wanneer de bediening of robot een NFC-kaartje leest, zoekt het dit code op en speelt het overeenkomstige bestand af.
 
-Sommige NFC-chipcodes zijn echter **samengesteld** — ze hebben geen eigen audiobestand.
+Sommige NFC-kaartjescodes zijn echter **samengesteld** — ze hebben geen eigen audiobestand.
 In plaats daarvan splitst het apparaat ze op in een reeks bestaande bestanden om firmwareruimte te besparen.
 
 | NFC chip code | Played as |
@@ -24,7 +24,7 @@ In plaats daarvan splitst het apparaat ze op in een reeks bestaande bestanden om
 | `d003` (÷3) | `xdiv.mp3` + `n003.mp3` |
 | `e002` (X²) | `xpow.mp3` + `n002.mp3` |
 
-The full list of physical NFC chip codes and kit contents is in [Commandofiches](/nl/nfc).
+The full list of physical NFC chip codes and kit contents is in [Commandokaartjes](/nl/nfc).
 
 ## 🤖 Robotreacties
 
@@ -459,7 +459,7 @@ The full list of physical NFC chip codes and kit contents is in [Commandofiches]
 |---|---|
 | x990 | Geluid na uitvoering van een leeg programma |
 | x991 | Inschakelgeluid |
-| x992 | Signaal na 5 seconden ingedrukt houden van de knop op de afstandsbediening of de robot |
+| x992 | Signaal na 5 seconden ingedrukt houden van de knop op de bediening of de robot |
 | x993 | Bluetooth verbonden; klinkt ook als het geluid wordt ingeschakeld door de knop 5 s ingedrukt te houden |
 | x994 | Bluetooth-signaal verloren; klinkt ook als het geluid wordt uitgeschakeld door de knop 5 s ingedrukt te houden |
 | x998 | La Marseillaise (Frans volkslied) |
