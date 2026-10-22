@@ -397,37 +397,37 @@
             "group": "Prvi koraci",
             "icon": "rocket",
             "pages": [
-              "hr/quickstart",
-              "hr/intro",
-              "hr/usermanual"
+              "en-hr/quickstart",
+              "en-hr/intro",
+              "en-hr/usermanual"
             ]
           },
           {
             "group": "Kako poučavati",
             "icon": "graduation-cap",
             "pages": [
-              "hr/teachersguide",
-              "hr/book-1/book-1",
-              "hr/mathdrawings",
-              "hr/cognitive",
-              "hr/resources"
+              "en-hr/teachersguide",
+              "en-hr/book-1/book-1",
+              "en-hr/mathdrawings",
+              "en-hr/cognitive",
+              "en-hr/resources"
             ]
           },
           {
             "group": "Priručnik",
             "icon": "book-marked",
             "pages": [
-              "hr/nfc",
-              "hr/sounds_reference"
+              "en-hr/nfc",
+              "en-hr/sounds_reference"
             ]
           },
           {
             "group": "Sigurnost i podrška",
             "icon": "shield-check",
             "pages": [
-              "hr/safety",
-              "hr/warranty",
-              "hr/contacts"
+              "en-hr/safety",
+              "en-hr/warranty",
+              "en-hr/contacts"
             ]
           }
         ]
@@ -606,5 +606,11 @@
   },
   "styling": {
     "eyebrows": "breadcrumbs"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/hr/:slug*",
+      "destination": "/en-hr/:slug*"
+    }
+  ]
 }
