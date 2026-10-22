@@ -5,7 +5,7 @@ icon: "volume-2"
 mode: "default"
 ---
 
-Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HE, AR, RU
+Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR, HE, AR, RU
 
 ## Cómo se relacionan los códigos NFC y los archivos de audio
 
@@ -26,125 +26,196 @@ En cambio, el dispositivo los divide en una secuencia de archivos existentes par
 
 The full list of physical NFC chip codes and kit contents is in [Fichas de comando](/es/nfc).
 
-## 🤖 Reacciones del robot
+## 🤖 Frases del robot, reacciones y mensajes de servicio  (x001–x019)
 
-| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HE | AR | RU |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| x005 | Hi! | Hallo! | Salut! | ¡Hola! | Ciao! | こんにちは！ | Hei! | Hallo! | Cześć! | Hej! | Привіт! | Olá! | Merhaba! | Hej! | Hola! | Moi! | שלום! | مرحبًا! | Привет! |
-| x006 | There you go! | So bitte! | Et voilà! | ¡Y listo! | Ecco fatto! | じゃーん！ | Sånn ja! | Alsjeblieft! | I gotowe! | Klart! | Готово! | Pronto! | Hazır! | Sådan! | Ja està! | Noin! | הנה זה! | تفضّل! | Готово! |
-| x007 | Here I go! | Los geht's! | Je commence! | ¡Empiezo! | Comincio! | 始めるよ！ | Nå begynner jeg! | Ik begin! | Zaczynam! | Nu börjar jag! | Починаю! | Lá vou eu! | Başlıyorum! | Nu starter jeg! | Allà vaig! | Nyt mennään! | אני מתחיל! | هيّا نبدأ! | Начинаю! |
-| x008 | Hey! | Hallo! | Coucou ! | ¡Hola! | Ciao! | やあ！ | Hei! | Hallo! | Hej! | Hej! | Я тут! | Estou aqui! | Buradayım! | Hej! | Ei! | Hei! | היי! | أهلًا! | Я тут! |
-| x009 | Bye! | Tschüss! | Au revoir! | ¡Adiós! | Ciao! | バイバイ！ | Ha det! | Doei! | Pa pa! | Hej då! | Бувай! | Tchau! | Güle güle! | Farvel! | Adéu! | Heippa! | להתראות! | مع السلامة! | Пока! |
+| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HR | HE | AR | RU |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| x001 | Hello world! | Hallo Welt! | Bonjour le monde ! | ¡Hola, mundo! | Ciao, mondo! | ハローワールド！ | Hei, verden! | Hallo wereld! | Witaj, świecie! | Hej, världen! | Привіт, світе! | Olá, mundo! | Merhaba Dünya! | Hej, verden! | Hola, món! | Hei maailma! | Pozdrav, svijete! | שלום עולם! | مرحبًا بالعالم! | Привет, мир! |
+| x002 | I'm a robot! | Ich bin ein Roboter! | Je suis un robot ! | ¡Soy un robot! | Sono un robot! | ぼくはロボットだよ！ | Jeg er en robot! | Ik ben een robot! | Jestem robotem! | Jag är en robot! | Я — робот! | Eu sou um robô! | Ben bir robotum! | Jeg er en robot! | Sóc un robot! | Olen robotti! | Ja sam robot! | אני רובוט! | أنا روبوت! | Я — робот! |
+| x003 | Well done! | Gut gemacht! | Bravo ! | ¡Muy bien! | Bravo! | よくできました！ | Bra jobbet! | Goed zo! | Brawo! | Bra jobbat! | Молодець! | Muito bem! | Aferin! | Godt gået! | Molt bé! | Hienoa! | Bravo! | כל הכבוד! | أحسنت! | Молодец! |
+| x004 | Settings reset | Einstellungen zurückgesetzt | Paramètres réinitialisés | Ajustes restablecidos | Impostazioni ripristinate | 設定をリセットしました | Innstillinger tilbakestilt | Instellingen teruggezet | Ustawienia zresetowane | Inställningar återställda | Налаштування скинуто | Configurações redefinidas | Ayarlar sıfırlandı | Indstillinger nulstillet | Configuració restablerta | Asetukset palautettu | Postavke resetirane | ההגדרות אופסו | تمّت إعادة ضبط الإعدادات | Настройки сброшены |
+| x005 | Hi! | Hallo! | Salut! | ¡Hola! | Ciao! | こんにちは！ | Hei! | Hallo! | Cześć! | Hej! | Привіт! | Olá! | Merhaba! | Hej! | Hola! | Moi! | Bok! | שלום! | مرحبًا! | Привет! |
+| x006 | There you go! | So bitte! | Et voilà! | ¡Y listo! | Ecco fatto! | じゃーん！ | Sånn ja! | Alsjeblieft! | I gotowe! | Klart! | Готово! | Pronto! | Hazır! | Sådan! | Ja està! | Noin! | Gotovo! | הנה זה! | تفضّل! | Готово! |
+| x007 | Here I go! | Los geht's! | Je commence! | ¡Empiezo! | Comincio! | 始めるよ！ | Nå begynner jeg! | Ik begin! | Zaczynam! | Nu börjar jag! | Починаю! | Lá vou eu! | Başlıyorum! | Nu starter jeg! | Allà vaig! | Nyt mennään! | Krećem! | אני מתחיל! | هيّا نبدأ! | Начинаю! |
+| x008 | Hey! | Hallo! | Coucou ! | ¡Hola! | Ciao! | やあ！ | Hei! | Hallo! | Hej! | Hej! | Я тут! | Estou aqui! | Buradayım! | Hej! | Ei! | Hei! | Hej! | היי! | أهلًا! | Я тут! |
+| x009 | Bye! | Tschüss! | Au revoir! | ¡Adiós! | Ciao! | バイバイ！ | Ha det! | Doei! | Pa pa! | Hej då! | Бувай! | Tchau! | Güle güle! | Farvel! | Adéu! | Heippa! | Pa-pa! | להתראות! | مع السلامة! | Пока! |
+| x010 | Error! | Fehler! | Erreur ! | ¡Error! | Errore! | エラー！ | Feil! | Fout! | Błąd! | Fel! | Помилка! | Erro! | Hata! | Fejl! | Error! | Virhe! | Greška! | שגיאה! | خطأ! | Ошибка! |
+| x011 | Connected | Verbunden | Connecté | Conectado | Connesso | 接続しました | Tilkoblet | Verbonden | Połączono | Ansluten | Підключено | Conectado | Bağlandı | Forbundet | Connectat | Yhdistetty | Povezano | מחובר | تمّ الاتصال | Подключено |
+| x012 | No connection | Keine Verbindung | Pas de connexion | Sin conexión | Nessuna connessione | 接続できません | Ingen forbindelse | Geen verbinding | Brak połączenia | Ingen anslutning | Немає зв'язку | Sem conexão | Bağlantı yok | Ingen forbindelse | Sense connexió | Ei yhteyttä | Nema signala | אין חיבור | لا يوجد اتصال | Нет связи |
+| x013 | Calibration needed | Kalibrierung nötig | Calibration nécessaire | Se necesita calibración | Calibrazione necessaria | キャリブレーションが必要です | Trenger kalibrering | Kalibratie nodig | Potrzebna kalibracja | Kalibrering behövs | Потрібне калібрування | Calibração necessária | Kalibrasyon gerekli | Kalibrering nødvendig | Cal calibratge | Kalibrointi tarvitaan | Potrebna kalibracija | צריך כיול | المعايرة مطلوبة | Нужна калибровка |
+| x014 | Saved | Gespeichert | Enregistré | Guardado | Memorizzato | 覚えました | Lagret | Opgeslagen | Zapisano | Sparat | Збережено | Memorizado | Kaydettim | Gemt | Memoritzat | Tallennettu | Spremljeno | נשמר | تمّ الحفظ | Запомнил |
+| x015 | Don't touch me | Fass mich nicht an | Ne me touche pas | No me toques | Non toccarmi | 触らないでね | Ikke rør meg | Raak me niet aan | Nie dotykaj mnie | Rör mig inte | Не чіпай мене | Não me toque | Bana dokunma | Rør mig ikke | No em toquis | Älä koske minuun | Ne diraj me | אל תיגע בי | لا تلمسني | Не трогай меня |
+| x016 | Check the motor | Prüf den Motor | Vérifie le moteur | Revisa el motor | Controlla il motore | モーターを確認してね | Sjekk motoren | Controleer de motor | Sprawdź silnik | Kolla motorn | Перевір мотор | Verifique o motor | Motoru kontrol et | Tjek motoren | Revisa el motor | Tarkista moottori | Provjeri motor | תבדוק את המנוע | افحص المحرّك | Проверь мотор |
+| x017 | Charge me | Lade mich auf | Recharge-moi | Cárgame | Ricaricami | 充電してね | Lad meg opp | Laad me op | Naładuj mnie | Ladda mig | Заряди мене | Me carregue | Beni şarj et | Oplad mig | Carrega'm | Lataa minut | Napuni me | תטעין אותי | اشحنّي | Заряди меня |
+| x018 | Sound on | Ton an | Son activé | Sonido activado | Suono attivato | 音をオンにしました | Lyd på | Geluid aan | Dźwięk włączony | Ljud på | Звук увімкнено | Som ligado | Ses açık | Lyd til | So activat | Ääni päällä | Zvuk uključen | הצליל מופעל | تمّ تشغيل الصوت | Звук включён |
+| x019 | Sound off | Ton aus | Son désactivé | Sonido desactivado | Suono disattivato | 音をオフにしました | Lyd av | Geluid uit | Dźwięk wyłączony | Ljud av | Звук вимкнено | Som desligado | Ses kapalı | Lyd fra | So desactivat | Ääni pois päältä | Zvuk isključen | הצליל כבוי | تمّ إيقاف الصوت | Звук выключен |
 
 ---
 
-## 🗺️ Vocabulario / Lugares
+## 🗺️ Vocabulario  (lugares x020–x089, palabras para las clases x090–x146)
 
-| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HE | AR | RU |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| x020 | Forest | Der Wald | La Forêt | El Bosque | La Foresta | 森 | Skogen | Het Bos | Las | Skogen | Ліс | A Floresta | Orman | Skoven | El Bosc | Metsä | היער | الغابة | Лес |
-| x021 | House | Das Haus | La Maison | La Casa | La Casa | 家 | Huset | Het Huis | Dom | Huset | Дім | A Casa | Ev | Huset | La Casa | Talo | הבית | البيت | Дом |
-| x022 | Mountain | Der Berg | La Montagne | La Montaña | La Montagna | 山 | Fjellet | De Berg | Góra | Berget | Гора | A Montanha | Dağ | Bjerget | La Muntanya | Vuori | ההר | الجبل | Гора |
-| x023 | Stone | Der Stein | La Pierre | La Piedra | La Pietra | 石 | Steinen | De Steen | Kamień | Stenen | Камінь | A Pedra | Taş | Stenen | La Pedra | Kivi | האבן | الحجر | Камень |
-| x024 | River | Der Fluss | La Rivière | El Río | Il Fiume | 川 | Elven | De Rivier | Rzeka | Floden | Річка | O Rio | Nehir | Floden | El Riu | Joki | הנהר | النهر | Река |
-| x025 | Lake | Der See | Le Lac | El Lago | Il Lago | 湖 | Innsjøen | Het Meer | Jezioro | Sjön | Озеро | O Lago | Göl | Søen | El Llac | Järvi | האגם | البحيرة | Озеро |
-| x026 | Hospital | Das Krankenhaus | L'Hôpital | El Hospital | L'Ospedale | 病院 | Sykehuset | Het Ziekenhuis | Szpital | Sjukhuset | Лікарня | O Hospital | Hastane | Hospitalet | L'Hospital | Sairaala | בית החולים | المستشفى | Больница |
-| x027 | Police | Die Polizei | La Police | La Policía | La Polizia | 警察 | Politiet | De Politie | Policja | Polisen | Поліція | A Polícia | Polis | Politiet | La Policia | Poliisi | המשטרה | الشرطة | Полиция |
-| x028 | Swamp | Der Sumpf | Le Marais | El Pantano | La Palude | 沼 | Sumpen | Het Moeras | Bagno | Träsket | Болото | O Pântano | Bataklık | Sumpen | El Pantà | Suo | הביצה | المستنقع | Болото |
-| x029 | Shop | Der Laden | Le Magasin | La Tienda | Il Negozio | 店 | Butikken | De Winkel | Sklep | Affären | Магазин | A Loja | Mağaza | Butikken | La Botiga | Kauppa | החנות | المتجر | Магазин |
-| x030 | Stadium | Das Stadion | Le Stade | El Estadio | Lo Stadio | スタジアム | Stadion | Het Stadion | Stadion | Stadion | Стадіон | O Estádio | Stadyum | Stadion | L'Estadi | Stadion | האצטדיון | الملعب الرياضي | Стадион |
-| x031 | School | Die Schule | L'École | La Escuela | La Scuola | 学校 | Skolen | De School | Szkoła | Skolan | Школа | A Escola | Okul | Skolen | L'Escola | Koulu | בית הספר | المدرسة | Школа |
-| x032 | Park | Der Park | Le Parc | El Parque | Il Parco | 公園 | Parken | Het Park | Park | Parken | Парк | O Parque | Park | Parken | El Parc | Puisto | הפארק | المتنزّه | Парк |
-| x033 | Library | Die Bibliothek | La Bibliothèque | La Biblioteca | La Biblioteca | 図書館 | Biblioteket | De Bibliotheek | Biblioteka | Biblioteket | Бібліотека | A Biblioteca | Kütüphane | Biblioteket | La Biblioteca | Kirjasto | הספרייה | المكتبة | Библиотека |
-| x034 | Castle | Die Burg | Le Château | El Castillo | Il Castello | 城 | Slottet | Het Kasteel | Zamek | Slottet | Замок | O Castelo | Kale | Slottet | El Castell | Linna | הטירה | القلعة | Замок |
-| x035 | Bridge | Die Brücke | Le Pont | El Puente | Il Ponte | 橋 | Broen | De Brug | Most | Bron | Міст | A Ponte | Köprü | Broen | El Pont | Silta | הגשר | الجسر | Мост |
-| x036 | Farm | Der Bauernhof | La Ferme | La Granja | La Fattoria | 農場 | Gården | De Boerderij | Farma | Gården | Ферма | A Fazenda | Çiftlik | Bondegården | La Granja | Maatila | החווה | المزرعة | Ферма |
-| x037 | Lighthouse | Der Leuchtturm | Le Phare | El Faro | Il Faro | 灯台 | Fyrtårnet | De Vuurtoren | Latarnia | Fyren | Маяк | O Farol | Deniz feneri | Fyrtårnet | El Far | Majakka | המגדלור | المنارة | Маяк |
-| x038 | Museum | Das Museum | Le Musée | El Museo | Il Museo | 博物館 | Museet | Het Museum | Muzeum | Museet | Музей | O Museu | Müze | Museet | El Museu | Museo | המוזיאון | المتحف | Музей |
-| x039 | Zoo | Der Zoo | Le Zoo | El Zoo | Lo Zoo | 動物園 | Dyrehagen | De Dierentuin | Zoo | Djurparken | Зоопарк | O Zoológico | Hayvanat bahçesi | Zoologisk Have | El Zoo | Eläintarha | גן החיות | حديقة الحيوان | Зоопарк |
-| x040 | Bakery | Die Bäckerei | La Boulangerie | La Panadería | La Panetteria | パン屋 | Bakeriet | De Bakkerij | Piekarnia | Bageriet | Пекарня | A Padaria | Fırın | Bageriet | El Forn | Leipomo | המאפייה | المخبز | Пекарня |
-| x041 | Pharmacy | Die Apotheke | La Pharmacie | La Farmacia | La Farmacia | 薬局 | Apoteket | De Apotheek | Apteka | Apoteket | Аптека | A Farmácia | Eczane | Apoteket | La Farmàcia | Apteekki | בית המרקחת | الصيدلية | Аптека |
-| x042 | Fire Station | Die Feuerwehr | La Caserne de Pompiers | La Estación de Bomberos | I Pompieri | 消防署 | Brannstasjonen | De Brandweer | Straż Pożarna | Brandstationen | Пожежна | Os Bombeiros | İtfaiye | Brandstationen | Els Bombers | Paloasema | תחנת הכבאות | مركز الإطفاء | Пожарная |
-| x043 | Post Office | Die Post | La Poste | La Oficina de Correos | La Posta | 郵便局 | Postkontoret | Het Postkantoor | Poczta | Postkontoret | Пошта | Os Correios | Postane | Posthuset | L'Oficina de Correus | Posti | סניף הדואר | مكتب البريد | Почта |
-| x044 | Airport | Der Flughafen | L'Aéroport | El Aeropuerto | L'Aeroporto | 空港 | Flyplassen | De Luchthaven | Lotnisko | Flygplatsen | Аеропорт | O Aeroporto | Havalimanı | Lufthavnen | L'Aeroport | Lentokenttä | שדה התעופה | المطار | Аэропорт |
-| x045 | Harbor | Der Hafen | Le Port | El Puerto | Il Porto | 港 | Havnen | De Haven | Port | Hamnen | Порт | O Porto | Liman | Havnen | El Port | Satama | הנמל | الميناء | Порт |
-| x046 | Garden | Der Garten | Le Jardin | El Jardín | Il Giardino | 庭 | Hagen | De Tuin | Ogród | Trädgården | Сад | O Jardim | Bahçe | Haven | El Jardí | Puutarha | הגן | الحديقة | Сад |
-| x047 | Playground | Der Spielplatz | L'Aire de Jeux | El Parque Infantil | Il Parco Giochi | 遊び場 | Lekeplassen | De Speeltuin | Plac Zabaw | Lekplatsen | Майданчик | O Parquinho | Oyun alanı | Legepladsen | El Parc Infantil | Leikkipuisto | גן המשחקים | ساحة اللعب | Площадка |
-| x048 | Train Station | Der Bahnhof | La Gare | La Estación de Tren | La Stazione | 駅 | Togstasjonen | Het Station | Dworzec | Tågstationen | Вокзал | A Estação de Trem | Tren istasyonu | Togstationen | L'Estació de Tren | Rautatieasema | תחנת הרכבת | محطة القطار | Вокзал |
-| x049 | Garage | Die Garage | Le Garage | El Garaje | Il Garage | ガレージ | Garasjen | De Garage | Garaż | Garaget | Гараж | A Garagem | Garaj | Garagen | El Garatge | Autotalli | החניה | المرآب | Гараж |
-| x050 | Cinema | Das Kino | Le Cinéma | El Cine | Il Cinema | 映画館 | Kinoen | De Bioscoop | Kino | Biografen | Кінотеатр | O Cinema | Sinema | Biografen | El Cinema | Elokuvateatteri | הקולנוע | السينما | Кинотеатр |
-| x051 | Swimming Pool | Das Schwimmbad | La Piscine | La Piscina | La Piscina | プール | Svømmebassenget | Het Zwembad | Basen | Simhallen | Басейн | A Piscina | Yüzme havuzu | Svømmehallen | La Piscina | Uima-allas | הבריכה | المسبح | Бассейн |
-| x052 | Metro | Die U-Bahn | Le Métro | El Metro | La Metropolitana | 地下鉄 | T-banen | De Metro | Metro | Tunnelbanan | Метро | O Metrô | Metro | Metroen | El Metro | Metro | הרכבת התחתית | المترو | Метро |
-| x053 | Traffic Light | Die Ampel | Le Feu Tricolore | El Semáforo | Il Semaforo | 信号機 | Trafikklyset | Het Stoplicht | Sygnalizacja | Trafikljuset | Світлофор | O Semáforo | Trafik ışığı | Trafiklyset | El Semàfor | Liikennevalo | הרמזור | إشارة المرور | Светофор |
-| x054 | Road | Die Straße | La Route | El Camino | La Strada | 道 | Veien | De Weg | Droga | Vägen | Дорога | A Estrada | Yol | Vejen | La Carretera | Tie | הכביש | الطريق | Дорога |
-| x055 | Ticket Office | Die Kasse | La Caisse | La Taquilla | La Biglietteria | 切符売り場 | Billettkontoret | Het Loket | Kasa | Biljettkontoret | Каса | A Bilheteria | Bilet gişesi | Billetkontoret | La Taquilla | Lipunmyynti | הקופה | شبّاك التذاكر | Касса |
-| x056 | Warehouse | Das Lager | L'Entrepôt | El Almacén | Il Magazzino | 倉庫 | Lageret | Het Magazijn | Magazyn | Lagret | Склад | O Armazém | Depo | Lageret | El Magatzem | Varasto | המחסן | المستودع | Склад |
-| x057 | North | Der Norden | Le Nord | El Norte | Il Nord | 北 | Nord | Het Noorden | Północ | Norr | Північ | O Norte | Kuzey | Nord | El Nord | Pohjoinen | הצפון | الشمال | Север |
-| x058 | West | Der Westen | L'Ouest | El Oeste | L'Ovest | 西 | Vest | Het Westen | Zachód | Väster | Захід | O Oeste | Batı | Vest | L'Oest | Länsi | המערב | الغرب | Запад |
-| x059 | South | Der Süden | Le Sud | El Sur | Il Sud | 南 | Sør | Het Zuiden | Południe | Söder | Південь | O Sul | Güney | Syd | El Sud | Etelä | הדרום | الجنوب | Юг |
-| x060 | East | Der Osten | L'Est | El Este | L'Est | 東 | Øst | Het Oosten | Wschód | Öster | Схід | O Leste | Doğu | Øst | L'Est | Itä | המזרח | الشرق | Восток |
-| x061 | South Pole | Der Südpol | Le Pôle Sud | El Polo Sur | Il Polo Sud | 南極 | Sydpolen | De Zuidpool | Biegun Południowy | Sydpolen | Південний полюс | O Polo Sul | Güney Kutbu | Sydpolen | El Pol Sud | Etelänapa | הקוטב הדרומי | القطب الجنوبي | Южный полюс |
-| x062 | North Pole | Der Nordpol | Le Pôle Nord | El Polo Norte | Il Polo Nord | 北極 | Nordpolen | De Noordpool | Biegun Północny | Nordpolen | Північний полюс | O Polo Norte | Kuzey Kutbu | Nordpolen | El Pol Nord | Pohjoisnapa | הקוטב הצפוני | القطب الشمالي | Северный полюс |
-| x063 | Sun | Die Sonne | Le Soleil | El Sol | Il Sole | 太陽 | Solen | De Zon | Słońce | Solen | Сонце | O Sol | Güneş | Solen | El Sol | Aurinko | השמש | الشمس | Солнце |
-| x064 | Moon | Der Mond | La Lune | La Luna | La Luna | 月 | Månen | De Maan | Księżyc | Månen | Місяць | A Lua | Ay | Månen | La Lluna | Kuu | הירח | القمر | Луна |
-| x065 | Earth | Die Erde | La Terre | La Tierra | La Terra | 地球 | Jorden | De Aarde | Ziemia | Jorden | Земля | A Terra | Dünya | Jorden | La Terra | Maa | כדור הארץ | الأرض | Земля |
-| x066 | Saturn | Saturn | Saturne | Saturno | Saturno | 土星 | Saturn | Saturnus | Saturn | Saturnus | Сатурн | Saturno | Satürn | Saturn | Saturn | Saturnus | שבתאי | زُحَل | Сатурн |
-| x067 | Jupiter | Jupiter | Jupiter | Júpiter | Giove | 木星 | Jupiter | Jupiter | Jowisz | Jupiter | Юпітер | Júpiter | Jüpiter | Jupiter | Júpiter | Jupiter | צדק | المشتري | Юпитер |
-| x068 | Mars | Mars | Mars | Marte | Marte | 火星 | Mars | Mars | Mars | Mars | Марс | Marte | Mars | Mars | Mart | Mars | מאדים | المرّيخ | Марс |
-| x069 | Ocean | Der Ozean | L'Océan | El Océano | L'Oceano | 海 | Havet | De Oceaan | Ocean | Oceanen | Океан | O Oceano | Okyanus | Havet | L'Oceà | Valtameri | האוקיינוס | المحيط | Океан |
-| x070 | Island | Die Insel | L'Île | La Isla | L'Isola | 島 | Øya | Het Eiland | Wyspa | Ön | Острів | A Ilha | Ada | Øen | L'Illa | Saari | האי | الجزيرة | Остров |
-| x071 | Volcano | Der Vulkan | Le Volcan | El Volcán | Il Vulcano | 火山 | Vulkanen | De Vulkaan | Wulkan | Vulkanen | Вулкан | O Vulcão | Yanardağ | Vulkanen | El Volcà | Tulivuori | הר הגעש | البركان | Вулкан |
-| x072 | Desert | Die Wüste | Le Désert | El Desierto | Il Deserto | 砂漠 | Ørkenen | De Woestijn | Pustynia | Öknen | Пустеля | O Deserto | Çöl | Ørkenen | El Desert | Aavikko | המדבר | الصحراء | Пустыня |
-| x073 | Waterfall | Der Wasserfall | La Cascade | La Cascada | La Cascata | 滝 | Fossen | De Waterval | Wodospad | Vattenfallet | Водоспад | A Cachoeira | Şelale | Vandfaldet | La Cascada | Vesiputous | המפל | الشلال | Водопад |
-| x074 | Cave | Die Höhle | La Grotte | La Cueva | La Grotta | 洞窟 | Hulen | De Grot | Jaskinia | Grottan | Печера | A Caverna | Mağara | Hulen | La Cova | Luola | המערה | الكهف | Пещера |
-| x075 | Tower | Der Turm | La Tour | La Torre | La Torre | 塔 | Tårnet | De Toren | Wieża | Tornet | Вежа | A Torre | Kule | Tårnet | La Torre | Torni | המגדל | البرج | Башня |
-| x076 | Church | Die Kirche | L'Église | La Iglesia | La Chiesa | 教会 | Kirken | De Kerk | Kościół | Kyrkan | Церква | A Igreja | Kilise | Kirken | L'Església | Kirkko | הכנסייה | الكنيسة | Церковь |
-| x077 | Market | Der Markt | Le Marché | El Mercado | Il Mercato | 市場 | Markedet | De Markt | Rynek | Marknaden | Ринок | O Mercado | Pazar | Markedet | El Mercat | Tori | השוק | السوق | Рынок |
-| x078 | Fountain | Der Brunnen | La Fontaine | La Fuente | La Fontana | 噴水 | Fontenen | De Fontein | Fontanna | Fontänen | Фонтан | A Fonte | Çeşme | Springvandet | La Font | Suihkulähde | המזרקה | النافورة | Фонтан |
-| x079 | Tunnel | Der Tunnel | Le Tunnel | El Túnel | Il Tunnel | トンネル | Tunnelen | De Tunnel | Tunel | Tunneln | Тунель | O Túnel | Tünel | Tunnelen | El Túnel | Tunneli | המנהרה | النفق | Тоннель |
-| x080 | Pyramid | Die Pyramide | La Pyramide | La Pirámide | La Piramide | ピラミッド | Pyramiden | De Piramide | Piramida | Pyramiden | Піраміда | A Pirâmide | Piramit | Pyramiden | La Piràmide | Pyramidi | הפירמידה | الهرم | Пирамида |
-| x081 | Treasure | Der Schatz | Le Trésor | El Tesoro | Il Tesoro | 宝物 | Skatten | De Schat | Skarb | Skatten | Скарб | O Tesouro | Hazine | Skatten | El Tresor | Aarre | האוצר | الكنز | Сокровище |
-| x082 | Star | Der Stern | L'Étoile | La Estrella | La Stella | 星 | Stjernen | De Ster | Gwiazda | Stjärnan | Зірка | A Estrela | Yıldız | Stjernen | L'Estrella | Tähti | הכוכב | النجمة | Звезда |
-| x083 | Rainbow | Der Regenbogen | L'Arc-en-ciel | El Arcoíris | L'Arcobaleno | 虹 | Regnbuen | De Regenboog | Tęcza | Regnbågen | Веселка | O Arco-íris | Gökkuşağı | Regnbuen | L'Arc de Sant Martí | Sateenkaari | הקשת בענן | قوس قزح | Радуга |
-| x084 | Glacier | Der Gletscher | Le Glacier | El Glaciar | Il Ghiacciaio | 氷河 | Isbreen | De Gletsjer | Lodowiec | Glaciären | Льодовик | A Geleira | Buzul | Gletsjeren | La Glacera | Jäätikkö | הקרחון | النهر الجليدي | Ледник |
-| x085 | Jungle | Der Dschungel | La Jungle | La Selva | La Giungla | ジャングル | Jungelen | De Jungle | Dżungla | Djungeln | Джунглі | A Selva | Cengel | Junglen | La Selva | Viidakko | הג'ונגל | الأدغال | Джунгли |
-| x086 | Beach | Der Strand | La Plage | La Playa | La Spiaggia | ビーチ | Stranden | Het Strand | Plaża | Stranden | Пляж | A Praia | Plaj | Stranden | La Platja | Ranta | החוף | الشاطئ | Пляж |
-| x087 | Palace | Der Palast | Le Palais | El Palacio | Il Palazzo | 宮殿 | Palasset | Het Paleis | Pałac | Palatset | Палац | O Palácio | Saray | Paladset | El Palau | Palatsi | הארמון | القصر | Дворец |
-| x088 | Windmill | Die Windmühle | Le Moulin | El Molino | Il Mulino | 風車 | Vindmøllen | De Molen | Wiatrak | Väderkvarnen | Млин | O Moinho | Yel değirmeni | Vindmøllen | El Molí de Vent | Tuulimylly | טחנת הרוח | طاحونة الهواء | Мельница |
-| x089 | Rocket | Die Rakete | La Fusée | El Cohete | Il Razzo | ロケット | Raketten | De Raket | Rakieta | Raketen | Ракета | O Foguete | Roket | Raketten | El Coet | Raketti | הטיל | الصاروخ | Ракета |
+| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HR | HE | AR | RU |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| x020 | Forest | Der Wald | La Forêt | El Bosque | La Foresta | 森 | Skogen | Het Bos | Las | Skogen | Ліс | A Floresta | Orman | Skoven | El Bosc | Metsä | Šuma | היער | الغابة | Лес |
+| x021 | House | Das Haus | La Maison | La Casa | La Casa | 家 | Huset | Het Huis | Dom | Huset | Дім | A Casa | Ev | Huset | La Casa | Talo | Kuća | הבית | البيت | Дом |
+| x022 | Mountain | Der Berg | La Montagne | La Montaña | La Montagna | 山 | Fjellet | De Berg | Góra | Berget | Гора | A Montanha | Dağ | Bjerget | La Muntanya | Vuori | Planina | ההר | الجبل | Гора |
+| x023 | Stone | Der Stein | La Pierre | La Piedra | La Pietra | 石 | Steinen | De Steen | Kamień | Stenen | Камінь | A Pedra | Taş | Stenen | La Pedra | Kivi | Kamen | האבן | الحجر | Камень |
+| x024 | River | Der Fluss | La Rivière | El Río | Il Fiume | 川 | Elven | De Rivier | Rzeka | Floden | Річка | O Rio | Nehir | Floden | El Riu | Joki | Rijeka | הנהר | النهر | Река |
+| x025 | Lake | Der See | Le Lac | El Lago | Il Lago | 湖 | Innsjøen | Het Meer | Jezioro | Sjön | Озеро | O Lago | Göl | Søen | El Llac | Järvi | Jezero | האגם | البحيرة | Озеро |
+| x026 | Hospital | Das Krankenhaus | L'Hôpital | El Hospital | L'Ospedale | 病院 | Sykehuset | Het Ziekenhuis | Szpital | Sjukhuset | Лікарня | O Hospital | Hastane | Hospitalet | L'Hospital | Sairaala | Bolnica | בית החולים | المستشفى | Больница |
+| x027 | Police | Die Polizei | La Police | La Policía | La Polizia | 警察 | Politiet | De Politie | Policja | Polisen | Поліція | A Polícia | Polis | Politiet | La Policia | Poliisi | Policija | המשטרה | الشرطة | Полиция |
+| x028 | Swamp | Der Sumpf | Le Marais | El Pantano | La Palude | 沼 | Sumpen | Het Moeras | Bagno | Träsket | Болото | O Pântano | Bataklık | Sumpen | El Pantà | Suo | Močvara | הביצה | المستنقع | Болото |
+| x029 | Shop | Der Laden | Le Magasin | La Tienda | Il Negozio | 店 | Butikken | De Winkel | Sklep | Affären | Магазин | A Loja | Mağaza | Butikken | La Botiga | Kauppa | Trgovina | החנות | المتجر | Магазин |
+| x030 | Stadium | Das Stadion | Le Stade | El Estadio | Lo Stadio | スタジアム | Stadion | Het Stadion | Stadion | Stadion | Стадіон | O Estádio | Stadyum | Stadion | L'Estadi | Stadion | Stadion | האצטדיון | الملعب الرياضي | Стадион |
+| x031 | School | Die Schule | L'École | La Escuela | La Scuola | 学校 | Skolen | De School | Szkoła | Skolan | Школа | A Escola | Okul | Skolen | L'Escola | Koulu | Škola | בית הספר | المدرسة | Школа |
+| x032 | Park | Der Park | Le Parc | El Parque | Il Parco | 公園 | Parken | Het Park | Park | Parken | Парк | O Parque | Park | Parken | El Parc | Puisto | Park | הפארק | المتنزّه | Парк |
+| x033 | Library | Die Bibliothek | La Bibliothèque | La Biblioteca | La Biblioteca | 図書館 | Biblioteket | De Bibliotheek | Biblioteka | Biblioteket | Бібліотека | A Biblioteca | Kütüphane | Biblioteket | La Biblioteca | Kirjasto | Knjižnica | הספרייה | المكتبة | Библиотека |
+| x034 | Castle | Die Burg | Le Château | El Castillo | Il Castello | 城 | Slottet | Het Kasteel | Zamek | Slottet | Замок | O Castelo | Kale | Slottet | El Castell | Linna | Dvorac | הטירה | القلعة | Замок |
+| x035 | Bridge | Die Brücke | Le Pont | El Puente | Il Ponte | 橋 | Broen | De Brug | Most | Bron | Міст | A Ponte | Köprü | Broen | El Pont | Silta | Most | הגשר | الجسر | Мост |
+| x036 | Farm | Der Bauernhof | La Ferme | La Granja | La Fattoria | 農場 | Gården | De Boerderij | Farma | Gården | Ферма | A Fazenda | Çiftlik | Bondegården | La Granja | Maatila | Farma | החווה | المزرعة | Ферма |
+| x037 | Lighthouse | Der Leuchtturm | Le Phare | El Faro | Il Faro | 灯台 | Fyrtårnet | De Vuurtoren | Latarnia | Fyren | Маяк | O Farol | Deniz feneri | Fyrtårnet | El Far | Majakka | Svjetionik | המגדלור | المنارة | Маяк |
+| x038 | Museum | Das Museum | Le Musée | El Museo | Il Museo | 博物館 | Museet | Het Museum | Muzeum | Museet | Музей | O Museu | Müze | Museet | El Museu | Museo | Muzej | המוזיאון | المتحف | Музей |
+| x039 | Zoo | Der Zoo | Le Zoo | El Zoo | Lo Zoo | 動物園 | Dyrehagen | De Dierentuin | Zoo | Djurparken | Зоопарк | O Zoológico | Hayvanat bahçesi | Zoologisk Have | El Zoo | Eläintarha | Zoološki vrt | גן החיות | حديقة الحيوان | Зоопарк |
+| x040 | Bakery | Die Bäckerei | La Boulangerie | La Panadería | La Panetteria | パン屋 | Bakeriet | De Bakkerij | Piekarnia | Bageriet | Пекарня | A Padaria | Fırın | Bageriet | El Forn | Leipomo | Pekarnica | המאפייה | المخبز | Пекарня |
+| x041 | Pharmacy | Die Apotheke | La Pharmacie | La Farmacia | La Farmacia | 薬局 | Apoteket | De Apotheek | Apteka | Apoteket | Аптека | A Farmácia | Eczane | Apoteket | La Farmàcia | Apteekki | Ljekarna | בית המרקחת | الصيدلية | Аптека |
+| x042 | Fire Station | Die Feuerwehr | La Caserne de Pompiers | La Estación de Bomberos | I Pompieri | 消防署 | Brannstasjonen | De Brandweer | Straż Pożarna | Brandstationen | Пожежна | Os Bombeiros | İtfaiye | Brandstationen | Els Bombers | Paloasema | Vatrogasna postaja | תחנת הכבאות | مركز الإطفاء | Пожарная |
+| x043 | Post Office | Die Post | La Poste | La Oficina de Correos | La Posta | 郵便局 | Postkontoret | Het Postkantoor | Poczta | Postkontoret | Пошта | Os Correios | Postane | Posthuset | L'Oficina de Correus | Posti | Pošta | סניף הדואר | مكتب البريد | Почта |
+| x044 | Airport | Der Flughafen | L'Aéroport | El Aeropuerto | L'Aeroporto | 空港 | Flyplassen | De Luchthaven | Lotnisko | Flygplatsen | Аеропорт | O Aeroporto | Havalimanı | Lufthavnen | L'Aeroport | Lentokenttä | Zračna luka | שדה התעופה | المطار | Аэропорт |
+| x045 | Harbor | Der Hafen | Le Port | El Puerto | Il Porto | 港 | Havnen | De Haven | Port | Hamnen | Порт | O Porto | Liman | Havnen | El Port | Satama | Luka | הנמל | الميناء | Порт |
+| x046 | Garden | Der Garten | Le Jardin | El Jardín | Il Giardino | 庭 | Hagen | De Tuin | Ogród | Trädgården | Сад | O Jardim | Bahçe | Haven | El Jardí | Puutarha | Vrt | הגן | الحديقة | Сад |
+| x047 | Playground | Der Spielplatz | L'Aire de Jeux | El Parque Infantil | Il Parco Giochi | 遊び場 | Lekeplassen | De Speeltuin | Plac Zabaw | Lekplatsen | Майданчик | O Parquinho | Oyun alanı | Legepladsen | El Parc Infantil | Leikkipuisto | Igralište | גן המשחקים | ساحة اللعب | Площадка |
+| x048 | Train Station | Der Bahnhof | La Gare | La Estación de Tren | La Stazione | 駅 | Togstasjonen | Het Station | Dworzec | Tågstationen | Вокзал | A Estação de Trem | Tren istasyonu | Togstationen | L'Estació de Tren | Rautatieasema | Željeznički kolodvor | תחנת הרכבת | محطة القطار | Вокзал |
+| x049 | Garage | Die Garage | Le Garage | El Garaje | Il Garage | ガレージ | Garasjen | De Garage | Garaż | Garaget | Гараж | A Garagem | Garaj | Garagen | El Garatge | Autotalli | Garaža | החניה | المرآب | Гараж |
+| x050 | Cinema | Das Kino | Le Cinéma | El Cine | Il Cinema | 映画館 | Kinoen | De Bioscoop | Kino | Biografen | Кінотеатр | O Cinema | Sinema | Biografen | El Cinema | Elokuvateatteri | Kino | הקולנוע | السينما | Кинотеатр |
+| x051 | Swimming Pool | Das Schwimmbad | La Piscine | La Piscina | La Piscina | プール | Svømmebassenget | Het Zwembad | Basen | Simhallen | Басейн | A Piscina | Yüzme havuzu | Svømmehallen | La Piscina | Uima-allas | Bazen | הבריכה | المسبح | Бассейн |
+| x052 | Metro | Die U-Bahn | Le Métro | El Metro | La Metropolitana | 地下鉄 | T-banen | De Metro | Metro | Tunnelbanan | Метро | O Metrô | Metro | Metroen | El Metro | Metro | Metro | הרכבת התחתית | المترو | Метро |
+| x053 | Traffic Light | Die Ampel | Le Feu Tricolore | El Semáforo | Il Semaforo | 信号機 | Trafikklyset | Het Stoplicht | Sygnalizacja | Trafikljuset | Світлофор | O Semáforo | Trafik ışığı | Trafiklyset | El Semàfor | Liikennevalo | Semafor | הרמזור | إشارة المرور | Светофор |
+| x054 | Road | Die Straße | La Route | El Camino | La Strada | 道 | Veien | De Weg | Droga | Vägen | Дорога | A Estrada | Yol | Vejen | La Carretera | Tie | Cesta | הכביש | الطريق | Дорога |
+| x055 | Ticket Office | Die Kasse | La Caisse | La Taquilla | La Biglietteria | 切符売り場 | Billettkontoret | Het Loket | Kasa | Biljettkontoret | Каса | A Bilheteria | Bilet gişesi | Billetkontoret | La Taquilla | Lipunmyynti | Blagajna | הקופה | شبّاك التذاكر | Касса |
+| x056 | Warehouse | Das Lager | L'Entrepôt | El Almacén | Il Magazzino | 倉庫 | Lageret | Het Magazijn | Magazyn | Lagret | Склад | O Armazém | Depo | Lageret | El Magatzem | Varasto | Skladište | המחסן | المستودع | Склад |
+| x057 | North | Der Norden | Le Nord | El Norte | Il Nord | 北 | Nord | Het Noorden | Północ | Norr | Північ | O Norte | Kuzey | Nord | El Nord | Pohjoinen | Sjever | הצפון | الشمال | Север |
+| x058 | West | Der Westen | L'Ouest | El Oeste | L'Ovest | 西 | Vest | Het Westen | Zachód | Väster | Захід | O Oeste | Batı | Vest | L'Oest | Länsi | Zapad | המערב | الغرب | Запад |
+| x059 | South | Der Süden | Le Sud | El Sur | Il Sud | 南 | Sør | Het Zuiden | Południe | Söder | Південь | O Sul | Güney | Syd | El Sud | Etelä | Jug | הדרום | الجنوب | Юг |
+| x060 | East | Der Osten | L'Est | El Este | L'Est | 東 | Øst | Het Oosten | Wschód | Öster | Схід | O Leste | Doğu | Øst | L'Est | Itä | Istok | המזרח | الشرق | Восток |
+| x061 | South Pole | Der Südpol | Le Pôle Sud | El Polo Sur | Il Polo Sud | 南極 | Sydpolen | De Zuidpool | Biegun Południowy | Sydpolen | Південний полюс | O Polo Sul | Güney Kutbu | Sydpolen | El Pol Sud | Etelänapa | Južni pol | הקוטב הדרומי | القطب الجنوبي | Южный полюс |
+| x062 | North Pole | Der Nordpol | Le Pôle Nord | El Polo Norte | Il Polo Nord | 北極 | Nordpolen | De Noordpool | Biegun Północny | Nordpolen | Північний полюс | O Polo Norte | Kuzey Kutbu | Nordpolen | El Pol Nord | Pohjoisnapa | Sjeverni pol | הקוטב הצפוני | القطب الشمالي | Северный полюс |
+| x063 | Sun | Die Sonne | Le Soleil | El Sol | Il Sole | 太陽 | Solen | De Zon | Słońce | Solen | Сонце | O Sol | Güneş | Solen | El Sol | Aurinko | Sunce | השמש | الشمس | Солнце |
+| x064 | Moon | Der Mond | La Lune | La Luna | La Luna | 月 | Månen | De Maan | Księżyc | Månen | Місяць | A Lua | Ay | Månen | La Lluna | Kuu | Mjesec | הירח | القمر | Луна |
+| x065 | Earth | Die Erde | La Terre | La Tierra | La Terra | 地球 | Jorden | De Aarde | Ziemia | Jorden | Земля | A Terra | Dünya | Jorden | La Terra | Maa | Zemlja | כדור הארץ | الأرض | Земля |
+| x066 | Saturn | Saturn | Saturne | Saturno | Saturno | 土星 | Saturn | Saturnus | Saturn | Saturnus | Сатурн | Saturno | Satürn | Saturn | Saturn | Saturnus | Saturn | שבתאי | زُحَل | Сатурн |
+| x067 | Jupiter | Jupiter | Jupiter | Júpiter | Giove | 木星 | Jupiter | Jupiter | Jowisz | Jupiter | Юпітер | Júpiter | Jüpiter | Jupiter | Júpiter | Jupiter | Jupiter | צדק | المشتري | Юпитер |
+| x068 | Mars | Mars | Mars | Marte | Marte | 火星 | Mars | Mars | Mars | Mars | Марс | Marte | Mars | Mars | Mart | Mars | Mars | מאדים | المرّيخ | Марс |
+| x069 | Ocean | Der Ozean | L'Océan | El Océano | L'Oceano | 海 | Havet | De Oceaan | Ocean | Oceanen | Океан | O Oceano | Okyanus | Havet | L'Oceà | Valtameri | Ocean | האוקיינוס | المحيط | Океан |
+| x070 | Island | Die Insel | L'Île | La Isla | L'Isola | 島 | Øya | Het Eiland | Wyspa | Ön | Острів | A Ilha | Ada | Øen | L'Illa | Saari | Otok | האי | الجزيرة | Остров |
+| x071 | Volcano | Der Vulkan | Le Volcan | El Volcán | Il Vulcano | 火山 | Vulkanen | De Vulkaan | Wulkan | Vulkanen | Вулкан | O Vulcão | Yanardağ | Vulkanen | El Volcà | Tulivuori | Vulkan | הר הגעש | البركان | Вулкан |
+| x072 | Desert | Die Wüste | Le Désert | El Desierto | Il Deserto | 砂漠 | Ørkenen | De Woestijn | Pustynia | Öknen | Пустеля | O Deserto | Çöl | Ørkenen | El Desert | Aavikko | Pustinja | המדבר | الصحراء | Пустыня |
+| x073 | Waterfall | Der Wasserfall | La Cascade | La Cascada | La Cascata | 滝 | Fossen | De Waterval | Wodospad | Vattenfallet | Водоспад | A Cachoeira | Şelale | Vandfaldet | La Cascada | Vesiputous | Slap | המפל | الشلال | Водопад |
+| x074 | Cave | Die Höhle | La Grotte | La Cueva | La Grotta | 洞窟 | Hulen | De Grot | Jaskinia | Grottan | Печера | A Caverna | Mağara | Hulen | La Cova | Luola | Špilja | המערה | الكهف | Пещера |
+| x075 | Tower | Der Turm | La Tour | La Torre | La Torre | 塔 | Tårnet | De Toren | Wieża | Tornet | Вежа | A Torre | Kule | Tårnet | La Torre | Torni | Toranj | המגדל | البرج | Башня |
+| x076 | Church | Die Kirche | L'Église | La Iglesia | La Chiesa | 教会 | Kirken | De Kerk | Kościół | Kyrkan | Церква | A Igreja | Kilise | Kirken | L'Església | Kirkko | Crkva | הכנסייה | الكنيسة | Церковь |
+| x077 | Market | Der Markt | Le Marché | El Mercado | Il Mercato | 市場 | Markedet | De Markt | Rynek | Marknaden | Ринок | O Mercado | Pazar | Markedet | El Mercat | Tori | Tržnica | השוק | السوق | Рынок |
+| x078 | Fountain | Der Brunnen | La Fontaine | La Fuente | La Fontana | 噴水 | Fontenen | De Fontein | Fontanna | Fontänen | Фонтан | A Fonte | Çeşme | Springvandet | La Font | Suihkulähde | Fontana | המזרקה | النافورة | Фонтан |
+| x079 | Tunnel | Der Tunnel | Le Tunnel | El Túnel | Il Tunnel | トンネル | Tunnelen | De Tunnel | Tunel | Tunneln | Тунель | O Túnel | Tünel | Tunnelen | El Túnel | Tunneli | Tunel | המנהרה | النفق | Тоннель |
+| x080 | Pyramid | Die Pyramide | La Pyramide | La Pirámide | La Piramide | ピラミッド | Pyramiden | De Piramide | Piramida | Pyramiden | Піраміда | A Pirâmide | Piramit | Pyramiden | La Piràmide | Pyramidi | Piramida | הפירמידה | الهرم | Пирамида |
+| x081 | Treasure | Der Schatz | Le Trésor | El Tesoro | Il Tesoro | 宝物 | Skatten | De Schat | Skarb | Skatten | Скарб | O Tesouro | Hazine | Skatten | El Tresor | Aarre | Blago | האוצר | الكنز | Сокровище |
+| x082 | Star | Der Stern | L'Étoile | La Estrella | La Stella | 星 | Stjernen | De Ster | Gwiazda | Stjärnan | Зірка | A Estrela | Yıldız | Stjernen | L'Estrella | Tähti | Zvijezda | הכוכב | النجمة | Звезда |
+| x083 | Rainbow | Der Regenbogen | L'Arc-en-ciel | El Arcoíris | L'Arcobaleno | 虹 | Regnbuen | De Regenboog | Tęcza | Regnbågen | Веселка | O Arco-íris | Gökkuşağı | Regnbuen | L'Arc de Sant Martí | Sateenkaari | Duga | הקשת בענן | قوس قزح | Радуга |
+| x084 | Glacier | Der Gletscher | Le Glacier | El Glaciar | Il Ghiacciaio | 氷河 | Isbreen | De Gletsjer | Lodowiec | Glaciären | Льодовик | A Geleira | Buzul | Gletsjeren | La Glacera | Jäätikkö | Ledenjak | הקרחון | النهر الجليدي | Ледник |
+| x085 | Jungle | Der Dschungel | La Jungle | La Selva | La Giungla | ジャングル | Jungelen | De Jungle | Dżungla | Djungeln | Джунглі | A Selva | Cengel | Junglen | La Selva | Viidakko | Džungla | הג'ונגל | الأدغال | Джунгли |
+| x086 | Beach | Der Strand | La Plage | La Playa | La Spiaggia | ビーチ | Stranden | Het Strand | Plaża | Stranden | Пляж | A Praia | Plaj | Stranden | La Platja | Ranta | Plaža | החוף | الشاطئ | Пляж |
+| x087 | Palace | Der Palast | Le Palais | El Palacio | Il Palazzo | 宮殿 | Palasset | Het Paleis | Pałac | Palatset | Палац | O Palácio | Saray | Paladset | El Palau | Palatsi | Palača | הארמון | القصر | Дворец |
+| x088 | Windmill | Die Windmühle | Le Moulin | El Molino | Il Mulino | 風車 | Vindmøllen | De Molen | Wiatrak | Väderkvarnen | Млин | O Moinho | Yel değirmeni | Vindmøllen | El Molí de Vent | Tuulimylly | Vjetrenjača | טחנת הרוח | طاحونة الهواء | Мельница |
+| x089 | Rocket | Die Rakete | La Fusée | El Cohete | Il Razzo | ロケット | Raketten | De Raket | Rakieta | Raketen | Ракета | O Foguete | Roket | Raketten | El Coet | Raketti | Raketa | הטיל | الصاروخ | Ракета |
+| x090 | Good | Gut | Bien | Bien | Bene | いい | Bra | Goed | Dobrze | Bra | Добре | Bom | İyi | Godt | Bé | Hyvä | Dobro | טוב | جيّد | Хорошо |
+| x091 | Bad | Schlecht | Mal | Mal | Male | 悪い | Dårlig | Slecht | Źle | Dåligt | Погано | Ruim | Kötü | Dårligt | Malament | Huono | Loše | רע | سيّئ | Плохо |
+| x092 | Yes | Ja | Oui | Sí | Sì | はい | Ja | Ja | Tak | Ja | Так | Sim | Evet | Ja | Sí | Kyllä | Da | כן | نعم | Да |
+| x093 | No | Nein | Non | No | No | いいえ | Nei | Nee | Nie | Nej | Ні | Não | Hayır | Nej | No | Ei | Ne | לא | لا | Нет |
+| x094 | Warm | Warm | Chaud | Calor | Caldo | 暖かい | Varmt | Warm | Ciepło | Varmt | Тепло | Quente | Sıcak | Varmt | Calor | Lämmin | Toplo | חם | دافئ | Тепло |
+| x095 | Cold | Kalt | Froid | Frío | Freddo | 寒い | Kaldt | Koud | Zimno | Kallt | Холодно | Frio | Soğuk | Koldt | Fred | Kylmä | Hladno | קר | بارد | Холодно |
+| x096 | Wet | Nass | Mouillé | Mojado | Bagnato | ぬれている | Vått | Nat | Mokro | Blött | Мокро | Molhado | Islak | Vådt | Mullat | Märkä | Mokro | רטוב | مبلّل | Мокро |
+| x097 | Dry | Trocken | Sec | Seco | Asciutto | かわいている | Tørt | Droog | Sucho | Torrt | Сухо | Seco | Kuru | Tørt | Sec | Kuiva | Suho | יבש | جافّ | Сухо |
+| x098 | Big | Groß | Grand | Grande | Grande | 大きい | Stor | Groot | Duży | Stor | Великий | Grande | Büyük | Stor | Gran | Iso | Velik | גדול | كبير | Большой |
+| x099 | Small | Klein | Petit | Pequeño | Piccolo | 小さい | Liten | Klein | Mały | Liten | Маленький | Pequeno | Küçük | Lille | Petit | Pieni | Malen | קטן | صغير | Маленький |
+| x100 | High | Hoch | Haut | Alto | Alto | 高い | Høyt | Hoog | Wysoko | Högt | Високо | Alto | Yüksek | Højt | Alt | Korkealla | Visoko | גבוה | مرتفع | Высоко |
+| x101 | Low | Niedrig | Bas | Bajo | Basso | 低い | Lavt | Laag | Nisko | Lågt | Низько | Baixo | Alçak | Lavt | Baix | Matalalla | Nisko | נמוך | منخفض | Низко |
+| x102 | Long | Lang | Long | Largo | Lungo | 長い | Lang | Lang | Długi | Lång | Довгий | Comprido | Uzun | Lang | Llarg | Pitkä | Dugačak | ארוך | طويل | Длинный |
+| x103 | Short | Kurz | Court | Corto | Corto | 短い | Kort | Kort | Krótki | Kort | Короткий | Curto | Kısa | Kort | Curt | Lyhyt | Kratak | קצר | قصير | Короткий |
+| x104 | Fast | Schnell | Vite | Rápido | Veloce | はやい | Fort | Snel | Szybko | Snabbt | Швидко | Rápido | Hızlı | Hurtigt | Ràpid | Nopeasti | Brzo | מהר | بسرعة | Быстро |
+| x105 | Slow | Langsam | Lentement | Despacio | Lento | おそい | Sakte | Langzaam | Powoli | Långsamt | Повільно | Devagar | Yavaş | Langsomt | Lent | Hitaasti | Sporo | לאט | ببطء | Медленно |
+| x106 | Loud | Laut | Fort | Fuerte | Forte | 大きな音 | Høylytt | Luid | Głośno | Högljutt | Голосно | Forte | Sesli | Højlydt | Fort | Kovaa | Glasno | בקול רם | بصوتٍ عالٍ | Громко |
+| x107 | Quiet | Leise | Doucement | Bajito | Piano | 小さな音 | Stille | Zachtjes | Cicho | Tyst | Тихо | Baixinho | Sessiz | Stille | Fluix | Hiljaa | Tiho | בשקט | بصوتٍ منخفض | Тихо |
+| x108 | Near | Nah | Près | Cerca | Vicino | 近い | Nær | Dichtbij | Blisko | Nära | Близько | Perto | Yakın | Tæt på | A prop | Lähellä | Blizu | קרוב | قريب | Близко |
+| x109 | Far | Weit weg | Loin | Lejos | Lontano | 遠い | Langt unna | Ver weg | Daleko | Långt borta | Далеко | Longe | Uzak | Langt væk | Lluny | Kaukana | Daleko | רחוק | بعيد | Далеко |
+| x110 | Up | Oben | En haut | Arriba | In alto | 上の方 | Oppe | Boven | Na górze | Uppe | Вгорі | Em cima | Yukarıda | Oppe | A dalt | Ylhäällä | Gore | למעלה | في الأعلى | Вверху |
+| x111 | Down | Unten | En bas | Abajo | In basso | 下の方 | Nede | Beneden | Na dole | Nere | Внизу | Embaixo | Aşağıda | Nede | A baix | Alhaalla | Dolje | למטה | في الأسفل | Внизу |
+| x112 | Bright | Hell | Clair | Claro | Chiaro | 明るい | Lyst | Helder | Jasno | Ljust | Світло | Claro | Aydınlık | Lyst | Clar | Valoisaa | Svijetlo | מואר | مضيء | Светло |
+| x113 | Dark | Dunkel | Sombre | Oscuro | Buio | 暗い | Mørkt | Donker | Ciemno | Mörkt | Темно | Escuro | Karanlık | Mørkt | Fosc | Pimeää | Mračno | חשוך | مظلم | Темно |
+| x114 | Day | Tag | Jour | Día | Giorno | 昼 | Dag | Dag | Dzień | Dag | День | Dia | Gündüz | Dag | Dia | Päivä | Dan | יום | نهار | День |
+| x115 | Night | Nacht | Nuit | Noche | Notte | 夜 | Natt | Nacht | Noc | Natt | Ніч | Noite | Gece | Nat | Nit | Yö | Noć | לילה | ليل | Ночь |
+| x116 | Open | Offen | Ouvert | Abierto | Aperto | あいている | Åpent | Open | Otwarte | Öppet | Відкрито | Aberto | Açık | Åbent | Obert | Auki | Otvoreno | פתוח | مفتوح | Открыто |
+| x117 | Closed | Geschlossen | Fermé | Cerrado | Chiuso | しまっている | Lukket | Dicht | Zamknięte | Stängt | Закрито | Fechado | Kapalı | Lukket | Tancat | Kiinni | Zatvoreno | סגור | مغلق | Закрыто |
+| x118 | Full | Voll | Plein | Lleno | Pieno | いっぱい | Full | Vol | Pełny | Full | Повний | Cheio | Dolu | Fuld | Ple | Täysi | Pun | מלא | ممتلئ | Полный |
+| x119 | Empty | Leer | Vide | Vacío | Vuoto | からっぽ | Tom | Leeg | Pusty | Tom | Порожній | Vazio | Boş | Tom | Buit | Tyhjä | Prazan | ריק | فارغ | Пустой |
+| x120 | Heavy | Schwer | Lourd | Pesado | Pesante | 重い | Tung | Zwaar | Ciężki | Tung | Важкий | Pesado | Ağır | Tung | Pesant | Painava | Težak | כבד | ثقيل | Тяжёлый |
+| x121 | Light | Leicht | Léger | Ligero | Leggero | 軽い | Lett | Licht | Lekki | Lätt | Легкий | Leve | Hafif | Let | Lleuger | Kevyt | Lagan | קל | خفيف | Лёгкий |
+| x122 | Hard | Hart | Dur | Duro | Duro | かたい | Hard | Hard | Twardy | Hård | Твердий | Duro | Sert | Hård | Dur | Kova | Tvrd | קשה | صُلْب | Твёрдый |
+| x123 | Soft | Weich | Mou | Blando | Morbido | やわらかい | Myk | Zacht | Miękki | Mjuk | М'який | Macio | Yumuşak | Blød | Tou | Pehmeä | Mekan | רך | طريّ | Мягкий |
+| x124 | Start | Start | Départ | Salida | Partenza | スタート | Start | Start | Start | Start | Старт | Largada | Başlangıç | Start | Sortida | Lähtö | Start | התחלה | بداية | Старт |
+| x125 | Finish | Ziel | Arrivée | Meta | Arrivo | ゴール | Mål | Finish | Meta | Mål | Фініш | Chegada | Bitiş | Mål | Arribada | Maali | Cilj | סיום | نهاية | Финиш |
+| x126 | Happy | Fröhlich | Joyeux | Alegre | Allegro | うれしい | Glad | Vrolijk | Wesoły | Glad | Веселий | Alegre | Neşeli | Glad | Alegre | Iloinen | Veseo | שמח | سعيد | Весёлый |
+| x127 | Sad | Traurig | Triste | Triste | Triste | 悲しい | Trist | Verdrietig | Smutny | Ledsen | Сумний | Triste | Üzgün | Trist | Trist | Surullinen | Tužan | עצוב | حزين | Грустный |
+| x128 | Correct | Richtig | Juste | Correcto | Giusto | 正解 | Riktig | Juist | Poprawnie | Rätt | Правильно | Certo | Doğru | Rigtigt | Correcte | Oikein | Točno | נכון | صحيح | Верно |
+| x129 | Wrong | Falsch | Faux | Incorrecto | Sbagliato | 不正解 | Feil | Fout | Błędnie | Fel | Неправильно | Errado | Yanlış | Forkert | Incorrecte | Väärin | Netočno | לא נכון | غير صحيح | Неверно |
+| x130 | More | Mehr | Plus | Más | Di più | 多い | Mer | Meer | Więcej | Mer | Більше | Mais | Daha fazla | Mere | Més | Enemmän | Više | יותר | أكثر | Больше |
+| x131 | Less | Weniger | Moins | Menos | Di meno | 少ない | Mindre | Minder | Mniej | Mindre | Менше | Menos | Daha az | Mindre | Menys | Vähemmän | Manje | פחות | أقلّ | Меньше |
+| x132 | Equals | Gleich | Égale | Igual a | Uguale | イコール | Er lik | Is gelijk aan | Równa się | Är lika med | Дорівнює | Igual a | Eşittir | Er lig med | Igual a | On yhtä kuin | Jednako | שווה | يساوي | Равно |
+| x133 | Is not equal to | Ungleich | N'égale pas | No es igual a | Diverso da | ノットイコール | Er ikke lik | Is niet gelijk aan | Nie równa się | Är inte lika med | Не дорівнює | Diferente de | Eşit değildir | Er ikke lig med | No és igual a | Ei ole yhtä kuin | Nije jednako | לא שווה | لا يساوي | Не равно |
+| x134 | Try again | Versuch es noch mal | Essaie encore | Inténtalo de nuevo | Riprova | もう一回やってみて | Prøv igjen | Probeer het nog eens | Spróbuj jeszcze raz | Försök igen | Спробуй ще раз | Tente de novo | Tekrar dene | Prøv igen | Torna-ho a provar | Yritä uudelleen | Pokušaj ponovno | תנסה שוב | حاول مرّة أخرى | Попробуй ещё раз |
+| x135 | Red | Rot | Rouge | Rojo | Rosso | 赤 | Rød | Rood | Czerwony | Röd | Червоний | Vermelho | Kırmızı | Rød | Vermell | Punainen | Crven | אדום | أحمر | Красный |
+| x136 | Orange | Orange | Orange | Naranja | Arancione | オレンジ | Oransje | Oranje | Pomarańczowy | Orange | Помаранчевий | Laranja | Turuncu | Orange | Taronja | Oranssi | Narančast | כתום | برتقالي | Оранжевый |
+| x137 | Yellow | Gelb | Jaune | Amarillo | Giallo | 黄色 | Gul | Geel | Żółty | Gul | Жовтий | Amarelo | Sarı | Gul | Groc | Keltainen | Žut | צהוב | أصفر | Жёлтый |
+| x138 | Green | Grün | Vert | Verde | Verde | 緑 | Grønn | Groen | Zielony | Grön | Зелений | Verde | Yeşil | Grøn | Verd | Vihreä | Zelen | ירוק | أخضر | Зелёный |
+| x139 | Light blue | Hellblau | Bleu ciel | Celeste | Azzurro | 水色 | Lyseblå | Lichtblauw | Błękitny | Ljusblå | Блакитний | Azul-claro | Açık mavi | Lyseblå | Blau cel | Vaaleansininen | Svijetloplav | תכלת | سماوي | Голубой |
+| x140 | Blue | Blau | Bleu | Azul | Blu | 青 | Blå | Blauw | Niebieski | Blå | Синій | Azul | Mavi | Blå | Blau | Sininen | Plav | כחול | أزرق | Синий |
+| x141 | Violet | Lila | Violet | Violeta | Viola | 紫 | Lilla | Paars | Fioletowy | Lila | Фіолетовий | Roxo | Mor | Lilla | Violeta | Violetti | Ljubičast | סגול | بنفسجي | Фиолетовый |
+| x142 | White | Weiß | Blanc | Blanco | Bianco | 白 | Hvit | Wit | Biały | Vit | Білий | Branco | Beyaz | Hvid | Blanc | Valkoinen | Bijel | לבן | أبيض | Белый |
+| x143 | Black | Schwarz | Noir | Negro | Nero | 黒 | Svart | Zwart | Czarny | Svart | Чорний | Preto | Siyah | Sort | Negre | Musta | Crn | שחור | أسود | Чёрный |
+| x144 | Circle | Kreis | Cercle | Círculo | Cerchio | まる | Sirkel | Cirkel | Koło | Cirkel | Коло | Círculo | Daire | Cirkel | Cercle | Ympyrä | Krug | עיגול | دائرة | Круг |
+| x145 | Square | Quadrat | Carré | Cuadrado | Quadrato | 四角 | Kvadrat | Vierkant | Kwadrat | Kvadrat | Квадрат | Quadrado | Kare | Kvadrat | Quadrat | Neliö | Kvadrat | ריבוע | مربّع | Квадрат |
+| x146 | Triangle | Dreieck | Triangle | Triángulo | Triangolo | 三角 | Trekant | Driehoek | Trójkąt | Triangel | Трикутник | Triângulo | Üçgen | Trekant | Triangle | Kolmio | Trokut | משולש | مثلّث | Треугольник |
 
 ---
 
 ## 🎮 Comandos de movimiento
 
-| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HE | AR | RU |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cfor | Forward | Vorwärts | En avant | Adelante | Avanti | 前進 | Fremover | Vooruit | Naprzód | Framåt | Вперед | Para frente | İleri | Fremad | Endavant | Eteenpäin | קדימה | إلى الأمام | Вперёд |
-| clef | Left | Links | À gauche | Izquierda | Sinistra | 左 | Venstre | Links | Lewo | Vänster | Вліво | Esquerda | Sol | Venstre | Esquerra | Vasemmalle | שמאלה | إلى اليسار | Влево |
-| crig | Right | Rechts | À droite | Derecha | Destra | 右 | Høyre | Rechts | Prawo | Höger | Вправо | Direita | Sağ | Højre | Dreta | Oikealle | ימינה | إلى اليمين | Вправо |
-| cbac | Backward | Rückwärts | En arrière | Atrás | Indietro | 後退 | Bakover | Achteruit | Wstecz | Bakåt | Назад | Para trás | Geri | Tilbage | Enrere | Taaksepäin | אחורה | إلى الخلف | Назад |
-| cfun | Function | Funktion | Fonction | Función | Funzione | 関数 | Funksjon | Functie | Funkcja | Funktion | Функція | Função | Fonksiyon | Funktion | Funció | Toiminto | פונקציה | وظيفة | Функция |
-| crnd | Random Movement | Zufällige Bewegung | Mouvement aléatoire | Movimiento aleatorio | Movimento casuale | ランダム移動 | Tilfeldig bevegelse | Willekeurige beweging | Losowy ruch | Slumpmässig rörelse | Випадковий рух | Movimento aleatório | Rastgele hareket | Tilfældig bevægelse | Moviment aleatori | Satunnainen liike | תנועה אקראית | حركة عشوائية | Случайное движение |
-| cwat | Pause | Pause | Pause | Pausa | Pausa | 一時停止 | Pause | Pauze | Pauza | Paus | Пауза | Pausa | Mola | Pause | Pausa | Tauko | השהיה | إيقاف مؤقّت | Пауза |
-| ccal | Calibration | Kalibrierung | Calibration | Calibración | Calibrazione | キャリブレーション | Kalibrering | Kalibratie | Kalibracja | Kalibrering | Калібрування | Calibração | Kalibrasyon | Kalibrering | Calibratge | Kalibrointi | כיול | معايرة | Калибровка |
-| clen | Step | Schritt | Pas | Paso | Passo | ステップ | Steg | Stap | Krok | Steg | Крок | Passo | Adım | Skridt | Pas | Askel | צעד | خطوة | Шаг |
-| clvl | Volume | Lautstärke | Volume | Volumen | Volume | 音量 | Volum | Volume | Głośność | Volym | Гучність | Volume | Ses | Lydstyrke | Volum | Äänenvoimakkuus | עוצמה | مستوى الصوت | Громкость |
+| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HR | HE | AR | RU |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| cfor | Forward | Vorwärts | En avant | Adelante | Avanti | 前進 | Fremover | Vooruit | Naprzód | Framåt | Вперед | Para frente | İleri | Fremad | Endavant | Eteenpäin | Naprijed | קדימה | إلى الأمام | Вперёд |
+| clef | Left | Links | À gauche | Izquierda | Sinistra | 左 | Venstre | Links | Lewo | Vänster | Вліво | Esquerda | Sol | Venstre | Esquerra | Vasemmalle | Lijevo | שמאלה | إلى اليسار | Влево |
+| crig | Right | Rechts | À droite | Derecha | Destra | 右 | Høyre | Rechts | Prawo | Höger | Вправо | Direita | Sağ | Højre | Dreta | Oikealle | Desno | ימינה | إلى اليمين | Вправо |
+| cbac | Backward | Rückwärts | En arrière | Atrás | Indietro | 後退 | Bakover | Achteruit | Wstecz | Bakåt | Назад | Para trás | Geri | Tilbage | Enrere | Taaksepäin | Natrag | אחורה | إلى الخلف | Назад |
+| cfun | Function | Funktion | Fonction | Función | Funzione | 関数 | Funksjon | Functie | Funkcja | Funktion | Функція | Função | Fonksiyon | Funktion | Funció | Toiminto | Funkcija | פונקציה | وظيفة | Функция |
+| crnd | Random Movement | Zufällige Bewegung | Mouvement aléatoire | Movimiento aleatorio | Movimento casuale | ランダム移動 | Tilfeldig bevegelse | Willekeurige beweging | Losowy ruch | Slumpmässig rörelse | Випадковий рух | Movimento aleatório | Rastgele hareket | Tilfældig bevægelse | Moviment aleatori | Satunnainen liike | Nasumično kretanje | תנועה אקראית | حركة عشوائية | Случайное движение |
+| cwat | Pause | Pause | Pause | Pausa | Pausa | 一時停止 | Pause | Pauze | Pauza | Paus | Пауза | Pausa | Mola | Pause | Pausa | Tauko | Pauza | השהיה | إيقاف مؤقّت | Пауза |
+| ccal | Calibration | Kalibrierung | Calibration | Calibración | Calibrazione | キャリブレーション | Kalibrering | Kalibratie | Kalibracja | Kalibrering | Калібрування | Calibração | Kalibrasyon | Kalibrering | Calibratge | Kalibrointi | Kalibracija | כיול | معايرة | Калибровка |
+| clen | Step | Schritt | Pas | Paso | Passo | ステップ | Steg | Stap | Krok | Steg | Крок | Passo | Adım | Skridt | Pas | Askel | Korak | צעד | خطوة | Шаг |
+| clvl | Volume | Lautstärke | Volume | Volumen | Volume | 音量 | Volum | Volume | Głośność | Volym | Гучність | Volume | Ses | Lydstyrke | Volum | Äänenvoimakkuus | Glasnoća | עוצמה | مستوى الصوت | Громкость |
 
 ---
 
 ## 🧮 Operaciones matemáticas
 
-| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HE | AR | RU |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| sqrt | Square Root | Quadratwurzel | Racine carrée | Raíz cuadrada | Radice quadrata | 平方根 | Kvadratrot | Vierkantswortel | Pierwiastek kwadratowy | Kvadratrot | Квадратний корінь | Raiz quadrada | Karekök | Kvadratrod | Arrel quadrada | Neliöjuuri | שורש ריבועי של | الجذر التربيعي | Квадратный корень |
-| fact | Factorial | Fakultät | Factorielle | Factorial | Fattoriale | 階乗 | Fakultet | Faculteit | Silnia | Fakultet | Факторіал | Fatorial | Faktöriyel | Fakultet | Factorial | Kertoma | עצרת של | المضروب | Факториал |
-| xplu | Plus | Plus | Plus | Más | Più | プラス | Pluss | Plus | Plus | Plus | Плюс | Mais | Artı | Plus | Més | Plus | ועוד | زائد | Плюс |
-| xmin | Minus | Minus | Moins | Menos | Meno | マイナス | Minus | Min | Minus | Minus | Мінус | Menos | Eksi | Minus | Menys | Miinus | פחות | ناقص | Минус |
-| xmul | Multiply by | Multiplizieren mit | Multiplier par | Multiplicar por | Moltiplicare per | かける | Gange med | Vermenigvuldigen met | Mnożyć przez | Multiplicera med | Помножити | Vezes | Çarpı | Gange med | Per | Kertaa | כפול | ضرب في | Умножить |
-| xdiv | Divide by | Dividieren durch | Diviser par | Dividir entre | Dividere per | わる | Dele på | Delen door | Podzielić przez | Dividera med | Поділити | Dividido por | Bölü | Divideret med | Dividit per | Jaettuna | חלקי | مقسوم على | Разделить |
-| xpow | To the power of | Hoch | À la puissance | A la potencia | Alla potenza | の乗 | I potens | Tot de macht | Do potęgi | I potens | У степені | Elevado a | Üssü | I potens | Elevat a | Potenssiin | בחזקת | أُس | В степени |
-| xrep | Repeat | Wiederholung | Répétition | Repetición | Ripetizione | 繰り返し | Gjentakelse | Herhaling | Powtórzenie | Upprepning | Повтор | Repetir | Tekrar | Gentagelse | Repetir | Toista | חזרה | كرّر | Повтор |
-| xrnd | Random | Zufällig | Aléatoire | Aleatorio | Casuale | ランダム | Tilfeldig | Willekeurig | Losowo | Slumpmässigt | Випадково | Aleatório | Rastgele | Tilfældig | Aleatori | Satunnainen | אקראי | عشوائي | Случайно |
+| Code | EN | DE | FR | ES | IT | JA | NB | NL | PL | SV | UK | PT-BR | TR | DA | CA | FI | HR | HE | AR | RU |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| sqrt | Square Root | Quadratwurzel | Racine carrée | Raíz cuadrada | Radice quadrata | 平方根 | Kvadratrot | Vierkantswortel | Pierwiastek kwadratowy | Kvadratrot | Квадратний корінь | Raiz quadrada | Karekök | Kvadratrod | Arrel quadrada | Neliöjuuri | Kvadratni korijen | שורש ריבועי של | الجذر التربيعي | Квадратный корень |
+| fact | Factorial | Fakultät | Factorielle | Factorial | Fattoriale | 階乗 | Fakultet | Faculteit | Silnia | Fakultet | Факторіал | Fatorial | Faktöriyel | Fakultet | Factorial | Kertoma | Faktorijel | עצרת של | المضروب | Факториал |
+| xplu | Plus | Plus | Plus | Más | Più | プラス | Pluss | Plus | Plus | Plus | Плюс | Mais | Artı | Plus | Més | Plus | Plus | ועוד | زائد | Плюс |
+| xmin | Minus | Minus | Moins | Menos | Meno | マイナス | Minus | Min | Minus | Minus | Мінус | Menos | Eksi | Minus | Menys | Miinus | Minus | פחות | ناقص | Минус |
+| xmul | Multiply by | Multiplizieren mit | Multiplier par | Multiplicar por | Moltiplicare per | かける | Gange med | Vermenigvuldigen met | Mnożyć przez | Multiplicera med | Помножити | Vezes | Çarpı | Gange med | Per | Kertaa | Puta | כפול | ضرب في | Умножить |
+| xdiv | Divide by | Dividieren durch | Diviser par | Dividir entre | Dividere per | わる | Dele på | Delen door | Podzielić przez | Dividera med | Поділити | Dividido por | Bölü | Divideret med | Dividit per | Jaettuna | Podijeljeno sa | חלקי | مقسوم على | Разделить |
+| xpow | To the power of | Hoch | À la puissance | A la potencia | Alla potenza | の乗 | I potens | Tot de macht | Do potęgi | I potens | У степені | Elevado a | Üssü | I potens | Elevat a | Potenssiin | Na potenciju | בחזקת | أُس | В степени |
+| xrep | Repeat | Wiederholung | Répétition | Repetición | Ripetizione | 繰り返し | Gjentakelse | Herhaling | Powtórzenie | Upprepning | Повтор | Repetir | Tekrar | Gentagelse | Repetir | Toista | Ponovi | חזרה | كرّر | Повтор |
+| xrnd | Random | Zufällig | Aléatoire | Aleatorio | Casuale | ランダム | Tilfeldig | Willekeurig | Losowo | Slumpmässigt | Випадково | Aleatório | Rastgele | Tilfældig | Aleatori | Satunnainen | Nasumično | אקראי | عشوائي | Случайно |
 
 ---
 
@@ -160,34 +231,34 @@ The full list of physical NFC chip codes and kit contents is in [Fichas de coman
 
 ### Alfabeto latino A–Z
 
-| Code | EN | DE | FR | ES | IT | NB | NL | PL | SV | PT-BR | TR | DA | CA | FI |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| x700 | Ay | Ah | A | A | A | A | Aa | A | A | Á | A | A | a | aa |
-| x701 | Bee | Beh | Bé | Be | Bi | Be | Bee | Be | Be | Bê | Be | Be | be | bee |
-| x702 | Sea | Tseh | Cé | Ce | Ci | Se | See | Ce | Se | Cê | Ce | Se | ce | see |
-| x703 | Dee | Deh | Dé | De | Di | De | Dee | De | De | Dê | De | De | de | dee |
-| x704 | Ee | Eh | E | E | E | E | Ee | E | E | É | E | E | e | ee |
-| x705 | Eff | Eff | Effe | Efe | Effe | Ef | Ef | Ef | Ef | Efe | Fe | Ef | efa | äffä |
-| x706 | Gee | Geh | Gé | Ge | Gi | Ge | Gee | Gie | Ge | Gê | Ge | Ge | ge | gee |
-| x707 | Aitch | Hah | Ache | Hache | Acca | Hå | Haa | Ha | Hå | Agá | He | Hå | hac | hoo |
-| x708 | Eye | Ih | I | I | I | I | Ie | I | I | I | I | I | i | ii |
-| x709 | Jay | Jot | Ji | Jota | I lunga | Je | Jee | Jot | Ji | Jota | Je | Jod | jota | jii |
-| x710 | Kay | Kah | Ka | Ka | Cappa | Kå | Ka | Ka | Kå | Cá | Ke | Kå | ka | koo |
-| x711 | El | Ell | Elle | Ele | Elle | El | El | El | El | Ele | Le | El | ela | ällä |
-| x712 | Em | Em | Emme | Eme | Emme | Em | Em | Em | Em | Eme | Me | Em | ema | ämmä |
-| x713 | En | En | Enne | Ene | Enne | En | En | En | En | Ene | Ne | En | ena | ännä |
-| x714 | Oh | Oh | O | O | O | O | Oo | O | O | Ó | O | O | o | oo |
-| x715 | Pee | Peh | Pé | Pe | Pi | Pe | Pee | Pe | Pe | Pê | Pe | Pe | pe | pee |
-| x716 | Cue | Kuh | Ku | Cu | Cu | Ku | Ku | Ku | Ku | Quê |  | Ku | cu | kuu |
-| x717 | Ar | Err | Erre | Erre | Erre | Er | Er | Er | Er | Erre | Re | Er | erra | ärrä |
-| x718 | Ess | Ess | Esse | Ese | Esse | Es | Es | Es | Es | Esse | Se | Es | essa | ässä |
-| x719 | Tee | Teh | Té | Te | Ti | Te | Tee | Te | Te | Tê | Te | Te | te | tee |
-| x720 | You | Uh | U | U | U | U | Uu | U | U | U | U | U | u | uu |
-| x721 | Vee | Fau | Vé | Uve | Vi | Ve | Vee | Fau | Ve | Vê | Ve | Ve | ve | vee |
-| x722 | Double-u | Weh | Double vé | Doble uve | Doppia vu | Dobbelt-ve | Wee | Wu | Dubbel-ve | Dáblio |  | Dobbelt-ve | ve doble | kaksoisvee |
-| x723 | Ex | Iks | Ixe | Equis | Ics | Eks | Iks | Iks | Eks | Xis |  | Eks | ics | äksä |
-| x724 | Why | Ypsilon | I grec | Ye | Ipsilon | Y | Ei | Igrek | Y | Ípsilon | Ye | Y | i grega | yy |
-| x725 | Zee | Zett | Zède | Zeta | Zeta | Zett | Zet | Zet | Zäta | Zê | Ze | Zet | zeta | tseta |
+| Code | EN | DE | FR | ES | IT | NB | NL | PL | SV | PT-BR | TR | DA | CA | FI | HR |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| x700 | Ay | Ah | A | A | A | A | Aa | A | A | Á | A | A | a | aa | a |
+| x701 | Bee | Beh | Bé | Be | Bi | Be | Bee | Be | Be | Bê | Be | Be | be | bee | be |
+| x702 | Sea | Tseh | Cé | Ce | Ci | Se | See | Ce | Se | Cê | Ce | Se | ce | see | ce |
+| x703 | Dee | Deh | Dé | De | Di | De | Dee | De | De | Dê | De | De | de | dee | de |
+| x704 | Ee | Eh | E | E | E | E | Ee | E | E | É | E | E | e | ee | e |
+| x705 | Eff | Eff | Effe | Efe | Effe | Ef | Ef | Ef | Ef | Efe | Fe | Ef | efa | äffä | ef |
+| x706 | Gee | Geh | Gé | Ge | Gi | Ge | Gee | Gie | Ge | Gê | Ge | Ge | ge | gee | ge |
+| x707 | Aitch | Hah | Ache | Hache | Acca | Hå | Haa | Ha | Hå | Agá | He | Hå | hac | hoo | ha |
+| x708 | Eye | Ih | I | I | I | I | Ie | I | I | I | I | I | i | ii | i |
+| x709 | Jay | Jot | Ji | Jota | I lunga | Je | Jee | Jot | Ji | Jota | Je | Jod | jota | jii | je |
+| x710 | Kay | Kah | Ka | Ka | Cappa | Kå | Ka | Ka | Kå | Cá | Ke | Kå | ka | koo | ka |
+| x711 | El | Ell | Elle | Ele | Elle | El | El | El | El | Ele | Le | El | ela | ällä | el |
+| x712 | Em | Em | Emme | Eme | Emme | Em | Em | Em | Em | Eme | Me | Em | ema | ämmä | em |
+| x713 | En | En | Enne | Ene | Enne | En | En | En | En | Ene | Ne | En | ena | ännä | en |
+| x714 | Oh | Oh | O | O | O | O | Oo | O | O | Ó | O | O | o | oo | o |
+| x715 | Pee | Peh | Pé | Pe | Pi | Pe | Pee | Pe | Pe | Pê | Pe | Pe | pe | pee | pe |
+| x716 | Cue | Kuh | Ku | Cu | Cu | Ku | Ku | Ku | Ku | Quê |  | Ku | cu | kuu |  |
+| x717 | Ar | Err | Erre | Erre | Erre | Er | Er | Er | Er | Erre | Re | Er | erra | ärrä | er |
+| x718 | Ess | Ess | Esse | Ese | Esse | Es | Es | Es | Es | Esse | Se | Es | essa | ässä | es |
+| x719 | Tee | Teh | Té | Te | Ti | Te | Tee | Te | Te | Tê | Te | Te | te | tee | te |
+| x720 | You | Uh | U | U | U | U | Uu | U | U | U | U | U | u | uu | u |
+| x721 | Vee | Fau | Vé | Uve | Vi | Ve | Vee | Fau | Ve | Vê | Ve | Ve | ve | vee | ve |
+| x722 | Double-u | Weh | Double vé | Doble uve | Doppia vu | Dobbelt-ve | Wee | Wu | Dubbel-ve | Dáblio |  | Dobbelt-ve | ve doble | kaksoisvee |  |
+| x723 | Ex | Iks | Ixe | Equis | Ics | Eks | Iks | Iks | Eks | Xis |  | Eks | ics | äksä |  |
+| x724 | Why | Ypsilon | I grec | Ye | Ipsilon | Y | Ei | Igrek | Y | Ípsilon | Ye | Y | i grega | yy |  |
+| x725 | Zee | Zett | Zède | Zeta | Zeta | Zett | Zet | Zet | Zäta | Zê | Ze | Zet | zeta | tseta | ze |
 
 ### Letras especiales finlandesas  (Ä Ö Å)
 
@@ -406,6 +477,21 @@ The full list of physical NFC chip codes and kit contents is in [Fichas de coman
 | x899 | واو |
 | x900 | ياء |
 
+### Letras especiales croatas  (Č Ć Dž Đ Lj Nj Š Ž)
+
+El croata usa x700–x725 sin Q, W, X, Y. Ć comparte x739 con el polaco.
+
+| Code | HR |
+|---|---|
+| x739 | će |
+| x901 | če |
+| x902 | dže |
+| x903 | đe |
+| x904 | elj |
+| x905 | enj |
+| x906 | eš |
+| x907 | že |
+
 ---
 
 ## 🎵 Efectos de sonido  (addition/)
@@ -462,5 +548,6 @@ The full list of physical NFC chip codes and kit contents is in [Fichas de coman
 | x992 | Pitido en el segundo 5 al mantener pulsado el botón del mando o del robot |
 | x993 | Bluetooth conectado; también suena al activar el sonido manteniendo el botón 5 s |
 | x994 | Señal Bluetooth perdida; también suena al desactivar el sonido manteniendo el botón 5 s |
+| x995 | Sonido de apagado |
 | x998 | La Marsellesa (himno nacional francés) |
 | x999 | Sonido del parpadeo del robot |
