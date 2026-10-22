@@ -391,6 +391,40 @@
         ]
       },
       {
+        "language": "en-HR",
+        "groups": [
+          {
+            "group": "Prvi koraci",
+            "icon": "rocket",
+            "pages": [
+              "hr/quickstart",
+              "hr/intro",
+              "hr/usermanual"
+            ]
+          },
+          {
+            "group": "Kako poučavati",
+            "icon": "graduation-cap",
+            "pages": [
+              "hr/teachersguide",
+              "hr/book-1/book-1",
+              "hr/mathdrawings",
+              "hr/cognitive",
+              "hr/resources"
+            ]
+          },
+          {
+            "group": "Priručnik",
+            "icon": "book-marked",
+            "pages": [
+              "hr/nfc",
+              "hr/sounds_reference",
+              "hr/contacts"
+            ]
+          }
+        ]
+      },
+      {
         "language": "jp",
         "groups": [
           {
