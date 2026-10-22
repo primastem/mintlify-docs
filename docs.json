@@ -418,7 +418,15 @@
             "icon": "book-marked",
             "pages": [
               "hr/nfc",
-              "hr/sounds_reference",
+              "hr/sounds_reference"
+            ]
+          },
+          {
+            "group": "Sigurnost i podrška",
+            "icon": "shield-check",
+            "pages": [
+              "hr/safety",
+              "hr/warranty",
               "hr/contacts"
             ]
           }
