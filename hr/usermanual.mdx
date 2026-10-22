@@ -1,0 +1,175 @@
+---
+title: "Uređaj i postavke"
+description: "**PrimaSTEM** — edukativni set za učenje osnova logike, programiranja i matematike za djecu od 4 godine."
+icon: "book-open"
+mode: "default"
+---
+
+## Tehničke specifikacije i sadržaj kompleta
+
+![primastem](../images/usermanual/hello.png)
+
+- Robot za igru
+- Upravljačka ploča robota
+- Žetoni naredbi, vrijednosti i aritmetičkih operacija za izradu programa
+
+> Sadržaj kompleta i izgled mogu se malo razlikovati. Provjerite pri kupnji.
+
+### Robot za igru
+
+Dimenzije: promjer 125 mm, visina 44 mm.
+
+![robot](../images/usermanual/robot.png)
+
+Robot ima tipku za uključivanje, LED diode, zvučnik, funkcijsku tipku i USB-C priključak za punjenje baterije.
+
+U sredinu robota može se staviti marker promjera do 10 mm, kako bi robot pri kretanju crtao jednostavne oblike.
+
+Izgled se može malo razlikovati ovisno o izvedbi, ali osnovne funkcije ostaju iste.
+
+### Upravljačka ploča
+
+Dimenzije: duljina 317 mm, širina 217 mm, visina 62 mm.
+
+![control](../images/usermanual/control.png)
+
+Upravljačka ploča ima 11 dvostrukih utora za žetone naredbi i vrijednosti: 6 za glavni program (gornji dio) i 5 za potprogram (donji dio). Ploča ima dvije tipke: lijevo je tipka za uključivanje, desno tipka "Izvrši / Stop" za pokretanje i zaustavljanje programa.
+
+Nakon što stavite žetone naredbi i vrijednosti u utore, pritisnite "Izvrši": robot će pokrenuti program. Aktivne naredbe svijetle LED diodama između utora.
+
+Ako je žeton pogrešno umetnut, ploča to javlja crvenom LED diodom, ali program se nastavlja (na primjer, kad je žeton vrijednosti stavljen bez naredbe).
+
+Ploča ima USB-C priključak za punjenje i zvučnik za reprodukciju zvuka.
+
+### Žetoni uputa
+
+Dimenzije: 33 x 33 mm.
+
+Komplet sadrži žetone za izradu programa. Svaki žeton je naredba s jasnim značenjem i uputom. Redoslijed blokova određuje ponašanje robota.
+
+![coding chips](../images/usermanual/tokens.png)
+
+Žetoni se dijele na **naredbe**, **vrijednosti** i **aritmetiku**.
+
+#### Žetoni naredbi
+
+Osnovni blokovi za sastavljanje upravljačkog programa:
+
+- **Naprijed** — kretanje naprijed (zadano 15 cm)
+- **Desno** — okret za 90° u smjeru kazaljke na satu
+- **Lijevo** — okret za 90° suprotno od smjera kazaljke na satu
+- **Natrag** — kretanje unatrag (zadano 15 cm)
+- **Funkcija** — izvršava potprogram iz donjeg dijela ploče
+- **Nasumično kretanje** — jedna od radnji za pomicanje robota: Naprijed, Lijevo, Desno ili Natrag (za "zadani korak")
+- **Žetoni ponavljanja (petlje)** - žetoni s brojevima od 2 do 6 (prema broju točkica) i piktogrami ponavljanja s brojem unutra. Žeton s kockicom znači nasumičan broj ponavljanja od 1 do 6.
+
+> Žetoni brojeva i aritmetike koriste se i za proširenje mogućnosti programiranja: na primjer, za ponavljanje naredbe ili promjenu kuta odnosno udaljenosti kretanja.
+
+#### Žetoni vrijednosti
+
+Žetoni kuta i udaljenosti: 30°, 36°, 45° te višekratnici (60°, 72° itd.). Kutovi su u stupnjevima, udaljenosti u milimetrima. Zadano je 90° i 150 mm (15 cm).
+
+#### Žetoni aritmetičkih operacija
+
+Mijenjaju parametre naredbi kretanja:
+
+- Plus (\+)
+- Minus (−)
+- Puta (\*)
+- Podijeljeno sa (/)
+- Kvadratni korijen (√)
+- Na potenciju (^)
+- Faktorijel (!)
+
+Aritmetika radi u rasponu od −5000 do 5000. Ako je rezultat iznad 5000 ili ispod −5000, ako dijelite s 0, uzimate korijen negativnog broja ili faktorijel broja većeg od 6, polje treperi crveno, a broj ostaje isti. Dijeljenje odbacuje decimale: 150 ÷ 4 = 37.
+
+## Povezivanje ploče i robota
+
+Preporučuje se prvo uključiti robota, zatim ploču.
+
+Prije povezivanja stavite robota na ravnu podlogu: nakon sparivanja LED diode svijetle bijelo. Dok veze nema, robot i ploča svijetle svijetloplavo.
+
+Provjerite vezu: stavite žeton "Naprijed" i pritisnite "Izvrši".
+
+Ako veze nema, ponovno pokrenite oba uređaja ili ih napunite. Veza se može privremeno prekinuti u blizini jakih izvora elektromagnetskog polja (mobitel, WiFi pristupna točka).
+
+> **Nakon ažuriranja softvera uređaja** možda će biti potrebno ponovno sparivanje: uključite robota, zatim ploču, pa držite tipku "Izvrši" na ploči dulje od 10 sekundi. U 5. sekundi čut ćete kratki zvučni signal: nastavite držati. Sparivanje počinje u 10. sekundi.
+
+## Kako to radi?
+
+Za programiranje kretanja stavite žetone naredbi u utore ploče (na primjer, "Naprijed", "Lijevo", "Funkcija" itd.). Možete zadati vrijednosti naredbi i broj ponavljanja, kao i vrijednosti kuta, udaljenosti i aritmetičkih operacija.
+
+Za zajedničko umetanje naredbe i vrijednosti (ponavljanja) utori su povezani "mostovima" s indikatorima.
+
+_U nastavku je program koji koristi petlju kao primjer ponavljanja sličnog dijela koda. Program stvara kvadratnu putanju robota:_
+
+![control with chips](../images/usermanual/manual1a.excalidraw.svg)
+
+Naredbe se prvo stavljaju u gornji dio ploče (6 utora) i izvršavaju se slijeva nadesno. Prazni utori i pogreške se zanemaruju (na primjer, dvije naredbe u jednom bloku ili vrijednost bez naredbe).
+
+Redoslijed blokova određuje kretanje robota.
+
+Pritisnite "Izvrši" za pokretanje programa.
+
+Zadano:
+
+- "Naprijed" — 15 cm.
+- "Lijevo/Desno" — 90°.
+- Petlje (ponavljanja) ponavljaju naredbu više puta.
+- "Funkcija" poziva potprogram iz donjeg dijela ploče (5 utora).
+- Potprogram možete pozvati više puta preko petlje tako da uz "Funkciju" dodate žeton ponavljanja (primjer je gore).
+
+### Važne funkcije:
+
+- **Prekid** izvršavanja programa: ponovno pritisnite "Izvrši" tijekom kretanja.
+- Ploča pamti posljednju **zadanu vrijednost** (udaljenost/kut) naredbe kretanja do isključivanja: na primjer, ako je "Naprijed" = "200", sve sljedeće naredbe "Naprijed" izvršavaju se s tom vrijednošću.
+- Vrijednosti nakon aritmetičkih operacija također se pamte.
+- "**Zadanu udaljenost**" mijenjate servisnim žetonom: na primjer, za 12,5 cm stavite žeton "Korak" s vrijednošću 125. Vrijednost se pamti i nakon isključivanja. Rade brojevi od 1 do 999. Žeton bez broja vraća korak na 150 mm. Uz aritmetiku ili nulu polje treperi crveno, a korak ostaje isti.
+- Ploča i robot **automatski se isključuju** ako se 15 minuta ništa ne događa.
+- Ako se robot ne koristi 1–3 minute, napravi male pokrete kako bi pokazao da je aktivan i spreman.
+- **Kratki pritisak tipke robota**: robot očitava žeton ispod sebe i izgovara što je to.
+- **Svi zvukovi robota** isključuju se i uključuju držanjem tipke robota 5 sekundi: pričekajte kratki zvučni signal i otpustite. Robot treperi crveno ako je zvuk sada isključen, a zeleno ako je uključen.
+- **Zvuk ploče** isključuje se i uključuje držanjem tipke "Izvrši" 5 sekundi: pričekajte kratki zvučni signal i otpustite. To ne radi dok se program izvršava.
+- **Nakon ažuriranja softvera** može biti potrebna kalibracija kretanja robota.
+- **Vraćanje postavki robota na tvorničke**: držite tipku robota 10 sekundi (pojedinosti su u dijelu "Kalibracija robota" u nastavku).
+- **Sparivanje ploče i robota** može biti potrebno nakon ažuriranja softvera uređaja. Držite tipku "Izvrši" na ploči dulje od 10 sekundi: zvučni signal u 5. sekundi znači da treba nastaviti držati.
+
+### Kalibracija robota:
+
+- Prvo pokrenite žeton "Kalibracija" bez broja: robot mjeri polaritet motora, uklanja zazor i podešava pravocrtno kretanje. Žeton radi do 2 minute. Prvih pola minute robot mora mirovati, nemojte ga dirati. Tipka robota u to vrijeme ne radi.
+- Zatim kalibrirajte kutove okreta. Označite točnu orijentaciju robota na podlozi. Potrebno je 16 okreta od 90° u smjeru kazaljke na satu: sastavite program "Ponovi 8 + okret udesno" i pokrenite ga dvaput. Robot treba napraviti četiri puna kruga (90×16 = 1440°) i vratiti se u početnu orijentaciju.
+- Procijenite odstupanje od oznake i primijenite ispravak žetonom "Kalibracija" plus žeton broja: ako se robot zaustavi prije oznake, dodajte "+" (na primjer "Kalibracija" + "+5"); ako je prijeđe, dodajte "−" (na primjer "Kalibracija" + "−5"), zatim "Izvrši". Broj je ukupno odstupanje u stupnjevima kroz svih 16 okreta zajedno. Robot ne prihvaća više od 90. Običan broj bez "+" ili "−" uz "Kalibraciju" ne radi: polje treperi crveno.
+- Ponavljajte dok se robot ne vrati točno u početnu orijentaciju.
+- Kalibracija se pamti i nakon isključivanja.
+- Pozor! Poništavanje kalibracije: držite tipku robota 10 sekundi, svjetla trepere crveno, zeleno, plavo i bijelo. Poništavanje briše sve kalibracije, glasnoću i isključeni zvuk. Nakon poništavanja isključite i uključite robota, pa kalibraciju ponovite od početka.
+
+<Accordion title="Kalibracija prve verzije uređaja (MVP) s robotom promjera 10 cm" icon="rectangle-terminal">
+  Ova metoda vrijedi samo za prvu verziju (MVP). Na novom firmwareu "Kalibracija" s običnim brojem ne radi: polje treperi crveno.
+
+  1. Za kalibraciju žiroskopa stavite robota na vodoravnu podlogu, umetnite žeton "Kalibracija" u ploču i pritisnite "Izvrši".
+  2. Za kalibraciju prijeđene udaljenosti izmjerite stvarni put naredbe "Naprijed", stavite "Kalibraciju" i žeton s traženom vrijednošću, zatim "Izvrši". Vrijednost možete zapisati na bilo koji digitalni NFC čip mobitelom s NFC-om, kao tekst u obliku nXXX (na primjer, n095 za 95 mm). Nakon toga će udaljenost koju robot prijeđe biti točna.\*
+</Accordion>
+
+### Programiranje NFC žetona
+
+Možete izmijeniti ili **izraditi vlastite žetone**: naredbe, digitalne vrijednosti ili aritmetičke operacije, pomoću telefona s NFC-om i programa za čitanje i pisanje NFC oznaka, na primjer "NFC Tools". Vrijednost možete zapisati na prazni digitalni NFC čip mobitelom s NFC-om, kao običan tekst od 4 znaka.
+
+## Važno!
+
+Potpuna sigurnosna upozorenja i regulatorne informacije nalaze se na stranici [Korisnički priručnik](/en/safety) (na engleskom).
+
+> Komplet **nije namijenjen djeci mlađoj od 4 godine** i sadrži sitne dijelove — **opasnost od gutanja**! Koristite **samo uz nadzor odrasle osobe**!
+
+Uređaj sadrži litij-ionske baterije. **Punite samo uz nadzor odrasle osobe**, standardnim USB 5V punjačem i USB-C kabelom.
+
+Punjenje ploče i robota (1 sat) dovoljno je za 1–2 lekcije; potpuno punjenje (2–3 sata) za 3 lekcije od 30–45 minuta. S vremenom se kapacitet baterija može smanjiti; moguće ih je zamijeniti novim litij-ionskim baterijama 16340.
+
+Ako se komplet dulje ne koristi, napunite baterije **jednom u 2–3 mjeseca**. Pri dubokom pražnjenju baterije mogu otkazati i morat će se zamijeniti.
+
+**Ne otvarajte uređaj** sami — u slučaju kvara ili potrebe za zamjenom baterija obratite se prodavaču ili specijaliziranim servisima za elektroniku.
+
+Komplet čuvajte, koristite i punite u suhoj prostoriji pri temperaturi od \+5…\+35°C. Izbjegavajte izravno sunčevo svjetlo, tekućine, prašinu i nagle promjene temperature ili vlage koje mogu uzrokovati kondenzaciju.
+
+Izbjegavajte udarce i vibracije. Uređaj prevozite i čuvajte u originalnoj ambalaži pri temperaturi od \+5…\+35°C, zaštićen od mehaničkih oštećenja i vlage.
+
+p.s.: PrimaSTEM je praktičan alat za učenje programiranja, razvoj kreativnog mišljenja i logike. Detaljne informacije o funkcijama nalaze se u **Vodiču za učitelje**.
