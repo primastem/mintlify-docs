@@ -48,7 +48,7 @@ PrimaSTEM-brickor är en visuell och förenklad representation av programmerings
 
 ### Varför trä?
 
-🌱 Kontrollenheten och roboten är tillverkade av trä. Praktiken har visat att barn föredrar att leka med leksaker i trä - de är säkra, hållbara och skapar en individuell användningshistoria.
+🌱 Kontrollpanelen och roboten är tillverkade av trä. Praktiken har visat att barn föredrar att leka med leksaker i trä - de är säkra, hållbara och skapar en individuell användningshistoria.
 
 ## Programmeringskoncept med PrimaSTEM
 
@@ -60,7 +60,7 @@ Fysiska PrimaSTEM-brickor är analoga med instruktioner i riktiga programmerings
 
 ### Kö
 
-Kommandon på PrimaSTEM-kontrollenheten utförs strikt från vänster till höger, vilket visuellt demonstrerar exekveringskön.
+Kommandon på PrimaSTEM-kontrollpanelen utförs strikt från vänster till höger, vilket visuellt demonstrerar exekveringskön.
 
 ### Felkorrigering (debugging)
 
@@ -68,7 +68,7 @@ Ett fel är lätt att åtgärda: byt helt enkelt ut brickan. Detta tillvägagån
 
 ### Funktion
 
-En funktion (underrutin) är en uppsättning kommandon i den nedre delen av kontrollenheten, som anropas från huvudprogrammet med "**Funktion**"-brickan.
+En funktion (underrutin) är en uppsättning kommandon i den nedre delen av kontrollpanelen, som anropas från huvudprogrammet med "**Funktion**"-brickan.
 
 ## Tillämpning i andra ämnen
 
@@ -82,7 +82,7 @@ PrimaSTEM hjälper till att behärska andra färdigheter:
 
 > Genom att bygga en kedja av brickor behärskar barnet programmering taktilt, visuellt och mentalt. Efter att ha tryckt på "Kör"-knappen rör sig roboten och resultatet jämförs med barnets förväntan. Denna omfattande upplevelse påskyndar lärandet.
 
-## Lär känna roboten och kontrollenheten
+## Lär känna roboten och kontrollpanelen
 
 ### Roboten
 
@@ -90,23 +90,23 @@ Berätta för barn att roboten är deras vän som de kan programmera. Förklara:
 
 ![robot](../images/teachersguide/robot.excalidraw.svg)
 
-### Kontrollenheten
+### Kontrollpanelen
 
-Förklara att kontrollenheten skickar kommandon till roboten. Visa hur man installerar kommandobrickor och programmerar roboten.
+Förklara att kontrollpanelen skickar kommandon till roboten. Visa hur man installerar kommandobrickor och programmerar roboten.
 
 ![control](../images/teachersguide/control.excalidraw.svg)
 
-> Huvudprogrammet byggs i den övre raden av kontrollenheten (6 celler). Den nedre raden (5 celler) är avsedd för funktionsunderrutinen och används med "**Funktion**"-kommandot.
+> Huvudprogrammet byggs i den övre raden av kontrollpanelen (6 celler). Den nedre raden (5 celler) är avsedd för funktionsunderrutinen och används med "**Funktion**"-kommandot.
 
 ### Kommandobrickor
 
-Brickor är kommandon för roboten som sätts in i kontrollenheten. Efter att ha tryckt på "Kör" utför roboten sekvensen. Varje bricka är ett separat kommando som lär barn beräkningstänkande och programdesign. Det är viktigt att barn förstår vad roboten gör när varje kommando aktiveras. Detta lär dem programdesign och förutsägelse av robotåtgärder. Förklara för barn: brickor får inte tappas eller skadas, utan dem kan roboten inte röra sig.
+Brickor är kommandon för roboten som sätts in i kontrollpanelen. Efter att ha tryckt på "Kör" utför roboten sekvensen. Varje bricka är ett separat kommando som lär barn beräkningstänkande och programdesign. Det är viktigt att barn förstår vad roboten gör när varje kommando aktiveras. Detta lär dem programdesign och förutsägelse av robotåtgärder. Förklara för barn: brickor får inte tappas eller skadas, utan dem kan roboten inte röra sig.
 
 ## 1 - Första programmet
 
 ### Orsak och verkan
 
-Huvudmålet är att visa barn sambandet mellan kommando och åtgärd. Låt barnet sätta in "Framåt"-brickan i den första cellen på kontrollenheten och trycka på "Kör". Barnet ska se överensstämmelsen mellan brickan och åtgärden.
+Huvudmålet är att visa barn sambandet mellan kommando och åtgärd. Låt barnet sätta in "Framåt"-brickan i den första cellen på kontrollpanelen och trycka på "Kör". Barnet ska se överensstämmelsen mellan brickan och åtgärden.
 
 ![forvard](../images/teachersguide/guide1a.excalidraw.svg)
 
@@ -242,7 +242,7 @@ Både enkla uppgiftslösningar med installation av "**Framåt**"-brickan och loo
 
 ### Funktionsanropsloop
 
-Försök med barnen att tillämpa en loop med värden på "Funktion"-kommandot: till exempel få roboten att gå i sicksack med hjälp av "Funktion"-kommandot med ett loopvärde på 5 och funktionssekvensen i den nedre delen av kontrollenheten med kommandona "**Framåt**", "**Höger**", "**Framåt**", "**Vänster**".
+Försök med barnen att tillämpa en loop med värden på "Funktion"-kommandot: till exempel få roboten att gå i sicksack med hjälp av "Funktion"-kommandot med ett loopvärde på 5 och funktionssekvensen i den nedre delen av kontrollpanelen med kommandona "**Framåt**", "**Höger**", "**Framåt**", "**Vänster**".
 
 Skapa först med funktionen ett program för "trappsteg"-rörelse - "framåt", "höger", "framåt", "vänster" och kör det.
 
@@ -266,7 +266,7 @@ För att introducera begreppet slumpmässigt tal, ta 4 loopbrickor: "**2**", "**
 
 Visa sedan barnen "**Slumpmässigt loopnummer**"-värdebrickan. Förklara att denna bricka gör nästan samma sak som de gjorde tidigare, genom att dra slumpmässiga värdebrickor från påsen: den väljer slumpmässigt 1 av 6 tal (från 1 till 6), som en tärning, för att överföra till roboten och upprepa åtgärder.
 
-Placera "**Framåt**"-brickan i den övre cellen på kontrollenheten och "**Slumpmässigt loopnummer**"-brickan under den. Be barnen trycka på "**Kör**"-knappen. Returnera roboten till sin ursprungliga plats. Upprepa denna uppgift flera gånger.
+Placera "**Framåt**"-brickan i den övre cellen på kontrollpanelen och "**Slumpmässigt loopnummer**"-brickan under den. Be barnen trycka på "**Kör**"-knappen. Returnera roboten till sin ursprungliga plats. Upprepa denna uppgift flera gånger.
 
 ![rnd-forvard](../images/teachersguide/guide6b.excalidraw.svg)
 
@@ -284,7 +284,7 @@ Exempel: Lägg till värdet **200** till "**Framåt**"-kommandot och se hur lån
 
 ![example1](../images/teachersguide/example1.excalidraw.svg)
 
-> **Viktigt:** Kontrollenheten sparar det senaste värdet som angivits för rörelse- och svängkommandon. Om ett kommando används utan ett nytt värde gäller det senaste sparade värdet tills kontrollenheten stängs av. Att ange ett nytt värde ändrar standardvärdet. Standardvärden (150 mm = 15 cm och 90°) kan återställas genom att ange dem explicit eller genom att starta om kontrollenheten.
+> **Viktigt:** Kontrollpanelen sparar det senaste värdet som angivits för rörelse- och svängkommandon. Om ett kommando används utan ett nytt värde gäller det senaste sparade värdet tills kontrollpanelen stängs av. Att ange ett nytt värde ändrar standardvärdet. Standardvärden (150 mm = 15 cm och 90°) kan återställas genom att ange dem explicit eller genom att starta om kontrollpanelen.
 
 Att ändra parametrar möjliggör mer komplexa banor och rörelsescenarier. Se exempel på [sidan för matematiska ritningar](mathdrawings).
 
@@ -294,7 +294,7 @@ Att ändra parametrar möjliggör mer komplexa banor och rörelsescenarier. Se e
 
 Aritmetiska operationer med tal möjliggör dynamisk ändring av värden i programmet för rörelsekommandon (Framåt, Bakåt, Vänster, Höger), vilket gör robotkontrollen mer flexibel.
 
-När en aritmetisk operation läggs till ändrar kontrollenheten det sparade talet för rörelsekommandot och skickar det nya värdet till roboten.
+När en aritmetisk operation läggs till ändrar kontrollpanelen det sparade talet för rörelsekommandot och skickar det nya värdet till roboten.
 
 Exempel:
 

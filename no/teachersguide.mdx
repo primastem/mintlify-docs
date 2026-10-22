@@ -48,7 +48,7 @@ PrimaSTEM-brikkene er en visuell og forenklet representasjon av programmeringssp
 
 ### Hvorfor tre?
 
-🌱 Kontrolleren og roboten er laget av tre. Praksis har vist at barn foretrekker å leke med leketøy i tre - de er trygge, holdbare og skaper en individuell brukshistorie.
+🌱 Kontrollpanelet og roboten er laget av tre. Praksis har vist at barn foretrekker å leke med leketøy i tre - de er trygge, holdbare og skaper en individuell brukshistorie.
 
 ## Programmeringskonsept med PrimaSTEM
 
@@ -60,7 +60,7 @@ Fysiske PrimaSTEM-brikker er analoge med instruksjoner i ekte programmeringsspr�
 
 ### Kø
 
-Kommandoer på PrimaSTEM-kontrolleren utføres strengt fra venstre mot høyre, noe som visuelt demonstrerer utføringskøen.
+Kommandoer på PrimaSTEM-kontrollpanelet utføres strengt fra venstre mot høyre, noe som visuelt demonstrerer utføringskøen.
 
 ### Feilretting (debugging)
 
@@ -68,7 +68,7 @@ En feil er enkel å fikse: bytt ut brikken. Denne tilnærmingen utvikler ferdigh
 
 ### Funksjon
 
-En funksjon (underrutine) er et sett med kommandoer i den nedre delen av kontrolleren, kalt fra hovedprogrammet med "**Funksjon**"-brikken.
+En funksjon (underrutine) er et sett med kommandoer i den nedre delen av kontrollpanelet, kalt fra hovedprogrammet med "**Funksjon**"-brikken.
 
 ## Anvendelse i andre fag
 
@@ -82,7 +82,7 @@ PrimaSTEM hjelper til med å mestre andre ferdigheter:
 
 > Ved å bygge en kjede av brikker mestrer barnet programmering taktilt, visuelt og mentalt. Etter å ha trykket på "Utfør"-knappen, beveger roboten seg, og resultatet sammenlignes med barnets forventning. Denne omfattende opplevelsen akselererer læring.
 
-## Bli kjent med roboten og kontrolleren
+## Bli kjent med roboten og kontrollpanelet
 
 ### Roboten
 
@@ -90,23 +90,23 @@ Fortell barn at roboten er vennen deres som de kan programmere. Forklar: den har
 
 ![robot](../images/teachersguide/robot.excalidraw.svg)
 
-### Kontrolleren
+### Kontrollpanelet
 
-Forklar at kontrolleren sender kommandoer til roboten. Vis hvordan du installerer kommandobrikker og programmerer roboten.
+Forklar at kontrollpanelet sender kommandoer til roboten. Vis hvordan du installerer kommandobrikker og programmerer roboten.
 
 ![control](../images/teachersguide/control.excalidraw.svg)
 
-> Hovedprogrammet bygges i den øvre raden av kontrolleren (6 celler). Den nedre raden (5 celler) er for funksjonsunderrutinen og brukes med "**Funksjon**"-kommandoen.
+> Hovedprogrammet bygges i den øvre raden av kontrollpanelet (6 celler). Den nedre raden (5 celler) er for funksjonsunderrutinen og brukes med "**Funksjon**"-kommandoen.
 
 ### Kommandobrikker
 
-Brikker er kommandoer for roboten som settes inn i kontrolleren. Etter å ha trykket på "Utfør", utfører roboten sekvensen. Hver brikke er en separat kommando som lærer barn beregningsmessig tenkning og programdesign. Det er viktig at barn forstår hva roboten gjør når hver kommando aktiveres. Dette lærer dem programdesign og prediksjon av robot handlinger. Forklar barn: brikker må ikke tapes eller skades, uten dem kan ikke roboten bevege seg.
+Brikker er kommandoer for roboten som settes inn i kontrollpanelet. Etter å ha trykket på "Utfør", utfører roboten sekvensen. Hver brikke er en separat kommando som lærer barn beregningsmessig tenkning og programdesign. Det er viktig at barn forstår hva roboten gjør når hver kommando aktiveres. Dette lærer dem programdesign og prediksjon av robot handlinger. Forklar barn: brikker må ikke tapes eller skades, uten dem kan ikke roboten bevege seg.
 
 ## 1 - Første program
 
 ### Årsak og virkning
 
-Hovedmålet er å vise barn sammenhengen mellom kommando og handling. La barnet sette inn "Fremover"-brikken i den første cellen på kontrolleren og trykke på "Utfør". Barnet skal se sammenhengen mellom brikken og handlingen.
+Hovedmålet er å vise barn sammenhengen mellom kommando og handling. La barnet sette inn "Fremover"-brikken i den første cellen på kontrollpanelet og trykke på "Utfør". Barnet skal se sammenhengen mellom brikken og handlingen.
 
 ![forvard](../images/teachersguide/guide1a.excalidraw.svg)
 
@@ -242,7 +242,7 @@ Både enkle oppgaveløsninger med installasjon av "**Fremover**"-brikken og løk
 
 ### Funksjonskall-løkke
 
-Prøv med barna å bruke en løkke med verdier på "Funksjon"-kommandoen: for eksempel få roboten til å gå i sikksakk ved hjelp av "Funksjon"-kommandoen med en løkkeverdi på 5 og funksjonssekvensen i den nedre delen av kontrolleren med kommandoene "**Fremover**", "**Høyre**", "**Fremover**", "**Venstre**".
+Prøv med barna å bruke en løkke med verdier på "Funksjon"-kommandoen: for eksempel få roboten til å gå i sikksakk ved hjelp av "Funksjon"-kommandoen med en løkkeverdi på 5 og funksjonssekvensen i den nedre delen av kontrollpanelet med kommandoene "**Fremover**", "**Høyre**", "**Fremover**", "**Venstre**".
 
 Lag først med funksjonen et program for "trinn"-bevegelse - "fremover", "høyre", "fremover", "venstre" og utfør det.
 
@@ -266,7 +266,7 @@ For å introdusere begrepet tilfeldig tall, ta 4 løkkebrikker: "**2**", "**3**"
 
 Vis deretter barna "**Tilfeldig løkketall**"-verdibrikken. Forklar at denne brikken gjør nesten det samme som de gjorde før, ved å trekke tilfeldige verdibrikker fra posen: den velger tilfeldig 1 av 6 tall (fra 1 til 6), som en terning, for å overføre til roboten og gjenta handlinger.
 
-Plasser "**Fremover**"-brikken i den øvre cellen på kontrolleren, og "**Tilfeldig løkketall**"-brikken under den. Be barna trykke på "**Utfør**"-knappen. Returner roboten til sitt opprinnelige sted. Gjenta denne oppgaven flere ganger.
+Plasser "**Fremover**"-brikken i den øvre cellen på kontrollpanelet, og "**Tilfeldig løkketall**"-brikken under den. Be barna trykke på "**Utfør**"-knappen. Returner roboten til sitt opprinnelige sted. Gjenta denne oppgaven flere ganger.
 
 ![rnd-forvard](../images/teachersguide/guide6b.excalidraw.svg)
 
@@ -284,7 +284,7 @@ Eksempel: Legg til verdien **200** til "**Fremover**"-kommandoen og se hvor lang
 
 ![example1](../images/teachersguide/example1.excalidraw.svg)
 
-> **Viktig:** Kontrolleren lagrer den siste verdien som er angitt for bevegelses- og snukommandoer. Hvis en kommando brukes uten en ny verdi, gjelder den siste lagrede verdien til kontrolleren slås av. Å angi en ny verdi endrer standardverdien. Standardverdier (150 mm = 15 cm og 90°) kan gjenopprettes ved å angi dem eksplisitt eller ved å starte kontrolleren på nytt.
+> **Viktig:** Kontrollpanelet lagrer den siste verdien som er angitt for bevegelses- og snukommandoer. Hvis en kommando brukes uten en ny verdi, gjelder den siste lagrede verdien til kontrollpanelet slås av. Å angi en ny verdi endrer standardverdien. Standardverdier (150 mm = 15 cm og 90°) kan gjenopprettes ved å angi dem eksplisitt eller ved å starte kontrollpanelet på nytt.
 
 Å endre parametere muliggjør mer komplekse baner og bevegelsesscenarier. Se eksempler på [siden for matematiske tegninger](mathdrawings).
 
@@ -294,7 +294,7 @@ Eksempel: Legg til verdien **200** til "**Fremover**"-kommandoen og se hvor lang
 
 Aritmetiske operasjoner med tall muliggjør dynamisk endring av verdier i programmet for bevegelseskommandoer (Fremover, Bakover, Venstre, Høyre), noe som gjør robotkontrollen mer fleksibel.
 
-Når en aritmetisk operasjon legges til, endrer kontrolleren det lagrede tallet for bevegelseskommandoen og sender den nye verdien til roboten.
+Når en aritmetisk operasjon legges til, endrer kontrollpanelet det lagrede tallet for bevegelseskommandoen og sender den nye verdien til roboten.
 
 Eksempel:
 

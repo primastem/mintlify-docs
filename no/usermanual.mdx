@@ -10,7 +10,7 @@ mode: "default"
 ![primastem](../images/usermanual/hello.png)
 
 - Lekerobot
-- Fjernkontroll for robot
+- Kontrollpanel for robot
 - Kommando-, verdi- og aritmetiske operasjonsbrikker for å lage programmer
 
 > Pakkeinnhold og utseende kan variere litt. Vennligst sjekk ved kjøp.
@@ -27,20 +27,20 @@ En markør med diameter på opptil 10 mm kan settes inn i midten av roboten for 
 
 Utseendet kan variere litt avhengig av konfigurasjon, men hovedfunksjonaliteten beholdes.
 
-### Fjernkontroll
+### Kontrollpanel
 
 Dimensjoner: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
-Fjernkontrollen inneholder 11 dobbeltspor for innsetting av kommando- og verdibrikker: 6 for hovedprogrammet (øvre del), 5 for underprogrammet (nedre del).
-Fjernkontrollen har to knapper: til venstre — på/av, til høyre — "Utfør / Stopp" for å starte og stoppe programmet.
+Kontrollpanelet inneholder 11 dobbeltspor for innsetting av kommando- og verdibrikker: 6 for hovedprogrammet (øvre del), 5 for underprogrammet (nedre del).
+Kontrollpanelet har to knapper: til venstre — på/av, til høyre — "Utfør / Stopp" for å starte og stoppe programmet.
 
 Etter at du har plassert kommando- og verdibrikker i sporene, trykk "Utfør": roboten vil utføre programmet. Aktive kommandoer belyses av LED-lys mellom sporene.
 
-Hvis en brikke er feil installert, signaliserer fjernkontrollen med en rød LED, men programmet fortsetter (for eksempel når en verdibrikke settes inn uten kommando).
+Hvis en brikke er feil installert, signaliserer kontrollpanelet med en rød LED, men programmet fortsetter (for eksempel når en verdibrikke settes inn uten kommando).
 
-Fjernkontrollen er utstyrt med en USB-C-port for lading og en høyttaler for lydavspilling.
+Kontrollpanelet er utstyrt med en USB-C-port for lading og en høyttaler for lydavspilling.
 
 ### Instruksjonsbrikker
 
@@ -61,7 +61,7 @@ Grunnleggende blokker for å sette sammen kontrollprogrammet:
 - **Høyre** — sving på 90° med klokken
 - **Venstre** — sving på 90° mot klokken
 - **Bakover** — bevegelse bakover (15 cm som standard)
-- **Funksjon** — utførelse av underprogrammet fra den nedre delen av fjernkontrollen
+- **Funksjon** — utførelse av underprogrammet fra den nedre delen av kontrollpanelet
 - **Tilfeldig Bevegelse** — en av handlingene for å flytte roboten: Fremover, Venstre, Høyre eller Bakover (på "standardsteg")
 - **Gjentakelsesbrikker (Løkker)** - Brikker med tall fra 2 til 6 (etter antall prikker) og gjentakelsespiktogrammer med tallet inni. Brikken med en terning betyr et tilfeldig antall gjentakelser fra 1 til 6.
 
@@ -87,21 +87,21 @@ Endrer parametrene for bevegelseskommandoer:
 
 Aritmetikken regner mellom −5000 og 5000. Hvis svaret er større enn 5000 eller mindre enn −5000, hvis du deler på 0, tar roten av et negativt tall eller fakultet av mer enn 6, blinker cellen rødt og tallet endres ikke. Divisjon gir ingen desimaler: 150 ÷ 4 = 37.
 
-## Tilkobling mellom Fjernkontroll og Robot
+## Tilkobling mellom Kontrollpanel og Robot
 
-Det anbefales å slå på roboten først, deretter fjernkontrollen.
+Det anbefales å slå på roboten først, deretter kontrollpanelet.
 
-Plasser roboten på en flat overflate før tilkobling: etter sammenkobling blir LED-lysene hvite. Så lenge det ikke er tilkobling, lyser roboten og fjernkontrollen lyseblått.
+Plasser roboten på en flat overflate før tilkobling: etter sammenkobling blir LED-lysene hvite. Så lenge det ikke er tilkobling, lyser roboten og kontrollpanelet lyseblått.
 
 Sjekk tilkoblingen: sett inn brikken "Fremover" og trykk "Utfør".
 
 Hvis det ikke er tilkobling, start begge enhetene på nytt eller lad dem opp. Midlertidig tap av tilkobling kan oppstå nær sterke elektromagnetiske feltkilder (mobiltelefon, WiFi-punkt).
 
-> **Etter oppdatering av enhetens programvare** kan sammenkobling være nødvendig: slå på roboten, deretter fjernkontrollen, trykk og hold "Utfør"-knappen på fjernkontrollen i mer enn 10 sekunder. Etter 5 sekunder kommer et kort signal: ikke slipp, fortsett å holde. Etter 10 sekunder starter sammenkoblingen.
+> **Etter oppdatering av enhetens programvare** kan sammenkobling være nødvendig: slå på roboten, deretter kontrollpanelet, trykk og hold "Utfør"-knappen på kontrollpanelet i mer enn 10 sekunder. Etter 5 sekunder kommer et kort signal: ikke slipp, fortsett å holde. Etter 10 sekunder starter sammenkoblingen.
 
 ## Hvordan Fungerer Det?
 
-For å programmere bevegelse, sett kommandobrikker i fjernkontrollens spor (for eksempel "Fremover", "Venstre", "Funksjon" osv.).
+For å programmere bevegelse, sett kommandobrikker i kontrollpanelets spor (for eksempel "Fremover", "Venstre", "Funksjon" osv.).
 Du kan angi kommandoverdier og antall gjentakelser, samt verdier for vinkler, distanser og aritmetiske operasjoner.
 
 For felles installasjon av en kommando og verdi (gjentakelse) er sporene forbundet med "broer" med indikatorer.
@@ -110,7 +110,7 @@ For felles installasjon av en kommando og verdi (gjentakelse) er sporene forbund
 
 ![control with chips](../images/usermanual/manual1a.excalidraw.svg)
 
-Kommandoer settes først inn i den øvre delen av fjernkontrollen (6 spor) og utføres fra venstre mot høyre. Tomme spor eller feil ignoreres (for eksempel to kommandoer i én blokk eller en verdi uten kommando).
+Kommandoer settes først inn i den øvre delen av kontrollpanelet (6 spor) og utføres fra venstre mot høyre. Tomme spor eller feil ignoreres (for eksempel to kommandoer i én blokk eller en verdi uten kommando).
 
 Rekkefølgen på blokkene bestemmer robotens bevegelse.
 
@@ -120,29 +120,29 @@ Som standard:
 - "Fremover" — 15 cm.
 - "Venstre/Høyre" — 90°.
 - Løkker (gjentakelser) gjentar kommandoen flere ganger.
-- "Funksjon" kaller underprogrammet fra den nedre delen av fjernkontrollen (5 spor).
+- "Funksjon" kaller underprogrammet fra den nedre delen av kontrollpanelet (5 spor).
 - Du kan kalle et underprogram flere ganger via en løkke ved å legge til en gjentakelsesbrikke til "Funksjon" (eksempel vist ovenfor).
 
 ### Viktige Funksjoner:
 
 - **Avbryt** programutførelsen ved å trykke "Utfør" igjen under bevegelse.
-- Fjernkontrollen husker den siste **innstilte verdien** (distanse/vinkel) for bevegelseskommandoen til strømme av: for eksempel, hvis "Fremover" = "200", utføres alle påfølgende "Fremover"-kommandoer med denne verdien.
+- Kontrollpanelet husker den siste **innstilte verdien** (distanse/vinkel) for bevegelseskommandoen til strømme av: for eksempel, hvis "Fremover" = "200", utføres alle påfølgende "Fremover"-kommandoer med denne verdien.
 - Verdier etter aritmetikk lagres også.
 - Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 cm, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av. Tall fra 1 til 999 fungerer. Brikken uten tall setter steget tilbake til 150 mm. Med aritmetikk eller null blinker cellen rødt, og steget forblir som før.
-- Fjernkontrollen og roboten **slår seg automatisk av** hvis ingenting skjer på 15 minutter.
+- Kontrollpanelet og roboten **slår seg automatisk av** hvis ingenting skjer på 15 minutter.
 - Hvis roboten ikke brukes på 1–3 minutter, utfører den små bevegelser for å signalisere at den er aktiv og klar.
 - **Kort trykk på robotknappen**: roboten leser brikken under seg og sier hva den er.
 - **Alle lydene til roboten** kan slås av og på ved å holde robotknappen i 5 sekunder: vent på det korte signalet og slipp. Roboten blinker rødt hvis lyden ble slått av, og grønt hvis den ble slått på.
-- **Fjernkontrollens lyd** kan slås av og på ved å holde "Utfør"-knappen i 5 sekunder: vent på det korte signalet og slipp. Mens et program kjører, virker ikke dette.
+- **Kontrollpanelets lyd** kan slås av og på ved å holde "Utfør"-knappen i 5 sekunder: vent på det korte signalet og slipp. Mens et program kjører, virker ikke dette.
 - **Etter en programvareoppdatering** kan kalibrering av robotbevegelse være nødvendig.
 - **Tilbakestilling av robotens innstillinger**: hold robotknappen i 10 sekunder (mer i avsnittet «Robotkalibrering»).
-- **Sammenkobling av fjernkontroll og robot** kan være nødvendig etter oppdatering av enhetens programvare. Hold "Utfør"-knappen på fjernkontrollen i mer enn 10 sekunder: signalet etter 5 sekunder betyr at du skal fortsette å holde.
+- **Sammenkobling av kontrollpanel og robot** kan være nødvendig etter oppdatering av enhetens programvare. Hold "Utfør"-knappen på kontrollpanelet i mer enn 10 sekunder: signalet etter 5 sekunder betyr at du skal fortsette å holde.
 
 ### Robotkalibrering:
 
-- Kjør først kortet «Kalibrering» uten tall: roboten måler motorpolariteten, fjerner slark og stiller inn rettlinjet bevegelse. Kortet jobber i opptil 2 minutter. Det første halve minuttet må roboten stå helt stille, ikke rør den. Robotknappen virker ikke i denne tiden.
+- Kjør først brikken «Kalibrering» uten tall: roboten måler motorpolariteten, fjerner slark og stiller inn rettlinjet bevegelse. Brikken jobber i opptil 2 minutter. Det første halve minuttet må roboten stå helt stille, ikke rør den. Robotknappen virker ikke i denne tiden.
 - Kalibrer deretter svingvinklene. Merk robotens nøyaktige retning på bordoverflaten. Du trenger 16 svinger på 90° med klokken: sett sammen programmet «Gjentakelse 8 + høyresving» og kjør det to ganger. Roboten skal gjøre fire hele omdreininger (90×16 = 1440°) og komme tilbake til sin opprinnelige retning.
-- Vurder avviket fra markeringen og korriger med kortet «Kalibrering» og en tallbrikke: hvis roboten stopper før markeringen, legg til «+» (for eksempel «Kalibrering» + «+5»); hvis den går forbi, legg til «−» (for eksempel «Kalibrering» + «−5»), deretter «Utfør». Tallet viser hvor mange grader roboten bommet med på alle 16 svingene til sammen. Mer enn 90 tar ikke roboten imot. Et vanlig tall uten «+» eller «−» ved siden av «Kalibrering» virker ikke: cellen blinker rødt.
+- Vurder avviket fra markeringen og korriger med brikken «Kalibrering» og en tallbrikke: hvis roboten stopper før markeringen, legg til «+» (for eksempel «Kalibrering» + «+5»); hvis den går forbi, legg til «−» (for eksempel «Kalibrering» + «−5»), deretter «Utfør». Tallet viser hvor mange grader roboten bommet med på alle 16 svingene til sammen. Mer enn 90 tar ikke roboten imot. Et vanlig tall uten «+» eller «−» ved siden av «Kalibrering» virker ikke: cellen blinker rødt.
 - Gjenta til roboten kommer nøyaktig tilbake til sin opprinnelige retning.
 - Kalibreringen lagres etter avslåing.
 - Merk! Tilbakestilling av kalibrering: hold robotknappen i 10 sekunder, lysene blinker rødt, grønt, blått og hvitt. Tilbakestillingen sletter alle kalibreringer, volumet og avslått lyd. Slå roboten av og på etterpå, og gjør kalibreringen på nytt fra begynnelsen.
@@ -150,7 +150,7 @@ Som standard:
 <Accordion icon="rectangle-terminal" title="Kalibrering av første enhetsversjon (MVP) med robot på 10 cm i diameter">
 Denne metoden gjelder bare for den første versjonen (MVP). Med ny fastvare virker ikke «Kalibrering» med et vanlig tall: cellen blinker rødt.
 
-1. For å kalibrere gyroskopet, plasser roboten på en horisontal overflate, sett inn brikken "Kalibrering" i fjernkontrollen og trykk "Utfør".
+1. For å kalibrere gyroskopet, plasser roboten på en horisontal overflate, sett inn brikken "Kalibrering" i kontrollpanelet og trykk "Utfør".
 2. For å kalibrere bevegelsesdistanse, mål den faktiske banen med kommandoen "Fremover", sett inn "Kalibrering" og brikken med nødvendig verdi, deretter "Utfør". Du kan skrive verdien til en hvilken som helst digital NFC-brikke ved hjelp av en mobiltelefon med NFC som tekst i formen nXXX (for eksempel, n095 for 95 mm). Etter dette vil robotens bevegelsesdistanse være nøyaktig.*
 </Accordion>
 
@@ -166,7 +166,7 @@ Alle sikkerhetsadvarsler og regelverksinformasjon finner du på siden [Bruksanvi
 
 Enheten inneholder Li-ion-batterier. **Lad kun under tilsyn** av voksne ved hjelp av standard USB 5V og USB-C-kabel.
 
-Lading av fjernkontroll og robot (1 time) er nok til 1–2 leksjoner; full ladning (2–3 timer) — til 3 leksjoner på 30–45 minutter. Over tid kan batterikapasiteten reduseres, utskifting med nye 16340 Li-ion-batterier er mulig.
+Lading av kontrollpanel og robot (1 time) er nok til 1–2 leksjoner; full ladning (2–3 timer) — til 3 leksjoner på 30–45 minutter. Over tid kan batterikapasiteten reduseres, utskifting med nye 16340 Li-ion-batterier er mulig.
 
 Hvis settet ikke brukes på lenge, lad batteriene **hver 2-3 måned**. Ved dyp utlading kan batteriene bli ødelagt og kreve utskifting.
 

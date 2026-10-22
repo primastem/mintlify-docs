@@ -10,12 +10,12 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 ## Hvordan NFC-koder og lydfiler henger sammen
 
 Hver lydfil i fastvaren har en kode som samsvarer med filnavnet (f.eks. `cfor` → `cfor.mp3`).
-Når fjernkontrollen eller roboten leser en NFC-brikke, slår den opp denne koden og spiller av den tilsvarende filen.
+Når kontrollpanelet eller roboten leser en NFC-brikke, slår den opp denne koden og spiller av den tilsvarende filen.
 
 Noen NFC-brikke-koder er imidlertid **sammensatte** — de har ikke sin egen lydfil.
 I stedet deler enheten dem inn i en sekvens av eksisterende filer for å spare fastvare-plass.
 
-| NFC chip code | Played as |
+| NFC-brikkekode | Spilles som |
 |---|---|
 | `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
@@ -24,7 +24,7 @@ I stedet deler enheten dem inn i en sekvens av eksisterende filer for å spare f
 | `d003` (÷3) | `xdiv.mp3` + `n003.mp3` |
 | `e002` (X²) | `xpow.mp3` + `n002.mp3` |
 
-The full list of physical NFC chip codes and kit contents is in [Kommandochipper](/no/nfc).
+Den fullstendige listen over fysiske NFC-brikkekoder og settets innhold finnes i [Kommandobrikker](/no/nfc).
 
 ## 🤖 Robot-fraser, reaksjoner og servicemeldinger  (x001–x019)
 
@@ -545,7 +545,7 @@ Kroatisk bruker x700–x725 uten Q, W, X, Y. Ć deler x739 med polsk.
 |---|---|
 | x990 | Lyd etter kjøring av et tomt program |
 | x991 | Påslåingslyd |
-| x992 | Signal etter 5 sekunder når knappen på fjernkontrollen eller roboten holdes inne |
+| x992 | Signal etter 5 sekunder når knappen på kontrollpanelet eller roboten holdes inne |
 | x993 | Bluetooth tilkoblet; høres også når lyden slås på ved å holde knappen i 5 s |
 | x994 | Bluetooth-signal tapt; høres også når lyden slås av ved å holde knappen i 5 s |
 | x995 | Avslåingslyd |
