@@ -112,7 +112,7 @@ Chips are commands for the robot that are inserted into the controller. After pr
 
 The main goal is to show children the connection between command and action. Let the child insert the "Forward" chip into the first cell of the controller and press "Execute". The child should see the correspondence between the chip and the action.
 
-![forvard](../images/teachersguide/guide1a.excalidraw.svg)
+![forvard](../images/teachersguide/guide1a-board.svg)
 
 ### Unambiguous Instructions
 
@@ -132,7 +132,7 @@ Place a target two cells in front of the robot.
 
 Let the child create a program of two chips to reach the target.
 
-![forvard\*2](../images/teachersguide/guide2a.excalidraw.svg)
+![forvard\*2](../images/teachersguide/guide2a-board.svg)
 
 ### Sequence of Three Chips
 
@@ -142,7 +142,7 @@ This time, the target is one cell forward and one cell to the right.
 
 Let the child choose the correct command sequence themselves.
 
-![forvard-right-forvard](../images/teachersguide/guide2b.excalidraw.svg)
+![forvard-right-forvard](../images/teachersguide/guide2b-board.svg)
 
 Don't worry if the wrong chip was chosen. Simply return the robot to its original position and ask the child to reason about their choice and try new options.
 
@@ -154,13 +154,13 @@ Place the arrival point one square in front of the robot and one square to its l
 
 This time, create a program to solve the problem by intentionally inserting an incorrect turn into the sequence.
 
-![forvard-right-forvard](../images/teachersguide/guide2b.excalidraw.svg)
+![forvard-right-forvard](../images/teachersguide/guide2b-board.svg)
 
 Ask the child to predict the incorrect command in the program and independently predict the incorrect result, then allow them to press the "**Execute**" button to confirm their hypothesis.
 
 After the child has confirmed that the presented sequence was incorrect, either through reasoning or verification, allow them to change the incorrect command to the correct one, thus debugging the program.
 
-![forvard-left-forvard](../images/teachersguide/guide2c.excalidraw.svg)
+![forvard-left-forvard](../images/teachersguide/guide2c-board.svg)
 
 ## 3 - Program with Function
 
@@ -172,19 +172,21 @@ When the basic commands are mastered, introduce the **Function** command chip. T
 
 Show an example: first place two "Forward" chips in the upper cells and execute the program - the robot will move two cells.
 
-![forvard\*2](../images/teachersguide/guide3a.excalidraw.svg)
+![forvard\*2](../images/teachersguide/guide3a-board.svg)
 
 Now place the same two "Forward" chips in the function (bottom row), and use "Function" in the main program. The result will be the same, but now part of the program is hidden in a subroutine.
 
-![function-forvard\*2](../images/teachersguide/guide3b.excalidraw.svg)
+![function-forvard\*2](../images/teachersguide/guide3b-board.svg)
 
 Next, create the sequence: **Forward - Forward - Right - Forward - Forward**.
 
-![forvard2-right-forvard2](../images/teachersguide/guide3c.excalidraw.svg)
+![forvard2-right-forvard2](../images/teachersguide/guide3c-board.svg)
 
 Ask the children to find the repetitive parts and "hide" them in the function. The final sequence: in the main part - **Function - Right - Function**, at the bottom - **Forward - Forward**.
 
-![function-right-function](../images/teachersguide/guide3d.excalidraw.svg)
+![function-right-function](../images/teachersguide/guide3d-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun,crig,cfun&fn=cfor,cfor&s=l1144602&r=225-825-0&run)
 
 ### Solving Tasks with Function
 
@@ -200,7 +202,9 @@ Let the child understand that they need to use the function for multiple actions
 
 If the sequence is incorrect, simply return the robot to its original position and ask the child to reason about the correct solution of the task and try new options.
 
-![function-task](../images/teachersguide/guide3g.excalidraw.svg)
+![function-task](../images/teachersguide/guide3g-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun,cfun,cfor&fn=cfor,cfor&s=l1144602&r=225-825-0&run)
 
 ## 4 - Randomness
 
@@ -214,7 +218,9 @@ Explain that this chip does almost the same thing they were doing before by draw
 
 Place the "**Random Movement**" chip in the upper cell and execute the program several times - the robot will move differently each time.
 
-![rnd-move](../images/teachersguide/guide4a.excalidraw.svg)
+![rnd-move](../images/teachersguide/guide4a-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=crnd&s=l1144602&r=375-525-0&run)
 
 Play with the children: let them guess where the robot will go before executing the command.
 
@@ -232,17 +238,19 @@ Show the children the value chips, ask if they know numbers, if they have seen a
 
 Place two "Forward" chips in the upper cells and execute - the robot will move two cells.
 
-![forvard\*2](../images/teachersguide/guide5b.excalidraw.svg)
+![forvard\*2](../images/teachersguide/guide5b-board.svg)
 
 Now leave one "Forward", and place the "loop 2" chip under it. The result will be the same: the action will be repeated twice.
 
-![forvard-repeat2](../images/teachersguide/guide5c.excalidraw.svg)
+![forvard-repeat2](../images/teachersguide/guide5c-board.svg)
 
 Install 4 "**Forward**" commands, look at the result, and then ask the children to use value chips - **loops** - to repeat the robot's movement for 4 cells.
 
 Both simple task solutions with installing the "**Forward**" chip and loop value 4 are possible, as well as other options: for example "**Forward**" with loop number 3 and another "**Forward**" command.
 
-![repeat-task](../images/teachersguide/guide5d.excalidraw.svg)
+![repeat-task](../images/teachersguide/guide5d-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.r003,cfor&s=l1144602&r=225-825-0&run)
 
 ### Function Call Loop
 
@@ -252,7 +260,9 @@ First create with the function a program for "step" movement - "forward", "right
 
 Then add a loop with number 5 to the function, thus repeating the function several times, the robot will move in steps to the right - up.
 
-![step-task](../images/teachersguide/guide5e.excalidraw.svg)
+![step-task](../images/teachersguide/guide5e-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig,cfor,clef&s=l1144602&r=75-825-0&run)
 
 The robot will move in a staircase diagonally to the right and up, making 5 steps along the way.
 
@@ -272,7 +282,9 @@ Then show the children the "**Random Loop Number**" value chip. Explain that thi
 
 Place the "**Forward**" chip in the upper cell of the controller, and the "**Random Loop Number**" chip under it. Ask the children to press the "**Execute**" button. Return the robot to its original place. Repeat this task several times.
 
-![rnd-forvard](../images/teachersguide/guide6b.excalidraw.svg)
+![rnd-forvard](../images/teachersguide/guide6b-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.rrnd&s=l1144702&r=225-975-0&run)
 
 Play: whose robot will go further.
 
@@ -286,7 +298,9 @@ Without installing numerical values for commands (above or below the command in 
 
 Example: Add the value **200** to the "**Forward**" command and see what distance the robot will travel. Add the value **180** to the "**turn**" command and evaluate the changes.
 
-![example1](../images/teachersguide/example1.excalidraw.svg)
+![example1](../images/teachersguide/example1-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n200,crig.n180&s=l1047602&r=450-600-0&run)
 
 > **Important:** The controller saves the last value set for movement and turn commands. If a command is used without a new value, the last saved value applies until the controller is turned off. Setting a new value changes the default value. Default values (150 mm = 15 cm and 90°) can be restored by setting them explicitly or by restarting the controller.
 
@@ -302,7 +316,9 @@ When adding an arithmetic operation, the controller changes the saved number for
 
 Example:
 
-![example2](../images/teachersguide/example2.excalidraw.svg)
+![example2](../images/teachersguide/example2-board.svg)
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n200,crig,cfor.a100&s=l1047602&r=300-700-0&run)
 
 "Forward 200" — the robot moves 20 cm, "Forward \+100" — another 30 cm. Total distance: 50 cm.
 
