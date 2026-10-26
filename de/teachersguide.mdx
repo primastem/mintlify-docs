@@ -70,6 +70,10 @@ Ein Fehler lässt sich leicht beheben: Ersetzen Sie einfach den Token. Dieser An
 
 Eine Funktion (Unterprogramm) ist eine Reihe von Befehlen im unteren Teil der Steuerung, die vom Hauptprogramm durch den Token "**Funktion**" aufgerufen wird.
 
+### Variable
+
+Die Steuerung merkt sich die letzte Zahl jedes Befehls. Vorwärts, Rückwärts, Links, Rechts und Pause speichern jeweils ihren eigenen Wert. Ein Befehl ohne Zahl nimmt den gespeicherten Wert. Das ist eine Variable: Sie hat einen Namen (den Befehl) und einen Wert (die Zahl), und der Wert lässt sich ändern.
+
 ## Anwendung in anderen Fächern
 
 PrimaSTEM hilft beim Erlernen weiterer Fähigkeiten:
@@ -301,6 +305,25 @@ Beispiel:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Vorwärts 200" — der Roboter bewegt sich 20 cm, "Vorwärts +100" — weitere 30 cm. Gesamtentfernung: 50 cm.
+
+### Aufgabe: eine wachsende Spirale
+
+Rechenoperationen ändern die gespeicherte Zahl, also die Variable. Bauen Sie das Programm: obere Reihe Vorwärts 30 und Funktion × 20, untere Reihe Rechts und Vorwärts +30. Bei jedem Aufruf der Funktion wird die Seite 3 cm länger.
+
+Lassen Sie die Kinder zuerst schätzen: Wie lang wird die fünfte Seite? Dann starten Sie das Programm und prüfen nach. Antwort: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Dasselbe Programm in LOGO: [PrimaSTEM und LOGO](logo).
 
 Die Verwendung solcher Operationen in einer Schleife ermöglicht das Erstellen von Progressionen.
 

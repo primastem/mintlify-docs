@@ -70,6 +70,10 @@ Een fout is gemakkelijk te verhelpen: vervang gewoon het kaartje. Deze aanpak on
 
 Een functie (subroutine) is een reeks commando's in het onderste deel van de bediening, aangeroepen vanuit het hoofdprogramma met het "**Functie**"-kaartje.
 
+### Variabele
+
+De bediening onthoudt het laatste getal van elk commando. Vooruit, Achteruit, Links, Rechts en Pauze bewaren elk hun eigen waarde. Een commando zonder getal gebruikt de opgeslagen waarde. Dat is een variabele: die heeft een naam (het commando) en een waarde (het getal), en de waarde kan veranderen.
+
 ## Toepassing in andere vakken
 
 PrimaSTEM helpt bij het beheersen van andere vaardigheden:
@@ -301,6 +305,25 @@ Voorbeeld:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Vooruit 200" — de robot beweegt 20 cm, "Vooruit +100" — nog 30 cm. Totale afstand: 50 cm.
+
+### Opdracht: een groeiende spiraal
+
+Rekenen verandert het opgeslagen getal, dus de variabele. Bouw het programma: bovenste rij Vooruit 30 en Functie × 20, onderste rij Rechts en Vooruit +30. Bij elke aanroep van de functie wordt de zijde 3 cm langer.
+
+Laat de kinderen eerst voorspellen: hoe lang wordt de vijfde zijde? Start dan het programma en controleer. Antwoord: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Start in de simulator](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Hetzelfde programma in LOGO: [PrimaSTEM en LOGO](logo).
 
 Het gebruik van dergelijke bewerkingen in een lus maakt het mogelijk progressies te creëren.
 

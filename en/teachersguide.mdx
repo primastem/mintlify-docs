@@ -70,6 +70,10 @@ An error is easy to fix: simply replace the chip. This approach develops the ski
 
 A function (subroutine) is a set of commands in the lower part of the controller, called from the main program by the "**Function**" chip.
 
+### Variable
+
+The board remembers the last number of each command. Forward, Back, Left, Right and Pause each keep their own value. A command with no number uses the saved one. This is a variable: it has a name (the command) and a value (the number), and the value can change.
+
 ## Application in Other Subjects
 
 PrimaSTEM helps master other skills:
@@ -301,6 +305,25 @@ Example:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Forward 200" — the robot moves 20 cm, "Forward \+100" — another 30 cm. Total distance: 50 cm.
+
+### Task: a growing spiral
+
+Arithmetic changes the saved number, that is, the variable. Build the program: top row Forward 30 and Function × 20, bottom row Right and Forward +30. Each time the function is called, the side gets 3 cm longer.
+
+Ask the children to predict first: how long will the fifth side be? Then run it and check. Answer: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+The same program in LOGO: [PrimaSTEM and LOGO](logo).
 
 Using such operations in a loop allows creating progressions.
 

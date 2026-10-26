@@ -70,6 +70,10 @@ Une erreur est facile à corriger : il suffit de remplacer le jeton. Cette appro
 
 Une fonction (sous-programme) est un ensemble de commandes dans la partie inférieure de la télécommande, appelé depuis le programme principal par le jeton «**Fonction**».
 
+### Variable
+
+La télécommande retient le dernier nombre de chaque commande. Avancer, Reculer, Gauche, Droite et Pause gardent chacune leur propre valeur. Une commande sans nombre prend la valeur mémorisée. C'est une variable : elle a un nom (la commande) et une valeur (le nombre), et cette valeur peut changer.
+
 ## Application dans d'autres matières
 
 PrimaSTEM aide à acquérir d'autres compétences :
@@ -301,6 +305,25 @@ Exemple :
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 «Avancer 200» — le robot se déplace de 20 cm, «Avancer +100» — encore 30 cm. Distance totale : 50 cm.
+
+### Exercice : une spirale qui grandit
+
+L'arithmétique change le nombre mémorisé, c'est-à-dire la variable. Construisez le programme : rangée supérieure Avancer 30 et Fonction × 20, rangée inférieure Droite et Avancer +30. À chaque appel de la fonction, le côté s'allonge de 3 cm.
+
+Demandez d'abord aux enfants de prévoir : quelle sera la longueur du cinquième côté ? Lancez ensuite le programme et vérifiez. Réponse : 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur la télécommande">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Le même programme en LOGO : [PrimaSTEM et LOGO](logo).
 
 L'utilisation de telles opérations dans une boucle permet de créer des progressions.
 

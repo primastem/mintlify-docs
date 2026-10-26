@@ -70,6 +70,10 @@ Un error es fácil de corregir: simplemente reemplace la ficha. Este enfoque des
 
 Una función (subrutina) es un conjunto de comandos en la parte inferior del controlador, llamado desde el programa principal mediante la ficha "**Función**".
 
+### Variable
+
+El mando recuerda el último número de cada comando. Adelante, Atrás, Izquierda, Derecha y Pausa guardan cada uno su propio valor. Un comando sin número usa el valor guardado. Esto es una variable: tiene un nombre (el comando) y un valor (el número), y el valor puede cambiar.
+
 ## Aplicación en otras materias
 
 PrimaSTEM ayuda a dominar otras habilidades:
@@ -301,6 +305,25 @@ Ejemplo:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Adelante 200" — el robot se mueve 20 cm, "Adelante +100" — otros 30 cm. Distancia total: 50 cm.
+
+### Tarea: una espiral que crece
+
+La aritmética cambia el número guardado, es decir, la variable. Monte el programa: en la fila superior Adelante 30 y Función × 20, en la inferior Derecha y Adelante +30. Cada vez que se llama a la función, el lado crece 3 cm.
+
+Pida a los niños que primero adivinen: ¿cuánto medirá el quinto lado? Después ejecute el programa y compruébelo. Respuesta: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el mando">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+El mismo programa en LOGO: [PrimaSTEM y LOGO](logo).
 
 El uso de tales operaciones en un bucle permite crear progresiones.
 

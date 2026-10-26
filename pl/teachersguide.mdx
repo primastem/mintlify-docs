@@ -70,6 +70,10 @@ Błąd łatwo naprawić: wystarczy wymienić żeton. Takie podejście uczy samod
 
 Funkcja (podprogram) to zestaw poleceń w dolnej części pilota. Program główny wywołuje ją żetonem „**Funkcja**”.
 
+### Zmienna
+
+Pilot pamięta ostatnią liczbę każdego polecenia. Naprzód, Wstecz, Lewo, Prawo i Pauza przechowują każde swoją wartość. Polecenie bez liczby bierze zapamiętaną wartość. To jest zmienna: ma nazwę (polecenie) i wartość (liczbę), a wartość można zmieniać.
+
 ## Zastosowanie w innych przedmiotach
 
 PrimaSTEM pomaga rozwijać także inne umiejętności:
@@ -301,6 +305,25 @@ Przykład:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 „Naprzód 200” — robot jedzie 20 cm, „Naprzód \+100” — jeszcze 30 cm. Łączna odległość: 50 cm.
+
+### Zadanie: rosnąca spirala
+
+Działania arytmetyczne zmieniają zapamiętaną liczbę, czyli zmienną. Ułóż program: w górnym rzędzie Naprzód 30 i Funkcja × 20, w dolnym Prawo i Naprzód +30. Przy każdym wywołaniu funkcji bok wydłuża się o 3 cm.
+
+Poproś dzieci, żeby najpierw przewidziały: jak długi będzie piąty bok? Potem uruchom program i sprawdź. Odpowiedź: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Ten sam program w języku LOGO: [PrimaSTEM i LOGO](logo).
 
 Użycie takich działań w pętli pozwala tworzyć progresje.
 

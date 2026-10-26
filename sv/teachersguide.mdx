@@ -70,6 +70,10 @@ Ett fel är lätt att åtgärda: byt helt enkelt ut brickan. Detta tillvägagån
 
 En funktion (underrutin) är en uppsättning kommandon i den nedre delen av kontrollpanelen, som anropas från huvudprogrammet med "**Funktion**"-brickan.
 
+### Variabel
+
+Kontrollpanelen minns det senaste talet för varje kommando. Framåt, Bakåt, Vänster, Höger och Paus har var sitt eget värde. Ett kommando utan tal använder det sparade värdet. Det här är en variabel: den har ett namn (kommandot) och ett värde (talet), och värdet kan ändras.
+
 ## Tillämpning i andra ämnen
 
 PrimaSTEM hjälper till att behärska andra färdigheter:
@@ -301,6 +305,25 @@ Exempel:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Framåt 200" — roboten rör sig 20 cm, "Framåt +100" — ytterligare 30 cm. Totalt avstånd: 50 cm.
+
+### Uppgift: en växande spiral
+
+Räkning ändrar det sparade talet, alltså variabeln. Bygg programmet: övre raden Framåt 30 och Funktion × 20, nedre raden Höger och Framåt +30. Varje gång funktionen anropas blir sidan 3 cm längre.
+
+Låt barnen först gissa: hur lång blir den femte sidan? Kör sedan programmet och kontrollera. Svar: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Samma program i LOGO: [PrimaSTEM och LOGO](logo).
 
 Att använda sådana operationer i en loop möjliggör progressioner.
 

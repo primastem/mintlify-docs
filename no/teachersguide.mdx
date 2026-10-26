@@ -70,6 +70,10 @@ En feil er enkel å fikse: bytt ut brikken. Denne tilnærmingen utvikler ferdigh
 
 En funksjon (underrutine) er et sett med kommandoer i den nedre delen av kontrollpanelet, kalt fra hovedprogrammet med "**Funksjon**"-brikken.
 
+### Variabel
+
+Kontrollpanelet husker det siste tallet for hver kommando. Fremover, Bakover, Venstre, Høyre og Pause har hver sin egen verdi. En kommando uten tall bruker den lagrede verdien. Dette er en variabel: den har et navn (kommandoen) og en verdi (tallet), og verdien kan endres.
+
 ## Anvendelse i andre fag
 
 PrimaSTEM hjelper til med å mestre andre ferdigheter:
@@ -301,6 +305,25 @@ Eksempel:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Fremover 200" — roboten beveger seg 20 cm, "Fremover +100" — ytterligere 30 cm. Total avstand: 50 cm.
+
+### Oppgave: en voksende spiral
+
+Regning endrer det lagrede tallet, altså variabelen. Bygg programmet: øverste rad Fremover 30 og Funksjon × 20, nederste rad Høyre og Fremover +30. Hver gang funksjonen kalles, blir siden 3 cm lengre.
+
+La barna først gjette: hvor lang blir den femte siden? Kjør så programmet og sjekk. Svar: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Det samme programmet i LOGO: [PrimaSTEM og LOGO](logo).
 
 Å bruke slike operasjoner i en løkke muliggjør progresjoner.
 

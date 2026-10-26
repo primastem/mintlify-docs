@@ -70,6 +70,10 @@ Un errore è facile da correggere: basta sostituire la tessera. Questo approccio
 
 Una funzione (sottoprogramma) è un insieme di comandi nella parte inferiore della pulsantiera, chiamato dal programma principale tramite la tessera "**Funzione**".
 
+### Variabile
+
+La pulsantiera ricorda l'ultimo numero di ogni comando. Avanti, Indietro, Sinistra, Destra e Pausa conservano ciascuno il proprio valore. Un comando senza numero usa quello memorizzato. Questa è una variabile: ha un nome (il comando) e un valore (il numero), e il valore si può cambiare.
+
 ## Applicazione in altre materie
 
 PrimaSTEM aiuta a padroneggiare altre competenze:
@@ -301,6 +305,25 @@ Esempio:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Avanti 200" — il robot si sposta di 20 cm, "Avanti +100" — altri 30 cm. Distanza totale: 50 cm.
+
+### Esercizio: una spirale che cresce
+
+L'aritmetica cambia il numero memorizzato, cioè la variabile. Costruite il programma: nella riga in alto Avanti 30 e Funzione × 20, in quella in basso Destra e Avanti +30. A ogni chiamata della funzione il lato si allunga di 3 cm.
+
+Chiedete prima ai bambini di prevedere: quanto sarà lungo il quinto lato? Poi avviate il programma e verificate. Risposta: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Lo stesso programma in LOGO: [PrimaSTEM e LOGO](logo).
 
 L'uso di tali operazioni in un ciclo consente di creare progressioni.
 

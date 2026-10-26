@@ -70,6 +70,10 @@ Pogrešku je lako ispraviti: dovoljno je zamijeniti žeton. Taj pristup razvija 
 
 Funkcija (potprogram) je skup naredbi u donjem dijelu upravljačke ploče koji glavni program poziva žetonom "**Funkcija**".
 
+### Varijabla
+
+Upravljačka ploča pamti zadnji broj svake naredbe. Naprijed, Natrag, Lijevo, Desno i Pauza čuvaju svaka svoju vrijednost. Naredba bez broja uzima spremljenu vrijednost. To je varijabla: ima ime (naredbu) i vrijednost (broj), a vrijednost se može mijenjati.
+
 ## Primjena u drugim predmetima
 
 PrimaSTEM pomaže svladati i druge vještine:
@@ -301,6 +305,25 @@ Primjer:
 ![example2](../images/teachersguide/example2.excalidraw.svg)
 
 "Naprijed 200" — robot prijeđe 20 cm, "Naprijed \+100" — još 30 cm. Ukupna udaljenost: 50 cm.
+
+### Zadatak: spirala koja raste
+
+Aritmetika mijenja spremljeni broj, odnosno varijablu. Složite program: u gornjem redu Naprijed 30 i Funkcija × 20, u donjem Desno i Naprijed +30. Pri svakom pozivu funkcije stranica postaje 3 cm dulja.
+
+Neka djeca najprije pogode: koliko će biti duga peta stranica? Zatim pokrenite program i provjerite. Odgovor: 15 cm (3 + 3 + 3 + 3 + 3).
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Isti program u jeziku LOGO: [PrimaSTEM i LOGO](logo).
 
 Korištenje takvih operacija u petlji omogućuje izradu progresija.
 
