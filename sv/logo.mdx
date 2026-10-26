@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM och LOGO"
+description: "PrimaSTEM är sköldpaddsgrafiken från LOGO, fast i händerna och utan skärm. Varje begrepp på kontrollpanelen och vad det motsvarar i LOGO."
+icon: "turtle"
+mode: "default"
+---
+
+PrimaSTEM bygger på idén bakom [LOGO](https://sv.wikipedia.org/wiki/Logo_(programspråk)). Seymour Papert och hans kollegor skapade det här programspråket för barn 1967. I LOGO skriver barnet kommandon och en sköldpadda ritar på skärmen. I PrimaSTEM lägger barnet brickor på kontrollpanelen och en robot i trä med en penna ritar på papper. Utan tangentbord, utan skärm, utan text.
+
+Den här sidan är för lärare som kan LOGO eller Scratch, och för alla som vill förstå vad brickorna egentligen gör.
+
+## Begrepp på kontrollpanelen
+
+| Begrepp | På PrimaSTEM-kontrollpanelen | I LOGO |
+|---|---|---|
+| Sekvens | Brickorna körs från vänster till höger längs den övre raden. LED-lampan för paret som körs blinkar och slocknar sedan | ett kommando efter det andra |
+| Kommando | Framåt, Bakåt, Vänster, Höger, Paus, Slumpmässig rörelse | `forward`, `back`, `left`, `right`, `wait` |
+| Parameter | En bricka med ett tal i samma par: Framåt + 200 | `forward 200` |
+| Standardvärde | Framåt utan tal = 150 mm, Vänster/Höger utan tal = 90° | |
+| Loop | En upprepningsbricka i paret: Framåt + upprepa 4 | `repeat 4 [forward 150]` |
+| Procedur | Den nedre raden (5 par) är Funktion. Den anropas av brickan ”Funktion” | `to shape ... end`, sedan `shape` |
+| Procedur i en loop | Brickan ”Funktion” och en upprepningsbricka i samma par: Funktion + upprepa 5 | `repeat 5 [shape]` |
+| Ge proceduren ett värde | Framåt 100 kör 100 mm och sparar 100. Om du sedan anropar en Funktion där det står Framåt utan tal, kör den också 100. Ändra Framåt före nästa anrop, så ritar samma Funktion en figur i en annan storlek | liknar `shape 100`, `shape 50` |
+| Rekursion | Brickan ”Funktion” i den nedre raden: funktionen anropar sig själv tills du trycker på ▶ Start igen | en procedur som anropar sig själv |
+| Variabler | Varje kommando minns sitt senaste värde: Framåt, Bakåt, Vänster, Höger och Paus är fem oberoende variabler. Framåt utan tal kör lika långt som förra Framåt | `make "step 200`, sedan `forward :step` |
+| Räkna med en variabel | Framåt + ”+30”: lägg till 30 till det sparade värdet och kör | `make "step :step + 30 forward :step` |
+| Operationer | + − × ÷ √ ^ på det sparade värdet, från −5000 till 5000, heltal | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Negativa värden | Ett negativt resultat vänder rörelsen: Framåt −50 kör 50 mm bakåt, Vänster −30 svänger 30° åt höger | `forward -50` |
+| Slump | Upprepningsbrickan med tärning (1 till 6 gånger) och brickan ”Slumpmässig rörelse” | `random 6` |
+| Penna | Pennan i mitten av roboten | `pendown` |
+| Felsökning | Vi tittar på roboten, hittar fel bricka och byter ut den | rätta raden |
+
+Varje kommando har sitt eget sparade värde: ändrar du Framåt ändras inte Vänster. När kontrollpanelen stängs av går alla värden tillbaka till standard: 150 mm, 90°, 1 s för Paus. Standardsteget kan ändras permanent med servicebrickan ”Ställ in standard steglängd” (se [Enhet och inställningar](usermanual)).
+
+Barnet räknar. Roboten utför programmet exakt.
+
+## Exempel: samma program på kontrollpanelen och i LOGO
+
+Varje exempel har en länk. Den öppnar [simulatorn](https://simulator.primastem.com) med programmet på kontrollpanelen och kör det.
+
+### Kvadrat
+
+Kontrollpanel: övre raden Funktion × 4. Nedre raden: Framåt 300, Höger.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+För barn i 4–6 års ålder kan du hoppa över talen: Framåt och Höger utan tal ritar en kvadrat med sidan 15 cm.
+
+### Liksidig triangel
+
+Kontrollpanel: övre raden Funktion × 3. Nedre raden: Framåt 400, Höger 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Varför 120 och inte 60? Roboten svänger med yttervinkeln. Tre svängar tillsammans ska bli ett helt varv: 3 × 120 = 360.
+
+### Femuddig stjärna
+
+Kontrollpanel: övre raden Funktion × 5. Nedre raden: Framåt 400, Höger 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: roboten vänder sig runt två gånger och linjen sluts till en stjärna.
+
+### Cirkel
+
+Kontrollpanel: övre raden Funktion × 36. Nedre raden: Framåt 25, Höger 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+En cirkel är en månghörning med många korta sidor: 36 × 10° = 360°.
+
+### Kvadratisk spiral (variabel och räkning)
+
+Kontrollpanel: övre raden Framåt 30, Funktion × 20. Nedre raden: Höger, Framåt +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Framåt 30 sätter det sparade värdet. Varje gång funktionen körs gör ”+30” sidan 30 mm längre: 60, 90, 120 och så vidare. Den första Framåt 30 återställer värdet, så om du trycker på ▶ Start igen får du samma spiral.
+
+### Sexhörning (vinkel genom division)
+
+Kontrollpanel: övre raden Höger 360, Höger ÷6, Funktion × 6. Nedre raden: Framåt 200, Höger.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Höger 360 gör ett helt varv och sparar 360. Höger ÷6 delar det sparade värdet och svänger 60°. I funktionen tar Höger utan tal 60° igen. De två svängarna i början ändrar bara åt vilket håll roboten tittar innan den ritar; figuren förblir en sexhörning.
+
+Kontrollpanelen delar i heltal och stryker resten. För att figuren ska slutas, dela 360 med ett tal som går jämnt upp: 3, 4, 5, 6, 8, 9, 10, 12. Till exempel ger 360 ÷ 7 51°, och sjuhörningen saknar 3° för att slutas.
+
+Fler teckningar: [Ritexempel](mathdrawings).
+
+## Så skiljer sig PrimaSTEM från LOGO
+
+PrimaSTEM täcker grunderna i sköldpaddsgrafiken från LOGO. En del fungerar annorlunda, och det är meningen:
+
+- **Ett par, ett kommando och ett värde.** Ett par celler rymmer ett kommando och högst ett värde: ett tal, en upprepning eller en operation. Därför kan även en fyraåring läsa programmet.
+- **Inga villkor (`if`).** Programmet körs likadant varje gång. Bara tärningen och Slumpmässig rörelse ger slump.
+- **Funktion har inga namngivna parametrar.** Den anropas med en upprepning och använder värdena som sattes före anropet (se tabellen ovan).
+- **Programlängd:** 6 par i huvudraden, 5 i Funktion.
+- **Pennan sätts i för hand** när barnet vill att roboten ska rita.
+
+När barnet har vuxit ur kontrollpanelen fungerar samma robot med [Scratch](https://scratch.primastem.com).
+
+## Läs mer
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Lärarhandledning](teachersguide): lektioner från det första programmet till aritmetik.
+- [Lärarhandledning. Bok 1.](book-1/book-1): 12 lektioner för barn från 4 år.

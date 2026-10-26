@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM i LOGO"
+description: "PrimaSTEM to grafika żółwia z LOGO, tylko w rękach i bez ekranu. Każde pojęcie na pilocie i jego odpowiednik w LOGO."
+icon: "turtle"
+mode: "default"
+---
+
+U podstaw PrimaSTEM leży idea [LOGO](https://pl.wikipedia.org/wiki/Logo_(język_programowania)). Ten język dla dzieci stworzyli Seymour Papert i jego współpracownicy w 1967 roku. W LOGO dziecko wpisuje polecenia, a żółw rysuje na ekranie. W PrimaSTEM dziecko kładzie żetony na pilocie, a drewniany robot z pisakiem rysuje na papierze. Bez klawiatury, bez ekranu, bez tekstu.
+
+Ta strona jest dla nauczycieli, którzy znają LOGO lub Scratch, i dla wszystkich, którzy chcą zrozumieć, co naprawdę robią żetony.
+
+## Pojęcia na pilocie
+
+| Pojęcie | Na pilocie PrimaSTEM | W LOGO |
+|---|---|---|
+| Sekwencja | Żetony wykonują się od lewej do prawej w górnym rzędzie. Wskaźnik pary, która się wykonuje, miga, a potem gaśnie | polecenia jedno po drugim |
+| Polecenie | Naprzód, Wstecz, Lewo, Prawo, Pauza, Losowy ruch | `forward`, `back`, `left`, `right`, `wait` |
+| Parametr | Żeton z liczbą w tej samej parze: Naprzód + 200 | `forward 200` |
+| Wartość domyślna | Naprzód bez liczby = 150 mm, Lewo/Prawo bez liczby = 90° | |
+| Pętla | Żeton powtórzenia w parze: Naprzód + powtórzenie 4 | `repeat 4 [forward 150]` |
+| Procedura | Dolny rząd (5 par) to Funkcja. Wywołuje ją żeton „Funkcja” | `to shape ... end`, potem `shape` |
+| Procedura w pętli | Żeton „Funkcja” i żeton powtórzenia w jednej parze: Funkcja + powtórzenie 5 | `repeat 5 [shape]` |
+| Przekazanie wartości procedurze | Naprzód 100 przejeżdża 100 mm i zapamiętuje 100. Jeśli zaraz potem wywołasz Funkcję, w której stoi Naprzód bez liczby, ona też przejedzie 100. Zmień Naprzód przed kolejnym wywołaniem, a ta sama Funkcja narysuje figurę innej wielkości | podobnie jak `shape 100`, `shape 50` |
+| Rekurencja | Żeton „Funkcja” w dolnym rzędzie: funkcja wywołuje samą siebie, dopóki znowu nie naciśniesz ▶ Start | procedura wywołuje samą siebie |
+| Zmienne | Każde polecenie pamięta swoją ostatnią wartość: Naprzód, Wstecz, Lewo, Prawo i Pauza to pięć niezależnych zmiennych. Naprzód bez liczby przejedzie tyle samo, co poprzednie Naprzód | `make "step 200`, potem `forward :step` |
+| Arytmetyka na zmiennej | Naprzód + „+30”: dodaj 30 do zapamiętanej wartości i jedź | `make "step :step + 30 forward :step` |
+| Działania | + − × ÷ √ ^ na zapamiętanej wartości, od −5000 do 5000, liczby całkowite | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Wartości ujemne | Wynik ujemny odwraca ruch: Naprzód −50 jedzie 50 mm do tyłu, Lewo −30 skręca w prawo o 30° | `forward -50` |
+| Losowość | Żeton powtórzenia z kostką (od 1 do 6 razy) i żeton „Losowy ruch” | `random 6` |
+| Pisak | Pisak w środku robota | `pendown` |
+| Debugowanie | Patrzymy na robota, znajdujemy zły żeton, wymieniamy go | poprawić wiersz |
+
+Każde polecenie ma własną zapamiętaną wartość: jeśli zmienisz Naprzód, Lewo się nie zmieni. Po wyłączeniu pilota wszystkie wartości wracają do domyślnych: 150 mm, 90°, 1 s dla Pauzy. Domyślny krok można zmienić na stałe żetonem serwisowym „Ustaw domyślną długość kroku dla mapy” (zobacz [Urządzenie i konfiguracja](usermanual)).
+
+Liczy dziecko. Robot dokładnie wykonuje program.
+
+## Przykłady: ten sam program na pilocie i w LOGO
+
+Każdy przykład ma link. Otwiera on [symulator](https://simulator.primastem.com) z tym programem na pilocie i go uruchamia.
+
+### Kwadrat
+
+Pilot: górny rząd Funkcja × 4. Dolny rząd: Naprzód 300, Prawo.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Dla dzieci w wieku 4–6 lat liczby można pominąć: Naprzód i Prawo bez liczb narysują kwadrat o boku 15 cm.
+
+### Trójkąt równoboczny
+
+Pilot: górny rząd Funkcja × 3. Dolny rząd: Naprzód 400, Prawo 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Dlaczego 120, a nie 60? Robot skręca o kąt zewnętrzny. Trzy obroty razem muszą dać pełny obrót: 3 × 120 = 360.
+
+### Gwiazda pięcioramienna
+
+Pilot: górny rząd Funkcja × 5. Dolny rząd: Naprzód 400, Prawo 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: robot obróci się dwa razy, a linia zamknie się w gwiazdę.
+
+### Koło
+
+Pilot: górny rząd Funkcja × 36. Dolny rząd: Naprzód 25, Prawo 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Koło to wielokąt z wieloma krótkimi bokami: 36 × 10° = 360°.
+
+### Kwadratowa spirala (zmienna i arytmetyka)
+
+Pilot: górny rząd Naprzód 30, Funkcja × 20. Dolny rząd: Prawo, Naprzód +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Naprzód 30 ustawia zapamiętaną wartość. Przy każdym uruchomieniu funkcji „+30” wydłuża bok o 30 mm: 60, 90, 120 i tak dalej. Pierwsze Naprzód 30 resetuje wartość, więc jeśli znowu naciśniesz ▶ Start, wyjdzie ta sama spirala.
+
+### Sześciokąt (kąt przez dzielenie)
+
+Pilot: górny rząd Prawo 360, Prawo ÷6, Funkcja × 6. Dolny rząd: Naprzód 200, Prawo.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Prawo 360 wykonuje pełny obrót i zapamiętuje 360. Prawo ÷6 dzieli zapamiętaną wartość i skręca o 60°. W funkcji Prawo bez liczby znowu bierze 60°. Dwa obroty na początku zmieniają tylko to, w którą stronę patrzy robot przed rysowaniem; figura pozostaje sześciokątem.
+
+Pilot dzieli w liczbach całkowitych i odrzuca resztę. Żeby figura się zamknęła, dziel 360 przez liczbę, przez którą dzieli się ono bez reszty: 3, 4, 5, 6, 8, 9, 10, 12. Na przykład 360 ÷ 7 da 51°, a siedmiokąt nie zamknie się o 3°.
+
+Więcej rysunków: [Przykłady rysunków](mathdrawings).
+
+## Czym PrimaSTEM różni się od LOGO
+
+PrimaSTEM obejmuje podstawy grafiki żółwia z LOGO. Niektóre rzeczy działają inaczej i tak zostało to zaprojektowane:
+
+- **Jedna para to jedno polecenie i jedna wartość.** W parze pól leży polecenie i najwyżej jedna wartość: liczba, powtórzenie lub działanie. Dlatego program przeczyta nawet czterolatek.
+- **Nie ma warunków (`if`).** Program za każdym razem wykonuje się tak samo. Losowość dają tylko kostka i Losowy ruch.
+- **Funkcja nie ma nazwanych parametrów.** Wywołuje się ją z powtórzeniem i bierze wartości ustawione przed wywołaniem (zobacz tabelę wyżej).
+- **Długość programu:** 6 par w głównym rzędzie, 5 w Funkcji.
+- **Pisak wkłada się ręką**, gdy dziecko chce, żeby robot rysował.
+
+Gdy dziecko wyrośnie z pilota, ten sam robot działa ze [Scratchem](https://scratch.primastem.com).
+
+## Co przeczytać
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Przewodnik dla nauczyciela](teachersguide): lekcje od pierwszego programu do arytmetyki.
+- [Przewodnik do nauki. Książka 1](book-1/book-1): 12 lekcji dla dzieci od 4 lat.

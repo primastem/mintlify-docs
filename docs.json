@@ -29,6 +29,7 @@
             "icon": "graduation-cap",
             "pages": [
               "en/teachersguide",
+              "en/logo",
               "en/book-1/book-1",
               "en/mathdrawings",
               "en/cognitive",
@@ -71,6 +72,7 @@
             "icon": "graduation-cap",
             "pages": [
               "fr/teachersguide",
+              "fr/logo",
               "fr/book-1/book-1",
               "fr/mathdrawings",
               "fr/cognitive",
@@ -113,6 +115,7 @@
             "icon": "graduation-cap",
             "pages": [
               "de/teachersguide",
+              "de/logo",
               "de/book-1/book-1",
               "de/mathdrawings",
               "de/cognitive",
@@ -155,6 +158,7 @@
             "icon": "graduation-cap",
             "pages": [
               "es/teachersguide",
+              "es/logo",
               "es/book-1/book-1",
               "es/mathdrawings",
               "es/cognitive",
@@ -197,6 +201,7 @@
             "icon": "graduation-cap",
             "pages": [
               "nl/teachersguide",
+              "nl/logo",
               "nl/book-1/book-1",
               "nl/mathdrawings",
               "nl/cognitive",
@@ -239,6 +244,7 @@
             "icon": "graduation-cap",
             "pages": [
               "it/teachersguide",
+              "it/logo",
               "it/book-1/book-1",
               "it/mathdrawings",
               "it/cognitive",
@@ -281,6 +287,7 @@
             "icon": "graduation-cap",
             "pages": [
               "no/teachersguide",
+              "no/logo",
               "no/book-1/book-1",
               "no/mathdrawings",
               "no/cognitive",
@@ -323,6 +330,7 @@
             "icon": "graduation-cap",
             "pages": [
               "sv/teachersguide",
+              "sv/logo",
               "sv/book-1/book-1",
               "sv/mathdrawings",
               "sv/cognitive",
@@ -365,6 +373,7 @@
             "icon": "graduation-cap",
             "pages": [
               "pl/teachersguide",
+              "pl/logo",
               "pl/book-1/book-1",
               "pl/mathdrawings",
               "pl/cognitive",
@@ -407,6 +416,7 @@
             "icon": "graduation-cap",
             "pages": [
               "en-hr/teachersguide",
+              "en-hr/logo",
               "en-hr/book-1/book-1",
               "en-hr/mathdrawings",
               "en-hr/cognitive",
@@ -449,6 +459,7 @@
             "icon": "graduation-cap",
             "pages": [
               "jp/teachersguide",
+              "jp/logo",
               "jp/book-1/book-1",
               "jp/mathdrawings",
               "jp/cognitive",
@@ -491,6 +502,7 @@
             "icon": "graduation-cap",
             "pages": [
               "ru/teachersguide",
+              "ru/logo",
               "ru/book-1/book-1",
               "ru/mathdrawings",
               "ru/cognitive",

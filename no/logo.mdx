@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM og LOGO"
+description: "PrimaSTEM er skilpaddegrafikken fra LOGO, bare i hendene og uten skjerm. Hvert begrep på kontrollpanelet og hva det tilsvarer i LOGO."
+icon: "turtle"
+mode: "default"
+---
+
+PrimaSTEM bygger på ideen bak [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language)). Seymour Papert og kollegene hans laget dette programmeringsspråket for barn i 1967. I LOGO skriver barnet kommandoer, og en skilpadde tegner på skjermen. I PrimaSTEM legger barnet brikker på kontrollpanelet, og en robot i tre med en tusj tegner på papir. Uten tastatur, uten skjerm, uten tekst.
+
+Denne siden er for lærere som kjenner LOGO eller Scratch, og for alle som vil forstå hva brikkene egentlig gjør.
+
+## Begreper på kontrollpanelet
+
+| Begrep | På PrimaSTEM-kontrollpanelet | I LOGO |
+|---|---|---|
+| Rekkefølge | Brikkene kjøres fra venstre mot høyre langs den øverste raden. LED-en til paret som kjøres, blinker og slukner deretter | én kommando etter den andre |
+| Kommando | Fremover, Bakover, Venstre, Høyre, Pause, Tilfeldig bevegelse | `forward`, `back`, `left`, `right`, `wait` |
+| Parameter | En brikke med et tall i samme par: Fremover + 200 | `forward 200` |
+| Standardverdi | Fremover uten tall = 150 mm, Venstre/Høyre uten tall = 90° | |
+| Løkke | En gjentakelsesbrikke i paret: Fremover + gjenta 4 | `repeat 4 [forward 150]` |
+| Prosedyre | Den nederste raden (5 par) er Funksjon. Den kalles av «Funksjon»-brikken | `to shape ... end`, deretter `shape` |
+| Prosedyre i en løkke | «Funksjon»-brikken og en gjentakelsesbrikke i samme par: Funksjon + gjenta 5 | `repeat 5 [shape]` |
+| Gi en verdi til prosedyren | Fremover 100 kjører 100 mm og husker 100. Kaller du deretter en Funksjon der det står Fremover uten tall, kjører den også 100. Endre Fremover før neste kall, så tegner den samme Funksjonen en figur i en annen størrelse | ligner på `shape 100`, `shape 50` |
+| Rekursjon | «Funksjon»-brikken inne i den nederste raden: funksjonen kaller seg selv til du trykker ▶ Start igjen | en prosedyre som kaller seg selv |
+| Variabler | Hver kommando husker sin siste verdi: Fremover, Bakover, Venstre, Høyre og Pause er fem uavhengige variabler. Fremover uten tall kjører like langt som forrige Fremover | `make "step 200`, deretter `forward :step` |
+| Regning med en variabel | Fremover + «+30»: legg 30 til den lagrede verdien og kjør | `make "step :step + 30 forward :step` |
+| Operasjoner | + − × ÷ √ ^ på den lagrede verdien, fra −5000 til 5000, hele tall | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Negative verdier | Et negativt resultat snur bevegelsen: Fremover −50 kjører 50 mm bakover, Venstre −30 svinger 30° til høyre | `forward -50` |
+| Tilfeldighet | Gjentakelsesbrikken med terning (fra 1 til 6 ganger) og «Tilfeldig bevegelse»-brikken | `random 6` |
+| Penn | Tusjen midt i roboten | `pendown` |
+| Feilsøking | Vi ser på roboten, finner feil brikke og bytter den | rette linjen |
+
+Hver kommando har sin egen lagrede verdi: endrer du Fremover, endres ikke Venstre. Når kontrollpanelet slås av, går alle verdiene tilbake til standard: 150 mm, 90°, 1 s for Pause. Standardsteget kan endres permanent med servicebrikken «Angi standard trinnlengde» (se [Enhet og oppsett](usermanual)).
+
+Barnet regner. Roboten utfører programmet nøyaktig.
+
+## Eksempler: samme program på kontrollpanelet og i LOGO
+
+Hvert eksempel har en lenke. Den åpner [simulatoren](https://simulator.primastem.com) med dette programmet på kontrollpanelet og kjører det.
+
+### Kvadrat
+
+Kontrollpanel: øverste rad Funksjon × 4. Nederste rad: Fremover 300, Høyre.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+For barn på 4–6 år kan du sløyfe tallene: Fremover og Høyre uten tall tegner et kvadrat med sider på 15 cm.
+
+### Likesidet trekant
+
+Kontrollpanel: øverste rad Funksjon × 3. Nederste rad: Fremover 400, Høyre 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Hvorfor 120 og ikke 60? Roboten svinger med den ytre vinkelen. Tre svinger til sammen må gi en hel omdreining: 3 × 120 = 360.
+
+### Femtakket stjerne
+
+Kontrollpanel: øverste rad Funksjon × 5. Nederste rad: Fremover 400, Høyre 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: roboten snur seg rundt to ganger, og linjen lukker seg til en stjerne.
+
+### Sirkel
+
+Kontrollpanel: øverste rad Funksjon × 36. Nederste rad: Fremover 25, Høyre 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+En sirkel er en mangekant med mange korte sider: 36 × 10° = 360°.
+
+### Kvadratisk spiral (variabel og regning)
+
+Kontrollpanel: øverste rad Fremover 30, Funksjon × 20. Nederste rad: Høyre, Fremover +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Fremover 30 setter den lagrede verdien. Hver gang funksjonen kjøres, gjør «+30» siden 30 mm lengre: 60, 90, 120 og så videre. Den første Fremover 30 nullstiller verdien, så trykker du ▶ Start igjen, får du samme spiral.
+
+### Sekskant (vinkel ved deling)
+
+Kontrollpanel: øverste rad Høyre 360, Høyre ÷6, Funksjon × 6. Nederste rad: Fremover 200, Høyre.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Høyre 360 gjør en hel omdreining og husker 360. Høyre ÷6 deler den lagrede verdien og svinger 60°. I funksjonen bruker Høyre uten tall 60° igjen. De to svingene i starten endrer bare hvilken vei roboten ser før den tegner; figuren er fortsatt en sekskant.
+
+Kontrollpanelet deler i hele tall og kaster resten. Skal figuren lukke seg, må du dele 360 på et tall som går opp: 3, 4, 5, 6, 8, 9, 10, 12. For eksempel gir 360 ÷ 7 51°, og sjukanten mangler 3° på å lukke seg.
+
+Flere tegninger: [Tegneeksempler](mathdrawings).
+
+## Hvordan PrimaSTEM skiller seg fra LOGO
+
+PrimaSTEM dekker grunnlaget i skilpaddegrafikken fra LOGO. Noen ting fungerer annerledes, og det er med vilje:
+
+- **Ett par, én kommando og én verdi.** Et par celler har én kommando og høyst én verdi: et tall, en gjentakelse eller en operasjon. Derfor kan selv en fireåring lese programmet.
+- **Ingen betingelser (`if`).** Programmet kjøres likt hver gang. Bare terningen og Tilfeldig bevegelse gir tilfeldighet.
+- **Funksjon har ingen navngitte parametere.** Den kalles med en gjentakelse og bruker verdiene som ble satt før kallet (se tabellen over).
+- **Programlengde:** 6 par i hovedraden, 5 i Funksjon.
+- **Tusjen settes inn for hånd** når barnet vil at roboten skal tegne.
+
+Når barnet vokser fra kontrollpanelet, fungerer den samme roboten med [Scratch](https://scratch.primastem.com).
+
+## Videre lesning
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Lærerveiledning](teachersguide): leksjoner fra det første programmet til regning.
+- [Læringsveiledning. Bok 1.](book-1/book-1): 12 leksjoner for barn fra 4 år.

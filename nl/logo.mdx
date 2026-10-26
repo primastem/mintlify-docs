@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM en LOGO"
+description: "PrimaSTEM is de turtle graphics van LOGO, maar dan in je handen en zonder scherm. Elk begrip op de bediening en wat het in LOGO is."
+icon: "turtle"
+mode: "default"
+---
+
+PrimaSTEM is gebaseerd op het idee van [LOGO](https://nl.wikipedia.org/wiki/Logo_(programmeertaal)). Seymour Papert en zijn collega's maakten deze programmeertaal voor kinderen in 1967. In LOGO typt een kind commando's en tekent een schildpad op het scherm. In PrimaSTEM legt het kind kaartjes op de bediening en tekent een houten robot met een stift op papier. Zonder toetsenbord, zonder scherm, zonder tekst.
+
+Deze pagina is voor leerkrachten die LOGO of Scratch kennen, en voor iedereen die wil begrijpen wat de kaartjes echt doen.
+
+## Begrippen op de bediening
+
+| Begrip | Op de PrimaSTEM-bediening | In LOGO |
+|---|---|---|
+| Volgorde | De kaartjes worden van links naar rechts uitgevoerd langs de bovenste rij. De LED van het paar dat wordt uitgevoerd knippert en gaat dan uit | het ene commando na het andere |
+| Commando | Vooruit, Achteruit, Links, Rechts, Pauze, Willekeurige beweging | `forward`, `back`, `left`, `right`, `wait` |
+| Parameter | Een kaartje met een getal in hetzelfde paar: Vooruit + 200 | `forward 200` |
+| Standaardwaarde | Vooruit zonder getal = 150 mm, Links/Rechts zonder getal = 90° | |
+| Lus | Een herhalingskaartje in het paar: Vooruit + herhaal 4 | `repeat 4 [forward 150]` |
+| Procedure | De onderste rij (5 paren) is de Functie. Het kaartje “Functie” roept haar aan | `to shape ... end`, daarna `shape` |
+| Procedure in een lus | Het kaartje “Functie” en een herhalingskaartje in één paar: Functie + herhaal 5 | `repeat 5 [shape]` |
+| Een waarde aan een procedure geven | Vooruit 100 rijdt 100 mm en onthoudt 100. Roep je daarna een Functie aan met Vooruit zonder getal, dan rijdt die ook 100. Verander Vooruit vóór de volgende aanroep, en dezelfde Functie tekent een figuur van een andere grootte | lijkt op `shape 100`, `shape 50` |
+| Recursie | Het kaartje “Functie” in de onderste rij: de functie roept zichzelf aan tot je opnieuw op ▶ Start drukt | een procedure die zichzelf aanroept |
+| Variabelen | Elk commando onthoudt zijn laatste waarde: Vooruit, Achteruit, Links, Rechts en Pauze zijn vijf aparte variabelen. Vooruit zonder getal rijdt even ver als de vorige Vooruit | `make "step 200`, daarna `forward :step` |
+| Rekenen met een variabele | Vooruit + “+30”: tel 30 op bij de opgeslagen waarde en rijd | `make "step :step + 30 forward :step` |
+| Bewerkingen | + − × ÷ √ ^ op de opgeslagen waarde, van −5000 tot 5000, hele getallen | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Negatieve waarden | Een negatief resultaat keert de beweging om: Vooruit −50 rijdt 50 mm achteruit, Links −30 draait 30° naar rechts | `forward -50` |
+| Toeval | Het herhalingskaartje met de dobbelsteen (1 tot 6 keer) en het kaartje “Willekeurige beweging” | `random 6` |
+| Pen | De stift in het midden van de robot | `pendown` |
+| Debuggen | We kijken naar de robot, vinden het verkeerde kaartje en vervangen het | de regel verbeteren |
+
+Elk commando heeft zijn eigen opgeslagen waarde: als je Vooruit verandert, verandert Links niet. Als de bediening uitgaat, krijgen alle waarden weer hun standaardwaarde: 150 mm, 90°, 1 s voor Pauze. De standaardstap kun je blijvend veranderen met het servicekaartje “Standaard staplengte instellen” (zie [Apparaat en instellingen](usermanual)).
+
+Het kind rekent. De robot voert het programma precies uit.
+
+## Voorbeelden: hetzelfde programma op de bediening en in LOGO
+
+Elk voorbeeld heeft een link. Die opent de [simulator](https://simulator.primastem.com) met dit programma op de bediening en start het.
+
+### Vierkant
+
+Bediening: bovenste rij Functie × 4. Onderste rij: Vooruit 300, Rechts.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Start in de simulator](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Voor kinderen van 4–6 jaar kun je de getallen weglaten: Vooruit en Rechts zonder getal tekenen een vierkant met zijden van 15 cm.
+
+### Gelijkzijdige driehoek
+
+Bediening: bovenste rij Functie × 3. Onderste rij: Vooruit 400, Rechts 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Start in de simulator](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Waarom 120 en niet 60? De robot draait over de buitenhoek. Drie draaien samen moeten een volle draai geven: 3 × 120 = 360.
+
+### Vijfpuntige ster
+
+Bediening: bovenste rij Functie × 5. Onderste rij: Vooruit 400, Rechts 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Start in de simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: de robot draait twee keer helemaal rond en de lijn sluit zich tot een ster.
+
+### Cirkel
+
+Bediening: bovenste rij Functie × 36. Onderste rij: Vooruit 25, Rechts 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Start in de simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Een cirkel is een veelhoek met heel veel korte zijden: 36 × 10° = 360°.
+
+### Vierkante spiraal (variabele en rekenen)
+
+Bediening: bovenste rij Vooruit 30, Functie × 20. Onderste rij: Rechts, Vooruit +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Start in de simulator](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Vooruit 30 zet de opgeslagen waarde. Elke keer dat de functie loopt, maakt “+30” de zijde 30 mm langer: 60, 90, 120 enzovoort. De eerste Vooruit 30 zet de waarde terug, dus als je opnieuw op ▶ Start drukt, krijg je dezelfde spiraal.
+
+### Zeshoek (hoek door te delen)
+
+Bediening: bovenste rij Rechts 360, Rechts ÷6, Functie × 6. Onderste rij: Vooruit 200, Rechts.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Start in de simulator](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma op de bediening">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Wat de robot tekent">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Rechts 360 maakt een volle draai en onthoudt 360. Rechts ÷6 deelt de opgeslagen waarde en draait 60°. In de functie neemt Rechts zonder getal opnieuw 60°. De twee draaien aan het begin veranderen alleen de kant waar de robot naartoe kijkt voordat hij tekent; de figuur blijft een zeshoek.
+
+De bediening deelt in hele getallen en laat de rest weg. Wil je dat de figuur sluit, deel 360 dan door een getal dat zonder rest past: 3, 4, 5, 6, 8, 9, 10, 12. Zo geeft 360 ÷ 7 een hoek van 51°, en de zevenhoek sluit niet: er blijft 3° over.
+
+Meer tekeningen: [Tekenvoorbeelden](mathdrawings).
+
+## Waarin PrimaSTEM verschilt van LOGO
+
+PrimaSTEM dekt de basis van de turtle graphics van LOGO. Sommige dingen werken anders, en dat is zo bedoeld:
+
+- **Eén paar, één commando en één waarde.** In een paar cellen ligt een commando en hooguit één waarde: een getal, een herhaling of een bewerking. Daardoor kan zelfs een kind van vier het programma lezen.
+- **Geen voorwaarden (`if`).** Het programma loopt elke keer op dezelfde manier. Alleen de dobbelsteen en Willekeurige beweging brengen toeval.
+- **De Functie heeft geen benoemde parameters.** Je roept haar aan met een herhaling, en ze gebruikt de waarden die vóór de aanroep zijn ingesteld (zie de tabel hierboven).
+- **Lengte van het programma:** 6 paren in de hoofdrij, 5 in de Functie.
+- **De stift zet je er met de hand in**, als het kind wil dat de robot tekent.
+
+Als een kind de bediening ontgroeid is, werkt dezelfde robot met [Scratch](https://scratch.primastem.com).
+
+## Verder lezen
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Leerkrachtengids](teachersguide): lessen van het eerste programma tot rekenen.
+- [Leerhandleiding. Boek 1.](book-1/book-1): 12 lessen voor kinderen vanaf 4 jaar.

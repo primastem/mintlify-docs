@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEMとLOGO"
+description: "PrimaSTEMは、LOGOのタートルグラフィックスを手で触れて、画面なしで行うものです。コントローラー上の各概念と、LOGOでの対応を紹介します。"
+icon: "turtle"
+mode: "default"
+---
+
+PrimaSTEMの土台には[LOGO](https://ja.wikipedia.org/wiki/LOGO)の考え方があります。この子ども向けの言語は、シーモア・パパートと同僚たちが1967年に作りました。LOGOでは、子どもがコマンドを入力すると、画面上のタートルが絵を描きます。PrimaSTEMでは、子どもがコントローラーにチップを置くと、マーカー付きの木製ロボットが紙に絵を描きます。キーボードも画面も文字も使いません。
+
+このページは、LOGOやScratchを知っている先生と、チップが実際に何をしているのかを知りたいすべての方に向けたものです。
+
+## コントローラー上の概念
+
+| 概念 | PrimaSTEMのコントローラーでは | LOGOでは |
+|---|---|---|
+| 順次実行 | チップは上段を左から右へ順に実行されます。実行中のペアのLEDが点滅し、そのあと消えます | コマンドを1つずつ順に実行 |
+| コマンド | 前進、後退、左、右、一時停止、ランダム移動 | `forward`、`back`、`left`、`right`、`wait` |
+| パラメーター | 同じペアに置いた数値チップ:前進 + 200 | `forward 200` |
+| 初期値 | 数値なしの前進 = 150 mm、数値なしの左/右 = 90° | |
+| ループ | ペアに置いた繰り返しチップ:前進 + 繰り返し4 | `repeat 4 [forward 150]` |
+| 手続き | 下段(5ペア)が関数です。「関数」チップで呼び出します | `to shape ... end`、そのあと `shape` |
+| ループ内の手続き | 「関数」チップと繰り返しチップを同じペアに置きます:関数 + 繰り返し5 | `repeat 5 [shape]` |
+| 手続きに値を渡す | 前進100は100 mm進み、100を覚えます。続けて、数値なしの前進が入った関数を呼ぶと、そこでも100進みます。次の呼び出しの前に前進を変えると、同じ関数が別の大きさの図形を描きます | `shape 100`、`shape 50` に近い |
+| 再帰 | 下段に置いた「関数」チップ:もう一度 ▶ スタート を押すまで、関数が自分自身を呼び続けます | 自分自身を呼ぶ手続き |
+| 変数 | 各コマンドは自分の直近の値を覚えています。前進、後退、左、右、一時停止は5つの独立した変数です。数値なしの前進は、前回の前進と同じ距離を進みます | `make "step 200`、そのあと `forward :step` |
+| 変数の算術 | 前進 + 「+30」:覚えた値に30を足して進みます | `make "step :step + 30 forward :step` |
+| 演算 | 覚えた値に + − × ÷ √ ^ を使います。範囲は−5000から5000、整数のみ | `sum`、`difference`、`product`、`quotient`、`sqrt`、`power` |
+| 負の値 | 結果が負になると動きが逆になります。前進−50は50 mm後ろへ進み、左−30は右へ30°回ります | `forward -50` |
+| ランダム | サイコロの繰り返しチップ(1〜6回)と「ランダム移動」チップ | `random 6` |
+| ペン | ロボットの中心に差し込むマーカー | `pendown` |
+| デバッグ | ロボットを見て、間違ったチップを見つけ、取り替えます | 行を直す |
+
+覚えた値はコマンドごとに別々です。前進を変えても、左は変わりません。コントローラーの電源を切ると、すべての値が初期値に戻ります:150 mm、90°、一時停止は1秒です。初期歩幅は、サービスチップ「デフォルトステップ長の設定」でずっと変えておけます([本体と設定](usermanual)を参照)。
+
+計算するのは子どもです。ロボットはプログラムを正確に実行します。
+
+## 例:同じプログラムをコントローラーとLOGOで
+
+各例にリンクがあります。リンクを開くと、このプログラムがコントローラーに置かれた状態で[シミュレーター](https://simulator.primastem.com)が開き、実行されます。
+
+### 正方形
+
+コントローラー:上段 関数 × 4。下段:前進300、右。
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+4〜6歳の子どもには数値を置かなくても構いません。数値なしの前進と右で、1辺15 cmの正方形を描きます。
+
+### 正三角形
+
+コントローラー:上段 関数 × 3。下段:前進400、右120。
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+なぜ60ではなく120なのでしょう。ロボットは外角の分だけ回ります。3回の回転を合わせると1回転になる必要があります:3 × 120 = 360。
+
+### 五芒星
+
+コントローラー:上段 関数 × 5。下段:前進400、右144。
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720:ロボットは2回転し、線が閉じて星になります。
+
+### 円
+
+コントローラー:上段 関数 × 36。下段:前進25、右10。
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+円は、短い辺がたくさんある多角形です:36 × 10° = 360°。
+
+### 四角い渦巻き(変数と算術)
+
+コントローラー:上段 前進30、関数 × 20。下段:右、前進 +30。
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+前進30が覚える値を決めます。関数が実行されるたびに、「+30」が辺を30 mm長くします:60、90、120と続きます。最初の前進30が値をリセットするので、もう一度 ▶ スタート を押すと同じ渦巻きになります。
+
+### 六角形(割り算で角度を出す)
+
+コントローラー:上段 右360、右 ÷6、関数 × 6。下段:前進200、右。
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+右360は1回転して、360を覚えます。右 ÷6は覚えた値を割り、60°回ります。関数の中では、数値なしの右がまた60°を使います。最初の2回の回転は、描き始める前のロボットの向きを変えるだけです。図形は六角形のままです。
+
+コントローラーは割り算で余りを切り捨てます。図形を閉じるには、360を割り切れる数で割ってください:3、4、5、6、8、9、10、12。たとえば360 ÷ 7は51°になり、七角形は3°ずれて閉じません。
+
+その他の図形:[描画例](mathdrawings)。
+
+## PrimaSTEMとLOGOの違い
+
+PrimaSTEMはLOGOのタートルグラフィックスの基本をカバーしています。いくつかの点は意図的に違う作りになっています:
+
+- **1つのペアに1つのコマンドと1つの値。** ペアのセルには、コマンドと、値を最大1つ置きます。値は数値、繰り返し、演算のどれかです。だから4歳の子どもでもプログラムを読めます。
+- **条件(`if`)はありません。** プログラムは毎回同じように実行されます。ランダムになるのはサイコロとランダム移動だけです。
+- **関数には名前付きのパラメーターがありません。** 繰り返しと一緒に呼び出し、呼び出しの前に設定した値を使います(上の表を参照)。
+- **プログラムの長さ:** メインの段に6ペア、関数に5ペアです。
+- **マーカーは手で差し込みます。** 子どもがロボットに描かせたいときに差します。
+
+子どもがコントローラーを卒業したら、同じロボットを[Scratch](https://scratch.primastem.com)で使えます。
+
+## 参考資料
+
+- [シーモア・パパート](https://en.wikipedia.org/wiki/Seymour_Papert)『*Mindstorms: Children, Computers, and Powerful Ideas*』、1980年。
+- [教師向けガイド](teachersguide):最初のプログラムから算術までのレッスン。
+- [学習ガイド ブック1](book-1/book-1):4歳からの子ども向けの12レッスン。

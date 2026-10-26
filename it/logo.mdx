@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM e LOGO"
+description: "PrimaSTEM è la grafica della tartaruga di LOGO, ma in mano e senza schermo. Ogni concetto sulla pulsantiera e il suo equivalente in LOGO."
+icon: "turtle"
+mode: "default"
+---
+
+PrimaSTEM nasce dall'idea di [LOGO](https://it.wikipedia.org/wiki/Logo_(informatica)). Questo linguaggio per bambini è stato creato da Seymour Papert e dai suoi colleghi nel 1967. In LOGO il bambino scrive i comandi e una tartaruga disegna sullo schermo. In PrimaSTEM il bambino mette le tessere sulla pulsantiera e un robot di legno con un pennarello disegna sulla carta. Senza tastiera, senza schermo, senza testo.
+
+Questa pagina è per gli insegnanti che conoscono LOGO o Scratch e per chi vuole capire cosa fanno davvero le tessere.
+
+## I concetti sulla pulsantiera
+
+| Concetto | Sulla pulsantiera PrimaSTEM | In LOGO |
+|---|---|---|
+| Sequenza | Le tessere vengono eseguite da sinistra a destra lungo la riga in alto. Il LED della coppia in esecuzione lampeggia, poi si spegne | un comando dopo l'altro |
+| Comando | Avanti, Indietro, Sinistra, Destra, Pausa, Movimento casuale | `forward`, `back`, `left`, `right`, `wait` |
+| Parametro | Una tessera con un numero nella stessa coppia: Avanti + 200 | `forward 200` |
+| Valore predefinito | Avanti senza numero = 150 mm, Sinistra/Destra senza numero = 90° | |
+| Ciclo | Una tessera di ripetizione nella coppia: Avanti + ripeti 4 | `repeat 4 [forward 150]` |
+| Procedura | La riga in basso (5 coppie) è la Funzione. La richiama la tessera «Funzione» | `to shape ... end`, poi `shape` |
+| Procedura in un ciclo | La tessera «Funzione» e una tessera di ripetizione nella stessa coppia: Funzione + ripeti 5 | `repeat 5 [shape]` |
+| Passare un valore alla procedura | Avanti 100 percorre 100 mm e memorizza 100. Se subito dopo si richiama una Funzione che contiene Avanti senza numero, anche lei percorre 100. Cambiate Avanti prima della chiamata successiva e la stessa Funzione disegna una figura di un'altra misura | simile a `shape 100`, `shape 50` |
+| Ricorsione | La tessera «Funzione» dentro la riga in basso: la funzione richiama sé stessa finché non premete di nuovo ▶ Start | una procedura che richiama sé stessa |
+| Variabili | Ogni comando ricorda il suo ultimo valore: Avanti, Indietro, Sinistra, Destra e Pausa sono cinque variabili indipendenti. Avanti senza numero percorre quanto l'ultimo Avanti | `make "step 200`, poi `forward :step` |
+| Aritmetica su una variabile | Avanti + «+30»: aggiunge 30 al valore memorizzato e si muove | `make "step :step + 30 forward :step` |
+| Operazioni | + − × ÷ √ ^ sul valore memorizzato, da −5000 a 5000, numeri interi | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Valori negativi | Un risultato negativo inverte il movimento: Avanti −50 va indietro di 50 mm, Sinistra −30 gira a destra di 30° | `forward -50` |
+| Casualità | La tessera di ripetizione con il dado (da 1 a 6 volte) e la tessera «Movimento casuale» | `random 6` |
+| Penna | Il pennarello al centro del robot | `pendown` |
+| Debug | Guardiamo il robot, troviamo la tessera sbagliata e la cambiamo | correggere la riga |
+
+Ogni comando ha il suo valore memorizzato: se cambiate Avanti, Sinistra non cambia. Quando la pulsantiera si spegne, tutti i valori tornano a quelli standard: 150 mm, 90°, 1 s per la Pausa. Il passo predefinito si può cambiare in modo permanente con la tessera di servizio «Imposta lunghezza passo predefinita» (vedi [Dispositivo e configurazione](usermanual)).
+
+I calcoli li fa il bambino. Il robot esegue il programma con precisione.
+
+## Esempi: lo stesso programma sulla pulsantiera e in LOGO
+
+Ogni esempio ha un link. Il link apre il [simulatore](https://simulator.primastem.com) con questo programma sulla pulsantiera e lo avvia.
+
+### Quadrato
+
+Pulsantiera: riga in alto Funzione × 4. Riga in basso: Avanti 300, Destra.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Con i bambini di 4–6 anni i numeri si possono omettere: Avanti e Destra senza numeri disegnano un quadrato con il lato di 15 cm.
+
+### Triangolo equilatero
+
+Pulsantiera: riga in alto Funzione × 3. Riga in basso: Avanti 400, Destra 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Perché 120 e non 60? Il robot gira dell'angolo esterno. Le tre rotazioni insieme devono fare un giro completo: 3 × 120 = 360.
+
+### Stella a cinque punte
+
+Pulsantiera: riga in alto Funzione × 5. Riga in basso: Avanti 400, Destra 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: il robot fa due giri completi e la linea si chiude in una stella.
+
+### Cerchio
+
+Pulsantiera: riga in alto Funzione × 36. Riga in basso: Avanti 25, Destra 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Un cerchio è un poligono con tanti lati corti: 36 × 10° = 360°.
+
+### Spirale quadrata (variabile e aritmetica)
+
+Pulsantiera: riga in alto Avanti 30, Funzione × 20. Riga in basso: Destra, Avanti +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Avanti 30 imposta il valore memorizzato. A ogni esecuzione della funzione «+30» allunga il lato di 30 mm: 60, 90, 120 e così via. Il primo Avanti 30 azzera il valore, quindi se premete di nuovo ▶ Start ottenete la stessa spirale.
+
+### Esagono (angolo con la divisione)
+
+Pulsantiera: riga in alto Destra 360, Destra ÷6, Funzione × 6. Riga in basso: Avanti 200, Destra.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Avvia nel simulatore](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Programma sulla pulsantiera">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Cosa disegna il robot">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Destra 360 fa un giro completo e memorizza 360. Destra ÷6 divide il valore memorizzato e gira di 60°. Nella funzione Destra senza numero usa di nuovo 60°. Le due rotazioni all'inizio cambiano solo la direzione del robot prima del disegno; la figura resta un esagono.
+
+La pulsantiera fa la divisione intera e scarta il resto. Perché la figura si chiuda, dividete 360 per un numero senza resto: 3, 4, 5, 6, 8, 9, 10, 12. Per esempio, 360 ÷ 7 dà 51°, e l'ettagono non si chiude per 3°.
+
+Altri disegni: [Esempi di disegni](mathdrawings).
+
+## In cosa PrimaSTEM è diverso da LOGO
+
+PrimaSTEM copre la base della grafica della tartaruga di LOGO. Alcune cose funzionano in modo diverso, ed è una scelta voluta:
+
+- **Una coppia, un comando e un valore.** In una coppia di celle ci sono un comando e al massimo un valore: un numero, una ripetizione o un'operazione. Così il programma lo legge anche un bambino di quattro anni.
+- **Niente condizioni (`if`).** Il programma si esegue ogni volta nello stesso modo. La casualità viene solo dal dado e dal Movimento casuale.
+- **La Funzione non ha parametri con nome.** Si richiama con una ripetizione e usa i valori impostati prima della chiamata (vedi la tabella sopra).
+- **Lunghezza del programma:** 6 coppie nella riga principale, 5 nella Funzione.
+- **Il pennarello si inserisce a mano**, quando il bambino vuole che il robot disegni.
+
+Quando il bambino supera la pulsantiera, lo stesso robot funziona con [Scratch](https://scratch.primastem.com).
+
+## Letture consigliate
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Guida per l'insegnante](teachersguide): lezioni dal primo programma all'aritmetica.
+- [Guida all'apprendimento. Libro 1.](book-1/book-1): 12 lezioni per bambini dai 4 anni.

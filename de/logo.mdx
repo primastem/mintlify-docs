@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM und LOGO"
+description: "PrimaSTEM ist Turtle-Grafik aus LOGO, zum Anfassen und ohne Bildschirm. Jedes Konzept auf der Steuerung und sein Gegenstück in LOGO."
+icon: "turtle"
+mode: "default"
+---
+
+PrimaSTEM beruht auf der Idee von [LOGO](https://de.wikipedia.org/wiki/Logo_(Programmiersprache)). Diese Sprache für Kinder entwickelten Seymour Papert und seine Kollegen 1967. In LOGO tippt das Kind Befehle ein, und eine Schildkröte zeichnet auf dem Bildschirm. In PrimaSTEM legt das Kind Tokens auf die Steuerung, und ein Holzroboter mit einem Stift zeichnet auf Papier. Ohne Tastatur, ohne Bildschirm, ohne Text.
+
+Diese Seite ist für Lehrkräfte, die LOGO oder Scratch kennen, und für alle, die verstehen wollen, was die Tokens tatsächlich tun.
+
+## Konzepte auf der Steuerung
+
+| Konzept | Auf der PrimaSTEM-Steuerung | In LOGO |
+|---|---|---|
+| Sequenz | Die Tokens laufen in der oberen Reihe von links nach rechts. Die LED des Paares, das gerade läuft, blinkt und erlischt dann | ein Befehl nach dem anderen |
+| Befehl | Vorwärts, Rückwärts, Links, Rechts, Pause, Zufällige Bewegung | `forward`, `back`, `left`, `right`, `wait` |
+| Parameter | Ein Zahlen-Token im selben Paar: Vorwärts + 200 | `forward 200` |
+| Standardwert | Vorwärts ohne Zahl = 150 mm, Links/Rechts ohne Zahl = 90° | |
+| Schleife | Ein Wiederholungs-Token im Paar: Vorwärts + Wiederholen 4 | `repeat 4 [forward 150]` |
+| Prozedur | Die untere Reihe (5 Paare) ist die Funktion. Das Token „Funktion“ ruft sie auf | `to shape ... end`, dann `shape` |
+| Prozedur in einer Schleife | Das Token „Funktion“ und ein Wiederholungs-Token in einem Paar: Funktion + Wiederholen 5 | `repeat 5 [shape]` |
+| Einer Prozedur einen Wert übergeben | Vorwärts 100 fährt 100 mm und speichert 100. Rufen Sie danach eine Funktion auf, in der Vorwärts ohne Zahl steht, fährt sie ebenfalls 100. Ändern Sie Vorwärts vor dem nächsten Aufruf, und dieselbe Funktion zeichnet die Figur in einer anderen Größe | ähnlich wie `shape 100`, `shape 50` |
+| Rekursion | Das Token „Funktion“ in der unteren Reihe: Die Funktion ruft sich selbst auf, bis Sie wieder ▶ Start drücken | eine Prozedur ruft sich selbst auf |
+| Variablen | Jeder Befehl merkt sich seinen letzten Wert: Vorwärts, Rückwärts, Links, Rechts und Pause sind fünf unabhängige Variablen. Vorwärts ohne Zahl fährt so weit wie das letzte Vorwärts | `make "step 200`, dann `forward :step` |
+| Arithmetik mit einer Variablen | Vorwärts + „+30“: 30 zum gespeicherten Wert addieren und fahren | `make "step :step + 30 forward :step` |
+| Operationen | + − × ÷ √ ^ mit dem gespeicherten Wert, von −5000 bis 5000, ganze Zahlen | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Negative Werte | Ein negatives Ergebnis kehrt die Bewegung um: Vorwärts −50 fährt 50 mm zurück, Links −30 dreht 30° nach rechts | `forward -50` |
+| Zufall | Das Wiederholungs-Token mit dem Würfel (1 bis 6 Mal) und das Token „Zufällige Bewegung“ | `random 6` |
+| Stift | Ein Stift in der Mitte des Roboters | `pendown` |
+| Fehlersuche | Den Roboter beobachten, das falsche Token finden, es austauschen | die Zeile korrigieren |
+
+Jeder Befehl hat seinen eigenen gespeicherten Wert: Wenn Sie Vorwärts ändern, ändert sich Links nicht. Beim Ausschalten der Steuerung kehren alle Werte zu den Standardwerten zurück: 150 mm, 90°, 1 s für Pause. Den Standardschritt ändern Sie dauerhaft mit dem Service-Token „Standard-Schrittlänge festlegen“ (siehe [Gerät und Einrichtung](usermanual)).
+
+Das Kind rechnet. Der Roboter führt das Programm genau aus.
+
+## Beispiele: dasselbe Programm auf der Steuerung und in LOGO
+
+Jedes Beispiel hat einen Link. Er öffnet den [Simulator](https://simulator.primastem.com) mit diesem Programm auf der Steuerung und startet es.
+
+### Quadrat
+
+Steuerung: obere Reihe Funktion × 4. Untere Reihe: Vorwärts 300, Rechts.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Für Kinder von 4–6 Jahren können Sie die Zahlen weglassen: Vorwärts und Rechts ohne Zahlen zeichnen ein Quadrat mit 15 cm Seitenlänge.
+
+### Gleichseitiges Dreieck
+
+Steuerung: obere Reihe Funktion × 3. Untere Reihe: Vorwärts 400, Rechts 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Warum 120 und nicht 60? Der Roboter dreht um den Außenwinkel. Die drei Drehungen zusammen müssen eine volle Umdrehung ergeben: 3 × 120 = 360.
+
+### Fünfzackiger Stern
+
+Steuerung: obere Reihe Funktion × 5. Untere Reihe: Vorwärts 400, Rechts 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: Der Roboter dreht sich zweimal ganz herum, und die Linie schließt sich zu einem Stern.
+
+### Kreis
+
+Steuerung: obere Reihe Funktion × 36. Untere Reihe: Vorwärts 25, Rechts 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Ein Kreis ist ein Vieleck mit vielen kurzen Seiten: 36 × 10° = 360°.
+
+### Quadratische Spirale (Variable und Arithmetik)
+
+Steuerung: obere Reihe Vorwärts 30, Funktion × 20. Untere Reihe: Rechts, Vorwärts +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Vorwärts 30 setzt den gespeicherten Wert. Bei jedem Durchlauf der Funktion verlängert „+30“ die Seite um 30 mm: 60, 90, 120 und so weiter. Das erste Vorwärts 30 setzt den Wert zurück. Wenn Sie wieder ▶ Start drücken, entsteht deshalb dieselbe Spirale.
+
+### Sechseck (Winkel durch Division)
+
+Steuerung: obere Reihe Rechts 360, Rechts ÷6, Funktion × 6. Untere Reihe: Vorwärts 200, Rechts.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Im Simulator starten](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf der Steuerung">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Rechts 360 macht eine volle Umdrehung und speichert 360. Rechts ÷6 teilt den gespeicherten Wert und dreht um 60°. In der Funktion nimmt Rechts ohne Zahl wieder 60°. Die zwei Drehungen am Anfang ändern nur, wohin der Roboter vor dem Zeichnen schaut; die Figur bleibt ein Sechseck.
+
+Die Steuerung teilt ganzzahlig und verwirft den Rest. Damit sich die Figur schließt, teilen Sie 360 durch eine Zahl ohne Rest: 3, 4, 5, 6, 8, 9, 10, 12. Zum Beispiel ergibt 360 ÷ 7 den Wert 51°, und dem Siebeneck fehlen 3° zum Schließen.
+
+Weitere Zeichnungen: [Zeichnungsbeispiele](mathdrawings).
+
+## Worin sich PrimaSTEM von LOGO unterscheidet
+
+PrimaSTEM deckt die Grundlagen der LOGO-Turtle-Grafik ab. Manches funktioniert anders, und das ist Absicht:
+
+- **Ein Paar, ein Befehl und ein Wert.** In einem Zellenpaar liegt ein Befehl und höchstens ein Wert: eine Zahl, eine Wiederholung oder eine Operation. Deshalb kann auch ein vierjähriges Kind das Programm lesen.
+- **Keine Bedingungen (`if`).** Das Programm läuft jedes Mal gleich. Zufall bringen nur der Würfel und die Zufällige Bewegung.
+- **Die Funktion hat keine benannten Parameter.** Sie wird mit einer Wiederholung aufgerufen und nimmt die Werte, die vor dem Aufruf gesetzt wurden (siehe Tabelle oben).
+- **Programmlänge:** 6 Paare in der Hauptreihe, 5 in der Funktion.
+- **Den Stift steckt man von Hand ein**, wenn das Kind möchte, dass der Roboter zeichnet.
+
+Wenn ein Kind der Steuerung entwachsen ist, arbeitet derselbe Roboter mit [Scratch](https://scratch.primastem.com).
+
+## Zum Weiterlesen
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Lehrerhandbuch](teachersguide): Lektionen vom ersten Programm bis zur Arithmetik.
+- [Leitfaden zum Lernen. Buch 1](book-1/book-1): 12 Lektionen für Kinder ab 4 Jahren.

@@ -1,0 +1,194 @@
+---
+title: "PrimaSTEM i LOGO"
+description: "PrimaSTEM je grafika kornjače iz LOGO-a, samo u rukama i bez ekrana. Svaki pojam na ploči i njegov parnjak u LOGO-u."
+icon: "turtle"
+mode: "default"
+---
+
+Temelj PrimaSTEM-a je ideja jezika [LOGO](https://hr.wikipedia.org/wiki/Logo_(programski_jezik)). Taj jezik za djecu stvorili su Seymour Papert i njegovi suradnici 1967. godine. U LOGO-u dijete upisuje naredbe, a kornjača crta na ekranu. U PrimaSTEM-u dijete stavlja žetone na upravljačku ploču, a drveni robot s flomasterom crta na papiru. Bez tipkovnice, bez ekrana, bez teksta.
+
+Ova stranica je za učitelje koji poznaju LOGO ili Scratch i za sve koji žele razumjeti što žetoni zapravo rade.
+
+## Pojmovi na ploči
+
+| Pojam | Na ploči PrimaSTEM | U LOGO-u |
+|---|---|---|
+| Slijed | Žetoni se izvode slijeva udesno u gornjem redu. Indikator para koji se izvodi treperi, a zatim se gasi | naredbe jedna za drugom |
+| Naredba | Naprijed, Natrag, Lijevo, Desno, Pauza, Nasumično kretanje | `forward`, `back`, `left`, `right`, `wait` |
+| Parametar | Žeton s brojem u istom paru: Naprijed + 200 | `forward 200` |
+| Zadana vrijednost | Naprijed bez broja = 150 mm, Lijevo/Desno bez broja = 90° | |
+| Petlja | Žeton ponavljanja u paru: Naprijed + ponavljanje 4 | `repeat 4 [forward 150]` |
+| Procedura | Donji red (5 parova) je Funkcija. Poziva je žeton „Funkcija“ | `to shape ... end`, zatim `shape` |
+| Procedura u petlji | Žeton „Funkcija“ i žeton ponavljanja u istom paru: Funkcija + ponavljanje 5 | `repeat 5 [shape]` |
+| Predavanje vrijednosti proceduri | Naprijed 100 prijeđe 100 mm i zapamti 100. Ako odmah zatim pozovete Funkciju u kojoj stoji Naprijed bez broja, i ona prijeđe 100. Promijenite Naprijed prije sljedećeg poziva i ista Funkcija nacrta lik druge veličine | slično kao `shape 100`, `shape 50` |
+| Rekurzija | Žeton „Funkcija“ unutar donjeg reda: funkcija poziva samu sebe dok ponovno ne pritisnete ▶ Start | procedura poziva samu sebe |
+| Varijable | Svaka naredba pamti svoju zadnju vrijednost: Naprijed, Natrag, Lijevo, Desno i Pauza pet su neovisnih varijabli. Naprijed bez broja prijeđe isto koliko i prethodni Naprijed | `make "step 200`, zatim `forward :step` |
+| Aritmetika nad varijablom | Naprijed + „+30“: dodaj 30 spremljenoj vrijednosti i kreni | `make "step :step + 30 forward :step` |
+| Operacije | + − × ÷ √ ^ nad spremljenom vrijednošću, od −5000 do 5000, cijeli brojevi | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
+| Negativne vrijednosti | Negativan rezultat obrće kretanje: Naprijed −50 ide 50 mm unatrag, Lijevo −30 zaokreće udesno za 30° | `forward -50` |
+| Nasumičnost | Žeton ponavljanja s kockicom (od 1 do 6 puta) i žeton „Nasumično kretanje“ | `random 6` |
+| Olovka | Flomaster u sredini robota | `pendown` |
+| Otklanjanje pogrešaka | Gledamo robota, nađemo pogrešan žeton, zamijenimo ga | ispraviti redak |
+
+Svaka naredba ima svoju spremljenu vrijednost: ako promijenite Naprijed, Lijevo se ne mijenja. Kad se ploča isključi, sve se vrijednosti vraćaju na zadane: 150 mm, 90°, 1 s za Pauzu. Zadani korak može se trajno promijeniti servisnim žetonom „Korak“ (vidi [Uređaj i postavke](usermanual)).
+
+Računa dijete. Robot točno izvodi program.
+
+## Primjeri: isti program na ploči i u LOGO-u
+
+Svaki primjer ima poveznicu. Ona otvara [simulator](https://simulator.primastem.com) s tim programom na ploči i pokreće ga.
+
+### Kvadrat
+
+Ploča: gornji red Funkcija × 4. Donji red: Naprijed 300, Desno.
+
+```
+repeat 4 [forward 300 right 90]
+```
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/square-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/square-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Za djecu od 4 do 6 godina brojevi nisu potrebni: Naprijed i Desno bez brojeva nacrtaju kvadrat sa stranicom od 15 cm.
+
+### Jednakostranični trokut
+
+Ploča: gornji red Funkcija × 3. Donji red: Naprijed 400, Desno 120.
+
+```
+repeat 3 [forward 400 right 120]
+```
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/triangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/triangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Zašto 120, a ne 60? Robot se zaokreće za vanjski kut. Tri zaokreta zajedno moraju dati puni krug: 3 × 120 = 360.
+
+### Zvijezda s pet krakova
+
+Ploča: gornji red Funkcija × 5. Donji red: Naprijed 400, Desno 144.
+
+```
+repeat 5 [forward 400 right 144]
+```
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/star-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/star-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+5 × 144 = 720: robot se okrene dvaput i crta se zatvori u zvijezdu.
+
+### Krug
+
+Ploča: gornji red Funkcija × 36. Donji red: Naprijed 25, Desno 10.
+
+```
+repeat 36 [forward 25 right 10]
+```
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/circle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/circle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Krug je mnogokut s mnogo kratkih stranica: 36 × 10° = 360°.
+
+### Kvadratna spirala (varijabla i aritmetika)
+
+Ploča: gornji red Naprijed 30, Funkcija × 20. Donji red: Desno, Naprijed +30.
+
+```
+make "side 30
+forward :side
+repeat 20 [
+  right 90
+  make "side :side + 30
+  forward :side
+]
+```
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/spiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Naprijed 30 postavlja spremljenu vrijednost. Pri svakom pokretanju funkcije „+30“ produlji stranicu za 30 mm: 60, 90, 120 i tako dalje. Prvi Naprijed 30 vraća vrijednost na početnu, pa ako ponovno pritisnete ▶ Start, dobit ćete istu spiralu.
+
+### Šesterokut (kut dijeljenjem)
+
+Ploča: gornji red Desno 360, Desno ÷6, Funkcija × 6. Donji red: Naprijed 200, Desno.
+
+```
+make "angle 360 / 6
+repeat 6 [forward 200 right :angle]
+```
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/logo/hexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/logo/hexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+Desno 360 napravi puni okret i zapamti 360. Desno ÷6 podijeli spremljenu vrijednost i zaokrene za 60°. U funkciji Desno bez broja opet uzima 60°. Dva zaokreta na početku mijenjaju samo smjer u kojem robot gleda prije crtanja; lik ostaje šesterokut.
+
+Ploča dijeli cijelim brojevima i odbacuje ostatak. Da bi se lik zatvorio, dijelite 360 brojem kojim je djeljiv bez ostatka: 3, 4, 5, 6, 8, 9, 10, 12. Na primjer, 360 ÷ 7 daje 51° i sedmerokut se neće zatvoriti za 3°.
+
+Više crteža: [Primjeri crteža](mathdrawings).
+
+## Po čemu se PrimaSTEM razlikuje od LOGO-a
+
+PrimaSTEM pokriva osnovu grafike kornjače iz LOGO-a. Neke stvari rade drukčije, i to namjerno:
+
+- **Jedan par, jedna naredba i jedna vrijednost.** U paru polja nalazi se naredba i najviše jedna vrijednost: broj, ponavljanje ili operacija. Zato program može pročitati i četverogodišnje dijete.
+- **Nema uvjeta (`if`).** Program se svaki put izvodi jednako. Nasumičnost daju samo kockica i Nasumično kretanje.
+- **Funkcija nema imenovane parametre.** Poziva se s ponavljanjem i uzima vrijednosti postavljene prije poziva (vidi tablicu gore).
+- **Duljina programa:** 6 parova u glavnom redu, 5 u Funkciji.
+- **Flomaster se umeće rukom** kad dijete želi da robot crta.
+
+Kad dijete preraste ploču, isti robot radi sa [Scratchom](https://scratch.primastem.com).
+
+## Što pročitati
+
+- [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), *Mindstorms: Children, Computers, and Powerful Ideas*, 1980.
+- [Vodič za učitelje](teachersguide): lekcije od prvog programa do aritmetike.
+- [Vodič za učenje. Knjiga 1](book-1/book-1): 12 lekcija za djecu od 4 godine.
