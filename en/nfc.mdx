@@ -1,5 +1,5 @@
 ---
-title: "Command Chips"
+title: "Command Tokens"
 description: "NFC Codes"
 icon: "puzzle"
 mode: "default"
@@ -48,7 +48,7 @@ Arithmetic counts up to 5000 in both directions, division drops fractions. If th
 
 | Command | NFC Code |
 | --- | --- |
-| Calibration (without a number: the robot tunes its motors and gyroscope, about 2 minutes, do not touch it for the first half minute; with a `+N` or `−N` chip: turn correction after the 16-turn check; does not work with a plain number, the cell turns red) | `ccal` |
+| Calibration (without a number: the robot tunes its motors and gyroscope, about 2 minutes, do not touch it for the first half minute; with a `+N` or `−N` token: turn correction after the 16-turn check; does not work with a plain number, the cell turns red) | `ccal` |
 | Set Default Step Length for map (1–999 mm; without a number returns to 150 mm) | `clen` |
 
 ## 🔧 Advanced
@@ -57,7 +57,7 @@ Arithmetic counts up to 5000 in both directions, division drops fractions. If th
 | --- | --- |
 | Audio Sample (see [Audio Files Reference](/en/sounds_reference)) | `xNNN` |
 | Sound Sample (the robot plays sound number N: `csou` + number N) | `csou` |
-| Volume Level (remote and robot: 0–100, above 100 = maximum) | `clvl` |
+| Volume Level (board and robot: 0–100, above 100 = maximum) | `clvl` |
 
 ## How to Write Data to an NFC Tag
 

@@ -21,7 +21,7 @@ PrimaSTEM is a screen-free educational kit for programming, logic, and mathemati
     Panel with paired slots for the program. Multi-colour indicators, ▶ Start/Stop button, speaker, USB-C, Bluetooth.
   </Card>
   <Card title="Code tokens" icon="square-stack">
-    Cardboard tiles with NFC stickers — each one is a single command for the robot's program.
+    Cardboard tokens with NFC stickers — each one is a single command for the robot's program.
   </Card>
 </CardGroup>
 
@@ -35,7 +35,7 @@ PrimaSTEM is a screen-free educational kit for programming, logic, and mathemati
     Available slots on the board glow **white**, the robot's eyes blink **white**. You're ready.
   </Step>
   <Step title="Light blue = no connection" icon="bluetooth">
-    The robot and the remote glow light blue. If the connection still does not come up, hold **▶ Start** on the remote for **more than 10 seconds**. You will hear a beep at the 5th second, keep holding: the devices will pair and the robot will restart.
+    The robot and the board glow light blue. If the connection still does not come up, hold **▶ Start** on the board for **more than 10 seconds**. You will hear a beep at the 5th second, keep holding: the devices will pair and the robot will restart.
   </Step>
 </Steps>
 
@@ -58,7 +58,7 @@ The board has **two rows of paired slots**. Place tokens in the cells that glow 
 | **E** | **Execution line** connecting paired cells |
 | **F** | **Multi-colour LED indicator** on each cell |
 
-**A pair = two logically linked cells.** Order top/bottom doesn't matter — put the command in either cell of the pair, and the repeat, number, or arithmetic tile in the other. If the second cell is empty, default values are used: 15 cm step and 90° turn — enough for young children.
+**A pair = two logically linked cells.** Order top/bottom doesn't matter — put the command in either cell of the pair, and the repeat, number, or arithmetic token in the other. If the second cell is empty, default values are used: 15 cm step and 90° turn — enough for young children.
 
 LED colours during execution:
 
@@ -75,9 +75,9 @@ Empty slots and red pairs are skipped when you lay out the program. LEDs flash o
 | **Movement** | Forward · Back · Left · Right |
 | **Repeat** | Two arrows in a loop + inside dots 2–6 (like a die, for young children) or numerals. In a pair with a command, repeats it. |
 | **Numbers** | `1`–`999`. Set movement distance in mm or turn angle in degrees. |
-| **Arithmetic** | `+N` `−N` `×N` `÷N` `√` `^N` — one tile per operation+number. Modifies the saved value of movement or turn. A negative result reverses the direction! |
-| **Function** | Calls the bottom row as a subroutine. With a repeat tile, runs that number of times. |
-| **Step** | Service tile + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. |
+| **Arithmetic** | `+N` `−N` `×N` `÷N` `√` `^N` — one token per operation+number. Modifies the saved value of movement or turn. A negative result reverses the direction! |
+| **Function** | Calls the bottom row as a subroutine. With a repeat token, runs that number of times. |
+| **Step** | Service token + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. |
 
 ## 5. Defaults & saved value
 
@@ -87,7 +87,7 @@ Empty slots and red pairs are skipped when you lay out the program. LEDs flash o
 During one session, each movement command keeps its **own** saved value:
 
 - **a number** in the pair with the command → replaces the last saved value or default
-- **an arithmetic** tile → modifies it (`+`, `−`, `×`, `÷`, `√`, `^`)
+- **an arithmetic** token → modifies it (`+`, `−`, `×`, `÷`, `√`, `^`)
 - **empty** in the pair with the command → uses the last saved value or default
 
 Saved values reset when the board powers off; the default (Step) remains.

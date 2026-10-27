@@ -10,12 +10,12 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 ## How NFC Codes and Audio Files Relate
 
 Each audio file in the firmware has a code that matches its filename (e.g. `cfor` → `cfor.mp3`).
-When the remote or robot reads an NFC chip, it looks up this code and plays the corresponding file.
+When the board or robot reads an NFC token, it looks up this code and plays the corresponding file.
 
-However, some NFC chip codes are **composite** — they don't have their own audio file.
+However, some NFC token codes are **composite** — they don't have their own audio file.
 Instead, the device splits them into a sequence of existing files to save firmware space.
 
-| NFC chip code | Played as |
+| NFC token code | Played as |
 |---|---|
 | `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
@@ -24,7 +24,7 @@ Instead, the device splits them into a sequence of existing files to save firmwa
 | `d003` (÷3) | `xdiv.mp3` + `n003.mp3` |
 | `e002` (X²) | `xpow.mp3` + `n002.mp3` |
 
-The full list of physical NFC chip codes and kit contents is in [Command Chips](/en/nfc).
+The full list of physical NFC token codes and kit contents is in [Command Tokens](/en/nfc).
 
 ## 🤖 Robot Phrases, Reactions & Service  (x001–x019)
 
@@ -545,7 +545,7 @@ Croatian uses x700–x725 without Q, W, X, Y. Ć shares x739 with Polish.
 |---|---|
 | x990 | Sound after empty program execution |
 | x991 | Power-on sound |
-| x992 | Beep at the 5th second of holding the remote or robot button |
+| x992 | Beep at the 5th second of holding the board or robot button |
 | x993 | Bluetooth connected; also plays when sound is switched on by holding the button for 5 s |
 | x994 | Bluetooth signal lost; also plays when sound is switched off by holding the button for 5 s |
 | x995 | Power-off sound |
