@@ -193,6 +193,143 @@ Z wiekiem i w chorobach neurodegeneracyjnych może pogarszać się pamięć oraz
 - Gra słowna z szukaniem liter
 - Gra planszowa „Labirynt” dla dwóch graczy
 
+**Materiały**
+
+- Łamigłówki dla par i grup są niżej, w części „Łamigłówki”.
+
+## Łamigłówki
+
+Zadania przy stole, w parach lub małych grupach. Postaw robota na dużym arkuszu papieru i włóż marker. Robot jedzie 15 cm na krok i skręca o 90°. Odpowiedź jest ukryta pod każdym zadaniem. Link do symulatora jest dla prowadzącego, żeby wcześniej sprawdzić zadanie.
+
+### Zgadnij rysunek
+
+Prowadzący układa program na pilocie i nie mówi, co powstanie. Robot rysuje, a uczestnicy próbują pierwsi odgadnąć rysunek. Kto zgadnie, dostaje punkt. Więcej programów jest w [Przykłady rysunków](/pl/mathdrawings).
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odpowiedź">
+  Domek.
+
+  <Columns cols={2}>
+    <Frame caption="Co narysuje robot">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Zamień jeden żeton
+
+Robot rysuje schodki. Zamień jeden żeton tak, żeby narysował kwadrat.
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odpowiedź">
+  W dolnym rzędzie zamień „Lewo” na „Prawo”. Robot objedzie kwadrat dwa razy.
+
+  [Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program na pilocie">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Co narysuje robot">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Zgadnij program
+
+Prowadzący układa program tak, żeby uczestnicy nie widzieli pilota. Robot zaczyna w lewym dolnym punkcie, patrzy w górę i rysuje odwrócone U. Uczestnicy układają program, który narysuje taki sam kształt, i sprawdzają go na robocie.
+
+<Columns cols={2}>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odpowiedź">
+  „Naprzód” ×2, „Prawo”, „Naprzód”, „Prawo”, „Naprzód” ×2. Dobry jest każdy program, który daje taki sam rysunek.
+
+  [Uruchom w symulatorze](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program na pilocie">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### To samo czy nie?
+
+Oto dwa programy. Czy robot narysuje według nich to samo? Najpierw uczestnicy się spierają, potem sprawdzają: uruchamiają oba programy z tego samego miejsca.
+
+<Columns cols={2}>
+  <Frame caption="Program 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Program 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odpowiedź">
+  Tak. Trzy skręty „Prawo” ustawiają robota tak samo jak jeden skręt „Lewo”.
+
+  [Uruchom w symulatorze: Program 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Uruchom w symulatorze: Program 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Co narysuje robot">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Do domu
+
+Zaznacz ołówkiem punkt startu. Robot odjechał od niego według tego programu. Ułóż program, który zawróci go na start.
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odpowiedź">
+  „Prawo” ×2, „Naprzód”, „Lewo”, „Naprzód” ×2. Inne rozwiązanie: „Wstecz”, „Prawo”, „Naprzód” ×2.
+
+  [Uruchom w symulatorze](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program na pilocie">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Co narysuje robot">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Ocena skuteczności
 
 ### Metody kontroli

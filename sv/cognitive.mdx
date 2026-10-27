@@ -193,6 +193,143 @@ Med åldern och vid neurodegenerativa sjukdomar kan försämring av minnet, mins
 - Ordlek med bokstavssökning
 - Brädspelet "Labyrint" för två spelare
 
+**Material**
+
+- Kluringar för par och grupper finns längre ner, i avsnittet ”Kluringar”.
+
+## Kluringar
+
+Uppgifter vid bordet, i par eller små grupper. Ställ roboten på ett stort pappersark och sätt i en tusch. Roboten kör 15 cm per steg och svänger 90°. Svaret är dolt under varje uppgift. Länken till simulatorn är för den som leder passet, för att kontrollera uppgiften i förväg.
+
+### Gissa teckningen
+
+Ledaren lägger ett program på kontrollpanelen utan att säga vad det blir. Roboten ritar, och deltagarna försöker gissa teckningen först. Den som gissar rätt får ett poäng. Fler program finns under [Ritexempel](/sv/mathdrawings).
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  Hus.
+
+  <Columns cols={2}>
+    <Frame caption="Vad roboten ritar">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Byt en bricka
+
+Roboten ritar en trappa. Byt en bricka så att den ritar en kvadrat.
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  Byt ”Vänster” mot ”Höger” i nedre raden. Roboten kör runt kvadraten två gånger.
+
+  [Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programmet på kontrollpanelen">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Vad roboten ritar">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Gissa programmet
+
+Ledaren lägger ett program utan att deltagarna ser kontrollpanelen. Roboten börjar längst ner till vänster, tittar uppåt och ritar ett upp-och-nedvänt U. Deltagarna gör ett program som ritar samma form och provar det på roboten.
+
+<Columns cols={2}>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  ”Framåt” ×2, ”Höger”, ”Framåt”, ”Höger”, ”Framåt” ×2. Alla program som ger samma teckning är rätt.
+
+  [Kör i simulatorn](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programmet på kontrollpanelen">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Samma eller inte?
+
+Här är två program. Ritar roboten samma sak med båda? Först diskuterar deltagarna, sedan kontrollerar de genom att starta båda programmen från samma ställe.
+
+<Columns cols={2}>
+  <Frame caption="Program 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Program 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  Ja. Tre svängar ”Höger” vänder roboten åt samma håll som en sväng ”Vänster”.
+
+  [Kör i simulatorn: Program 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Kör i simulatorn: Program 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Vad roboten ritar">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Hem
+
+Markera startpunkten med blyerts. Roboten körde iväg från den med det här programmet. Gör ett program som tar den tillbaka till start.
+
+[Kör i simulatorn](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelen">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Vad roboten ritar">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  ”Höger” ×2, ”Framåt”, ”Vänster”, ”Framåt” ×2. En annan lösning: ”Bakåt”, ”Höger”, ”Framåt” ×2.
+
+  [Kör i simulatorn](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programmet på kontrollpanelen">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Vad roboten ritar">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Utvärdering av effektivitet
 
 ### Kontrollmetoder

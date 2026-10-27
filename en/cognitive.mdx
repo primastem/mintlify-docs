@@ -193,6 +193,143 @@ With age and neurodegenerative diseases, memory deterioration, reduced ability f
 - Word game with letter search
 - "Labyrinth" board game for two players
 
+**Materials**
+
+- Puzzles for pairs and groups are collected below, in the “Puzzles” section.
+
+## Puzzles
+
+Tasks for pairs or small groups at a table. Put the robot on a large sheet of paper and insert a marker. The robot moves 15 cm per step and turns 90°. The answer is hidden under each task. The simulator link is for the session leader, to check the task beforehand.
+
+### Guess the Drawing
+
+The leader lays out a program on the board and doesn't say what it will draw. The robot draws, and the participants try to be the first to guess the picture. Whoever guesses gets a point. More programs are on the [Drawing Examples](/en/mathdrawings) page.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Answer">
+  House.
+
+  <Columns cols={2}>
+    <Frame caption="What the robot draws">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Change One Token
+
+The robot draws stairs. Change one token so that it draws a square.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Answer">
+  In the bottom row, replace “Left” with “Right”. The robot goes round the square twice.
+
+  [Run in the simulator](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program on the board">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="What the robot draws">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Guess the Program
+
+The leader lays out a program where the participants can't see the board. The robot starts at the bottom left point, facing up, and draws an upside-down U. The participants build a program that draws the same shape and test it on the robot.
+
+<Columns cols={2}>
+  <Frame caption="What the robot draws">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Answer">
+  “Forward” ×2, “Right”, “Forward”, “Right”, “Forward” ×2. Any program that gives the same drawing is correct.
+
+  [Run in the simulator](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program on the board">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### The Same or Not?
+
+Here are two programs. Will the robot draw the same thing with both? First the participants argue, then they check by running both programs from the same spot.
+
+<Columns cols={2}>
+  <Frame caption="Program 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Program 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Answer">
+  Yes. Three “Right” turns leave the robot facing the same way as one “Left” turn.
+
+  [Run in the simulator: Program 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Run in the simulator: Program 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="What the robot draws">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Back Home
+
+Mark the starting point with a pencil. The robot drove away from it with this program. Build a program that brings it back to the start.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Answer">
+  “Right” ×2, “Forward”, “Left”, “Forward” ×2. Another solution: “Back”, “Right”, “Forward” ×2.
+
+  [Run in the simulator](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program on the board">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="What the robot draws">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Effectiveness Evaluation
 
 ### Control Methods

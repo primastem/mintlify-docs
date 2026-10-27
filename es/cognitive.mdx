@@ -193,6 +193,143 @@ Con la edad y las enfermedades neurodegenerativas pueden aparecer deterioro de l
 - Juego de palabras con búsqueda de letras
 - Juego de mesa "Laberinto" para dos jugadores
 
+**Materiales**
+
+- Los acertijos para parejas y grupos están más abajo, en la sección «Acertijos».
+
+## Acertijos
+
+Tareas para hacer en la mesa, en pareja o en grupo pequeño. Coloca el robot sobre una hoja grande de papel e inserta un rotulador. El robot avanza 15 cm por paso y gira 90°. La respuesta está oculta debajo de cada tarea. El enlace al simulador es para quien dirige la sesión, para comprobar la tarea antes.
+
+### Adivina el dibujo
+
+Quien dirige coloca un programa en el tablero sin decir qué dibujará. El robot dibuja y los participantes intentan adivinar el dibujo antes que nadie. Quien acierta gana un punto. Hay más programas en [Ejemplos de dibujos](/es/mathdrawings).
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Respuesta">
+  Casa.
+
+  <Columns cols={2}>
+    <Frame caption="Lo que dibuja el robot">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Cambia una ficha
+
+El robot dibuja una escalera. Cambia una sola ficha para que dibuje un cuadrado.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Respuesta">
+  En la fila inferior, sustituye «Izquierda» por «Derecha». El robot recorre el cuadrado dos veces.
+
+  [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programa en el tablero">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Lo que dibuja el robot">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Adivina el programa
+
+Quien dirige coloca un programa sin que los participantes vean el tablero. El robot empieza en el punto de abajo a la izquierda, mirando hacia arriba, y dibuja una U invertida. Los participantes crean un programa que dibuje la misma forma y lo prueban con el robot.
+
+<Columns cols={2}>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Respuesta">
+  «Adelante» ×2, «Derecha», «Adelante», «Derecha», «Adelante» ×2. Vale cualquier programa que dé el mismo dibujo.
+
+  [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programa en el tablero">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### ¿Igual o no?
+
+Aquí hay dos programas. ¿Dibujará el robot lo mismo con los dos? Primero los participantes discuten y luego lo comprueban: ejecutan los dos programas desde el mismo punto.
+
+<Columns cols={2}>
+  <Frame caption="Programa 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Programa 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Respuesta">
+  Sí. Tres giros «Derecha» dejan el robot mirando igual que un giro «Izquierda».
+
+  [Ejecutar en el simulador: Programa 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Ejecutar en el simulador: Programa 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Lo que dibuja el robot">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Vuelta a casa
+
+Marca el punto de salida con un lápiz. El robot se alejó de él con este programa. Crea un programa que lo devuelva al punto de salida.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Respuesta">
+  «Derecha» ×2, «Adelante», «Izquierda», «Adelante» ×2. Otra solución: «Atrás», «Derecha», «Adelante» ×2.
+
+  [Ejecutar en el simulador](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programa en el tablero">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Lo que dibuja el robot">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Evaluación de la Eficacia
 
 ### Métodos de Control

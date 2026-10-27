@@ -193,6 +193,143 @@ S dobi i neurodegenerativnim bolestima mogu se pogoršati pamćenje, sposobnost 
 - Igra riječima s traženjem slova
 - Društvena igra "Labirint" za dvoje igrača
 
+**Materijali**
+
+- Mozgalice za parove i skupine nalaze se niže, u odjeljku „Mozgalice”.
+
+## Mozgalice
+
+Zadaci za stolom, u paru ili maloj skupini. Stavite robota na veliki list papira i umetnite flomaster. Robot prelazi 15 cm po koraku i okreće se za 90°. Odgovor je skriven ispod svakog zadatka. Poveznica na simulator namijenjena je voditelju, da unaprijed provjeri zadatak.
+
+### Pogodi crtež
+
+Voditelj slaže program na ploču i ne kaže što će nastati. Robot crta, a sudionici pokušavaju prvi pogoditi crtež. Tko pogodi, dobiva bod. Više programa ima u [Primjeri crteža](/en-hr/mathdrawings).
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odgovor">
+  Kućica.
+
+  <Columns cols={2}>
+    <Frame caption="Što će robot nacrtati">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Zamijeni jedan žeton
+
+Robot crta stube. Zamijenite jedan žeton tako da nacrta kvadrat.
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odgovor">
+  U donjem redu zamijenite „Lijevo“ sa „Desno“. Robot obiđe kvadrat dva puta.
+
+  [Pokreni u simulatoru](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program na ploči">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Što će robot nacrtati">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Pogodi program
+
+Voditelj slaže program tako da sudionici ne vide ploču. Robot kreće iz donje lijeve točke, okrenut prema gore, i crta obrnuto U. Sudionici slažu program koji crta isti oblik i provjeravaju ga na robotu.
+
+<Columns cols={2}>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odgovor">
+  „Naprijed“ ×2, „Desno“, „Naprijed“, „Desno“, „Naprijed“ ×2. Dobar je svaki program koji daje isti crtež.
+
+  [Pokreni u simulatoru](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program na ploči">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Isto ili ne?
+
+Evo dva programa. Hoće li robot po njima nacrtati isto? Sudionici najprije raspravljaju, a onda provjeravaju: pokreću oba programa s istog mjesta.
+
+<Columns cols={2}>
+  <Frame caption="Program 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Program 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odgovor">
+  Da. Tri okreta „Desno“ okrenu robota isto kao jedan okret „Lijevo“.
+
+  [Pokreni u simulatoru: Program 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Pokreni u simulatoru: Program 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Što će robot nacrtati">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Kući
+
+Označite olovkom početnu točku. Robot se od nje udaljio po ovom programu. Složite program koji ga vraća na početak.
+
+[Pokreni u simulatoru](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na ploči">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Što će robot nacrtati">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Odgovor">
+  „Desno“ ×2, „Naprijed“, „Lijevo“, „Naprijed“ ×2. Drugo rješenje: „Natrag“, „Desno“, „Naprijed“ ×2.
+
+  [Pokreni u simulatoru](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Program na ploči">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Što će robot nacrtati">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Procjena učinkovitosti
 
 ### Metode praćenja

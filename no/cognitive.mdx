@@ -193,6 +193,143 @@ Med alderen og ved nevrodegenerative sykdommer kan det oppstå forverring av huk
 - Ordspill med bokstavsøking
 - Brettspillet "Labyrint" for to spillere
 
+**Materiell**
+
+- Hjernetrim for par og grupper finner du lenger ned, i delen «Hjernetrim».
+
+## Hjernetrim
+
+Oppgaver ved bordet, i par eller små grupper. Sett roboten på et stort ark og sett inn en tusj. Roboten kjører 15 cm per steg og svinger 90°. Svaret er skjult under hver oppgave. Lenken til simulatoren er for den som leder økta, for å sjekke oppgaven på forhånd.
+
+### Gjett tegningen
+
+Lederen legger et program på kontrollpanelet uten å si hva det blir. Roboten tegner, og deltakerne prøver å gjette tegningen først. Den som gjetter riktig, får et poeng. Flere programmer finnes under [Tegneeksempler](/no/mathdrawings).
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  Hus.
+
+  <Columns cols={2}>
+    <Frame caption="Hva roboten tegner">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Bytt én brikke
+
+Roboten tegner en trapp. Bytt én brikke slik at den tegner et kvadrat.
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  Bytt «Venstre» med «Høyre» i nederste rad. Roboten kjører rundt kvadratet to ganger.
+
+  [Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programmet på kontrollpanelet">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Hva roboten tegner">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Gjett programmet
+
+Lederen legger et program uten at deltakerne ser kontrollpanelet. Roboten starter nederst til venstre, ser oppover og tegner en opp-ned U. Deltakerne lager et program som tegner den samme formen, og prøver det på roboten.
+
+<Columns cols={2}>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  «Fremover» ×2, «Høyre», «Fremover», «Høyre», «Fremover» ×2. Alle programmer som gir samme tegning, er riktige.
+
+  [Kjør i simulatoren](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programmet på kontrollpanelet">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Likt eller ikke?
+
+Her er to programmer. Tegner roboten det samme med begge? Først diskuterer deltakerne, så sjekker de ved å starte begge programmene fra samme sted.
+
+<Columns cols={2}>
+  <Frame caption="Program 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Program 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  Ja. Tre svinger «Høyre» gir roboten samme retning som én sving «Venstre».
+
+  [Kjør i simulatoren: Program 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Kjør i simulatoren: Program 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Hva roboten tegner">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Hjem
+
+Merk startpunktet med blyant. Roboten kjørte bort fra det med dette programmet. Lag et program som får den tilbake til start.
+
+[Kjør i simulatoren](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programmet på kontrollpanelet">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Hva roboten tegner">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Svar">
+  «Høyre» ×2, «Fremover», «Venstre», «Fremover» ×2. En annen løsning: «Bakover», «Høyre», «Fremover» ×2.
+
+  [Kjør i simulatoren](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Programmet på kontrollpanelet">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Hva roboten tegner">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Vurdering av effektivitet
 
 ### Kontrollmetoder

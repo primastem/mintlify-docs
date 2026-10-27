@@ -193,6 +193,143 @@ PrimaSTEM は、プログラム可能なロボットとコマンドチップセ�
 - 文字検索の言葉遊び
 - 2 人用ボードゲーム「迷路」
 
+**教材**
+
+- ペアやグループ向けのパズルは、下の「パズル」の節にあります。
+
+## パズル
+
+テーブルでペアや少人数のグループで取り組む課題です。大きな紙の上にロボットを置き、マーカーを差し込みます。ロボットは1歩で15 cm進み、90°回転します。答えは各課題の下に隠してあります。シミュレーターのリンクは、進行役が事前に課題を確かめるためのものです。
+
+### 絵当てゲーム
+
+進行役はコントローラーにプログラムを並べますが、何が描かれるかは言いません。ロボットが描くあいだ、参加者は誰よりも先に絵を当てようとします。当てた人に1点。ほかのプログラムは[描画例](/jp/mathdrawings)にあります。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="答え">
+  おうち。
+
+  <Columns cols={2}>
+    <Frame caption="ロボットが描く図形">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### チップを1枚かえる
+
+ロボットは階段を描きます。チップを1枚だけかえて、正方形を描くようにしてください。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="答え">
+  下段の「左」を「右」にかえます。ロボットは正方形を2周します。
+
+  [シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="コントローラー上のプログラム">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="ロボットが描く図形">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### プログラム当て
+
+進行役は、参加者にコントローラーが見えないようにプログラムを並べます。ロボットは左下の点から上を向いて出発し、逆さのU字を描きます。参加者は同じ形を描くプログラムを作り、ロボットで確かめます。
+
+<Columns cols={2}>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="答え">
+  「前進」 ×2、「右」、「前進」、「右」、「前進」 ×2。同じ絵になるプログラムなら、どれでも正解です。
+
+  [シミュレーターで実行](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="コントローラー上のプログラム">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### 同じかな？
+
+2つのプログラムがあります。どちらでもロボットは同じ絵を描くでしょうか。まず参加者で話し合い、それから同じ場所から両方のプログラムを実行して確かめます。
+
+<Columns cols={2}>
+  <Frame caption="プログラム 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="プログラム 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="答え">
+  はい。「右」を3回まわると、「左」を1回まわったのと同じ向きになります。
+
+  [シミュレーターで実行: プログラム 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [シミュレーターで実行: プログラム 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="ロボットが描く図形">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### おうちに帰ろう
+
+出発点に鉛筆で印をつけます。ロボットはこのプログラムで出発点から離れました。ロボットを出発点に戻すプログラムを作ってください。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="答え">
+  「右」 ×2、「前進」、「左」、「前進」 ×2。別の解き方：「後退」、「右」、「前進」 ×2。
+
+  [シミュレーターで実行](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="コントローラー上のプログラム">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="ロボットが描く図形">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## 効果評価
 
 ### 制御方法

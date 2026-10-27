@@ -193,6 +193,143 @@ PrimaSTEM представляет собой роботизированный �
 - Словесная игра с поиском букв
 - Настольная игра "Лабиринт" для двух игроков
 
+**Материалы**
+
+- Головоломки для пары или группы собраны ниже, в разделе «Головоломки».
+
+## Головоломки
+
+Задачи для работы за столом в паре или в группе. Положите робота на большой лист бумаги и вставьте маркер. Шаг робота 15 см, поворот 90°. Ответ спрятан под каждой задачей. Ссылка на симулятор нужна ведущему, чтобы проверить задачу заранее.
+
+### Крокодил
+
+Ведущий выкладывает на пульт программу и не говорит, что получится. Робот рисует, а участники стараются первыми угадать рисунок. Кто угадал, получает очко. Другие программы есть в разделе [Примеры рисунков](/ru/mathdrawings).
+
+[Запустить в симуляторе](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Программа на пульте">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Ответ">
+  Домик.
+
+  <Columns cols={2}>
+    <Frame caption="Что нарисует робот">
+      <img src="../images/mathdrawings/house-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Переложи одну фишку
+
+Робот рисует лесенку. Замените одну фишку так, чтобы он нарисовал квадрат.
+
+[Запустить в симуляторе](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Программа на пульте">
+    <img src="../images/cognitive/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Что нарисует робот">
+    <img src="../images/cognitive/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Ответ">
+  В нижнем ряду замените «Влево» на «Вправо». Робот обойдёт квадрат два раза.
+
+  [Запустить в симуляторе](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,crig&s=l1144502&r=75-675-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Программа на пульте">
+      <img src="../images/cognitive/square-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Что нарисует робот">
+      <img src="../images/cognitive/square-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Угадай программу
+
+Ведущий выкладывает программу так, чтобы участники не видели пульт. Робот начинает в нижней левой точке, смотрит вверх и рисует букву П. Участники составляют программу, которая нарисует такую же букву, и проверяют её на роботе.
+
+<Columns cols={2}>
+  <Frame caption="Что нарисует робот">
+    <img src="../images/cognitive/letterp-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Ответ">
+  «Вперёд» ×2, «Вправо», «Вперёд», «Вправо», «Вперёд» ×2. Подходит любая программа, после которой рисунок совпадает.
+
+  [Запустить в симуляторе](https://simulator.primastem.com/#top=cfor.r002,crig,cfor,crig,cfor.r002&s=l1144402&r=225-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Программа на пульте">
+      <img src="../images/cognitive/letterp-board.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Одно и то же?
+
+Вот две программы. Нарисует ли робот по ним одно и то же? Сначала участники спорят, потом проверяют: запускают обе программы с одного места.
+
+<Columns cols={2}>
+  <Frame caption="Программа 1">
+    <img src="../images/cognitive/samea-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Программа 2">
+    <img src="../images/cognitive/sameb-board.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Ответ">
+  Да. После трёх поворотов «Вправо» робот смотрит туда же, куда после одного поворота «Влево».
+
+  [Запустить в симуляторе: Программа 1](https://simulator.primastem.com/#top=cfor.r002,crig.r003,cfor&s=l1144402&r=375-525-0&run) · [Запустить в симуляторе: Программа 2](https://simulator.primastem.com/#top=cfor.r002,clef,cfor&s=l1144402&r=375-525-0&run)
+
+  <Columns cols={2}>
+    <Frame caption="Что нарисует робот">
+      <img src="../images/cognitive/samea-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
+### Домой
+
+Отметьте точку старта карандашом. Робот уехал от неё по этой программе. Составьте программу, которая вернёт его на старт.
+
+[Запустить в симуляторе](https://simulator.primastem.com/#top=cfor.r002,crig,cfor&s=l1144402&r=75-525-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Программа на пульте">
+    <img src="../images/cognitive/home-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Что нарисует робот">
+    <img src="../images/cognitive/home-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+<Accordion title="Ответ">
+  «Вправо» ×2, «Вперёд», «Влево», «Вперёд» ×2. Есть и другое решение: «Назад», «Вправо», «Вперёд» ×2.
+
+  [Запустить в симуляторе](https://simulator.primastem.com/#top=crig.r002,cfor,clef,cfor.r002&s=l1144402&r=225-225-90&m=03&run)
+
+  <Columns cols={2}>
+    <Frame caption="Программа на пульте">
+      <img src="../images/cognitive/homeback-board.svg" alt="" />
+    </Frame>
+    <Frame caption="Что нарисует робот">
+      <img src="../images/cognitive/homeback-field.svg" alt="" />
+    </Frame>
+  </Columns>
+</Accordion>
+
 ## Оценка эффективности
 
 ### Методы контроля
