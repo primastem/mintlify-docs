@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "docs.PrimaSTEM.com",
-  "description": "Documentation of PrimaSTEM - coding and math, screen-free",
+  "description": "PrimaSTEM is LOGO turtle programming made physical and screen-free. Children aged 4–10+ build a program from NFC tokens on a wooden control board, and a ladybug robot runs it and can draw with a marker. How each concept maps to LOGO: https://docs.primastem.com/en/logo",
   "colors": {
     "primary": "#5aa02c",
     "light": "#68b833",
