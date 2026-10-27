@@ -15,7 +15,7 @@ Lorsque la télécommande ou le robot lit une puce NFC, il recherche ce code et 
 Cependant, certains codes de puces NFC sont **composites** — ils n'ont pas leur propre fichier audio.
 Au lieu de cela, l'appareil les décompose en une séquence de fichiers existants pour économiser l'espace du firmware.
 
-| NFC chip code | Played as |
+| Code du jeton NFC | Lu comme |
 |---|---|
 | `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
@@ -24,7 +24,7 @@ Au lieu de cela, l'appareil les décompose en une séquence de fichiers existant
 | `d003` (÷3) | `xdiv.mp3` + `n003.mp3` |
 | `e002` (X²) | `xpow.mp3` + `n002.mp3` |
 
-The full list of physical NFC chip codes and kit contents is in [Jetons de commande](/fr/nfc).
+La liste complète des codes des jetons NFC et le contenu du kit se trouvent dans [Jetons de commande](/fr/nfc).
 
 ## 🤖 Phrases du robot, réactions et messages de service  (x001–x019)
 
