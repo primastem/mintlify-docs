@@ -62,7 +62,7 @@ Bloques básicos para componer el programa de control:
 - **Izquierda** — giro de 90° en sentido antihorario
 - **Atrás** — movimiento hacia atrás (15 cm por defecto)
 - **Función** — ejecución del subprograma de la parte inferior del tablero
-- **Movimiento Aleatorio** — una de las acciones para mover el robot: Adelante, Izquierda, Derecha o Atrás (en "paso por defecto")
+- **Movimiento Aleatorio** — un paso adelante o atrás, o un giro de 90° a la izquierda o a la derecha seguido enseguida de un paso adelante de la longitud de paso por defecto (no hay giro en el sitio sin paso)
 - **Fichas de Repetición (Bucles)** - Fichas con números del 2 al 6 (según la cantidad de puntos) y pictogramas de repetición con el número dentro. La ficha con un dado significa un número aleatorio de repeticiones del 1 al 6.
 
 > También se utilizan fichas de valores numéricos y aritmética para ampliar la programación: por ejemplo, repetir un comando o cambiar el ángulo/distancia de movimiento.
@@ -139,7 +139,7 @@ Por defecto:
 - Los valores después de aritmética también se guardan.
 - Cambiar la "**distancia por defecto**" se puede hacer con una ficha de servicio: por ejemplo, para 12,5 cm, coloque la ficha "Distancia por defecto" con valor 125. El valor se guarda después del apagado. Sirven los números del 1 al 999. La ficha sin número devuelve el paso a 150 mm. Con aritmética o con cero, la celda parpadea en rojo y el paso no cambia.
 - El tablero y el robot **se apagan automáticamente** si no pasa nada durante 15 minutos.
-- Si el robot no se usa durante 1–3 minutos, realiza pequeños movimientos para señalar que está activo y listo.
+- Si el robot no se usa durante 1–3 minutos, no se mueve, solo parpadea con los ojos para señalar que está activo y listo.
 - **Pulsación corta del botón del robot**: el robot lee la ficha que tiene debajo y la dice en voz alta.
 - **Todos los sonidos del robot** se pueden desactivar y activar manteniendo el botón del robot 5 segundos: espere el pitido corto y suelte. El robot parpadea en rojo si el sonido se ha apagado y en verde si se ha encendido.
 - El **sonido del tablero** se puede desactivar y activar manteniendo el botón **▶ Inicio** 5 segundos: espere el pitido corto y suelte. Mientras se ejecuta un programa, mantener el botón no funciona.

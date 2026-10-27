@@ -62,7 +62,7 @@ Blocs de base pour composer le programme de contrôle :
 - **Gauche** — rotation de 90° dans le sens antihoraire
 - **Reculer** — mouvement vers l'arrière (15 cm par défaut)
 - **Fonction** — exécution du sous-programme de la partie inférieure du tableau de contrôle
-- **Mouvement aléatoire** — une des actions pour déplacer le robot : Avancer, Gauche, Droite ou Reculer (sur "pas par défaut")
+- **Mouvement aléatoire** — un pas en avant ou en arrière, ou un virage de 90° à gauche ou à droite suivi aussitôt d'un pas en avant de la longueur de pas par défaut (il n'y a pas de virage sur place sans pas)
 - **Jetons de répétition (boucles)** - Jetons avec des nombres de 2 à 6 (selon le nombre de points) et des pictogrammes de répétition avec le nombre à l'intérieur. Le jeton avec un dé signifie un nombre aléatoire de répétitions de 1 à 6.
 
 > Des jetons de valeurs numériques et d'arithmétique sont également utilisés pour enrichir la programmation : par exemple, répéter une commande ou modifier l'angle/la distance de déplacement.
@@ -139,7 +139,7 @@ Par défaut :
 - Les valeurs après une opération arithmétique sont également conservées.
 - Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction. Les nombres de 1 à 999 sont acceptés. Le jeton sans nombre ramène le pas à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas.
 - Le tableau de contrôle et le robot **s'éteignent automatiquement** si rien ne se passe pendant 15 minutes.
-- Si le robot n'est pas utilisé pendant 1–3 minutes, il effectue de petits mouvements pour signaler qu'il est actif et prêt.
+- Si le robot n'est pas utilisé pendant 1–3 minutes, il ne bouge pas, il cligne seulement des yeux pour signaler qu'il est actif et prêt.
 - **Appui court sur le bouton du robot** : le robot lit le jeton placé sous lui et l'énonce.
 - **Tous les sons du robot** peuvent être coupés et rétablis en maintenant le bouton du robot pendant 5 secondes : attendez le bip court, puis relâchez. Le robot clignote en rouge si le son est coupé, en vert s'il est rétabli.
 - Le **son du tableau de contrôle** peut être coupé et rétabli en maintenant le bouton **▶ Démarrer** pendant 5 secondes : attendez le bip court, puis relâchez. Pendant l'exécution d'un programme, le maintien ne fonctionne pas.

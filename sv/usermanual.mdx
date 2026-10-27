@@ -62,7 +62,7 @@ Grundläggande block för att komponera kontrollprogrammet:
 - **Vänster** — sväng 90° moturs
 - **Bakåt** — rörelse bakåt (15 cm som standard)
 - **Funktion** — kör underprogrammet från den nedre delen av kontrollpanelen
-- **Slumpmässig Rörelse** — en av åtgärderna för att flytta roboten: Framåt, Vänster, Höger eller Bakåt (på "standardsteg")
+- **Slumpmässig Rörelse** — ett steg framåt eller bakåt, eller en 90°-sväng åt vänster eller höger följd direkt av ett steg framåt med standardstegets längd (det finns ingen sväng på stället utan steg)
 - **Upprepningsbrickor (Loopar)** - Brickor med siffror från 2 till 6 (efter antalet prickar) och upprepningspiktogram med siffran inuti. Brickan med en tärning betyder ett slumpmässigt antal upprepningar från 1 till 6.
 
 > Numeriska värde- och aritmetikbrickor används också för att utöka programmeringen: till exempel att upprepa ett kommando eller ändra rörelsevinkel/distans.
@@ -139,7 +139,7 @@ Som standard:
 - Värden efter aritmetik sparas också.
 - Ändra "**standarddistans**" kan göras med en servicebricka: till exempel, för 12,5 cm, installera brickan "Standarddistans" med värdet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Brickan utan tal återställer 150 mm. Med aritmetik eller noll blinkar facket rött och steget förblir detsamma.
 - Kontrollpanelen och roboten **stängs av automatiskt** om ingenting händer på 15 minuter.
-- Om roboten inte används på 1–3 minuter gör den små rörelser för att signalera att den är aktiv och redo.
+- Om roboten inte används på 1–3 minuter rör den sig inte, utan blinkar bara med ögonen för att signalera att den är aktiv och redo.
 - **Kort tryck på robotknappen**: roboten läser brickan under sig och säger vad det är.
 - **Alla robotens ljud** kan slås av och på genom att hålla robotknappen i 5 sekunder: vänta på den korta signalen och släpp. Roboten blinkar rött om ljudet stängdes av och grönt om det slogs på.
 - **Kontrollpanelens ljud** kan slås av och på genom att hålla **▶ Start**-knappen i 5 sekunder: vänta på den korta signalen och släpp. Medan ett program körs fungerar det inte.

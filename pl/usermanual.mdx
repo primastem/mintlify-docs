@@ -60,7 +60,7 @@ Podstawowe bloki do układania programu sterującego:
 - **Lewo** — obrót o 90° przeciwnie do ruchu wskazówek zegara
 - **Wstecz** — ruch do tyłu (domyślnie 15 cm)
 - **Funkcja** — wykonuje podprogram z dolnej części pilota
-- **Losowy ruch** — jedna z czynności ruchu robota: Naprzód, Lewo, Prawo lub Wstecz (na „kroku domyślnym”)
+- **Losowy ruch** — jeden krok naprzód lub wstecz albo obrót o 90° w lewo lub w prawo i od razu krok naprzód o domyślnej długości kroku (obrotu w miejscu bez kroku nie ma)
 - **Żetony powtórzeń (pętle)** - Żetony z liczbami od 2 do 6 (według liczby kropek) i piktogramy powtórzenia z liczbą w środku. Żeton z kostką oznacza losową liczbę powtórzeń od 1 do 6.
 
 > Żetony wartości liczbowych i działań arytmetycznych służą też do rozszerzania możliwości programowania: na przykład do powtarzania polecenia albo zmiany kąta lub odległości ruchu.
@@ -135,7 +135,7 @@ Domyślnie:
 - Wartości po działaniach arytmetycznych też są zapamiętywane.
 - Zmień „**domyślną odległość**” za pomocą żetonu serwisowego: na przykład dla 12,5 cm włóż żeton „Krok” z wartością 125. Wartość zapisuje się po wyłączeniu zasilania. Pasują liczby od 1 do 999. Żeton bez liczby przywraca 150 mm. Z działaniem arytmetycznym albo zerem pole mignie na czerwono, a krok się nie zmieni.
 - Pilot i robot **wyłączają się automatycznie**, jeśli przez 15 minut nic się nie dzieje.
-- Jeśli robot nie jest używany przez 1–3 minuty, wykonuje małe ruchy, aby zasygnalizować, że jest aktywny i gotowy.
+- Jeśli robot nie jest używany przez 1–3 minuty, nie porusza się, tylko mruga oczami, aby zasygnalizować, że jest aktywny i gotowy.
 - **Krótkie naciśnięcie przycisku robota**: robot odczyta żeton pod sobą i powie, co to jest.
 - **Wszystkie dźwięki robota** wyłączysz i włączysz, przytrzymując przycisk robota przez 5 sekund: poczekaj na krótki sygnał i puść. Robot mignie na czerwono, jeśli dźwięk się wyłączył, i na zielono, jeśli się włączył.
 - **Dźwięk pilota** wyłączysz i włączysz, przytrzymując przycisk **▶ Start** przez 5 sekund: poczekaj na krótki sygnał i puść. Gdy program jest wykonywany, przytrzymanie nie działa.

@@ -60,7 +60,7 @@ Osnovni blokovi za sastavljanje upravljačkog programa:
 - **Lijevo** — okret za 90° suprotno od smjera kazaljke na satu
 - **Natrag** — kretanje unatrag (zadano 15 cm)
 - **Funkcija** — izvršava potprogram iz donjeg dijela ploče
-- **Nasumično kretanje** — jedna od radnji za pomicanje robota: Naprijed, Lijevo, Desno ili Natrag (za "zadani korak")
+- **Nasumično kretanje** — jedan korak naprijed ili natrag, ili okret za 90° ulijevo ili udesno i odmah zatim korak naprijed zadane duljine koraka (okreta na mjestu bez koraka nema)
 - **Žetoni ponavljanja (petlje)** - žetoni s brojevima od 2 do 6 (prema broju točkica) i piktogrami ponavljanja s brojem unutra. Žeton s kockicom znači nasumičan broj ponavljanja od 1 do 6.
 
 > Žetoni brojeva i aritmetike koriste se i za proširenje mogućnosti programiranja: na primjer, za ponavljanje naredbe ili promjenu kuta odnosno udaljenosti kretanja.
@@ -135,7 +135,7 @@ Zadano:
 - Vrijednosti nakon aritmetičkih operacija također se pamte.
 - "**Zadanu udaljenost**" mijenjate servisnim žetonom: na primjer, za 12,5 cm stavite žeton "Korak" s vrijednošću 125. Vrijednost se pamti i nakon isključivanja. Rade brojevi od 1 do 999. Žeton bez broja vraća korak na 150 mm. Uz aritmetiku ili nulu polje treperi crveno, a korak ostaje isti.
 - Ploča i robot **automatski se isključuju** ako se 15 minuta ništa ne događa.
-- Ako se robot ne koristi 1–3 minute, napravi male pokrete kako bi pokazao da je aktivan i spreman.
+- Ako se robot ne koristi 1–3 minute, ne pomiče se, nego samo trepće očima kako bi pokazao da je aktivan i spreman.
 - **Kratki pritisak tipke robota**: robot očitava žeton ispod sebe i izgovara što je to.
 - **Svi zvukovi robota** isključuju se i uključuju držanjem tipke robota 5 sekundi: pričekajte kratki zvučni signal i otpustite. Robot treperi crveno ako je zvuk sada isključen, a zeleno ako je uključen.
 - **Zvuk ploče** isključuje se i uključuje držanjem tipke **▶ Start** 5 sekundi: pričekajte kratki zvučni signal i otpustite. To ne radi dok se program izvršava.

@@ -62,7 +62,7 @@ Basisblokken voor het samenstellen van het besturingsprogramma:
 - **Links** — draaiing van 90° tegen de klok in
 - **Achteruit** — beweging achteruit (15 cm standaard)
 - **Functie** — uitvoering van het subprogramma uit het onderste deel van de bediening
-- **Willekeurige Beweging** — een van de acties om de robot te verplaatsen: Vooruit, Links, Rechts of Achteruit (op "standaardstap")
+- **Willekeurige Beweging** — één stap vooruit of achteruit, of een draai van 90° naar links of rechts met direct daarna een stap vooruit van de standaardstaplengte (een draai op de plek zonder stap bestaat niet)
 - **Herhalingskaartjes (Lussen)** - Kaartjes met getallen van 2 tot 6 (naar aantal punten) en herhalingspictogrammen met het getal erin. Het kaartje met een dobbelsteen betekent een willekeurig aantal herhalingen van 1 tot 6.
 
 > Numerieke waarde- en rekenkundige kaartjes worden ook gebruikt om de programmering uit te breiden: bijvoorbeeld een commando herhalen of de bewegingshoek/afstand wijzigen.
@@ -139,7 +139,7 @@ Standaard:
 - Waarden na rekenkunde worden ook opgeslagen.
 - Wijzig de "**standaardafstand**" met een servicekaartje: bijvoorbeeld, voor 12,5 cm, plaats het kaartje "Standaardafstand" met waarde 125. De waarde wordt opgeslagen na uitschakeling. Getallen van 1 tot 999 zijn toegestaan. Het kaartje zonder getal zet de stap terug op 150 mm. Met rekenkunde of nul knippert de cel rood en blijft de stap ongewijzigd.
 - De bediening en robot **schakelen automatisch uit** als er 15 minuten niets gebeurt.
-- Als de robot 1–3 minuten niet wordt gebruikt, voert hij kleine bewegingen uit om te signaleren dat hij actief en klaar is.
+- Als de robot 1–3 minuten niet wordt gebruikt, beweegt hij niet, hij knippert alleen met zijn ogen om te signaleren dat hij actief en klaar is.
 - **Kort drukken op de robotknop**: de robot leest het kaartje onder zich en zegt wat het is.
 - **Alle geluiden van de robot** kunnen worden uit- en ingeschakeld door de robotknop 5 seconden ingedrukt te houden: wacht op het korte signaal en laat los. De robot knippert rood als het geluid uit gaat en groen als het aan gaat.
 - Het **geluid van de bediening** kan worden uit- en ingeschakeld door de knop **▶ Start** 5 seconden ingedrukt te houden: wacht op het korte signaal en laat los. Terwijl een programma loopt, werkt dit niet.

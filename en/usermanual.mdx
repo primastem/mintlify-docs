@@ -60,7 +60,7 @@ Basic blocks for composing the control program:
 - **Left** — 90° counterclockwise turn
 - **Backward** — backward movement (15 cm by default)
 - **Function** — executes the subroutine from the lower part of the board
-- **Random Movement** — one of the actions to move the robot: Forward, Left, Right, or Backward (on "default step")
+- **Random Movement** — one step forward or backward, or a 90° turn left or right followed at once by a step forward of the default step length (there is no turn in place without a step)
 - **Repeat Tokens (Loops)** - Tokens with numbers from 2 to 6 (by number of dots) and repeat pictograms with the number inside. The token with a die means a random number of repeats from 1 to 6.
 
 > Numerical value and arithmetic tokens are also used to expand programming capabilities: for example, repeating a command or changing the movement angle/distance.
@@ -135,7 +135,7 @@ By default:
 - Values after arithmetic operations are also saved.
 - Change the "**default distance**" using a service token: for example, for 12.5 cm, place the "Default Distance" token with value 125. The value is saved after power-off. Numbers from 1 to 999 work. The token without a number returns the step to 150 mm. With arithmetic or zero the cell blinks red and the step stays the same.
 - The board and robot **automatically power off** if nothing happens for 15 minutes.
-- If the robot is not used for 1–3 minutes, it makes small movements to signal it is active and ready.
+- If the robot is not used for 1–3 minutes, it does not move, it only blinks its eyes to signal it is active and ready.
 - **Short press of the robot button**: the robot reads the token under itself and says what it is.
 - **All robot sounds** can be turned off and on by holding the robot button for 5 seconds: wait for the short beep and release. The robot flashes red if the sound is now off and green if it is on.
 - **Control board sound** can be turned off and on by holding the **▶ Start** button for 5 seconds: wait for the short beep and release. This does not work while a program is running.

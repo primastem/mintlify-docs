@@ -62,7 +62,7 @@ Blocchi base per comporre il programma di controllo:
 - **Sinistra** — rotazione di 90° in senso antiorario
 - **Indietro** — movimento all'indietro (15 cm per impostazione predefinita)
 - **Funzione** — esecuzione del sottoprogramma dalla parte inferiore della pulsantiera
-- **Movimento Casuale** — una delle azioni per spostare il robot: Avanti, Sinistra, Destra o Indietro (su "passo predefinito")
+- **Movimento Casuale** — un passo avanti o indietro, oppure una rotazione di 90° a sinistra o a destra seguita subito da un passo avanti della lunghezza di passo predefinita (non esiste una rotazione sul posto senza passo)
 - **Tessere di Ripetizione (Cicli)** - Tessere con numeri da 2 a 6 (in base al numero di punti) e pittogrammi di ripetizione con il numero all'interno. La tessera con un dado significa un numero casuale di ripetizioni da 1 a 6.
 
 > Vengono utilizzate anche tessere di valori numerici e aritmetica per espandere la programmazione: ad esempio, ripetere un comando o modificare l'angolo/distanza di movimento.
@@ -139,7 +139,7 @@ Per impostazione predefinita:
 - I valori dopo le operazioni aritmetiche vengono anche salvati.
 - Modificare la "**distanza predefinita**" è possibile con una tessera di servizio: ad esempio, per 12,5 cm, inserire la tessera "Distanza predefinita" con valore 125. Il valore viene salvato dopo lo spegnimento. Sono ammessi i numeri da 1 a 999. La tessera senza numero riporta il passo a 150 mm. Con l'aritmetica o con lo zero la cella lampeggia in rosso e il passo resta quello di prima.
 - La pulsantiera e il robot **si spengono automaticamente** se per 15 minuti non succede nulla.
-- Se il robot non viene utilizzato per 1–3 minuti, esegue piccoli movimenti per segnalare che è attivo e pronto.
+- Se il robot non viene utilizzato per 1–3 minuti, non si muove, ma solo lampeggia con gli occhi per segnalare che è attivo e pronto.
 - **Pressione breve del pulsante del robot**: il robot legge la tessera che ha sotto e la dice ad alta voce.
 - **Tutti i suoni del robot** si possono disattivare e riattivare tenendo premuto il pulsante del robot per 5 secondi: attendere il breve segnale e rilasciare. Il robot lampeggia in rosso se il suono si è spento, in verde se si è acceso.
 - Il **suono della pulsantiera** si può disattivare e riattivare tenendo premuto il pulsante **▶ Start** per 5 secondi: attendere il breve segnale e rilasciare. Mentre un programma è in esecuzione, questo non funziona.

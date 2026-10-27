@@ -62,7 +62,7 @@ Grundbausteine zur Erstellung des Steuerprogramms:
 - **Links** — Drehung um 90° gegen den Uhrzeigersinn
 - **Rückwärts** — Rückwärtsbewegung (standardmäßig 15 cm)
 - **Funktion** — Ausführung des Unterprogramms aus dem unteren Teil des Steuerboards
-- **Zufällige Bewegung** — eine der Aktionen zur Roboterbewegung: Vorwärts, Links, Rechts oder Rückwärts (auf "Standardschritt")
+- **Zufällige Bewegung** — ein Schritt vorwärts oder rückwärts, oder eine 90°-Drehung nach links oder rechts mit sofort anschließendem Schritt vorwärts in der Standardschrittlänge (eine Drehung auf der Stelle ohne Schritt gibt es nicht)
 - **Wiederholungs-Tokens (Schleifen)** - Tokens mit Zahlen von 2 bis 6 (entsprechend der Anzahl der Punkte) und Wiederholungspiktogrammen mit der Zahl darin. Der Token mit einem Würfel bedeutet eine zufällige Anzahl von Wiederholungen von 1 bis 6.
 
 > Zahlenwert- und Arithmetik-Tokens werden ebenfalls zur Programmerweiterung verwendet: z. B. zum Wiederholen eines Befehls oder Ändern des Bewegungswinkels/der Distanz.
@@ -139,7 +139,7 @@ Standardmäßig:
 - Werte nach arithmetischen Operationen werden ebenfalls gespeichert.
 - Die "**Standarddistanz**" kann mit einem Service-Token geändert werden: z. B. für 12,5 cm setzen Sie den Token "Standarddistanz" mit dem Wert 125. Der Wert bleibt nach dem Ausschalten erhalten. Erlaubt sind Zahlen von 1 bis 999. Der Token ohne Zahl setzt den Schritt auf 150 mm zurück. Mit Arithmetik oder Null blinkt die Zelle rot, und der Schritt bleibt unverändert.
 - Steuerboard und Roboter **schalten sich automatisch ab**, wenn 15 Minuten lang nichts passiert.
-- Wenn der Roboter 1–3 Minuten nicht verwendet wird, führt er kleine Bewegungen aus, um Betriebsbereitschaft zu signalisieren.
+- Wenn der Roboter 1–3 Minuten nicht verwendet wird, bewegt er sich nicht, sondern blinzelt nur mit den Augen, um Betriebsbereitschaft zu signalisieren.
 - **Kurzes Drücken der Robotertaste**: Der Roboter liest den Token unter sich und sagt ihn an.
 - **Alle Töne des Roboters** lassen sich durch 5-sekündiges Halten der Robotertaste aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Der Roboter blinkt rot, wenn der Ton aus ist, und grün, wenn er an ist.
 - Der **Ton des Steuerboards** lässt sich durch 5-sekündiges Halten der Taste **▶ Start** aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Während ein Programm läuft, funktioniert das Halten nicht.

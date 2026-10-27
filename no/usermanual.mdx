@@ -62,7 +62,7 @@ Grunnleggende blokker for å sette sammen kontrollprogrammet:
 - **Venstre** — sving på 90° mot klokken
 - **Bakover** — bevegelse bakover (15 cm som standard)
 - **Funksjon** — utførelse av underprogrammet fra den nedre delen av kontrollpanelet
-- **Tilfeldig Bevegelse** — en av handlingene for å flytte roboten: Fremover, Venstre, Høyre eller Bakover (på "standardsteg")
+- **Tilfeldig Bevegelse** — ett steg fremover eller bakover, eller en 90°-sving til venstre eller høyre etterfulgt straks av ett steg fremover med standard steglengde (det finnes ingen sving på stedet uten steg)
 - **Gjentakelsesbrikker (Løkker)** - Brikker med tall fra 2 til 6 (etter antall prikker) og gjentakelsespiktogrammer med tallet inni. Brikken med en terning betyr et tilfeldig antall gjentakelser fra 1 til 6.
 
 > Numeriske verdi- og aritmetikkbrikker brukes også for å utvide programmeringen: for eksempel å gjenta en kommando eller endre bevegelsesvinkel/distanse.
@@ -139,7 +139,7 @@ Som standard:
 - Verdier etter aritmetikk lagres også.
 - Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 cm, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres etter strømme av. Tall fra 1 til 999 fungerer. Brikken uten tall setter steget tilbake til 150 mm. Med aritmetikk eller null blinker cellen rødt, og steget forblir som før.
 - Kontrollpanelet og roboten **slår seg automatisk av** hvis ingenting skjer på 15 minutter.
-- Hvis roboten ikke brukes på 1–3 minutter, utfører den små bevegelser for å signalisere at den er aktiv og klar.
+- Hvis roboten ikke brukes på 1–3 minutter, beveger den seg ikke, men blinker bare med øynene for å signalisere at den er aktiv og klar.
 - **Kort trykk på robotknappen**: roboten leser brikken under seg og sier hva den er.
 - **Alle lydene til roboten** kan slås av og på ved å holde robotknappen i 5 sekunder: vent på det korte signalet og slipp. Roboten blinker rødt hvis lyden ble slått av, og grønt hvis den ble slått på.
 - **Kontrollpanelets lyd** kan slås av og på ved å holde **▶ Start**-knappen i 5 sekunder: vent på det korte signalet og slipp. Mens et program kjører, virker ikke dette.
