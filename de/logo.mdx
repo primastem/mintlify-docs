@@ -1,17 +1,17 @@
 ---
 title: "PrimaSTEM und LOGO"
-description: "PrimaSTEM ist Turtle-Grafik aus LOGO, zum Anfassen und ohne Bildschirm. Jedes Konzept auf der Steuerung und sein Gegenstück in LOGO."
+description: "PrimaSTEM ist Turtle-Grafik aus LOGO, zum Anfassen und ohne Bildschirm. Jedes Konzept auf dem Steuerboard und sein Gegenstück in LOGO."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM beruht auf der Idee von [LOGO](https://de.wikipedia.org/wiki/Logo_(Programmiersprache)). Diese Sprache für Kinder entwickelten Seymour Papert und seine Kollegen 1967. In LOGO tippt das Kind Befehle ein, und eine Schildkröte zeichnet auf dem Bildschirm. In PrimaSTEM legt das Kind Tokens auf die Steuerung, und ein Holzroboter mit einem Stift zeichnet auf Papier. Ohne Tastatur, ohne Bildschirm, ohne Text.
+PrimaSTEM beruht auf der Idee von [LOGO](https://de.wikipedia.org/wiki/Logo_(Programmiersprache)). Diese Sprache für Kinder entwickelten Seymour Papert und seine Kollegen 1967. In LOGO tippt das Kind Befehle ein, und eine Schildkröte zeichnet auf dem Bildschirm. In PrimaSTEM legt das Kind Tokens auf das Steuerboard, und ein Holzroboter mit einem Stift zeichnet auf Papier. Ohne Tastatur, ohne Bildschirm, ohne Text.
 
 Diese Seite ist für Lehrkräfte, die LOGO oder Scratch kennen, und für alle, die verstehen wollen, was die Tokens tatsächlich tun.
 
-## Konzepte auf der Steuerung
+## Konzepte auf dem Steuerboard
 
-| Konzept | Auf der PrimaSTEM-Steuerung | In LOGO |
+| Konzept | Auf dem PrimaSTEM-Steuerboard | In LOGO |
 |---|---|---|
 | Sequenz | Die Tokens laufen in der oberen Reihe von links nach rechts. Die LED des Paares, das gerade läuft, blinkt und erlischt dann | ein Befehl nach dem anderen |
 | Befehl | Vorwärts, Rückwärts, Links, Rechts, Pause, Zufällige Bewegung | `forward`, `back`, `left`, `right`, `wait` |
@@ -30,17 +30,17 @@ Diese Seite ist für Lehrkräfte, die LOGO oder Scratch kennen, und für alle, d
 | Stift | Ein Stift in der Mitte des Roboters | `pendown` |
 | Fehlersuche | Den Roboter beobachten, das falsche Token finden, es austauschen | die Zeile korrigieren |
 
-Jeder Befehl hat seinen eigenen gespeicherten Wert: Wenn Sie Vorwärts ändern, ändert sich Links nicht. Beim Ausschalten der Steuerung kehren alle Werte zu den Standardwerten zurück: 150 mm, 90°, 1 s für Pause. Den Standardschritt ändern Sie dauerhaft mit dem Service-Token „Standard-Schrittlänge festlegen“ (siehe [Gerät und Einrichtung](usermanual)).
+Jeder Befehl hat seinen eigenen gespeicherten Wert: Wenn Sie Vorwärts ändern, ändert sich Links nicht. Beim Ausschalten des Steuerboards kehren alle Werte zu den Standardwerten zurück: 150 mm, 90°, 1 s für Pause. Den Standardschritt ändern Sie dauerhaft mit dem Service-Token „Standard-Schrittlänge festlegen“ (siehe [Gerät und Einrichtung](usermanual)).
 
 Das Kind rechnet. Der Roboter führt das Programm genau aus.
 
-## Beispiele: dasselbe Programm auf der Steuerung und in LOGO
+## Beispiele: dasselbe Programm auf dem Steuerboard und in LOGO
 
-Jedes Beispiel hat einen Link. Er öffnet den [Simulator](https://simulator.primastem.com) mit diesem Programm auf der Steuerung und startet es.
+Jedes Beispiel hat einen Link. Er öffnet den [Simulator](https://simulator.primastem.com) mit diesem Programm auf dem Steuerboard und startet es.
 
 ### Quadrat
 
-Steuerung: obere Reihe Funktion × 4. Untere Reihe: Vorwärts 300, Rechts.
+Steuerboard: obere Reihe Funktion × 4. Untere Reihe: Vorwärts 300, Rechts.
 
 ```
 repeat 4 [forward 300 right 90]
@@ -49,7 +49,7 @@ repeat 4 [forward 300 right 90]
 [Im Simulator starten](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programm auf der Steuerung">
+  <Frame caption="Programm auf dem Steuerboard">
     <img src="../images/logo/square-board.svg" alt="" />
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
@@ -61,7 +61,7 @@ Für Kinder von 4–6 Jahren können Sie die Zahlen weglassen: Vorwärts und Rec
 
 ### Gleichseitiges Dreieck
 
-Steuerung: obere Reihe Funktion × 3. Untere Reihe: Vorwärts 400, Rechts 120.
+Steuerboard: obere Reihe Funktion × 3. Untere Reihe: Vorwärts 400, Rechts 120.
 
 ```
 repeat 3 [forward 400 right 120]
@@ -70,7 +70,7 @@ repeat 3 [forward 400 right 120]
 [Im Simulator starten](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
 
 <Columns cols={2}>
-  <Frame caption="Programm auf der Steuerung">
+  <Frame caption="Programm auf dem Steuerboard">
     <img src="../images/logo/triangle-board.svg" alt="" />
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
@@ -82,7 +82,7 @@ Warum 120 und nicht 60? Der Roboter dreht um den Außenwinkel. Die drei Drehunge
 
 ### Fünfzackiger Stern
 
-Steuerung: obere Reihe Funktion × 5. Untere Reihe: Vorwärts 400, Rechts 144.
+Steuerboard: obere Reihe Funktion × 5. Untere Reihe: Vorwärts 400, Rechts 144.
 
 ```
 repeat 5 [forward 400 right 144]
@@ -91,7 +91,7 @@ repeat 5 [forward 400 right 144]
 [Im Simulator starten](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Programm auf der Steuerung">
+  <Frame caption="Programm auf dem Steuerboard">
     <img src="../images/logo/star-board.svg" alt="" />
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
@@ -103,7 +103,7 @@ repeat 5 [forward 400 right 144]
 
 ### Kreis
 
-Steuerung: obere Reihe Funktion × 36. Untere Reihe: Vorwärts 25, Rechts 10.
+Steuerboard: obere Reihe Funktion × 36. Untere Reihe: Vorwärts 25, Rechts 10.
 
 ```
 repeat 36 [forward 25 right 10]
@@ -112,7 +112,7 @@ repeat 36 [forward 25 right 10]
 [Im Simulator starten](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Programm auf der Steuerung">
+  <Frame caption="Programm auf dem Steuerboard">
     <img src="../images/logo/circle-board.svg" alt="" />
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
@@ -124,7 +124,7 @@ Ein Kreis ist ein Vieleck mit vielen kurzen Seiten: 36 × 10° = 360°.
 
 ### Quadratische Spirale (Variable und Arithmetik)
 
-Steuerung: obere Reihe Vorwärts 30, Funktion × 20. Untere Reihe: Rechts, Vorwärts +30.
+Steuerboard: obere Reihe Vorwärts 30, Funktion × 20. Untere Reihe: Rechts, Vorwärts +30.
 
 ```
 make "side 30
@@ -139,7 +139,7 @@ repeat 20 [
 [Im Simulator starten](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programm auf der Steuerung">
+  <Frame caption="Programm auf dem Steuerboard">
     <img src="../images/logo/spiral-board.svg" alt="" />
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
@@ -151,7 +151,7 @@ Vorwärts 30 setzt den gespeicherten Wert. Bei jedem Durchlauf der Funktion verl
 
 ### Sechseck (Winkel durch Division)
 
-Steuerung: obere Reihe Rechts 360, Rechts ÷6, Funktion × 6. Untere Reihe: Vorwärts 200, Rechts.
+Steuerboard: obere Reihe Rechts 360, Rechts ÷6, Funktion × 6. Untere Reihe: Vorwärts 200, Rechts.
 
 ```
 make "angle 360 / 6
@@ -161,7 +161,7 @@ repeat 6 [forward 200 right :angle]
 [Im Simulator starten](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
 
 <Columns cols={2}>
-  <Frame caption="Programm auf der Steuerung">
+  <Frame caption="Programm auf dem Steuerboard">
     <img src="../images/logo/hexagon-board.svg" alt="" />
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Rechts 360 macht eine volle Umdrehung und speichert 360. Rechts ÷6 teilt den gespeicherten Wert und dreht um 60°. In der Funktion nimmt Rechts ohne Zahl wieder 60°. Die zwei Drehungen am Anfang ändern nur, wohin der Roboter vor dem Zeichnen schaut; die Figur bleibt ein Sechseck.
 
-Die Steuerung teilt ganzzahlig und verwirft den Rest. Damit sich die Figur schließt, teilen Sie 360 durch eine Zahl ohne Rest: 3, 4, 5, 6, 8, 9, 10, 12. Zum Beispiel ergibt 360 ÷ 7 den Wert 51°, und dem Siebeneck fehlen 3° zum Schließen.
+Das Steuerboard teilt ganzzahlig und verwirft den Rest. Damit sich die Figur schließt, teilen Sie 360 durch eine Zahl ohne Rest: 3, 4, 5, 6, 8, 9, 10, 12. Zum Beispiel ergibt 360 ÷ 7 den Wert 51°, und dem Siebeneck fehlen 3° zum Schließen.
 
 Weitere Zeichnungen: [Zeichnungsbeispiele](mathdrawings).
 
@@ -185,7 +185,7 @@ PrimaSTEM deckt die Grundlagen der LOGO-Turtle-Grafik ab. Manches funktioniert a
 - **Programmlänge:** 6 Paare in der Hauptreihe, 5 in der Funktion.
 - **Den Stift steckt man von Hand ein**, wenn das Kind möchte, dass der Roboter zeichnet.
 
-Wenn ein Kind der Steuerung entwachsen ist, arbeitet derselbe Roboter mit [Scratch](https://scratch.primastem.com).
+Wenn ein Kind dem Steuerboard entwachsen ist, arbeitet derselbe Roboter mit [Scratch](https://scratch.primastem.com).
 
 ## Zum Weiterlesen
 
