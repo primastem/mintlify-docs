@@ -33,9 +33,9 @@ Dimenzije: duljina 317 mm, širina 217 mm, visina 62 mm.
 
 ![control](../images/usermanual/control.png)
 
-Upravljačka ploča ima 11 dvostrukih utora za žetone naredbi i vrijednosti: 6 za glavni program (gornji dio) i 5 za potprogram (donji dio). Ploča ima dvije tipke: lijevo je tipka za uključivanje, desno tipka "Izvrši / Stop" za pokretanje i zaustavljanje programa.
+Upravljačka ploča ima 11 dvostrukih utora za žetone naredbi i vrijednosti: 6 za glavni program (gornji dio) i 5 za potprogram (donji dio). Ploča ima dvije tipke: lijevo je tipka za uključivanje, desno tipka **▶ Start / Stop** za pokretanje i zaustavljanje programa.
 
-Nakon što stavite žetone naredbi i vrijednosti u utore, pritisnite "Izvrši": robot će pokrenuti program. Aktivne naredbe svijetle LED diodama između utora.
+Nakon što stavite žetone naredbi i vrijednosti u utore, pritisnite **▶ Start**: robot će pokrenuti program. Aktivne naredbe svijetle LED diodama između utora.
 
 Ako je žeton pogrešno umetnut, ploča to javlja crvenom LED diodom, ali program se nastavlja (na primjer, kad je žeton vrijednosti stavljen bez naredbe).
 
@@ -89,11 +89,11 @@ Preporučuje se prvo uključiti robota, zatim ploču.
 
 Prije povezivanja stavite robota na ravnu podlogu: nakon sparivanja LED diode svijetle bijelo. Dok veze nema, robot i ploča svijetle svijetloplavo.
 
-Provjerite vezu: stavite žeton "Naprijed" i pritisnite "Izvrši".
+Provjerite vezu: stavite žeton "Naprijed" i pritisnite **▶ Start**.
 
 Ako veze nema, ponovno pokrenite oba uređaja ili ih napunite. Veza se može privremeno prekinuti u blizini jakih izvora elektromagnetskog polja (mobitel, WiFi pristupna točka).
 
-> **Nakon ažuriranja softvera uređaja** možda će biti potrebno ponovno sparivanje: uključite robota, zatim ploču, pa držite tipku "Izvrši" na ploči dulje od 10 sekundi. U 5. sekundi čut ćete kratki zvučni signal: nastavite držati. Sparivanje počinje u 10. sekundi.
+> **Nakon ažuriranja softvera uređaja** možda će biti potrebno ponovno sparivanje: uključite robota, zatim ploču, pa držite tipku **▶ Start** na ploči dulje od 10 sekundi. U 5. sekundi čut ćete kratki zvučni signal: nastavite držati. Sparivanje počinje u 10. sekundi.
 
 ## Kako to radi?
 
@@ -118,7 +118,7 @@ Naredbe se prvo stavljaju u gornji dio ploče (6 utora) i izvršavaju se slijeva
 
 Redoslijed blokova određuje kretanje robota.
 
-Pritisnite "Izvrši" za pokretanje programa.
+Pritisnite **▶ Start** za pokretanje programa.
 
 Zadano:
 
@@ -130,7 +130,7 @@ Zadano:
 
 ### Važne funkcije:
 
-- **Prekid** izvršavanja programa: ponovno pritisnite "Izvrši" tijekom kretanja.
+- **Prekid** izvršavanja programa: ponovno pritisnite **▶ Start** tijekom kretanja.
 - Ploča pamti posljednju **zadanu vrijednost** (udaljenost/kut) naredbe kretanja do isključivanja: na primjer, ako je "Naprijed" = "200", sve sljedeće naredbe "Naprijed" izvršavaju se s tom vrijednošću.
 - Vrijednosti nakon aritmetičkih operacija također se pamte.
 - "**Zadanu udaljenost**" mijenjate servisnim žetonom: na primjer, za 12,5 cm stavite žeton "Korak" s vrijednošću 125. Vrijednost se pamti i nakon isključivanja. Rade brojevi od 1 do 999. Žeton bez broja vraća korak na 150 mm. Uz aritmetiku ili nulu polje treperi crveno, a korak ostaje isti.
@@ -138,16 +138,16 @@ Zadano:
 - Ako se robot ne koristi 1–3 minute, napravi male pokrete kako bi pokazao da je aktivan i spreman.
 - **Kratki pritisak tipke robota**: robot očitava žeton ispod sebe i izgovara što je to.
 - **Svi zvukovi robota** isključuju se i uključuju držanjem tipke robota 5 sekundi: pričekajte kratki zvučni signal i otpustite. Robot treperi crveno ako je zvuk sada isključen, a zeleno ako je uključen.
-- **Zvuk ploče** isključuje se i uključuje držanjem tipke "Izvrši" 5 sekundi: pričekajte kratki zvučni signal i otpustite. To ne radi dok se program izvršava.
+- **Zvuk ploče** isključuje se i uključuje držanjem tipke **▶ Start** 5 sekundi: pričekajte kratki zvučni signal i otpustite. To ne radi dok se program izvršava.
 - **Nakon ažuriranja softvera** može biti potrebna kalibracija kretanja robota.
 - **Vraćanje postavki robota na tvorničke**: držite tipku robota 10 sekundi (pojedinosti su u dijelu "Kalibracija robota" u nastavku).
-- **Sparivanje ploče i robota** može biti potrebno nakon ažuriranja softvera uređaja. Držite tipku "Izvrši" na ploči dulje od 10 sekundi: zvučni signal u 5. sekundi znači da treba nastaviti držati.
+- **Sparivanje ploče i robota** može biti potrebno nakon ažuriranja softvera uređaja. Držite tipku **▶ Start** na ploči dulje od 10 sekundi: zvučni signal u 5. sekundi znači da treba nastaviti držati.
 
 ### Kalibracija robota:
 
 - Prvo pokrenite žeton "Kalibracija" bez broja: robot mjeri polaritet motora, uklanja zazor i podešava pravocrtno kretanje. Žeton radi do 2 minute. Prvih pola minute robot mora mirovati, nemojte ga dirati. Tipka robota u to vrijeme ne radi.
 - Zatim kalibrirajte kutove okreta. Označite točnu orijentaciju robota na podlozi. Potrebno je 16 okreta od 90° u smjeru kazaljke na satu: sastavite program "Ponovi 8 + okret udesno" i pokrenite ga dvaput. Robot treba napraviti četiri puna kruga (90×16 = 1440°) i vratiti se u početnu orijentaciju.
-- Procijenite odstupanje od oznake i primijenite ispravak žetonom "Kalibracija" plus žeton broja: ako se robot zaustavi prije oznake, dodajte "+" (na primjer "Kalibracija" + "+5"); ako je prijeđe, dodajte "−" (na primjer "Kalibracija" + "−5"), zatim "Izvrši". Broj je ukupno odstupanje u stupnjevima kroz svih 16 okreta zajedno. Robot ne prihvaća više od 90. Običan broj bez "+" ili "−" uz "Kalibraciju" ne radi: polje treperi crveno.
+- Procijenite odstupanje od oznake i primijenite ispravak žetonom "Kalibracija" plus žeton broja: ako se robot zaustavi prije oznake, dodajte "+" (na primjer "Kalibracija" + "+5"); ako je prijeđe, dodajte "−" (na primjer "Kalibracija" + "−5"), zatim **▶ Start**. Broj je ukupno odstupanje u stupnjevima kroz svih 16 okreta zajedno. Robot ne prihvaća više od 90. Običan broj bez "+" ili "−" uz "Kalibraciju" ne radi: polje treperi crveno.
 - Ponavljajte dok se robot ne vrati točno u početnu orijentaciju.
 - Kalibracija se pamti i nakon isključivanja.
 - Pozor! Poništavanje kalibracije: držite tipku robota 10 sekundi, svjetla trepere crveno, zeleno, plavo i bijelo. Poništavanje briše sve kalibracije, glasnoću i isključeni zvuk. Nakon poništavanja isključite i uključite robota, pa kalibraciju ponovite od početka.
@@ -155,8 +155,8 @@ Zadano:
 <Accordion title="Kalibracija prve verzije uređaja (MVP) s robotom promjera 10 cm" icon="rectangle-terminal">
   Ova metoda vrijedi samo za prvu verziju (MVP). Na novom firmwareu "Kalibracija" s običnim brojem ne radi: polje treperi crveno.
 
-  1. Za kalibraciju žiroskopa stavite robota na vodoravnu podlogu, umetnite žeton "Kalibracija" u ploču i pritisnite "Izvrši".
-  2. Za kalibraciju prijeđene udaljenosti izmjerite stvarni put naredbe "Naprijed", stavite "Kalibraciju" i žeton s traženom vrijednošću, zatim "Izvrši". Vrijednost možete zapisati na bilo koji digitalni NFC čip mobitelom s NFC-om, kao tekst u obliku nXXX (na primjer, n095 za 95 mm). Nakon toga će udaljenost koju robot prijeđe biti točna.\*
+  1. Za kalibraciju žiroskopa stavite robota na vodoravnu podlogu, umetnite žeton "Kalibracija" u ploču i pritisnite **▶ Start**.
+  2. Za kalibraciju prijeđene udaljenosti izmjerite stvarni put naredbe "Naprijed", stavite "Kalibraciju" i žeton s traženom vrijednošću, zatim **▶ Start**. Vrijednost možete zapisati na bilo koji digitalni NFC čip mobitelom s NFC-om, kao tekst u obliku nXXX (na primjer, n095 za 95 mm). Nakon toga će udaljenost koju robot prijeđe biti točna.\*
 </Accordion>
 
 ### Programiranje NFC žetona

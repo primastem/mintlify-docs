@@ -34,9 +34,9 @@ Abmessungen: L=317 mm, W=217 mm, H=62 mm.
 ![control](../images/usermanual/control.png)
 
 Die Steuerung enthält 11 Doppelschächte zum Einsetzen von Befehls- und Wert-Tokens: 6 für das Hauptprogramm (oberer Teil), 5 für das Unterprogramm (unterer Teil).
-Die Steuerung hat zwei Tasten: links — Ein-/Ausschalter, rechts — "Ausführen / Stoppen" zum Starten und Stoppen des Programms.
+Die Steuerung hat zwei Tasten: links — Ein-/Ausschalter, rechts — **▶ Start / Stopp** zum Starten und Stoppen des Programms.
 
-Nachdem Sie Befehls- und Wert-Tokens in die Schächte eingesetzt haben, drücken Sie "Ausführen": Der Roboter führt das Programm aus. Aktive Befehle werden durch LEDs zwischen den Schächten beleuchtet.
+Nachdem Sie Befehls- und Wert-Tokens in die Schächte eingesetzt haben, drücken Sie **▶ Start**: Der Roboter führt das Programm aus. Aktive Befehle werden durch LEDs zwischen den Schächten beleuchtet.
 
 Wenn ein Token falsch eingesetzt ist, signalisiert die Steuerung mit einer roten LED, aber das Programm wird fortgesetzt (z. B. wenn ein Wert-Token ohne Befehl eingesetzt wird).
 
@@ -93,11 +93,11 @@ Es wird empfohlen, zuerst den Roboter und dann die Steuerung einzuschalten.
 
 Stellen Sie den Roboter vor dem Verbinden auf eine ebene Fläche: Nach der Verbindung werden die LEDs weiß. Solange keine Verbindung besteht, leuchten Roboter und Steuerung hellblau.
 
-Überprüfen Sie die Verbindung: Setzen Sie den Token "Vorwärts" ein und drücken Sie "Ausführen".
+Überprüfen Sie die Verbindung: Setzen Sie den Token "Vorwärts" ein und drücken Sie **▶ Start**.
 
 Wenn keine Verbindung besteht, starten Sie beide Geräte neu oder laden Sie sie auf. In der Nähe von starken elektromagnetischen Feldquellen (Mobiltelefon, WiFi-Hotspot) kann es zu vorübergehendem Verbindungsverlust kommen.
 
-> **Nach einer Software-Aktualisierung der Geräte** kann eine Paarung erforderlich sein: Schalten Sie den Roboter ein, dann die Steuerung, drücken und halten Sie die Taste "Ausführen" auf der Steuerung länger als 10 Sekunden. In der 5. Sekunde ertönt ein kurzer Signalton: nicht loslassen, weiter halten. In der 10. Sekunde beginnt die Paarung.
+> **Nach einer Software-Aktualisierung der Geräte** kann eine Paarung erforderlich sein: Schalten Sie den Roboter ein, dann die Steuerung, drücken und halten Sie die Taste **▶ Start** auf der Steuerung länger als 10 Sekunden. In der 5. Sekunde ertönt ein kurzer Signalton: nicht loslassen, weiter halten. In der 10. Sekunde beginnt die Paarung.
 
 ## Wie funktioniert es?
 
@@ -123,7 +123,7 @@ Befehle werden zuerst in den oberen Teil der Steuerung (6 Schächte) eingesetzt 
 
 Die Reihenfolge der Blöcke bestimmt die Bewegung des Roboters.
 
-Drücken Sie "Ausführen", um das Programm zu starten.
+Drücken Sie **▶ Start**, um das Programm zu starten.
 
 Standardmäßig:
 - "Vorwärts" — 15 cm.
@@ -134,7 +134,7 @@ Standardmäßig:
 
 ### Wichtige Funktionen:
 
-- **Unterbrechen** Sie die Programmausführung, indem Sie während der Bewegung erneut "Ausführen" drücken.
+- **Unterbrechen** Sie die Programmausführung, indem Sie während der Bewegung erneut **▶ Start** drücken.
 - Die Steuerung speichert den letzten **eingestellten Wert** (Distanz/Winkel) für den Bewegungsbefehl bis zum Ausschalten: z. B. wenn "Vorwärts" = "200", werden alle folgenden "Vorwärts"-Befehle mit diesem Wert ausgeführt.
 - Werte nach arithmetischen Operationen werden ebenfalls gespeichert.
 - Die "**Standarddistanz**" kann mit einem Service-Token geändert werden: z. B. für 12,5 cm setzen Sie den Token "Standarddistanz" mit dem Wert 125. Der Wert bleibt nach dem Ausschalten erhalten. Erlaubt sind Zahlen von 1 bis 999. Der Token ohne Zahl setzt den Schritt auf 150 mm zurück. Mit Arithmetik oder Null blinkt die Zelle rot, und der Schritt bleibt unverändert.
@@ -142,16 +142,16 @@ Standardmäßig:
 - Wenn der Roboter 1–3 Minuten nicht verwendet wird, führt er kleine Bewegungen aus, um Betriebsbereitschaft zu signalisieren.
 - **Kurzes Drücken der Robotertaste**: Der Roboter liest den Token unter sich und sagt ihn an.
 - **Alle Töne des Roboters** lassen sich durch 5-sekündiges Halten der Robotertaste aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Der Roboter blinkt rot, wenn der Ton aus ist, und grün, wenn er an ist.
-- Der **Ton der Steuerung** lässt sich durch 5-sekündiges Halten der Taste "Ausführen" aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Während ein Programm läuft, funktioniert das Halten nicht.
+- Der **Ton der Steuerung** lässt sich durch 5-sekündiges Halten der Taste **▶ Start** aus- und einschalten: Warten Sie auf den kurzen Signalton und lassen Sie los. Während ein Programm läuft, funktioniert das Halten nicht.
 - **Nach einer Software-Aktualisierung** kann eine Kalibrierung der Roboterbewegung erforderlich sein.
 - **Zurücksetzen der Robotereinstellungen**: Robotertaste 10 Sekunden halten (mehr dazu unter „Roboter-Kalibrierung“).
-- **Paarung von Steuerung und Roboter** kann nach einer Software-Aktualisierung der Geräte erforderlich sein. Halten Sie die Taste "Ausführen" auf der Steuerung länger als 10 Sekunden: Der Signalton in der 5. Sekunde bedeutet, dass Sie weiter halten müssen.
+- **Paarung von Steuerung und Roboter** kann nach einer Software-Aktualisierung der Geräte erforderlich sein. Halten Sie die Taste **▶ Start** auf der Steuerung länger als 10 Sekunden: Der Signalton in der 5. Sekunde bedeutet, dass Sie weiter halten müssen.
 
 ### Roboter-Kalibrierung:
 
 - Führen Sie zuerst die Karte „Kalibrierung“ ohne Zahl aus: Der Roboter misst die Motorpolarität, beseitigt das Spiel und stellt die Geradeausfahrt ein. Die Karte läuft bis zu 2 Minuten. In der ersten halben Minute muss der Roboter stillstehen, berühren Sie ihn nicht. Die Robotertaste funktioniert in dieser Zeit nicht.
 - Kalibrieren Sie dann die Drehwinkel. Markieren Sie auf der Tischoberfläche die genaue Ausrichtung des Roboters. Nötig sind 16 Drehungen um 90° im Uhrzeigersinn: erstellen Sie das Programm „Wiederholung 8 + Rechtsdrehung“ und führen Sie es zweimal aus. Der Roboter sollte vier volle Umdrehungen (90×16 = 1440°) machen und in die ursprüngliche Ausrichtung zurückkehren.
-- Bewerten Sie die Abweichung von der Marke und korrigieren Sie mit der Karte „Kalibrierung“ und einem Zahlen-Token: Wenn der Roboter vor der Marke stoppt, fügen Sie „+“ hinzu (z. B. „Kalibrierung“ + „+5“); wenn er darüber hinausfährt, fügen Sie „−“ hinzu (z. B. „Kalibrierung“ + „−5“), dann „Ausführen“. Die Zahl gibt an, um wie viele Grad sich der Roboter über alle 16 Drehungen zusammen geirrt hat. Mehr als 90 nimmt der Roboter nicht an. Eine einfache Zahl ohne „+“ oder „−“ neben der „Kalibrierung“ funktioniert nicht: Die Zelle blinkt rot.
+- Bewerten Sie die Abweichung von der Marke und korrigieren Sie mit der Karte „Kalibrierung“ und einem Zahlen-Token: Wenn der Roboter vor der Marke stoppt, fügen Sie „+“ hinzu (z. B. „Kalibrierung“ + „+5“); wenn er darüber hinausfährt, fügen Sie „−“ hinzu (z. B. „Kalibrierung“ + „−5“), dann **▶ Start**. Die Zahl gibt an, um wie viele Grad sich der Roboter über alle 16 Drehungen zusammen geirrt hat. Mehr als 90 nimmt der Roboter nicht an. Eine einfache Zahl ohne „+“ oder „−“ neben der „Kalibrierung“ funktioniert nicht: Die Zelle blinkt rot.
 - Wiederholen Sie, bis der Roboter genau in die ursprüngliche Ausrichtung zurückkehrt.
 - Die Kalibrierung bleibt nach dem Ausschalten erhalten.
 - Achtung! Zurücksetzen der Kalibrierung: Robotertaste 10 Sekunden halten, die Lichter blinken rot, grün, blau und weiß. Das Zurücksetzen löscht alle Kalibrierungen, die Lautstärke und den ausgeschalteten Ton. Schalten Sie den Roboter danach aus und wieder ein und wiederholen Sie die Kalibrierung von vorn.
@@ -159,8 +159,8 @@ Standardmäßig:
 <Accordion icon="rectangle-terminal" title="Kalibrierung der ersten Geräteversion (MVP) mit Roboter von 10 cm Durchmesser">
 Diese Methode gilt nur für die erste Version (MVP). Mit neuer Firmware funktioniert „Kalibrierung“ mit einer einfachen Zahl nicht: Die Zelle blinkt rot.
 
-1. Zur Kalibrierung des Gyroskops stellen Sie den Roboter auf eine horizontale Fläche, setzen Sie den Token "Kalibrierung" in die Steuerung ein und drücken Sie "Ausführen".
-2. Zur Kalibrierung der Bewegungsdistanz messen Sie den tatsächlichen Weg mit dem Befehl "Vorwärts", setzen Sie "Kalibrierung" und den Token mit dem erforderlichen Wert ein, dann "Ausführen". Sie können den Wert auf einen beliebigen digitalen NFC-Chip mit einem Mobiltelefon mit NFC als Text in der Form nXXX schreiben (z. B. n095 für 95 mm). Danach ist die Bewegungsdistanz des Roboters präzise.*
+1. Zur Kalibrierung des Gyroskops stellen Sie den Roboter auf eine horizontale Fläche, setzen Sie den Token "Kalibrierung" in die Steuerung ein und drücken Sie **▶ Start**.
+2. Zur Kalibrierung der Bewegungsdistanz messen Sie den tatsächlichen Weg mit dem Befehl "Vorwärts", setzen Sie "Kalibrierung" und den Token mit dem erforderlichen Wert ein, dann **▶ Start**. Sie können den Wert auf einen beliebigen digitalen NFC-Chip mit einem Mobiltelefon mit NFC als Text in der Form nXXX schreiben (z. B. n095 für 95 mm). Danach ist die Bewegungsdistanz des Roboters präzise.*
 </Accordion>
 
 ### Programmierung von NFC-Chips

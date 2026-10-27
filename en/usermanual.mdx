@@ -33,9 +33,9 @@ Dimensions: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
-The remote control contains 11 dual slots for inserting command and value chips: 6 for the main program (upper part), 5 for the subroutine (lower part). The remote has two buttons: on the left — power, on the right — "Execute / Stop" for starting and stopping the program.
+The remote control contains 11 dual slots for inserting command and value chips: 6 for the main program (upper part), 5 for the subroutine (lower part). The remote has two buttons: on the left — power, on the right — **▶ Start / Stop** for starting and stopping the program.
 
-After placing command and value chips in the slots, press "Execute": the robot will run the program. Active commands are illuminated by LEDs between the slots.
+After placing command and value chips in the slots, press **▶ Start**: the robot will run the program. Active commands are illuminated by LEDs between the slots.
 
 If a chip is inserted incorrectly, the remote signals with a red LED, but the program continues (for example, when a value chip is placed without a command).
 
@@ -89,11 +89,11 @@ It is recommended to turn on the robot first, then the remote.
 
 Place the robot on a flat surface before connecting: after pairing, the LEDs turn white. While there is no connection, the robot and the remote glow light blue.
 
-Check the connection: place the "Forward" chip and press "Execute".
+Check the connection: place the "Forward" chip and press **▶ Start**.
 
 If there is no connection, restart both devices or charge them. Temporary connection loss may occur near strong electromagnetic field sources (mobile phone, WiFi hotspot).
 
-> **After updating the device software**, pairing may be required: turn on the robot, then the remote, press and hold the "Execute" button on the remote for more than 10 seconds. At the 5th second you will hear a short beep: keep holding. Pairing starts at the 10th second.
+> **After updating the device software**, pairing may be required: turn on the robot, then the remote, press and hold the **▶ Start** button on the remote for more than 10 seconds. At the 5th second you will hear a short beep: keep holding. Pairing starts at the 10th second.
 
 ## How It Works?
 
@@ -118,7 +118,7 @@ Commands are placed first in the upper part of the remote (6 slots) and are exec
 
 The sequence of blocks determines the robot's movement.
 
-Press "Execute" to start the program.
+Press **▶ Start** to start the program.
 
 By default:
 
@@ -130,7 +130,7 @@ By default:
 
 ### Important Functions:
 
-- **Interrupt** program execution by pressing "Execute" again during movement.
+- **Interrupt** program execution by pressing **▶ Start** again during movement.
 - The remote remembers the last **set value** (distance/angle) for the movement command until power-off: for example, if "Forward" = "200", all subsequent "Forward" commands are executed with this value.
 - Values after arithmetic operations are also saved.
 - Change the "**default distance**" using a service chip: for example, for 12.5 cm, place the "Default Distance" chip with value 125. The value is saved after power-off. Numbers from 1 to 999 work. The chip without a number returns the step to 150 mm. With arithmetic or zero the cell blinks red and the step stays the same.
@@ -138,16 +138,16 @@ By default:
 - If the robot is not used for 1–3 minutes, it makes small movements to signal it is active and ready.
 - **Short press of the robot button**: the robot reads the chip under itself and says what it is.
 - **All robot sounds** can be turned off and on by holding the robot button for 5 seconds: wait for the short beep and release. The robot flashes red if the sound is now off and green if it is on.
-- **Remote control sound** can be turned off and on by holding the "Execute" button for 5 seconds: wait for the short beep and release. This does not work while a program is running.
+- **Remote control sound** can be turned off and on by holding the **▶ Start** button for 5 seconds: wait for the short beep and release. This does not work while a program is running.
 - **After a software update**, robot movement calibration may be needed.
 - **Robot settings reset**: hold the robot button for 10 seconds (details in "Robot Calibration" below).
-- **Remote and robot pairing** may be necessary after updating device software. Hold the "Execute" button on the remote for more than 10 seconds: the beep at the 5th second means keep holding.
+- **Remote and robot pairing** may be necessary after updating device software. Hold the **▶ Start** button on the remote for more than 10 seconds: the beep at the 5th second means keep holding.
 
 ### Robot Calibration:
 
 - First run the "Calibration" card without a number: the robot measures motor polarity, removes backlash and sets up straight-line movement. The card runs for up to 2 minutes. For the first half minute the robot must stand still, do not touch it. The robot button does not work during this time.
 - Then calibrate the turn angles. Mark the exact orientation of the robot on the table surface. You need 16 turns of 90° clockwise: build the program "Repeat 8 + Right turn" and run it twice. The robot should make four full rotations (90×16 = 1440°) and return to its original orientation.
-- Assess the deviation from the mark and apply a correction with the "Calibration" card plus a number chip: if the robot stops before the mark, add "+" (for example "Calibration" + "+5"); if it goes past, add "−" (for example "Calibration" + "−5"), then "Execute". The number is how many degrees the robot was off over all 16 turns together. The robot does not accept more than 90. A plain number without "+" or "−" next to "Calibration" does not work: the cell blinks red.
+- Assess the deviation from the mark and apply a correction with the "Calibration" card plus a number chip: if the robot stops before the mark, add "+" (for example "Calibration" + "+5"); if it goes past, add "−" (for example "Calibration" + "−5"), then **▶ Start**. The number is how many degrees the robot was off over all 16 turns together. The robot does not accept more than 90. A plain number without "+" or "−" next to "Calibration" does not work: the cell blinks red.
 - Repeat until the robot returns exactly to its original orientation.
 - The calibration is saved after power-off.
 - Attention! Calibration reset: hold the robot button for 10 seconds, the lights flash red, green, blue and white. The reset erases all calibrations, the volume and the muted sound. After the reset, switch the robot off and on, then redo the calibration from the start.
@@ -155,8 +155,8 @@ By default:
 <Accordion title="Calibration of the first device version (MVP) with 10 cm diameter robot" icon="rectangle-terminal">
   This method is only for the first version (MVP). On new firmware, "Calibration" with a plain number does not work: the cell blinks red.
 
-  1. To calibrate the gyroscope, place the robot on a horizontal surface, insert the "Calibration" chip into the remote and press "Execute".
-  2. To calibrate the movement distance, measure the actual path with the "Forward" command, place "Calibration" and the chip with the required value, then "Execute". You can write the value to any digital NFC chip using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 mm). After this, the robot's movement distance will be accurate.\*
+  1. To calibrate the gyroscope, place the robot on a horizontal surface, insert the "Calibration" chip into the remote and press **▶ Start**.
+  2. To calibrate the movement distance, measure the actual path with the "Forward" command, place "Calibration" and the chip with the required value, then **▶ Start**. You can write the value to any digital NFC chip using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 mm). After this, the robot's movement distance will be accurate.\*
 </Accordion>
 
 ### Programming NFC Chips

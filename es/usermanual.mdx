@@ -34,9 +34,9 @@ Dimensiones: L=317 mm, W=217 mm, H=62 mm.
 ![control](../images/usermanual/control.png)
 
 El mando contiene 11 ranuras dobles para insertar fichas de comandos y valores: 6 para el programa principal (parte superior), 5 para el subprograma (parte inferior).
-El mando tiene dos botones: a la izquierda — encendido, a la derecha — "Ejecutar / Detener" para iniciar y detener el programa.
+El mando tiene dos botones: a la izquierda — encendido, a la derecha — **▶ Inicio / Parada** para iniciar y detener el programa.
 
-Después de colocar las fichas de comandos y valores en las ranuras, pulse "Ejecutar": el robot ejecutará el programa. Los comandos activos se iluminan con LEDs entre las ranuras.
+Después de colocar las fichas de comandos y valores en las ranuras, pulse **▶ Inicio**: el robot ejecutará el programa. Los comandos activos se iluminan con LEDs entre las ranuras.
 
 Si una ficha está mal colocada, el mando lo señala con un LED rojo, pero el programa continúa (por ejemplo, al colocar una ficha de valor sin comando).
 
@@ -93,11 +93,11 @@ Se recomienda encender primero el robot, luego el mando.
 
 Coloque el robot sobre una superficie plana antes de conectar: después del emparejamiento, los LEDs se vuelven blancos. Mientras no hay conexión, el robot y el mando se iluminan en azul claro.
 
-Verifique la conexión: coloque la ficha "Adelante" y pulse "Ejecutar".
+Verifique la conexión: coloque la ficha "Adelante" y pulse **▶ Inicio**.
 
 Si no hay conexión, reinicie ambos dispositivos o cárguelos. Puede haber pérdida temporal de conexión cerca de fuentes de campo electromagnético fuerte (teléfono móvil, punto WiFi).
 
-> **Después de actualizar el software de los dispositivos**, puede ser necesario emparejarlos: encienda el robot, luego el mando, pulse y mantenga el botón "Ejecutar" en el mando durante más de 10 segundos. En el segundo 5 sonará un pitido corto: no suelte, siga pulsando. En el segundo 10 empieza el emparejamiento.
+> **Después de actualizar el software de los dispositivos**, puede ser necesario emparejarlos: encienda el robot, luego el mando, pulse y mantenga el botón **▶ Inicio** en el mando durante más de 10 segundos. En el segundo 5 sonará un pitido corto: no suelte, siga pulsando. En el segundo 10 empieza el emparejamiento.
 
 ## ¿Cómo Funciona?
 
@@ -123,7 +123,7 @@ Los comandos se colocan primero en la parte superior del mando (6 ranuras) y se 
 
 La secuencia de bloques determina el movimiento del robot.
 
-Pulse "Ejecutar" para iniciar el programa.
+Pulse **▶ Inicio** para iniciar el programa.
 
 Por defecto:
 - "Adelante" — 15 cm.
@@ -134,7 +134,7 @@ Por defecto:
 
 ### Funciones Importantes:
 
-- **Interrumpir** la ejecución del programa pulsando "Ejecutar" de nuevo durante el movimiento.
+- **Interrumpir** la ejecución del programa pulsando **▶ Inicio** de nuevo durante el movimiento.
 - El mando recuerda el último **valor establecido** (distancia/ángulo) para el comando de movimiento hasta el apagado: por ejemplo, si "Adelante" = "200", todos los siguientes comandos "Adelante" se ejecutan con este valor.
 - Los valores después de aritmética también se guardan.
 - Cambiar la "**distancia por defecto**" se puede hacer con una ficha de servicio: por ejemplo, para 12,5 cm, coloque la ficha "Distancia por defecto" con valor 125. El valor se guarda después del apagado. Sirven los números del 1 al 999. La ficha sin número devuelve el paso a 150 mm. Con aritmética o con cero, la celda parpadea en rojo y el paso no cambia.
@@ -142,16 +142,16 @@ Por defecto:
 - Si el robot no se usa durante 1–3 minutos, realiza pequeños movimientos para señalar que está activo y listo.
 - **Pulsación corta del botón del robot**: el robot lee la ficha que tiene debajo y la dice en voz alta.
 - **Todos los sonidos del robot** se pueden desactivar y activar manteniendo el botón del robot 5 segundos: espere el pitido corto y suelte. El robot parpadea en rojo si el sonido se ha apagado y en verde si se ha encendido.
-- El **sonido del mando** se puede desactivar y activar manteniendo el botón "Ejecutar" 5 segundos: espere el pitido corto y suelte. Mientras se ejecuta un programa, mantener el botón no funciona.
+- El **sonido del mando** se puede desactivar y activar manteniendo el botón **▶ Inicio** 5 segundos: espere el pitido corto y suelte. Mientras se ejecuta un programa, mantener el botón no funciona.
 - **Después de una actualización de software**, puede ser necesaria la calibración del movimiento del robot.
 - **Restablecimiento de los ajustes del robot**: mantenga el botón del robot 10 segundos (más detalles en «Calibración del Robot»).
-- **Emparejamiento del mando y el robot** puede ser necesario después de actualizar el software de los dispositivos. Mantenga el botón "Ejecutar" en el mando más de 10 segundos: el pitido en el segundo 5 significa que hay que seguir pulsando.
+- **Emparejamiento del mando y el robot** puede ser necesario después de actualizar el software de los dispositivos. Mantenga el botón **▶ Inicio** en el mando más de 10 segundos: el pitido en el segundo 5 significa que hay que seguir pulsando.
 
 ### Calibración del Robot:
 
 - Primero ejecute la tarjeta «Calibración» sin número: el robot mide la polaridad de los motores, elimina las holguras y ajusta el movimiento en línea recta. La tarjeta funciona hasta 2 minutos. Durante el primer medio minuto el robot debe estar quieto, no lo toque. El botón del robot no funciona durante ese tiempo.
 - Luego calibre los ángulos de giro. Marque en la superficie de la mesa la orientación exacta del robot. Se necesitan 16 giros de 90° en sentido horario: componga el programa «Repetición 8 + giro a la derecha» y ejecútelo dos veces. El robot debe dar cuatro vueltas completas (90×16 = 1440°) y volver a su orientación inicial.
-- Evalúe la desviación respecto a la marca y aplique la corrección con la tarjeta «Calibración» y una ficha numérica: si el robot se detiene antes de la marca, añada «+» (por ejemplo «Calibración» + «+5»); si se pasa, añada «−» (por ejemplo «Calibración» + «−5»), luego «Ejecutar». El número indica cuántos grados se equivocó el robot en los 16 giros juntos. El robot no acepta más de 90. Un número simple sin «+» o «−» junto a «Calibración» no funciona: la celda parpadea en rojo.
+- Evalúe la desviación respecto a la marca y aplique la corrección con la tarjeta «Calibración» y una ficha numérica: si el robot se detiene antes de la marca, añada «+» (por ejemplo «Calibración» + «+5»); si se pasa, añada «−» (por ejemplo «Calibración» + «−5»), luego **▶ Inicio**. El número indica cuántos grados se equivocó el robot en los 16 giros juntos. El robot no acepta más de 90. Un número simple sin «+» o «−» junto a «Calibración» no funciona: la celda parpadea en rojo.
 - Repita hasta que el robot vuelva exactamente a su orientación inicial.
 - La calibración se guarda tras el apagado.
 - ¡Atención! Restablecer la calibración: mantenga el botón del robot 10 segundos, las luces parpadean en rojo, verde, azul y blanco. El restablecimiento borra todas las calibraciones, el volumen y el sonido desactivado. Después, apague y encienda el robot y repita la calibración desde el principio.
@@ -159,8 +159,8 @@ Por defecto:
 <Accordion icon="rectangle-terminal" title="Calibración de la primera versión del dispositivo (MVP) con robot de 10 cm de diámetro">
 Este método sirve solo para la primera versión (MVP). Con el firmware nuevo, «Calibración» con un número simple no funciona: la celda parpadea en rojo.
 
-1. Para calibrar el giroscopio, coloque el robot sobre una superficie horizontal, inserte la ficha "Calibración" en el mando y pulse "Ejecutar".
-2. Para calibrar la distancia de movimiento, mida la ruta real con el comando "Adelante", coloque "Calibración" y la ficha con el valor necesario, luego "Ejecutar". Puede escribir el valor en cualquier ficha NFC digital usando un teléfono móvil con NFC como texto en forma de nXXX (por ejemplo, n095 para 95 mm). Después de esto, la distancia de movimiento del robot será precisa.*
+1. Para calibrar el giroscopio, coloque el robot sobre una superficie horizontal, inserte la ficha "Calibración" en el mando y pulse **▶ Inicio**.
+2. Para calibrar la distancia de movimiento, mida la ruta real con el comando "Adelante", coloque "Calibración" y la ficha con el valor necesario, luego **▶ Inicio**. Puede escribir el valor en cualquier ficha NFC digital usando un teléfono móvil con NFC como texto en forma de nXXX (por ejemplo, n095 para 95 mm). Después de esto, la distancia de movimiento del robot será precisa.*
 </Accordion>
 
 ### Programación de Fichas NFC

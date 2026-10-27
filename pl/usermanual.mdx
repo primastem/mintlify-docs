@@ -33,9 +33,9 @@ Wymiary: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
-Pilot ma 11 podwójnych gniazd na żetony poleceń i wartości: 6 na program główny (górna część), 5 na podprogram (dolna część). Pilot ma dwa przyciski: po lewej — zasilanie, po prawej — „Wykonaj / Stop”, który uruchamia i zatrzymuje program.
+Pilot ma 11 podwójnych gniazd na żetony poleceń i wartości: 6 na program główny (górna część), 5 na podprogram (dolna część). Pilot ma dwa przyciski: po lewej — zasilanie, po prawej — **▶ Start / Stop**, który uruchamia i zatrzymuje program.
 
-Gdy włożysz żetony poleceń i wartości do gniazd, naciśnij „Wykonaj”: robot uruchomi program. Aktywne polecenia podświetlają diody LED między gniazdami.
+Gdy włożysz żetony poleceń i wartości do gniazd, naciśnij **▶ Start**: robot uruchomi program. Aktywne polecenia podświetlają diody LED między gniazdami.
 
 Jeśli żeton jest włożony nieprawidłowo, pilot sygnalizuje to czerwoną diodą, ale program działa dalej (na przykład gdy żeton wartości leży bez polecenia).
 
@@ -89,11 +89,11 @@ Zalecamy włączyć najpierw robota, potem pilota.
 
 Przed połączeniem postaw robota na płaskiej powierzchni: po sparowaniu diody LED zaświecą się na biało. Dopóki połączenia nie ma, robot i pilot świecą na błękitno.
 
-Sprawdź połączenie: włóż żeton „Naprzód” i naciśnij „Wykonaj”.
+Sprawdź połączenie: włóż żeton „Naprzód” i naciśnij **▶ Start**.
 
 Jeśli połączenia nie ma, uruchom oba urządzenia ponownie albo naładuj je. Połączenie może na chwilę zaniknąć w pobliżu silnych źródeł pola elektromagnetycznego (telefon komórkowy, hotspot WiFi).
 
-> **Po aktualizacji oprogramowania urządzenia** może być potrzebne ponowne parowanie: włącz robota, potem pilota, naciśnij i przytrzymaj przycisk „Wykonaj” na pilocie dłużej niż 10 sekund. W 5. sekundzie usłyszysz krótki sygnał: nie puszczaj, trzymaj dalej. W 10. sekundzie zacznie się parowanie.
+> **Po aktualizacji oprogramowania urządzenia** może być potrzebne ponowne parowanie: włącz robota, potem pilota, naciśnij i przytrzymaj przycisk **▶ Start** na pilocie dłużej niż 10 sekund. W 5. sekundzie usłyszysz krótki sygnał: nie puszczaj, trzymaj dalej. W 10. sekundzie zacznie się parowanie.
 
 ## Jak to działa?
 
@@ -118,7 +118,7 @@ Polecenia układa się najpierw w górnej części pilota (6 gniazd) i wykonuje 
 
 Kolejność bloków określa ruch robota.
 
-Naciśnij „Wykonaj”, aby uruchomić program.
+Naciśnij **▶ Start**, aby uruchomić program.
 
 Domyślnie:
 
@@ -130,7 +130,7 @@ Domyślnie:
 
 ### Ważne funkcje:
 
-- **Przerwij** wykonywanie programu, naciskając „Wykonaj” ponownie w trakcie ruchu.
+- **Przerwij** wykonywanie programu, naciskając **▶ Start** ponownie w trakcie ruchu.
 - Pilot pamięta ostatnią **ustawioną wartość** (odległość/kąt) polecenia ruchu do wyłączenia zasilania: na przykład jeśli „Naprzód” = „200”, wszystkie kolejne polecenia „Naprzód” są wykonywane z tą wartością.
 - Wartości po działaniach arytmetycznych też są zapamiętywane.
 - Zmień „**domyślną odległość**” za pomocą żetonu serwisowego: na przykład dla 12,5 cm włóż żeton „Krok” z wartością 125. Wartość zapisuje się po wyłączeniu zasilania. Pasują liczby od 1 do 999. Żeton bez liczby przywraca 150 mm. Z działaniem arytmetycznym albo zerem pole mignie na czerwono, a krok się nie zmieni.
@@ -138,16 +138,16 @@ Domyślnie:
 - Jeśli robot nie jest używany przez 1–3 minuty, wykonuje małe ruchy, aby zasygnalizować, że jest aktywny i gotowy.
 - **Krótkie naciśnięcie przycisku robota**: robot odczyta żeton pod sobą i powie, co to jest.
 - **Wszystkie dźwięki robota** wyłączysz i włączysz, przytrzymując przycisk robota przez 5 sekund: poczekaj na krótki sygnał i puść. Robot mignie na czerwono, jeśli dźwięk się wyłączył, i na zielono, jeśli się włączył.
-- **Dźwięk pilota** wyłączysz i włączysz, przytrzymując przycisk „Wykonaj” przez 5 sekund: poczekaj na krótki sygnał i puść. Gdy program jest wykonywany, przytrzymanie nie działa.
+- **Dźwięk pilota** wyłączysz i włączysz, przytrzymując przycisk **▶ Start** przez 5 sekund: poczekaj na krótki sygnał i puść. Gdy program jest wykonywany, przytrzymanie nie działa.
 - **Po aktualizacji oprogramowania** może być potrzebna kalibracja ruchu robota.
 - **Reset ustawień robota**: przytrzymaj przycisk robota przez 10 sekund (więcej w sekcji „Kalibracja robota”).
-- **Parowanie pilota z robotem** może być potrzebne po aktualizacji oprogramowania urządzenia. Przytrzymaj przycisk „Wykonaj” na pilocie dłużej niż 10 sekund: sygnał w 5. sekundzie oznacza, że trzeba trzymać dalej.
+- **Parowanie pilota z robotem** może być potrzebne po aktualizacji oprogramowania urządzenia. Przytrzymaj przycisk **▶ Start** na pilocie dłużej niż 10 sekund: sygnał w 5. sekundzie oznacza, że trzeba trzymać dalej.
 
 ### Kalibracja robota:
 
 - Najpierw uruchom żeton „Kalibracja” bez liczby: robot sprawdza biegunowość silników, usuwa luzy i ustawia jazdę po linii prostej. Żeton działa do 2 minut. Przez pierwsze pół minuty robot musi stać nieruchomo, nie dotykaj go. Przycisk robota w tym czasie nie działa.
 - Potem skalibruj kąty obrotu. Zaznacz na blacie dokładne ustawienie robota. Potrzebujesz 16 obrotów o 90° w prawo: zbuduj program „Powtórzenie 8 + Prawo” i uruchom go dwa razy. Robot powinien wykonać cztery pełne obroty (90×16 = 1440°) i wrócić do pierwotnego ustawienia.
-- Oceń odchylenie od znaku i wprowadź poprawkę żetonem „Kalibracja” plus żeton z liczbą: jeśli robot zatrzymał się przed znakiem, dodaj „+” (na przykład „Kalibracja” + „+5”); jeśli przekroczył znak, dodaj „−” (na przykład „Kalibracja” + „−5”), potem „Wykonaj”. Liczba mówi, o ile stopni robot pomylił się łącznie we wszystkich 16 obrotach. Więcej niż 90 robot nie przyjmie. Zwykła liczba bez „+” lub „−” przy „Kalibracji” nie działa: pole mignie na czerwono.
+- Oceń odchylenie od znaku i wprowadź poprawkę żetonem „Kalibracja” plus żeton z liczbą: jeśli robot zatrzymał się przed znakiem, dodaj „+” (na przykład „Kalibracja” + „+5”); jeśli przekroczył znak, dodaj „−” (na przykład „Kalibracja” + „−5”), potem **▶ Start**. Liczba mówi, o ile stopni robot pomylił się łącznie we wszystkich 16 obrotach. Więcej niż 90 robot nie przyjmie. Zwykła liczba bez „+” lub „−” przy „Kalibracji” nie działa: pole mignie na czerwono.
 - Powtarzaj, aż robot wróci dokładnie do pierwotnego ustawienia.
 - Kalibracja zapisuje się po wyłączeniu zasilania.
 - Uwaga! Reset kalibracji: przytrzymaj przycisk robota przez 10 sekund, światła mrugną na czerwono, zielono, niebiesko i biało. Reset kasuje wszystkie kalibracje, głośność i wyłączony dźwięk. Po resecie wyłącz i włącz robota, a potem powtórz kalibrację od początku.
@@ -155,8 +155,8 @@ Domyślnie:
 <Accordion title="Kalibracja pierwszej wersji urządzenia (MVP) z robotem o średnicy 10 cm" icon="rectangle-terminal">
   Ten sposób dotyczy tylko pierwszej wersji (MVP). W nowym oprogramowaniu „Kalibracja” ze zwykłą liczbą nie działa, pole mignie na czerwono.
 
-  1. Aby skalibrować żyroskop, postaw robota na poziomej powierzchni, włóż żeton „Kalibracja” do pilota i naciśnij „Wykonaj”.
-  2. Aby skalibrować odległość ruchu, zmierz rzeczywistą drogę przy poleceniu „Naprzód”, włóż „Kalibracja” oraz żeton z potrzebną wartością, potem „Wykonaj”. Wartość możesz zapisać na dowolnym cyfrowym żetonie NFC telefonem z NFC jako tekst w postaci nXXX (na przykład n095 dla 95 mm). Potem odległość ruchu robota będzie dokładna.\*
+  1. Aby skalibrować żyroskop, postaw robota na poziomej powierzchni, włóż żeton „Kalibracja” do pilota i naciśnij **▶ Start**.
+  2. Aby skalibrować odległość ruchu, zmierz rzeczywistą drogę przy poleceniu „Naprzód”, włóż „Kalibracja” oraz żeton z potrzebną wartością, potem **▶ Start**. Wartość możesz zapisać na dowolnym cyfrowym żetonie NFC telefonem z NFC jako tekst w postaci nXXX (na przykład n095 dla 95 mm). Potem odległość ruchu robota będzie dokładna.\*
 </Accordion>
 
 ### Programowanie żetonów NFC

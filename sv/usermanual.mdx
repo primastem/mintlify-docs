@@ -34,9 +34,9 @@ Dimensioner: L=317 mm, W=217 mm, H=62 mm.
 ![control](../images/usermanual/control.png)
 
 Kontrollpanelen innehåller 11 dubbla fack för insättning av kommando- och värdebrickor: 6 för huvudprogrammet (övre delen), 5 för underprogrammet (nedre delen).
-Kontrollpanelen har två knappar: till vänster — ström, till höger — "Kör / Stoppa" för att starta och stoppa programmet.
+Kontrollpanelen har två knappar: till vänster — ström, till höger — **▶ Start / Stopp** för att starta och stoppa programmet.
 
-Efter att du har placerat kommando- och värdebrickor i facken, tryck "Kör": roboten kommer att köra programmet. Aktiva kommandon belyses av LED-lampor mellan facken.
+Efter att du har placerat kommando- och värdebrickor i facken, tryck **▶ Start**: roboten kommer att köra programmet. Aktiva kommandon belyses av LED-lampor mellan facken.
 
 Om en bricka är felaktigt installerad signalerar kontrollpanelen med en röd LED, men programmet fortsätter (till exempel när en värdebricka installeras utan kommando).
 
@@ -93,11 +93,11 @@ Det rekommenderas att först slå på roboten, sedan kontrollpanelen.
 
 Placera roboten på en plan yta före anslutning: efter parkoppling blir LED-lamporna vita. Medan anslutning saknas lyser roboten och kontrollpanelen ljusblått.
 
-Kontrollera anslutningen: installera brickan "Framåt" och tryck "Kör".
+Kontrollera anslutningen: installera brickan "Framåt" och tryck **▶ Start**.
 
 Om det inte finns någon anslutning, starta om båda enheterna eller ladda dem. Tillfällig anslutningsförlust kan uppstå nära starka elektromagnetiska fältkällor (mobiltelefon, WiFi-punkt).
 
-> **Efter uppdatering av enheternas programvara** kan parkoppling krävas: slå på roboten, sedan kontrollpanelen, tryck och håll "Kör"-knappen på kontrollpanelen i mer än 10 sekunder. Vid 5:e sekunden hörs en kort signal: släpp inte, fortsätt hålla. Vid 10:e sekunden startar parkopplingen.
+> **Efter uppdatering av enheternas programvara** kan parkoppling krävas: slå på roboten, sedan kontrollpanelen, tryck och håll **▶ Start**-knappen på kontrollpanelen i mer än 10 sekunder. Vid 5:e sekunden hörs en kort signal: släpp inte, fortsätt hålla. Vid 10:e sekunden startar parkopplingen.
 
 ## Hur Fungerar Det?
 
@@ -123,7 +123,7 @@ Kommandon installeras först i den övre delen av kontrollpanelen (6 fack) och k
 
 Sekvensen av block bestämmer robotens rörelse.
 
-Tryck "Kör" för att starta programmet.
+Tryck **▶ Start** för att starta programmet.
 
 Som standard:
 - "Framåt" — 15 cm.
@@ -134,7 +134,7 @@ Som standard:
 
 ### Viktiga Funktioner:
 
-- **Avbryt** programkörningen genom att trycka "Kör" igen under rörelse.
+- **Avbryt** programkörningen genom att trycka **▶ Start** igen under rörelse.
 - Kontrollpanelen kommer ihåg det senaste **inställda värdet** (distans/vinkel) för rörelsekommandot tills avstängning: till exempel, om "Framåt" = "200", körs alla efterföljande "Framåt"-kommandon med detta värde.
 - Värden efter aritmetik sparas också.
 - Ändra "**standarddistans**" kan göras med en servicebricka: till exempel, för 12,5 cm, installera brickan "Standarddistans" med värdet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Brickan utan tal återställer 150 mm. Med aritmetik eller noll blinkar facket rött och steget förblir detsamma.
@@ -142,16 +142,16 @@ Som standard:
 - Om roboten inte används på 1–3 minuter gör den små rörelser för att signalera att den är aktiv och redo.
 - **Kort tryck på robotknappen**: roboten läser brickan under sig och säger vad det är.
 - **Alla robotens ljud** kan slås av och på genom att hålla robotknappen i 5 sekunder: vänta på den korta signalen och släpp. Roboten blinkar rött om ljudet stängdes av och grönt om det slogs på.
-- **Kontrollpanelens ljud** kan slås av och på genom att hålla "Kör"-knappen i 5 sekunder: vänta på den korta signalen och släpp. Medan ett program körs fungerar det inte.
+- **Kontrollpanelens ljud** kan slås av och på genom att hålla **▶ Start**-knappen i 5 sekunder: vänta på den korta signalen och släpp. Medan ett program körs fungerar det inte.
 - **Efter en programvaruuppdatering** kan kalibrering av robotrörelse behövas.
 - **Återställning av robotens inställningar**: håll robotknappen i 10 sekunder (mer i avsnittet «Robotkalibrering»).
-- **Parkoppling av kontrollpanel och robot** kan vara nödvändig efter uppdatering av enheternas programvara. Håll "Kör"-knappen på kontrollpanelen i mer än 10 sekunder: signalen vid 5:e sekunden betyder att du ska fortsätta hålla.
+- **Parkoppling av kontrollpanel och robot** kan vara nödvändig efter uppdatering av enheternas programvara. Håll **▶ Start**-knappen på kontrollpanelen i mer än 10 sekunder: signalen vid 5:e sekunden betyder att du ska fortsätta hålla.
 
 ### Robotkalibrering:
 
 - Kör först brickan «Kalibrering» utan siffra: roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram. Brickan arbetar i upp till 2 minuter. Den första halvminuten måste roboten stå stilla, rör den inte. Robotknappen fungerar inte under tiden.
 - Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordsytan. Det behövs 16 svängar på 90° medurs: skapa programmet «Upprepning 8 + högersväng» och kör det två gånger. Roboten ska göra fyra hela varv (90×16 = 1440°) och återgå till sin ursprungliga riktning.
-- Bedöm avvikelsen från markeringen och korrigera med brickan «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan «Kör». Talet anger hur många grader roboten missade under alla 16 svängar tillsammans. Mer än 90 tar roboten inte emot. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: facket blinkar rött.
+- Bedöm avvikelsen från markeringen och korrigera med brickan «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan **▶ Start**. Talet anger hur många grader roboten missade under alla 16 svängar tillsammans. Mer än 90 tar roboten inte emot. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: facket blinkar rött.
 - Upprepa tills roboten återgår exakt till sin ursprungliga riktning.
 - Kalibreringen sparas efter avstängning.
 - Observera! Återställning av kalibreringen: håll robotknappen i 10 sekunder, lamporna blinkar rött, grönt, blått och vitt. Återställningen raderar alla kalibreringar, volymen och avstängt ljud. Stäng sedan av och slå på roboten och gör om kalibreringen från början.
@@ -159,8 +159,8 @@ Som standard:
 <Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 cm i diameter">
 Det här sättet gäller bara den första versionen (MVP). På nya firmwareversioner fungerar «Kalibrering» med ett vanligt tal inte, facket blinkar rött.
 
-1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, sätt in brickan "Kalibrering" i kontrollpanelen och tryck "Kör".
-2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och brickan med nödvändigt värde, sedan "Kör". Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 mm). Efter detta kommer robotens rörelsedistans att vara exakt.*
+1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, sätt in brickan "Kalibrering" i kontrollpanelen och tryck **▶ Start**.
+2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och brickan med nödvändigt värde, sedan **▶ Start**. Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 mm). Efter detta kommer robotens rörelsedistans att vara exakt.*
 </Accordion>
 
 ### Programmering av NFC-brickor

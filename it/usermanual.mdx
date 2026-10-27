@@ -34,9 +34,9 @@ Dimensioni: L=317 mm, W=217 mm, H=62 mm.
 ![control](../images/usermanual/control.png)
 
 La pulsantiera contiene 11 slot doppi per inserire tessere di comandi e valori: 6 per il programma principale (parte superiore), 5 per il sottoprogramma (parte inferiore).
-La pulsantiera ha due pulsanti: a sinistra — accensione, a destra — "Esegui / Arresta" per avviare e arrestare il programma.
+La pulsantiera ha due pulsanti: a sinistra — accensione, a destra — **▶ Start / Stop** per avviare e arrestare il programma.
 
-Dopo aver posizionato le tessere di comandi e valori negli slot, premere "Esegui": il robot eseguirà il programma. I comandi attivi sono illuminati da LED tra gli slot.
+Dopo aver posizionato le tessere di comandi e valori negli slot, premere **▶ Start**: il robot eseguirà il programma. I comandi attivi sono illuminati da LED tra gli slot.
 
 Se una tessera è inserita in modo errato, la pulsantiera la segnala con un LED rosso, ma il programma continua (ad esempio, quando una tessera valore è inserita senza un comando).
 
@@ -93,11 +93,11 @@ Si consiglia di accendere prima il robot, quindi la pulsantiera.
 
 Posizionare il robot su una superficie piana prima della connessione: dopo l'accoppiamento, i LED diventano bianchi. Finché non c'è connessione, il robot e la pulsantiera si illuminano di azzurro.
 
-Verificare la connessione: inserire la tessera "Avanti" e premere "Esegui".
+Verificare la connessione: inserire la tessera "Avanti" e premere **▶ Start**.
 
 Se non c'è connessione, riavviare entrambi i dispositivi o ricaricarli. È possibile una perdita temporanea di connessione vicino a fonti di forte campo elettromagnetico (telefono cellulare, punto WiFi).
 
-> **Dopo l'aggiornamento del software dei dispositivi** potrebbe essere necessario l'accoppiamento: accendere il robot, quindi la pulsantiera, premere e tenere premuto il pulsante "Esegui" sulla pulsantiera per più di 10 secondi. Al 5° secondo si sente un breve segnale: non rilasciare, continuare a tenere premuto. Al 10° secondo inizia l'accoppiamento.
+> **Dopo l'aggiornamento del software dei dispositivi** potrebbe essere necessario l'accoppiamento: accendere il robot, quindi la pulsantiera, premere e tenere premuto il pulsante **▶ Start** sulla pulsantiera per più di 10 secondi. Al 5° secondo si sente un breve segnale: non rilasciare, continuare a tenere premuto. Al 10° secondo inizia l'accoppiamento.
 
 ## Come Funziona?
 
@@ -123,7 +123,7 @@ I comandi vengono inseriti per primi nella parte superiore della pulsantiera (6 
 
 La sequenza dei blocchi determina il movimento del robot.
 
-Premere "Esegui" per avviare il programma.
+Premere **▶ Start** per avviare il programma.
 
 Per impostazione predefinita:
 - "Avanti" — 15 cm.
@@ -134,7 +134,7 @@ Per impostazione predefinita:
 
 ### Funzioni Importanti:
 
-- **Interrompere** l'esecuzione del programma premendo "Esegui" di nuovo durante il movimento.
+- **Interrompere** l'esecuzione del programma premendo **▶ Start** di nuovo durante il movimento.
 - La pulsantiera memorizza l'ultimo **valore impostato** (distanza/angolo) per il comando di movimento fino allo spegnimento: ad esempio, se "Avanti" = "200", tutti i comandi "Avanti" successivi vengono eseguiti con questo valore.
 - I valori dopo le operazioni aritmetiche vengono anche salvati.
 - Modificare la "**distanza predefinita**" è possibile con una tessera di servizio: ad esempio, per 12,5 cm, inserire la tessera "Distanza predefinita" con valore 125. Il valore viene salvato dopo lo spegnimento. Sono ammessi i numeri da 1 a 999. La tessera senza numero riporta il passo a 150 mm. Con l'aritmetica o con lo zero la cella lampeggia in rosso e il passo resta quello di prima.
@@ -142,16 +142,16 @@ Per impostazione predefinita:
 - Se il robot non viene utilizzato per 1–3 minuti, esegue piccoli movimenti per segnalare che è attivo e pronto.
 - **Pressione breve del pulsante del robot**: il robot legge la tessera che ha sotto e la dice ad alta voce.
 - **Tutti i suoni del robot** si possono disattivare e riattivare tenendo premuto il pulsante del robot per 5 secondi: attendere il breve segnale e rilasciare. Il robot lampeggia in rosso se il suono si è spento, in verde se si è acceso.
-- Il **suono della pulsantiera** si può disattivare e riattivare tenendo premuto il pulsante "Esegui" per 5 secondi: attendere il breve segnale e rilasciare. Mentre un programma è in esecuzione, questo non funziona.
+- Il **suono della pulsantiera** si può disattivare e riattivare tenendo premuto il pulsante **▶ Start** per 5 secondi: attendere il breve segnale e rilasciare. Mentre un programma è in esecuzione, questo non funziona.
 - **Dopo un aggiornamento software** potrebbe essere necessaria la calibrazione del movimento del robot.
 - **Reset delle impostazioni del robot**: tenere premuto il pulsante del robot per 10 secondi (dettagli nella sezione «Calibrazione del Robot»).
-- **Accoppiamento della pulsantiera e del robot** può essere necessario dopo l'aggiornamento del software dei dispositivi. Tenere premuto il pulsante "Esegui" sulla pulsantiera per più di 10 secondi: il segnale al 5° secondo significa che bisogna continuare a tenere premuto.
+- **Accoppiamento della pulsantiera e del robot** può essere necessario dopo l'aggiornamento del software dei dispositivi. Tenere premuto il pulsante **▶ Start** sulla pulsantiera per più di 10 secondi: il segnale al 5° secondo significa che bisogna continuare a tenere premuto.
 
 ### Calibrazione del Robot:
 
 - Esegui prima la carta «Calibrazione» senza numero: il robot misura la polarità dei motori, elimina i giochi e imposta il movimento in linea retta. La carta lavora fino a 2 minuti. Nel primo mezzo minuto il robot deve stare fermo: non toccarlo. In questo tempo il pulsante del robot non funziona.
 - Poi calibra gli angoli di rotazione. Segna sulla superficie del tavolo l'orientamento esatto del robot. Servono 16 rotazioni di 90° in senso orario: componi il programma «Ripetizione 8 + rotazione a destra» ed eseguilo due volte. Il robot deve compiere quattro giri completi (90×16 = 1440°) e tornare all'orientamento iniziale.
-- Valuta lo scostamento dal segno e applica la correzione con la carta «Calibrazione» e una tessera numerica: se il robot si ferma prima del segno, aggiungi «+» (ad esempio «Calibrazione» + «+5»); se lo supera, aggiungi «−» (ad esempio «Calibrazione» + «−5»), poi «Esegui». Il numero indica di quanti gradi il robot ha sbagliato in tutte le 16 rotazioni insieme. Oltre 90 il robot non lo accetta. Un numero semplice senza «+» o «−» accanto a «Calibrazione» non funziona: la cella lampeggia in rosso.
+- Valuta lo scostamento dal segno e applica la correzione con la carta «Calibrazione» e una tessera numerica: se il robot si ferma prima del segno, aggiungi «+» (ad esempio «Calibrazione» + «+5»); se lo supera, aggiungi «−» (ad esempio «Calibrazione» + «−5»), poi **▶ Start**. Il numero indica di quanti gradi il robot ha sbagliato in tutte le 16 rotazioni insieme. Oltre 90 il robot non lo accetta. Un numero semplice senza «+» o «−» accanto a «Calibrazione» non funziona: la cella lampeggia in rosso.
 - Ripeti finché il robot non torna esattamente all'orientamento iniziale.
 - La calibrazione viene salvata dopo lo spegnimento.
 - Attenzione! Reset della calibrazione: tieni premuto il pulsante del robot per 10 secondi, le luci lampeggiano in rosso, verde, blu e bianco. Il reset cancella tutte le calibrazioni, il volume e il suono disattivato. Dopo il reset spegni e riaccendi il robot, poi ripeti la calibrazione dall'inizio.
@@ -159,8 +159,8 @@ Per impostazione predefinita:
 <Accordion icon="rectangle-terminal" title="Calibrazione della prima versione del dispositivo (MVP) con robot di 10 cm di diametro">
 Questo metodo vale solo per la prima versione (MVP). Con il firmware nuovo «Calibrazione» con un numero semplice non funziona: la cella lampeggia in rosso.
 
-1. Per calibrare il giroscopio, posizionare il robot su una superficie orizzontale, inserire la tessera "Calibrazione" nella pulsantiera e premere "Esegui".
-2. Per calibrare la distanza di movimento, misurare il percorso effettivo con il comando "Avanti", inserire "Calibrazione" e la tessera con il valore necessario, quindi "Esegui". È possibile scrivere il valore su qualsiasi tessera NFC digitale utilizzando un telefono cellulare con NFC come testo nella forma nXXX (ad esempio, n095 per 95 mm). Dopo questo, la distanza di movimento del robot sarà precisa.*
+1. Per calibrare il giroscopio, posizionare il robot su una superficie orizzontale, inserire la tessera "Calibrazione" nella pulsantiera e premere **▶ Start**.
+2. Per calibrare la distanza di movimento, misurare il percorso effettivo con il comando "Avanti", inserire "Calibrazione" e la tessera con il valore necessario, quindi **▶ Start**. È possibile scrivere il valore su qualsiasi tessera NFC digitale utilizzando un telefono cellulare con NFC come testo nella forma nXXX (ad esempio, n095 per 95 mm). Dopo questo, la distanza di movimento del robot sarà precisa.*
 </Accordion>
 
 ### Programmazione delle Tessere NFC
