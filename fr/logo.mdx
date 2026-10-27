@@ -1,17 +1,17 @@
 ---
 title: "PrimaSTEM et LOGO"
-description: "PrimaSTEM, c'est la géométrie tortue de LOGO, dans les mains et sans écran. Chaque notion sur la télécommande et son équivalent en LOGO."
+description: "PrimaSTEM, c'est la géométrie tortue de LOGO, dans les mains et sans écran. Chaque notion sur le tableau de contrôle et son équivalent en LOGO."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM repose sur l'idée de [LOGO](https://fr.wikipedia.org/wiki/Logo_(langage)). Seymour Papert et ses collègues ont créé ce langage pour les enfants en 1967. En LOGO, l'enfant tape des commandes et une tortue dessine à l'écran. Avec PrimaSTEM, l'enfant pose des jetons sur la télécommande, et un robot en bois muni d'un feutre dessine sur le papier. Sans clavier, sans écran, sans texte.
+PrimaSTEM repose sur l'idée de [LOGO](https://fr.wikipedia.org/wiki/Logo_(langage)). Seymour Papert et ses collègues ont créé ce langage pour les enfants en 1967. En LOGO, l'enfant tape des commandes et une tortue dessine à l'écran. Avec PrimaSTEM, l'enfant pose des jetons sur le tableau de contrôle, et un robot en bois muni d'un feutre dessine sur le papier. Sans clavier, sans écran, sans texte.
 
 Cette page s'adresse aux enseignants qui connaissent LOGO ou Scratch, et à tous ceux qui veulent comprendre ce que font vraiment les jetons.
 
-## Les notions sur la télécommande
+## Les notions sur le tableau de contrôle
 
-| Notion | Sur la télécommande PrimaSTEM | En LOGO |
+| Notion | Sur le tableau de contrôle PrimaSTEM | En LOGO |
 |---|---|---|
 | Séquence | Les jetons s'exécutent de gauche à droite sur la rangée supérieure. La LED de la paire en cours clignote, puis s'éteint | une commande après l'autre |
 | Commande | Avancer, Reculer, Gauche, Droite, Pause, Mouvement aléatoire | `forward`, `back`, `left`, `right`, `wait` |
@@ -21,7 +21,7 @@ Cette page s'adresse aux enseignants qui connaissent LOGO ou Scratch, et à tous
 | Procédure | La rangée inférieure (5 paires) est la Fonction. Le jeton « Fonction » l'appelle | `to shape ... end`, puis `shape` |
 | Procédure dans une boucle | Le jeton « Fonction » et un jeton de répétition dans la même paire : Fonction + répéter 5 | `repeat 5 [shape]` |
 | Passer une valeur à une procédure | Avancer 100 avance de 100 mm et mémorise 100. Si vous appelez ensuite une Fonction qui contient Avancer sans nombre, elle avance aussi de 100. Changez Avancer avant l'appel suivant, et la même Fonction dessine la figure à une autre taille | proche de `shape 100`, `shape 50` |
-| Récursivité | Un jeton « Fonction » dans la rangée inférieure : la fonction s'appelle elle-même jusqu'à ce que vous appuyiez de nouveau sur ▶ Start | une procédure qui s'appelle elle-même |
+| Récursivité | Un jeton « Fonction » dans la rangée inférieure : la fonction s'appelle elle-même jusqu'à ce que vous appuyiez de nouveau sur ▶ Démarrer | une procédure qui s'appelle elle-même |
 | Variables | Chaque commande retient sa dernière valeur : Avancer, Reculer, Gauche, Droite et Pause sont cinq variables indépendantes. Avancer sans nombre avance autant que le dernier Avancer | `make "step 200`, puis `forward :step` |
 | Arithmétique sur une variable | Avancer + « +30 » : ajouter 30 à la valeur mémorisée, puis avancer | `make "step :step + 30 forward :step` |
 | Opérations | + − × ÷ √ ^ sur la valeur mémorisée, de −5000 à 5000, nombres entiers | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
@@ -30,17 +30,17 @@ Cette page s'adresse aux enseignants qui connaissent LOGO ou Scratch, et à tous
 | Crayon | Un feutre au centre du robot | `pendown` |
 | Débogage | On regarde le robot, on trouve le mauvais jeton, on le remplace | corriger la ligne |
 
-Chaque commande a sa propre valeur mémorisée : si vous changez Avancer, Gauche ne change pas. Quand on éteint la télécommande, toutes les valeurs reviennent aux valeurs par défaut : 150 mm, 90°, 1 s pour la Pause. Pour changer le pas par défaut durablement, utilisez le jeton de service « Définir la longueur de pas par défaut » (voir [Appareil et réglages](usermanual)).
+Chaque commande a sa propre valeur mémorisée : si vous changez Avancer, Gauche ne change pas. Quand on éteint le tableau de contrôle, toutes les valeurs reviennent aux valeurs par défaut : 150 mm, 90°, 1 s pour la Pause. Pour changer le pas par défaut durablement, utilisez le jeton de service « Définir la longueur de pas par défaut » (voir [Appareil et réglages](usermanual)).
 
 C'est l'enfant qui calcule. Le robot exécute le programme avec précision.
 
-## Exemples : le même programme sur la télécommande et en LOGO
+## Exemples : le même programme sur le tableau de contrôle et en LOGO
 
-Chaque exemple a un lien. Il ouvre le [simulateur](https://simulator.primastem.com) avec ce programme sur la télécommande et le lance.
+Chaque exemple a un lien. Il ouvre le [simulateur](https://simulator.primastem.com) avec ce programme sur le tableau de contrôle et le lance.
 
 ### Carré
 
-Télécommande : rangée supérieure Fonction × 4. Rangée inférieure : Avancer 300, Droite.
+Tableau de contrôle : rangée supérieure Fonction × 4. Rangée inférieure : Avancer 300, Droite.
 
 ```
 repeat 4 [forward 300 right 90]
@@ -49,7 +49,7 @@ repeat 4 [forward 300 right 90]
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programme sur la télécommande">
+  <Frame caption="Programme sur le tableau de contrôle">
     <img src="../images/logo/square-board.svg" alt="" />
   </Frame>
   <Frame caption="Ce que dessine le robot">
@@ -61,7 +61,7 @@ Pour les enfants de 4 à 6 ans, on peut se passer des nombres : Avancer et Droit
 
 ### Triangle équilatéral
 
-Télécommande : rangée supérieure Fonction × 3. Rangée inférieure : Avancer 400, Droite 120.
+Tableau de contrôle : rangée supérieure Fonction × 3. Rangée inférieure : Avancer 400, Droite 120.
 
 ```
 repeat 3 [forward 400 right 120]
@@ -70,7 +70,7 @@ repeat 3 [forward 400 right 120]
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
 
 <Columns cols={2}>
-  <Frame caption="Programme sur la télécommande">
+  <Frame caption="Programme sur le tableau de contrôle">
     <img src="../images/logo/triangle-board.svg" alt="" />
   </Frame>
   <Frame caption="Ce que dessine le robot">
@@ -82,7 +82,7 @@ Pourquoi 120 et pas 60 ? Le robot tourne de l'angle extérieur. Les trois rotati
 
 ### Étoile à cinq branches
 
-Télécommande : rangée supérieure Fonction × 5. Rangée inférieure : Avancer 400, Droite 144.
+Tableau de contrôle : rangée supérieure Fonction × 5. Rangée inférieure : Avancer 400, Droite 144.
 
 ```
 repeat 5 [forward 400 right 144]
@@ -91,7 +91,7 @@ repeat 5 [forward 400 right 144]
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Programme sur la télécommande">
+  <Frame caption="Programme sur le tableau de contrôle">
     <img src="../images/logo/star-board.svg" alt="" />
   </Frame>
   <Frame caption="Ce que dessine le robot">
@@ -103,7 +103,7 @@ repeat 5 [forward 400 right 144]
 
 ### Cercle
 
-Télécommande : rangée supérieure Fonction × 36. Rangée inférieure : Avancer 25, Droite 10.
+Tableau de contrôle : rangée supérieure Fonction × 36. Rangée inférieure : Avancer 25, Droite 10.
 
 ```
 repeat 36 [forward 25 right 10]
@@ -112,7 +112,7 @@ repeat 36 [forward 25 right 10]
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Programme sur la télécommande">
+  <Frame caption="Programme sur le tableau de contrôle">
     <img src="../images/logo/circle-board.svg" alt="" />
   </Frame>
   <Frame caption="Ce que dessine le robot">
@@ -124,7 +124,7 @@ Un cercle est un polygone avec beaucoup de petits côtés : 36 × 10° = 360°.
 
 ### Spirale carrée (variable et arithmétique)
 
-Télécommande : rangée supérieure Avancer 30, Fonction × 20. Rangée inférieure : Droite, Avancer +30.
+Tableau de contrôle : rangée supérieure Avancer 30, Fonction × 20. Rangée inférieure : Droite, Avancer +30.
 
 ```
 make "side 30
@@ -139,7 +139,7 @@ repeat 20 [
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programme sur la télécommande">
+  <Frame caption="Programme sur le tableau de contrôle">
     <img src="../images/logo/spiral-board.svg" alt="" />
   </Frame>
   <Frame caption="Ce que dessine le robot">
@@ -147,11 +147,11 @@ repeat 20 [
   </Frame>
 </Columns>
 
-Avancer 30 fixe la valeur mémorisée. À chaque exécution de la fonction, « +30 » allonge le côté de 30 mm : 60, 90, 120 et ainsi de suite. Le premier Avancer 30 réinitialise la valeur. Si vous appuyez de nouveau sur ▶ Start, vous obtenez donc la même spirale.
+Avancer 30 fixe la valeur mémorisée. À chaque exécution de la fonction, « +30 » allonge le côté de 30 mm : 60, 90, 120 et ainsi de suite. Le premier Avancer 30 réinitialise la valeur. Si vous appuyez de nouveau sur ▶ Démarrer, vous obtenez donc la même spirale.
 
 ### Hexagone (angle par division)
 
-Télécommande : rangée supérieure Droite 360, Droite ÷6, Fonction × 6. Rangée inférieure : Avancer 200, Droite.
+Tableau de contrôle : rangée supérieure Droite 360, Droite ÷6, Fonction × 6. Rangée inférieure : Avancer 200, Droite.
 
 ```
 make "angle 360 / 6
@@ -161,7 +161,7 @@ repeat 6 [forward 200 right :angle]
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
 
 <Columns cols={2}>
-  <Frame caption="Programme sur la télécommande">
+  <Frame caption="Programme sur le tableau de contrôle">
     <img src="../images/logo/hexagon-board.svg" alt="" />
   </Frame>
   <Frame caption="Ce que dessine le robot">
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Droite 360 fait un tour complet et mémorise 360. Droite ÷6 divise la valeur mémorisée et tourne de 60°. Dans la fonction, Droite sans nombre reprend 60°. Les deux rotations du début changent seulement la direction du robot avant le dessin ; la figure reste un hexagone.
 
-La télécommande fait une division entière et laisse tomber le reste. Pour que la figure se referme, divisez 360 par un nombre sans reste : 3, 4, 5, 6, 8, 9, 10, 12. Par exemple, 360 ÷ 7 donne 51°, et il manque 3° pour que l'heptagone se referme.
+Le tableau de contrôle fait une division entière et laisse tomber le reste. Pour que la figure se referme, divisez 360 par un nombre sans reste : 3, 4, 5, 6, 8, 9, 10, 12. Par exemple, 360 ÷ 7 donne 51°, et il manque 3° pour que l'heptagone se referme.
 
 Plus de dessins : [Exemples de dessins](mathdrawings).
 
@@ -185,7 +185,7 @@ PrimaSTEM couvre les bases de la géométrie tortue de LOGO. Certaines choses fo
 - **Longueur du programme :** 6 paires dans la rangée principale, 5 dans la Fonction.
 - **On met le feutre à la main** quand l'enfant veut que le robot dessine.
 
-Quand l'enfant a fait le tour de la télécommande, le même robot fonctionne avec [Scratch](https://scratch.primastem.com).
+Quand l'enfant a fait le tour du tableau de contrôle, le même robot fonctionne avec [Scratch](https://scratch.primastem.com).
 
 ## Pour aller plus loin
 

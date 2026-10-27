@@ -10,9 +10,9 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 ## Comment les codes NFC et les fichiers audio sont liés
 
 Chaque fichier audio du firmware a un code qui correspond à son nom de fichier (par ex. `cfor` → `cfor.mp3`).
-Lorsque la télécommande ou le robot lit une puce NFC, il recherche ce code et joue le fichier correspondant.
+Lorsque le tableau de contrôle ou le robot lit un jeton NFC, il recherche ce code et joue le fichier correspondant.
 
-Cependant, certains codes de puces NFC sont **composites** — ils n'ont pas leur propre fichier audio.
+Cependant, certains codes de jetons NFC sont **composites** — ils n'ont pas leur propre fichier audio.
 Au lieu de cela, l'appareil les décompose en une séquence de fichiers existants pour économiser l'espace du firmware.
 
 | Code du jeton NFC | Lu comme |
@@ -545,7 +545,7 @@ Le croate utilise x700–x725 sans Q, W, X, Y. Ć partage x739 avec le polonais.
 |---|---|
 | x990 | Son après l'exécution d'un programme vide |
 | x991 | Son de mise sous tension |
-| x992 | Bip à la 5ᵉ seconde de maintien du bouton de la télécommande ou du robot |
+| x992 | Bip à la 5ᵉ seconde de maintien du bouton du tableau de contrôle ou du robot |
 | x993 | Bluetooth connecté ; retentit aussi quand le son est rétabli en maintenant le bouton 5 s |
 | x994 | Signal Bluetooth perdu ; retentit aussi quand le son est coupé en maintenant le bouton 5 s |
 | x995 | Son de mise hors tension |

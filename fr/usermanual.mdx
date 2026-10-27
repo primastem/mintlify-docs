@@ -10,7 +10,7 @@ mode: "default"
 ![primastem](../images/usermanual/hello.png)
 
 - Robot ludique
-- Télécommande pour robot
+- Tableau de contrôle pour robot
 - Jetons de commandes, de valeurs et d'opérations arithmétiques pour créer des programmes
 
 > Le contenu et l'apparence peuvent varier légèrement. Veuillez vérifier lors de l'achat.
@@ -27,20 +27,20 @@ Un marqueur d'un diamètre maximal de 10 mm peut être installé au centre du ro
 
 L'apparence peut varier légèrement selon la configuration, mais les fonctionnalités principales restent identiques.
 
-### Télécommande
+### Tableau de contrôle
 
 Dimensions : L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
-La télécommande comporte 11 emplacements doubles pour insérer les jetons de commandes et de valeurs : 6 pour le programme principal (partie supérieure), 5 pour le sous-programme (partie inférieure).
-Deux boutons sont présents sur la télécommande : à gauche, l'alimentation ; à droite, **▶ Start / Stop** pour lancer et arrêter le programme.
+Le tableau de contrôle comporte 11 emplacements doubles pour insérer les jetons de commandes et de valeurs : 6 pour le programme principal (partie supérieure), 5 pour le sous-programme (partie inférieure).
+Deux boutons sont présents sur le tableau de contrôle : à gauche, l'alimentation ; à droite, **▶ Démarrer / Arrêter** pour lancer et arrêter le programme.
 
-Après avoir placé les jetons de commandes et de valeurs dans les emplacements, appuyez sur **▶ Start** : le robot exécutera le programme. Les commandes actives sont illuminées par des LED entre les emplacements.
+Après avoir placé les jetons de commandes et de valeurs dans les emplacements, appuyez sur **▶ Démarrer** : le robot exécutera le programme. Les commandes actives sont illuminées par des LED entre les emplacements.
 
-Si un jeton est mal inséré, la télécommande le signale par une LED rouge, mais le programme continue (par exemple, si un jeton de valeur est placé sans commande).
+Si un jeton est mal inséré, le tableau de contrôle le signale par une LED rouge, mais le programme continue (par exemple, si un jeton de valeur est placé sans commande).
 
-La télécommande est équipée d'un port USB-C pour la recharge et d'un haut-parleur pour la restitution sonore.
+Le tableau de contrôle est équipé d'un port USB-C pour la recharge et d'un haut-parleur pour la restitution sonore.
 
 ### Jetons - instructions
 
@@ -61,7 +61,7 @@ Blocs de base pour composer le programme de contrôle :
 - **Droite** — rotation de 90° dans le sens horaire
 - **Gauche** — rotation de 90° dans le sens antihoraire
 - **Reculer** — mouvement vers l'arrière (15 cm par défaut)
-- **Fonction** — exécution du sous-programme de la partie inférieure de la télécommande
+- **Fonction** — exécution du sous-programme de la partie inférieure du tableau de contrôle
 - **Mouvement aléatoire** — une des actions pour déplacer le robot : Avancer, Gauche, Droite ou Reculer (sur "pas par défaut")
 - **Jetons de répétition (boucles)** - Jetons avec des nombres de 2 à 6 (selon le nombre de points) et des pictogrammes de répétition avec le nombre à l'intérieur. Le jeton avec un dé signifie un nombre aléatoire de répétitions de 1 à 6.
 
@@ -87,21 +87,21 @@ Modifient les paramètres des commandes de déplacement :
 
 L'arithmétique calcule entre −5000 et 5000. Si le résultat dépasse 5000 ou descend sous −5000, si on divise par 0, si on prend la racine d'un nombre négatif ou la factorielle d'un nombre supérieur à 6, la cellule clignote en rouge et le nombre ne change pas. La division se fait sans décimales : 150 ÷ 4 = 37.
 
-## Connexion entre la télécommande et le robot
+## Connexion entre le tableau de contrôle et le robot
 
-Il est recommandé d'allumer d'abord le robot, puis la télécommande.
+Il est recommandé d'allumer d'abord le robot, puis le tableau de contrôle.
 
-Placez le robot sur une surface plane avant la connexion : après l'appairage, les LED deviennent blanches. Tant qu'il n'y a pas de connexion, le robot et la télécommande s'allument en bleu clair.
+Placez le robot sur une surface plane avant la connexion : après l'appairage, les LED deviennent blanches. Tant qu'il n'y a pas de connexion, le robot et le tableau de contrôle s'allument en bleu clair.
 
-Vérifiez la connexion : placez le jeton "Avancer" et appuyez sur **▶ Start**.
+Vérifiez la connexion : placez le jeton "Avancer" et appuyez sur **▶ Démarrer**.
 
 Si aucune connexion n'est établie, redémarrez les deux appareils ou rechargez-les. Une perte temporaire de connexion peut survenir à proximité de sources de champ électromagnétique intense (téléphone mobile, point WiFi).
 
-> **Après une mise à jour du logiciel des appareils**, un appairage peut être nécessaire : allumez le robot, puis la télécommande, appuyez et maintenez le bouton **▶ Start** sur la télécommande pendant plus de 10 secondes. À la 5ᵉ seconde, un bip court retentit : ne relâchez pas, continuez à maintenir. L'appairage commence à la 10ᵉ seconde.
+> **Après une mise à jour du logiciel des appareils**, un appairage peut être nécessaire : allumez le robot, puis le tableau de contrôle, appuyez et maintenez le bouton **▶ Démarrer** sur le tableau de contrôle pendant plus de 10 secondes. À la 5ᵉ seconde, un bip court retentit : ne relâchez pas, continuez à maintenir. L'appairage commence à la 10ᵉ seconde.
 
 ## Comment ça marche ?
 
-Pour programmer les déplacements, placez dans les emplacements de la télécommande les jetons de commandes (par exemple, "Avancer", "Gauche", "Fonction", etc.).
+Pour programmer les déplacements, placez dans les emplacements du tableau de contrôle les jetons de commandes (par exemple, "Avancer", "Gauche", "Fonction", etc.).
 Vous pouvez définir les valeurs des commandes, le nombre de répétitions, ainsi que les valeurs d'angles, de distances et d'opérations arithmétiques.
 
 Pour l'installation conjointe d'une commande et d'une valeur (répétition), les emplacements sont reliés par des "ponts" avec indicateurs.
@@ -119,39 +119,39 @@ Pour l'installation conjointe d'une commande et d'une valeur (répétition), les
 
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfor,crig,cfun.r003&fn=cfor,crig&s=l1144402&r=225-525-0&run)
 
-Les commandes sont placées en priorité dans la partie supérieure de la télécommande (6 emplacements) et sont exécutées de gauche à droite. Les emplacements vides ou les erreurs sont ignorés (par exemple, deux commandes dans un même bloc ou une valeur sans commande).
+Les commandes sont placées en priorité dans la partie supérieure du tableau de contrôle (6 emplacements) et sont exécutées de gauche à droite. Les emplacements vides ou les erreurs sont ignorés (par exemple, deux commandes dans un même bloc ou une valeur sans commande).
 
 La séquence des blocs détermine le déplacement du robot.
 
-Appuyez sur **▶ Start** pour lancer le programme.
+Appuyez sur **▶ Démarrer** pour lancer le programme.
 
 Par défaut :
 - "Avancer" — 15 cm.
 - "Gauche/Droite" — 90°.
 - Les boucles (répétitions) répètent la commande plusieurs fois.
-- "Fonction" appelle le sous-programme de la partie inférieure de la télécommande (5 emplacements).
+- "Fonction" appelle le sous-programme de la partie inférieure du tableau de contrôle (5 emplacements).
 - Vous pouvez appeler un sous-programme plusieurs fois via une boucle en ajoutant un jeton de répétition à "Fonction" (exemple ci-dessus).
 
 ### Fonctions importantes :
 
-- **Interrompre** l'exécution du programme en appuyant à nouveau sur **▶ Start** pendant le déplacement.
-- La télécommande mémorise la dernière **valeur définie** (distance/angle) pour la commande de déplacement jusqu'à l'extinction : par exemple, si "Avancer" = "200", toutes les commandes "Avancer" suivantes sont exécutées avec cette valeur.
+- **Interrompre** l'exécution du programme en appuyant à nouveau sur **▶ Démarrer** pendant le déplacement.
+- Le tableau de contrôle mémorise la dernière **valeur définie** (distance/angle) pour la commande de déplacement jusqu'à l'extinction : par exemple, si "Avancer" = "200", toutes les commandes "Avancer" suivantes sont exécutées avec cette valeur.
 - Les valeurs après une opération arithmétique sont également conservées.
 - Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction. Les nombres de 1 à 999 sont acceptés. Le jeton sans nombre ramène le pas à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas.
-- La télécommande et le robot **s'éteignent automatiquement** si rien ne se passe pendant 15 minutes.
+- Le tableau de contrôle et le robot **s'éteignent automatiquement** si rien ne se passe pendant 15 minutes.
 - Si le robot n'est pas utilisé pendant 1–3 minutes, il effectue de petits mouvements pour signaler qu'il est actif et prêt.
 - **Appui court sur le bouton du robot** : le robot lit le jeton placé sous lui et l'énonce.
 - **Tous les sons du robot** peuvent être coupés et rétablis en maintenant le bouton du robot pendant 5 secondes : attendez le bip court, puis relâchez. Le robot clignote en rouge si le son est coupé, en vert s'il est rétabli.
-- Le **son de la télécommande** peut être coupé et rétabli en maintenant le bouton **▶ Start** pendant 5 secondes : attendez le bip court, puis relâchez. Pendant l'exécution d'un programme, le maintien ne fonctionne pas.
+- Le **son du tableau de contrôle** peut être coupé et rétabli en maintenant le bouton **▶ Démarrer** pendant 5 secondes : attendez le bip court, puis relâchez. Pendant l'exécution d'un programme, le maintien ne fonctionne pas.
 - **Après une mise à jour du logiciel**, un calibrage des déplacements du robot peut être nécessaire.
 - **Réinitialisation des réglages du robot** : maintenez le bouton du robot pendant 10 secondes (détails dans la section « Calibrage du robot »).
-- **L'appairage de la télécommande et du robot** peut être nécessaire après une mise à jour du logiciel des appareils. Maintenez le bouton **▶ Start** sur la télécommande plus de 10 secondes : le bip à la 5ᵉ seconde signifie qu'il faut continuer à maintenir.
+- **L'appairage du tableau de contrôle et du robot** peut être nécessaire après une mise à jour du logiciel des appareils. Maintenez le bouton **▶ Démarrer** sur le tableau de contrôle plus de 10 secondes : le bip à la 5ᵉ seconde signifie qu'il faut continuer à maintenir.
 
 ### Calibrage du robot :
 
 - Exécutez d'abord la carte « Calibrage » sans chiffre : le robot mesure la polarité des moteurs, supprime les jeux et règle le déplacement en ligne droite. La carte fonctionne jusqu'à 2 minutes. Pendant la première demi-minute, le robot doit rester immobile, ne le touchez pas. Le bouton du robot ne fonctionne pas pendant ce temps.
 - Calibrez ensuite les angles de rotation. Marquez sur la surface de la table l'orientation précise du robot. Il faut 16 rotations de 90° dans le sens horaire : composez le programme « Répétition 8 + rotation à droite » et exécutez-le deux fois. Le robot doit effectuer quatre tours complets (90×16 = 1440°) et revenir à son orientation initiale.
-- Évaluez l'écart par rapport à la marque et corrigez avec la carte « Calibrage » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibrage » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibrage » + « −5 »), puis **▶ Start**. Le nombre indique de combien de degrés le robot s'est trompé sur les 16 rotations au total. Le robot n'accepte pas plus de 90. Un nombre simple sans « + » ou « − » à côté de « Calibrage » ne fonctionne pas : la cellule clignote en rouge.
+- Évaluez l'écart par rapport à la marque et corrigez avec la carte « Calibrage » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibrage » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibrage » + « −5 »), puis **▶ Démarrer**. Le nombre indique de combien de degrés le robot s'est trompé sur les 16 rotations au total. Le robot n'accepte pas plus de 90. Un nombre simple sans « + » ou « − » à côté de « Calibrage » ne fonctionne pas : la cellule clignote en rouge.
 - Répétez jusqu'à ce que le robot revienne exactement à son orientation initiale.
 - Le calibrage est conservé après l'extinction.
 - Attention ! Réinitialisation du calibrage : maintenez le bouton du robot pendant 10 secondes, les lumières clignotent en rouge, vert, bleu et blanc. La réinitialisation efface tous les calibrages, le volume et le son coupé. Ensuite, éteignez et rallumez le robot, puis refaites le calibrage depuis le début.
@@ -159,8 +159,8 @@ Par défaut :
 <Accordion icon="rectangle-terminal" title="Calibrage de la première version de l'appareil (MVP) avec robot de 10 cm de diamètre">
 Cette méthode ne concerne que la première version (MVP). Avec le nouveau firmware, « Calibrage » avec un nombre simple ne fonctionne pas : la cellule clignote en rouge.
 
-1. Pour calibrer le gyroscope, placez le robot sur une surface horizontale, insérez le jeton "Calibrage" dans la télécommande et appuyez sur **▶ Start**.
-2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibrage" et le jeton avec la valeur nécessaire, puis **▶ Start**. Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 mm). Après cela, la distance de déplacement du robot sera précise.*
+1. Pour calibrer le gyroscope, placez le robot sur une surface horizontale, insérez le jeton "Calibrage" dans le tableau de contrôle et appuyez sur **▶ Démarrer**.
+2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibrage" et le jeton avec la valeur nécessaire, puis **▶ Démarrer**. Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 mm). Après cela, la distance de déplacement du robot sera précise.*
 </Accordion>
 
 ### Programmation des jetons NFC
@@ -175,7 +175,7 @@ Tous les avertissements de sécurité et les informations réglementaires se tro
 
 L'appareil contient des batteries Li-ion. **Rechargez uniquement sous la surveillance** d'un adulte avec un USB 5V standard et un câble USB-C.
 
-La charge de la télécommande et du robot (1 heure) suffit pour 1–2 leçons ; une charge complète (2–3 heures) permet 3 leçons de 30–45 minutes. Avec le temps, la capacité des batteries peut diminuer, leur remplacement par de nouvelles 16340 Li-ion est possible.
+La charge du tableau de contrôle et du robot (1 heure) suffit pour 1–2 leçons ; une charge complète (2–3 heures) permet 3 leçons de 30–45 minutes. Avec le temps, la capacité des batteries peut diminuer, leur remplacement par de nouvelles 16340 Li-ion est possible.
 
 Si l'ensemble n'est pas utilisé pendant une longue période, rechargez les batteries **tous les 2-3 mois**. En cas de décharge profonde, les batteries peuvent être endommagées et nécessiter un remplacement.
 
