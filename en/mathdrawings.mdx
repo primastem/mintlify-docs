@@ -7,67 +7,9 @@ mode: "wide"
 
 Each example has a link. It opens the [simulator](https://simulator.primastem.com) with this program on the board and runs it.
 
-## Simple Eight-Pointed Star
+## Polygons
 
-Board: top row Function × 8. Bottom row: Forward, Right 135.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r008&fn=cfor,crig.n135&s=l1047402&r=269-375-0&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/star8-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/star8-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Regular Pentagon
-
-Board: top row Function × 5. Bottom row: Forward 50, Right 72.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n050,crig.n072&s=l1047402&r=275-262-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/pentagon-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/pentagon-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Simple Five-Pointed Star
-
-Board: top row Function × 5. Bottom row: Forward, Right 144.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/star5-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/star5-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Mathematical Heart Drawing
-
-Board: top row Forward 45, Forward 20, Function × 6, Right 120, Function × 7, Forward 50. Bottom row: Left 30, Forward 15.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n045,cfor.n020,cfun.r006,crig.n120,cfun.r007,cfor.n050&fn=clef.n030,cfor.n015&s=l1047402&r=346-340-0&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/heart-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/heart-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Triangle with Simple Program
+### Triangle with Simple Program
 
 Board: top row Forward, Right 120, Forward, Right, Forward.
 
@@ -82,7 +24,7 @@ Board: top row Forward, Right 120, Forward, Right, Forward.
   </Frame>
 </Columns>
 
-## Triangle Using a Function
+### Triangle Using a Function
 
 Board: top row Function × 3. Bottom row: Forward, Right 120.
 
@@ -97,174 +39,22 @@ Board: top row Function × 3. Bottom row: Forward, Right 120.
   </Frame>
 </Columns>
 
-## Triangular Spiral
+### Regular Pentagon
 
-Board: top row Forward 10, Right 120, Function × 10. Bottom row: Forward +10, Right.
+Board: top row Function × 5. Bottom row: Forward 50, Right 72.
 
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,crig.n120,cfun.r010&fn=cfor.a010,crig&s=l1047402&r=295-278-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/spiraltriangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/spiraltriangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Double Triangular Spiral
-
-Board: top row Forward 20, Function × 20. Bottom row: Right 120, Forward +20, Right 120, Forward.
-
-[Run in the simulator](https://simulator.primastem.com/#p=cfor-n020-cfun-r020---------crig-n120-cfor-a020-crig-n120-cfor---&s=l1087602&r=424-475-240&run)
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n050,crig.n072&s=l1047402&r=275-262-90&run)
 
 <Columns cols={2}>
   <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/spiraltriangle2-board.svg" alt="" />
+    <img src="../images/mathdrawings/pentagon-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/spiraltriangle2-field.svg" alt="" />
+    <img src="../images/mathdrawings/pentagon-field.svg" alt="" />
   </Frame>
 </Columns>
 
-## Fractal: Triangle in a Triangle
-
-Board: top row Forward 400, Function × 6. Bottom row: Right 120, Forward, Right, Forward ÷2, Forward.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Fractal: Nested Triangles
-
-Board: top row Function, Right, Forward ÷2, Right 60. Bottom row: Forward, Right 120, Forward, Right, Forward.
-
-<Note>Press **▶ Start** 4 times in a row without moving the robot. The board remembers the step length between runs, so each run draws a triangle half the size. The link runs the program once; after that, press **▶ Start** in the simulator yourself.</Note>
-
-[Run in the simulator](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Curve with Negative Angles
-
-Board: top row Forward 10, Right 30, Function × 36. Bottom row: Forward, Right −2.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,crig.n030,cfun.r036&fn=cfor,crig.s002&s=l1047402&r=300-238-0&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/curvenegativeangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/curvenegativeangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Square Spiral
-
-Board: top row Forward 10, Right, Forward, Right, Function × 8. Bottom row: Forward +10, Right, Forward, Right.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,crig,cfor,crig,cfun.r008&fn=cfor.a010,crig,cfor,crig&s=l1047402&r=295-305-0&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/spiralsquare-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/spiralsquare-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Twisted Square
-
-Board: top row Forward 400, Function × 70. Bottom row: Right 91, Forward −5.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n091,cfor.s005&s=l1047502&r=174-179-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/twistsquare-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/twistsquare-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Twisted Triangle
-
-Board: top row Forward 400, Function × 70. Bottom row: Right 121, Forward −5.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n121,cfor.s005&s=l1047502&r=575-535-270&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/twisttriangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/twisttriangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Sun
-
-Board: top row Function × 36. Bottom row: Forward 400, Right 170.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n400,crig.n170&s=l1047402&r=100-283-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/sun-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/sun-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Star Ring
-
-Board: top row Function × 18. Bottom row: Forward 350, Right 100.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.n350,crig.n100&s=l1047502&r=200-228-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/starring-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/starring-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Twisted Hexagon
-
-Board: top row Forward 200, Function × 60. Bottom row: Right 61, Forward −3.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n200,cfun.r060&fn=crig.n061,cfor.s003&s=l1047402&r=192-132-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/twisthexagon-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/twisthexagon-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Three Triangles
+### Three Triangles
 
 Board: top row Function × 3. Bottom row: Forward 100, Right 120, Forward 200, Right, Forward 300.
 
@@ -279,187 +69,7 @@ Board: top row Function × 3. Bottom row: Forward 100, Right 120, Forward 200, R
   </Frame>
 </Columns>
 
-## Double Curl
-
-Board: top row Right 5, Function × 72. Bottom row: Forward 40, Right +10.
-
-[Run in the simulator](https://simulator.primastem.com/#top=crig.n005,cfun.r072&fn=cfor.n040,crig.a010&s=l1047402&r=130-130-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/curl-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/curl-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Curl with Little Stars
-
-Board: top row Right 10, Function × 36. Bottom row: Forward 60, Right +20.
-
-[Run in the simulator](https://simulator.primastem.com/#top=crig.n010,cfun.r036&fn=cfor.n060,crig.a020&s=l1047402&r=120-120-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/curlstars-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Pinwheel
-
-Board: top row Function × 5. Bottom row: Forward 300, Right 144, Forward 100, Right 72.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n300,crig.n144,cfor.n100,crig.n072&s=l1047402&r=165-304-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/pinwheel-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/pinwheel-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Four-Pointed Star
-
-Board: top row Function × 12. Bottom row: Forward 200, Right 150, Forward, Right 120.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r012&fn=cfor.n200,crig.n150,cfor,crig.n120&s=l1047402&r=237-263-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/star4-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/star4-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Star Spiral
-
-Board: top row Forward 10, Function × 30. Bottom row: Right 144, Forward +12.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,cfun.r030&fn=crig.n144,cfor.a012&s=l1047402&r=295-313-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/starspiral-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/starspiral-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Spiky Spiral
-
-Board: top row Forward 10, Function × 36. Bottom row: Right 150, Forward +10.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,cfun.r036&fn=crig.n150,cfor.a010&s=l1047402&r=295-301-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/spikyspiral-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/spikyspiral-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Whirl
-
-Board: top row Forward 5, Function × 70. Bottom row: Right 117, Forward +5.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfor.n005,cfun.r070&fn=crig.n117,cfor.a005&s=l1047402&r=277-304-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/whirl-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/whirl-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Triangle Rosette
-
-Board: top row Function × 36. Bottom row: Forward 300, Right 120, Forward, Right 130.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n120,cfor,crig.n130&s=l1047402&r=134-223-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/rosettetriangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/rosettetriangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Square Rosette
-
-Board: top row Function × 36. Bottom row: Forward 250, Right 90, Forward, Right 100.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n250,crig.n090,cfor,crig.n100&s=l1047402&r=164-186-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/rosettesquare-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/rosettesquare-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Star Rosette
-
-Board: top row Function × 36. Bottom row: Forward 300, Right 150, Forward, Right 160.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n150,cfor,crig.n160&s=l1047402&r=119-268-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/rosettestar-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/rosettestar-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Star Wreath
-
-Board: top row Function × 24. Bottom row: Forward 200, Right 60, Forward, Right 130.
-
-[Run in the simulator](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n200,crig.n060,cfor,crig.n130&s=l1047402&r=142-227-90&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/starwreath-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/starwreath-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## Rhombus Spiral
-
-Board: top row Forward 40, Function × 14. Bottom row: Right 60, Forward +18, Right 120, Forward +7.
-
-[Run in the simulator](https://simulator.primastem.com/#p=cfor-n040-cfun-r014---------crig-n060-cfor-a018-crig-n120-cfor-a007--&s=l1087602&r=436-466-0&run)
-
-<Columns cols={2}>
-  <Frame caption="Program on the board">
-    <img src="../images/mathdrawings/rhombspiral-board.svg" alt="" />
-  </Frame>
-  <Frame caption="What the robot draws">
-    <img src="../images/mathdrawings/rhombspiral-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## ~5-Minute Timer
+### ~5-Minute Timer
 
 Board: top row Function × 5, Left 360. Bottom row: Forward, Back, Pause 60, Right 72.
 
@@ -474,7 +84,101 @@ Board: top row Function × 5, Left 360. Bottom row: Forward, Back, Pause 60, Rig
   </Frame>
 </Columns>
 
-## Spiral
+## Stars
+
+### Simple Five-Pointed Star
+
+Board: top row Function × 5. Bottom row: Forward, Right 144.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/star5-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/star5-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Simple Eight-Pointed Star
+
+Board: top row Function × 8. Bottom row: Forward, Right 135.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r008&fn=cfor,crig.n135&s=l1047402&r=269-375-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/star8-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/star8-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Four-Pointed Star
+
+Board: top row Function × 12. Bottom row: Forward 200, Right 150, Forward, Right 120.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r012&fn=cfor.n200,crig.n150,cfor,crig.n120&s=l1047402&r=237-263-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/star4-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/star4-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Star Ring
+
+Board: top row Function × 18. Bottom row: Forward 350, Right 100.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.n350,crig.n100&s=l1047502&r=200-228-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/starring-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/starring-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Sun
+
+Board: top row Function × 36. Bottom row: Forward 400, Right 170.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n400,crig.n170&s=l1047402&r=100-283-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/sun-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/sun-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Pinwheel
+
+Board: top row Function × 5. Bottom row: Forward 300, Right 144, Forward 100, Right 72.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n300,crig.n144,cfor.n100,crig.n072&s=l1047402&r=165-304-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/pinwheel-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/pinwheel-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Spirals
+
+### Spiral
 
 Board: top row Forward 5, Function × 36. Bottom row: Right 30, Forward +1.
 
@@ -486,6 +190,316 @@ Board: top row Forward 5, Function × 36. Bottom row: Right 30, Forward +1.
   </Frame>
   <Frame caption="What the robot draws">
     <img src="../images/mathdrawings/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Square Spiral
+
+Board: top row Forward 10, Right, Forward, Right, Function × 8. Bottom row: Forward +10, Right, Forward, Right.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,crig,cfor,crig,cfun.r008&fn=cfor.a010,crig,cfor,crig&s=l1047402&r=295-305-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/spiralsquare-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/spiralsquare-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Triangular Spiral
+
+Board: top row Forward 10, Right 120, Function × 10. Bottom row: Forward +10, Right.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,crig.n120,cfun.r010&fn=cfor.a010,crig&s=l1047402&r=295-278-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/spiraltriangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/spiraltriangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Double Triangular Spiral
+
+Board: top row Forward 20, Function × 20. Bottom row: Right 120, Forward +20, Right 120, Forward.
+
+[Run in the simulator](https://simulator.primastem.com/#p=cfor-n020-cfun-r020---------crig-n120-cfor-a020-crig-n120-cfor---&s=l1087602&r=424-475-240&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/spiraltriangle2-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/spiraltriangle2-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Rhombus Spiral
+
+Board: top row Forward 40, Function × 14. Bottom row: Right 60, Forward +18, Right 120, Forward +7.
+
+[Run in the simulator](https://simulator.primastem.com/#p=cfor-n040-cfun-r014---------crig-n060-cfor-a018-crig-n120-cfor-a007--&s=l1087602&r=436-466-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/rhombspiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/rhombspiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Star Spiral
+
+Board: top row Forward 10, Function × 30. Bottom row: Right 144, Forward +12.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,cfun.r030&fn=crig.n144,cfor.a012&s=l1047402&r=295-313-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/starspiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/starspiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Spiky Spiral
+
+Board: top row Forward 10, Function × 36. Bottom row: Right 150, Forward +10.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,cfun.r036&fn=crig.n150,cfor.a010&s=l1047402&r=295-301-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/spikyspiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/spikyspiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Whirl
+
+Board: top row Forward 5, Function × 70. Bottom row: Right 117, Forward +5.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n005,cfun.r070&fn=crig.n117,cfor.a005&s=l1047402&r=277-304-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/whirl-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/whirl-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Twisted Shapes
+
+### Twisted Square
+
+Board: top row Forward 400, Function × 70. Bottom row: Right 91, Forward −5.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n091,cfor.s005&s=l1047502&r=174-179-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/twistsquare-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/twistsquare-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Twisted Triangle
+
+Board: top row Forward 400, Function × 70. Bottom row: Right 121, Forward −5.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n121,cfor.s005&s=l1047502&r=575-535-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/twisttriangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/twisttriangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Twisted Hexagon
+
+Board: top row Forward 200, Function × 60. Bottom row: Right 61, Forward −3.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n200,cfun.r060&fn=crig.n061,cfor.s003&s=l1047402&r=192-132-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/twisthexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/twisthexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Rosettes
+
+### Triangle Rosette
+
+Board: top row Function × 36. Bottom row: Forward 300, Right 120, Forward, Right 130.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n120,cfor,crig.n130&s=l1047402&r=134-223-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/rosettetriangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/rosettetriangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Square Rosette
+
+Board: top row Function × 36. Bottom row: Forward 250, Right 90, Forward, Right 100.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n250,crig.n090,cfor,crig.n100&s=l1047402&r=164-186-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/rosettesquare-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/rosettesquare-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Star Rosette
+
+Board: top row Function × 36. Bottom row: Forward 300, Right 150, Forward, Right 160.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n150,cfor,crig.n160&s=l1047402&r=119-268-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/rosettestar-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/rosettestar-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Star Wreath
+
+Board: top row Function × 24. Bottom row: Forward 200, Right 60, Forward, Right 130.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n200,crig.n060,cfor,crig.n130&s=l1047402&r=142-227-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/starwreath-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/starwreath-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Curves and Curls
+
+### Curve with Negative Angles
+
+Board: top row Forward 10, Right 30, Function × 36. Bottom row: Forward, Right −2.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n010,crig.n030,cfun.r036&fn=cfor,crig.s002&s=l1047402&r=300-238-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/curvenegativeangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/curvenegativeangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Double Curl
+
+Board: top row Right 5, Function × 72. Bottom row: Forward 40, Right +10.
+
+[Run in the simulator](https://simulator.primastem.com/#top=crig.n005,cfun.r072&fn=cfor.n040,crig.a010&s=l1047402&r=130-130-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/curl-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/curl-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Curl with Little Stars
+
+Board: top row Right 10, Function × 36. Bottom row: Forward 60, Right +20.
+
+[Run in the simulator](https://simulator.primastem.com/#top=crig.n010,cfun.r036&fn=cfor.n060,crig.a020&s=l1047402&r=120-120-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/curlstars-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Mathematical Heart Drawing
+
+Board: top row Forward 45, Forward 20, Function × 6, Right 120, Function × 7, Forward 50. Bottom row: Left 30, Forward 15.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n045,cfor.n020,cfun.r006,crig.n120,cfun.r007,cfor.n050&fn=clef.n030,cfor.n015&s=l1047402&r=346-340-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/heart-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/heart-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Fractals
+
+### Fractal: Triangle in a Triangle
+
+Board: top row Forward 400, Function × 6. Bottom row: Right 120, Forward, Right, Forward ÷2, Forward.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Fractal: Nested Triangles
+
+Board: top row Function, Right, Forward ÷2, Right 60. Bottom row: Forward, Right 120, Forward, Right, Forward.
+
+<Note>Press **▶ Start** 4 times in a row without moving the robot. The board remembers the step length between runs, so each run draws a triangle half the size. The link runs the program once; after that, press **▶ Start** in the simulator yourself.</Note>
+
+[Run in the simulator](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
   </Frame>
 </Columns>
 

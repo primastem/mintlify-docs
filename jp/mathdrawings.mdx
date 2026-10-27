@@ -7,67 +7,9 @@ mode: "wide"
 
 各例にリンクがあります。リンクを開くと、このプログラムがコントローラーに置かれた状態で[シミュレーター](https://simulator.primastem.com)が開き、実行されます。
 
-## 単純な 8 芒星
+## 多角形
 
-コントローラー:上段 関数 × 8。下段:前進、右135。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r008&fn=cfor,crig.n135&s=l1047402&r=269-375-0&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/star8-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/star8-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 正五角形
-
-コントローラー:上段 関数 × 5。下段:前進50、右72。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n050,crig.n072&s=l1047402&r=275-262-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/pentagon-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/pentagon-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 単純な 5 芒星
-
-コントローラー:上段 関数 × 5。下段:前進、右144。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/star5-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/star5-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 数学的なハートの描画
-
-コントローラー:上段 前進45、前進20、関数 × 6、右120、関数 × 7、前進50。下段:左30、前進15。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n045,cfor.n020,cfun.r006,crig.n120,cfun.r007,cfor.n050&fn=clef.n030,cfor.n015&s=l1047402&r=346-340-0&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/heart-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/heart-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 単純なプログラムの三角形
+### 単純なプログラムの三角形
 
 コントローラー:上段 前進、右120、前進、右、前進。
 
@@ -82,7 +24,7 @@ mode: "wide"
   </Frame>
 </Columns>
 
-## 関数を使用した三角形
+### 関数を使用した三角形
 
 コントローラー:上段 関数 × 3。下段:前進、右120。
 
@@ -97,174 +39,22 @@ mode: "wide"
   </Frame>
 </Columns>
 
-## 三角スパイラル
+### 正五角形
 
-コントローラー:上段 前進10、右120、関数 × 10。下段:前進 +10、右。
+コントローラー:上段 関数 × 5。下段:前進50、右72。
 
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,crig.n120,cfun.r010&fn=cfor.a010,crig&s=l1047402&r=295-278-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/spiraltriangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/spiraltriangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 二重の三角スパイラル
-
-コントローラー:上段 前進20、関数 × 20。下段:右120、前進 +20、右120、前進。
-
-[シミュレーターで実行](https://simulator.primastem.com/#p=cfor-n020-cfun-r020---------crig-n120-cfor-a020-crig-n120-cfor---&s=l1087602&r=424-475-240&run)
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n050,crig.n072&s=l1047402&r=275-262-90&run)
 
 <Columns cols={2}>
   <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/spiraltriangle2-board.svg" alt="" />
+    <img src="../images/mathdrawings/pentagon-board.svg" alt="" />
   </Frame>
   <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/spiraltriangle2-field.svg" alt="" />
+    <img src="../images/mathdrawings/pentagon-field.svg" alt="" />
   </Frame>
 </Columns>
 
-## フラクタル:三角形の中の三角形
-
-コントローラー:上段 前進400、関数 × 6。下段:右120、前進、右、前進 ÷2、前進。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## フラクタル:入れ子の三角形
-
-コントローラー:上段 関数、右、前進 ÷2、右60。下段:前進、右120、前進、右、前進。
-
-<Note>ロボットを動かさずに **▶ スタート** を4回続けて押します。コントローラーは実行のあいだも歩幅を覚えているので、実行するたびに半分の大きさの三角形を描きます。リンクはプログラムを1回だけ実行します。そのあとはシミュレーターで **▶ スタート** を押してください。</Note>
-
-[シミュレーターで実行](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 負の角度の曲線
-
-コントローラー:上段 前進10、右30、関数 × 36。下段:前進、右 −2。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,crig.n030,cfun.r036&fn=cfor,crig.s002&s=l1047402&r=300-238-0&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/curvenegativeangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/curvenegativeangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 正方形スパイラル
-
-コントローラー:上段 前進10、右、前進、右、関数 × 8。下段:前進 +10、右、前進、右。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,crig,cfor,crig,cfun.r008&fn=cfor.a010,crig,cfor,crig&s=l1047402&r=295-305-0&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/spiralsquare-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/spiralsquare-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## ねじれた正方形
-
-コントローラー:上段 前進400、関数 × 70。下段:右91、前進 −5。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n091,cfor.s005&s=l1047502&r=174-179-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/twistsquare-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/twistsquare-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## ねじれた三角形
-
-コントローラー:上段 前進400、関数 × 70。下段:右121、前進 −5。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n121,cfor.s005&s=l1047502&r=575-535-270&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/twisttriangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/twisttriangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 太陽
-
-コントローラー:上段 関数 × 36。下段:前進400、右170。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n400,crig.n170&s=l1047402&r=100-283-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/sun-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/sun-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 星の輪
-
-コントローラー:上段 関数 × 18。下段:前進350、右100。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.n350,crig.n100&s=l1047502&r=200-228-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/starring-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/starring-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## ねじれた六角形
-
-コントローラー:上段 前進200、関数 × 60。下段:右61、前進 −3。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n200,cfun.r060&fn=crig.n061,cfor.s003&s=l1047402&r=192-132-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/twisthexagon-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/twisthexagon-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 三つの三角形
+### 三つの三角形
 
 コントローラー:上段 関数 × 3。下段:前進100、右120、前進200、右、前進300。
 
@@ -279,187 +69,7 @@ mode: "wide"
   </Frame>
 </Columns>
 
-## 二つのうずまき
-
-コントローラー:上段 右5、関数 × 72。下段:前進40、右 +10。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=crig.n005,cfun.r072&fn=cfor.n040,crig.a010&s=l1047402&r=130-130-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/curl-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/curl-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 星入りのうずまき
-
-コントローラー:上段 右10、関数 × 36。下段:前進60、右 +20。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=crig.n010,cfun.r036&fn=cfor.n060,crig.a020&s=l1047402&r=120-120-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/curlstars-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## かざぐるま
-
-コントローラー:上段 関数 × 5。下段:前進300、右144、前進100、右72。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n300,crig.n144,cfor.n100,crig.n072&s=l1047402&r=165-304-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/pinwheel-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/pinwheel-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 四芒星
-
-コントローラー:上段 関数 × 12。下段:前進200、右150、前進、右120。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r012&fn=cfor.n200,crig.n150,cfor,crig.n120&s=l1047402&r=237-263-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/star4-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/star4-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 星のスパイラル
-
-コントローラー:上段 前進10、関数 × 30。下段:右144、前進 +12。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,cfun.r030&fn=crig.n144,cfor.a012&s=l1047402&r=295-313-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/starspiral-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/starspiral-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## とげとげスパイラル
-
-コントローラー:上段 前進10、関数 × 36。下段:右150、前進 +10。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,cfun.r036&fn=crig.n150,cfor.a010&s=l1047402&r=295-301-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/spikyspiral-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/spikyspiral-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## うず
-
-コントローラー:上段 前進5、関数 × 70。下段:右117、前進 +5。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n005,cfun.r070&fn=crig.n117,cfor.a005&s=l1047402&r=277-304-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/whirl-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/whirl-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 三角形のロゼット
-
-コントローラー:上段 関数 × 36。下段:前進300、右120、前進、右130。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n120,cfor,crig.n130&s=l1047402&r=134-223-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/rosettetriangle-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/rosettetriangle-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 正方形のロゼット
-
-コントローラー:上段 関数 × 36。下段:前進250、右90、前進、右100。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n250,crig.n090,cfor,crig.n100&s=l1047402&r=164-186-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/rosettesquare-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/rosettesquare-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 星のロゼット
-
-コントローラー:上段 関数 × 36。下段:前進300、右150、前進、右160。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n150,cfor,crig.n160&s=l1047402&r=119-268-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/rosettestar-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/rosettestar-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 星の花輪
-
-コントローラー:上段 関数 × 24。下段:前進200、右60、前進、右130。
-
-[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n200,crig.n060,cfor,crig.n130&s=l1047402&r=142-227-90&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/starwreath-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/starwreath-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## ひし形のスパイラル
-
-コントローラー:上段 前進40、関数 × 14。下段:右60、前進 +18、右120、前進 +7。
-
-[シミュレーターで実行](https://simulator.primastem.com/#p=cfor-n040-cfun-r014---------crig-n060-cfor-a018-crig-n120-cfor-a007--&s=l1087602&r=436-466-0&run)
-
-<Columns cols={2}>
-  <Frame caption="コントローラー上のプログラム">
-    <img src="../images/mathdrawings/rhombspiral-board.svg" alt="" />
-  </Frame>
-  <Frame caption="ロボットが描く図形">
-    <img src="../images/mathdrawings/rhombspiral-field.svg" alt="" />
-  </Frame>
-</Columns>
-
-## 約 5 分タイマー
+### 約 5 分タイマー
 
 コントローラー:上段 関数 × 5、左360。下段:前進、後退、一時停止60、右72。
 
@@ -474,7 +84,101 @@ mode: "wide"
   </Frame>
 </Columns>
 
+## 星
+
+### 単純な 5 芒星
+
+コントローラー:上段 関数 × 5。下段:前進、右144。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/star5-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/star5-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 単純な 8 芒星
+
+コントローラー:上段 関数 × 8。下段:前進、右135。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r008&fn=cfor,crig.n135&s=l1047402&r=269-375-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/star8-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/star8-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 四芒星
+
+コントローラー:上段 関数 × 12。下段:前進200、右150、前進、右120。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r012&fn=cfor.n200,crig.n150,cfor,crig.n120&s=l1047402&r=237-263-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/star4-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/star4-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 星の輪
+
+コントローラー:上段 関数 × 18。下段:前進350、右100。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.n350,crig.n100&s=l1047502&r=200-228-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/starring-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/starring-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 太陽
+
+コントローラー:上段 関数 × 36。下段:前進400、右170。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n400,crig.n170&s=l1047402&r=100-283-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/sun-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/sun-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### かざぐるま
+
+コントローラー:上段 関数 × 5。下段:前進300、右144、前進100、右72。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n300,crig.n144,cfor.n100,crig.n072&s=l1047402&r=165-304-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/pinwheel-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/pinwheel-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## スパイラル
+
+### スパイラル
 
 コントローラー:上段 前進5、関数 × 36。下段:右30、前進 +1。
 
@@ -486,6 +190,316 @@ mode: "wide"
   </Frame>
   <Frame caption="ロボットが描く図形">
     <img src="../images/mathdrawings/spiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 正方形スパイラル
+
+コントローラー:上段 前進10、右、前進、右、関数 × 8。下段:前進 +10、右、前進、右。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,crig,cfor,crig,cfun.r008&fn=cfor.a010,crig,cfor,crig&s=l1047402&r=295-305-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/spiralsquare-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/spiralsquare-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 三角スパイラル
+
+コントローラー:上段 前進10、右120、関数 × 10。下段:前進 +10、右。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,crig.n120,cfun.r010&fn=cfor.a010,crig&s=l1047402&r=295-278-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/spiraltriangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/spiraltriangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 二重の三角スパイラル
+
+コントローラー:上段 前進20、関数 × 20。下段:右120、前進 +20、右120、前進。
+
+[シミュレーターで実行](https://simulator.primastem.com/#p=cfor-n020-cfun-r020---------crig-n120-cfor-a020-crig-n120-cfor---&s=l1087602&r=424-475-240&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/spiraltriangle2-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/spiraltriangle2-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### ひし形のスパイラル
+
+コントローラー:上段 前進40、関数 × 14。下段:右60、前進 +18、右120、前進 +7。
+
+[シミュレーターで実行](https://simulator.primastem.com/#p=cfor-n040-cfun-r014---------crig-n060-cfor-a018-crig-n120-cfor-a007--&s=l1087602&r=436-466-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/rhombspiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/rhombspiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 星のスパイラル
+
+コントローラー:上段 前進10、関数 × 30。下段:右144、前進 +12。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,cfun.r030&fn=crig.n144,cfor.a012&s=l1047402&r=295-313-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/starspiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/starspiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### とげとげスパイラル
+
+コントローラー:上段 前進10、関数 × 36。下段:右150、前進 +10。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,cfun.r036&fn=crig.n150,cfor.a010&s=l1047402&r=295-301-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/spikyspiral-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/spikyspiral-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### うず
+
+コントローラー:上段 前進5、関数 × 70。下段:右117、前進 +5。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n005,cfun.r070&fn=crig.n117,cfor.a005&s=l1047402&r=277-304-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/whirl-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/whirl-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## ねじれた図形
+
+### ねじれた正方形
+
+コントローラー:上段 前進400、関数 × 70。下段:右91、前進 −5。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n091,cfor.s005&s=l1047502&r=174-179-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/twistsquare-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/twistsquare-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### ねじれた三角形
+
+コントローラー:上段 前進400、関数 × 70。下段:右121、前進 −5。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r070&fn=crig.n121,cfor.s005&s=l1047502&r=575-535-270&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/twisttriangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/twisttriangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### ねじれた六角形
+
+コントローラー:上段 前進200、関数 × 60。下段:右61、前進 −3。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n200,cfun.r060&fn=crig.n061,cfor.s003&s=l1047402&r=192-132-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/twisthexagon-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/twisthexagon-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## ロゼット
+
+### 三角形のロゼット
+
+コントローラー:上段 関数 × 36。下段:前進300、右120、前進、右130。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n120,cfor,crig.n130&s=l1047402&r=134-223-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/rosettetriangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/rosettetriangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 正方形のロゼット
+
+コントローラー:上段 関数 × 36。下段:前進250、右90、前進、右100。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n250,crig.n090,cfor,crig.n100&s=l1047402&r=164-186-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/rosettesquare-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/rosettesquare-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 星のロゼット
+
+コントローラー:上段 関数 × 36。下段:前進300、右150、前進、右160。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n300,crig.n150,cfor,crig.n160&s=l1047402&r=119-268-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/rosettestar-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/rosettestar-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 星の花輪
+
+コントローラー:上段 関数 × 24。下段:前進200、右60、前進、右130。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n200,crig.n060,cfor,crig.n130&s=l1047402&r=142-227-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/starwreath-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/starwreath-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## 曲線とうずまき
+
+### 負の角度の曲線
+
+コントローラー:上段 前進10、右30、関数 × 36。下段:前進、右 −2。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n010,crig.n030,cfun.r036&fn=cfor,crig.s002&s=l1047402&r=300-238-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/curvenegativeangle-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/curvenegativeangle-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 二つのうずまき
+
+コントローラー:上段 右5、関数 × 72。下段:前進40、右 +10。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=crig.n005,cfun.r072&fn=cfor.n040,crig.a010&s=l1047402&r=130-130-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/curl-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/curl-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 星入りのうずまき
+
+コントローラー:上段 右10、関数 × 36。下段:前進60、右 +20。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=crig.n010,cfun.r036&fn=cfor.n060,crig.a020&s=l1047402&r=120-120-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/curlstars-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### 数学的なハートの描画
+
+コントローラー:上段 前進45、前進20、関数 × 6、右120、関数 × 7、前進50。下段:左30、前進15。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n045,cfor.n020,cfun.r006,crig.n120,cfun.r007,cfor.n050&fn=clef.n030,cfor.n015&s=l1047402&r=346-340-0&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/heart-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/heart-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## フラクタル
+
+### フラクタル:三角形の中の三角形
+
+コントローラー:上段 前進400、関数 × 6。下段:右120、前進、右、前進 ÷2、前進。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### フラクタル:入れ子の三角形
+
+コントローラー:上段 関数、右、前進 ÷2、右60。下段:前進、右120、前進、右、前進。
+
+<Note>ロボットを動かさずに **▶ スタート** を4回続けて押します。コントローラーは実行のあいだも歩幅を覚えているので、実行するたびに半分の大きさの三角形を描きます。リンクはプログラムを1回だけ実行します。そのあとはシミュレーターで **▶ スタート** を押してください。</Note>
+
+[シミュレーターで実行](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
   </Frame>
 </Columns>
 
