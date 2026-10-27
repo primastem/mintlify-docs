@@ -10,7 +10,7 @@ mode: "default"
 ![primastem](../images/usermanual/hello.png)
 
 - Robot de juego
-- Mando a distancia para robot
+- Tablero a distancia para robot
 - Fichas de comandos, valores y operaciones aritméticas para crear programas
 
 > El contenido y el aspecto pueden variar ligeramente. Verifique al comprar.
@@ -27,20 +27,20 @@ Un marcador de hasta 10 mm de diámetro puede instalarse en el centro del robot 
 
 El aspecto puede variar ligeramente según la configuración, pero la funcionalidad principal se mantiene.
 
-### Mando a Distancia
+### Tablero a Distancia
 
 Dimensiones: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
-El mando contiene 11 ranuras dobles para insertar fichas de comandos y valores: 6 para el programa principal (parte superior), 5 para el subprograma (parte inferior).
-El mando tiene dos botones: a la izquierda — encendido, a la derecha — **▶ Inicio / Parada** para iniciar y detener el programa.
+El tablero contiene 11 ranuras dobles para insertar fichas de comandos y valores: 6 para el programa principal (parte superior), 5 para el subprograma (parte inferior).
+El tablero tiene dos botones: a la izquierda — encendido, a la derecha — **▶ Inicio / Parada** para iniciar y detener el programa.
 
 Después de colocar las fichas de comandos y valores en las ranuras, pulse **▶ Inicio**: el robot ejecutará el programa. Los comandos activos se iluminan con LEDs entre las ranuras.
 
-Si una ficha está mal colocada, el mando lo señala con un LED rojo, pero el programa continúa (por ejemplo, al colocar una ficha de valor sin comando).
+Si una ficha está mal colocada, el tablero lo señala con un LED rojo, pero el programa continúa (por ejemplo, al colocar una ficha de valor sin comando).
 
-El mando está equipado con un puerto USB-C para carga y un altavoz para reproducción de sonido.
+El tablero está equipado con un puerto USB-C para carga y un altavoz para reproducción de sonido.
 
 ### Fichas - Instrucciones
 
@@ -61,7 +61,7 @@ Bloques básicos para componer el programa de control:
 - **Derecha** — giro de 90° en sentido horario
 - **Izquierda** — giro de 90° en sentido antihorario
 - **Atrás** — movimiento hacia atrás (15 cm por defecto)
-- **Función** — ejecución del subprograma de la parte inferior del mando
+- **Función** — ejecución del subprograma de la parte inferior del tablero
 - **Movimiento Aleatorio** — una de las acciones para mover el robot: Adelante, Izquierda, Derecha o Atrás (en "paso por defecto")
 - **Fichas de Repetición (Bucles)** - Fichas con números del 2 al 6 (según la cantidad de puntos) y pictogramas de repetición con el número dentro. La ficha con un dado significa un número aleatorio de repeticiones del 1 al 6.
 
@@ -87,21 +87,21 @@ Modifican los parámetros de los comandos de movimiento:
 
 La aritmética calcula entre −5000 y 5000. Si el resultado supera 5000 o baja de −5000, si se divide entre 0, se saca la raíz de un número negativo o el factorial de un número mayor que 6, la celda parpadea en rojo y el número no cambia. La división es sin decimales: 150 ÷ 4 = 37.
 
-## Conexión entre el Mando y el Robot
+## Conexión entre el Tablero y el Robot
 
-Se recomienda encender primero el robot, luego el mando.
+Se recomienda encender primero el robot, luego el tablero.
 
-Coloque el robot sobre una superficie plana antes de conectar: después del emparejamiento, los LEDs se vuelven blancos. Mientras no hay conexión, el robot y el mando se iluminan en azul claro.
+Coloque el robot sobre una superficie plana antes de conectar: después del emparejamiento, los LEDs se vuelven blancos. Mientras no hay conexión, el robot y el tablero se iluminan en azul claro.
 
 Verifique la conexión: coloque la ficha "Adelante" y pulse **▶ Inicio**.
 
 Si no hay conexión, reinicie ambos dispositivos o cárguelos. Puede haber pérdida temporal de conexión cerca de fuentes de campo electromagnético fuerte (teléfono móvil, punto WiFi).
 
-> **Después de actualizar el software de los dispositivos**, puede ser necesario emparejarlos: encienda el robot, luego el mando, pulse y mantenga el botón **▶ Inicio** en el mando durante más de 10 segundos. En el segundo 5 sonará un pitido corto: no suelte, siga pulsando. En el segundo 10 empieza el emparejamiento.
+> **Después de actualizar el software de los dispositivos**, puede ser necesario emparejarlos: encienda el robot, luego el tablero, pulse y mantenga el botón **▶ Inicio** en el tablero durante más de 10 segundos. En el segundo 5 sonará un pitido corto: no suelte, siga pulsando. En el segundo 10 empieza el emparejamiento.
 
 ## ¿Cómo Funciona?
 
-Para programar el movimiento, coloque en las ranuras del mando las fichas de comandos (por ejemplo, "Adelante", "Izquierda", "Función", etc.).
+Para programar el movimiento, coloque en las ranuras del tablero las fichas de comandos (por ejemplo, "Adelante", "Izquierda", "Función", etc.).
 Puede establecer valores de comandos y cantidad de repeticiones, así como valores de ángulos, distancias y operaciones aritméticas.
 
 Para la instalación conjunta de un comando y un valor (repetición), las ranuras están unidas por "puentes" con indicadores.
@@ -119,7 +119,7 @@ Para la instalación conjunta de un comando y un valor (repetición), las ranura
 
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor,crig,cfun.r003&fn=cfor,crig&s=l1144402&r=225-525-0&run)
 
-Los comandos se colocan primero en la parte superior del mando (6 ranuras) y se ejecutan de izquierda a derecha. Se ignoran las ranuras vacías o errores (por ejemplo, dos comandos en un bloque o un valor sin comando).
+Los comandos se colocan primero en la parte superior del tablero (6 ranuras) y se ejecutan de izquierda a derecha. Se ignoran las ranuras vacías o errores (por ejemplo, dos comandos en un bloque o un valor sin comando).
 
 La secuencia de bloques determina el movimiento del robot.
 
@@ -129,23 +129,23 @@ Por defecto:
 - "Adelante" — 15 cm.
 - "Izquierda/Derecha" — 90°.
 - Los bucles (repeticiones) repiten el comando varias veces.
-- "Función" llama al subprograma de la parte inferior del mando (5 ranuras).
+- "Función" llama al subprograma de la parte inferior del tablero (5 ranuras).
 - Puede llamar a un subprograma varias veces mediante un bucle añadiendo una ficha de repetición a "Función" (ejemplo mostrado arriba).
 
 ### Funciones Importantes:
 
 - **Interrumpir** la ejecución del programa pulsando **▶ Inicio** de nuevo durante el movimiento.
-- El mando recuerda el último **valor establecido** (distancia/ángulo) para el comando de movimiento hasta el apagado: por ejemplo, si "Adelante" = "200", todos los siguientes comandos "Adelante" se ejecutan con este valor.
+- El tablero recuerda el último **valor establecido** (distancia/ángulo) para el comando de movimiento hasta el apagado: por ejemplo, si "Adelante" = "200", todos los siguientes comandos "Adelante" se ejecutan con este valor.
 - Los valores después de aritmética también se guardan.
 - Cambiar la "**distancia por defecto**" se puede hacer con una ficha de servicio: por ejemplo, para 12,5 cm, coloque la ficha "Distancia por defecto" con valor 125. El valor se guarda después del apagado. Sirven los números del 1 al 999. La ficha sin número devuelve el paso a 150 mm. Con aritmética o con cero, la celda parpadea en rojo y el paso no cambia.
-- El mando y el robot **se apagan automáticamente** si no pasa nada durante 15 minutos.
+- El tablero y el robot **se apagan automáticamente** si no pasa nada durante 15 minutos.
 - Si el robot no se usa durante 1–3 minutos, realiza pequeños movimientos para señalar que está activo y listo.
 - **Pulsación corta del botón del robot**: el robot lee la ficha que tiene debajo y la dice en voz alta.
 - **Todos los sonidos del robot** se pueden desactivar y activar manteniendo el botón del robot 5 segundos: espere el pitido corto y suelte. El robot parpadea en rojo si el sonido se ha apagado y en verde si se ha encendido.
-- El **sonido del mando** se puede desactivar y activar manteniendo el botón **▶ Inicio** 5 segundos: espere el pitido corto y suelte. Mientras se ejecuta un programa, mantener el botón no funciona.
+- El **sonido del tablero** se puede desactivar y activar manteniendo el botón **▶ Inicio** 5 segundos: espere el pitido corto y suelte. Mientras se ejecuta un programa, mantener el botón no funciona.
 - **Después de una actualización de software**, puede ser necesaria la calibración del movimiento del robot.
 - **Restablecimiento de los ajustes del robot**: mantenga el botón del robot 10 segundos (más detalles en «Calibración del Robot»).
-- **Emparejamiento del mando y el robot** puede ser necesario después de actualizar el software de los dispositivos. Mantenga el botón **▶ Inicio** en el mando más de 10 segundos: el pitido en el segundo 5 significa que hay que seguir pulsando.
+- **Emparejamiento del tablero y el robot** puede ser necesario después de actualizar el software de los dispositivos. Mantenga el botón **▶ Inicio** en el tablero más de 10 segundos: el pitido en el segundo 5 significa que hay que seguir pulsando.
 
 ### Calibración del Robot:
 
@@ -159,7 +159,7 @@ Por defecto:
 <Accordion icon="rectangle-terminal" title="Calibración de la primera versión del dispositivo (MVP) con robot de 10 cm de diámetro">
 Este método sirve solo para la primera versión (MVP). Con el firmware nuevo, «Calibración» con un número simple no funciona: la celda parpadea en rojo.
 
-1. Para calibrar el giroscopio, coloque el robot sobre una superficie horizontal, inserte la ficha "Calibración" en el mando y pulse **▶ Inicio**.
+1. Para calibrar el giroscopio, coloque el robot sobre una superficie horizontal, inserte la ficha "Calibración" en el tablero y pulse **▶ Inicio**.
 2. Para calibrar la distancia de movimiento, mida la ruta real con el comando "Adelante", coloque "Calibración" y la ficha con el valor necesario, luego **▶ Inicio**. Puede escribir el valor en cualquier ficha NFC digital usando un teléfono móvil con NFC como texto en forma de nXXX (por ejemplo, n095 para 95 mm). Después de esto, la distancia de movimiento del robot será precisa.*
 </Accordion>
 
@@ -175,7 +175,7 @@ Todas las advertencias de seguridad y la información normativa están en la pá
 
 El dispositivo contiene baterías Li-ion. **Cargue solo bajo supervisión** de adultos usando USB 5V estándar y cable USB-C.
 
-La carga del mando y el robot (1 hora) es suficiente para 1–2 lecciones; una carga completa (2–3 horas) — para 3 lecciones de 30–45 minutos. Con el tiempo, la capacidad de las baterías puede disminuir, es posible su reemplazo por nuevas 16340 Li-ion.
+La carga del tablero y el robot (1 hora) es suficiente para 1–2 lecciones; una carga completa (2–3 horas) — para 3 lecciones de 30–45 minutos. Con el tiempo, la capacidad de las baterías puede disminuir, es posible su reemplazo por nuevas 16340 Li-ion.
 
 Si el conjunto no se usa durante mucho tiempo, cargue las baterías **una vez cada 2-3 meses**. Con descarga profunda, las baterías pueden fallar y requerir reemplazo.
 

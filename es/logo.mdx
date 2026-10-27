@@ -1,17 +1,17 @@
 ---
 title: "PrimaSTEM y LOGO"
-description: "PrimaSTEM es la gráfica tortuga de LOGO, en las manos y sin pantalla. Cada concepto en el mando y su equivalente en LOGO."
+description: "PrimaSTEM es la gráfica tortuga de LOGO, en las manos y sin pantalla. Cada concepto en el tablero y su equivalente en LOGO."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM se basa en la idea de [LOGO](https://es.wikipedia.org/wiki/Logo_(lenguaje_de_programación)). Seymour Papert y sus colegas crearon este lenguaje para niños en 1967. En LOGO el niño escribe comandos y una tortuga dibuja en la pantalla. En PrimaSTEM el niño coloca fichas en el mando, y un robot de madera con un rotulador dibuja en el papel. Sin teclado, sin pantalla, sin texto.
+PrimaSTEM se basa en la idea de [LOGO](https://es.wikipedia.org/wiki/Logo_(lenguaje_de_programación)). Seymour Papert y sus colegas crearon este lenguaje para niños en 1967. En LOGO el niño escribe comandos y una tortuga dibuja en la pantalla. En PrimaSTEM el niño coloca fichas en el tablero, y un robot de madera con un rotulador dibuja en el papel. Sin teclado, sin pantalla, sin texto.
 
 Esta página es para docentes que conocen LOGO o Scratch, y para cualquiera que quiera entender qué hacen de verdad las fichas.
 
-## Conceptos en el mando
+## Conceptos en el tablero
 
-| Concepto | En el mando PrimaSTEM | En LOGO |
+| Concepto | En el tablero PrimaSTEM | En LOGO |
 |---|---|---|
 | Secuencia | Las fichas se ejecutan de izquierda a derecha por la fila superior. El LED de la pareja que se ejecuta parpadea y luego se apaga | un comando tras otro |
 | Comando | Adelante, Atrás, Izquierda, Derecha, Pausa, Movimiento aleatorio | `forward`, `back`, `left`, `right`, `wait` |
@@ -30,17 +30,17 @@ Esta página es para docentes que conocen LOGO o Scratch, y para cualquiera que 
 | Lápiz | Un rotulador en el centro del robot | `pendown` |
 | Depuración | Miramos el robot, encontramos la ficha equivocada y la cambiamos | corregir la línea |
 
-Cada comando tiene su propio valor guardado: si cambias Adelante, Izquierda no cambia. Al apagar el mando, todos los valores vuelven a los de por defecto: 150 mm, 90°, 1 s para la Pausa. Para cambiar el paso por defecto de forma permanente, usa la ficha de servicio «Establecer longitud de paso predeterminada» (consulta [Dispositivo y configuración](usermanual)).
+Cada comando tiene su propio valor guardado: si cambias Adelante, Izquierda no cambia. Al apagar el tablero, todos los valores vuelven a los de por defecto: 150 mm, 90°, 1 s para la Pausa. Para cambiar el paso por defecto de forma permanente, usa la ficha de servicio «Establecer longitud de paso predeterminada» (consulta [Dispositivo y configuración](usermanual)).
 
 El niño hace las cuentas. El robot ejecuta el programa con exactitud.
 
-## Ejemplos: el mismo programa en el mando y en LOGO
+## Ejemplos: el mismo programa en el tablero y en LOGO
 
-Cada ejemplo tiene un enlace. Abre el [simulador](https://simulator.primastem.com) con este programa en el mando y lo ejecuta.
+Cada ejemplo tiene un enlace. Abre el [simulador](https://simulator.primastem.com) con este programa en el tablero y lo ejecuta.
 
 ### Cuadrado
 
-Mando: fila superior Función × 4. Fila inferior: Adelante 300, Derecha.
+Tablero: fila superior Función × 4. Fila inferior: Adelante 300, Derecha.
 
 ```
 repeat 4 [forward 300 right 90]
@@ -49,7 +49,7 @@ repeat 4 [forward 300 right 90]
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/square-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
@@ -61,7 +61,7 @@ Con niños de 4 a 6 años no hace falta poner números: Adelante y Derecha sin n
 
 ### Triángulo equilátero
 
-Mando: fila superior Función × 3. Fila inferior: Adelante 400, Derecha 120.
+Tablero: fila superior Función × 3. Fila inferior: Adelante 400, Derecha 120.
 
 ```
 repeat 3 [forward 400 right 120]
@@ -70,7 +70,7 @@ repeat 3 [forward 400 right 120]
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/triangle-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
@@ -82,7 +82,7 @@ repeat 3 [forward 400 right 120]
 
 ### Estrella de cinco puntas
 
-Mando: fila superior Función × 5. Fila inferior: Adelante 400, Derecha 144.
+Tablero: fila superior Función × 5. Fila inferior: Adelante 400, Derecha 144.
 
 ```
 repeat 5 [forward 400 right 144]
@@ -91,7 +91,7 @@ repeat 5 [forward 400 right 144]
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/star-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
@@ -103,7 +103,7 @@ repeat 5 [forward 400 right 144]
 
 ### Círculo
 
-Mando: fila superior Función × 36. Fila inferior: Adelante 25, Derecha 10.
+Tablero: fila superior Función × 36. Fila inferior: Adelante 25, Derecha 10.
 
 ```
 repeat 36 [forward 25 right 10]
@@ -112,7 +112,7 @@ repeat 36 [forward 25 right 10]
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/circle-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
@@ -124,7 +124,7 @@ Un círculo es un polígono con muchos lados cortos: 36 × 10° = 360°.
 
 ### Espiral cuadrada (variable y aritmética)
 
-Mando: fila superior Adelante 30, Función × 20. Fila inferior: Derecha, Adelante +30.
+Tablero: fila superior Adelante 30, Función × 20. Fila inferior: Derecha, Adelante +30.
 
 ```
 make "side 30
@@ -139,7 +139,7 @@ repeat 20 [
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/spiral-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
@@ -151,7 +151,7 @@ Adelante 30 fija el valor guardado. Cada vez que se ejecuta la función, «+30»
 
 ### Hexágono (ángulo por división)
 
-Mando: fila superior Derecha 360, Derecha ÷6, Función × 6. Fila inferior: Adelante 200, Derecha.
+Tablero: fila superior Derecha 360, Derecha ÷6, Función × 6. Fila inferior: Adelante 200, Derecha.
 
 ```
 make "angle 360 / 6
@@ -161,7 +161,7 @@ repeat 6 [forward 200 right :angle]
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/hexagon-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Derecha 360 da una vuelta completa y guarda 360. Derecha ÷6 divide el valor guardado y gira 60°. En la función, Derecha sin número vuelve a tomar 60°. Los dos giros del principio solo cambian hacia dónde mira el robot antes de dibujar; la figura sigue siendo un hexágono.
 
-El mando hace la división entera y descarta el resto. Para que la figura se cierre, divide 360 entre un número que no deje resto: 3, 4, 5, 6, 8, 9, 10, 12. Por ejemplo, 360 ÷ 7 da 51°, y al heptágono le faltan 3° para cerrarse.
+El tablero hace la división entera y descarta el resto. Para que la figura se cierre, divide 360 entre un número que no deje resto: 3, 4, 5, 6, 8, 9, 10, 12. Por ejemplo, 360 ÷ 7 da 51°, y al heptágono le faltan 3° para cerrarse.
 
 Más dibujos: [Ejemplos de dibujos](mathdrawings).
 
@@ -185,7 +185,7 @@ PrimaSTEM cubre la base de la gráfica tortuga de LOGO. Algunas cosas funcionan 
 - **Longitud del programa:** 6 parejas en la fila principal, 5 en la Función.
 - **El rotulador se pone a mano** cuando el niño quiere que el robot dibuje.
 
-Cuando el niño se quede pequeño para el mando, el mismo robot funciona con [Scratch](https://scratch.primastem.com).
+Cuando el niño se quede pequeño para el tablero, el mismo robot funciona con [Scratch](https://scratch.primastem.com).
 
 ## Para leer más
 

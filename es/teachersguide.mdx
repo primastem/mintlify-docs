@@ -48,7 +48,7 @@ Las fichas de PrimaSTEM son una representación visual y simplificada de los len
 
 ### ¿Por qué madera?
 
-🌱 El controlador y el robot están hechos de madera. La práctica ha demostrado que los niños prefieren jugar con juguetes de madera: son seguros, duraderos y crean un historial de uso individual.
+🌱 El tablero y el robot están hechos de madera. La práctica ha demostrado que los niños prefieren jugar con juguetes de madera: son seguros, duraderos y crean un historial de uso individual.
 
 ## Concepto de programación con PrimaSTEM
 
@@ -60,7 +60,7 @@ Las fichas físicas de PrimaSTEM son análogas a las instrucciones en los lengua
 
 ### Cola
 
-Los comandos en el controlador de PrimaSTEM se ejecutan estrictamente de izquierda a derecha, demostrando visualmente la cola de ejecución.
+Los comandos en el tablero de PrimaSTEM se ejecutan estrictamente de izquierda a derecha, demostrando visualmente la cola de ejecución.
 
 ### Corrección de errores (depuración)
 
@@ -68,11 +68,11 @@ Un error es fácil de corregir: simplemente reemplace la ficha. Este enfoque des
 
 ### Función
 
-Una función (subrutina) es un conjunto de comandos en la parte inferior del controlador, llamado desde el programa principal mediante la ficha "**Función**".
+Una función (subrutina) es un conjunto de comandos en la parte inferior del tablero, llamado desde el programa principal mediante la ficha "**Función**".
 
 ### Variable
 
-El mando recuerda el último número de cada comando. Adelante, Atrás, Izquierda, Derecha y Pausa guardan cada uno su propio valor. Un comando sin número usa el valor guardado. Esto es una variable: tiene un nombre (el comando) y un valor (el número), y el valor puede cambiar.
+El tablero recuerda el último número de cada comando. Adelante, Atrás, Izquierda, Derecha y Pausa guardan cada uno su propio valor. Un comando sin número usa el valor guardado. Esto es una variable: tiene un nombre (el comando) y un valor (el número), y el valor puede cambiar.
 
 ## Aplicación en otras materias
 
@@ -86,7 +86,7 @@ PrimaSTEM ayuda a dominar otras habilidades:
 
 > Al construir una cadena de fichas, el niño domina la programación de manera táctil, visual y mental. Después de presionar el botón **▶ Inicio**, el robot se mueve y el resultado se compara con la expectativa del niño. Esta experiencia integral acelera el aprendizaje.
 
-## Conociendo el robot y el controlador
+## Conociendo el robot y el tablero
 
 ### El robot
 
@@ -94,23 +94,23 @@ Dígales a los niños que el robot es su amigo que pueden programar. Explique: n
 
 ![robot](../images/book-1/robot.svg)
 
-### El controlador
+### El tablero
 
-Explique que el controlador transmite comandos al robot. Muestre cómo instalar las fichas de comando y programar el robot.
+Explique que el tablero transmite comandos al robot. Muestre cómo instalar las fichas de comando y programar el robot.
 
 ![control](../images/teachersguide/control-board.svg)
 
-> El programa principal se construye en la fila superior del controlador (6 celdas). La fila inferior (5 celdas) es para la subrutina de función y se usa con el comando "**Función**".
+> El programa principal se construye en la fila superior del tablero (6 celdas). La fila inferior (5 celdas) es para la subrutina de función y se usa con el comando "**Función**".
 
 ### Fichas de comando
 
-Las fichas son comandos para el robot que se insertan en el controlador. Después de presionar **▶ Inicio**, el robot ejecuta la secuencia. Cada ficha es un comando separado, enseñando a los niños pensamiento computacional y diseño de programas. Es importante que los niños comprendan qué hace el robot cuando se activa cada comando. Esto les enseña diseño de programas y predicción de acciones del robot. Explique a los niños: las fichas no deben perderse ni dañarse, sin ellas el robot no puede moverse.
+Las fichas son comandos para el robot que se insertan en el tablero. Después de presionar **▶ Inicio**, el robot ejecuta la secuencia. Cada ficha es un comando separado, enseñando a los niños pensamiento computacional y diseño de programas. Es importante que los niños comprendan qué hace el robot cuando se activa cada comando. Esto les enseña diseño de programas y predicción de acciones del robot. Explique a los niños: las fichas no deben perderse ni dañarse, sin ellas el robot no puede moverse.
 
 ## 1 - Primer programa
 
 ### Causa y efecto
 
-El objetivo principal es mostrar a los niños la conexión entre comando y acción. Deje que el niño inserte la ficha "Adelante" en la primera celda del controlador y presione **▶ Inicio**. El niño debe ver la correspondencia entre la ficha y la acción.
+El objetivo principal es mostrar a los niños la conexión entre comando y acción. Deje que el niño inserte la ficha "Adelante" en la primera celda del tablero y presione **▶ Inicio**. El niño debe ver la correspondencia entre la ficha y la acción.
 
 ![forvard](../images/teachersguide/guide1a-board.svg)
 
@@ -254,7 +254,7 @@ Son posibles tanto soluciones simples de tareas con la instalación de la ficha 
 
 ### Bucle de llamada de función
 
-Intente con los niños aplicar un bucle con valores al comando "Función": por ejemplo, hacer que el robot camine en zigzag usando el comando "Función" con un valor de bucle de 5 y la secuencia funcional en la parte inferior del controlador con los comandos "**Adelante**", "**Derecha**", "**Adelante**", "**Izquierda**".
+Intente con los niños aplicar un bucle con valores al comando "Función": por ejemplo, hacer que el robot camine en zigzag usando el comando "Función" con un valor de bucle de 5 y la secuencia funcional en la parte inferior del tablero con los comandos "**Adelante**", "**Derecha**", "**Adelante**", "**Izquierda**".
 
 Primero cree con la función un programa para el movimiento "escalón" - "adelante", "derecha", "adelante", "izquierda" y ejecútelo.
 
@@ -280,7 +280,7 @@ Para introducir el concepto de número aleatorio, tome 4 fichas de bucle: "**2**
 
 Luego muestre a los niños la ficha de valor "**Número de bucle aleatorio**". Explique que esta ficha hace casi lo mismo que hacían antes, sacando fichas de valor aleatorias de la bolsa: selecciona aleatoriamente 1 de 6 números (del 1 al 6), como un dado, para transmitir al robot y repetir acciones.
 
-Coloque la ficha "**Adelante**" en la celda superior del controlador, y la ficha "**Número de bucle aleatorio**" debajo. Pida a los niños que presionen el botón **▶ Inicio**. Devuelva el robot a su lugar original. Repita esta tarea varias veces.
+Coloque la ficha "**Adelante**" en la celda superior del tablero, y la ficha "**Número de bucle aleatorio**" debajo. Pida a los niños que presionen el botón **▶ Inicio**. Devuelva el robot a su lugar original. Repita esta tarea varias veces.
 
 ![rnd-forvard](../images/teachersguide/guide6b-board.svg)
 
@@ -302,7 +302,7 @@ Ejemplo: Agregue el valor **200** al comando "**Adelante**" y observe qué dista
 
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.n200,crig.n180&s=l1047602&r=450-600-0&run)
 
-> **Importante:** El controlador guarda el último valor establecido para los comandos de movimiento y giro. Si se usa un comando sin un nuevo valor, el último valor guardado se aplica hasta que el controlador se apaga. Establecer un nuevo valor cambia el valor predeterminado. Los valores predeterminados (150 mm = 15 cm y 90°) se pueden restaurar estableciéndolos explícitamente o reiniciando el controlador.
+> **Importante:** El tablero guarda el último valor establecido para los comandos de movimiento y giro. Si se usa un comando sin un nuevo valor, el último valor guardado se aplica hasta que el tablero se apaga. Establecer un nuevo valor cambia el valor predeterminado. Los valores predeterminados (150 mm = 15 cm y 90°) se pueden restaurar estableciéndolos explícitamente o reiniciando el tablero.
 
 Cambiar parámetros permite crear trayectorias y escenarios de movimiento más complejos. Vea ejemplos en la [página de dibujos matemáticos](mathdrawings).
 
@@ -312,7 +312,7 @@ Cambiar parámetros permite crear trayectorias y escenarios de movimiento más c
 
 Las operaciones aritméticas con números permiten cambiar dinámicamente los valores en el programa para los comandos de movimiento (Adelante, Atrás, Izquierda, Derecha), haciendo que el control del robot sea más flexible.
 
-Al agregar una operación aritmética, el controlador cambia el número guardado para el comando de movimiento y envía el nuevo valor al robot.
+Al agregar una operación aritmética, el tablero cambia el número guardado para el comando de movimiento y envía el nuevo valor al robot.
 
 Ejemplo:
 
@@ -331,7 +331,7 @@ Pida a los niños que primero adivinen: ¿cuánto medirá el quinto lado? Despu�
 [Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Programa en el mando">
+  <Frame caption="Programa en el tablero">
     <img src="../images/logo/spiral-board.svg" alt="" />
   </Frame>
   <Frame caption="Lo que dibuja el robot">
