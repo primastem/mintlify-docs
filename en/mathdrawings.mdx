@@ -84,6 +84,85 @@ Board: top row Function × 5, Left 360. Bottom row: Forward, Back, Pause 60, Rig
   </Frame>
 </Columns>
 
+## Objects and Games
+
+### Stairs
+
+Board: top row Function × 4. Bottom row: Forward, Right, Forward, Left.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### House
+
+Board: top row Function × 4, Forward, Right 30, Forward, Right 120, Forward. Bottom row: Forward 300, Right.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/house-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Hedgehog
+
+Board: top row Function × 36. Bottom row: Forward 200, Back 200, Right 10.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n200,cbac.n200,crig.n010&s=l1047402&r=300-300-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/hedgehog-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/hedgehog-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Fan
+
+Board: top row Function × 18. Bottom row: Forward +15, Back +15, Right 10.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.a015,cbac.a015,crig.n010&s=l1047502&r=260-530-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/fan-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/fan-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Ladybug's Walk
+
+Board: top row Random Movement × 40.
+
+<Note>Every run draws a new path: the robot picks each step itself. The picture shows one of the possible paths.</Note>
+
+[Run in the simulator](https://simulator.primastem.com/#top=crnd.r040&s=l1144502&r=375-375-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/walk-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/walk-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Stars
 
 ### Simple Five-Pointed Star
@@ -424,6 +503,21 @@ Board: top row Forward 10, Right 30, Function × 36. Bottom row: Forward, Right 
   </Frame>
 </Columns>
 
+### Snake
+
+Board: top row Right 10, Function × 18, Right −20, Function × 18, Right +20, Function × 18. Bottom row: Forward 18, Right.
+
+[Run in the simulator](https://simulator.primastem.com/#top=crig.n010,cfun.r018,crig.s020,cfun.r018,crig.a020,cfun.r018&fn=cfor.n018,crig&s=l1047602&r=141-432-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/snake-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/snake-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ### Double Curl
 
 Board: top row Right 5, Function × 72. Bottom row: Forward 40, Right +10.
@@ -451,6 +545,21 @@ Board: top row Right 10, Function × 36. Bottom row: Forward 60, Right +20.
   </Frame>
   <Frame caption="What the robot draws">
     <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Thorny Ring
+
+Board: top row Function × 24. Bottom row: Forward 150, Back 90, Right 15.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n150,cbac.n090,crig.n015&s=l1047502&r=345-147-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/thornyring-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/thornyring-field.svg" alt="" />
   </Frame>
 </Columns>
 

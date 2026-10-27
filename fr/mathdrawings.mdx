@@ -84,6 +84,85 @@ Tableau de contrôle : rangée supérieure Fonction × 5, Gauche 360. Rangée in
   </Frame>
 </Columns>
 
+## Objets et jeux
+
+### Escalier
+
+Tableau de contrôle : rangée supérieure Fonction × 4. Rangée inférieure : Avancer, Droite, Avancer, Gauche.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Maison
+
+Tableau de contrôle : rangée supérieure Fonction × 4, Avancer, Droite 30, Avancer, Droite 120, Avancer. Rangée inférieure : Avancer 300, Droite.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/house-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Hérisson
+
+Tableau de contrôle : rangée supérieure Fonction × 36. Rangée inférieure : Avancer 200, Reculer 200, Droite 10.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n200,cbac.n200,crig.n010&s=l1047402&r=300-300-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/hedgehog-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/hedgehog-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Éventail
+
+Tableau de contrôle : rangée supérieure Fonction × 18. Rangée inférieure : Avancer +15, Reculer +15, Droite 10.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.a015,cbac.a015,crig.n010&s=l1047502&r=260-530-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/fan-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/fan-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Promenade de la coccinelle
+
+Tableau de contrôle : rangée supérieure Mouvement aléatoire × 40.
+
+<Note>Chaque lancement dessine un nouveau chemin : le robot choisit lui-même chaque pas. L'image montre l'une des possibilités.</Note>
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=crnd.r040&s=l1144502&r=375-375-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/walk-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/walk-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Étoiles
 
 ### Étoile simple à cinq branches
@@ -424,6 +503,21 @@ Tableau de contrôle : rangée supérieure Avancer 10, Droite 30, Fonction × 36
   </Frame>
 </Columns>
 
+### Serpent
+
+Tableau de contrôle : rangée supérieure Droite 10, Fonction × 18, Droite −20, Fonction × 18, Droite +20, Fonction × 18. Rangée inférieure : Avancer 18, Droite.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=crig.n010,cfun.r018,crig.s020,cfun.r018,crig.a020,cfun.r018&fn=cfor.n018,crig&s=l1047602&r=141-432-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/snake-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/snake-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ### Double volute
 
 Tableau de contrôle : rangée supérieure Droite 5, Fonction × 72. Rangée inférieure : Avancer 40, Droite +10.
@@ -451,6 +545,21 @@ Tableau de contrôle : rangée supérieure Droite 10, Fonction × 36. Rangée in
   </Frame>
   <Frame caption="Ce que dessine le robot">
     <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Anneau épineux
+
+Tableau de contrôle : rangée supérieure Fonction × 24. Rangée inférieure : Avancer 150, Reculer 90, Droite 15.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n150,cbac.n090,crig.n015&s=l1047502&r=345-147-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/thornyring-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/thornyring-field.svg" alt="" />
   </Frame>
 </Columns>
 

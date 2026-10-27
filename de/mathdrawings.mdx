@@ -84,6 +84,85 @@ Steuerboard: obere Reihe Funktion × 5, Links 360. Untere Reihe: Vorwärts, Rüc
   </Frame>
 </Columns>
 
+## Gegenstände und Spiele
+
+### Treppe
+
+Steuerboard: obere Reihe Funktion × 4. Untere Reihe: Vorwärts, Rechts, Vorwärts, Links.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Haus
+
+Steuerboard: obere Reihe Funktion × 4, Vorwärts, Rechts 30, Vorwärts, Rechts 120, Vorwärts. Untere Reihe: Vorwärts 300, Rechts.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/house-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Igel
+
+Steuerboard: obere Reihe Funktion × 36. Untere Reihe: Vorwärts 200, Rückwärts 200, Rechts 10.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n200,cbac.n200,crig.n010&s=l1047402&r=300-300-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/hedgehog-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/hedgehog-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Fächer
+
+Steuerboard: obere Reihe Funktion × 18. Untere Reihe: Vorwärts +15, Rückwärts +15, Rechts 10.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.a015,cbac.a015,crig.n010&s=l1047502&r=260-530-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/fan-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/fan-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Spaziergang des Marienkäfers
+
+Steuerboard: obere Reihe Zufällige Bewegung × 40.
+
+<Note>Jeder Durchlauf zeichnet einen neuen Weg: Der Roboter wählt jeden Schritt selbst. Das Bild zeigt eine der Möglichkeiten.</Note>
+
+[Im Simulator starten](https://simulator.primastem.com/#top=crnd.r040&s=l1144502&r=375-375-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/walk-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/walk-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Sterne
 
 ### Einfacher fünfzackiger Stern
@@ -424,6 +503,21 @@ Steuerboard: obere Reihe Vorwärts 10, Rechts 30, Funktion × 36. Untere Reihe: 
   </Frame>
 </Columns>
 
+### Schlange
+
+Steuerboard: obere Reihe Rechts 10, Funktion × 18, Rechts −20, Funktion × 18, Rechts +20, Funktion × 18. Untere Reihe: Vorwärts 18, Rechts.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=crig.n010,cfun.r018,crig.s020,cfun.r018,crig.a020,cfun.r018&fn=cfor.n018,crig&s=l1047602&r=141-432-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/snake-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/snake-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ### Doppelter Schnörkel
 
 Steuerboard: obere Reihe Rechts 5, Funktion × 72. Untere Reihe: Vorwärts 40, Rechts +10.
@@ -451,6 +545,21 @@ Steuerboard: obere Reihe Rechts 10, Funktion × 36. Untere Reihe: Vorwärts 60, 
   </Frame>
   <Frame caption="Was der Roboter zeichnet">
     <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Stachelring
+
+Steuerboard: obere Reihe Funktion × 24. Untere Reihe: Vorwärts 150, Rückwärts 90, Rechts 15.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n150,cbac.n090,crig.n015&s=l1047502&r=345-147-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/thornyring-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/thornyring-field.svg" alt="" />
   </Frame>
 </Columns>
 

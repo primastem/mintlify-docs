@@ -84,6 +84,85 @@ Tablero: fila superior Función × 5, Izquierda 360. Fila inferior: Adelante, At
   </Frame>
 </Columns>
 
+## Objetos y juegos
+
+### Escalera
+
+Tablero: fila superior Función × 4. Fila inferior: Adelante, Derecha, Adelante, Izquierda.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r004&fn=cfor,crig,cfor,clef&s=l1144502&r=75-675-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/stairs-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/stairs-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Casa
+
+Tablero: fila superior Función × 4, Adelante, Derecha 30, Adelante, Derecha 120, Adelante. Fila inferior: Adelante 300, Derecha.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r004,cfor,crig.n030,cfor,crig.n120,cfor&fn=cfor.n300,crig&s=l1047502&r=225-655-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/house-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/house-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Erizo
+
+Tablero: fila superior Función × 36. Fila inferior: Adelante 200, Atrás 200, Derecha 10.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n200,cbac.n200,crig.n010&s=l1047402&r=300-300-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/hedgehog-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/hedgehog-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Abanico
+
+Tablero: fila superior Función × 18. Fila inferior: Adelante +15, Atrás +15, Derecha 10.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r018&fn=cfor.a015,cbac.a015,crig.n010&s=l1047502&r=260-530-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/fan-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/fan-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Paseo de la mariquita
+
+Tablero: fila superior Movimiento aleatorio × 40.
+
+<Note>Cada ejecución dibuja un camino nuevo: el robot elige cada paso por sí mismo. La imagen muestra una de las posibilidades.</Note>
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=crnd.r040&s=l1144502&r=375-375-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/walk-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/walk-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Estrellas
 
 ### Estrella simple de cinco puntas
@@ -424,6 +503,21 @@ Tablero: fila superior Adelante 10, Derecha 30, Función × 36. Fila inferior: A
   </Frame>
 </Columns>
 
+### Serpiente
+
+Tablero: fila superior Derecha 10, Función × 18, Derecha −20, Función × 18, Derecha +20, Función × 18. Fila inferior: Adelante 18, Derecha.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=crig.n010,cfun.r018,crig.s020,cfun.r018,crig.a020,cfun.r018&fn=cfor.n018,crig&s=l1047602&r=141-432-0&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/snake-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/snake-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ### Doble voluta
 
 Tablero: fila superior Derecha 5, Función × 72. Fila inferior: Adelante 40, Derecha +10.
@@ -451,6 +545,21 @@ Tablero: fila superior Derecha 10, Función × 36. Fila inferior: Adelante 60, D
   </Frame>
   <Frame caption="Lo que dibuja el robot">
     <img src="../images/mathdrawings/curlstars-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+### Anillo espinoso
+
+Tablero: fila superior Función × 24. Fila inferior: Adelante 150, Atrás 90, Derecha 15.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfun.r024&fn=cfor.n150,cbac.n090,crig.n015&s=l1047502&r=345-147-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/thornyring-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/thornyring-field.svg" alt="" />
   </Frame>
 </Columns>
 
