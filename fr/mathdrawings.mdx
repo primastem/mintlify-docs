@@ -127,6 +127,38 @@ Tableau de contrôle : rangée supérieure Avancer 20, Fonction × 20. Rangée i
   </Frame>
 </Columns>
 
+## Triangle dans un triangle
+
+Tableau de contrôle : rangée supérieure Avancer 400, Fonction × 6. Rangée inférieure : Droite 120, Avancer, Droite, Avancer ÷2, Avancer.
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Triangles imbriqués
+
+Tableau de contrôle : rangée supérieure Fonction, Droite, Avancer ÷2, Droite 60. Rangée inférieure : Avancer, Droite 120, Avancer, Droite, Avancer.
+
+<Note>Appuyez 4 fois de suite sur **▶ Démarrer** sans déplacer le robot. Le tableau de contrôle garde la longueur du pas d'un lancement à l'autre, donc chaque lancement dessine un triangle deux fois plus petit. Le lien lance le programme une fois, ensuite appuyez vous-même sur **▶ Démarrer** dans le simulateur.</Note>
+
+[Lancer dans le simulateur](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programme sur le tableau de contrôle">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Ce que dessine le robot">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Courbe avec angles négatifs
 
 Tableau de contrôle : rangée supérieure Avancer 10, Droite 30, Fonction × 36. Rangée inférieure : Avancer, Droite −2.

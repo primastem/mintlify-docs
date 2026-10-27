@@ -127,6 +127,38 @@ Tablero: fila superior Adelante 20, Función × 20. Fila inferior: Derecha 120, 
   </Frame>
 </Columns>
 
+## Triángulo dentro de un triángulo
+
+Tablero: fila superior Adelante 400, Función × 6. Fila inferior: Derecha 120, Adelante, Derecha, Adelante ÷2, Adelante.
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Triángulos anidados
+
+Tablero: fila superior Función, Derecha, Adelante ÷2, Derecha 60. Fila inferior: Adelante, Derecha 120, Adelante, Derecha, Adelante.
+
+<Note>Pulsa **▶ Inicio** 4 veces seguidas sin mover el robot. El tablero recuerda la longitud del paso entre ejecuciones, así que cada ejecución dibuja un triángulo la mitad de grande. El enlace ejecuta el programa una vez; después pulsa **▶ Inicio** en el simulador tú mismo.</Note>
+
+[Ejecutar en el simulador](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programa en el tablero">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Lo que dibuja el robot">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Curva con ángulos negativos
 
 Tablero: fila superior Adelante 10, Derecha 30, Función × 36. Fila inferior: Adelante, Derecha −2.

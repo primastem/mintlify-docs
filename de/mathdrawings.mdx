@@ -127,6 +127,38 @@ Steuerboard: obere Reihe Vorwärts 20, Funktion × 20. Untere Reihe: Rechts 120,
   </Frame>
 </Columns>
 
+## Dreieck im Dreieck
+
+Steuerboard: obere Reihe Vorwärts 400, Funktion × 6. Untere Reihe: Rechts 120, Vorwärts, Rechts, Vorwärts ÷2, Vorwärts.
+
+[Im Simulator starten](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Verschachtelte Dreiecke
+
+Steuerboard: obere Reihe Funktion, Rechts, Vorwärts ÷2, Rechts 60. Untere Reihe: Vorwärts, Rechts 120, Vorwärts, Rechts, Vorwärts.
+
+<Note>Drücken Sie **▶ Start** 4-mal hintereinander, ohne den Roboter zu bewegen. Das Steuerboard merkt sich die Schrittlänge zwischen den Durchläufen, deshalb zeichnet jeder Durchlauf ein halb so großes Dreieck. Der Link startet das Programm einmal, danach drücken Sie **▶ Start** im Simulator selbst.</Note>
+
+[Im Simulator starten](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Programm auf dem Steuerboard">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Was der Roboter zeichnet">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Kurve mit negativen Winkeln
 
 Steuerboard: obere Reihe Vorwärts 10, Rechts 30, Funktion × 36. Untere Reihe: Vorwärts, Rechts −2.

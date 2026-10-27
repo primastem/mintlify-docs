@@ -127,6 +127,38 @@ mode: "wide"
   </Frame>
 </Columns>
 
+## Треугольник в треугольнике
+
+Пульт: верхний ряд Вперёд 400, Функция × 6. Нижний ряд: Вправо 120, Вперёд, Вправо, Вперёд ÷2, Вперёд.
+
+[Запустить в симуляторе](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Программа на пульте">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Что нарисует робот">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Вложенные треугольники
+
+Пульт: верхний ряд Функция, Вправо, Вперёд ÷2, Вправо 60. Нижний ряд: Вперёд, Вправо 120, Вперёд, Вправо, Вперёд.
+
+<Note>Нажмите **▶ Старт** 4 раза подряд, не трогая робота. Пульт помнит длину шага между запусками, поэтому каждый запуск рисует треугольник вдвое меньше. Ссылка запускает программу один раз, дальше нажимайте **▶ Старт** в симуляторе сами.</Note>
+
+[Запустить в симуляторе](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Программа на пульте">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Что нарисует робот">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Кривая c отрицательными углами
 
 Пульт: верхний ряд Вперёд 10, Вправо 30, Функция × 36. Нижний ряд: Вперёд, Вправо −2.

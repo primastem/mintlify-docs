@@ -127,6 +127,38 @@ Pilot: górny rząd Naprzód 20, Funkcja × 20. Dolny rząd: Prawo 120, Naprzód
   </Frame>
 </Columns>
 
+## Trójkąt w trójkącie
+
+Pilot: górny rząd Naprzód 400, Funkcja × 6. Dolny rząd: Prawo 120, Naprzód, Prawo, Naprzód ÷2, Naprzód.
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Zagnieżdżone trójkąty
+
+Pilot: górny rząd Funkcja, Prawo, Naprzód ÷2, Prawo 60. Dolny rząd: Naprzód, Prawo 120, Naprzód, Prawo, Naprzód.
+
+<Note>Naciśnij **▶ Start** 4 razy z rzędu, nie ruszając robota. Pilot pamięta długość kroku między uruchomieniami, więc każde uruchomienie rysuje trójkąt o połowę mniejszy. Link uruchamia program raz, potem naciskaj **▶ Start** w symulatorze sam.</Note>
+
+[Uruchom w symulatorze](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program na pilocie">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="Co narysuje robot">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Krzywa z ujemnymi kątami
 
 Pilot: górny rząd Naprzód 10, Prawo 30, Funkcja × 36. Dolny rząd: Naprzód, Prawo −2.

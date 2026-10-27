@@ -127,6 +127,38 @@ Board: top row Forward 20, Function × 20. Bottom row: Right 120, Forward +20, R
   </Frame>
 </Columns>
 
+## Triangle in a Triangle
+
+Board: top row Forward 400, Function × 6. Bottom row: Right 120, Forward, Right, Forward ÷2, Forward.
+
+[Run in the simulator](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## Nested Triangles
+
+Board: top row Function, Right, Forward ÷2, Right 60. Bottom row: Forward, Right 120, Forward, Right, Forward.
+
+<Note>Press **▶ Start** 4 times in a row without moving the robot. The board remembers the step length between runs, so each run draws a triangle half the size. The link runs the program once; after that, press **▶ Start** in the simulator yourself.</Note>
+
+[Run in the simulator](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="Program on the board">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="What the robot draws">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## Curve with Negative Angles
 
 Board: top row Forward 10, Right 30, Function × 36. Bottom row: Forward, Right −2.

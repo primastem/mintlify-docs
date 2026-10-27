@@ -127,6 +127,38 @@ mode: "wide"
   </Frame>
 </Columns>
 
+## 三角形の中の三角形
+
+コントローラー:上段 前進400、関数 × 6。下段:右120、前進、右、前進 ÷2、前進。
+
+[シミュレーターで実行](https://simulator.primastem.com/#top=cfor.n400,cfun.r006&fn=crig.n120,cfor,crig,cfor.d002,cfor&s=l1047402&r=500-473-270&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/tritri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/tritri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
+## 入れ子の三角形
+
+コントローラー:上段 関数、右、前進 ÷2、右60。下段:前進、右120、前進、右、前進。
+
+<Note>ロボットを動かさずに **▶ スタート** を4回続けて押します。コントローラーは実行のあいだも歩幅を覚えているので、実行するたびに半分の大きさの三角形を描きます。リンクはプログラムを1回だけ実行します。そのあとはシミュレーターで **▶ スタート** を押してください。</Note>
+
+[シミュレーターで実行](https://simulator.primastem.com/#p=cfun--crig--cfor-d002-crig-n060-----cfor--crig-n120-cfor--crig--cfor-&s=l1047402&r=225-235-90&run)
+
+<Columns cols={2}>
+  <Frame caption="コントローラー上のプログラム">
+    <img src="../images/mathdrawings/nestedtri-board.svg" alt="" />
+  </Frame>
+  <Frame caption="ロボットが描く図形">
+    <img src="../images/mathdrawings/nestedtri-field.svg" alt="" />
+  </Frame>
+</Columns>
+
 ## 負の角度の曲線
 
 コントローラー:上段 前進10、右30、関数 × 36。下段:前進、右 −2。
