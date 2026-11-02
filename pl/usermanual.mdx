@@ -145,9 +145,10 @@ Domyślnie:
 
 ### Kalibracja robota:
 
+- Przed kalibracją zaktualizuj robota i pilota do najnowszej stabilnej wersji oprogramowania na [update.primastem.com](https://update.primastem.com). Kalibracja na starym oprogramowaniu może być niedokładna.
 - Najpierw uruchom żeton „Kalibracja” bez liczby: robot sprawdza biegunowość silników, usuwa luzy i ustawia jazdę po linii prostej. Żeton działa do 2 minut. Przez pierwsze pół minuty robot musi stać nieruchomo, nie dotykaj go. Przycisk robota w tym czasie nie działa.
-- Potem skalibruj kąty obrotu. Zaznacz na blacie dokładne ustawienie robota. Potrzebujesz 16 obrotów o 90° w prawo: zbuduj program „Powtórzenie 8 + Prawo” i uruchom go dwa razy. Robot powinien wykonać cztery pełne obroty (90×16 = 1440°) i wrócić do pierwotnego ustawienia.
-- Oceń odchylenie od znaku i wprowadź poprawkę żetonem „Kalibracja” plus żeton z liczbą: jeśli robot zatrzymał się przed znakiem, dodaj „+” (na przykład „Kalibracja” + „+5”); jeśli przekroczył znak, dodaj „−” (na przykład „Kalibracja” + „−5”), potem **▶ Start**. Liczba mówi, o ile stopni robot pomylił się łącznie we wszystkich 16 obrotach. Więcej niż 90 robot nie przyjmie. Zwykła liczba bez „+” lub „−” przy „Kalibracji” nie działa: pole mignie na czerwono.
+- Potem skalibruj kąty obrotu. Zaznacz na blacie dokładne ustawienie robota. Potrzebujesz 32 obrotów o 90° w prawo: zbuduj program „Powtórzenie 8 + Prawo” i uruchom go cztery razy. Robot powinien wykonać osiem pełnych obrotów (90×32 = 2880°) i wrócić do pierwotnego ustawienia.
+- Oceń odchylenie od znaku i wprowadź poprawkę żetonem „Kalibracja” plus żeton z liczbą: jeśli robot zatrzymał się przed znakiem, dodaj „+” (na przykład „Kalibracja” + „+5”); jeśli przekroczył znak, dodaj „−” (na przykład „Kalibracja” + „−5”), potem **▶ Start**. Liczba mówi, o ile stopni robot pomylił się łącznie we wszystkich 32 obrotach. Robot przyjmuje liczby do 180. Jeśli liczba jest większa albo robot nie może zapisać poprawki, pole mignie na czerwono. Zwykła liczba bez „+” lub „−” przy „Kalibracji” nie działa: pole mignie na czerwono.
 - Powtarzaj, aż robot wróci dokładnie do pierwotnego ustawienia.
 - Kalibracja zapisuje się po wyłączeniu zasilania.
 - Uwaga! Reset kalibracji: przytrzymaj przycisk robota przez 10 sekund, światła mrugną na czerwono, zielono, niebiesko i biało. Reset kasuje wszystkie kalibracje, głośność i wyłączony dźwięk. Po resecie wyłącz i włącz robota, a potem powtórz kalibrację od początku.

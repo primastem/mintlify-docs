@@ -149,9 +149,10 @@ Som standard:
 
 ### Robotkalibrering:
 
+- Uppdatera roboten och kontrollpanelen till den senaste stabila firmwaren på [update.primastem.com](https://update.primastem.com) innan du kalibrerar. En kalibrering som görs med gammal firmware kan bli inexakt.
 - Kör först brickan «Kalibrering» utan siffra: roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram. Brickan arbetar i upp till 2 minuter. Den första halvminuten måste roboten stå stilla, rör den inte. Robotknappen fungerar inte under tiden.
-- Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordsytan. Det behövs 16 svängar på 90° medurs: skapa programmet «Upprepning 8 + högersväng» och kör det två gånger. Roboten ska göra fyra hela varv (90×16 = 1440°) och återgå till sin ursprungliga riktning.
-- Bedöm avvikelsen från markeringen och korrigera med brickan «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan **▶ Start**. Talet anger hur många grader roboten missade under alla 16 svängar tillsammans. Mer än 90 tar roboten inte emot. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: facket blinkar rött.
+- Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordsytan. Det behövs 32 svängar på 90° medurs: skapa programmet «Upprepning 8 + högersväng» och kör det fyra gånger. Roboten ska göra åtta hela varv (90×32 = 2880°) och återgå till sin ursprungliga riktning.
+- Bedöm avvikelsen från markeringen och korrigera med brickan «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan **▶ Start**. Talet anger hur många grader roboten missade under alla 32 svängar tillsammans. Roboten tar emot tal upp till 180. Om talet är större eller roboten inte kan spara korrigeringen blinkar facket rött. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: facket blinkar rött.
 - Upprepa tills roboten återgår exakt till sin ursprungliga riktning.
 - Kalibreringen sparas efter avstängning.
 - Observera! Återställning av kalibreringen: håll robotknappen i 10 sekunder, lamporna blinkar rött, grönt, blått och vitt. Återställningen raderar alla kalibreringar, volymen och avstängt ljud. Stäng sedan av och slå på roboten och gör om kalibreringen från början.

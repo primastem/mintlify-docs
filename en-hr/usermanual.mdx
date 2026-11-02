@@ -145,9 +145,10 @@ Zadano:
 
 ### Kalibracija robota:
 
+- Prije kalibracije ažurirajte robota i upravljačku ploču na najnoviji stabilni firmware na [update.primastem.com](https://update.primastem.com). Kalibracija napravljena na starom firmwareu može biti netočna.
 - Prvo pokrenite žeton "Kalibracija" bez broja: robot mjeri polaritet motora, uklanja zazor i podešava pravocrtno kretanje. Žeton radi do 2 minute. Prvih pola minute robot mora mirovati, nemojte ga dirati. Tipka robota u to vrijeme ne radi.
-- Zatim kalibrirajte kutove okreta. Označite točnu orijentaciju robota na podlozi. Potrebno je 16 okreta od 90° u smjeru kazaljke na satu: sastavite program "Ponovi 8 + okret udesno" i pokrenite ga dvaput. Robot treba napraviti četiri puna kruga (90×16 = 1440°) i vratiti se u početnu orijentaciju.
-- Procijenite odstupanje od oznake i primijenite ispravak žetonom "Kalibracija" plus žeton broja: ako se robot zaustavi prije oznake, dodajte "+" (na primjer "Kalibracija" + "+5"); ako je prijeđe, dodajte "−" (na primjer "Kalibracija" + "−5"), zatim **▶ Start**. Broj je ukupno odstupanje u stupnjevima kroz svih 16 okreta zajedno. Robot ne prihvaća više od 90. Običan broj bez "+" ili "−" uz "Kalibraciju" ne radi: polje treperi crveno.
+- Zatim kalibrirajte kutove okreta. Označite točnu orijentaciju robota na podlozi. Potrebna su 32 okreta od 90° u smjeru kazaljke na satu: sastavite program "Ponovi 8 + okret udesno" i pokrenite ga četiri puta. Robot treba napraviti osam punih krugova (90×32 = 2880°) i vratiti se u početnu orijentaciju.
+- Procijenite odstupanje od oznake i primijenite ispravak žetonom "Kalibracija" plus žeton broja: ako se robot zaustavi prije oznake, dodajte "+" (na primjer "Kalibracija" + "+5"); ako je prijeđe, dodajte "−" (na primjer "Kalibracija" + "−5"), zatim **▶ Start**. Broj je ukupno odstupanje u stupnjevima kroz sva 32 okreta zajedno. Robot prihvaća brojeve do 180. Ako je broj veći ili robot ne može spremiti ispravak, polje treperi crveno. Običan broj bez "+" ili "−" uz "Kalibraciju" ne radi: polje treperi crveno.
 - Ponavljajte dok se robot ne vrati točno u početnu orijentaciju.
 - Kalibracija se pamti i nakon isključivanja.
 - Pozor! Poništavanje kalibracije: držite tipku robota 10 sekundi, svjetla trepere crveno, zeleno, plavo i bijelo. Poništavanje briše sve kalibracije, glasnoću i isključeni zvuk. Nakon poništavanja isključite i uključite robota, pa kalibraciju ponovite od početka.
