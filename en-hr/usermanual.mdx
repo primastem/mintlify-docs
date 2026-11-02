@@ -95,6 +95,19 @@ Ako veze nema, ponovno pokrenite oba uređaja ili ih napunite. Veza se može pri
 
 > **Nakon ažuriranja softvera uređaja** možda će biti potrebno ponovno sparivanje: uključite robota, zatim ploču, pa držite tipku **▶ Start** na ploči dulje od 10 sekundi. U 5. sekundi čut ćete kratki zvučni signal: nastavite držati. Sparivanje počinje u 10. sekundi.
 
+### Upravljanje robotom naginjanjem upravljačke ploče
+
+Čim se upravljačka ploča poveže s robotom, robotom možete upravljati bez žetona, naginjanjem upravljačke ploče. To radi dok nema postavljenih žetona i dok još niste pritisnuli **▶ Start**.
+
+- Najprije položite upravljačku ploču ravno na jednu sekundu. Do tada robot ne reagira na naginjanje.
+- Nagnite je od sebe: robot prijeđe 15 cm naprijed. Prema sebi: 15 cm natrag.
+- Nagnite je ulijevo ili udesno: robot se okrene za 90° na istu stranu.
+- Pri svakom koraku upravljačka ploča kratko zapišti.
+- Dok je upravljačka ploča nagnuta, robot radi korak za korakom. Vratite je u vodoravan položaj: robot završi trenutni korak i zaustavi se.
+- Naginjite jasno, više od 20°. Ako vam ruka malo drhti, robot se neće pokrenuti.
+
+Upravljanje naginjanjem isključuje se čim stavite žeton ili pritisnete **▶ Start**. Ponovno se uključuje kad se upravljačka ploča opet poveže s robotom, na primjer nakon što isključite i uključite robota.
+
 ## Kako to radi?
 
 Za programiranje kretanja stavite žetone naredbi u utore ploče (na primjer, "Naprijed", "Lijevo", "Funkcija" itd.). Možete zadati vrijednosti naredbi i broj ponavljanja, kao i vrijednosti kuta, udaljenosti i aritmetičkih operacija.

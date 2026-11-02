@@ -99,6 +99,19 @@ Wenn keine Verbindung besteht, starten Sie beide Geräte neu oder laden Sie sie 
 
 > **Nach einer Software-Aktualisierung der Geräte** kann eine Paarung erforderlich sein: Schalten Sie den Roboter ein, dann das Steuerboard, drücken und halten Sie die Taste **▶ Start** auf dem Steuerboard länger als 10 Sekunden. In der 5. Sekunde ertönt ein kurzer Signalton: nicht loslassen, weiter halten. In der 10. Sekunde beginnt die Paarung.
 
+### Steuern durch Neigen des Steuerpults
+
+Sobald sich das Steuerpult mit dem Roboter verbunden hat, können Sie den Roboter ohne Token steuern, indem Sie das Steuerpult neigen. Das funktioniert, solange keine Token eingesetzt sind und Sie **▶ Start** noch nicht gedrückt haben.
+
+- Legen Sie das Steuerpult zuerst eine Sekunde lang flach hin. Vorher reagiert der Roboter nicht auf Neigungen.
+- Neigen Sie das Steuerpult von sich weg: Der Roboter fährt 15 cm vorwärts. Zu sich hin: 15 cm rückwärts.
+- Neigen Sie es nach links oder rechts: Der Roboter dreht sich um 90° in dieselbe Richtung.
+- Bei jedem Schritt piept das Steuerpult kurz.
+- Solange das Steuerpult geneigt bleibt, macht der Roboter einen Schritt nach dem anderen. Bringen Sie es wieder in die Waagerechte: Der Roboter beendet den aktuellen Schritt und hält an.
+- Neigen Sie deutlich, um mehr als 20°. Wenn die Hand leicht zittert, fährt der Roboter nicht los.
+
+Die Neigungssteuerung schaltet sich aus, sobald Sie einen Token einsetzen oder **▶ Start** drücken. Sie schaltet sich wieder ein, wenn sich das Steuerpult erneut mit dem Roboter verbindet, zum Beispiel nachdem Sie den Roboter aus- und wieder eingeschaltet haben.
+
 ## Wie funktioniert es?
 
 Zur Programmierung der Bewegung setzen Sie Befehls-Tokens in die Schächte des Steuerboards ein (z. B. "Vorwärts", "Links", "Funktion" usw.).
