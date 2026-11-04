@@ -21,7 +21,8 @@
             "pages": [
               "en/quickstart",
               "en/intro",
-              "en/usermanual"
+              "en/usermanual",
+              "en/update"
             ]
           },
           {
@@ -64,7 +65,8 @@
             "pages": [
               "fr/quickstart",
               "fr/intro",
-              "fr/usermanual"
+              "fr/usermanual",
+              "fr/update"
             ]
           },
           {
@@ -107,7 +109,8 @@
             "pages": [
               "de/quickstart",
               "de/intro",
-              "de/usermanual"
+              "de/usermanual",
+              "de/update"
             ]
           },
           {
@@ -150,7 +153,8 @@
             "pages": [
               "es/quickstart",
               "es/intro",
-              "es/usermanual"
+              "es/usermanual",
+              "es/update"
             ]
           },
           {
@@ -193,7 +197,8 @@
             "pages": [
               "nl/quickstart",
               "nl/intro",
-              "nl/usermanual"
+              "nl/usermanual",
+              "nl/update"
             ]
           },
           {
@@ -236,7 +241,8 @@
             "pages": [
               "it/quickstart",
               "it/intro",
-              "it/usermanual"
+              "it/usermanual",
+              "it/update"
             ]
           },
           {
@@ -279,7 +285,8 @@
             "pages": [
               "no/quickstart",
               "no/intro",
-              "no/usermanual"
+              "no/usermanual",
+              "no/update"
             ]
           },
           {
@@ -322,7 +329,8 @@
             "pages": [
               "sv/quickstart",
               "sv/intro",
-              "sv/usermanual"
+              "sv/usermanual",
+              "sv/update"
             ]
           },
           {
@@ -365,7 +373,8 @@
             "pages": [
               "pl/quickstart",
               "pl/intro",
-              "pl/usermanual"
+              "pl/usermanual",
+              "pl/update"
             ]
           },
           {
@@ -408,7 +417,8 @@
             "pages": [
               "en-hr/quickstart",
               "en-hr/intro",
-              "en-hr/usermanual"
+              "en-hr/usermanual",
+              "en-hr/update"
             ]
           },
           {
@@ -451,7 +461,8 @@
             "pages": [
               "jp/quickstart",
               "jp/intro",
-              "jp/usermanual"
+              "jp/usermanual",
+              "jp/update"
             ]
           },
           {
@@ -494,7 +505,8 @@
             "pages": [
               "ru/quickstart",
               "ru/intro",
-              "ru/usermanual"
+              "ru/usermanual",
+              "ru/update"
             ]
           },
           {

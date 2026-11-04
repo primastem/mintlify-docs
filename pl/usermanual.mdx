@@ -158,7 +158,7 @@ Domyślnie:
 
 ### Kalibracja robota:
 
-- Przed kalibracją zaktualizuj robota i pilota do najnowszej stabilnej wersji oprogramowania na [update.primastem.com](https://update.primastem.com). Kalibracja na starym oprogramowaniu może być niedokładna.
+- Przed kalibracją zaktualizuj robota i pilota do najnowszej stabilnej wersji oprogramowania na [update.primastem.com](https://update.primastem.com) ([jak zaktualizować](/pl/update)). Kalibracja na starym oprogramowaniu może być niedokładna.
 - Najpierw uruchom żeton „Kalibracja” bez liczby: robot sprawdza biegunowość silników, usuwa luzy i ustawia jazdę po linii prostej. Żeton działa do 2 minut. Przez pierwsze pół minuty robot musi stać nieruchomo, nie dotykaj go. Przycisk robota w tym czasie nie działa.
 - Potem skalibruj kąty obrotu. Zaznacz na blacie dokładne ustawienie robota. Potrzebujesz 32 obrotów o 90° w prawo: zbuduj program „Powtórzenie 8 + Prawo” i uruchom go cztery razy. Robot powinien wykonać osiem pełnych obrotów (90×32 = 2880°) i wrócić do pierwotnego ustawienia.
 - Oceń odchylenie od znaku i wprowadź poprawkę żetonem „Kalibracja” plus żeton z liczbą: jeśli robot zatrzymał się przed znakiem, dodaj „+” (na przykład „Kalibracja” + „+5”); jeśli przekroczył znak, dodaj „−” (na przykład „Kalibracja” + „−5”), potem **▶ Start**. Liczba mówi, o ile stopni robot pomylił się łącznie we wszystkich 32 obrotach. Robot przyjmuje liczby do 180. Jeśli liczba jest większa albo robot nie może zapisać poprawki, pole mignie na czerwono. Zwykła liczba bez „+” lub „−” przy „Kalibracji” nie działa: pole mignie na czerwono.

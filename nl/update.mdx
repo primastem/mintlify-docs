@@ -1,0 +1,95 @@
+---
+title: "Firmware bijwerken"
+description: "Zo werk je de robot en de bediening bij via de browser."
+icon: "download"
+mode: "default"
+---
+
+Het bijwerken gebeurt in de browser op [update.primastem.com](https://update.primastem.com). Je hoeft niets te installeren. De updatesite is in het Engels, dus de schermafbeeldingen ook.
+
+<Info>Je hebt een computer met Chrome of Edge nodig en een USB-C-kabel die data overdraagt. Een kabel die alleen oplaadt werkt niet.</Info>
+
+<Steps>
+  <Step title="Zet het apparaat aan en sluit het aan">
+    Zet de robot of de bediening aan en sluit die met de kabel aan op de computer. Een uitgeschakeld apparaat ziet de computer niet.
+  </Step>
+  <Step title="Open de updatesite">
+    Open [update.primastem.com](https://update.primastem.com) in Chrome of Edge.
+  </Step>
+  <Step title="Kies het apparaat">
+    Kies in de bovenste twee regels **Robot** of **Control board** (bediening). Laat de andere regels met rust: dat zijn testversies.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Kies de taal">
+    Kies de taal die het apparaat gaat spreken.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Klik op Connect">
+    Klik op de blauwe knop **Connect** onder aan de pagina.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Kies de poort">
+    Er opent een venster in de taal van je browser. Selecteer de regel **USB JTAG/serial debug unit (COM...)** en bevestig met de verbindknop in dat venster. Het getal na COM verschilt per computer.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Start de installatie">
+    Klik op **Install Robot update**. Bij de bediening heet deze regel **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Vink Erase device niet aan">
+    Laat het vakje **Erase device** leeg en klik op **Next**. Wissen verwijdert de kalibratie en de koppeling tussen robot en bediening. Vink het alleen aan als PrimaSTEM-support daarom vraagt.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Bevestig">
+    Klik op **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Wacht">
+    Het bijwerken duurt ongeveer 2 minuten. Houd de pagina in beeld en koppel de kabel niet los.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Rond af">
+    Als **Installation complete!** verschijnt, klik je op **Next**, sluit je het venster en koppel je de kabel los.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Werk het andere apparaat op dezelfde manier bij.
+
+## Als er iets misgaat
+
+- **De robot en de bediening maken geen verbinding.** Koppel ze opnieuw, zie [Verbinding tussen Bediening en Robot](/nl/usermanual#verbinding-tussen-bediening-en-robot).
+- **Het venster No port selected verschijnt.** De computer heeft het apparaat niet gevonden, of er is geen regel in de lijst gekozen. Controleer of het apparaat aanstaat en de kabel data overdraagt, en klik op **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Het bijwerken stopt met Installation failed.** Koppel de kabel los, sluit hem weer aan en begin opnieuw bij stap 2. Helpt dat niet, [neem dan contact op](/nl/contacts).

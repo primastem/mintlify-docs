@@ -1,0 +1,95 @@
+---
+title: "Uppdatera firmware"
+description: "Så uppdaterar du roboten och kontrollpanelen i webbläsaren."
+icon: "download"
+mode: "default"
+---
+
+Uppdateringen sker i webbläsaren på [update.primastem.com](https://update.primastem.com). Du behöver inte installera något. Uppdateringssidan är på engelska, så skärmbilderna är också på engelska.
+
+<Info>Du behöver en dator med Chrome eller Edge och en USB-C-kabel som överför data. En kabel som bara laddar fungerar inte.</Info>
+
+<Steps>
+  <Step title="Slå på enheten och anslut den">
+    Slå på roboten eller kontrollpanelen och anslut den till datorn med kabeln. Datorn ser inte en enhet som är avstängd.
+  </Step>
+  <Step title="Öppna uppdateringssidan">
+    Öppna [update.primastem.com](https://update.primastem.com) i Chrome eller Edge.
+  </Step>
+  <Step title="Välj enhet">
+    Välj **Robot** eller **Control board** (kontrollpanel) på de två översta raderna. Låt de andra raderna vara: det är testversioner.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Välj språk">
+    Välj det språk som enheten ska tala.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Klicka på Connect">
+    Klicka på den blå knappen **Connect** längst ner på sidan.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Välj port">
+    Ett fönster öppnas på webbläsarens språk. Markera raden **USB JTAG/serial debug unit (COM...)** och bekräfta med anslutningsknappen i fönstret. Siffran efter COM skiljer sig mellan datorer.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Starta installationen">
+    Klicka på **Install Robot update**. För kontrollpanelen heter raden **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Kryssa inte i Erase device">
+    Lämna rutan **Erase device** tom och klicka på **Next**. Radering tar bort kalibreringen och parkopplingen mellan robot och kontrollpanel. Kryssa bara i den om PrimaSTEM-support ber dig.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Bekräfta">
+    Klicka på **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Vänta">
+    Uppdateringen tar ungefär 2 minuter. Låt sidan vara synlig på skärmen och koppla inte ur kabeln.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Avsluta">
+    När **Installation complete!** visas klickar du på **Next**, stänger fönstret och kopplar ur kabeln.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Uppdatera den andra enheten på samma sätt.
+
+## Om något går fel
+
+- **Roboten och kontrollpanelen ansluter inte till varandra.** Parkoppla dem igen, se [Anslutning mellan Kontrollpanel och Robot](/sv/usermanual#anslutning-mellan-kontrollpanel-och-robot).
+- **Fönstret No port selected visas.** Datorn hittade inte enheten, eller så valdes ingen rad i listan. Kontrollera att enheten är på och att kabeln överför data, och klicka på **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Uppdateringen stannar med Installation failed.** Koppla ur kabeln, sätt i den igen och börja om från steg 2. Om det inte hjälper, [kontakta oss](/sv/contacts).

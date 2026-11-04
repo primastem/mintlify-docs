@@ -1,0 +1,95 @@
+---
+title: "Обновление прошивки"
+description: "Как обновить робота и пульт через браузер."
+icon: "download"
+mode: "default"
+---
+
+Обновление идёт в браузере на сайте [update.primastem.com](https://update.primastem.com). Устанавливать ничего не нужно. Сайт обновления на английском, поэтому и снимки на английском.
+
+<Info>Нужен компьютер с Chrome или Edge и кабель USB-C, который передаёт данные. Кабель только для зарядки не подойдёт.</Info>
+
+<Steps>
+  <Step title="Включите устройство и подключите его">
+    Включите робота или пульт и подключите кабелем к компьютеру. Выключенное устройство компьютер не видит.
+  </Step>
+  <Step title="Откройте сайт обновления">
+    Откройте [update.primastem.com](https://update.primastem.com) в Chrome или Edge.
+  </Step>
+  <Step title="Выберите устройство">
+    Выберите в двух верхних строках **Robot** (робот) или **Control board** (пульт). Остальные строки не трогайте: это тестовые версии.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Выберите язык">
+    Выберите язык, на котором устройство будет говорить.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Нажмите Connect">
+    Нажмите синюю кнопку **Connect** внизу страницы.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Выберите порт">
+    Откроется окно на языке браузера. Выберите строку **USB JTAG/serial debug unit (COM...)** и нажмите в этом окне кнопку подключения. Число после COM на разных компьютерах разное.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Запустите установку">
+    Нажмите **Install Robot update**. Для пульта строка называется **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Не отмечайте Erase device">
+    Оставьте галочку **Erase device** пустой и нажмите **Next**. Стирание удаляет калибровку и сопряжение робота с пультом. Отмечайте её только по просьбе поддержки PrimaSTEM.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Подтвердите">
+    Нажмите **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Подождите">
+    Обновление занимает около 2 минут. Не сворачивайте страницу и не отключайте кабель.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Завершите">
+    Когда появится **Installation complete!**, нажмите **Next**, закройте окно и отключите кабель.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Второе устройство обновите так же.
+
+## Если что-то пошло не так
+
+- **Робот и пульт не соединяются.** Выполните сопряжение заново, см. [Соединение пульта и робота](/ru/usermanual#соединение-пульта-и-робота).
+- **Появилось окно No port selected.** Компьютер не нашёл устройство, или в списке не выбрана строка. Проверьте, что устройство включено и кабель передаёт данные, и нажмите **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Обновление остановилось с надписью Installation failed.** Отключите кабель, подключите снова и начните с шага 2. Если не помогло, [напишите нам](/ru/contacts).

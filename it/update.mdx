@@ -1,0 +1,95 @@
+---
+title: "Aggiornare il firmware"
+description: "Come aggiornare il robot e la pulsantiera dal browser."
+icon: "download"
+mode: "default"
+---
+
+L'aggiornamento si fa nel browser su [update.primastem.com](https://update.primastem.com). Non devi installare nulla. Il sito di aggiornamento è in inglese, quindi anche le schermate sono in inglese.
+
+<Info>Ti servono un computer con Chrome o Edge e un cavo USB-C che trasmette dati. Un cavo di sola ricarica non funziona.</Info>
+
+<Steps>
+  <Step title="Accendi il dispositivo e collegalo">
+    Accendi il robot o la pulsantiera e collegalo al computer con il cavo. Il computer non vede un dispositivo spento.
+  </Step>
+  <Step title="Apri il sito di aggiornamento">
+    Apri [update.primastem.com](https://update.primastem.com) in Chrome o Edge.
+  </Step>
+  <Step title="Scegli il dispositivo">
+    Scegli **Robot** o **Control board** (pulsantiera) nelle prime due righe. Lascia stare le altre righe: sono versioni di prova.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Scegli la lingua">
+    Scegli la lingua in cui parlerà il dispositivo.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Fai clic su Connect">
+    Fai clic sul pulsante azzurro **Connect** in fondo alla pagina.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Scegli la porta">
+    Si apre una finestra nella lingua del browser. Seleziona la riga **USB JTAG/serial debug unit (COM...)** e conferma con il pulsante di connessione di quella finestra. Il numero dopo COM cambia da un computer all'altro.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Avvia l'installazione">
+    Fai clic su **Install Robot update**. Per la pulsantiera questa riga si chiama **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Non spuntare Erase device">
+    Lascia vuota la casella **Erase device** e fai clic su **Next**. La cancellazione elimina la calibrazione e l'associazione tra robot e pulsantiera. Spuntala solo se te lo chiede l'assistenza PrimaSTEM.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Conferma">
+    Fai clic su **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Attendi">
+    L'aggiornamento richiede circa 2 minuti. Tieni la pagina sullo schermo e non scollegare il cavo.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Concludi">
+    Quando compare **Installation complete!**, fai clic su **Next**, chiudi la finestra e scollega il cavo.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Aggiorna l'altro dispositivo allo stesso modo.
+
+## Se qualcosa non funziona
+
+- **Il robot e la pulsantiera non si collegano.** Ripeti l'associazione, vedi [Connessione tra Pulsantiera e Robot](/it/usermanual#connessione-tra-pulsantiera-e-robot).
+- **Compare la finestra No port selected.** Il computer non ha trovato il dispositivo, oppure non hai scelto una riga dell'elenco. Controlla che il dispositivo sia acceso e che il cavo trasmetta dati, poi fai clic su **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **L'aggiornamento si ferma con Installation failed.** Scollega il cavo, ricollegalo e ricomincia dal passo 2. Se non basta, [scrivici](/it/contacts).

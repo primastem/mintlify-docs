@@ -1,0 +1,95 @@
+---
+title: "Aktualizacja oprogramowania"
+description: "Jak zaktualizować robota i pilota w przeglądarce."
+icon: "download"
+mode: "default"
+---
+
+Aktualizacja odbywa się w przeglądarce na stronie [update.primastem.com](https://update.primastem.com). Nie trzeba niczego instalować. Strona aktualizacji jest po angielsku, dlatego zrzuty ekranu też są po angielsku.
+
+<Info>Potrzebujesz komputera z Chrome lub Edge i kabla USB-C, który przesyła dane. Kabel tylko do ładowania nie zadziała.</Info>
+
+<Steps>
+  <Step title="Włącz urządzenie i podłącz je">
+    Włącz robota lub pilota i podłącz go kablem do komputera. Komputer nie widzi wyłączonego urządzenia.
+  </Step>
+  <Step title="Otwórz stronę aktualizacji">
+    Otwórz [update.primastem.com](https://update.primastem.com) w Chrome lub Edge.
+  </Step>
+  <Step title="Wybierz urządzenie">
+    W dwóch górnych wierszach wybierz **Robot** lub **Control board** (pilot). Pozostałych wierszy nie ruszaj: to wersje testowe.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Wybierz język">
+    Wybierz język, w którym urządzenie będzie mówić.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Kliknij Connect">
+    Kliknij niebieski przycisk **Connect** na dole strony.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Wybierz port">
+    Otworzy się okno w języku przeglądarki. Zaznacz wiersz **USB JTAG/serial debug unit (COM...)** i potwierdź przyciskiem połączenia w tym oknie. Liczba po COM jest różna na różnych komputerach.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Rozpocznij instalację">
+    Kliknij **Install Robot update**. Dla pilota ten wiersz nazywa się **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Nie zaznaczaj Erase device">
+    Zostaw pole **Erase device** puste i kliknij **Next**. Kasowanie usuwa kalibrację i parowanie robota z pilotem. Zaznacz je tylko na prośbę wsparcia PrimaSTEM.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Potwierdź">
+    Kliknij **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Poczekaj">
+    Aktualizacja trwa około 2 minut. Nie minimalizuj strony i nie odłączaj kabla.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Zakończ">
+    Gdy pojawi się **Installation complete!**, kliknij **Next**, zamknij okno i odłącz kabel.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Drugie urządzenie zaktualizuj w ten sam sposób.
+
+## Jeśli coś pójdzie nie tak
+
+- **Robot i pilot nie łączą się.** Sparuj je ponownie, zobacz [Łączenie pilota z robotem](/pl/usermanual#łączenie-pilota-z-robotem).
+- **Pojawia się okno No port selected.** Komputer nie znalazł urządzenia albo na liście nie wybrano wiersza. Sprawdź, czy urządzenie jest włączone i czy kabel przesyła dane, a potem kliknij **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Aktualizacja zatrzymuje się z komunikatem Installation failed.** Odłącz kabel, podłącz go ponownie i zacznij od kroku 2. Jeśli to nie pomoże, [napisz do nas](/pl/contacts).

@@ -1,0 +1,95 @@
+---
+title: "Mettre à jour le firmware"
+description: "Comment mettre à jour le robot et le tableau de contrôle depuis le navigateur."
+icon: "download"
+mode: "default"
+---
+
+La mise à jour se fait dans le navigateur sur [update.primastem.com](https://update.primastem.com). Vous n'avez rien à installer. Le site de mise à jour est en anglais, les captures d'écran le sont donc aussi.
+
+<Info>Il vous faut un ordinateur avec Chrome ou Edge et un câble USB-C qui transmet les données. Un câble de charge seule ne fonctionne pas.</Info>
+
+<Steps>
+  <Step title="Allumez l'appareil et branchez-le">
+    Allumez le robot ou le tableau de contrôle et reliez-le à l'ordinateur avec le câble. L'ordinateur ne voit pas un appareil éteint.
+  </Step>
+  <Step title="Ouvrez le site de mise à jour">
+    Ouvrez [update.primastem.com](https://update.primastem.com) dans Chrome ou Edge.
+  </Step>
+  <Step title="Choisissez l'appareil">
+    Choisissez **Robot** ou **Control board** (tableau de contrôle) dans les deux premières lignes. Ne touchez pas aux autres lignes : ce sont des versions de test.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Choisissez la langue">
+    Choisissez la langue que l'appareil parlera.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Cliquez sur Connect">
+    Cliquez sur le bouton bleu **Connect** en bas de la page.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Choisissez le port">
+    Une fenêtre s'ouvre dans la langue de votre navigateur. Sélectionnez la ligne **USB JTAG/serial debug unit (COM...)** et validez avec le bouton de connexion de cette fenêtre. Le numéro après COM varie d'un ordinateur à l'autre.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Lancez l'installation">
+    Cliquez sur **Install Robot update**. Pour le tableau de contrôle, cette ligne s'appelle **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Ne cochez pas Erase device">
+    Laissez la case **Erase device** vide et cliquez sur **Next**. L'effacement supprime le calibrage et l'appairage entre le robot et le tableau de contrôle. Cochez-la seulement si l'assistance PrimaSTEM vous le demande.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Confirmez">
+    Cliquez sur **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Patientez">
+    La mise à jour prend environ 2 minutes. Gardez la page à l'écran et ne débranchez pas le câble.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Terminez">
+    Quand **Installation complete!** apparaît, cliquez sur **Next**, fermez la fenêtre et débranchez le câble.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Mettez à jour le deuxième appareil de la même façon.
+
+## En cas de problème
+
+- **Le robot et le tableau de contrôle ne se connectent pas.** Refaites l'appairage, voir [Connexion entre le tableau de contrôle et le robot](/fr/usermanual#connexion-entre-le-tableau-de-contrôle-et-le-robot).
+- **La fenêtre No port selected apparaît.** L'ordinateur n'a pas trouvé l'appareil, ou aucune ligne n'a été choisie dans la liste. Vérifiez que l'appareil est allumé et que le câble transmet les données, puis cliquez sur **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **La mise à jour s'arrête sur Installation failed.** Débranchez le câble, rebranchez-le et recommencez à l'étape 2. Si cela ne suffit pas, [contactez-nous](/fr/contacts).

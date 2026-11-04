@@ -1,0 +1,95 @@
+---
+title: "Oppdater fastvaren"
+description: "Slik oppdaterer du roboten og kontrollpanelet i nettleseren."
+icon: "download"
+mode: "default"
+---
+
+Oppdateringen skjer i nettleseren på [update.primastem.com](https://update.primastem.com). Du trenger ikke å installere noe. Oppdateringssiden er på engelsk, så skjermbildene er også på engelsk.
+
+<Info>Du trenger en datamaskin med Chrome eller Edge og en USB-C-kabel som overfører data. En kabel som bare lader, virker ikke.</Info>
+
+<Steps>
+  <Step title="Slå på enheten og koble den til">
+    Slå på roboten eller kontrollpanelet og koble det til datamaskinen med kabelen. Datamaskinen ser ikke en enhet som er slått av.
+  </Step>
+  <Step title="Åpne oppdateringssiden">
+    Åpne [update.primastem.com](https://update.primastem.com) i Chrome eller Edge.
+  </Step>
+  <Step title="Velg enhet">
+    Velg **Robot** eller **Control board** (kontrollpanel) i de to øverste linjene. La de andre linjene være: det er testversjoner.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Velg språk">
+    Velg språket enheten skal snakke.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Klikk på Connect">
+    Klikk på den blå knappen **Connect** nederst på siden.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Velg port">
+    Et vindu åpnes på språket til nettleseren. Velg linjen **USB JTAG/serial debug unit (COM...)** og bekreft med tilkoblingsknappen i vinduet. Tallet etter COM varierer fra datamaskin til datamaskin.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Start installasjonen">
+    Klikk på **Install Robot update**. For kontrollpanelet heter denne linjen **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Ikke kryss av for Erase device">
+    La boksen **Erase device** stå tom og klikk på **Next**. Sletting fjerner kalibreringen og paringen mellom robot og kontrollpanel. Kryss bare av hvis PrimaSTEM-support ber deg om det.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Bekreft">
+    Klikk på **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Vent">
+    Oppdateringen tar omtrent 2 minutter. La siden være synlig på skjermen og ikke koble fra kabelen.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Fullfør">
+    Når **Installation complete!** vises, klikker du på **Next**, lukker vinduet og kobler fra kabelen.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Oppdater den andre enheten på samme måte.
+
+## Hvis noe går galt
+
+- **Roboten og kontrollpanelet kobler seg ikke sammen.** Par dem på nytt, se [Tilkobling mellom Kontrollpanel og Robot](/no/usermanual#tilkobling-mellom-kontrollpanel-og-robot).
+- **Vinduet No port selected vises.** Datamaskinen fant ikke enheten, eller ingen linje ble valgt i listen. Sjekk at enheten er på og at kabelen overfører data, og klikk på **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Oppdateringen stopper med Installation failed.** Koble fra kabelen, koble den til igjen og start på nytt fra steg 2. Hvis det ikke hjelper, [ta kontakt med oss](/no/contacts).

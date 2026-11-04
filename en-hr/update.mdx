@@ -1,0 +1,95 @@
+---
+title: "Ažuriranje firmwarea"
+description: "Kako ažurirati robota i upravljačku ploču u pregledniku."
+icon: "download"
+mode: "default"
+---
+
+Ažuriranje se radi u pregledniku na [update.primastem.com](https://update.primastem.com). Ne trebate ništa instalirati. Stranica za ažuriranje je na engleskom, pa su i snimke zaslona na engleskom.
+
+<Info>Trebate računalo s Chromeom ili Edgeom i USB-C kabel koji prenosi podatke. Kabel samo za punjenje neće raditi.</Info>
+
+<Steps>
+  <Step title="Uključite uređaj i spojite ga">
+    Uključite robota ili upravljačku ploču i spojite uređaj kabelom na računalo. Računalo ne vidi isključen uređaj.
+  </Step>
+  <Step title="Otvorite stranicu za ažuriranje">
+    Otvorite [update.primastem.com](https://update.primastem.com) u Chromeu ili Edgeu.
+  </Step>
+  <Step title="Odaberite uređaj">
+    U gornja dva retka odaberite **Robot** ili **Control board** (upravljačka ploča). Ostale retke ne dirajte: to su testne verzije.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Odaberite jezik">
+    Odaberite jezik kojim će uređaj govoriti.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Kliknite Connect">
+    Kliknite plavi gumb **Connect** na dnu stranice.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Odaberite priključak">
+    Otvara se prozor na jeziku preglednika. Odaberite redak **USB JTAG/serial debug unit (COM...)** i potvrdite gumbom za povezivanje u tom prozoru. Broj iza COM razlikuje se od računala do računala.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Pokrenite instalaciju">
+    Kliknite **Install Robot update**. Za upravljačku ploču taj se redak zove **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Ne označavajte Erase device">
+    Ostavite polje **Erase device** prazno i kliknite **Next**. Brisanje uklanja kalibraciju i uparivanje robota s upravljačkom pločom. Označite ga samo ako to zatraži podrška PrimaSTEM-a.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Potvrdite">
+    Kliknite **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Pričekajte">
+    Ažuriranje traje oko 2 minute. Ostavite stranicu na zaslonu i ne iskopčavajte kabel.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Završite">
+    Kad se pojavi **Installation complete!**, kliknite **Next**, zatvorite prozor i iskopčajte kabel.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Drugi uređaj ažurirajte na isti način.
+
+## Ako nešto pođe po zlu
+
+- **Robot i upravljačka ploča se ne povezuju.** Ponovno ih uparite, pogledajte [Povezivanje ploče i robota](/en-hr/usermanual#povezivanje-ploče-i-robota).
+- **Pojavio se prozor No port selected.** Računalo nije pronašlo uređaj ili na popisu nije odabran redak. Provjerite je li uređaj uključen i prenosi li kabel podatke, pa kliknite **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Ažuriranje stane s porukom Installation failed.** Iskopčajte kabel, ponovno ga ukopčajte i krenite od koraka 2. Ako to ne pomogne, [javite nam se](/en-hr/contacts).

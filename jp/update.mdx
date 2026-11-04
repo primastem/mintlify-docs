@@ -1,0 +1,95 @@
+---
+title: "ファームウェアの更新"
+description: "ブラウザーでロボットとコントローラーを更新する方法です。"
+icon: "download"
+mode: "default"
+---
+
+更新はブラウザーで [update.primastem.com](https://update.primastem.com) から行います。ソフトのインストールは不要です。更新サイトは英語のため、画面の画像も英語です。
+
+<Info>Chrome または Edge が使えるパソコンと、データ通信に対応した USB-C ケーブルが必要です。充電専用ケーブルは使えません。</Info>
+
+<Steps>
+  <Step title="電源を入れて接続する">
+    ロボットまたはコントローラーの電源を入れ、ケーブルでパソコンに接続します。電源が切れているとパソコンは認識しません。
+  </Step>
+  <Step title="更新サイトを開く">
+    Chrome または Edge で [update.primastem.com](https://update.primastem.com) を開きます。
+  </Step>
+  <Step title="機器を選ぶ">
+    上の 2 行から **Robot**(ロボット)または **Control board**(コントローラー)を選びます。ほかの行はテスト版なので選ばないでください。
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="言語を選ぶ">
+    機器が話す言語を選びます。
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Connect を押す">
+    ページ下の青い **Connect** ボタンを押します。
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="ポートを選ぶ">
+    ブラウザーの言語でウィンドウが開きます。**USB JTAG/serial debug unit (COM...)** の行を選び、そのウィンドウの接続ボタンを押します。COM の後の数字はパソコンごとに異なります。
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="インストールを始める">
+    **Install Robot update** を押します。コントローラーの場合、この行は **Install Control update** と表示されます。
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Erase device にチェックを入れない">
+    **Erase device** のチェックは空のまま **Next** を押します。消去するとキャリブレーションとロボットとコントローラーのペアリングが消えます。PrimaSTEM サポートから指示があった場合だけチェックしてください。
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="確定する">
+    **Install** を押します。
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="待つ">
+    更新には約 2 分かかります。ページを表示したままにし、ケーブルを抜かないでください。
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="終了する">
+    **Installation complete!** と表示されたら **Next** を押し、ウィンドウを閉じてケーブルを抜きます。
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+もう一方の機器も同じ手順で更新します。
+
+## うまくいかないとき
+
+- **ロボットとコントローラーがつながらない。** もう一度ペアリングします。[コントローラーとロボットの接続](/jp/usermanual#コントローラーとロボットの接続) を参照してください。
+- **No port selected のウィンドウが出た。** パソコンが機器を見つけられなかったか、一覧で行を選ばなかった状態です。機器の電源が入っていること、ケーブルがデータ通信に対応していることを確認し、**Try Again** を押します。
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Installation failed で更新が止まった。** ケーブルを抜いて差し直し、手順 2 からやり直します。解決しないときは[お問い合わせ](/jp/contacts)ください。

@@ -1,0 +1,95 @@
+---
+title: "Firmware aktualisieren"
+description: "So aktualisieren Sie den Roboter und das Steuerboard im Browser."
+icon: "download"
+mode: "default"
+---
+
+Die Aktualisierung läuft im Browser auf [update.primastem.com](https://update.primastem.com). Sie müssen nichts installieren. Die Update-Seite ist auf Englisch, deshalb sind auch die Screenshots auf Englisch.
+
+<Info>Sie brauchen einen Computer mit Chrome oder Edge und ein USB-C-Kabel, das Daten überträgt. Ein reines Ladekabel funktioniert nicht.</Info>
+
+<Steps>
+  <Step title="Gerät einschalten und anschließen">
+    Schalten Sie den Roboter oder das Steuerboard ein und verbinden Sie das Gerät mit dem Kabel mit dem Computer. Ein ausgeschaltetes Gerät erkennt der Computer nicht.
+  </Step>
+  <Step title="Update-Seite öffnen">
+    Öffnen Sie [update.primastem.com](https://update.primastem.com) in Chrome oder Edge.
+  </Step>
+  <Step title="Gerät wählen">
+    Wählen Sie in den beiden oberen Zeilen **Robot** (Roboter) oder **Control board** (Steuerboard). Lassen Sie die anderen Zeilen unberührt: Das sind Testversionen.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Sprache wählen">
+    Wählen Sie die Sprache, in der das Gerät sprechen soll.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Auf Connect klicken">
+    Klicken Sie unten auf der Seite auf die blaue Schaltfläche **Connect**.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Anschluss wählen">
+    Ein Fenster öffnet sich in der Sprache Ihres Browsers. Wählen Sie die Zeile **USB JTAG/serial debug unit (COM...)** und bestätigen Sie in diesem Fenster mit der Schaltfläche zum Verbinden. Die Zahl nach COM ist je nach Computer verschieden.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Installation starten">
+    Klicken Sie auf **Install Robot update**. Beim Steuerboard heißt diese Zeile **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Erase device nicht ankreuzen">
+    Lassen Sie das Kästchen **Erase device** leer und klicken Sie auf **Next**. Das Löschen entfernt die Kalibrierung und die Kopplung zwischen Roboter und Steuerboard. Kreuzen Sie es nur an, wenn der PrimaSTEM-Support Sie darum bittet.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Bestätigen">
+    Klicken Sie auf **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Warten">
+    Die Aktualisierung dauert etwa 2 Minuten. Lassen Sie die Seite sichtbar und ziehen Sie das Kabel nicht ab.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Abschließen">
+    Wenn **Installation complete!** erscheint, klicken Sie auf **Next**, schließen Sie das Fenster und ziehen Sie das Kabel ab.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Aktualisieren Sie das zweite Gerät auf dieselbe Weise.
+
+## Wenn etwas nicht klappt
+
+- **Roboter und Steuerboard verbinden sich nicht.** Koppeln Sie sie neu, siehe [Verbindung zwischen Steuerboard und Roboter](/de/usermanual#verbindung-zwischen-steuerboard-und-roboter).
+- **Das Fenster No port selected erscheint.** Der Computer hat das Gerät nicht gefunden, oder in der Liste wurde keine Zeile gewählt. Prüfen Sie, ob das Gerät eingeschaltet ist und das Kabel Daten überträgt, und klicken Sie auf **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **Die Aktualisierung bricht mit Installation failed ab.** Ziehen Sie das Kabel ab, stecken Sie es wieder ein und beginnen Sie erneut bei Schritt 2. Wenn das nicht hilft, [schreiben Sie uns](/de/contacts).

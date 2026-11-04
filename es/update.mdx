@@ -1,0 +1,95 @@
+---
+title: "Actualizar el firmware"
+description: "Cómo actualizar el robot y el mando desde el navegador."
+icon: "download"
+mode: "default"
+---
+
+La actualización se hace en el navegador, en [update.primastem.com](https://update.primastem.com). No hay que instalar nada. El sitio de actualización está en inglés, por eso las capturas también lo están.
+
+<Info>Necesita un ordenador con Chrome o Edge y un cable USB-C que transmita datos. Un cable solo de carga no sirve.</Info>
+
+<Steps>
+  <Step title="Encienda el dispositivo y conéctelo">
+    Encienda el robot o el mando y conéctelo al ordenador con el cable. El ordenador no ve un dispositivo apagado.
+  </Step>
+  <Step title="Abra el sitio de actualización">
+    Abra [update.primastem.com](https://update.primastem.com) en Chrome o Edge.
+  </Step>
+  <Step title="Elija el dispositivo">
+    Elija **Robot** o **Control board** (mando) en las dos primeras líneas. No toque las demás: son versiones de prueba.
+
+    <Frame>
+      <img src="../images/update/01-select-device.png" alt="Select device" />
+    </Frame>
+  </Step>
+  <Step title="Elija el idioma">
+    Elija el idioma en el que hablará el dispositivo.
+
+    <Frame>
+      <img src="../images/update/02-select-language.png" alt="Select language" />
+    </Frame>
+  </Step>
+  <Step title="Pulse Connect">
+    Pulse el botón azul **Connect** al final de la página.
+
+    <Frame>
+      <img src="../images/update/03-connect.png" alt="Connect" />
+    </Frame>
+  </Step>
+  <Step title="Elija el puerto">
+    Se abre una ventana en el idioma de su navegador. Seleccione la línea **USB JTAG/serial debug unit (COM...)** y confirme con el botón de conexión de esa ventana. El número después de COM cambia de un ordenador a otro.
+
+    <Frame>
+      <img src="../images/update/04-choose-port.png" alt="USB JTAG/serial debug unit" style={{ maxWidth: "360px" }} />
+    </Frame>
+  </Step>
+  <Step title="Inicie la instalación">
+    Pulse **Install Robot update**. Para el mando, esta línea se llama **Install Control update**.
+
+    <Frame>
+      <img src="../images/update/05-install-menu.png" alt="Install Robot update" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="No marque Erase device">
+    Deje vacía la casilla **Erase device** y pulse **Next**. El borrado elimina la calibración y el emparejamiento entre el robot y el mando. Márquela solo si se lo pide el soporte de PrimaSTEM.
+
+    <Frame>
+      <img src="../images/update/06-erase-device.png" alt="Erase device" style={{ maxWidth: "460px" }} />
+    </Frame>
+  </Step>
+  <Step title="Confirme">
+    Pulse **Install**.
+
+    <Frame>
+      <img src="../images/update/07-confirm-install.png" alt="Confirm Installation" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Espere">
+    La actualización tarda unos 2 minutos. Mantenga la página en pantalla y no desconecte el cable.
+
+    <Frame>
+      <img src="../images/update/08-installing.png" alt="Installing" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+  <Step title="Termine">
+    Cuando aparezca **Installation complete!**, pulse **Next**, cierre la ventana y desconecte el cable.
+
+    <Frame>
+      <img src="../images/update/09-complete.png" alt="Installation complete!" style={{ maxWidth: "340px" }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Actualice el otro dispositivo de la misma manera.
+
+## Si algo sale mal
+
+- **El robot y el mando no se conectan.** Empareje de nuevo, consulte [Conexión entre el Tablero y el Robot](/es/usermanual#conexión-entre-el-tablero-y-el-robot).
+- **Aparece la ventana No port selected.** El ordenador no encontró el dispositivo o no se eligió ninguna línea de la lista. Compruebe que el dispositivo está encendido y que el cable transmite datos, y pulse **Try Again**.
+
+<Frame>
+  <img src="../images/update/10-no-port.png" alt="No port selected" style={{ maxWidth: "420px" }} />
+</Frame>
+
+- **La actualización se detiene con Installation failed.** Desconecte el cable, vuelva a conectarlo y empiece de nuevo desde el paso 2. Si no se soluciona, [escríbanos](/es/contacts).

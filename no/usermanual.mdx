@@ -162,7 +162,7 @@ Som standard:
 
 ### Robotkalibrering:
 
-- Oppdater roboten og kontrollpanelet til den nyeste stabile fastvaren på [update.primastem.com](https://update.primastem.com) før du kalibrerer. En kalibrering gjort med gammel fastvare kan bli unøyaktig.
+- Oppdater roboten og kontrollpanelet til den nyeste stabile fastvaren på [update.primastem.com](https://update.primastem.com) ([slik oppdaterer du](/no/update)) før du kalibrerer. En kalibrering gjort med gammel fastvare kan bli unøyaktig.
 - Kjør først brikken «Kalibrering» uten tall: roboten måler motorpolariteten, fjerner slark og stiller inn rettlinjet bevegelse. Brikken jobber i opptil 2 minutter. Det første halve minuttet må roboten stå helt stille, ikke rør den. Robotknappen virker ikke i denne tiden.
 - Kalibrer deretter svingvinklene. Merk robotens nøyaktige retning på bordoverflaten. Du trenger 32 svinger på 90° med klokken: sett sammen programmet «Gjentakelse 8 + høyresving» og kjør det fire ganger. Roboten skal gjøre åtte hele omdreininger (90×32 = 2880°) og komme tilbake til sin opprinnelige retning.
 - Vurder avviket fra markeringen og korriger med brikken «Kalibrering» og en tallbrikke: hvis roboten stopper før markeringen, legg til «+» (for eksempel «Kalibrering» + «+5»); hvis den går forbi, legg til «−» (for eksempel «Kalibrering» + «−5»), deretter **▶ Start**. Tallet viser hvor mange grader roboten bommet med på alle 32 svingene til sammen. Roboten tar imot tall opp til 180. Er tallet større, eller klarer ikke roboten å lagre korreksjonen, blinker cellen rødt. Et vanlig tall uten «+» eller «−» ved siden av «Kalibrering» virker ikke: cellen blinker rødt.
