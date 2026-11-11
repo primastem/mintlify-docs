@@ -20,17 +20,17 @@ Ta strona jest dla nauczycieli, którzy znają LOGO lub Scratch, i dla wszystkic
 | Pętla | Żeton powtórzenia w parze: Naprzód + powtórzenie 4 | `repeat 4 [forward 150]` |
 | Procedura | Dolny rząd (5 par) to Funkcja. Wywołuje ją żeton „Funkcja” | `to shape ... end`, potem `shape` |
 | Procedura w pętli | Żeton „Funkcja” i żeton powtórzenia w jednej parze: Funkcja + powtórzenie 5 | `repeat 5 [shape]` |
-| Przekazanie wartości procedurze | Naprzód 100 przejeżdża 100 mm i zapamiętuje 100. Jeśli zaraz potem wywołasz Funkcję, w której stoi Naprzód bez liczby, ona też przejedzie 100. Zmień Naprzód przed kolejnym wywołaniem, a ta sama Funkcja narysuje figurę innej wielkości | podobnie jak `shape 100`, `shape 50` |
-| Rekurencja | Żeton „Funkcja” w dolnym rzędzie: funkcja wywołuje samą siebie, dopóki znowu nie naciśniesz ▶ Start | procedura wywołuje samą siebie |
+| Przekazanie wartości procedurze | Naprzód 100 przejeżdża 100 mm i zapamiętuje 100. Jeśli zaraz potem zostanie wywołana Funkcja, w której stoi Naprzód bez liczby, ona też przejedzie 100. Po zmianie Naprzód przed kolejnym wywołaniem ta sama Funkcja narysuje figurę innej wielkości | podobnie jak `shape 100`, `shape 50` |
+| Rekurencja | Żeton „Funkcja” w dolnym rzędzie: funkcja wywołuje samą siebie, dopóki znowu nie naciśnie się ▶ Start | procedura wywołuje samą siebie |
 | Zmienne | Każde polecenie pamięta swoją ostatnią wartość: Naprzód, Wstecz, Lewo, Prawo i Pauza to pięć niezależnych zmiennych. Naprzód bez liczby przejedzie tyle samo, co poprzednie Naprzód | `make "step 200`, potem `forward :step` |
-| Arytmetyka na zmiennej | Naprzód + „+30”: dodaj 30 do zapamiętanej wartości i jedź | `make "step :step + 30 forward :step` |
+| Arytmetyka na zmiennej | Naprzód + „+30”: dodaje 30 do zapamiętanej wartości i jedzie | `make "step :step + 30 forward :step` |
 | Działania | + − × ÷ √ ^ na zapamiętanej wartości, od −5000 do 5000, liczby całkowite | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Wartości ujemne | Wynik ujemny odwraca ruch: Naprzód −50 jedzie 50 mm do tyłu, Lewo −30 skręca w prawo o 30° | `forward -50` |
 | Losowość | Żeton powtórzenia z kostką (od 1 do 6 razy) i żeton „Losowy ruch” | `random 6` |
 | Pisak | Pisak w środku robota | `pendown` |
 | Debugowanie | Patrzymy na robota, znajdujemy zły żeton, wymieniamy go | poprawić wiersz |
 
-Każde polecenie ma własną zapamiętaną wartość: jeśli zmienisz Naprzód, Lewo się nie zmieni. Po wyłączeniu pilota wszystkie wartości wracają do domyślnych: 150 mm, 90°, 1 s dla Pauzy. Domyślny krok można zmienić na stałe żetonem serwisowym „Domyślny krok” (zobacz [Urządzenie i konfiguracja](/pl/usermanual)).
+Każde polecenie ma własną zapamiętaną wartość: jeśli zmienią Państwo Naprzód, Lewo się nie zmieni. Po wyłączeniu pilota wszystkie wartości wracają do domyślnych: 150 mm, 90°, 1 s dla Pauzy. Domyślny krok można zmienić na stałe żetonem serwisowym „Domyślny krok” (zobacz [Urządzenie i konfiguracja](/pl/usermanual)).
 
 Liczy dziecko. Robot dokładnie wykonuje program.
 
@@ -147,7 +147,7 @@ repeat 20 [
   </Frame>
 </Columns>
 
-Naprzód 30 ustawia zapamiętaną wartość. Przy każdym uruchomieniu funkcji „+30” wydłuża bok o 30 mm: 60, 90, 120 i tak dalej. Pierwsze Naprzód 30 resetuje wartość, więc jeśli znowu naciśniesz ▶ Start, wyjdzie ta sama spirala.
+Naprzód 30 ustawia zapamiętaną wartość. Przy każdym uruchomieniu funkcji „+30” wydłuża bok o 30 mm: 60, 90, 120 i tak dalej. Pierwsze Naprzód 30 resetuje wartość, więc jeśli znowu nacisną Państwo ▶ Start, wyjdzie ta sama spirala.
 
 ### Sześciokąt (kąt przez dzielenie)
 
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Prawo 360 wykonuje pełny obrót i zapamiętuje 360. Prawo ÷6 dzieli zapamiętaną wartość i skręca o 60°. W funkcji Prawo bez liczby znowu bierze 60°. Dwa obroty na początku zmieniają tylko to, w którą stronę patrzy robot przed rysowaniem; figura pozostaje sześciokątem.
 
-Pilot dzieli i zaokrągla wynik do najbliższej liczby całkowitej. Żeby figura się zamknęła, dziel 360 przez liczbę, przez którą 360 dzieli się bez reszty: 3, 4, 5, 6, 8, 9, 10, 12. Na przykład 360 ÷ 7 = 51,4 da 51°, a siedmiokąt nie zamknie się o 3°.
+Pilot dzieli i zaokrągla wynik do najbliższej liczby całkowitej. Żeby figura się zamknęła, należy dzielić 360 przez liczbę, przez którą 360 dzieli się bez reszty: 3, 4, 5, 6, 8, 9, 10, 12. Na przykład 360 ÷ 7 = 51,4 da 51°, a siedmiokąt nie zamknie się o 3°.
 
 Więcej rysunków: [Przykłady rysunków](/pl/mathdrawings).
 
