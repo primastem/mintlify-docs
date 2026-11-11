@@ -20,8 +20,8 @@ Questa pagina è per gli insegnanti che conoscono LOGO o Scratch e per chi vuole
 | Ciclo | Una tessera di ripetizione nella coppia: Avanti + ripeti 4 | `repeat 4 [forward 150]` |
 | Procedura | La riga in basso (5 coppie) è la Funzione. La richiama la tessera «Funzione» | `to shape ... end`, poi `shape` |
 | Procedura in un ciclo | La tessera «Funzione» e una tessera di ripetizione nella stessa coppia: Funzione + ripeti 5 | `repeat 5 [shape]` |
-| Passare un valore alla procedura | Avanti 100 percorre 100 mm e memorizza 100. Se subito dopo si richiama una Funzione che contiene Avanti senza numero, anche lei percorre 100. Cambiate Avanti prima della chiamata successiva e la stessa Funzione disegna una figura di un'altra misura | simile a `shape 100`, `shape 50` |
-| Ricorsione | La tessera «Funzione» dentro la riga in basso: la funzione richiama sé stessa finché non premete di nuovo ▶ Start | una procedura che richiama sé stessa |
+| Passare un valore alla procedura | Avanti 100 percorre 100 mm e memorizza 100. Se subito dopo si richiama una Funzione che contiene Avanti senza numero, anche lei percorre 100. Cambi Avanti prima della chiamata successiva e la stessa Funzione disegna una figura di un'altra misura | simile a `shape 100`, `shape 50` |
+| Ricorsione | La tessera «Funzione» dentro la riga in basso: la funzione richiama sé stessa finché non preme di nuovo ▶ Start | una procedura che richiama sé stessa |
 | Variabili | Ogni comando ricorda il suo ultimo valore: Avanti, Indietro, Sinistra, Destra e Pausa sono cinque variabili indipendenti. Avanti senza numero percorre quanto l'ultimo Avanti | `make "step 200`, poi `forward :step` |
 | Aritmetica su una variabile | Avanti + «+30»: aggiunge 30 al valore memorizzato e si muove | `make "step :step + 30 forward :step` |
 | Operazioni | + − × ÷ √ ^ sul valore memorizzato, da −5000 a 5000, numeri interi | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
@@ -30,7 +30,7 @@ Questa pagina è per gli insegnanti che conoscono LOGO o Scratch e per chi vuole
 | Penna | Il pennarello al centro del robot | `pendown` |
 | Debug | Guardiamo il robot, troviamo la tessera sbagliata e la cambiamo | correggere la riga |
 
-Ogni comando ha il suo valore memorizzato: se cambiate Avanti, Sinistra non cambia. Quando la pulsantiera si spegne, tutti i valori tornano a quelli standard: 150 mm, 90°, 1 s per la Pausa. Il passo predefinito si può cambiare in modo permanente con la tessera di servizio «Passo predefinito» (vedi [Dispositivo e configurazione](/it/usermanual)).
+Ogni comando ha il suo valore memorizzato: se cambia Avanti, Sinistra non cambia. Quando la pulsantiera si spegne, tutti i valori tornano a quelli standard: 150 mm, 90°, 1 s per la Pausa. Il passo predefinito si può cambiare in modo permanente con la tessera di servizio «Passo predefinito» (vedi [Dispositivo e configurazione](/it/usermanual)).
 
 I calcoli li fa il bambino. Il robot esegue il programma con precisione.
 
@@ -147,7 +147,7 @@ repeat 20 [
   </Frame>
 </Columns>
 
-Avanti 30 imposta il valore memorizzato. A ogni esecuzione della funzione «+30» allunga il lato di 30 mm: 60, 90, 120 e così via. Il primo Avanti 30 azzera il valore, quindi se premete di nuovo ▶ Start ottenete la stessa spirale.
+Avanti 30 imposta il valore memorizzato. A ogni esecuzione della funzione «+30» allunga il lato di 30 mm: 60, 90, 120 e così via. Il primo Avanti 30 azzera il valore, quindi se preme di nuovo ▶ Start ottiene la stessa spirale.
 
 ### Esagono (angolo con la divisione)
 
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Destra 360 fa un giro completo e memorizza 360. Destra ÷6 divide il valore memorizzato e gira di 60°. Nella funzione Destra senza numero usa di nuovo 60°. Le due rotazioni all'inizio cambiano solo la direzione del robot prima del disegno; la figura resta un esagono.
 
-La pulsantiera divide e arrotonda all'intero più vicino. Perché la figura si chiuda, dividete 360 per un numero senza resto: 3, 4, 5, 6, 8, 9, 10, 12. Per esempio, 360 ÷ 7 = 51,4 dà 51°, e l'ettagono non si chiude per 3°.
+La pulsantiera divide e arrotonda all'intero più vicino. Perché la figura si chiuda, divida 360 per un numero senza resto: 3, 4, 5, 6, 8, 9, 10, 12. Per esempio, 360 ÷ 7 = 51,4 dà 51°, e l'ettagono non si chiude per 3°.
 
 Altri disegni: [Esempi di disegni](/it/mathdrawings).
 
