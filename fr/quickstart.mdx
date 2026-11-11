@@ -41,7 +41,7 @@ PrimaSTEM est un kit éducatif pour l'apprentissage de la programmation, de la l
   </Step>
 </Steps>
 
-**Essayez tout de suite :** placez un jeton **Avant** dans le premier emplacement (n'importe quelle cellule de la paire). Appuyez sur **▶ Démarrer**. Le robot avance de 15 cm et s'arrête. *C'est déjà un programme — une seule commande.*
+**Essayez tout de suite :** placez un jeton **Avancer** dans le premier emplacement (n'importe quelle cellule de la paire). Appuyez sur **▶ Démarrer**. Le robot avance de 15 cm et s'arrête. *C'est déjà un programme — une seule commande.*
 
 ## 3. Comment fonctionne un programme
 
@@ -60,7 +60,7 @@ Le tableau de contrôle a **deux rangées d'emplacements appariés**. Placez les
 | **E** | **Ligne d'exécution** reliant les cellules en paire |
 | **F** | **Indicateur LED multicolore** sur chaque cellule |
 
-**Une paire = deux cellules logiquement liées.** L'ordre haut/bas n'a pas d'importance — la commande peut être placée dans n'importe laquelle des deux cellules, le jeton de répétition, de nombre ou d'arithmétique dans l'autre. Si la deuxième cellule est vide, on utilise le dernier nombre reçu par cette commande depuis l'allumage de la télécommande (tant qu'aucun nombre n'a été donné : pas de 15 cm et rotation de 90°) — suffisant pour les petits enfants.
+**Une paire = deux cellules logiquement liées.** L'ordre haut/bas n'a pas d'importance — la commande peut être placée dans n'importe laquelle des deux cellules, le jeton de répétition, de nombre ou d'arithmétique dans l'autre. Si la deuxième cellule est vide, on utilise le dernier nombre reçu par cette commande depuis l'allumage du tableau de contrôle (tant qu'aucun nombre n'a été donné : pas de 15 cm et rotation de 90°) — suffisant pour les petits enfants.
 
 Couleurs des LED pendant l'exécution :
 
@@ -74,17 +74,17 @@ Les emplacements vides et les paires rouges sont ignorés lors de la mise en pla
 
 | Groupe | Ce que font les jetons |
 | --- | --- |
-| **Mouvement** | Avant · Arrière · Gauche · Droite |
+| **Mouvement** | Avancer · Reculer · Gauche · Droite |
 | **Répétition** | Deux flèches en boucle + à l'intérieur points 2–6 (comme un dé, pour les petits) ou avec chiffres. En paire avec une commande — la répète. |
 | **Nombres** | `1`–`999`. Définissent la distance de mouvement en mm ou l'angle de rotation en degrés. |
 | **Arithmétique** | `+N` `−N` `×N` `÷N` `√` `^N` — un jeton = opération + nombre. Modifie la valeur enregistrée du mouvement ou de la rotation. Un résultat négatif inverse la direction ! |
 | **Fonction** | Appelle la rangée inférieure comme un sous-programme. Avec un jeton de répétition, exécute autant de fois que demandé. |
-| **Pas** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. |
+| **Pas par défaut** | Jeton de service + Nombre = change le pas par défaut (par exemple nombre 100, en millimètres, pour une grille de 10 cm). Conservé après extinction. |
 
 ## 5. Valeurs par défaut et valeur enregistrée
 
 <Note>
-**Avant = 150 mm (15 cm), rotation = 90°.** Le jeton **« Pas »** modifie la distance « par défaut » et la conserve après extinction. À utiliser avec les grilles de jeu d'autres robots.
+**Avancer = 150 mm (15 cm), rotation = 90°.** Le jeton **« Pas par défaut »** modifie la distance « par défaut » et la conserve après extinction. À utiliser avec les grilles de jeu d'autres robots.
 
 Pendant une session, chaque commande de mouvement conserve **sa propre** valeur enregistrée :
 
@@ -96,9 +96,9 @@ Les valeurs enregistrées se réinitialisent à l'extinction du tableau de contr
 
 **Aide-mémoire :**
 
-- `Avant` seul           → 150 mm (15 cm) — défaut
-- `Avant` + `100`        → 100 mm — remplace
-- `Avant` + `+50`        → 150 mm  (précédent 100 + 50) — modifie
+- `Avancer` seul         → 150 mm (15 cm) — défaut
+- `Avancer` + `100`      → 100 mm — remplace
+- `Avancer` + `+50`      → 150 mm  (précédent 100 + 50) — modifie
 - `Gauche` seul          → 90° — défaut
 - `Gauche` + `45`        → 45° — remplace
 - `Gauche` + `−10`       → 35°  (précédent 45° − 10°) — modifie
@@ -136,13 +136,13 @@ Plus d'exemples dans la section [Dessins mathématiques](/fr/mathdrawings).
 <Tip>
 **Introduisez les jetons-commandes un par un, dans cet ordre :**
 
-**Avant → Rotations → Répétitions → Fonction → Nombres → Arithmétique.**
+**Avancer → Rotations → Répétitions → Fonction → Nombres → Arithmétique.**
 
 Chaque suivant — seulement après que le précédent est maîtrisé. Le plan complet de 12 séances avec âge, durée et matériel pour les petits enfants — dans le [Livre 1](/fr/book-1/book-1).
 
 **Travail en groupe :** nous recommandons un kit pour **2–3 enfants**.
 
-**Cartes :** toute grille faite pour d'autres robots éducatifs convient. La taille de la cellule est définie par le jeton **« Pas »** avec un nombre (par exemple 100, 120, 150, 200 mm).
+**Cartes :** toute grille faite pour d'autres robots éducatifs convient. La taille de la cellule est définie par le jeton **« Pas par défaut »** avec un nombre (par exemple 100, 120, 150, 200 mm).
 
 **Astuce pour 10 pas au lieu de 6.** Placez le jeton **Fonction [ ]** dans le dernier (6ᵉ) emplacement de la rangée supérieure et fixez-le avec du ruban de masquage. Le programme s'exécute maintenant comme une longue chaîne : 5 pas en haut + 5 en bas = **10 pas d'affilée**. Pratique pour les petits qui ont besoin d'un programme plus long, mais qui sont trop jeunes pour aborder la fonction comme concept.
 </Tip>

@@ -20,8 +20,8 @@ Esta página es para docentes que conocen LOGO o Scratch, y para cualquiera que 
 | Bucle | Una ficha de repetición en la pareja: Adelante + repetir 4 | `repeat 4 [forward 150]` |
 | Procedimiento | La fila inferior (5 parejas) es la Función. La llama la ficha «Función» | `to shape ... end`, luego `shape` |
 | Procedimiento en un bucle | La ficha «Función» y una ficha de repetición en la misma pareja: Función + repetir 5 | `repeat 5 [shape]` |
-| Pasar un valor a un procedimiento | Adelante 100 avanza 100 mm y guarda 100. Si después llamas a una Función que tiene Adelante sin número, también avanza 100. Cambia Adelante antes de la siguiente llamada, y la misma Función dibuja la figura en otro tamaño | parecido a `shape 100`, `shape 50` |
-| Recursión | Una ficha «Función» dentro de la fila inferior: la función se llama a sí misma hasta que vuelvas a pulsar ▶ Inicio | un procedimiento que se llama a sí mismo |
+| Pasar un valor a un procedimiento | Adelante 100 avanza 100 mm y guarda 100. Si después llama a una Función que tiene Adelante sin número, también avanza 100. Cambie Adelante antes de la siguiente llamada, y la misma Función dibuja la figura en otro tamaño | parecido a `shape 100`, `shape 50` |
+| Recursión | Una ficha «Función» dentro de la fila inferior: la función se llama a sí misma hasta que vuelva a pulsar ▶ Inicio | un procedimiento que se llama a sí mismo |
 | Variables | Cada comando recuerda su último valor: Adelante, Atrás, Izquierda, Derecha y Pausa son cinco variables independientes. Adelante sin número avanza lo mismo que el último Adelante | `make "step 200`, luego `forward :step` |
 | Aritmética con una variable | Adelante + «+30»: sumar 30 al valor guardado y avanzar | `make "step :step + 30 forward :step` |
 | Operaciones | + − × ÷ √ ^ sobre el valor guardado, de −5000 a 5000, números enteros | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
@@ -30,7 +30,7 @@ Esta página es para docentes que conocen LOGO o Scratch, y para cualquiera que 
 | Lápiz | Un rotulador en el centro del robot | `pendown` |
 | Depuración | Miramos el robot, encontramos la ficha equivocada y la cambiamos | corregir la línea |
 
-Cada comando tiene su propio valor guardado: si cambias Adelante, Izquierda no cambia. Al apagar el tablero, todos los valores vuelven a los de por defecto: 150 mm, 90°, 1 s para la Pausa. Para cambiar el paso por defecto de forma permanente, usa la ficha de servicio «Establecer longitud de paso predeterminada» (consulta [Dispositivo y configuración](/es/usermanual)).
+Cada comando tiene su propio valor guardado: si cambia Adelante, Izquierda no cambia. Al apagar el tablero, todos los valores vuelven a los de por defecto: 150 mm, 90°, 1 s para la Pausa. Para cambiar el paso por defecto de forma permanente, use la ficha de servicio «Paso predeterminado» (consulte [Dispositivo y configuración](/es/usermanual)).
 
 El niño hace las cuentas. El robot ejecuta el programa con exactitud.
 
@@ -147,7 +147,7 @@ repeat 20 [
   </Frame>
 </Columns>
 
-Adelante 30 fija el valor guardado. Cada vez que se ejecuta la función, «+30» alarga el lado 30 mm: 60, 90, 120 y así sucesivamente. El primer Adelante 30 reinicia el valor, así que si vuelves a pulsar ▶ Inicio, sale la misma espiral.
+Adelante 30 fija el valor guardado. Cada vez que se ejecuta la función, «+30» alarga el lado 30 mm: 60, 90, 120 y así sucesivamente. El primer Adelante 30 reinicia el valor, así que si vuelve a pulsar ▶ Inicio, sale la misma espiral.
 
 ### Hexágono (ángulo por división)
 
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Derecha 360 da una vuelta completa y guarda 360. Derecha ÷6 divide el valor guardado y gira 60°. En la función, Derecha sin número vuelve a tomar 60°. Los dos giros del principio solo cambian hacia dónde mira el robot antes de dibujar; la figura sigue siendo un hexágono.
 
-El tablero divide y redondea al entero más cercano. Para que la figura se cierre, divide 360 entre un número que no deje resto: 3, 4, 5, 6, 8, 9, 10, 12. Por ejemplo, 360 ÷ 7 = 51,4 da 51°, y al heptágono le faltan 3° para cerrarse.
+El tablero divide y redondea al entero más cercano. Para que la figura se cierre, divida 360 entre un número que no deje resto: 3, 4, 5, 6, 8, 9, 10, 12. Por ejemplo, 360 ÷ 7 = 51,4 da 51°, y al heptágono le faltan 3° para cerrarse.
 
 Más dibujos: [Ejemplos de dibujos](/es/mathdrawings).
 
@@ -181,7 +181,7 @@ PrimaSTEM cubre la base de la gráfica tortuga de LOGO. Algunas cosas funcionan 
 
 - **Una pareja, un comando y un valor.** En una pareja de celdas va un comando y como mucho un valor: un número, una repetición o una operación. Por eso hasta un niño de cuatro años puede leer el programa.
 - **No hay condiciones (`if`).** El programa se ejecuta siempre igual. Solo el dado y el Movimiento aleatorio añaden azar.
-- **La Función no tiene parámetros con nombre.** Se llama con una repetición y toma los valores fijados antes de la llamada (consulta la tabla de arriba).
+- **La Función no tiene parámetros con nombre.** Se llama con una repetición y toma los valores fijados antes de la llamada (consulte la tabla de arriba).
 - **Longitud del programa:** 6 parejas en la fila principal, 5 en la Función.
 - **El rotulador se pone a mano** cuando el niño quiere que el robot dibuje.
 

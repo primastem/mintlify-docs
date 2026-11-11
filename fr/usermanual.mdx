@@ -63,6 +63,7 @@ Blocs de base pour composer le programme de contrôle :
 - **Reculer** — mouvement vers l'arrière (15 cm par défaut)
 - **Fonction** — exécution du sous-programme de la partie inférieure du tableau de contrôle
 - **Mouvement aléatoire** — un pas en avant ou en arrière, ou un virage de 90° à gauche ou à droite suivi aussitôt d'un pas en avant de la longueur de pas par défaut (il n'y a pas de virage sur place sans pas)
+- **Pause** — le robot reste immobile N secondes (1–999 s ; sans nombre 1 s)
 - **Jetons de répétition (boucles)** - Jetons avec des nombres de 2 à 6 (selon le nombre de points) et des pictogrammes de répétition avec le nombre à l'intérieur. Le jeton avec un dé signifie un nombre aléatoire de répétitions de 1 à 6.
 
 > Des jetons de valeurs numériques et d'arithmétique sont également utilisés pour enrichir la programmation : par exemple, répéter une commande ou modifier l'angle/la distance de déplacement.
@@ -150,7 +151,7 @@ Par défaut :
 - **Interrompre** l'exécution du programme en appuyant à nouveau sur **▶ Démarrer** pendant le déplacement.
 - Le tableau de contrôle mémorise la dernière **valeur définie** (distance/angle) pour la commande de déplacement jusqu'à l'extinction : par exemple, si "Avancer" = "200", toutes les commandes "Avancer" suivantes sont exécutées avec cette valeur.
 - Les valeurs après une opération arithmétique sont également conservées.
-- Modifier la "**distance par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Distance par défaut" avec la valeur 125. La valeur est conservée après l'extinction. Les nombres de 1 à 999 sont acceptés. Le jeton sans nombre ramène le pas à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas.
+- Modifier le "**Pas par défaut**" est possible avec un jeton de service : par exemple, pour 12,5 cm, placez le jeton "Pas par défaut" avec la valeur 125. Ce jeton modifie le pas pour Avancer et Reculer. La valeur est conservée après l'extinction. Les nombres de 1 à 999 sont acceptés. Le jeton sans nombre ramène le pas à 150 mm. Avec une opération arithmétique ou zéro, la cellule clignote en rouge et le pas ne change pas.
 - Le tableau de contrôle et le robot **s'éteignent automatiquement** si rien ne se passe pendant 15 minutes.
 - Tant que le robot attend une commande, il cligne des yeux : on voit ainsi qu'il est allumé et prêt.
 - **Appui court sur le bouton du robot** : le robot lit le jeton placé sous lui et l'énonce.
@@ -163,18 +164,18 @@ Par défaut :
 ### Calibrage du robot :
 
 - Avant le calibrage, mettez à jour le robot et le tableau de contrôle avec le dernier firmware stable sur [update.primastem.com](https://update.primastem.com) ([comment faire](/fr/update)). Un calibrage fait avec un ancien firmware peut être imprécis.
-- Exécutez d'abord la carte « Calibrage » sans chiffre : le robot mesure la polarité des moteurs, supprime les jeux et règle le déplacement en ligne droite. La carte fonctionne jusqu'à 2 minutes. Pendant la première demi-minute, le robot doit rester immobile, ne le touchez pas. Le bouton du robot ne fonctionne pas pendant ce temps.
+- Exécutez d'abord le jeton « Calibration » sans chiffre : le robot mesure la polarité des moteurs, supprime les jeux et règle le déplacement en ligne droite. Le jeton fonctionne jusqu'à 2 minutes. Pendant la première demi-minute, le robot doit rester immobile, ne le touchez pas. Le bouton du robot ne fonctionne pas pendant ce temps.
 - Calibrez ensuite les angles de rotation. Marquez sur la surface de la table l'orientation précise du robot. Il faut 32 rotations de 90° dans le sens horaire : composez le programme « Répétition 8 + rotation à droite » et exécutez-le quatre fois. Le robot doit effectuer huit tours complets (90×32 = 2880°) et revenir à son orientation initiale.
-- Évaluez l'écart par rapport à la marque et corrigez avec la carte « Calibrage » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibrage » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibrage » + « −5 »), puis **▶ Démarrer**. Le nombre indique de combien de degrés le robot s'est trompé sur les 32 rotations au total. Le robot accepte les nombres jusqu'à 180. Si le nombre est plus grand ou si le robot ne peut pas enregistrer la correction, la cellule clignote en rouge. Un nombre simple sans « + » ou « − » à côté de « Calibrage » ne fonctionne pas : la cellule clignote en rouge.
+- Évaluez l'écart par rapport à la marque et corrigez avec le jeton « Calibration » et un jeton numérique : si le robot s'arrête avant la marque, ajoutez « + » (par exemple « Calibration » + « +5 ») ; s'il dépasse, ajoutez « − » (par exemple « Calibration » + « −5 »), puis **▶ Démarrer**. Le nombre indique de combien de degrés le robot s'est trompé sur les 32 rotations au total. Le robot accepte les nombres jusqu'à 180. Si le nombre est plus grand ou si le robot ne peut pas enregistrer la correction, la cellule clignote en rouge. Un nombre simple sans « + » ou « − » à côté de « Calibration » ne fonctionne pas : la cellule clignote en rouge.
 - Répétez jusqu'à ce que le robot revienne exactement à son orientation initiale.
 - Le calibrage est conservé après l'extinction.
 - Attention ! Réinitialisation du calibrage : maintenez le bouton du robot pendant 10 secondes, les lumières clignotent en rouge, vert, bleu et blanc. La réinitialisation efface tous les calibrages, le volume et le son coupé. Ensuite, éteignez et rallumez le robot, puis refaites le calibrage depuis le début.
 
 <Accordion icon="rectangle-terminal" title="Calibrage de la première version de l'appareil (MVP) avec robot de 10 cm de diamètre">
-Cette méthode ne concerne que la première version (MVP). Avec le nouveau firmware, « Calibrage » avec un nombre simple ne fonctionne pas : la cellule clignote en rouge.
+Cette méthode ne concerne que la première version (MVP). Avec le nouveau firmware, « Calibration » avec un nombre simple ne fonctionne pas : la cellule clignote en rouge.
 
-1. Pour calibrer le gyroscope, placez le robot sur une surface horizontale, insérez le jeton "Calibrage" dans le tableau de contrôle et appuyez sur **▶ Démarrer**.
-2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibrage" et le jeton avec la valeur nécessaire, puis **▶ Démarrer**. Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 mm). Après cela, la distance de déplacement du robot sera précise.*
+1. Pour calibrer le gyroscope, placez le robot sur une surface horizontale, insérez le jeton "Calibration" dans le tableau de contrôle et appuyez sur **▶ Démarrer**.
+2. Pour calibrer la distance de déplacement, mesurez le trajet réel avec la commande "Avancer", placez "Calibration" et le jeton avec la valeur nécessaire, puis **▶ Démarrer**. Vous pouvez enregistrer la valeur sur n'importe quel jeton NFC numérique à l'aide d'un téléphone mobile avec NFC comme texte sous la forme nXXX (par exemple, n095 pour 95 mm). Après cela, la distance de déplacement du robot sera précise.*
 </Accordion>
 
 ### Programmation des jetons NFC

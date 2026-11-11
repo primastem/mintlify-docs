@@ -79,12 +79,12 @@ Prazni utori i crveni parovi preskaču se pri izvođenju programa. LED-ovi trepe
 | **Brojevi** | `1`–`999`. Određuju udaljenost kretanja u mm ili kut zaokreta u stupnjevima. |
 | **Aritmetika** | `+N` `−N` `×N` `÷N` `√` `^N`: jedna pločica po operaciji + broju. Mijenja spremljenu vrijednost kretanja ili zaokreta. Negativan rezultat obrće smjer! |
 | **Funkcija** | Poziva donji red kao potprogram. S pločicom ponavljanja izvodi se toliko puta. |
-| **Korak** | Servisna pločica + broj = mijenja zadani korak (npr. broj 100, u milimetrima, za mrežu od 10 cm). Pamti se i nakon isključivanja. |
+| **Zadani korak** | Servisna pločica + broj = mijenja zadani korak (npr. broj 100, u milimetrima, za mrežu od 10 cm). Pamti se i nakon isključivanja. |
 
 ## 5. Zadane i spremljene vrijednosti
 
 <Note>
-**Naprijed = 150 mm (15 cm), zaokret = 90°.** Žeton **Korak** mijenja "zadanu" udaljenost, a ona ostaje i nakon isključivanja. Koristite ga za karte s mrežom za bilo kojeg robota.
+**Naprijed = 150 mm (15 cm), zaokret = 90°.** Žeton **Zadani korak** mijenja korak za Naprijed i Natrag, a on ostaje i nakon isključivanja. Koristite ga za karte s mrežom za bilo kojeg robota.
 
 Tijekom jedne sesije svaka naredba kretanja pamti **vlastitu** spremljenu vrijednost:
 
@@ -92,7 +92,7 @@ Tijekom jedne sesije svaka naredba kretanja pamti **vlastitu** spremljenu vrijed
 - **aritmetička** pločica → mijenja je (`+`, `−`, `×`, `÷`, `√`, `^`)
 - **prazno** u paru s naredbom → koristi zadnju spremljenu ili zadanu vrijednost
 
-Spremljene vrijednosti brišu se kad se ploča isključi; zadana vrijednost (Korak) ostaje.
+Spremljene vrijednosti brišu se kad se ploča isključi; zadana vrijednost (Zadani korak) ostaje.
 
 **Kratki pregled:**
 
@@ -142,7 +142,7 @@ Dodajte svaki sljedeći tek kad je prethodni sigurno usvojen. Cijeli plan od 12 
 
 **Rad u skupini:** preporučujemo jedan komplet na **2–3 djeteta**.
 
-**Karte:** radit će bilo koja karta s mrežom izrađena za bilo kojeg edukativnog robota. Veličinu polja postavite žetonom **Korak** i brojem (npr. 100, 120, 150, 200 mm).
+**Karte:** radit će bilo koja karta s mrežom izrađena za bilo kojeg edukativnog robota. Veličinu polja postavite žetonom **Zadani korak** i brojem (npr. 100, 120, 150, 200 mm).
 
 **Trik za 10 koraka umjesto 6.** Stavite žeton **Funkcija [ ]** u zadnji (6.) utor gornjeg reda i učvrstite ga ljepljivom trakom. Program se tada izvodi kao jedan dugi lanac: 5 gornjih koraka + 5 donjih = **10 koraka zaredom**. Korisno za malu djecu kojima treba dulji program prije nego što budu spremna shvatiti pojam funkcije.
 </Tip>

@@ -49,19 +49,19 @@ De rekenkunde telt tot 5000 in beide richtingen, delen en worteltrekken worden a
 | Commando | NFC Code |
 | --- | --- |
 | Kalibratie (zonder getal: de robot stelt motoren en gyroscoop af, ongeveer 2 minuten, de eerste halve minuut niet aanraken; met kaartje `+N` of `−N`: correctie van de draaiingen na de test met 32 draaiingen; met een gewoon getal werkt het niet, de cel wordt rood) | `ccal` |
-| Standaard staplengte instellen (1–999 mm; zonder getal terug naar 150 mm) | `clen` |
+| Standaardstap: staplengte voor Vooruit en Achteruit, die ook Willekeurige beweging gebruikt (1–999 mm; zonder getal terug naar 150 mm) | `clen` |
 
 ## 🔧 Geavanceerd
 
 | Commando | NFC Code |
 | --- | --- |
 | Audiovoorbeeld (zie [Audiobestanden](/nl/sounds_reference)) | `xNNN` |
-| Geluidsfragment (de robot speelt geluid nummer N af: `csou` + getal N) | `csou` |
+| Zin van de robot (`csou` + getal N: de robot zegt zin xN uit de [geluidentabel](/nl/sounds_reference#-robotzinnen-reacties-en-servicemeldingen-x001–x019)) | `csou` |
 | Volumeniveau (bediening en robot: 0–100, boven 100 = maximum) | `clvl` |
 
 ## Hoe gegevens naar een NFC-tag te schrijven
 
-U kunt uw eigen token maken — schrijf eenvoudig een tekstcode naar een NFC-tag. U kunt willekeurige getallen (van 0 tot 999), willekeurige herhalingen en willekeurige getallen voor rekenkundige bewerkingen gebruiken.
+U kunt uw eigen token maken — schrijf eenvoudig een tekstcode naar een NFC-tag. U kunt willekeurige getallen (van 1 tot 999), willekeurige herhalingen en willekeurige getallen voor rekenkundige bewerkingen gebruiken.
 
 Om tekstgegevens naar een NFC-tag te schrijven, opent u de Google Play Store en installeert u de app **RFID NFC Reader** of **NFC Tools** op uw telefoon.
 

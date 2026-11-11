@@ -49,19 +49,19 @@ Aritmetika računa do 5000 u oba smjera, a dijeljenje i korijen zaokružuju se n
 | Naredba | NFC kod |
 | --- | --- |
 | Kalibracija (bez broja: robot podešava motore i žiroskop, oko 2 minute, prvih pola minute ga nemojte dirati; sa žetonom `+N` ili `−N`: ispravak zakreta nakon provjere s 32 okreta; ne radi s običnim brojem, polje se zacrveni) | `ccal` |
-| Korak: zadana duljina koraka za kartu (1–999 mm; bez broja vraća na 150 mm) | `clen` |
+| Zadani korak: duljina koraka za Naprijed i Natrag, koju koristi i Nasumično kretanje (1–999 mm; bez broja vraća na 150 mm) | `clen` |
 
 ## 🔧 Napredno
 
 | Naredba | NFC kod |
 | --- | --- |
 | Zvučni uzorak (vidi [Popis zvučnih datoteka](/en-hr/sounds_reference)) | `xNNN` |
-| Zvučni isječak (robot reproducira zvuk broj N: `csou` + broj N) | `csou` |
+| Fraza robota (`csou` + broj N: robot izgovara frazu xN iz [tablice zvukova](/en-hr/sounds_reference#-fraze-robota-reakcije-i-servisne-poruke-x001–x019)) | `csou` |
 | Glasnoća (ploča i robot: 0–100, iznad 100 = maksimum) | `clvl` |
 
 ## Kako zapisati podatke na NFC naljepnicu
 
-Možete izraditi vlastiti žeton: dovoljno je zapisati tekstualni kod na NFC naljepnicu ili NFC čip. Možete koristiti bilo koje brojeve (od 0 do 999), bilo koja ponavljanja i bilo koje brojeve za aritmetičke operacije.
+Možete izraditi vlastiti žeton: dovoljno je zapisati tekstualni kod na NFC naljepnicu ili NFC čip. Možete koristiti bilo koje brojeve (od 1 do 999), bilo koja ponavljanja i bilo koje brojeve za aritmetičke operacije.
 
 Za zapisivanje tekstualnih podataka na NFC naljepnicu otvorite trgovinu Google Play i na telefon instalirajte aplikaciju **RFID NFC Reader** ili **NFC Tools**.
 

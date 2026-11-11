@@ -79,12 +79,12 @@ Leere Steckplätze und rote Paare werden beim Auslegen übersprungen. LEDs blink
 | **Zahlen** | `1`–`999`. Setzen die Bewegungsdistanz in mm oder den Drehwinkel in Grad. |
 | **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! |
 | **Funktion** | Ruft die untere Reihe als Unterprogramm auf. Mit Wiederholungs-Token — läuft entsprechend oft. |
-| **Schritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. |
+| **Standardschritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. |
 
 ## 5. Standardwerte und gespeicherter Wert
 
 <Note>
-**Vorwärts = 150 mm (15 cm), Drehung = 90°.** Das **„Schritt"**-Token ändert die „Standard"-Distanz und behält sie nach dem Ausschalten. Praktisch für Spielraster anderer Roboter.
+**Vorwärts = 150 mm (15 cm), Drehung = 90°.** Das **„Standardschritt"**-Token ändert die „Standard"-Distanz und behält sie nach dem Ausschalten. Praktisch für Spielraster anderer Roboter.
 
 Während einer Sitzung behält jeder Bewegungsbefehl seinen **eigenen** gespeicherten Wert:
 
@@ -142,7 +142,7 @@ Jedes nächste — erst nach sicherem Beherrschen des vorigen. Der vollständige
 
 **Gruppenarbeit:** wir empfehlen ein Set pro **2–3 Kinder**.
 
-**Karten:** jedes Raster, das für andere Lernroboter gemacht ist, passt. Die Zellengröße wird mit dem **„Schritt"**-Token plus Zahl gesetzt (z. B. 100, 120, 150, 200 mm).
+**Karten:** jedes Raster, das für andere Lernroboter gemacht ist, passt. Die Zellengröße wird mit dem **„Standardschritt"**-Token plus Zahl gesetzt (z. B. 100, 120, 150, 200 mm).
 
 **Trick für 10 Schritte statt 6.** Legen Sie das **Funktion [ ]**-Token in den letzten (6.) Steckplatz der oberen Reihe und befestigen Sie es mit Malerkrepp. Das Programm läuft dann als eine lange Kette: 5 obere Schritte + 5 untere = **10 Schritte am Stück**. Praktisch für kleine Kinder, die ein längeres Programm brauchen, aber noch nicht reif sind für das Funktionskonzept.
 </Tip>

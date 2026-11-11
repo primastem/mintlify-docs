@@ -49,21 +49,21 @@ L'aritmetica conta fino a 5000 in entrambe le direzioni, la divisione e la radic
 | Comando | NFC Code |
 | --- | --- |
 | Calibrazione (senza numero: il robot regola motori e giroscopio, circa 2 minuti, nel primo mezzo minuto non toccarlo; con la tessera `+N` o `−N`: correzione delle rotazioni dopo la prova con 32 rotazioni; con un numero semplice non funziona, la cella diventa rossa) | `ccal` |
-| Imposta lunghezza passo predefinita (1–999 mm; senza numero torna a 150 mm) | `clen` |
+| Passo predefinito: lunghezza del passo per Avanti e Indietro, la usa anche Movimento casuale (1–999 mm; senza numero torna a 150 mm) | `clen` |
 
 ## 🔧 Avanzato
 
 | Comando | NFC Code |
 | --- | --- |
 | Campione audio (vedi [File audio](/it/sounds_reference)) | `xNNN` |
-| Campione sonoro (il robot riproduce il suono numero N: `csou` + numero N) | `csou` |
+| Frase del robot (`csou` + numero N: il robot pronuncia la frase xN dalla [tabella dei suoni](/it/sounds_reference#-frasi-del-robot-reazioni-e-messaggi-di-servizio-x001–x019)) | `csou` |
 | Livello volume (pulsantiera e robot: 0–100, oltre 100 = massimo) | `clvl` |
 
 ## Come scrivere dati su un tag NFC
 
-Puoi creare il tuo token — semplicemente scrivi un codice testo su un tag NFC. Puoi usare qualsiasi numero (da 0 a 999), qualsiasi ripetizione e qualsiasi numero per le operazioni aritmetiche.
+Può creare il Suo token: scriva semplicemente un codice testo su un tag NFC. Può usare qualsiasi numero (da 1 a 999), qualsiasi ripetizione e qualsiasi numero per le operazioni aritmetiche.
 
-Per scrivere dati testo su un tag NFC, apri il Google Play Store e installa l'app **RFID NFC Reader** o **NFC Tools** sul tuo telefono.
+Per scrivere dati testo su un tag NFC, apra il Google Play Store e installi l'app **RFID NFC Reader** o **NFC Tools** sul Suo telefono.
 
 Le istruzioni per scrivere un tag NFC si trovano qui — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 

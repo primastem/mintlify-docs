@@ -1,6 +1,6 @@
 ---
 title: "PrimaSTEM en LOGO"
-description: "PrimaSTEM is de turtle graphics van LOGO, maar dan in je handen en zonder scherm. Elk begrip op de bediening en wat het in LOGO is."
+description: "PrimaSTEM is de turtle graphics van LOGO, maar dan in uw handen en zonder scherm. Elk begrip op de bediening en wat het in LOGO is."
 icon: "turtle"
 mode: "default"
 ---
@@ -20,8 +20,8 @@ Deze pagina is voor leerkrachten die LOGO of Scratch kennen, en voor iedereen di
 | Lus | Een herhalingskaartje in het paar: Vooruit + herhaal 4 | `repeat 4 [forward 150]` |
 | Procedure | De onderste rij (5 paren) is de Functie. Het kaartje “Functie” roept haar aan | `to shape ... end`, daarna `shape` |
 | Procedure in een lus | Het kaartje “Functie” en een herhalingskaartje in één paar: Functie + herhaal 5 | `repeat 5 [shape]` |
-| Een waarde aan een procedure geven | Vooruit 100 rijdt 100 mm en onthoudt 100. Roep je daarna een Functie aan met Vooruit zonder getal, dan rijdt die ook 100. Verander Vooruit vóór de volgende aanroep, en dezelfde Functie tekent een figuur van een andere grootte | lijkt op `shape 100`, `shape 50` |
-| Recursie | Het kaartje “Functie” in de onderste rij: de functie roept zichzelf aan tot je opnieuw op ▶ Start drukt | een procedure die zichzelf aanroept |
+| Een waarde aan een procedure geven | Vooruit 100 rijdt 100 mm en onthoudt 100. Roept u daarna een Functie aan met Vooruit zonder getal, dan rijdt die ook 100. Verander Vooruit vóór de volgende aanroep, en dezelfde Functie tekent een figuur van een andere grootte | lijkt op `shape 100`, `shape 50` |
+| Recursie | Het kaartje “Functie” in de onderste rij: de functie roept zichzelf aan tot u opnieuw op ▶ Start drukt | een procedure die zichzelf aanroept |
 | Variabelen | Elk commando onthoudt zijn laatste waarde: Vooruit, Achteruit, Links, Rechts en Pauze zijn vijf aparte variabelen. Vooruit zonder getal rijdt even ver als de vorige Vooruit | `make "step 200`, daarna `forward :step` |
 | Rekenen met een variabele | Vooruit + “+30”: tel 30 op bij de opgeslagen waarde en rijd | `make "step :step + 30 forward :step` |
 | Bewerkingen | + − × ÷ √ ^ op de opgeslagen waarde, van −5000 tot 5000, hele getallen | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
@@ -30,7 +30,7 @@ Deze pagina is voor leerkrachten die LOGO of Scratch kennen, en voor iedereen di
 | Pen | De stift in het midden van de robot | `pendown` |
 | Debuggen | We kijken naar de robot, vinden het verkeerde kaartje en vervangen het | de regel verbeteren |
 
-Elk commando heeft zijn eigen opgeslagen waarde: als je Vooruit verandert, verandert Links niet. Als de bediening uitgaat, krijgen alle waarden weer hun standaardwaarde: 150 mm, 90°, 1 s voor Pauze. De standaardstap kun je blijvend veranderen met het servicekaartje “Standaard staplengte instellen” (zie [Apparaat en instellingen](/nl/usermanual)).
+Elk commando heeft zijn eigen opgeslagen waarde: als u Vooruit verandert, verandert Links niet. Als de bediening uitgaat, krijgen alle waarden weer hun standaardwaarde: 150 mm, 90°, 1 s voor Pauze. De standaardstap kunt u blijvend veranderen met het servicekaartje “Standaardstap” (zie [Apparaat en instellingen](/nl/usermanual)).
 
 Het kind rekent. De robot voert het programma precies uit.
 
@@ -57,7 +57,7 @@ repeat 4 [forward 300 right 90]
   </Frame>
 </Columns>
 
-Voor kinderen van 4–6 jaar kun je de getallen weglaten: Vooruit en Rechts zonder getal tekenen een vierkant met zijden van 15 cm.
+Voor kinderen van 4–6 jaar kunt u de getallen weglaten: Vooruit en Rechts zonder getal tekenen een vierkant met zijden van 15 cm.
 
 ### Gelijkzijdige driehoek
 
@@ -147,7 +147,7 @@ repeat 20 [
   </Frame>
 </Columns>
 
-Vooruit 30 zet de opgeslagen waarde. Elke keer dat de functie loopt, maakt “+30” de zijde 30 mm langer: 60, 90, 120 enzovoort. De eerste Vooruit 30 zet de waarde terug, dus als je opnieuw op ▶ Start drukt, krijg je dezelfde spiraal.
+Vooruit 30 zet de opgeslagen waarde. Elke keer dat de functie loopt, maakt “+30” de zijde 30 mm langer: 60, 90, 120 enzovoort. De eerste Vooruit 30 zet de waarde terug, dus als u opnieuw op ▶ Start drukt, krijgt u dezelfde spiraal.
 
 ### Zeshoek (hoek door te delen)
 
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Rechts 360 maakt een volle draai en onthoudt 360. Rechts ÷6 deelt de opgeslagen waarde en draait 60°. In de functie neemt Rechts zonder getal opnieuw 60°. De twee draaien aan het begin veranderen alleen de kant waar de robot naartoe kijkt voordat hij tekent; de figuur blijft een zeshoek.
 
-De bediening deelt en rondt af op het dichtstbijzijnde hele getal. Wil je dat de figuur sluit, deel 360 dan door een getal dat zonder rest past: 3, 4, 5, 6, 8, 9, 10, 12. Zo geeft 360 ÷ 7 = 51,4 een hoek van 51°, en de zevenhoek sluit niet: er blijft 3° over.
+De bediening deelt en rondt af op het dichtstbijzijnde hele getal. Wilt u dat de figuur sluit, deel 360 dan door een getal dat zonder rest past: 3, 4, 5, 6, 8, 9, 10, 12. Zo geeft 360 ÷ 7 = 51,4 een hoek van 51°, en de zevenhoek sluit niet: er blijft 3° over.
 
 Meer tekeningen: [Tekenvoorbeelden](/nl/mathdrawings).
 
@@ -181,9 +181,9 @@ PrimaSTEM dekt de basis van de turtle graphics van LOGO. Sommige dingen werken a
 
 - **Eén paar, één commando en één waarde.** In een paar cellen ligt een commando en hooguit één waarde: een getal, een herhaling of een bewerking. Daardoor kan zelfs een kind van vier het programma lezen.
 - **Geen voorwaarden (`if`).** Het programma loopt elke keer op dezelfde manier. Alleen de dobbelsteen en Willekeurige beweging brengen toeval.
-- **De Functie heeft geen benoemde parameters.** Je roept haar aan met een herhaling, en ze gebruikt de waarden die vóór de aanroep zijn ingesteld (zie de tabel hierboven).
+- **De Functie heeft geen benoemde parameters.** U roept haar aan met een herhaling, en ze gebruikt de waarden die vóór de aanroep zijn ingesteld (zie de tabel hierboven).
 - **Lengte van het programma:** 6 paren in de hoofdrij, 5 in de Functie.
-- **De stift zet je er met de hand in**, als het kind wil dat de robot tekent.
+- **De stift zet u er met de hand in**, als het kind wil dat de robot tekent.
 
 Als een kind de bediening ontgroeid is, werkt dezelfde robot met [Scratch](https://scratch.primastem.com).
 

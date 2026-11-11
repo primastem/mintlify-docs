@@ -49,21 +49,21 @@ La aritmética cuenta hasta 5000 en ambos sentidos, la división y la raíz se r
 | Comando | NFC Code |
 | --- | --- |
 | Calibración (sin número: el robot ajusta los motores y el giroscopio, unos 2 minutos, no tocarlo durante el primer medio minuto; con una ficha `+N` o `−N`: corrección de los giros después de la prueba de 32 giros; no funciona con un número simple, la celda se pone roja) | `ccal` |
-| Establecer longitud de paso predeterminada (1–999 mm; sin número vuelve a 150 mm) | `clen` |
+| Paso predeterminado: longitud de paso para Adelante y Atrás, también la usa Movimiento aleatorio (1–999 mm; sin número vuelve a 150 mm) | `clen` |
 
 ## 🔧 Avanzado
 
 | Comando | NFC Code |
 | --- | --- |
 | Muestra de audio (ver [Archivos de audio](/es/sounds_reference)) | `xNNN` |
-| Muestra de sonido (el robot reproduce el sonido número N: `csou` + número N) | `csou` |
+| Frase del robot (`csou` + número N: el robot dice la frase xN de la [tabla de sonidos](/es/sounds_reference#-frases-del-robot-reacciones-y-mensajes-de-servicio-x001–x019)) | `csou` |
 | Nivel de volumen (tablero y robot: 0–100, más de 100 = máximo) | `clvl` |
 
 ## Cómo escribir datos en una etiqueta NFC
 
-Puedes crear tu propia ficha — simplemente escribe un código de texto en una etiqueta NFC. Puedes usar cualquier número (del 0 al 999), cualquier repetición y cualquier número para operaciones aritméticas.
+Puede crear su propia ficha — simplemente escriba un código de texto en una etiqueta NFC. Puede usar cualquier número (del 1 al 999), cualquier repetición y cualquier número para operaciones aritméticas.
 
-Para escribir datos de texto en una etiqueta NFC, abre Google Play Store e instala la aplicación **RFID NFC Reader** o **NFC Tools** en tu teléfono.
+Para escribir datos de texto en una etiqueta NFC, abra Google Play Store e instale la aplicación **RFID NFC Reader** o **NFC Tools** en su teléfono.
 
 Las instrucciones para escribir una etiqueta NFC están aquí — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 

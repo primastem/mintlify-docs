@@ -116,7 +116,7 @@ L'objectif principal est de montrer aux enfants le lien entre commande et action
 
 ### Instructions univoques
 
-Répétez les étapes avec chaque direction (**avant**, tourner **gauche**, tourner **droite**) jusqu'à ce que l'enfant sache reconnaître chaque jeton.
+Répétez les étapes avec chaque direction (**Avancer**, tourner **gauche**, tourner **droite**) jusqu'à ce que l'enfant sache reconnaître chaque jeton.
 
 ### Première tâche
 
@@ -210,7 +210,7 @@ Si la séquence est incorrecte, ramenez simplement le robot à sa position initi
 
 ### Commande «Direction aléatoire»
 
-Pour introduire la notion d'aléatoire, prenez 4 jetons de direction : «**Avancer**», «**Gauche**», «**Droite**» et «**Arrière**», placez-les dans une boîte opaque ou un sac, mélangez et demandez aux enfants de tirer 1 jeton sans regarder et de le montrer au groupe, puis de le remettre. Expliquez aux enfants ce qu'est l'aléatoire parmi quatre états avec cet exemple.
+Pour introduire la notion d'aléatoire, prenez 4 jetons de direction : «**Avancer**», «**Gauche**», «**Droite**» et «**Reculer**», placez-les dans une boîte opaque ou un sac, mélangez et demandez aux enfants de tirer 1 jeton sans regarder et de le montrer au groupe, puis de le remettre. Expliquez aux enfants ce qu'est l'aléatoire parmi quatre états avec cet exemple.
 
 Ensuite, montrez aux enfants le jeton-commande «**Mouvement aléatoire**».
 
@@ -256,7 +256,7 @@ Des solutions simples sont possibles avec le jeton «**Avancer**» et la valeur 
 
 Essayez avec les enfants d'appliquer une boucle avec valeurs à la commande «Fonction» : par exemple, faire marcher le robot en zigzag avec la commande «Fonction» avec une valeur de boucle de 5 et la séquence fonctionnelle dans la partie inférieure du tableau de contrôle avec les commandes «**Avancer**», «**Droite**», «**Avancer**», «**Gauche**».
 
-Créez d'abord avec la fonction un programme pour le mouvement «en marche» - «avant», «droite», «avant», «gauche» et exécutez-le.
+Créez d'abord avec la fonction un programme pour le mouvement «en marche» - «Avancer», «Droite», «Avancer», «Gauche» et exécutez-le.
 
 Ensuite, ajoutez à la fonction une boucle avec le nombre 5, répétant ainsi la fonction plusieurs fois, le robot se déplacera en marches vers le haut et à droite.
 
@@ -302,7 +302,7 @@ Exemple : Ajoutez à la commande «**Avancer**» la valeur **200** et observez l
 
 [Lancer dans le simulateur](https://simulator.primastem.com/#top=cfor.n200,crig.n180&s=l1047602&r=450-600-0&run)
 
-> **Important :** Le tableau de contrôle conserve la dernière valeur définie pour les commandes de mouvement et de rotation. Si une commande est utilisée sans nouvelle valeur, la dernière valeur enregistrée s'applique jusqu'à ce que le tableau de contrôle soit éteint. Définir une nouvelle valeur modifie la valeur par défaut. La longueur de pas réglée avec le jeton « Distance par défaut » reste en mémoire et se conserve après un redémarrage. Pour revenir à 15 cm, utilisez ce jeton avec le nombre 150. La rotation de 90° revient d'elle-même après un redémarrage.
+> **Important :** Le tableau de contrôle conserve la dernière valeur définie pour les commandes de mouvement et de rotation. Si une commande est utilisée sans nouvelle valeur, la dernière valeur enregistrée s'applique jusqu'à ce que le tableau de contrôle soit éteint. Définir une nouvelle valeur modifie la valeur par défaut. La longueur de pas réglée avec le jeton « Pas par défaut » reste en mémoire et se conserve après un redémarrage. Pour revenir à 15 cm, utilisez ce jeton avec le nombre 150. La rotation de 90° revient d'elle-même après un redémarrage.
 
 La modification des paramètres permet de créer des trajectoires et des scénarios de mouvement plus complexes. Voir les exemples sur la [page des dessins mathématiques](/fr/mathdrawings).
 
@@ -312,7 +312,7 @@ La modification des paramètres permet de créer des trajectoires et des scénar
 
 Les opérations arithmétiques avec des nombres permettent de modifier dynamiquement les valeurs dans le programme pour les commandes de mouvement (Avancer, Reculer, Gauche, Droite), rendant le contrôle du robot plus flexible.
 
-Lors de l'ajout d'une opération arithmétique, le contrôleur modifie le nombre enregistré pour la commande de mouvement et envoie la nouvelle valeur au robot.
+Lors de l'ajout d'une opération arithmétique, le tableau de contrôle modifie le nombre enregistré pour la commande de mouvement et envoie la nouvelle valeur au robot.
 
 Exemple :
 

@@ -49,19 +49,19 @@ Aritmetikken regner opptil 5000 i begge retninger, divisjon og kvadratrot rundes
 | Kommando | NFC Code |
 | --- | --- |
 | Kalibrering (uten tall: roboten justerer motorer og gyroskop, ca. 2 minutter, ikke rør den det første halve minuttet; med brikken `+N` eller `−N`: korreksjon av svingene etter testen med 32 svinger; med et vanlig tall virker den ikke, cellen blir rød) | `ccal` |
-| Angi standard trinnlengde (1–999 mm; uten tall tilbake til 150 mm) | `clen` |
+| Standardsteg: steglengde for Fremover og Bakover, brukes også av Tilfeldig bevegelse (1–999 mm; uten tall tilbake til 150 mm) | `clen` |
 
 ## 🔧 Avansert
 
 | Kommando | NFC Code |
 | --- | --- |
 | Lydeksempel (se [Lydfiler](/no/sounds_reference)) | `xNNN` |
-| Lydeksempel (roboten spiller lyd nummer N: `csou` + tall N) | `csou` |
+| Robotfrase (`csou` + tall N: roboten sier frasen xN fra [lydtabellen](/no/sounds_reference#-robot-fraser-reaksjoner-og-servicemeldinger-x001–x019)) | `csou` |
 | Volumnivå (kontrollpanel og robot: 0–100, over 100 = maks) | `clvl` |
 
 ## Hvordan skrive data til en NFC-tag
 
-Du kan lage din egen brikke — skriv ganske enkelt en tekstkode på en NFC-tag. Du kan bruke hvilke som helst tall (fra 0 til 999), hvilke som helst gjentakelser og hvilke som helst tall for aritmetiske operasjoner.
+Du kan lage din egen brikke — skriv ganske enkelt en tekstkode på en NFC-tag. Du kan bruke hvilke som helst tall (fra 1 til 999), hvilke som helst gjentakelser og hvilke som helst tall for aritmetiske operasjoner.
 
 For å skrive tekstdata til en NFC-tag, åpne Google Play Store og installer appen **RFID NFC Reader** eller **NFC Tools** på telefonen din.
 

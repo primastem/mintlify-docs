@@ -18,7 +18,7 @@ PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matem
     Robot i form av en nyckelpiga i trä på två hjul. Pennhållare ovanpå. Högtalare, USB-C, Bluetooth.
   </Card>
   <Card title="Kontrollpanel" icon="grid-3x3">
-    Panel med parade fack för programmet. Flerfärgade indikatorer, ▶ Start/Stopp-knapp, högtalare, USB-C, Bluetooth.
+    Kontrollpanel med parade fack för programmet. Flerfärgade indikatorer, ▶ Start/Stopp-knapp, högtalare, USB-C, Bluetooth.
   </Card>
   <Card title="Kodbrickor" icon="square-stack">
     Kartongkvadrater med NFC-klistermärken — varje = ett kommando i robotens program.
@@ -30,14 +30,14 @@ PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matem
 ## 2. Slå på
 
 <Steps>
-  <Step title="Sätt på roboten först, sedan panelen" icon="power">
+  <Step title="Sätt på roboten först, sedan kontrollpanelen" icon="power">
     Var och en spelar ett kort ljud; den gröna strömlampan på varje enhet = på.
   </Step>
   <Step title="Anslutet = vitt" icon="check">
-    Tillgängliga fack på panelen lyser **vitt**, robotens ögon blinkar **vitt**. Klart.
+    Tillgängliga fack på kontrollpanelen lyser **vitt**, robotens ögon blinkar **vitt**. Klart.
   </Step>
   <Step title="Ljusblått = ingen anslutning" icon="bluetooth">
-    Roboten och panelen lyser ljusblått. Om anslutningen inte kommer, håll **▶ Start** på panelen i **mer än 10 sekunder**. Vid 5:e sekunden hörs en signal, fortsätt hålla: enheterna paras och roboten startar om.
+    Roboten och kontrollpanelen lyser ljusblått. Om anslutningen inte kommer, håll **▶ Start** på kontrollpanelen i **mer än 10 sekunder**. Vid 5:e sekunden hörs en signal, fortsätt hålla: enheterna paras och roboten startar om.
   </Step>
 </Steps>
 
@@ -45,9 +45,9 @@ PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matem
 
 ## 3. Hur ett program fungerar
 
-Panelen har **två rader med parade fack**. Du placerar brickor i de fack som lyser vitt — det blir programmet. Tryck **▶ Start** — roboten utför det.
+Kontrollpanelen har **två rader med parade fack**. Du placerar brickor i de fack som lyser vitt — det blir programmet. Tryck **▶ Start** — roboten utför det.
 
-<Frame caption="Panelens layout — bokstäverna A–F förklaras nedan">
+<Frame caption="Kontrollpanelens layout — bokstäverna A–F förklaras nedan">
   <img src="../images/book-1/control-labels.svg" alt="Kontrollpanel med beteckningar A till F" />
 </Frame>
 
@@ -79,12 +79,12 @@ Tomma fack och röda par hoppas över när programmet läggs ut. LED-erna blinka
 | **Tal** | `1`–`999`. Anger rörelsesträcka i mm eller vridningsvinkel i grader. |
 | **Aritmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — en bricka = operation + tal. Ändrar det sparade värdet för rörelse eller vridning. Ett negativt resultat vänder riktningen! |
 | **Funktion** | Anropar nedre raden som subprogram. Med upprepningsbricka — körs angivet antal gånger. |
-| **Steg** | Servicebricka + Tal = ändrar standardsteget (t.ex. tal 100, i millimeter, för ett 10 cm rutnät). Behålls efter avstängning. |
+| **Standardsteg** | Servicebricka + Tal = ändrar standardsteget (t.ex. tal 100, i millimeter, för ett 10 cm rutnät). Behålls efter avstängning. |
 
 ## 5. Standardvärden och sparat värde
 
 <Note>
-**Framåt = 150 mm (15 cm), vändning = 90°.** **«Steg»**-brickan ändrar «standard»-sträckan och behåller den efter avstängning. Använd för spelplaner från andra robotar.
+**Framåt = 150 mm (15 cm), vändning = 90°.** **«Standardsteg»**-brickan ändrar «standard»-sträckan och behåller den efter avstängning. Använd för spelplaner från andra robotar.
 
 Under en session behåller varje rörelsekommando **sitt eget** sparade värde:
 
@@ -92,7 +92,7 @@ Under en session behåller varje rörelsekommando **sitt eget** sparade värde:
 - **en aritmetisk bricka** → ändrar det (`+`, `−`, `×`, `÷`, `√`, `^`)
 - **tomt** i paret → tar det senast sparade eller standardvärdet
 
-Sparade värden nollställs när panelen stängs av; standardvärdet (steg) finns kvar.
+Sparade värden nollställs när kontrollpanelen stängs av; standardvärdet (standardsteg) finns kvar.
 
 **Snabbreferens:**
 
@@ -111,7 +111,7 @@ Prova dessa exempel — du ser vad enheten klarar. Sätt en penna mitt i roboten
 <CardGroup cols={2}>
   <Card title="Stjärna — tal + upprepning">
     <Frame>
-      <img src="../images/mathdrawings/star5-board.svg" alt="Stjärnprogram på panelen" />
+      <img src="../images/mathdrawings/star5-board.svg" alt="Stjärnprogram på kontrollpanelen" />
     </Frame>
     <Frame>
       <img src="../images/mathdrawings/star5-field.svg" alt="Stjärna ritad av roboten" />
@@ -120,7 +120,7 @@ Prova dessa exempel — du ser vad enheten klarar. Sätt en penna mitt i roboten
   </Card>
   <Card title="Spiral — aritmetik i en loop">
     <Frame>
-      <img src="../images/mathdrawings/spiral-board.svg" alt="Spiralprogram på panelen" />
+      <img src="../images/mathdrawings/spiral-board.svg" alt="Spiralprogram på kontrollpanelen" />
     </Frame>
     <Frame>
       <img src="../images/mathdrawings/spiral-field.svg" alt="Spiral ritad av roboten" />
@@ -142,7 +142,7 @@ Varje nästa — endast efter att den förra behärskas säkert. Den fullständi
 
 **Grupparbete:** vi rekommenderar ett set per **2–3 barn**.
 
-**Spelplaner:** alla rutnät gjorda för andra utbildningsrobotar fungerar. Cellstorleken ställs in med **«Steg»**-brickan plus ett tal (t.ex. 100, 120, 150, 200 mm).
+**Spelplaner:** alla rutnät gjorda för andra utbildningsrobotar fungerar. Cellstorleken ställs in med **«Standardsteg»**-brickan plus ett tal (t.ex. 100, 120, 150, 200 mm).
 
 **Knep för 10 steg i stället för 6.** Placera brickan **Funktion [ ]** i sista (6:e) facket på övre raden och fäst den med målartejp. Programmet körs nu som en lång kedja: 5 steg upptill + 5 nedtill = **10 steg i rad**. Praktiskt för de små som behöver ett längre program men ännu inte är redo för funktionskonceptet.
 </Tip>
@@ -154,7 +154,7 @@ Varje nästa — endast efter att den förra behärskas säkert. Den fullständi
     Sätt en penna i roboten — den **ritar** sin bana på papper: från en enkel kurva till månghörningar, stjärnor, spiraler och fraktaler.
   </Card>
   <Card title="Röst" icon="volume-2">
-    Panelen säger varje bricka — röst **på vilket lokalt språk som helst**, för närvarande **20 stöds** (inklusive arabiska, finska och kroatiska), vi lägger till fler på begäran! Hjälper små barn och dem som ännu inte läser. Innehåller alfabetsbokstäver och platser (Hus, Skola, Affär, Skog osv.)
+    Kontrollpanelen säger varje bricka — röst **på vilket lokalt språk som helst**, för närvarande **20 stöds** (inklusive arabiska, finska och kroatiska), vi lägger till fler på begäran! Hjälper små barn och dem som ännu inte läser. Innehåller alfabetsbokstäver och platser (Hus, Skola, Affär, Skog osv.)
   </Card>
   <Card title="Ljud-NFC-klistermärken och kartor" icon="map">
     Klistra NFC-taggar på din karta, programmera från telefonen valfritt tillgängligt ljud. Roboten har en antenn undertill — stannar den på en tagg spelar den upp det inspelade ljudet.

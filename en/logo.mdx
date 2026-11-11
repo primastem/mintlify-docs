@@ -1,20 +1,20 @@
 ---
 title: "PrimaSTEM and LOGO"
-description: "PrimaSTEM is LOGO turtle graphics, made physical and screen-free. Each concept on the board, with its LOGO equivalent."
+description: "PrimaSTEM is LOGO turtle graphics, made physical and screen-free. Each concept on the control board, with its LOGO equivalent."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM is built on the idea of [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language)). Seymour Papert and his colleagues created this language for children in 1967. In LOGO a child types commands and a turtle draws on the screen. In PrimaSTEM the child places tokens on the board, and a wooden robot with a marker draws on paper. No keyboard, no screen, no text.
+PrimaSTEM is built on the idea of [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language)). Seymour Papert and his colleagues created this language for children in 1967. In LOGO a child types commands and a turtle draws on the screen. In PrimaSTEM the child places tokens on the control board, and a wooden robot with a marker draws on paper. No keyboard, no screen, no text.
 
 This page is for teachers who know LOGO or Scratch, and for anyone who wants to see what the tokens really do.
 
-## Concepts on the board
+## Concepts on the control board
 
-| Concept | On the PrimaSTEM board | In LOGO |
+| Concept | On the PrimaSTEM control board | In LOGO |
 |---|---|---|
 | Sequence | Tokens run left to right along the top row. The LED of the running pair blinks, then goes dark | one command after another |
-| Command | Forward, Back, Left, Right, Pause, Random Movement | `forward`, `back`, `left`, `right`, `wait` |
+| Command | Forward, Backward, Left, Right, Pause, Random Movement | `forward`, `back`, `left`, `right`, `wait` |
 | Parameter | A number token in the same pair: Forward + 200 | `forward 200` |
 | Default value | Forward with no number = 150 mm, Left/Right with no number = 90° | |
 | Loop | A repeat token in the pair: Forward + repeat 4 | `repeat 4 [forward 150]` |
@@ -22,7 +22,7 @@ This page is for teachers who know LOGO or Scratch, and for anyone who wants to 
 | Procedure in a loop | The Function token and a repeat token in one pair: Function + repeat 5 | `repeat 5 [shape]` |
 | Giving a procedure a value | Forward 100 moves 100 mm and saves 100. If you call a Function next that has Forward with no number, it also moves 100. Change Forward before the next call, and the same Function draws the shape in a different size | similar to `shape 100`, `shape 50` |
 | Recursion | A Function token inside the bottom row: the function calls itself until you press ▶ Start again | a procedure that calls itself |
-| Variables | Each command remembers its own last value: Forward, Back, Left, Right and Pause are five independent variables. Forward with no number moves as far as the last Forward | `make "step 200`, then `forward :step` |
+| Variables | Each command remembers its own last value: Forward, Backward, Left, Right and Pause are five independent variables. Forward with no number moves as far as the last Forward | `make "step 200`, then `forward :step` |
 | Arithmetic on a variable | Forward + "+30": add 30 to the saved value, then move | `make "step :step + 30 forward :step` |
 | Operations | + − × ÷ √ ^ on the saved value, from −5000 to 5000, whole numbers | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Negative values | A negative result reverses the move: Forward −50 goes back 50 mm, Left −30 turns right 30° | `forward -50` |
@@ -30,17 +30,17 @@ This page is for teachers who know LOGO or Scratch, and for anyone who wants to 
 | Pen | A marker in the centre of the robot | `pendown` |
 | Debugging | Watch the robot, find the wrong token, swap it | edit the line |
 
-Each command has its own saved value: changing Forward does not change Left. When the board is switched off, all values go back to the defaults: 150 mm, 90°, 1 s for Pause. To change the default step for good, use the "Set Default Step Length" service token (see [Device & Setup](/en/usermanual)).
+Each command has its own saved value: changing Forward does not change Left. When the control board is switched off, all values go back to the defaults: 150 mm, 90°, 1 s for Pause. To change the default step for good, use the "Default Step" service token (see [Device & Setup](/en/usermanual)).
 
 The child does the calculating. The robot carries out the program exactly.
 
-## Examples: the same program on the board and in LOGO
+## Examples: the same program on the control board and in LOGO
 
-Each example has a link. It opens the [simulator](https://simulator.primastem.com) with this program on the board and runs it.
+Each example has a link. It opens the [simulator](https://simulator.primastem.com) with this program on the control board and runs it.
 
 ### Square
 
-Board: top row Function × 4. Bottom row: Forward 300, Right.
+Control board: top row Function × 4. Bottom row: Forward 300, Right.
 
 ```
 repeat 4 [forward 300 right 90]
@@ -49,7 +49,7 @@ repeat 4 [forward 300 right 90]
 [Run in the simulator](https://simulator.primastem.com/#top=cfun.r004&fn=cfor.n300,crig&s=l1047602&r=300-600-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/square-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
@@ -61,7 +61,7 @@ For ages 4–6, leave out the numbers: Forward and Right with no numbers draw a 
 
 ### Equilateral triangle
 
-Board: top row Function × 3. Bottom row: Forward 400, Right 120.
+Control board: top row Function × 3. Bottom row: Forward 400, Right 120.
 
 ```
 repeat 3 [forward 400 right 120]
@@ -70,7 +70,7 @@ repeat 3 [forward 400 right 120]
 [Run in the simulator](https://simulator.primastem.com/#top=cfun.r003&fn=cfor.n400,crig.n120&s=l1047602&r=250-623-30&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/triangle-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
@@ -82,7 +82,7 @@ Why 120 and not 60? The robot turns by the outer angle. The three turns together
 
 ### Five-pointed star
 
-Board: top row Function × 5. Bottom row: Forward 400, Right 144.
+Control board: top row Function × 5. Bottom row: Forward 400, Right 144.
 
 ```
 repeat 5 [forward 400 right 144]
@@ -91,7 +91,7 @@ repeat 5 [forward 400 right 144]
 [Run in the simulator](https://simulator.primastem.com/#top=cfun.r005&fn=cfor.n400,crig.n144&s=l1047602&r=250-405-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/star-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
@@ -103,7 +103,7 @@ repeat 5 [forward 400 right 144]
 
 ### Circle
 
-Board: top row Function × 36. Bottom row: Forward 25, Right 10.
+Control board: top row Function × 36. Bottom row: Forward 25, Right 10.
 
 ```
 repeat 36 [forward 25 right 10]
@@ -112,7 +112,7 @@ repeat 36 [forward 25 right 10]
 [Run in the simulator](https://simulator.primastem.com/#top=cfun.r036&fn=cfor.n025,crig.n010&s=l1047602&r=438-307-90&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/circle-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
@@ -124,7 +124,7 @@ A circle is a polygon with many short sides: 36 × 10° = 360°.
 
 ### Square spiral (variable and arithmetic)
 
-Board: top row Forward 30, Function × 20. Bottom row: Right, Forward +30.
+Control board: top row Forward 30, Function × 20. Bottom row: Right, Forward +30.
 
 ```
 make "side 30
@@ -139,7 +139,7 @@ repeat 20 [
 [Run in the simulator](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/spiral-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
@@ -151,7 +151,7 @@ Forward 30 sets the saved value. Each time the function runs, "+30" makes the si
 
 ### Hexagon (an angle from division)
 
-Board: top row Right 360, Right ÷6, Function × 6. Bottom row: Forward 200, Right.
+Control board: top row Right 360, Right ÷6, Function × 6. Bottom row: Forward 200, Right.
 
 ```
 make "angle 360 / 6
@@ -161,7 +161,7 @@ repeat 6 [forward 200 right :angle]
 [Run in the simulator](https://simulator.primastem.com/#top=crig.n360,crig.d006,cfun.r006&fn=cfor.n200,crig&s=l1047602&r=350-232-39&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/hexagon-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">
@@ -171,7 +171,7 @@ repeat 6 [forward 200 right :angle]
 
 Right 360 makes one full turn and saves 360. Right ÷6 divides the saved value and turns 60°. In the function, Right with no number takes 60° again. The two turns at the start only change where the robot faces before it draws; the shape stays a hexagon.
 
-The board divides and rounds to the nearest whole number. For the shape to close, divide 360 by a number that leaves no remainder: 3, 4, 5, 6, 8, 9, 10, 12. For example, 360 ÷ 7 = 51.4 gives 51°, and the heptagon misses closing by 3°.
+The control board divides and rounds to the nearest whole number. For the shape to close, divide 360 by a number that leaves no remainder: 3, 4, 5, 6, 8, 9, 10, 12. For example, 360 ÷ 7 = 51.4 gives 51°, and the heptagon misses closing by 3°.
 
 More drawings: [Drawing Examples](/en/mathdrawings).
 
@@ -185,7 +185,7 @@ PrimaSTEM covers the core of LOGO turtle graphics. A few things work differently
 - **Program length:** 6 pairs in the main row, 5 in the Function.
 - **You put the marker in by hand** when the child wants the robot to draw.
 
-When a child outgrows the board, the same robot works with [Scratch](https://scratch.primastem.com).
+When a child outgrows the control board, the same robot works with [Scratch](https://scratch.primastem.com).
 
 ## Further reading
 

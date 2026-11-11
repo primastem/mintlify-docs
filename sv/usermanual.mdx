@@ -63,6 +63,7 @@ Grundläggande block för att komponera kontrollprogrammet:
 - **Bakåt** — rörelse bakåt (15 cm som standard)
 - **Funktion** — kör underprogrammet från den nedre delen av kontrollpanelen
 - **Slumpmässig Rörelse** — ett steg framåt eller bakåt, eller en 90°-sväng åt vänster eller höger följd direkt av ett steg framåt med standardstegets längd (det finns ingen sväng på stället utan steg)
+- **Paus** — roboten står stilla i N sekunder (1–999 s; utan tal 1 s)
 - **Upprepningsbrickor (Loopar)** - Brickor med siffror från 2 till 6 (efter antalet prickar) och upprepningspiktogram med siffran inuti. Brickan med en tärning betyder ett slumpmässigt antal upprepningar från 1 till 6.
 
 > Numeriska värde- och aritmetikbrickor används också för att utöka programmeringen: till exempel att upprepa ett kommando eller ändra rörelsevinkel/distans.
@@ -150,7 +151,7 @@ Som standard:
 - **Avbryt** programkörningen genom att trycka **▶ Start** igen under rörelse.
 - Kontrollpanelen kommer ihåg det senaste **inställda värdet** (distans/vinkel) för rörelsekommandot tills avstängning: till exempel, om "Framåt" = "200", körs alla efterföljande "Framåt"-kommandon med detta värde.
 - Värden efter aritmetik sparas också.
-- Ändra "**standarddistans**" kan göras med en servicebricka: till exempel, för 12,5 cm, installera brickan "Standarddistans" med värdet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Brickan utan tal återställer 150 mm. Med aritmetik eller noll blinkar facket rött och steget förblir detsamma.
+- Ändra "**standardsteget**" kan göras med servicebrickan **Standardsteg**, som ändrar steget för Framåt och Bakåt: till exempel, för 12,5 cm, installera brickan "Standardsteg" med värdet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Brickan utan tal återställer 150 mm. Med aritmetik eller noll blinkar facket rött och steget förblir detsamma.
 - Kontrollpanelen och roboten **stängs av automatiskt** om ingenting händer på 15 minuter.
 - Medan roboten väntar på ett kommando blinkar den med ögonen: så syns det att den är på och redo.
 - **Kort tryck på robotknappen**: roboten läser brickan under sig och säger vad den är.

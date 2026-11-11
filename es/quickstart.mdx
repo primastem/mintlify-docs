@@ -8,7 +8,7 @@ mode: "wide"
 PrimaSTEM es un kit educativo sin pantalla para aprender programación, lógica y matemáticas, para niños de 4 a 10+ años. Esta página explica brevemente **cómo funciona el dispositivo**.
 
 <Note>
-**¿Aún no tienes el dispositivo? Pruébalo en tu navegador.** Abre el **[simulador web](https://simulator.primastem.com)** — una copia funcional del tablero y el robot. Coloca fichas, pulsa **▶ Inicio** y observa cómo se ejecuta el robot mientras lees esta guía.
+**¿Aún no tiene el dispositivo? Pruébelo en su navegador.** Abra el **[simulador web](https://simulator.primastem.com)** — una copia funcional del tablero y el robot. Coloque fichas, pulse **▶ Inicio** y observe cómo se ejecuta el robot mientras lee esta guía.
 </Note>
 
 ## 1. Qué hay en la caja
@@ -25,27 +25,27 @@ PrimaSTEM es un kit educativo sin pantalla para aprender programación, lógica 
   </Card>
 </CardGroup>
 
-<Tip>Después de recibir el kit, le recomendamos actualizar el robot y el mando al último firmware: [cómo actualizar](/es/update).</Tip>
+<Tip>Después de recibir el kit, le recomendamos actualizar el robot y el tablero al último firmware: [cómo actualizar](/es/update).</Tip>
 
 ## 2. Encendido
 
 <Steps>
-  <Step title="Enciende el robot, luego el tablero" icon="power">
+  <Step title="Encienda el robot, luego el tablero" icon="power">
     Cada uno emite un sonido breve; el indicador verde de encendido en cada dispositivo = encendido.
   </Step>
   <Step title="Conectado = blanco" icon="check">
     Las ranuras disponibles del tablero se iluminan en **blanco**, los ojos del robot parpadean en **blanco**. Listo.
   </Step>
   <Step title="Azul claro = sin conexión" icon="bluetooth">
-    El robot y el tablero se iluminan en azul claro. Si la conexión no llega, mantén pulsado **▶ Inicio** en el tablero durante **más de 10 segundos**. En el segundo 5 sonará un pitido, sigue pulsando: los dispositivos se emparejan y el robot se reinicia.
+    El robot y el tablero se iluminan en azul claro. Si la conexión no llega, mantenga pulsado **▶ Inicio** en el tablero durante **más de 10 segundos**. En el segundo 5 sonará un pitido, siga pulsando: los dispositivos se emparejan y el robot se reinicia.
   </Step>
 </Steps>
 
-**Pruébalo ya:** coloca una ficha **Adelante** en la primera ranura (cualquier celda de la pareja). Pulsa **▶ Inicio**. El robot avanza 15 cm y se detiene. *Ya es un programa — un solo comando.*
+**Pruébelo ya:** coloque una ficha **Adelante** en la primera ranura (cualquier celda de la pareja). Pulse **▶ Inicio**. El robot avanza 15 cm y se detiene. *Ya es un programa — un solo comando.*
 
 ## 3. Cómo funciona un programa
 
-El tablero tiene **dos filas de ranuras emparejadas**. Colocas las fichas en las ranuras que se iluminan en blanco — eso es el programa. Pulsas **▶ Inicio** — el robot lo ejecuta.
+El tablero tiene **dos filas de ranuras emparejadas**. Coloque las fichas en las ranuras que se iluminan en blanco — eso es el programa. Pulse **▶ Inicio** — el robot lo ejecuta.
 
 <Frame caption="Diagrama del tablero — las letras A–F se explican abajo">
   <img src="../images/book-1/control-labels.svg" alt="Tablero con etiquetas A a F" />
@@ -60,7 +60,7 @@ El tablero tiene **dos filas de ranuras emparejadas**. Colocas las fichas en las
 | **E** | **Línea de ejecución** que conecta las celdas en pareja |
 | **F** | **LED multicolor** en cada celda |
 
-**Pareja = dos celdas lógicamente vinculadas.** El orden arriba/abajo no importa — el comando se puede colocar en cualquiera de las dos celdas, la repetición/número/aritmética en la otra. Si la segunda celda está vacía, se usa el último número que recibió ese comando desde que se encendió el mando (mientras no se haya fijado un número: paso 15 cm y giro 90°) — suficiente para los más pequeños.
+**Pareja = dos celdas lógicamente vinculadas.** El orden arriba/abajo no importa — el comando se puede colocar en cualquiera de las dos celdas, la repetición/número/aritmética en la otra. Si la segunda celda está vacía, se usa el último número que recibió ese comando desde que se encendió el tablero (mientras no se haya fijado un número: paso 15 cm y giro 90°) — suficiente para los más pequeños.
 
 Colores LED durante la ejecución:
 
@@ -79,12 +79,12 @@ Las ranuras vacías y las parejas rojas se omiten al colocar las fichas. Los LED
 | **Números** | `1`–`999`. Definen la distancia de movimiento en mm o el ángulo de giro en grados. |
 | **Aritmética** | `+N` `−N` `×N` `÷N` `√` `^N` — una ficha = operación + número. Modifica el valor guardado de movimiento o giro. ¡Un resultado negativo invierte la dirección! |
 | **Función** | Llama a la fila inferior como subprograma. Con ficha de repetición — se ejecuta el número indicado de veces. |
-| **Paso** | Ficha de servicio + Número = cambia el paso por defecto (por ejemplo número 100, en milímetros, para una cuadrícula de 10 cm). Se conserva al apagar. |
+| **Paso predeterminado** | Ficha de servicio + Número = cambia el paso por defecto (por ejemplo número 100, en milímetros, para una cuadrícula de 10 cm). Se conserva al apagar. |
 
 ## 5. Valores por defecto y valor guardado
 
 <Note>
-**Adelante = 150 mm (15 cm), giro = 90°.** La ficha **«Paso»** cambia la distancia «por defecto» y se conserva al apagar. Útil para tableros de cualquier robot.
+**Adelante = 150 mm (15 cm), giro = 90°.** La ficha **«Paso predeterminado»** cambia la distancia «por defecto» y se conserva al apagar. Útil para tableros de cualquier robot.
 
 Durante una sesión, cada comando de movimiento guarda **su propio** valor:
 
@@ -104,9 +104,9 @@ Los valores guardados se reinician al apagar el tablero; el valor por defecto (p
 - `Izquierda` + `−10`    → 35°  (anterior 45° − 10°) — modifica
 </Note>
 
-## 6. El robot dibuja lo que tú programas
+## 6. El robot dibuja lo que usted programa
 
-Prueba estos ejemplos — verás de qué es capaz el dispositivo. Pon un rotulador en el centro del robot — **dibuja** mientras se mueve.
+Pruebe estos ejemplos — verá de qué es capaz el dispositivo. Ponga un rotulador en el centro del robot — **dibuja** mientras se mueve.
 
 <CardGroup cols={2}>
   <Card title="Estrella — números + repetición">
@@ -134,7 +134,7 @@ Más ejemplos en [Dibujos matemáticos](/es/mathdrawings).
 ## 7. Cómo enseñar con PrimaSTEM
 
 <Tip>
-**Introduce las fichas-comandos una a una, en este orden:**
+**Introduzca las fichas-comandos una a una, en este orden:**
 
 **Adelante → Giros → Repeticiones → Función → Números → Aritmética.**
 
@@ -142,25 +142,25 @@ Cada siguiente — solo después de dominar la anterior. El plan completo de 12 
 
 **Trabajo en grupo:** recomendamos un kit por cada **2–3 niños**.
 
-**Tableros:** sirve cualquier cuadrícula hecha para otros robots educativos. El tamaño de la celda se establece con la ficha **«Paso»** y un número (por ejemplo 100, 120, 150, 200 mm).
+**Tableros:** sirve cualquier cuadrícula hecha para otros robots educativos. El tamaño de la celda se establece con la ficha **«Paso predeterminado»** y un número (por ejemplo 100, 120, 150, 200 mm).
 
-**Truco para 10 pasos en lugar de 6.** Coloca la ficha **Función [ ]** en la última (6ª) ranura de la fila superior y fíjala con cinta de pintor. El programa funciona ahora como una larga cadena: 5 pasos arriba + 5 abajo = **10 pasos seguidos**. Útil para los pequeños que necesitan un programa más largo, pero para quienes aún es pronto para introducir la función como concepto.
+**Truco para 10 pasos en lugar de 6.** Coloque la ficha **Función [ ]** en la última (6ª) ranura de la fila superior y fíjela con cinta de pintor. El programa funciona ahora como una larga cadena: 5 pasos arriba + 5 abajo = **10 pasos seguidos**. Útil para los pequeños que necesitan un programa más largo, pero para quienes aún es pronto para introducir la función como concepto.
 </Tip>
 
 ## 8. Funciones adicionales
 
 <CardGroup cols={2}>
   <Card title="Rotulador y dibujo" icon="pen-line">
-    Inserta un rotulador en el robot — **dibuja** su recorrido en papel: desde una trayectoria simple hasta polígonos, estrellas, espirales y fractales.
+    Inserte un rotulador en el robot — **dibuja** su recorrido en papel: desde una trayectoria simple hasta polígonos, estrellas, espirales y fractales.
   </Card>
   <Card title="Voz" icon="volume-2">
     El tablero dice cada ficha — voz **en cualquier idioma local**, actualmente **20 admitidos** (incluidos el árabe, el finés y el croata), ¡añadimos cualquier otro a petición! Ayuda a los pequeños y a los que aún no leen. Incluye letras del alfabeto y lugares (Casa, Escuela, Tienda, Bosque, etc.)
   </Card>
   <Card title="Pegatinas y tableros NFC sonoros" icon="map">
-    Pega etiquetas NFC en tu tablero, programa desde el móvil cualquier sonido disponible. El robot tiene una antena debajo — al parar sobre una etiqueta, reproduce el sonido grabado.
+    Pegue etiquetas NFC en su mapa y programe desde el móvil cualquier sonido disponible. El robot tiene una antena debajo — al parar sobre una etiqueta, reproduce el sonido grabado.
   </Card>
   <Card title="Plataforma NFC abierta" icon="nfc">
-    Crea tus propias fichas — cualquier etiqueta NFC de 13.56 MHz (baratas, se venden en cualquier marketplace) + un código de texto de nuestra documentación — todo junto lleva 10 segundos. Aplicación gratuita para móvil (NFC Tools).
+    Cree sus propias fichas — cualquier etiqueta NFC de 13.56 MHz (baratas, se venden en cualquier marketplace) + un código de texto de nuestra documentación — todo junto lleva 10 segundos. Aplicación gratuita para móvil (NFC Tools).
   </Card>
 </CardGroup>
 
@@ -177,12 +177,12 @@ Cada siguiente — solo después de dominar la anterior. El plan completo de 12 
     12 sesiones listas para los más pequeños — con edad, duración y material imprimible.
   </Card>
   <Card title="Fichas de comando" icon="nfc" href="/es/nfc">
-    Todos los códigos NFC — para crear tus propias fichas con el móvil.
+    Todos los códigos NFC — para crear sus propias fichas con el móvil.
   </Card>
   <Card title="Dibujos matemáticos" icon="pen-line" href="/es/mathdrawings">
     Figuras geométricas, fractales, espirales — programas y resultados.
   </Card>
   <Card title="Diccionario de audio" icon="volume-2" href="/es/sounds_reference">
-    Palabras — lugares y conceptos, alfabeto, notas musicales, sonidos del sistema. Para grabar tus propias fichas y reproducir.
+    Palabras — lugares y conceptos, alfabeto, notas musicales, sonidos del sistema. Para grabar sus propias fichas y reproducir.
   </Card>
 </CardGroup>

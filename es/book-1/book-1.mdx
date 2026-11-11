@@ -11,7 +11,7 @@ PrimaSTEM ayuda a los niños paso a paso a dominar el pensamiento lógico, los c
 
 ### Cómo funciona el dispositivo
 
-El objetivo del dispositivo es programar los movimientos de un pequeño robot mariquita mediante fichas de comando que se colocan en el tablero de control.
+El objetivo del dispositivo es programar los movimientos de un pequeño robot mariquita mediante fichas de comando que se colocan en el tablero.
 
 - Comando **"Adelante"** — movimiento recto
 - Comando **"Izquierda"** — giro a la izquierda
@@ -48,7 +48,7 @@ Usted coloca los comandos en el tablero, creando un programa de movimiento para 
 ### Qué hay en la caja:
 
 - Robot mariquita
-- Tablero de control
+- Tablero
 - Fichas de comando *
 - Guía de actividades *
 
@@ -144,14 +144,14 @@ Tiene tres puntos de apoyo: dos ruedas y un soporte en la parte trasera que le p
 
 | Comando | Dibujo                              | Descripción                                                                                     |
 | ------- | ----------------------------------- | -------------------------------------------------------------------------------------------- |
-| Recto   | ![](../../images/book-1/forward-tile.svg)  | El robot avanza una casilla — un paso lógico (por defecto es de 15 cm)                       |
+| Adelante | ![](../../images/book-1/forward-tile.svg)  | El robot avanza una casilla — un paso lógico (por defecto es de 15 cm)                       |
 | Izquierda | ![](../../images/book-1/left-tile.svg)     | El robot gira 90° a la izquierda                                                             |
 | Derecha | ![](../../images/book-1/right-tile.svg)    | El robot gira 90° a la derecha                                                               |
 | Atrás   | ![](../../images/book-1/back-tile.svg)     | El robot retrocede una casilla — paso lógico por defecto                                     |
 | Función | ![](../../images/book-1/function-tile.svg) | El robot ejecuta la secuencia de comandos ubicada en la línea de función                     |
 | Repetir № | ![](../../images/book-1/repeatN-tile.svg)  | El robot repite el comando establecido en la celda emparejada un número determinado de veces — № |
 
-### Tablero de control
+### Tablero
 
 El tablero permite controlar el robot colocando bloques de comando (fichas) en las celdas disponibles (D).
 
@@ -169,14 +169,14 @@ Si las fichas se instalan incorrectamente (por ejemplo, dos fichas de comando de
 
 ### Batería y botón de encendido
 
-El robot y el tablero de control funcionan con baterías integradas. Se cargan a través de un puerto USB-C. El botón de encendido (ON/OFF) se encuentra en la parte superior del robot y en el lado frontal izquierdo del tablero.
+El robot y el tablero funcionan con baterías integradas. Se cargan a través de un puerto USB-C. El botón de encendido (ON/OFF) se encuentra en la parte superior del robot y en el lado frontal izquierdo del tablero.
 
 Al encender el robot o el tablero, se escucha una señal acústica corta.
 Cuando el tablero está encendido, el LED del tablero frontal se ilumina en verde. Cuando el robot está encendido, el LED junto al conector USB-C se ilumina en verde.
 
 ### Comunicación inalámbrica
 
-El robot y el tablero de control se comunican mediante conexión inalámbrica Bluetooth con un alcance de unos 5 m. El sistema inalámbrico funciona en segundo plano, sin configuración, después de la primera conexión del robot al tablero.
+El robot y el tablero se comunican mediante conexión inalámbrica Bluetooth con un alcance de unos 5 m. El sistema inalámbrico funciona en segundo plano, sin configuración, después de la primera conexión del robot al tablero.
 
 > El tablero se puede configurar para trabajar con otro robot (vincular dispositivos).
 > 1. Encienda el robot que no está vinculado al tablero.
@@ -225,7 +225,7 @@ Para las actividades iniciales —enseñanza de algoritmos, programación y núm
 
 Puede utilizar cualquier mapa diseñado para cualquier robot con cualquier tamaño de celda (adecuado para el robot).
 
-> Es posible cambiar la distancia del paso por defecto de 15 cm a cualquier otra según el mapa que tenga: 10 cm, 12,5 cm o 20 cm. Para ello, utilice el comando especial de configuración "Paso" + número en mm (para 10 cm use 100, para 12,5 cm — 125, para 20 cm — 200).
+> Es posible cambiar la distancia del paso por defecto de 15 cm a cualquier otra según el mapa que tenga: 10 cm, 12,5 cm o 20 cm. Para ello, utilice la ficha especial de configuración "Paso predeterminado" + número en mm (para 10 cm use 100, para 12,5 cm — 125, para 20 cm — 200).
 
 Si no tiene un mapa, fabrique uno usted mismo: para crear un mapa puede utilizar cinta adhesiva de papel y una superficie plana de una mesa o suelo, una cartulina (lona de banner gruesa) y un marcador.
 
@@ -247,11 +247,11 @@ Mapa en color
 
 ### Desde un punto de vista técnico
 
-El tablero de control y el robot utilizan microcontroladores para el tablero, funcionan con baterías de Li-Ion y se conectan por canal de radio mediante el protocolo estándar de comunicación: Bluetooth.
+El tablero y el robot utilizan microcontroladores para el tablero, funcionan con baterías de Li-Ion y se conectan por canal de radio mediante el protocolo estándar de comunicación: Bluetooth.
 
-La placa de circuito impreso del robot es responsable de todo su comportamiento: controla dos motores de corriente continua de 5V, dos LED multicolores, reproduce sonidos, se comunica con el tablero de control, etc.
+La placa de circuito impreso del robot es responsable de todo su comportamiento: controla dos motores de corriente continua de 5V, dos LED multicolores, reproduce sonidos, se comunica con el tablero, etc.
 
-La placa de circuito impreso del tablero de control identifica las fichas insertadas en las celdas, reproduce sonidos y controla 11 LED multicolores conectados a cada celda doble.
+La placa de circuito impreso del tablero identifica las fichas insertadas en las celdas, reproduce sonidos y controla 11 LED multicolores conectados a cada celda doble.
 
 Cuando se inserta una ficha en una de las celdas del tablero, se identifica mediante un chip NFC adhesivo. Cada ficha contiene un código correspondiente al comando de control.
 
@@ -544,7 +544,7 @@ Si algunos niños tienen dificultades para comprender los giros del robot y las 
 
 > Establecer el vínculo entre las instrucciones y los movimientos realizados por el robot
 > Visualizar los límites del mapa
-> Ser capaz de transferir los comandos-instrucciones al "tablero de control"
+> Ser capaz de transferir los comandos-instrucciones al "tablero"
 
 ### Desarrollo del juego
 
@@ -573,7 +573,7 @@ Ejemplo:
 
 ---
 
-## Actividad 6: Uso del tablero de control y comandos de movimiento para llevar al robot a las montañas
+## Actividad 6: Uso del tablero y comandos de movimiento para llevar al robot a las montañas
 
 - **45 min**
 - **en grupo**
@@ -585,11 +585,11 @@ Ejemplo:
 > Realizar un programa con un objetivo determinado
 
 Para esta actividad necesitará:
-- tablero de control
+- tablero
 - fichas de comando de movimiento específicas: 4 "Adelante", 4 "Izquierda" y 4 "Derecha" por grupo, deje el resto de fichas aparte.
 - mapa y robot
 
-Divida a los niños en grupos de 3 o 4 y entrégueles un tablero de control y un juego de fichas.
+Divida a los niños en grupos de 3 o 4 y entrégueles un tablero y un juego de fichas.
 
 ### 1ª etapa: reflexión
 
@@ -608,7 +608,7 @@ Muéstreles qué movimiento producirá en el robot cada comando, desplazándolo 
 
 ### 2ª etapa: programación
 
-Pida a los niños que escriban, por orden, los movimientos (el programa) que el robot debe hacer para alcanzar el objetivo en el tablero de control utilizando las fichas de comando.
+Pida a los niños que escriban, por orden, los movimientos (el programa) que el robot debe hacer para alcanzar el objetivo en el tablero utilizando las fichas de comando.
 
 **Este es el resultado esperado del programa:**
 
@@ -658,7 +658,7 @@ Comience con una demostración. Cree un programa como el de la imagen de abajo.
 
 ![](../../images/book-1/lesson7-1-board.svg)
 
-Cuando se utiliza el comando "Función", todo sucede como si en el lugar de la ficha "Función" pusiéramos lo que está dentro del recuadro [-----], en la parte inferior del tablero de control.
+Cuando se utiliza el comando "Función", todo sucede como si en el lugar de la ficha "Función" pusiéramos lo que está dentro del recuadro [-----], en la parte inferior del tablero.
 En nuestro ejemplo, el robot avanzará dos veces recto.
 
 ### 2ª etapa: ¡adivinanzas!
@@ -736,7 +736,7 @@ Ejemplo de ruta y su programa:
 
 ### 3ª etapa: comprobación
 
-Ayude a los niños a reproducir su programa en el tablero de control para comprobarlo, como en la imagen:
+Ayude a los niños a reproducir su programa en el tablero para comprobarlo, como en la imagen:
 
 ![](../../images/book-1/lesson8_2-board.svg)
 

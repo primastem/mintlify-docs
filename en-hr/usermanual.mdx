@@ -61,6 +61,7 @@ Osnovni blokovi za sastavljanje upravljačkog programa:
 - **Natrag** — kretanje unatrag (zadano 15 cm)
 - **Funkcija** — izvršava potprogram iz donjeg dijela ploče
 - **Nasumično kretanje** — jedan korak naprijed ili natrag, ili okret za 90° ulijevo ili udesno i odmah zatim korak naprijed zadane duljine koraka (okreta na mjestu bez koraka nema)
+- **Pauza** — robot stoji N sekundi (1–999 s; bez broja 1 s)
 - **Žetoni ponavljanja (petlje)** - žetoni s brojevima od 2 do 6 (prema broju točkica) i piktogrami ponavljanja s brojem unutra. Žeton s kockicom znači nasumičan broj ponavljanja od 1 do 6.
 
 > Žetoni brojeva i aritmetike koriste se i za proširenje mogućnosti programiranja: na primjer, za ponavljanje naredbe ili promjenu kuta odnosno udaljenosti kretanja.
@@ -146,7 +147,7 @@ Zadano:
 - **Prekid** izvršavanja programa: ponovno pritisnite **▶ Start** tijekom kretanja.
 - Ploča pamti posljednju **zadanu vrijednost** (udaljenost/kut) naredbe kretanja do isključivanja: na primjer, ako je "Naprijed" = "200", sve sljedeće naredbe "Naprijed" izvršavaju se s tom vrijednošću.
 - Vrijednosti nakon aritmetičkih operacija također se pamte.
-- "**Zadanu udaljenost**" mijenjate servisnim žetonom: na primjer, za 12,5 cm stavite žeton "Korak" s vrijednošću 125. Vrijednost se pamti i nakon isključivanja. Rade brojevi od 1 do 999. Žeton bez broja vraća korak na 150 mm. Uz aritmetiku ili nulu polje treperi crveno, a korak ostaje isti.
+- "**Zadani korak**" mijenjate servisnim žetonom: na primjer, za 12,5 cm stavite žeton "Zadani korak" s vrijednošću 125. Taj žeton mijenja korak za Naprijed i Natrag. Vrijednost se pamti i nakon isključivanja. Rade brojevi od 1 do 999. Žeton bez broja vraća korak na 150 mm. Uz aritmetiku ili nulu polje treperi crveno, a korak ostaje isti.
 - Ploča i robot **automatski se isključuju** ako se 15 minuta ništa ne događa.
 - Dok robot čeka naredbu, trepće očima: tako se vidi da je uključen i spreman.
 - **Kratki pritisak tipke robota**: robot očitava žeton ispod sebe i izgovara što je to.

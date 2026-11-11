@@ -1,6 +1,6 @@
 ---
 title: "Quick Start"
-description: "How PrimaSTEM works — robot, board, tokens. A quick start."
+description: "How PrimaSTEM works — robot, control board, tokens. A quick start."
 icon: "rocket"
 mode: "wide"
 ---
@@ -8,7 +8,7 @@ mode: "wide"
 PrimaSTEM is a screen-free educational kit for programming, logic, and mathematics, for children ages 4–10+. This page briefly explains **how the device works**.
 
 <Note>
-**No device yet? Try it in your browser.** Open the **[Web simulator](https://simulator.primastem.com)** — a working copy of the board and robot. Place tokens, press **▶ Start**, and watch the robot run while you read this guide.
+**No device yet? Try it in your browser.** Open the **[Web simulator](https://simulator.primastem.com)** — a working copy of the control board and robot. Place tokens, press **▶ Start**, and watch the robot run while you read this guide.
 </Note>
 
 ## 1. What's in the box
@@ -30,14 +30,14 @@ PrimaSTEM is a screen-free educational kit for programming, logic, and mathemati
 ## 2. Power on
 
 <Steps>
-  <Step title="Switch on the robot, then the board" icon="power">
+  <Step title="Switch on the robot, then the control board" icon="power">
     Each plays a short sound; the green power indicator on each device means it's on.
   </Step>
   <Step title="Connected = white" icon="check">
-    Available slots on the board glow **white**, the robot's eyes blink **white**. You're ready.
+    Available slots on the control board glow **white**, the robot's eyes blink **white**. You're ready.
   </Step>
   <Step title="Light blue = no connection" icon="bluetooth">
-    The robot and the board glow light blue. If the connection still does not come up, hold **▶ Start** on the board for **more than 10 seconds**. You will hear a beep at the 5th second, keep holding: the devices will pair and the robot will restart.
+    The robot and the control board glow light blue. If the connection still does not come up, hold **▶ Start** on the control board for **more than 10 seconds**. You will hear a beep at the 5th second, keep holding: the devices will pair and the robot will restart.
   </Step>
 </Steps>
 
@@ -45,9 +45,9 @@ PrimaSTEM is a screen-free educational kit for programming, logic, and mathemati
 
 ## 3. How a program works
 
-The board has **two rows of paired slots**. Place tokens in the cells that glow white — that's your program. Press **▶ Start** — the robot runs it.
+The control board has **two rows of paired slots**. Place tokens in the cells that glow white — that's your program. Press **▶ Start** — the robot runs it.
 
-<Frame caption="Board layout — labels A–F are explained below">
+<Frame caption="Control board layout — labels A–F are explained below">
   <img src="../images/book-1/control-labels.svg" alt="Control board diagram with labels A through F" />
 </Frame>
 
@@ -60,7 +60,7 @@ The board has **two rows of paired slots**. Place tokens in the cells that glow 
 | **E** | **Execution line** connecting paired cells |
 | **F** | **Multi-colour LED indicator** on each cell |
 
-**A pair = two logically linked cells.** Order top/bottom doesn't matter — put the command in either cell of the pair, and the repeat, number, or arithmetic token in the other. If the second cell is empty, the last number this command received since the remote was switched on is used (until a number is set, that is a 15 cm step and a 90° turn) — enough for young children.
+**A pair = two logically linked cells.** Order top/bottom doesn't matter — put the command in either cell of the pair, and the repeat, number, or arithmetic token in the other. If the second cell is empty, the last number this command received since the control board was switched on is used (until a number is set, that is a 15 cm step and a 90° turn) — enough for young children.
 
 LED colours during execution:
 
@@ -74,17 +74,17 @@ Empty slots and red pairs are skipped when you lay out the program. LEDs flash o
 
 | Group | What the tokens do |
 | --- | --- |
-| **Movement** | Forward · Back · Left · Right |
+| **Movement** | Forward · Backward · Left · Right |
 | **Repeat** | Two arrows in a loop + inside dots 2–6 (like a die, for young children) or numerals. In a pair with a command, repeats it. |
 | **Numbers** | `1`–`999`. Set movement distance in mm or turn angle in degrees. |
 | **Arithmetic** | `+N` `−N` `×N` `÷N` `√` `^N` — one token per operation+number. Modifies the saved value of movement or turn. A negative result reverses the direction! |
 | **Function** | Calls the bottom row as a subroutine. With a repeat token, runs that number of times. |
-| **Step** | Service token + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. |
+| **Default Step** | Service token + Number = changes the default step (e.g. number 100, in millimetres, for a 10-cm grid). Saved after power-off. |
 
 ## 5. Defaults & saved value
 
 <Note>
-**Forward = 150 mm (15 cm), turn = 90°.** The **Step** token changes the "default" distance and persists after power-off. Use it for grid maps from any robot.
+**Forward = 150 mm (15 cm), turn = 90°.** The **Default Step** token changes the "default" distance and persists after power-off. Use it for grid maps from any robot.
 
 During one session, each movement command keeps its **own** saved value:
 
@@ -92,7 +92,7 @@ During one session, each movement command keeps its **own** saved value:
 - **an arithmetic** token → modifies it (`+`, `−`, `×`, `÷`, `√`, `^`)
 - **empty** in the pair with the command → uses the last saved value or default
 
-Saved values reset when the board powers off; the default (Step) remains.
+Saved values reset when the control board powers off; the default (Default Step) remains.
 
 **Quick reference:**
 
@@ -111,7 +111,7 @@ Try these examples — you'll see what the device is capable of. Insert a marker
 <CardGroup cols={2}>
   <Card title="Star — numbers + repeat">
     <Frame>
-      <img src="../images/mathdrawings/star5-board.svg" alt="Star program on the board" />
+      <img src="../images/mathdrawings/star5-board.svg" alt="Star program on the control board" />
     </Frame>
     <Frame>
       <img src="../images/mathdrawings/star5-field.svg" alt="Star drawn by the robot" />
@@ -120,7 +120,7 @@ Try these examples — you'll see what the device is capable of. Insert a marker
   </Card>
   <Card title="Spiral — arithmetic in a loop">
     <Frame>
-      <img src="../images/mathdrawings/spiral-board.svg" alt="Spiral program on the board" />
+      <img src="../images/mathdrawings/spiral-board.svg" alt="Spiral program on the control board" />
     </Frame>
     <Frame>
       <img src="../images/mathdrawings/spiral-field.svg" alt="Spiral drawn by the robot" />
@@ -142,7 +142,7 @@ Add each one only after the previous is confidently mastered. The full 12-lesson
 
 **Group work:** we recommend one kit per **2–3 children**.
 
-**Maps:** any grid map made for any educational robot will work. Set the cell size with the **Step** token plus a number (e.g. 100, 120, 150, 200 mm).
+**Maps:** any grid map made for any educational robot will work. Set the cell size with the **Default Step** token plus a number (e.g. 100, 120, 150, 200 mm).
 
 **A trick for 10 steps instead of 6.** Place the **Function [ ]** token in the last (6th) slot of the top row and secure it with masking tape. The program now runs as one long chain: 5 top steps + 5 bottom = **10 steps in a row**. Useful for young children who need a longer program before they're ready to grasp the function concept.
 </Tip>
@@ -154,7 +154,7 @@ Add each one only after the previous is confidently mastered. The full 12-lesson
     Insert a marker in the robot — it **draws** its path on paper: from a simple trajectory to polygons, stars, spirals, and fractals.
   </Card>
   <Card title="Voice feedback" icon="volume-2">
-    The board reads each token aloud — voice in **any local language**, currently **20 supported** (including Arabic, Finnish and Croatian), we'll add any on request. Helps young and pre-reading children. Includes alphabet letters and places (Home, School, Shop, Forest, etc.)
+    The control board reads each token aloud — voice in **any local language**, currently **20 supported** (including Arabic, Finnish and Croatian), we'll add any on request. Helps young and pre-reading children. Includes alphabet letters and places (Home, School, Shop, Forest, etc.)
   </Card>
   <Card title="NFC sound stickers and maps" icon="map">
     Stick NFC tags on your map, program any available sound from your phone. The robot has an antenna underneath — when it stops on a tag, it plays the recorded sound.

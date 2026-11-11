@@ -48,7 +48,7 @@ PrimaSTEM tokens are a visual and simplified representation of programming langu
 
 ### Why Wood?
 
-🌱 The board and robot are made of wood. Practice has shown that children prefer playing with wooden toys - they are safe, durable, and create an individual usage history.
+🌱 The control board and robot are made of wood. Practice has shown that children prefer playing with wooden toys - they are safe, durable, and create an individual usage history.
 
 ## Programming Concept with PrimaSTEM
 
@@ -60,7 +60,7 @@ Physical PrimaSTEM tokens are analogous to instructions in real programming lang
 
 ### Queue
 
-Commands on the PrimaSTEM board are executed strictly from left to right, visually demonstrating the execution queue.
+Commands on the PrimaSTEM control board are executed strictly from left to right, visually demonstrating the execution queue.
 
 ### Error Correction (Debugging)
 
@@ -68,11 +68,11 @@ An error is easy to fix: simply replace the token. This approach develops the sk
 
 ### Function
 
-A function (subroutine) is a set of commands in the lower part of the board, called from the main program by the "**Function**" token.
+A function (subroutine) is a set of commands in the lower part of the control board, called from the main program by the "**Function**" token.
 
 ### Variable
 
-The board remembers the last number of each command. Forward, Back, Left, Right and Pause each keep their own value. A command with no number uses the saved one. This is a variable: it has a name (the command) and a value (the number), and the value can change.
+The control board remembers the last number of each command. Forward, Backward, Left, Right and Pause each keep their own value. A command with no number uses the saved one. This is a variable: it has a name (the command) and a value (the number), and the value can change.
 
 ## Application in Other Subjects
 
@@ -96,21 +96,21 @@ Tell children that the robot is their friend that they can program. Explain: it 
 
 ### The Control Board
 
-Explain that the board transmits commands to the robot. Show how to install command tokens and program the robot.
+Explain that the control board transmits commands to the robot. Show how to install command tokens and program the robot.
 
 ![control](../images/teachersguide/control-board.svg)
 
-> The main program is built in the top row of the board (6 cells). The bottom row (5 cells) is for the function subroutine and is used with the "**Function**" command.
+> The main program is built in the top row of the control board (6 cells). The bottom row (5 cells) is for the function subroutine and is used with the "**Function**" command.
 
 ### Command Tokens
 
-Tokens are commands for the robot that are inserted into the board. After pressing **▶ Start**, the robot executes the sequence. Each token is a separate command, teaching children computational thinking and program design. It's important that children understand what the robot does when each command is activated. This teaches them program design and predicting robot actions. Explain to children: tokens must not be lost or damaged, without them the robot cannot move.
+Tokens are commands for the robot that are inserted into the control board. After pressing **▶ Start**, the robot executes the sequence. Each token is a separate command, teaching children computational thinking and program design. It's important that children understand what the robot does when each command is activated. This teaches them program design and predicting robot actions. Explain to children: tokens must not be lost or damaged, without them the robot cannot move.
 
 ## 1 - First Program
 
 ### Cause and Effect
 
-The main goal is to show children the connection between command and action. Let the child insert the "Forward" token into the first cell of the board and press **▶ Start**. The child should see the correspondence between the token and the action.
+The main goal is to show children the connection between command and action. Let the child insert the "Forward" token into the first cell of the control board and press **▶ Start**. The child should see the correspondence between the token and the action.
 
 ![forvard](../images/teachersguide/guide1a-board.svg)
 
@@ -210,7 +210,7 @@ If the sequence is incorrect, simply return the robot to its original position a
 
 ### "Random Direction" Command
 
-To introduce the concept of randomness, take 4 direction tokens: "**Forward**", "**Left**", "**Right**" and "**Back**", place them in an opaque box or bag, mix them and ask children to draw 1 token without looking and show it to the group, then return it. Explain to children what randomness from four states is using this example.
+To introduce the concept of randomness, take 4 direction tokens: "**Forward**", "**Left**", "**Right**" and "**Backward**", place them in an opaque box or bag, mix them and ask children to draw 1 token without looking and show it to the group, then return it. Explain to children what randomness from four states is using this example.
 
 Then show the children the "**Random Movement**" command token.
 
@@ -254,7 +254,7 @@ Both simple task solutions with installing the "**Forward**" token and loop valu
 
 ### Function Call Loop
 
-Try with the children to apply a loop with values to the "Function" command: for example, making the robot walk in a zigzag using the "Function" command with a loop value of 5 and the functional sequence in the lower part of the board with the commands "**Forward**", "**Right**", "**Forward**", "**Left**".
+Try with the children to apply a loop with values to the "Function" command: for example, making the robot walk in a zigzag using the "Function" command with a loop value of 5 and the functional sequence in the lower part of the control board with the commands "**Forward**", "**Right**", "**Forward**", "**Left**".
 
 First create with the function a program for "step" movement - "forward", "right", "forward", "left" and execute it.
 
@@ -280,7 +280,7 @@ To introduce the concept of a random number, take 4 loop tokens: "**2**", "**3**
 
 Then show the children the "**Random Loop Number**" value token. Explain that this token does almost the same thing they were doing before, by drawing random value tokens from the bag: it randomly selects 1 of 6 numbers (from 1 to 6), like a dice, to transmit to the robot and repeat actions.
 
-Place the "**Forward**" token in the upper cell of the board, and the "**Random Loop Number**" token under it. Ask the children to press the **▶ Start** button. Return the robot to its original place. Repeat this task several times.
+Place the "**Forward**" token in the upper cell of the control board, and the "**Random Loop Number**" token under it. Ask the children to press the **▶ Start** button. Return the robot to its original place. Repeat this task several times.
 
 ![rnd-forvard](../images/teachersguide/guide6b-board.svg)
 
@@ -302,7 +302,7 @@ Example: Add the value **200** to the "**Forward**" command and see what distanc
 
 [Run in the simulator](https://simulator.primastem.com/#top=cfor.n200,crig.n180&s=l1047602&r=450-600-0&run)
 
-> **Important:** The board saves the last value set for movement and turn commands. If a command is used without a new value, the last saved value applies until the board is turned off. Setting a new value changes the default value. The step length set with the Default Distance token is kept in memory and stays after a restart. To get 15 cm back, use that token with the number 150. The 90° turn returns by itself after a restart.
+> **Important:** The control board saves the last value set for movement and turn commands. If a command is used without a new value, the last saved value applies until the control board is turned off. Setting a new value changes the default value. The step length set with the Default Step token is kept in memory and stays after a restart. To get 15 cm back, use that token with the number 150. The 90° turn returns by itself after a restart.
 
 Changing parameters allows creating more complex trajectories and movement scenarios. See examples on the [mathematical drawings page](/en/mathdrawings).
 
@@ -310,9 +310,9 @@ Changing parameters allows creating more complex trajectories and movement scena
 
 ### Arithmetic Operations
 
-Arithmetic operations with numbers allow dynamically changing values in the program for movement commands (Forward, Back, Left, Right), making robot control more flexible.
+Arithmetic operations with numbers allow dynamically changing values in the program for movement commands (Forward, Backward, Left, Right), making robot control more flexible.
 
-When adding an arithmetic operation, the board changes the saved number for the movement command and sends the new value to the robot.
+When adding an arithmetic operation, the control board changes the saved number for the movement command and sends the new value to the robot.
 
 Example:
 
@@ -331,7 +331,7 @@ Ask the children to predict first: how long will the fifth side be? Then run it 
 [Run in the simulator](https://simulator.primastem.com/#top=cfor.n030,cfun.r020&fn=crig,cfor.a030&s=l1047602&r=450-465-0&run)
 
 <Columns cols={2}>
-  <Frame caption="Program on the board">
+  <Frame caption="Program on the control board">
     <img src="../images/logo/spiral-board.svg" alt="" />
   </Frame>
   <Frame caption="What the robot draws">

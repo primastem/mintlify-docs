@@ -18,7 +18,7 @@ PrimaSTEM er et skjermfritt læringssett for programmering, logikk og matematikk
     Marihøne-robot i tre på to hjul. Tusjholder på toppen. Høyttaler, USB-C, Bluetooth.
   </Card>
   <Card title="Kontrollpanel" icon="grid-3x3">
-    Panel med parede spor for programmet. Flerfargede indikatorer, ▶ Start/Stopp-knapp, høyttaler, USB-C, Bluetooth.
+    Kontrollpanel med parede spor for programmet. Flerfargede indikatorer, ▶ Start/Stopp-knapp, høyttaler, USB-C, Bluetooth.
   </Card>
   <Card title="Kodebrikker" icon="square-stack">
     Pappkvadrater med NFC-klistremerker — hver = én kommando i robotens program.
@@ -37,7 +37,7 @@ PrimaSTEM er et skjermfritt læringssett for programmering, logikk og matematikk
     Tilgjengelige spor på kontrollpanelet lyser **hvitt**, robotens øyne blinker **hvitt**. Klart.
   </Step>
   <Step title="Lyseblå = ingen tilkobling" icon="bluetooth">
-    Roboten og panelet lyser lyseblått. Hvis tilkoblingen ikke kommer, hold **▶ Start** på panelet i **mer enn 10 sekunder**. Etter 5 sekunder kommer et signal, fortsett å holde: enhetene parer seg og roboten starter på nytt.
+    Roboten og kontrollpanelet lyser lyseblått. Hvis tilkoblingen ikke kommer, hold **▶ Start** på kontrollpanelet i **mer enn 10 sekunder**. Etter 5 sekunder kommer et signal, fortsett å holde: enhetene parer seg og roboten starter på nytt.
   </Step>
 </Steps>
 
@@ -45,7 +45,7 @@ PrimaSTEM er et skjermfritt læringssett for programmering, logikk og matematikk
 
 ## 3. Hvordan et program fungerer
 
-Panelet har **to rader med parede spor**. Du plasserer brikker i sporene som lyser hvitt — det blir programmet. Trykk **▶ Start** — roboten utfører det.
+Kontrollpanelet har **to rader med parede spor**. Du plasserer brikker i sporene som lyser hvitt — det blir programmet. Trykk **▶ Start** — roboten utfører det.
 
 <Frame caption="Skjema for kontrollpanelet — bokstavene A–F forklares under">
   <img src="../images/book-1/control-labels.svg" alt="Kontrollpanel med merker A til F" />
@@ -79,12 +79,12 @@ Tomme spor og røde par hoppes over når du legger ut brikkene. LED-ene blinker 
 | **Tall** | `1`–`999`. Bestemmer bevegelsesavstand i mm eller dreievinkel i grader. |
 | **Regning** | `+N` `−N` `×N` `÷N` `√` `^N` — én brikke = operasjon + tall. Endrer den lagrede verdien for bevegelse eller dreining. Et negativt resultat reverserer retningen! |
 | **Funksjon** | Kaller den nederste raden som underprogram. Med gjentakelse-brikke — kjøres angitt antall ganger. |
-| **Steg** | Servicebrikke + Tall = endrer standardsteget (f.eks. tall 100, i millimeter, for et 10-cm-rutenett). Bevares etter avslåing. |
+| **Standardsteg** | Servicebrikke + Tall = endrer standardsteget (f.eks. tall 100, i millimeter, for et 10-cm-rutenett). Bevares etter avslåing. |
 
 ## 5. Standardverdier og lagret verdi
 
 <Note>
-**Fremover = 150 mm (15 cm), sving = 90°.** «**Steg**»-brikken endrer «standard»-avstanden og bevarer den etter avslåing. Praktisk for spillkart fra andre roboter.
+**Fremover = 150 mm (15 cm), sving = 90°.** «**Standardsteg**»-brikken endrer «standard»-avstanden og bevarer den etter avslåing. Praktisk for spillkart fra andre roboter.
 
 I løpet av én økt holder hver bevegelseskommando på **sin egen** lagrede verdi:
 
@@ -92,7 +92,7 @@ I løpet av én økt holder hver bevegelseskommando på **sin egen** lagrede ver
 - **en regnebrikke** → endrer den (`+`, `−`, `×`, `÷`, `√`, `^`)
 - **tomt** i paret → tar siste lagrede verdi eller standardverdi
 
-Lagrede verdier nullstilles når panelet slås av; standardverdien (steg) består.
+Lagrede verdier nullstilles når kontrollpanelet slås av; standardverdien (standardsteg) består.
 
 **Hurtigreferanse:**
 
@@ -111,7 +111,7 @@ Prøv disse eksemplene — du ser hva enheten kan. Sett en tusj midt i roboten �
 <CardGroup cols={2}>
   <Card title="Stjerne — tall + gjentakelse">
     <Frame>
-      <img src="../images/mathdrawings/star5-board.svg" alt="Stjerneprogram på panelet" />
+      <img src="../images/mathdrawings/star5-board.svg" alt="Stjerneprogram på kontrollpanelet" />
     </Frame>
     <Frame>
       <img src="../images/mathdrawings/star5-field.svg" alt="Stjerne tegnet av roboten" />
@@ -120,7 +120,7 @@ Prøv disse eksemplene — du ser hva enheten kan. Sett en tusj midt i roboten �
   </Card>
   <Card title="Spiral — regning i en løkke">
     <Frame>
-      <img src="../images/mathdrawings/spiral-board.svg" alt="Spiralprogram på panelet" />
+      <img src="../images/mathdrawings/spiral-board.svg" alt="Spiralprogram på kontrollpanelet" />
     </Frame>
     <Frame>
       <img src="../images/mathdrawings/spiral-field.svg" alt="Spiral tegnet av roboten" />
@@ -142,7 +142,7 @@ Hver neste — først etter at den forrige er trygt mestret. Den fullstendige pl
 
 **Gruppearbeid:** vi anbefaler ett sett per **2–3 barn**.
 
-**Kart:** alle rutenett laget for andre læringsroboter fungerer. Cellestørrelsen settes med **«Steg»**-brikken og et tall (f.eks. 100, 120, 150, 200 mm).
+**Kart:** alle rutenett laget for andre læringsroboter fungerer. Cellestørrelsen settes med **«Standardsteg»**-brikken og et tall (f.eks. 100, 120, 150, 200 mm).
 
 **Triks for 10 steg i stedet for 6.** Plasser **Funksjon [ ]**-brikken i siste (6.) spor i øvre rad og fest den med malertape. Programmet kjøres nå som én lang kjede: 5 øvre steg + 5 nedre = **10 steg etter hverandre**. Praktisk for de små som trenger et lengre program, men ennå er for unge for funksjonsbegrepet.
 </Tip>
@@ -154,7 +154,7 @@ Hver neste — først etter at den forrige er trygt mestret. Den fullstendige pl
     Sett en tusj i roboten — den **tegner** sin bane på papir: fra en enkel kurve til mangekanter, stjerner, spiraler og fraktaler.
   </Card>
   <Card title="Stemme" icon="volume-2">
-    Panelet sier hver brikke høyt — stemme **på hvilket som helst lokalt språk**, for tiden **20 støttet** (inkludert arabisk, finsk og kroatisk), vi legger til flere på forespørsel! Hjelper små barn og de som ennå ikke leser. Inneholder alfabetbokstaver og steder (Hus, Skole, Butikk, Skog osv.)
+    Kontrollpanelet sier hver brikke høyt — stemme **på hvilket som helst lokalt språk**, for tiden **20 støttet** (inkludert arabisk, finsk og kroatisk), vi legger til flere på forespørsel! Hjelper små barn og de som ennå ikke leser. Inneholder alfabetbokstaver og steder (Hus, Skole, Butikk, Skog osv.)
   </Card>
   <Card title="Lyd-NFC-klistremerker og kart" icon="map">
     Lim NFC-merker på kartet ditt, programmer fra telefonen hvilken som helst tilgjengelig lyd. Roboten har en antenne under — stopper den på et merke, spiller den den innspilte lyden.

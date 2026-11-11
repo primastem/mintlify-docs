@@ -63,6 +63,7 @@ Grunnleggende blokker for å sette sammen kontrollprogrammet:
 - **Bakover** — bevegelse bakover (15 cm som standard)
 - **Funksjon** — utførelse av underprogrammet fra den nedre delen av kontrollpanelet
 - **Tilfeldig Bevegelse** — ett steg fremover eller bakover, eller en 90°-sving til venstre eller høyre etterfulgt straks av ett steg fremover med standard steglengde (det finnes ingen sving på stedet uten steg)
+- **Pause** — roboten står stille i N sekunder (1–999 s; uten tall 1 s)
 - **Gjentakelsesbrikker (Løkker)** - Brikker med tall fra 2 til 6 (etter antall prikker) og gjentakelsespiktogrammer med tallet inni. Brikken med en terning betyr et tilfeldig antall gjentakelser fra 1 til 6.
 
 > Numeriske verdi- og aritmetikkbrikker brukes også for å utvide programmeringen: for eksempel å gjenta en kommando eller endre bevegelsesvinkel/distanse.
@@ -150,7 +151,7 @@ Som standard:
 - **Avbryt** programutførelsen ved å trykke **▶ Start** igjen under bevegelse.
 - Kontrollpanelet husker den siste **innstilte verdien** (distanse/vinkel) for bevegelseskommandoen til strømmen slås av: for eksempel, hvis "Fremover" = "200", utføres alle påfølgende "Fremover"-kommandoer med denne verdien.
 - Verdier etter aritmetikk lagres også.
-- Endre "**standarddistanse**" kan gjøres med en servicebrikke: for eksempel, for 12,5 cm, sett inn brikken "Standarddistanse" med verdi 125. Verdien lagres også etter at strømmen er slått av. Tall fra 1 til 999 fungerer. Brikken uten tall setter steget tilbake til 150 mm. Med aritmetikk eller null blinker cellen rødt, og steget forblir som før.
+- Endre "**standardsteget**" kan gjøres med servicebrikken **Standardsteg**, som endrer steget for Fremover og Bakover: for eksempel, for 12,5 cm, sett inn brikken "Standardsteg" med verdi 125. Verdien lagres også etter at strømmen er slått av. Tall fra 1 til 999 fungerer. Brikken uten tall setter steget tilbake til 150 mm. Med aritmetikk eller null blinker cellen rødt, og steget forblir som før.
 - Kontrollpanelet og roboten **slår seg automatisk av** hvis ingenting skjer på 15 minutter.
 - Mens roboten venter på en kommando, blinker den med øynene: slik ser man at den er på og klar.
 - **Kort trykk på robotknappen**: roboten leser brikken under seg og sier hva den er.

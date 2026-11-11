@@ -61,6 +61,7 @@ Podstawowe bloki do układania programu sterującego:
 - **Wstecz** — ruch do tyłu (domyślnie 15 cm)
 - **Funkcja** — wykonuje podprogram z dolnej części pilota
 - **Losowy ruch** — jeden krok naprzód lub wstecz albo obrót o 90° w lewo lub w prawo i od razu krok naprzód o domyślnej długości kroku (obrotu w miejscu bez kroku nie ma)
+- **Pauza** — robot stoi N sekund (1–999 s; bez liczby 1 s)
 - **Żetony powtórzeń (pętle)** - Żetony z liczbami od 2 do 6 (według liczby kropek) i piktogramy powtórzenia z liczbą w środku. Żeton z kostką oznacza losową liczbę powtórzeń od 1 do 6.
 
 > Żetony wartości liczbowych i działań arytmetycznych służą też do rozszerzania możliwości programowania: na przykład do powtarzania polecenia albo zmiany kąta lub odległości ruchu.
@@ -146,7 +147,7 @@ Domyślnie:
 - **Przerwij** wykonywanie programu, naciskając **▶ Start** ponownie w trakcie ruchu.
 - Pilot pamięta ostatnią **ustawioną wartość** (odległość/kąt) polecenia ruchu do wyłączenia zasilania: na przykład jeśli „Naprzód” = „200”, wszystkie kolejne polecenia „Naprzód” są wykonywane z tą wartością.
 - Wartości po działaniach arytmetycznych też są zapamiętywane.
-- Zmień „**domyślną odległość**” za pomocą żetonu serwisowego: na przykład dla 12,5 cm włóż żeton „Krok” z wartością 125. Wartość zapisuje się po wyłączeniu zasilania. Pasują liczby od 1 do 999. Żeton bez liczby przywraca 150 mm. Z działaniem arytmetycznym albo zerem pole mignie na czerwono, a krok się nie zmieni.
+- Zmień „**domyślny krok**” za pomocą żetonu serwisowego „Domyślny krok”, który zmienia krok dla poleceń Naprzód i Wstecz: na przykład dla 12,5 cm włóż żeton „Domyślny krok” z wartością 125. Wartość zapisuje się po wyłączeniu zasilania. Pasują liczby od 1 do 999. Żeton bez liczby przywraca 150 mm. Z działaniem arytmetycznym albo zerem pole mignie na czerwono, a krok się nie zmieni.
 - Pilot i robot **wyłączają się automatycznie**, jeśli przez 15 minut nic się nie dzieje.
 - Gdy robot czeka na polecenie, mruga oczami: widać wtedy, że jest włączony i gotowy.
 - **Krótkie naciśnięcie przycisku robota**: robot odczyta żeton pod sobą i powie, co to jest.

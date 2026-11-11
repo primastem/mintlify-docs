@@ -63,6 +63,7 @@ Basisblokken voor het samenstellen van het besturingsprogramma:
 - **Achteruit** — beweging achteruit (15 cm standaard)
 - **Functie** — uitvoering van het subprogramma uit het onderste deel van de bediening
 - **Willekeurige Beweging** — één stap vooruit of achteruit, of een draai van 90° naar links of rechts met direct daarna een stap vooruit van de standaardstaplengte (een draai op de plek zonder stap bestaat niet)
+- **Pauze** — de robot staat N seconden stil (1–999 s; zonder getal 1 s)
 - **Herhalingskaartjes (Lussen)** - Kaartjes met getallen van 2 tot 6 (naar aantal punten) en herhalingspictogrammen met het getal erin. Het kaartje met een dobbelsteen betekent een willekeurig aantal herhalingen van 1 tot 6.
 
 > Numerieke waarde- en rekenkundige kaartjes worden ook gebruikt om de programmering uit te breiden: bijvoorbeeld een commando herhalen of de bewegingshoek/afstand wijzigen.
@@ -150,9 +151,9 @@ Standaard:
 - **Onderbreek** de programmaweergave door tijdens het bewegen opnieuw op **▶ Start** te drukken.
 - De bediening onthoudt de laatste **ingestelde waarde** (afstand/hoek) voor het bewegingscommando tot uitschakeling: bijvoorbeeld, als "Vooruit" = "200", worden alle volgende "Vooruit"-commando's met deze waarde uitgevoerd.
 - Waarden na rekenkunde worden ook opgeslagen.
-- Wijzig de "**standaardafstand**" met een servicekaartje: bijvoorbeeld, voor 12,5 cm, plaats het kaartje "Standaardafstand" met waarde 125. De waarde wordt opgeslagen na uitschakeling. Getallen van 1 tot 999 zijn toegestaan. Het kaartje zonder getal zet de stap terug op 150 mm. Met rekenkunde of nul knippert de cel rood en blijft de stap ongewijzigd.
+- Wijzig de "**standaardstap**" met een servicekaartje: bijvoorbeeld, voor 12,5 cm, plaats het kaartje "Standaardstap" met waarde 125. Dit kaartje verandert de stap voor Vooruit en Achteruit. De waarde wordt opgeslagen na uitschakeling. Getallen van 1 tot 999 zijn toegestaan. Het kaartje zonder getal zet de stap terug op 150 mm. Met rekenkunde of nul knippert de cel rood en blijft de stap ongewijzigd.
 - De bediening en robot **schakelen automatisch uit** als er 15 minuten niets gebeurt.
-- Terwijl de robot op een commando wacht, knippert hij met zijn ogen: zo zie je dat hij aan staat en klaar is.
+- Terwijl de robot op een commando wacht, knippert hij met zijn ogen: zo ziet u dat hij aan staat en klaar is.
 - **Kort drukken op de robotknop**: de robot leest het kaartje onder zich en zegt wat het is.
 - **Alle geluiden van de robot** kunnen worden uit- en ingeschakeld door de robotknop 5 seconden ingedrukt te houden: wacht op het korte signaal en laat los. De robot knippert rood als het geluid uit gaat en groen als het aan gaat.
 - Het **geluid van de bediening** kan worden uit- en ingeschakeld door de knop **▶ Start** 5 seconden ingedrukt te houden: wacht op het korte signaal en laat los. Terwijl een programma loopt, werkt dit niet.
@@ -162,10 +163,10 @@ Standaard:
 
 ### Robotkalibratie:
 
-- Werk vóór het kalibreren de robot en de bediening bij naar de nieuwste stabiele firmware via [update.primastem.com](https://update.primastem.com) ([zo werk je bij](/nl/update)). Een kalibratie met oude firmware kan onnauwkeurig zijn.
-- Voer eerst de kaart "Kalibratie" zonder getal uit: de robot meet de motorpolariteit, verwijdert de speling en stelt het rechtdoor rijden in. De kaart werkt tot 2 minuten. De eerste halve minuut moet de robot stilstaan, raak hem niet aan. De robotknop werkt in die tijd niet.
+- Werk vóór het kalibreren de robot en de bediening bij naar de nieuwste stabiele firmware via [update.primastem.com](https://update.primastem.com) ([zo werkt u bij](/nl/update)). Een kalibratie met oude firmware kan onnauwkeurig zijn.
+- Voer eerst het kaartje "Kalibratie" zonder getal uit: de robot meet de motorpolariteit, verwijdert de speling en stelt het rechtdoor rijden in. Het kaartje werkt tot 2 minuten. De eerste halve minuut moet de robot stilstaan, raak hem niet aan. De robotknop werkt in die tijd niet.
 - Kalibreer daarna de draaihoeken. Markeer de exacte richting van de robot op het tafeloppervlak. Er zijn 32 draaiingen van 90° met de klok mee nodig: stel het programma "Herhaling 8 + Rechts" samen en voer het vier keer uit. De robot moet acht volledige omwentelingen maken (90×32 = 2880°) en terugkeren naar zijn oorspronkelijke richting.
-- Beoordeel de afwijking van de markering en pas een correctie toe met de kaart "Kalibratie" en een cijferkaartje: als de robot vóór de markering stopt, voeg "+" toe (bijvoorbeeld "Kalibratie" + "+5"); als hij eroverheen gaat, voeg "−" toe (bijvoorbeeld "Kalibratie" + "−5"), daarna **▶ Start**. Het getal geeft aan hoeveel graden de robot er bij alle 32 draaiingen samen naast zat. De robot accepteert getallen tot 180. Is het getal groter of kan de robot de correctie niet opslaan, dan knippert de cel rood. Een gewoon getal zonder "+" of "−" naast "Kalibratie" werkt niet: de cel knippert rood.
+- Beoordeel de afwijking van de markering en pas een correctie toe met het kaartje "Kalibratie" en een cijferkaartje: als de robot vóór de markering stopt, voeg "+" toe (bijvoorbeeld "Kalibratie" + "+5"); als hij eroverheen gaat, voeg "−" toe (bijvoorbeeld "Kalibratie" + "−5"), daarna **▶ Start**. Het getal geeft aan hoeveel graden de robot er bij alle 32 draaiingen samen naast zat. De robot accepteert getallen tot 180. Is het getal groter of kan de robot de correctie niet opslaan, dan knippert de cel rood. Een gewoon getal zonder "+" of "−" naast "Kalibratie" werkt niet: de cel knippert rood.
 - Herhaal tot de robot precies naar zijn oorspronkelijke richting terugkeert.
 - De kalibratie blijft na het uitschakelen behouden.
 - Let op! Kalibratie resetten: houd de robotknop 10 seconden ingedrukt, de lampjes knipperen rood, groen, blauw en wit. De reset wist alle kalibraties, het volume en het uitgeschakelde geluid. Zet de robot na de reset uit en weer aan en herhaal de kalibratie vanaf het begin.
