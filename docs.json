@@ -453,6 +453,50 @@
         ]
       },
       {
+        "language": "en-LT",
+        "groups": [
+          {
+            "group": "Pirmieji žingsniai",
+            "icon": "rocket",
+            "pages": [
+              "en-lt/quickstart",
+              "en-lt/intro",
+              "en-lt/usermanual",
+              "en-lt/update"
+            ]
+          },
+          {
+            "group": "Kaip mokyti",
+            "icon": "graduation-cap",
+            "pages": [
+              "en-lt/teachersguide",
+              "en-lt/logo",
+              "en-lt/book-1/book-1",
+              "en-lt/mathdrawings",
+              "en-lt/cognitive",
+              "en-lt/resources"
+            ]
+          },
+          {
+            "group": "Žinynas",
+            "icon": "book-marked",
+            "pages": [
+              "en-lt/nfc",
+              "en-lt/sounds_reference"
+            ]
+          },
+          {
+            "group": "Sauga ir pagalba",
+            "icon": "shield-check",
+            "pages": [
+              "en-lt/safety",
+              "en-lt/warranty",
+              "en-lt/contacts"
+            ]
+          }
+        ]
+      },
+      {
         "language": "jp",
         "groups": [
           {
@@ -635,6 +679,10 @@
     {
       "source": "/hr/:slug*",
       "destination": "/en-hr/:slug*"
+    },
+    {
+      "source": "/lt/:slug*",
+      "destination": "/en-lt/:slug*"
     }
   ]
 }

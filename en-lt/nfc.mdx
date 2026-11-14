@@ -1,0 +1,91 @@
+---
+title: "Komandų žetonai"
+description: "NFC kodai"
+icon: "puzzle"
+mode: "default"
+---
+
+## 🧭 Judėjimas
+
+| Komanda | Žetonas | NFC kodas |
+| --- | --- | --- |
+| Pirmyn | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
+| Kairėn | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
+| Dešinėn | <img src="../images/book-1/right-tile.svg" width="56" /> | `crig` |
+| Atgal | <img src="../images/book-1/back-tile.svg" width="56" /> | `cbac` |
+| Atsitiktinis judesys | <img src="../images/book-1/random.movement-tile.svg" width="56" /> | `crnd` |
+
+## 🔁 Kartojimas ir valdymas
+
+| Komanda | Žetonas | NFC kodas |
+| --- | --- | --- |
+| Kartojimas 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
+| Kartoti atsitiktinį kartų skaičių (nuo 1 iki 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
+| Funkcija | <img src="../images/book-1/function-tile.svg" width="56" /> | `cfun` |
+| Pauzė (1–999 s; be skaičiaus 1 s) |  | `cwat` |
+
+## 🔢 Skaičiai
+
+| Reikšmė | NFC kodas |
+| --- | --- |
+| Skaičiai 1–999 | `n001`–`n999` |
+
+## 🧮 Matematinės operacijos
+
+| Operacija | NFC kodas |
+| --- | --- |
+| Nuo +1 iki +999 | `a001`–`a999` |
+| Nuo −1 iki −999 | `s001`–`s999` |
+| ×N | `m002`–`m999` |
+| ÷N | `d002`–`d999` |
+| X^N | `e002`–`e999` |
+| Kvadratinė šaknis iš X | `sqrt` |
+| Faktorialas | `fact` |
+
+Aritmetika skaičiuoja iki 5000 į abi puses, dalyba ir kvadratinė šaknis apvalinamos iki artimiausio sveikojo skaičiaus. Jei atsakymo nėra (daugiau nei 5000, dalyba iš 0, šaknis iš neigiamo skaičiaus, didesnio nei 6 skaičiaus faktorialas), lizdas mirksi raudonai, o skaičius nesikeičia.
+
+## ⚙️ Nustatymai
+
+| Komanda | NFC kodas |
+| --- | --- |
+| Kalibravimas (be skaičiaus: robotas suderina variklius ir giroskopą, apie 2 minutes, pirmąją pusę minutės jo nelieskite; su žetonu `+N` arba `−N`: posūkio pataisa po patikros su 32 posūkiais; su paprastu skaičiumi neveikia, lizdas nusidažo raudonai) | `ccal` |
+| Numatytasis žingsnis: žingsnio ilgis komandoms Pirmyn ir Atgal, jį naudoja ir Atsitiktinis judesys (1–999 mm; be skaičiaus grąžina 150 mm) | `clen` |
+
+## 🔧 Išplėstinės komandos
+
+| Komanda | NFC kodas |
+| --- | --- |
+| Garso įrašas (žr. [Garso failų sąrašas](/en-lt/sounds_reference)) | `xNNN` |
+| Roboto frazė: `csou` + skaičius N, robotas pasako frazę xN iš [garsų lentelės](/en-lt/sounds_reference#-roboto-frazės-reakcijos-ir-tarnybiniai-pranešimai-x001–x019) | `csou` |
+| Garsumas (valdymo pultas ir robotas: 0–100, daugiau nei 100 = didžiausias) | `clvl` |
+
+## Kaip įrašyti duomenis į NFC žymą
+
+Galite sukurti savo žetoną: tiesiog įrašykite tekstinį kodą į NFC žymą. Galite naudoti bet kokius skaičius (nuo 1 iki 999), bet kokius kartojimus ir bet kokius skaičius aritmetiniams veiksmams.
+
+Norėdami įrašyti tekstinius duomenis į NFC žymą, atidarykite „Google Play“ parduotuvę ir įdiekite telefone programėlę **RFID NFC Reader** arba **NFC Tools**.
+
+NFC žymos įrašymo instrukcija: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+
+<div
+  style={{
+  position: 'relative',
+  paddingBottom: '56.25%',
+  height: 0,
+  overflow: 'hidden',
+}}
+>
+  <iframe
+    src="https://www.youtube.com/embed/UbKaQxZs8JA?si=WT8wWYBe_Ql7TovQ"
+    style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  }}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>
