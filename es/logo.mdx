@@ -1,11 +1,11 @@
 ---
 title: "PrimaSTEM y LOGO"
-description: "PrimaSTEM es la gráfica tortuga de LOGO, en las manos y sin pantalla. Cada concepto en el tablero y su equivalente en LOGO."
+description: "La gráfica tortuga de LOGO en el tablero de PrimaSTEM, en las manos y sin pantalla. Cada concepto en el tablero y su equivalente en LOGO."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM se basa en la idea de [LOGO](https://es.wikipedia.org/wiki/Logo_(lenguaje_de_programación)). Seymour Papert y sus colegas crearon este lenguaje para niños en 1967. En LOGO el niño escribe comandos y una tortuga dibuja en la pantalla. En PrimaSTEM el niño coloca fichas en el tablero, y un robot de madera con un rotulador dibuja en el papel. Sin teclado, sin pantalla, sin texto.
+PrimaSTEM se basa en la idea de [LOGO](https://es.wikipedia.org/wiki/Logo_(lenguaje_de_programación)). Seymour Papert y sus colegas crearon este lenguaje para niños en 1967. En LOGO el niño escribe comandos y una tortuga dibuja en la pantalla. En PrimaSTEM el niño coloca fichas en el tablero, y un robot de madera con un rotulador dibuja en el papel. No hacen falta teclado, pantalla ni texto.
 
 Esta página es para docentes que conocen LOGO o Scratch, y para cualquiera que quiera entender qué hacen de verdad las fichas.
 
@@ -15,15 +15,15 @@ Esta página es para docentes que conocen LOGO o Scratch, y para cualquiera que 
 |---|---|---|
 | Secuencia | Las fichas se ejecutan de izquierda a derecha por la fila superior. El LED de la pareja que se ejecuta parpadea y luego se apaga | un comando tras otro |
 | Comando | Adelante, Atrás, Izquierda, Derecha, Pausa, Movimiento aleatorio | `forward`, `back`, `left`, `right`, `wait` |
-| Parámetro | Una ficha de número en la misma pareja: Adelante + 200 | `forward 200` |
-| Valor por defecto | Adelante sin número = 150 mm, Izquierda/Derecha sin número = 90° | |
-| Bucle | Una ficha de repetición en la pareja: Adelante + repetir 4 | `repeat 4 [forward 150]` |
+| Parámetro | Una ficha de número en la misma pareja: Adelante y 200 | `forward 200` |
+| Valor por defecto | Adelante sin número avanza 150 mm, Izquierda y Derecha sin número giran 90° | |
+| Bucle | Una ficha de repetición en la pareja: Adelante y Repetir 4 | `repeat 4 [forward 150]` |
 | Procedimiento | La fila inferior (5 parejas) es la Función. La llama la ficha «Función» | `to shape ... end`, luego `shape` |
-| Procedimiento en un bucle | La ficha «Función» y una ficha de repetición en la misma pareja: Función + repetir 5 | `repeat 5 [shape]` |
+| Procedimiento en un bucle | La ficha «Función» y una ficha de repetición en la misma pareja: Función y Repetir 5 | `repeat 5 [shape]` |
 | Pasar un valor a un procedimiento | Adelante 100 avanza 100 mm y guarda 100. Si después llama a una Función que tiene Adelante sin número, también avanza 100. Cambie Adelante antes de la siguiente llamada, y la misma Función dibuja la figura en otro tamaño | parecido a `shape 100`, `shape 50` |
 | Recursión | Una ficha «Función» dentro de la fila inferior: la función se llama a sí misma hasta que vuelva a pulsar ▶ Inicio | un procedimiento que se llama a sí mismo |
 | Variables | Cada comando recuerda su último valor: Adelante, Atrás, Izquierda, Derecha y Pausa son cinco variables independientes. Adelante sin número avanza lo mismo que el último Adelante | `make "step 200`, luego `forward :step` |
-| Aritmética con una variable | Adelante + «+30»: sumar 30 al valor guardado y avanzar | `make "step :step + 30 forward :step` |
+| Aritmética con una variable | Adelante y «+30»: el tablero suma 30 al valor guardado y el robot avanza | `make "step :step + 30 forward :step` |
 | Operaciones | + − × ÷ √ ^ sobre el valor guardado, de −5000 a 5000, números enteros | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Valores negativos | Un resultado negativo invierte el movimiento: Adelante −50 retrocede 50 mm, Izquierda −30 gira 30° a la derecha | `forward -50` |
 | Azar | La ficha de repetición con el dado (de 1 a 6 veces) y la ficha «Movimiento aleatorio» | `random 6` |
@@ -120,7 +120,7 @@ repeat 36 [forward 25 right 10]
   </Frame>
 </Columns>
 
-Un círculo es un polígono con muchos lados cortos: 36 × 10° = 360°.
+Aquí el robot dibuja el círculo como un polígono con muchos lados cortos: 36 × 10° = 360°.
 
 ### Espiral cuadrada (variable y aritmética)
 
@@ -169,7 +169,7 @@ repeat 6 [forward 200 right :angle]
   </Frame>
 </Columns>
 
-Derecha 360 da una vuelta completa y guarda 360. Derecha ÷6 divide el valor guardado y gira 60°. En la función, Derecha sin número vuelve a tomar 60°. Los dos giros del principio solo cambian hacia dónde mira el robot antes de dibujar; la figura sigue siendo un hexágono.
+Derecha 360 da una vuelta completa y guarda 360. Derecha ÷6 divide el valor guardado y gira 60°. En la función, Derecha sin número vuelve a tomar 60°. Los dos giros del principio solo cambian hacia dónde mira el robot antes de dibujar. La figura sigue siendo un hexágono.
 
 El tablero divide y redondea al entero más cercano. Para que la figura se cierre, divida 360 entre un número que no deje resto: 3, 4, 5, 6, 8, 9, 10, 12. Por ejemplo, 360 ÷ 7 = 51,4 da 51°, y al heptágono le faltan 3° para cerrarse.
 
@@ -179,7 +179,7 @@ Más dibujos: [Ejemplos de dibujos](/es/mathdrawings).
 
 PrimaSTEM cubre la base de la gráfica tortuga de LOGO. Algunas cosas funcionan de otra manera, y es a propósito:
 
-- **Una pareja, un comando y un valor.** En una pareja de celdas va un comando y como mucho un valor: un número, una repetición o una operación. Por eso hasta un niño de cuatro años puede leer el programa.
+- **En una pareja, un comando y un valor.** En una pareja de celdas va un comando y como mucho un valor: un número, una repetición o una operación. Por eso hasta un niño de cuatro años puede leer el programa.
 - **No hay condiciones (`if`).** El programa se ejecuta siempre igual. Solo el dado y el Movimiento aleatorio añaden azar.
 - **La Función no tiene parámetros con nombre.** Se llama con una repetición y toma los valores fijados antes de la llamada (consulte la tabla de arriba).
 - **Longitud del programa:** 6 parejas en la fila principal, 5 en la Función.

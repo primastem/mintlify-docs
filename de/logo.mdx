@@ -1,11 +1,11 @@
 ---
 title: "PrimaSTEM und LOGO"
-description: "PrimaSTEM ist Turtle-Grafik aus LOGO, zum Anfassen und ohne Bildschirm. Jedes Konzept auf dem Steuerboard und sein Gegenstück in LOGO."
+description: "Turtle-Grafik aus LOGO auf dem Steuerboard von PrimaSTEM, zum Anfassen und ohne Bildschirm. Jedes Konzept auf dem Steuerboard und sein Gegenstück in LOGO."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM beruht auf der Idee von [LOGO](https://de.wikipedia.org/wiki/Logo_(Programmiersprache)). Diese Sprache für Kinder entwickelten Seymour Papert und seine Kollegen 1967. In LOGO tippt das Kind Befehle ein, und eine Schildkröte zeichnet auf dem Bildschirm. In PrimaSTEM legt das Kind Tokens auf das Steuerboard, und ein Holzroboter mit einem Stift zeichnet auf Papier. Ohne Tastatur, ohne Bildschirm, ohne Text.
+PrimaSTEM beruht auf der Idee von [LOGO](https://de.wikipedia.org/wiki/Logo_(Programmiersprache)). Diese Sprache für Kinder entwickelten Seymour Papert und seine Kollegen 1967. In LOGO tippt das Kind Befehle ein, und eine Schildkröte zeichnet auf dem Bildschirm. In PrimaSTEM legt das Kind Tokens auf das Steuerboard, und ein Holzroboter mit einem Stift zeichnet auf Papier. Tastatur, Bildschirm und Text braucht das Kind nicht.
 
 Diese Seite ist für Lehrkräfte, die LOGO oder Scratch kennen, und für alle, die verstehen wollen, was die Tokens tatsächlich tun.
 
@@ -15,15 +15,15 @@ Diese Seite ist für Lehrkräfte, die LOGO oder Scratch kennen, und für alle, d
 |---|---|---|
 | Sequenz | Die Tokens laufen in der oberen Reihe von links nach rechts. Die LED des Paares, das gerade läuft, blinkt und erlischt dann | ein Befehl nach dem anderen |
 | Befehl | Vorwärts, Rückwärts, Links, Rechts, Pause, Zufällige Bewegung | `forward`, `back`, `left`, `right`, `wait` |
-| Parameter | Ein Zahlen-Token im selben Paar: Vorwärts + 200 | `forward 200` |
-| Standardwert | Vorwärts ohne Zahl = 150 mm, Links/Rechts ohne Zahl = 90° | |
-| Schleife | Ein Wiederholungs-Token im Paar: Vorwärts + Wiederholen 4 | `repeat 4 [forward 150]` |
+| Parameter | Ein Zahlen-Token im selben Paar: Vorwärts und 200 | `forward 200` |
+| Standardwert | Vorwärts ohne Zahl fährt 150 mm, Links und Rechts ohne Zahl drehen um 90° | |
+| Schleife | Ein Wiederholungs-Token im Paar: Vorwärts und Wiederholen 4 | `repeat 4 [forward 150]` |
 | Prozedur | Die untere Reihe (5 Paare) ist die Funktion. Das Token „Funktion“ ruft sie auf | `to shape ... end`, dann `shape` |
-| Prozedur in einer Schleife | Das Token „Funktion“ und ein Wiederholungs-Token in einem Paar: Funktion + Wiederholen 5 | `repeat 5 [shape]` |
+| Prozedur in einer Schleife | Das Token „Funktion“ und ein Wiederholungs-Token in einem Paar: Funktion und Wiederholen 5 | `repeat 5 [shape]` |
 | Einer Prozedur einen Wert übergeben | Vorwärts 100 fährt 100 mm und speichert 100. Rufen Sie danach eine Funktion auf, in der Vorwärts ohne Zahl steht, fährt sie ebenfalls 100. Ändern Sie Vorwärts vor dem nächsten Aufruf, und dieselbe Funktion zeichnet die Figur in einer anderen Größe | ähnlich wie `shape 100`, `shape 50` |
 | Rekursion | Das Token „Funktion“ in der unteren Reihe: Die Funktion ruft sich selbst auf, bis Sie wieder ▶ Start drücken | eine Prozedur ruft sich selbst auf |
 | Variablen | Jeder Befehl merkt sich seinen letzten Wert: Vorwärts, Rückwärts, Links, Rechts und Pause sind fünf unabhängige Variablen. Vorwärts ohne Zahl fährt so weit wie das letzte Vorwärts | `make "step 200`, dann `forward :step` |
-| Arithmetik mit einer Variablen | Vorwärts + „+30“: 30 zum gespeicherten Wert addieren und fahren | `make "step :step + 30 forward :step` |
+| Arithmetik mit einer Variablen | Vorwärts und „+30“: Das Steuerboard addiert 30 zum gespeicherten Wert, und der Roboter fährt | `make "step :step + 30 forward :step` |
 | Operationen | + − × ÷ √ ^ mit dem gespeicherten Wert, von −5000 bis 5000, ganze Zahlen | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Negative Werte | Ein negatives Ergebnis kehrt die Bewegung um: Vorwärts −50 fährt 50 mm zurück, Links −30 dreht 30° nach rechts | `forward -50` |
 | Zufall | Das Wiederholungs-Token mit dem Würfel (1 bis 6 Mal) und das Token „Zufällige Bewegung“ | `random 6` |
@@ -120,7 +120,7 @@ repeat 36 [forward 25 right 10]
   </Frame>
 </Columns>
 
-Ein Kreis ist ein Vieleck mit vielen kurzen Seiten: 36 × 10° = 360°.
+Hier entsteht der Kreis als Vieleck mit vielen kurzen Seiten: 36 × 10° = 360°.
 
 ### Quadratische Spirale (Variable und Arithmetik)
 
@@ -169,7 +169,7 @@ repeat 6 [forward 200 right :angle]
   </Frame>
 </Columns>
 
-Rechts 360 macht eine volle Umdrehung und speichert 360. Rechts ÷6 teilt den gespeicherten Wert und dreht um 60°. In der Funktion nimmt Rechts ohne Zahl wieder 60°. Die zwei Drehungen am Anfang ändern nur, wohin der Roboter vor dem Zeichnen schaut; die Figur bleibt ein Sechseck.
+Rechts 360 macht eine volle Umdrehung und speichert 360. Rechts ÷6 teilt den gespeicherten Wert und dreht um 60°. In der Funktion nimmt Rechts ohne Zahl wieder 60°. Die zwei Drehungen am Anfang ändern nur, wohin der Roboter vor dem Zeichnen schaut. Die Figur bleibt ein Sechseck.
 
 Das Steuerboard teilt und rundet auf die nächste ganze Zahl. Damit sich die Figur schließt, teilen Sie 360 durch eine Zahl ohne Rest: 3, 4, 5, 6, 8, 9, 10, 12. Zum Beispiel ergibt 360 ÷ 7 = 51,4 den Wert 51°, und dem Siebeneck fehlen 3° zum Schließen.
 
@@ -179,7 +179,7 @@ Weitere Zeichnungen: [Zeichnungsbeispiele](/de/mathdrawings).
 
 PrimaSTEM deckt die Grundlagen der LOGO-Turtle-Grafik ab. Manches funktioniert anders, und das ist Absicht:
 
-- **Ein Paar, ein Befehl und ein Wert.** In einem Zellenpaar liegt ein Befehl und höchstens ein Wert: eine Zahl, eine Wiederholung oder eine Operation. Deshalb kann auch ein vierjähriges Kind das Programm lesen.
+- **Ein Paar enthält einen Befehl und einen Wert.** In einem Zellenpaar liegt ein Befehl und höchstens ein Wert: eine Zahl, eine Wiederholung oder eine Operation. Deshalb kann auch ein vierjähriges Kind das Programm lesen.
 - **Keine Bedingungen (`if`).** Das Programm läuft jedes Mal gleich. Zufall bringen nur der Würfel und die Zufällige Bewegung.
 - **Die Funktion hat keine benannten Parameter.** Sie wird mit einer Wiederholung aufgerufen und nimmt die Werte, die vor dem Aufruf gesetzt wurden (siehe Tabelle oben).
 - **Programmlänge:** 6 Paare in der Hauptreihe, 5 in der Funktion.

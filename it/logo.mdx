@@ -1,11 +1,11 @@
 ---
 title: "PrimaSTEM e LOGO"
-description: "PrimaSTEM è la grafica della tartaruga di LOGO, ma in mano e senza schermo. Ogni concetto sulla pulsantiera e il suo equivalente in LOGO."
+description: "La grafica della tartaruga di LOGO sulla pulsantiera PrimaSTEM, in mano e senza schermo. Ogni concetto sulla pulsantiera e il suo equivalente in LOGO."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM nasce dall'idea di [LOGO](https://it.wikipedia.org/wiki/Logo_(informatica)). Questo linguaggio per bambini è stato creato da Seymour Papert e dai suoi colleghi nel 1967. In LOGO il bambino scrive i comandi e una tartaruga disegna sullo schermo. In PrimaSTEM il bambino mette le tessere sulla pulsantiera e un robot di legno con un pennarello disegna sulla carta. Senza tastiera, senza schermo, senza testo.
+PrimaSTEM nasce dall'idea di [LOGO](https://it.wikipedia.org/wiki/Logo_(informatica)). Questo linguaggio per bambini è stato creato da Seymour Papert e dai suoi colleghi nel 1967. In LOGO il bambino scrive i comandi e una tartaruga disegna sullo schermo. In PrimaSTEM il bambino mette le tessere sulla pulsantiera e un robot di legno con un pennarello disegna sulla carta. Tastiera, schermo e testo non servono.
 
 Questa pagina è per gli insegnanti che conoscono LOGO o Scratch e per chi vuole capire cosa fanno davvero le tessere.
 
@@ -15,15 +15,15 @@ Questa pagina è per gli insegnanti che conoscono LOGO o Scratch e per chi vuole
 |---|---|---|
 | Sequenza | Le tessere vengono eseguite da sinistra a destra lungo la riga in alto. Il LED della coppia in esecuzione lampeggia, poi si spegne | un comando dopo l'altro |
 | Comando | Avanti, Indietro, Sinistra, Destra, Pausa, Movimento casuale | `forward`, `back`, `left`, `right`, `wait` |
-| Parametro | Una tessera con un numero nella stessa coppia: Avanti + 200 | `forward 200` |
-| Valore predefinito | Avanti senza numero = 150 mm, Sinistra/Destra senza numero = 90° | |
-| Ciclo | Una tessera di ripetizione nella coppia: Avanti + ripeti 4 | `repeat 4 [forward 150]` |
+| Parametro | Una tessera con un numero nella stessa coppia: Avanti e 200 | `forward 200` |
+| Valore predefinito | Avanti senza numero percorre 150 mm, Sinistra e Destra senza numero girano di 90° | |
+| Ciclo | Una tessera di ripetizione nella coppia: Avanti e Ripeti 4 | `repeat 4 [forward 150]` |
 | Procedura | La riga in basso (5 coppie) è la Funzione. La richiama la tessera «Funzione» | `to shape ... end`, poi `shape` |
-| Procedura in un ciclo | La tessera «Funzione» e una tessera di ripetizione nella stessa coppia: Funzione + ripeti 5 | `repeat 5 [shape]` |
+| Procedura in un ciclo | La tessera «Funzione» e una tessera di ripetizione nella stessa coppia: Funzione e Ripeti 5 | `repeat 5 [shape]` |
 | Passare un valore alla procedura | Avanti 100 percorre 100 mm e memorizza 100. Se subito dopo si richiama una Funzione che contiene Avanti senza numero, anche lei percorre 100. Cambi Avanti prima della chiamata successiva e la stessa Funzione disegna una figura di un'altra misura | simile a `shape 100`, `shape 50` |
 | Ricorsione | La tessera «Funzione» dentro la riga in basso: la funzione richiama sé stessa finché non preme di nuovo ▶ Start | una procedura che richiama sé stessa |
 | Variabili | Ogni comando ricorda il suo ultimo valore: Avanti, Indietro, Sinistra, Destra e Pausa sono cinque variabili indipendenti. Avanti senza numero percorre quanto l'ultimo Avanti | `make "step 200`, poi `forward :step` |
-| Aritmetica su una variabile | Avanti + «+30»: aggiunge 30 al valore memorizzato e si muove | `make "step :step + 30 forward :step` |
+| Aritmetica su una variabile | Avanti e «+30»: la pulsantiera aggiunge 30 al valore memorizzato e il robot si muove | `make "step :step + 30 forward :step` |
 | Operazioni | + − × ÷ √ ^ sul valore memorizzato, da −5000 a 5000, numeri interi | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Valori negativi | Un risultato negativo inverte il movimento: Avanti −50 va indietro di 50 mm, Sinistra −30 gira a destra di 30° | `forward -50` |
 | Casualità | La tessera di ripetizione con il dado (da 1 a 6 volte) e la tessera «Movimento casuale» | `random 6` |
@@ -120,7 +120,7 @@ repeat 36 [forward 25 right 10]
   </Frame>
 </Columns>
 
-Un cerchio è un poligono con tanti lati corti: 36 × 10° = 360°.
+Qui il robot disegna il cerchio come un poligono con tanti lati corti: 36 × 10° = 360°.
 
 ### Spirale quadrata (variabile e aritmetica)
 
@@ -169,7 +169,7 @@ repeat 6 [forward 200 right :angle]
   </Frame>
 </Columns>
 
-Destra 360 fa un giro completo e memorizza 360. Destra ÷6 divide il valore memorizzato e gira di 60°. Nella funzione Destra senza numero usa di nuovo 60°. Le due rotazioni all'inizio cambiano solo la direzione del robot prima del disegno; la figura resta un esagono.
+Destra 360 fa un giro completo e memorizza 360. Destra ÷6 divide il valore memorizzato e gira di 60°. Nella funzione Destra senza numero usa di nuovo 60°. Le due rotazioni all'inizio cambiano solo la direzione del robot prima del disegno. La figura resta un esagono.
 
 La pulsantiera divide e arrotonda all'intero più vicino. Perché la figura si chiuda, divida 360 per un numero senza resto: 3, 4, 5, 6, 8, 9, 10, 12. Per esempio, 360 ÷ 7 = 51,4 dà 51°, e l'ettagono non si chiude per 3°.
 
@@ -179,7 +179,7 @@ Altri disegni: [Esempi di disegni](/it/mathdrawings).
 
 PrimaSTEM copre la base della grafica della tartaruga di LOGO. Alcune cose funzionano in modo diverso, ed è una scelta voluta:
 
-- **Una coppia, un comando e un valore.** In una coppia di celle ci sono un comando e al massimo un valore: un numero, una ripetizione o un'operazione. Così il programma lo legge anche un bambino di quattro anni.
+- **In una coppia, un comando e un valore.** In una coppia di celle ci sono un comando e al massimo un valore: un numero, una ripetizione o un'operazione. Così il programma lo legge anche un bambino di quattro anni.
 - **Niente condizioni (`if`).** Il programma si esegue ogni volta nello stesso modo. La casualità viene solo dal dado e dal Movimento casuale.
 - **La Funzione non ha parametri con nome.** Si richiama con una ripetizione e usa i valori impostati prima della chiamata (vedi la tabella sopra).
 - **Lunghezza del programma:** 6 coppie nella riga principale, 5 nella Funzione.

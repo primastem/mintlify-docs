@@ -1,11 +1,11 @@
 ---
 title: "PrimaSTEM en LOGO"
-description: "PrimaSTEM is de turtle graphics van LOGO, maar dan in uw handen en zonder scherm. Elk begrip op de bediening en wat het in LOGO is."
+description: "De turtle graphics van LOGO op de bediening van PrimaSTEM, in uw handen en zonder scherm. Elk begrip op de bediening en wat het in LOGO is."
 icon: "turtle"
 mode: "default"
 ---
 
-PrimaSTEM is gebaseerd op het idee van [LOGO](https://nl.wikipedia.org/wiki/Logo_(programmeertaal)). Seymour Papert en zijn collega's maakten deze programmeertaal voor kinderen in 1967. In LOGO typt een kind commando's en tekent een schildpad op het scherm. In PrimaSTEM legt het kind kaartjes op de bediening en tekent een houten robot met een stift op papier. Zonder toetsenbord, zonder scherm, zonder tekst.
+PrimaSTEM is gebaseerd op het idee van [LOGO](https://nl.wikipedia.org/wiki/Logo_(programmeertaal)). Seymour Papert en zijn collega's maakten deze programmeertaal voor kinderen in 1967. In LOGO typt een kind commando's en tekent een schildpad op het scherm. In PrimaSTEM legt het kind kaartjes op de bediening en tekent een houten robot met een stift op papier. Een toetsenbord, scherm of tekst is niet nodig.
 
 Deze pagina is voor leerkrachten die LOGO of Scratch kennen, en voor iedereen die wil begrijpen wat de kaartjes echt doen.
 
@@ -15,15 +15,15 @@ Deze pagina is voor leerkrachten die LOGO of Scratch kennen, en voor iedereen di
 |---|---|---|
 | Volgorde | De kaartjes worden van links naar rechts uitgevoerd langs de bovenste rij. De LED van het paar dat wordt uitgevoerd knippert en gaat dan uit | het ene commando na het andere |
 | Commando | Vooruit, Achteruit, Links, Rechts, Pauze, Willekeurige beweging | `forward`, `back`, `left`, `right`, `wait` |
-| Parameter | Een kaartje met een getal in hetzelfde paar: Vooruit + 200 | `forward 200` |
-| Standaardwaarde | Vooruit zonder getal = 150 mm, Links/Rechts zonder getal = 90° | |
-| Lus | Een herhalingskaartje in het paar: Vooruit + herhaal 4 | `repeat 4 [forward 150]` |
+| Parameter | Een kaartje met een getal in hetzelfde paar: Vooruit en 200 | `forward 200` |
+| Standaardwaarde | Vooruit zonder getal rijdt 150 mm, Links en Rechts zonder getal draaien 90° | |
+| Lus | Een herhalingskaartje in het paar: Vooruit en Herhaal 4 | `repeat 4 [forward 150]` |
 | Procedure | De onderste rij (5 paren) is de Functie. Het kaartje “Functie” roept haar aan | `to shape ... end`, daarna `shape` |
-| Procedure in een lus | Het kaartje “Functie” en een herhalingskaartje in één paar: Functie + herhaal 5 | `repeat 5 [shape]` |
+| Procedure in een lus | Het kaartje “Functie” en een herhalingskaartje in één paar: Functie en Herhaal 5 | `repeat 5 [shape]` |
 | Een waarde aan een procedure geven | Vooruit 100 rijdt 100 mm en onthoudt 100. Roept u daarna een Functie aan met Vooruit zonder getal, dan rijdt die ook 100. Verander Vooruit vóór de volgende aanroep, en dezelfde Functie tekent een figuur van een andere grootte | lijkt op `shape 100`, `shape 50` |
 | Recursie | Het kaartje “Functie” in de onderste rij: de functie roept zichzelf aan tot u opnieuw op ▶ Start drukt | een procedure die zichzelf aanroept |
 | Variabelen | Elk commando onthoudt zijn laatste waarde: Vooruit, Achteruit, Links, Rechts en Pauze zijn vijf aparte variabelen. Vooruit zonder getal rijdt even ver als de vorige Vooruit | `make "step 200`, daarna `forward :step` |
-| Rekenen met een variabele | Vooruit + “+30”: tel 30 op bij de opgeslagen waarde en rijd | `make "step :step + 30 forward :step` |
+| Rekenen met een variabele | Vooruit en “+30”: de bediening telt 30 op bij de opgeslagen waarde, en de robot rijdt | `make "step :step + 30 forward :step` |
 | Bewerkingen | + − × ÷ √ ^ op de opgeslagen waarde, van −5000 tot 5000, hele getallen | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Negatieve waarden | Een negatief resultaat keert de beweging om: Vooruit −50 rijdt 50 mm achteruit, Links −30 draait 30° naar rechts | `forward -50` |
 | Toeval | Het herhalingskaartje met de dobbelsteen (1 tot 6 keer) en het kaartje “Willekeurige beweging” | `random 6` |
@@ -120,7 +120,7 @@ repeat 36 [forward 25 right 10]
   </Frame>
 </Columns>
 
-Een cirkel is een veelhoek met heel veel korte zijden: 36 × 10° = 360°.
+Hier tekent de robot de cirkel als een veelhoek met heel veel korte zijden: 36 × 10° = 360°.
 
 ### Vierkante spiraal (variabele en rekenen)
 
@@ -169,7 +169,7 @@ repeat 6 [forward 200 right :angle]
   </Frame>
 </Columns>
 
-Rechts 360 maakt een volle draai en onthoudt 360. Rechts ÷6 deelt de opgeslagen waarde en draait 60°. In de functie neemt Rechts zonder getal opnieuw 60°. De twee draaien aan het begin veranderen alleen de kant waar de robot naartoe kijkt voordat hij tekent; de figuur blijft een zeshoek.
+Rechts 360 maakt een volle draai en onthoudt 360. Rechts ÷6 deelt de opgeslagen waarde en draait 60°. In de functie neemt Rechts zonder getal opnieuw 60°. De twee draaien aan het begin veranderen alleen de kant waar de robot naartoe kijkt voordat hij tekent. De figuur blijft een zeshoek.
 
 De bediening deelt en rondt af op het dichtstbijzijnde hele getal. Wilt u dat de figuur sluit, deel 360 dan door een getal dat zonder rest past: 3, 4, 5, 6, 8, 9, 10, 12. Zo geeft 360 ÷ 7 = 51,4 een hoek van 51°, en de zevenhoek sluit niet: er blijft 3° over.
 
@@ -179,7 +179,7 @@ Meer tekeningen: [Tekenvoorbeelden](/nl/mathdrawings).
 
 PrimaSTEM dekt de basis van de turtle graphics van LOGO. Sommige dingen werken anders, en dat is zo bedoeld:
 
-- **Eén paar, één commando en één waarde.** In een paar cellen ligt een commando en hooguit één waarde: een getal, een herhaling of een bewerking. Daardoor kan zelfs een kind van vier het programma lezen.
+- **In een paar één commando en één waarde.** In een paar cellen ligt een commando en hooguit één waarde: een getal, een herhaling of een bewerking. Daardoor kan zelfs een kind van vier het programma lezen.
 - **Geen voorwaarden (`if`).** Het programma loopt elke keer op dezelfde manier. Alleen de dobbelsteen en Willekeurige beweging brengen toeval.
 - **De Functie heeft geen benoemde parameters.** U roept haar aan met een herhaling, en ze gebruikt de waarden die vóór de aanroep zijn ingesteld (zie de tabel hierboven).
 - **Lengte van het programma:** 6 paren in de hoofdrij, 5 in de Functie.

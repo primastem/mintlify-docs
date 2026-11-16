@@ -1,11 +1,11 @@
 ---
 title: "PrimaSTEM i LOGO"
-description: "PrimaSTEM je grafika kornjače iz LOGO-a, samo u rukama i bez ekrana. Svaki pojam na ploči i njegov parnjak u LOGO-u."
+description: "Grafika kornjače iz LOGO-a na ploči PrimaSTEM, rukama i bez ekrana. Svaki pojam na ploči i njegov parnjak u LOGO-u."
 icon: "turtle"
 mode: "default"
 ---
 
-Temelj PrimaSTEM-a je ideja jezika [LOGO](https://hr.wikipedia.org/wiki/Logo_(programski_jezik)). Taj jezik za djecu stvorili su Seymour Papert i njegovi suradnici 1967. godine. U LOGO-u dijete upisuje naredbe, a kornjača crta na ekranu. U PrimaSTEM-u dijete stavlja žetone na upravljačku ploču, a drveni robot s flomasterom crta na papiru. Bez tipkovnice, bez ekrana, bez teksta.
+Temelj PrimaSTEM-a je ideja jezika [LOGO](https://hr.wikipedia.org/wiki/Logo_(programski_jezik)). Taj jezik za djecu stvorili su Seymour Papert i njegovi suradnici 1967. godine. U LOGO-u dijete upisuje naredbe, a kornjača crta na ekranu. U PrimaSTEM-u dijete stavlja žetone na upravljačku ploču, a drveni robot s flomasterom crta na papiru. Tipkovnica, ekran i tekst nisu potrebni.
 
 Ova stranica je za učitelje koji poznaju LOGO ili Scratch i za sve koji žele razumjeti što žetoni zapravo rade.
 
@@ -15,15 +15,15 @@ Ova stranica je za učitelje koji poznaju LOGO ili Scratch i za sve koji žele r
 |---|---|---|
 | Slijed | Žetoni se izvode slijeva udesno u gornjem redu. Indikator para koji se izvodi treperi, a zatim se gasi | naredbe jedna za drugom |
 | Naredba | Naprijed, Natrag, Lijevo, Desno, Pauza, Nasumično kretanje | `forward`, `back`, `left`, `right`, `wait` |
-| Parametar | Žeton s brojem u istom paru: Naprijed + 200 | `forward 200` |
-| Zadana vrijednost | Naprijed bez broja = 150 mm, Lijevo/Desno bez broja = 90° | |
-| Petlja | Žeton ponavljanja u paru: Naprijed + ponavljanje 4 | `repeat 4 [forward 150]` |
+| Parametar | Žeton s brojem u istom paru: Naprijed i 200 | `forward 200` |
+| Zadana vrijednost | Naprijed bez broja prijeđe 150 mm, Lijevo i Desno bez broja zaokreću za 90° | |
+| Petlja | Žeton ponavljanja u paru: Naprijed i Ponovi 4 | `repeat 4 [forward 150]` |
 | Procedura | Donji red (5 parova) je Funkcija. Poziva je žeton „Funkcija“ | `to shape ... end`, zatim `shape` |
-| Procedura u petlji | Žeton „Funkcija“ i žeton ponavljanja u istom paru: Funkcija + ponavljanje 5 | `repeat 5 [shape]` |
+| Procedura u petlji | Žeton „Funkcija“ i žeton ponavljanja u istom paru: Funkcija i Ponovi 5 | `repeat 5 [shape]` |
 | Prosljeđivanje vrijednosti proceduri | Naprijed 100 prijeđe 100 mm i zapamti 100. Ako odmah zatim pozovete Funkciju u kojoj stoji Naprijed bez broja, i ona prijeđe 100. Promijenite Naprijed prije sljedećeg poziva i ista Funkcija nacrta lik druge veličine | slično kao `shape 100`, `shape 50` |
 | Rekurzija | Žeton „Funkcija“ unutar donjeg reda: funkcija poziva samu sebe dok ponovno ne pritisnete ▶ Start | procedura poziva samu sebe |
 | Varijable | Svaka naredba pamti svoju zadnju vrijednost: Naprijed, Natrag, Lijevo, Desno i Pauza pet su neovisnih varijabli. Naprijed bez broja prijeđe isto koliko i prethodni Naprijed | `make "step 200`, zatim `forward :step` |
-| Aritmetika nad varijablom | Naprijed + „+30“: dodaj 30 spremljenoj vrijednosti i kreni | `make "step :step + 30 forward :step` |
+| Aritmetika nad varijablom | Naprijed i „+30“: ploča dodaje 30 spremljenoj vrijednosti, a robot kreće | `make "step :step + 30 forward :step` |
 | Operacije | + − × ÷ √ ^ nad spremljenom vrijednošću, od −5000 do 5000, cijeli brojevi | `sum`, `difference`, `product`, `quotient`, `sqrt`, `power` |
 | Negativne vrijednosti | Negativan rezultat obrće kretanje: Naprijed −50 ide 50 mm unatrag, Lijevo −30 zaokreće udesno za 30° | `forward -50` |
 | Nasumičnost | Žeton ponavljanja s kockicom (od 1 do 6 puta) i žeton „Nasumično kretanje“ | `random 6` |
@@ -120,7 +120,7 @@ repeat 36 [forward 25 right 10]
   </Frame>
 </Columns>
 
-Krug je mnogokut s mnogo kratkih stranica: 36 × 10° = 360°.
+Krug ovdje nastaje kao mnogokut s mnogo kratkih stranica: 36 × 10° = 360°.
 
 ### Kvadratna spirala (varijabla i aritmetika)
 
@@ -169,7 +169,7 @@ repeat 6 [forward 200 right :angle]
   </Frame>
 </Columns>
 
-Desno 360 napravi puni okret i zapamti 360. Desno ÷6 podijeli spremljenu vrijednost i zaokrene za 60°. U funkciji Desno bez broja opet uzima 60°. Dva zaokreta na početku mijenjaju samo smjer u kojem robot gleda prije crtanja; lik ostaje šesterokut.
+Desno 360 napravi puni okret i zapamti 360. Desno ÷6 podijeli spremljenu vrijednost i zaokrene za 60°. U funkciji Desno bez broja opet uzima 60°. Dva zaokreta na početku mijenjaju samo smjer u kojem robot gleda prije crtanja. Lik ostaje šesterokut.
 
 Ploča dijeli i zaokružuje na najbliži cijeli broj. Da bi se lik zatvorio, dijelite 360 brojem kojim je djeljiv bez ostatka: 3, 4, 5, 6, 8, 9, 10, 12. Na primjer, 360 ÷ 7 = 51,4 daje 51° i sedmerokut se neće zatvoriti za 3°.
 
@@ -179,7 +179,7 @@ Više crteža: [Primjeri crteža](/en-hr/mathdrawings).
 
 PrimaSTEM pokriva osnovu grafike kornjače iz LOGO-a. Neke stvari rade drukčije, i to namjerno:
 
-- **Jedan par, jedna naredba i jedna vrijednost.** U paru polja nalazi se naredba i najviše jedna vrijednost: broj, ponavljanje ili operacija. Zato program može pročitati i četverogodišnje dijete.
+- **U paru je jedna naredba i jedna vrijednost.** U paru polja nalazi se naredba i najviše jedna vrijednost: broj, ponavljanje ili operacija. Zato program može pročitati i četverogodišnje dijete.
 - **Nema uvjeta (`if`).** Program se svaki put izvodi jednako. Nasumičnost daju samo kockica i Nasumično kretanje.
 - **Funkcija nema imenovane parametre.** Poziva se s ponavljanjem i uzima vrijednosti postavljene prije poziva (vidi tablicu gore).
 - **Duljina programa:** 6 parova u glavnom redu, 5 u Funkciji.
