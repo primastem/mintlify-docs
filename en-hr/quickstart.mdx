@@ -1,115 +1,117 @@
 ---
 title: "Brzi početak"
-description: "Kako radi PrimaSTEM: robot, ploča, žetoni. Brzi početak."
+description: "Kako rade robot, ploča i žetoni PrimaSTEM-a."
 icon: "rocket"
 mode: "wide"
 ---
 
-PrimaSTEM je edukativni komplet bez ekrana za programiranje, logiku i matematiku, namijenjen djeci od 4 do 10+ godina. Ova stranica ukratko objašnjava **kako uređaj radi**.
+PrimaSTEM uči djecu od 4 do 10+ godina programiranju, logici i matematici bez ekrana. Ova stranica ukratko objašnjava **kako uređaj radi**.
 
 <Note>
-**Još nemate uređaj? Isprobajte ga u pregledniku.** Otvorite **[web simulator](https://simulator.primastem.com)**, radnu kopiju ploče i robota. Postavite žetone, pritisnite **▶ Start** i pratite kako robot izvodi program dok čitate ovaj vodič.
+**Još nemate uređaj? Isprobajte ga u pregledniku.** Otvorite **[web simulator](https://simulator.primastem.com)**. To je radna kopija ploče i robota. Postavite žetone, pritisnite **▶ Start** i pratite kako robot izvodi program. To možete raditi dok čitate ovaj vodič.
 </Note>
 
 ## 1. Što je u kutiji
 
 <CardGroup cols={3}>
   <Card title="Robot" icon="bug">
-    Drveni robot bubamara na dva kotača. Na vrhu je utor za flomaster. Zvučnik, USB-C, Bluetooth.
+    Drveni robot u obliku bubamare, na dva kotača. Na vrhu je utor za flomaster. Ima zvučnik, USB-C i Bluetooth.
   </Card>
   <Card title="Upravljačka ploča" icon="grid-3x3">
-    Ploča s dvostrukim utorima za program. Višebojni indikatori, tipka ▶ Start/Stop, zvučnik, USB-C, Bluetooth.
+    Na ploči su dvostruki utori za program i višebojni indikatori. Ima tipku ▶ Start/Stop, zvučnik, USB-C i Bluetooth.
   </Card>
   <Card title="Žetoni naredbi" icon="square-stack">
     Kartonske pločice s NFC naljepnicama. Svaka je jedna naredba za program robota.
   </Card>
 </CardGroup>
 
-<Tip>Nakon primitka kompleta preporučujemo da robota i upravljačku ploču ažurirate na najnoviji firmware: [kako ažurirati](/en-hr/update).</Tip>
+<Tip>Kad primite komplet, ažurirajte firmware robota i upravljačke ploče na najnoviju verziju: [kako ažurirati](/en-hr/update).</Tip>
 
 ## 2. Uključivanje
 
 <Steps>
   <Step title="Uključite robota, zatim ploču" icon="power">
-    Svaki uređaj ispušta kratak zvuk; zeleni indikator napajanja na svakom znači da je uređaj uključen.
+    Svaki uređaj ispušta kratak zvuk. Zeleni indikator napajanja znači da je uređaj uključen.
   </Step>
-  <Step title="Povezano = bijelo" icon="check">
+  <Step title="Bijelo svjetlo: veza postoji" icon="check">
     Slobodni utori na ploči svijetle **bijelo**, a oči robota trepere **bijelo**. Spremni ste.
   </Step>
-  <Step title="Svijetloplavo = nema veze" icon="bluetooth">
-    Robot i upravljačka ploča svijetle svijetloplavo. Ako se veza i dalje ne uspostavi, držite **▶ Start** na ploči **dulje od 10 sekundi**. U 5. sekundi čut ćete zvučni signal, nastavite držati: uređaji će se upariti i robot će se ponovno pokrenuti.
+  <Step title="Svijetloplavo svjetlo: nema veze" icon="bluetooth">
+    Robot i upravljačka ploča svijetle svijetloplavo. Ako se veza ne uspostavi, držite **▶ Start** na ploči **dulje od 10 sekundi**. U 5. sekundi čut ćete zvučni signal, ne puštajte tipku. Uređaji će se upariti i robot će se ponovno pokrenuti.
   </Step>
 </Steps>
 
-**Prvo isprobajte ovo:** stavite žeton **Naprijed** u utor 1 (u bilo koje polje para). Pritisnite **▶ Start**. Robot se pomakne 15 cm naprijed i stane. *To je program od jedne naredbe.*
+**Prvo isprobajte ovo.** Stavite žeton **Naprijed** u prvi par, u bilo koje od dva polja. Pritisnite **▶ Start**. Robot se pomakne 15 cm naprijed i stane. *Napisali ste prvi program od jedne naredbe.*
 
 ## 3. Kako radi program
 
-Ploča ima **dva reda dvostrukih utora**. Stavite žetone u polja koja svijetle bijelo, to je vaš program. Pritisnite **▶ Start** i robot ga izvodi.
+Ploča ima **dva reda dvostrukih utora**. Stavite žetone u polja koja svijetle bijelo i program je gotov. Pritisnite **▶ Start** i robot ga izvodi.
 
-<Frame caption="Raspored ploče: oznake A–F objašnjene su u nastavku">
+<Frame caption="Raspored ploče. Oznake A–F objašnjene su u nastavku">
   <img src="../images/book-1/control-labels.svg" alt="Control board diagram with labels A through F" />
 </Frame>
 
 | Oznaka | Što je to |
 | :---: | --- |
-| **A** | **Glavni program**: 6 dvostrukih utora, izvodi se slijeva udesno |
-| **B** | **▶ Start / Stop**: pritisnite za pokretanje; pritisnite ponovno usred programa za zaustavljanje |
+| **A** | **Glavni program**: 6 dvostrukih utora, robot ih izvodi slijeva udesno |
+| **B** | **▶ Start / Stop**: prvi pritisak pokreće program, pritisak usred programa ga zaustavlja |
 | **C** | **Funkcija**: 5 dvostrukih utora, poziva ih žeton Funkcija |
 | **D** | Jedno **polje** para |
-| **E** | **Linija izvršavanja** koja povezuje polja para |
-| **F** | **Višebojni LED indikator** na svakom polju |
+| **E** | **Linija izvršavanja** koja povezuje dva polja u par |
+| **F** | **Višebojni indikator** na svakom polju |
 
-**Par su dva logički povezana polja.** Redoslijed gore/dolje nije bitan: naredbu stavite u jedno polje para, a pločicu ponavljanja, broja ili aritmetike u drugo. Ako je drugo polje prazno, uzima se posljednji broj koji je ta naredba primila od uključivanja uređaja (dok broj nije postavljen: korak od 15 cm i zaokret od 90°), što je dovoljno za malu djecu.
+**Par čine dva povezana polja.** Gore i dolje nije bitno. Naredbu stavite u jedno polje para, a pločicu ponavljanja, broja ili aritmetike u drugo. Ako je drugo polje prazno, naredba uzima posljednji broj koji je primila od uključivanja uređaja. Dok broj nije postavljen, robot radi korak od 15 cm i zaokret od 90°. To je dovoljno za malu djecu.
 
-Boje LED-ova tijekom izvršavanja:
+Boje indikatora tijekom rada:
 
 | ⚪ Bijela | 🟢 Zelena | 🔵 Plava | 🔴 Crvena |
 | :---: | :---: | :---: | :---: |
-| Mirovanje (utor slobodan) | Naredba postavljena | Naredba + broj / ponavljanje / aritmetika | Pogreška, preskače se |
+| Utor je slobodan | U paru je naredba | Naredba s brojem, ponavljanjem ili aritmetikom | Pogreška, par se preskače |
 
-Prazni utori i crveni parovi preskaču se pri izvođenju programa. LED-ovi trepere na polju koje se trenutačno izvršava.
+Robot preskače prazne utore i crvene parove. Indikator trepće na polju koje robot trenutačno izvodi.
 
 ## 4. Žetoni po skupinama
 
 | Skupina | Što žetoni rade |
 | --- | --- |
-| **Kretanje** | Naprijed · Natrag · Lijevo · Desno |
-| **Ponavljanje** | Dvije strelice u petlji + unutra točkice 2–6 (kao na kockici, za malu djecu) ili brojke. U paru s naredbom ponavlja je. |
-| **Brojevi** | `1`–`999`. Određuju udaljenost kretanja u mm ili kut zaokreta u stupnjevima. |
-| **Aritmetika** | `+N` `−N` `×N` `÷N` `√` `^N`: jedna pločica po operaciji + broju. Mijenja spremljenu vrijednost kretanja ili zaokreta. Negativan rezultat obrće smjer! |
-| **Funkcija** | Poziva donji red kao potprogram. S pločicom ponavljanja izvodi se toliko puta. |
-| **Zadani korak** | Servisna pločica + broj = mijenja zadani korak (npr. broj 100, u milimetrima, za mrežu od 10 cm). Pamti se i nakon isključivanja. |
+| **Kretanje** | Naprijed, Natrag, Lijevo, Desno |
+| **Ponavljanje** | Dvije strelice u petlji, unutra točkice od 2 do 6 (kao na kockici, za malu djecu) ili brojke. U paru s naredbom ponavlja je. |
+| **Brojevi** | Od `1` do `999`. Određuju udaljenost u milimetrima ili kut zaokreta u stupnjevima. |
+| **Aritmetika** | `+N` `−N` `×N` `÷N` `√` `^N`. Jedna pločica nosi operaciju i broj. Ona mijenja spremljenu vrijednost kretanja ili zaokreta. Ako je rezultat negativan, robot ide ili se okreće u suprotnom smjeru. |
+| **Funkcija** | Poziva donji red kao potprogram. S pločicom ponavljanja donji red izvodi se zadani broj puta. |
+| **Zadani korak** | Servisna pločica. Zajedno s brojem mijenja zadani korak. Na primjer, za mrežu od 10 cm stavite broj 100 (u milimetrima). Korak se pamti i nakon isključivanja. |
 
 ## 5. Zadane i spremljene vrijednosti
 
 <Note>
-**Naprijed = 150 mm (15 cm), zaokret = 90°.** Žeton **Zadani korak** mijenja korak za Naprijed i Natrag, a on ostaje i nakon isključivanja. Koristite ga za karte s mrežom za bilo kojeg robota.
+**Naprijed prelazi 150 mm (15 cm), zaokret iznosi 90°.** Žeton **Zadani korak** mijenja korak za Naprijed i Natrag, a on ostaje i nakon isključivanja. Koristite ga za karte s mrežom za bilo kojeg robota.
 
-Tijekom jedne sesije svaka naredba kretanja pamti **vlastitu** spremljenu vrijednost:
+Dok je ploča uključena, svaka naredba kretanja pamti **vlastitu** vrijednost:
 
-- **broj** u paru s naredbom → zamjenjuje zadnju spremljenu ili zadanu vrijednost
-- **aritmetička** pločica → mijenja je (`+`, `−`, `×`, `÷`, `√`, `^`)
-- **prazno** u paru s naredbom → koristi zadnju spremljenu ili zadanu vrijednost
+- **broj** u paru s naredbom zamjenjuje zadnju spremljenu ili zadanu vrijednost;
+- **aritmetička** pločica mijenja je (`+`, `−`, `×`, `÷`, `√`, `^`);
+- **prazno** polje u paru s naredbom ostavlja zadnju spremljenu ili zadanu vrijednost.
 
-Spremljene vrijednosti brišu se kad se ploča isključi; zadana vrijednost (Zadani korak) ostaje.
+Kad se ploča isključi, spremljene vrijednosti se brišu. Zadani korak ostaje.
 
 **Kratki pregled:**
 
-- `Naprijed` samo        → 150 mm (15 cm), zadano
-- `Naprijed` + `100`      → 100 mm, zamjenjuje prethodnu
-- `Naprijed` + `+50`      → 150 mm  (prethodnih 100 + 50), mijenja
-- `Lijevo` samo           → 90°, zadano
-- `Lijevo` + `45`          → 45°, zamjenjuje prethodnu
-- `Lijevo` + `−10`         → 35°  (prethodnih 45° − 10°), mijenja
+| Par na ploči | Rezultat | Što se dogodilo |
+| --- | --- | --- |
+| `Naprijed` bez broja | 150 mm (15 cm) | zadana vrijednost |
+| `Naprijed` i `100` | 100 mm | broj je zamijenio vrijednost |
+| `Naprijed` i `+50` | 150 mm (bilo je 100, dodano 50) | aritmetika je promijenila vrijednost |
+| `Lijevo` bez broja | 90° | zadana vrijednost |
+| `Lijevo` i `45` | 45° | broj je zamijenio vrijednost |
+| `Lijevo` i `−10` | 35° (bilo je 45°, oduzeto 10°) | aritmetika je promijenila vrijednost |
 </Note>
 
 ## 6. Robot crta ono što isprogramirate
 
-Isprobajte ove primjere i vidjet ćete što uređaj može. Umetnite flomaster u sredinu robota, on **crta** dok se kreće.
+Isprobajte ove primjere i vidjet ćete što uređaj može. Umetnite flomaster u sredinu robota i on će **crtati** dok se kreće.
 
 <CardGroup cols={2}>
-  <Card title="Zvijezda: brojevi + ponavljanje">
+  <Card title="Zvijezda: brojevi i ponavljanje">
     <Frame>
       <img src="../images/mathdrawings/star5-board.svg" alt="Star program on the board" />
     </Frame>
@@ -129,38 +131,43 @@ Isprobajte ove primjere i vidjet ćete što uređaj može. Umetnite flomaster u 
   </Card>
 </CardGroup>
 
-Više primjera u [Primjerima crteža](/en-hr/mathdrawings).
+Više primjera nalazi se na stranici [Primjeri crteža](/en-hr/mathdrawings).
 
 ## 7. Kako poučavati s PrimaSTEM-om
 
 <Tip>
 **Uvodite žetone naredbi jedan po jedan, ovim redom:**
 
-**Naprijed → Zaokreti → Ponavljanje → Funkcija → Brojevi → Aritmetika.**
+1. Naprijed
+2. Zaokreti
+3. Ponavljanje
+4. Funkcija
+5. Brojevi
+6. Aritmetika
 
-Dodajte svaki sljedeći tek kad je prethodni sigurno usvojen. Cijeli plan od 12 lekcija s uzrastom, trajanjem i materijalima za malu djecu nalazi se u [Knjizi 1](/en-hr/book-1/book-1).
+Prijeđite na sljedeći žeton kad dijete sigurno usvoji prethodni. Cijeli plan od 12 lekcija za malu djecu, s uzrastom, trajanjem i materijalima, nalazi se u [Knjizi 1](/en-hr/book-1/book-1).
 
-**Rad u skupini:** preporučujemo jedan komplet na **2–3 djeteta**.
+**Rad u skupini.** Preporučujemo jedan komplet na **2–3 djeteta**.
 
-**Karte:** radit će bilo koja karta s mrežom izrađena za bilo kojeg edukativnog robota. Veličinu polja postavite žetonom **Zadani korak** i brojem (npr. 100, 120, 150, 200 mm).
+**Karte.** Radit će bilo koja karta s mrežom izrađena za bilo kojeg edukativnog robota. Veličinu polja postavlja žeton **Zadani korak** s brojem, na primjer 100, 120, 150 ili 200 mm.
 
-**Trik za 10 koraka umjesto 6.** Stavite žeton **Funkcija [ ]** u zadnji (6.) utor gornjeg reda i učvrstite ga ljepljivom trakom. Program se tada izvodi kao jedan dugi lanac: 5 gornjih koraka + 5 donjih = **10 koraka zaredom**. Korisno za malu djecu kojima treba dulji program prije nego što budu spremna shvatiti pojam funkcije.
+**Kako dobiti 10 koraka umjesto 6.** Stavite žeton **Funkcija [ ]** u zadnji (6.) par gornjeg reda i učvrstite ga ljepljivom trakom. Sada se program izvodi kao jedan lanac: 5 koraka gore i 5 dolje, **10 koraka zaredom**. To je korisno za malu djecu kojima treba dulji program, ali je još rano uvoditi pojam funkcije.
 </Tip>
 
 ## 8. Dodatne mogućnosti
 
 <CardGroup cols={2}>
   <Card title="Flomaster i crtanje" icon="pen-line">
-    Umetnite flomaster u robota, on **crta** svoj put na papiru: od jednostavne putanje do mnogokuta, zvijezda, spirala i fraktala.
+    Umetnite flomaster u robota i on će **nacrtati** svoj put na papiru. Nastaju jednostavne linije, mnogokuti, zvijezde, spirale i fraktali.
   </Card>
   <Card title="Glasovna povratna informacija" icon="volume-2">
-    Ploča naglas čita svaki žeton, glasom na **bilo kojem lokalnom jeziku**; trenutačno je **21 podržanih** (uključujući arapski, finski, hrvatski i litavski), a dodat ćemo bilo koji na zahtjev. Pomaže maloj djeci i djeci koja još ne čitaju. Uključuje slova abecede i mjesta (Kuća, Škola, Trgovina, Šuma itd.)
+    Ploča naglas čita svaki žeton. Glas radi **na 21 jeziku**, među njima arapski, finski, hrvatski i litavski. Drugi jezik dodat ćemo na zahtjev. Glas pomaže maloj djeci i djeci koja još ne čitaju. Uključena su i slova abecede i mjesta: Kuća, Škola, Trgovina, Šuma i drugo.
   </Card>
   <Card title="NFC zvučne naljepnice i karte" icon="map">
-    Zalijepite NFC naljepnice na kartu i s telefona programirajte bilo koji dostupni zvuk. Robot ima antenu na donjoj strani: kad stane na naljepnicu, reproducira snimljeni zvuk.
+    Zalijepite NFC naljepnice na kartu i s telefona zapišite na njih bilo koji dostupni zvuk. Robot ima antenu na donjoj strani. Kad robot stane na naljepnicu, reproducira snimljeni zvuk.
   </Card>
   <Card title="Otvorena NFC platforma" icon="nfc">
-    Napišite vlastite žetone: bilo koja NFC oznaka od 13,56 MHz (jeftina, prodaje se u svim web-trgovinama) + tekstualni kôd iz naše dokumentacije. Cijeli postupak traje 10 sekundi. Besplatna aplikacija za telefon (NFC Tools).
+    Napravite vlastite žetone. Treba vam bilo koja NFC oznaka od 13,56 MHz (jeftina, prodaje se u svim web-trgovinama) i tekstualni kôd iz naše dokumentacije. Zapis traje 10 sekundi u besplatnoj aplikaciji NFC Tools na telefonu.
   </Card>
 </CardGroup>
 
@@ -168,21 +175,21 @@ Dodajte svaki sljedeći tek kad je prethodni sigurno usvojen. Cijeli plan od 12 
 
 <CardGroup cols={2}>
   <Card title="Uređaj i postavke" icon="book-open" href="/en-hr/usermanual">
-    Potpune tehničke specifikacije, uparivanje, kalibracija, sigurnost.
+    Tehničke specifikacije, uparivanje, kalibracija, sigurnost.
   </Card>
   <Card title="Vodič za učitelje" icon="book" href="/en-hr/teachersguide">
-    Pedagogija, korištenje u razredu, pojmovi programiranja kroz igru.
+    Pedagogija, rad u razredu, osnove programiranja kroz igru.
   </Card>
   <Card title="Knjiga 1: Lekcije" icon="graduation-cap" href="/en-hr/book-1/book-1">
     12 gotovih lekcija za malu djecu, s uzrastom, trajanjem i materijalima za ispis.
   </Card>
   <Card title="Žetoni naredbi" icon="nfc" href="/en-hr/nfc">
-    Svi NFC kodovi, za pisanje vlastitih žetona telefonom.
+    Svi NFC kodovi za pisanje vlastitih žetona telefonom.
   </Card>
   <Card title="Primjeri crteža" icon="pen-line" href="/en-hr/mathdrawings">
     Geometrijski likovi, fraktali, spirale: programi i rezultati.
   </Card>
-  <Card title="Zvučni rječnik" icon="volume-2" href="/en-hr/sounds_reference">
-    Riječi: mjesta i pojmovi, abeceda, glazbene note, sustavni zvukovi. Za snimanje vlastitih žetona i reprodukciju.
+  <Card title="Popis zvučnih datoteka" icon="volume-2" href="/en-hr/sounds_reference">
+    Riječi (mjesta i pojmovi), abeceda, glazbene note, sustavni zvukovi. Potreban je za zapisivanje vlastitih žetona i zvukova.
   </Card>
 </CardGroup>

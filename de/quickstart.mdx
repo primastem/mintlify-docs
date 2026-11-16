@@ -1,115 +1,117 @@
 ---
 title: "Schnellstart"
-description: "Wie PrimaSTEM funktioniert — Roboter, Steuerboard, Tokens. Ein Schnellstart."
+description: "Wie Roboter, Steuerboard und Tokens von PrimaSTEM funktionieren."
 icon: "rocket"
 mode: "wide"
 ---
 
-PrimaSTEM ist ein bildschirmfreies Lernset für Programmierung, Logik und Mathematik für Kinder von 4 bis 10+ Jahren. Diese Seite erklärt kurz, **wie das Gerät funktioniert**.
+PrimaSTEM bringt Kindern von 4 bis 10+ Jahren Programmierung, Logik und Mathematik ohne Bildschirm bei. Diese Seite erklärt kurz, **wie das Gerät funktioniert**.
 
 <Note>
-**Noch kein Gerät? Probieren Sie es im Browser aus.** Öffnen Sie den **[Web-Simulator](https://simulator.primastem.com)** — eine funktionierende Kopie von Steuerboard und Roboter. Legen Sie Tokens ein, drücken Sie **▶ Start** und sehen Sie zu, wie der Roboter läuft, während Sie diese Anleitung lesen.
+**Noch kein Gerät? Probieren Sie es im Browser aus.** Öffnen Sie den **[Web-Simulator](https://simulator.primastem.com)**. Das ist eine funktionierende Kopie von Steuerboard und Roboter. Legen Sie Tokens ein, drücken Sie **▶ Start** und sehen Sie zu, wie der Roboter das Programm ausführt. Das geht direkt beim Lesen dieser Anleitung.
 </Note>
 
 ## 1. Was ist in der Box
 
 <CardGroup cols={3}>
   <Card title="Roboter" icon="bug">
-    Holz-Marienkäfer-Roboter auf zwei Rädern. Markerhalter oben. Lautsprecher, USB-C, Bluetooth.
+    Roboter aus Holz in Form eines Marienkäfers, auf zwei Rädern. Markerhalter oben. Er hat Lautsprecher, USB-C und Bluetooth.
   </Card>
   <Card title="Steuerboard" icon="grid-3x3">
-    Holzpanel mit gepaarten Steckplätzen für das Programm. Mehrfarbige LEDs, ▶ Start/Stopp-Taste, Lautsprecher, USB-C, Bluetooth.
+    Das Steuerboard aus Holz hat gepaarte Zellen für das Programm und mehrfarbige Anzeigen. Es hat eine ▶ Start/Stopp-Taste, Lautsprecher, USB-C und Bluetooth.
   </Card>
-  <Card title="Code-Tokens" icon="square-stack">
-    Pappquadrate mit NFC-Aufklebern — jedes = ein Befehl im Programm des Roboters.
+  <Card title="Befehls-Tokens" icon="square-stack">
+    Pappquadrate mit NFC-Aufklebern. Ein Token gibt einen Befehl im Programm.
   </Card>
 </CardGroup>
 
-<Tip>Nach Erhalt des Sets empfehlen wir, den Roboter und das Steuerboard auf die neueste Firmware zu aktualisieren: [so geht die Aktualisierung](/de/update).</Tip>
+<Tip>Wenn Sie das Set erhalten, aktualisieren Sie Roboter und Steuerboard auf die neueste Firmware: [so geht die Aktualisierung](/de/update).</Tip>
 
 ## 2. Einschalten
 
 <Steps>
   <Step title="Roboter, dann Steuerboard einschalten" icon="power">
-    Jedes Gerät gibt einen kurzen Ton aus; die grüne Betriebsanzeige bedeutet eingeschaltet.
+    Jedes Gerät gibt einen kurzen Ton aus. Die grüne Betriebsanzeige bedeutet, dass das Gerät eingeschaltet ist.
   </Step>
-  <Step title="Verbunden = weiß" icon="check">
-    Verfügbare Steckplätze des Steuerboards leuchten **weiß**, die Augen des Roboters blinken **weiß**. Fertig.
+  <Step title="Weiß: verbunden" icon="check">
+    Freie Zellen des Steuerboards leuchten **weiß**, die Augen des Roboters blinken **weiß**. Sie können loslegen.
   </Step>
-  <Step title="Hellblau = keine Verbindung" icon="bluetooth">
-    Roboter und Steuerboard leuchten hellblau. Kommt die Verbindung nicht zustande, halten Sie **▶ Start** am Steuerboard **länger als 10 Sekunden** gedrückt. In der 5. Sekunde ertönt ein Signal, weiter halten: Die Geräte koppeln sich und der Roboter startet neu.
+  <Step title="Hellblau: keine Verbindung" icon="bluetooth">
+    Roboter und Steuerboard leuchten hellblau. Kommt die Verbindung nicht zustande, halten Sie **▶ Start** am Steuerboard **länger als 10 Sekunden** gedrückt. In der 5. Sekunde ertönt ein Signal. Lassen Sie die Taste nicht los. Die Geräte koppeln sich, und der Roboter startet neu.
   </Step>
 </Steps>
 
-**Probieren Sie es gleich aus:** legen Sie ein **Vorwärts**-Token in den ersten Steckplatz (in eine beliebige Zelle des Paares). Drücken Sie **▶ Start**. Der Roboter fährt 15 cm vorwärts und hält. *Das ist schon ein Programm — ein einziger Befehl.*
+**Probieren Sie es gleich aus.** Legen Sie ein **Vorwärts**-Token in das erste Paar, in eine der beiden Zellen. Drücken Sie **▶ Start**. Der Roboter fährt 15 cm vorwärts und hält. *Sie haben Ihr erstes Programm aus einem Befehl geschrieben.*
 
 ## 3. Wie ein Programm aufgebaut ist
 
-Das Steuerboard hat **zwei Reihen gepaarter Steckplätze**. Sie setzen Tokens in die weiß leuchtenden Felder — daraus entsteht ein Programm. Drücken Sie **▶ Start** — der Roboter führt es aus.
+Das Steuerboard hat **zwei Reihen gepaarter Zellen**. Legen Sie Tokens in die weiß leuchtenden Zellen, und das Programm ist fertig. Drücken Sie **▶ Start**, und der Roboter führt es aus.
 
-<Frame caption="Steuerboard — die Buchstaben A–F werden unten erklärt">
+<Frame caption="Steuerboard. Die Buchstaben A–F werden unten erklärt">
   <img src="../images/book-1/control-labels.svg" alt="Steuerboard mit Beschriftung A bis F" />
 </Frame>
 
 | Markierung | Bedeutung |
 | :---: | --- |
-| **A** | **Hauptprogramm** — 6 gepaarte Steckplätze, von links nach rechts ausgeführt |
-| **B** | **▶ Start / Stopp** — Ausführen; nochmal drücken während der Bewegung = Stopp |
-| **C** | **Funktion** — 5 gepaarte Steckplätze, aufgerufen durch das „Funktion"-Token |
+| **A** | **Hauptprogramm**: 6 Zellenpaare, der Roboter führt sie von links nach rechts aus |
+| **B** | **▶ Start / Stopp**: Der erste Druck startet das Programm, ein Druck während der Bewegung stoppt es |
+| **C** | **Funktion**: 5 Zellenpaare, das „Funktion"-Token ruft sie auf |
 | **D** | Eine **Zelle** des Paares |
-| **E** | **Ausführungslinie**, die die gepaarten Zellen verbindet |
-| **F** | **Mehrfarbige LED** an jeder Zelle |
+| **E** | **Ausführungslinie**, die zwei Zellen zu einem Paar verbindet |
+| **F** | **Mehrfarbige Anzeige** an jeder Zelle |
 
-**Paar = zwei logisch verbundene Zellen.** Reihenfolge oben/unten egal — der Befehl kann in jede der beiden Zellen gelegt werden, Wiederholung/Zahl/Arithmetik in die andere. Ist die zweite Zelle leer, gilt die letzte Zahl, die dieser Befehl seit dem Einschalten bekommen hat (solange keine Zahl gesetzt wurde: Schritt 15 cm und Drehung 90°) — für kleine Kinder reicht das.
+**Ein Paar besteht aus zwei verbundenen Zellen.** Oben und unten sind egal. Legen Sie den Befehl in eine der beiden Zellen und die Wiederholung, Zahl oder Arithmetik in die andere. Ist die zweite Zelle leer, nimmt der Befehl die letzte Zahl, die er seit dem Einschalten des Steuerboards bekommen hat. Solange keine Zahl gesetzt wurde, fährt der Roboter einen Schritt von 15 cm und dreht sich um 90°. Für kleine Kinder reicht das.
 
-LED-Farben während der Ausführung:
+Farben der Anzeigen während der Ausführung:
 
 | ⚪ Weiß | 🟢 Grün | 🔵 Blau | 🔴 Rot |
 | :---: | :---: | :---: | :---: |
-| Bereit (Steckplatz frei) | Befehl gesetzt | Befehl + Zahl / Wiederholung / Arithmetik | Fehler — wird übersprungen |
+| Zelle frei | Im Paar steht ein Befehl | Befehl mit Zahl, Wiederholung oder Arithmetik | Fehler, das Paar wird übersprungen |
 
-Leere Steckplätze und rote Paare werden beim Auslegen übersprungen. LEDs blinken an der aktuell ausgeführten Zelle.
+Der Roboter überspringt leere Zellen und rote Paare. Die Anzeige blinkt an der Zelle, die der Roboter gerade ausführt.
 
-## 4. Tokens — nach Gruppen
+## 4. Tokens nach Gruppen
 
 | Gruppe | Was die Tokens tun |
 | --- | --- |
-| **Bewegung** | Vorwärts · Rückwärts · Links · Rechts |
-| **Wiederholung** | Zwei Pfeile im Kreis + Punkte 2–6 innen (wie ein Würfel, für die Kleinen) oder Ziffern. In Paar mit einem Befehl — wiederholt ihn. |
-| **Zahlen** | `1`–`999`. Setzen die Bewegungsdistanz in mm oder den Drehwinkel in Grad. |
-| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — ein Token = Operation + Zahl. Modifiziert den gespeicherten Wert der Bewegung oder Drehung. Ein negatives Ergebnis kehrt die Richtung um! |
-| **Funktion** | Ruft die untere Reihe als Unterprogramm auf. Mit Wiederholungs-Token — läuft entsprechend oft. |
-| **Standardschritt** | Service-Token + Zahl = ändert den Standardschritt (z. B. Zahl 100, in mm, für ein 10-cm-Raster). Bleibt nach dem Ausschalten erhalten. |
+| **Bewegung** | Vorwärts, Rückwärts, Links, Rechts |
+| **Wiederholung** | Zwei Pfeile im Kreis, innen Punkte von 2 bis 6 (wie ein Würfel, für die Kleinen) oder Ziffern. Im Paar mit einem Befehl wiederholen sie ihn. |
+| **Zahlen** | Von `1` bis `999`. Sie setzen die Distanz in Millimetern oder den Drehwinkel in Grad. |
+| **Arithmetik** | `+N` `−N` `×N` `÷N` `√` `^N`. Ein Token trägt eine Operation und eine Zahl. Es ändert den gespeicherten Wert der Bewegung oder Drehung. Ist das Ergebnis negativ, fährt oder dreht der Roboter in die Gegenrichtung. |
+| **Funktion** | Ruft die untere Reihe als Unterprogramm auf. Mit einem Wiederholungs-Token läuft die untere Reihe entsprechend oft. |
+| **Standardschritt** | Service-Token. Zusammen mit einer Zahl ändert es den Standardschritt. Für Zellen von 10 cm legen Sie zum Beispiel die Zahl 100 (in Millimetern) dazu. Der Schritt bleibt nach dem Ausschalten erhalten. |
 
 ## 5. Standardwerte und gespeicherter Wert
 
 <Note>
-**Vorwärts = 150 mm (15 cm), Drehung = 90°.** Das **„Standardschritt"**-Token ändert die „Standard"-Distanz und behält sie nach dem Ausschalten. Praktisch für Spielraster anderer Roboter.
+**Vorwärts fährt 150 mm (15 cm), eine Drehung beträgt 90°.** Das **„Standardschritt"**-Token ändert die Standarddistanz, und sie bleibt nach dem Ausschalten erhalten. So passt das Steuerboard zu Karten anderer Roboter.
 
-Während einer Sitzung behält jeder Bewegungsbefehl seinen **eigenen** gespeicherten Wert:
+Solange das Steuerboard eingeschaltet ist, behält jeder Bewegungsbefehl seinen **eigenen** Wert:
 
-- **eine Zahl** im Paar mit dem Befehl → ersetzt den letzten gespeicherten Wert oder den Standard
-- **ein Arithmetik-Token** → modifiziert ihn (`+`, `−`, `×`, `÷`, `√`, `^`)
-- **leer** im Paar → nimmt den letzten gespeicherten Wert oder den Standard
+- **eine Zahl** im Paar mit dem Befehl ersetzt den letzten gespeicherten Wert oder den Standardwert;
+- **ein Arithmetik-Token** ändert ihn (`+`, `−`, `×`, `÷`, `√`, `^`);
+- eine **leere** Zelle im Paar behält den letzten gespeicherten Wert oder den Standardwert.
 
-Gespeicherte Werte werden beim Ausschalten zurückgesetzt; der Standardwert (Schritt) bleibt.
+Wenn Sie das Steuerboard ausschalten, werden die gespeicherten Werte zurückgesetzt. Der Standardschritt bleibt.
 
 **Schnellreferenz:**
 
-- `Vorwärts` allein      → 150 mm (15 cm) — Standard
-- `Vorwärts` + `100`     → 100 mm — ersetzt
-- `Vorwärts` + `+50`     → 150 mm  (vorher 100 + 50) — ändert
-- `Links` allein         → 90° — Standard
-- `Links` + `45`         → 45° — ersetzt
-- `Links` + `−10`        → 35°  (vorher 45° − 10°) — ändert
+| Paar auf dem Steuerboard | Ergebnis | Was passiert ist |
+| --- | --- | --- |
+| `Vorwärts` ohne Zahl | 150 mm (15 cm) | Standardwert |
+| `Vorwärts` und `100` | 100 mm | die Zahl hat den Wert ersetzt |
+| `Vorwärts` und `+50` | 150 mm (vorher 100, plus 50) | die Arithmetik hat den Wert geändert |
+| `Links` ohne Zahl | 90° | Standardwert |
+| `Links` und `45` | 45° | die Zahl hat den Wert ersetzt |
+| `Links` und `−10` | 35° (vorher 45°, minus 10°) | die Arithmetik hat den Wert geändert |
 </Note>
 
 ## 6. Der Roboter zeichnet, was Sie programmieren
 
-Probieren Sie diese Beispiele — Sie sehen, wozu das Gerät fähig ist. Stecken Sie einen Marker in die Mitte des Roboters — er **zeichnet** während der Fahrt.
+Probieren Sie diese Beispiele aus, und Sie sehen, was das Gerät kann. Stecken Sie einen Marker in die Mitte des Roboters, und er **zeichnet** während der Fahrt.
 
 <CardGroup cols={2}>
-  <Card title="Stern — Zahlen + Wiederholung">
+  <Card title="Stern: Zahlen und Wiederholung">
     <Frame>
       <img src="../images/mathdrawings/star5-board.svg" alt="Stern-Programm auf dem Steuerboard" />
     </Frame>
@@ -118,7 +120,7 @@ Probieren Sie diese Beispiele — Sie sehen, wozu das Gerät fähig ist. Stecken
     </Frame>
     [Im Simulator starten](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
   </Card>
-  <Card title="Spirale — Arithmetik in einer Schleife">
+  <Card title="Spirale: Arithmetik in einer Schleife">
     <Frame>
       <img src="../images/mathdrawings/spiral-board.svg" alt="Spiral-Programm auf dem Steuerboard" />
     </Frame>
@@ -129,60 +131,65 @@ Probieren Sie diese Beispiele — Sie sehen, wozu das Gerät fähig ist. Stecken
   </Card>
 </CardGroup>
 
-Mehr Beispiele unter [Mathematische Zeichnungen](/de/mathdrawings).
+Weitere Beispiele finden Sie auf der Seite [Zeichnungsbeispiele](/de/mathdrawings).
 
 ## 7. Wie man mit PrimaSTEM unterrichtet
 
 <Tip>
-**Befehls-Tokens nacheinander einführen, in dieser Reihenfolge:**
+**Führen Sie die Befehls-Tokens nacheinander ein, in dieser Reihenfolge:**
 
-**Vorwärts → Drehungen → Wiederholungen → Funktion → Zahlen → Arithmetik.**
+1. Vorwärts
+2. Drehungen
+3. Wiederholungen
+4. Funktion
+5. Zahlen
+6. Arithmetik
 
-Jedes nächste — erst nach sicherem Beherrschen des vorigen. Der vollständige 12-Lektionen-Plan mit Alter, Dauer und Materialien für die Kleinen — im [Buch 1](/de/book-1/book-1).
+Gehen Sie zum nächsten Token über, wenn das Kind das vorige sicher beherrscht. Den vollständigen Plan mit 12 Lektionen für die Kleinen, mit Alter, Dauer und Materialien, finden Sie im [Buch 1](/de/book-1/book-1).
 
-**Gruppenarbeit:** wir empfehlen ein Set pro **2–3 Kinder**.
+**Gruppenarbeit.** Wir empfehlen ein Set pro **2–3 Kinder**.
 
-**Karten:** jedes Raster, das für andere Lernroboter gemacht ist, passt. Die Zellengröße wird mit dem **„Standardschritt"**-Token plus Zahl gesetzt (z. B. 100, 120, 150, 200 mm).
+**Karten.** Jede Karte, die für andere Lernroboter gemacht ist, passt. Die Zellengröße setzt das **„Standardschritt"**-Token mit einer Zahl, zum Beispiel 100, 120, 150 oder 200 mm.
 
-**Trick für 10 Schritte statt 6.** Legen Sie das **Funktion [ ]**-Token in den letzten (6.) Steckplatz der oberen Reihe und befestigen Sie es mit Malerkrepp. Das Programm läuft dann als eine lange Kette: 5 obere Schritte + 5 untere = **10 Schritte am Stück**. Praktisch für kleine Kinder, die ein längeres Programm brauchen, aber noch nicht reif sind für das Funktionskonzept.
+**So bekommen Sie 10 Schritte statt 6.** Legen Sie das **Funktion [ ]**-Token in das letzte (6.) Paar der oberen Reihe und befestigen Sie es mit Malerkrepp. Jetzt läuft das Programm als eine Kette: 5 Schritte oben und 5 unten, **10 Schritte am Stück**. Das ist praktisch für kleine Kinder, die ein längeres Programm brauchen, für die das Funktionskonzept aber noch zu früh ist.
 </Tip>
 
 ## 8. Weitere Möglichkeiten
 
 <CardGroup cols={2}>
   <Card title="Marker und Zeichnen" icon="pen-line">
-    Stecken Sie einen Marker in den Roboter — er **zeichnet** seinen Weg auf Papier: von einer einfachen Bahn bis zu Polygonen, Sternen, Spiralen und Fraktalen.
+    Stecken Sie einen Marker in den Roboter, und er **zeichnet** seinen Weg auf Papier. So entstehen einfache Linien, Polygone, Sterne, Spiralen und Fraktale.
   </Card>
   <Card title="Sprachausgabe" icon="volume-2">
-    Das Steuerboard spricht jedes Token aus — Stimme **in beliebigen lokalen Sprachen**, derzeit **21 Sprachen** (einschließlich Arabisch, Finnisch, Kroatisch und Litauisch), weitere auf Anfrage! Hilft kleinen Kindern und Nichtlesern. Mit Alphabet-Buchstaben und Orten (Haus, Schule, Laden, Wald usw.)
+    Das Steuerboard spricht jedes Token aus. Die Stimme spricht **21 Sprachen**, darunter Arabisch, Finnisch, Kroatisch und Litauisch. Eine weitere Sprache fügen wir auf Anfrage hinzu. Die Sprachausgabe hilft kleinen Kindern, die noch nicht lesen. Es gibt Alphabet-Buchstaben und Orte: Haus, Schule, Laden, Wald und andere.
   </Card>
   <Card title="Klang-NFC-Sticker und Karten" icon="map">
-    Kleben Sie NFC-Tags auf Ihre Karte, programmieren Sie vom Handy aus jeden verfügbaren Klang. Der Roboter hat eine Antenne unten — beim Stopp auf einem Tag spielt er den aufgenommenen Klang ab.
+    Kleben Sie NFC-Tags auf Ihre Karte und schreiben Sie vom Handy aus einen beliebigen verfügbaren Klang darauf. Der Roboter hat unten eine Antenne. Wenn der Roboter auf einem Tag hält, spielt er den aufgenommenen Klang ab.
   </Card>
   <Card title="Offene NFC-Plattform" icon="nfc">
-    Schreiben Sie eigene Tokens — jeder 13.56-MHz-NFC-Tag (günstig, überall im Handel) + ein Text-Code aus unserer Dokumentation — alles zusammen 10 Sekunden. Kostenlose Handy-App (NFC Tools).
+    Schreiben Sie eigene Tokens. Sie brauchen einen beliebigen NFC-Tag mit 13,56 MHz (günstige Tags aller Art gibt es überall im Handel) und einen Text-Code aus unserer Dokumentation. Das Schreiben dauert 10 Sekunden in der kostenlosen Handy-App NFC Tools.
   </Card>
 </CardGroup>
 
 ## Weiterlesen
 
 <CardGroup cols={2}>
-  <Card title="Bedienungsanleitung" icon="book-open" href="/de/usermanual">
-    Vollständige technische Spezifikationen, Kopplung, Kalibrierung, Sicherheit.
+  <Card title="Gerät und Einrichtung" icon="book-open" href="/de/usermanual">
+    Technische Daten, Kopplung, Kalibrierung, Sicherheit.
   </Card>
   <Card title="Lehrerhandbuch" icon="book" href="/de/teachersguide">
-    Pädagogik, Einsatz im Unterricht, Programmierkonzepte durch Spielen.
+    Pädagogik, Einsatz im Unterricht, Grundlagen des Programmierens durch Spielen.
   </Card>
-  <Card title="Buch 1 — Lektionen" icon="graduation-cap" href="/de/book-1/book-1">
-    12 fertige Lektionen für kleine Kinder — mit Alter, Dauer und druckbaren Materialien.
+  <Card title="Buch 1. Lektionen" icon="graduation-cap" href="/de/book-1/book-1">
+    12 fertige Lektionen für kleine Kinder, mit Alter, Dauer und druckbaren Materialien.
   </Card>
   <Card title="Befehls-Tokens" icon="nfc" href="/de/nfc">
-    Alle NFC-Codes — zum Erstellen eigener Tokens mit dem Handy.
+    Alle NFC-Codes, um eigene Tokens mit dem Handy zu schreiben.
   </Card>
-  <Card title="Mathematische Zeichnungen" icon="pen-line" href="/de/mathdrawings">
-    Geometrische Figuren, Fraktale, Spiralen — Programme und Ergebnisse.
+  <Card title="Zeichnungsbeispiele" icon="pen-line" href="/de/mathdrawings">
+    Geometrische Figuren, Fraktale, Spiralen: Programme und Ergebnisse.
   </Card>
-  <Card title="Audio-Wörterbuch" icon="volume-2" href="/de/sounds_reference">
-    Wörter — Orte und Begriffe, Alphabet, Musiknoten, Systemklänge. Zum Aufnehmen eigener Tokens und zur Wiedergabe.
+  <Card title="Audio-Datei-Referenz" icon="volume-2" href="/de/sounds_reference">
+    Wörter (Orte und Begriffe), Alphabet, Musiknoten, Systemklänge. Sie brauchen sie, um eigene Tokens und Klänge zu schreiben.
   </Card>
 </CardGroup>

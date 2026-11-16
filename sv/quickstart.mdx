@@ -1,115 +1,117 @@
 ---
 title: "Snabbstart"
-description: "Hur PrimaSTEM fungerar — robot, kontrollpanel, brickor. Snabbstart."
+description: "Hur roboten, kontrollpanelen och brickorna i PrimaSTEM fungerar."
 icon: "rocket"
 mode: "wide"
 ---
 
-PrimaSTEM är ett skärmfritt utbildningsset för programmering, logik och matematik, för barn från 4 till 10+ år. Den här sidan förklarar kort **hur enheten fungerar**.
+PrimaSTEM lär barn från 4 till 10+ år programmering, logik och matematik utan skärm. Den här sidan förklarar kort **hur enheten fungerar**.
 
 <Note>
-**Har du ingen enhet än? Prova den i webbläsaren.** Öppna **[webbsimulatorn](https://simulator.primastem.com)** — en fungerande kopia av kontrollpanelen och roboten. Placera brickor, tryck på **▶ Start** och se roboten köra medan du läser den här guiden.
+**Har du ingen enhet än? Prova den i webbläsaren.** Öppna **[webbsimulatorn](https://simulator.primastem.com)**. Det är en fungerande kopia av kontrollpanelen och roboten. Placera brickor, tryck på **▶ Start** och se roboten köra. Det kan du göra medan du läser den här guiden.
 </Note>
 
 ## 1. Vad finns i lådan
 
 <CardGroup cols={3}>
   <Card title="Robot" icon="bug">
-    Robot i form av en nyckelpiga i trä på två hjul. Pennhållare ovanpå. Högtalare, USB-C, Bluetooth.
+    Robot i trä i form av en nyckelpiga, på två hjul. Pennhållare ovanpå. Den har högtalare, USB-C och Bluetooth.
   </Card>
   <Card title="Kontrollpanel" icon="grid-3x3">
-    Kontrollpanel med parade fack för programmet. Flerfärgade indikatorer, ▶ Start/Stopp-knapp, högtalare, USB-C, Bluetooth.
+    Kontrollpanelen har parade celler för programmet och flerfärgade indikatorer. Den har också en ▶ Start/Stopp-knapp, högtalare, USB-C och Bluetooth.
   </Card>
-  <Card title="Kodbrickor" icon="square-stack">
-    Kartongkvadrater med NFC-klistermärken — varje = ett kommando i robotens program.
+  <Card title="Kommandobrickor" icon="square-stack">
+    Kartongkvadrater med NFC-klistermärken. En bricka ger ett kommando i programmet.
   </Card>
 </CardGroup>
 
-<Tip>När du har fått satsen rekommenderar vi att du uppdaterar roboten och kontrollpanelen till den senaste firmwaren: [så uppdaterar du](/sv/update).</Tip>
+<Tip>Uppdatera roboten och kontrollpanelen till den senaste firmwaren när du har fått satsen: [så uppdaterar du](/sv/update).</Tip>
 
 ## 2. Slå på
 
 <Steps>
   <Step title="Sätt på roboten först, sedan kontrollpanelen" icon="power">
-    Var och en spelar ett kort ljud; den gröna strömlampan på varje enhet = på.
+    Varje enhet spelar ett kort ljud. Den gröna strömlampan betyder att enheten är på.
   </Step>
-  <Step title="Anslutet = vitt" icon="check">
-    Tillgängliga fack på kontrollpanelen lyser **vitt**, robotens ögon blinkar **vitt**. Klart.
+  <Step title="Vitt ljus: anslutet" icon="check">
+    Lediga celler på kontrollpanelen lyser **vitt**, robotens ögon blinkar **vitt**. Du kan börja.
   </Step>
-  <Step title="Ljusblått = ingen anslutning" icon="bluetooth">
-    Roboten och kontrollpanelen lyser ljusblått. Om anslutningen inte kommer, håll **▶ Start** på kontrollpanelen i **mer än 10 sekunder**. Vid 5:e sekunden hörs en signal, fortsätt hålla: enheterna paras och roboten startar om.
+  <Step title="Ljusblått ljus: ingen anslutning" icon="bluetooth">
+    Roboten och kontrollpanelen lyser ljusblått. Om anslutningen inte kommer, håll **▶ Start** på kontrollpanelen i **mer än 10 sekunder**. Vid 5:e sekunden hörs en signal: släpp inte knappen. Enheterna paras och roboten startar om.
   </Step>
 </Steps>
 
-**Prova detta först:** lägg en **Framåt**-bricka i första facket (i någon av cellerna i paret). Tryck **▶ Start**. Roboten kör 15 cm framåt och stannar. *Det är redan ett program — ett enda kommando.*
+**Prova detta först.** Lägg en **Framåt**-bricka i första paret, i någon av de två cellerna. Tryck **▶ Start**. Roboten kör 15 cm framåt och stannar. *Du har skrivit ditt första program, med ett enda kommando.*
 
 ## 3. Hur ett program fungerar
 
-Kontrollpanelen har **två rader med parade fack**. Du placerar brickor i de fack som lyser vitt — det blir programmet. Tryck **▶ Start** — roboten utför det.
+Kontrollpanelen har **två rader med parade celler**. Lägg brickor i de celler som lyser vitt, så är programmet klart. Tryck **▶ Start**, så utför roboten det.
 
-<Frame caption="Kontrollpanelens layout — bokstäverna A–F förklaras nedan">
+<Frame caption="Kontrollpanelens layout. Bokstäverna A–F förklaras nedan">
   <img src="../images/book-1/control-labels.svg" alt="Kontrollpanel med beteckningar A till F" />
 </Frame>
 
 | Beteckning | Vad det är |
 | :---: | --- |
-| **A** | **Huvudprogram** — 6 parade fack, körs från vänster till höger |
-| **B** | **▶ Start / Stopp** — start; tryck igen under rörelse = stopp |
-| **C** | **Funktion** — 5 parade fack, anropas av brickan «Funktion» |
+| **A** | **Huvudprogram**: 6 par celler, roboten kör dem från vänster till höger |
+| **B** | **▶ Start / Stopp**: första trycket startar programmet, ett tryck under rörelse stoppar det |
+| **C** | **Funktion**: 5 par celler, brickan «Funktion» anropar dem |
 | **D** | En **cell** i ett par |
-| **E** | **Exekveringslinje** som kopplar ihop de parade cellerna |
-| **F** | **Flerfärgad LED** på varje cell |
+| **E** | **Exekveringslinje** som kopplar ihop två celler till ett par |
+| **F** | **Flerfärgad indikator** på varje cell |
 
-**Par = två logiskt sammankopplade celler.** Ordningen topp/botten spelar ingen roll — kommandot kan läggas i någon av de två cellerna, upprepning/tal/aritmetik i den andra. Är den andra cellen tom används det senaste talet som kommandot har fått sedan kontrollpanelen slogs på (så länge inget tal har angetts: steg 15 cm och vändning 90°) — räcker för små barn.
+**Ett par består av två sammankopplade celler.** Topp och botten spelar ingen roll. Du lägger kommandot i någon av cellerna i paret och upprepning, tal eller aritmetik i den andra. Är den andra cellen tom, använder kommandot det senaste tal det har fått sedan kontrollpanelen slogs på. Så länge inget tal har angetts tar roboten ett steg på 15 cm och vänder 90°. Det räcker för små barn.
 
-LED-färger under utförandet:
+Indikatorernas färger under utförandet:
 
 | ⚪ Vit | 🟢 Grön | 🔵 Blå | 🔴 Röd |
 | :---: | :---: | :---: | :---: |
-| Vänteläge (fack ledigt) | Kommando satt | Kommando + tal / upprepning / aritmetik | Fel — hoppas över |
+| Cellen är ledig | Kommando i paret | Kommando med tal, upprepning eller aritmetik | Fel, paret hoppas över |
 
-Tomma fack och röda par hoppas över när programmet läggs ut. LED-erna blinkar på den cell som körs just nu.
+Roboten hoppar över tomma celler och röda par. Indikatorn blinkar vid den cell som roboten kör just nu.
 
-## 4. Brickor — efter grupp
+## 4. Brickor efter grupp
 
 | Grupp | Vad brickorna gör |
 | --- | --- |
-| **Rörelse** | Framåt · Bakåt · Vänster · Höger |
-| **Upprepning** | Två pilar i en cirkel + inuti punkter 2–6 (som på en tärning, för de små) eller med siffror. I par med ett kommando — upprepar det. |
-| **Tal** | `1`–`999`. Anger rörelsesträcka i mm eller vridningsvinkel i grader. |
-| **Aritmetik** | `+N` `−N` `×N` `÷N` `√` `^N` — en bricka = operation + tal. Ändrar det sparade värdet för rörelse eller vridning. Ett negativt resultat vänder riktningen! |
-| **Funktion** | Anropar nedre raden som subprogram. Med upprepningsbricka — körs angivet antal gånger. |
-| **Standardsteg** | Servicebricka + Tal = ändrar standardsteget (t.ex. tal 100, i millimeter, för ett 10 cm rutnät). Behålls efter avstängning. |
+| **Rörelse** | Framåt, Bakåt, Vänster, Höger |
+| **Upprepning** | Två pilar i en cirkel, inuti punkter från 2 till 6 (som på en tärning, för de små) eller siffror. I par med ett kommando upprepar de det. |
+| **Tal** | Från `1` till `999`. Anger sträckan i millimeter eller vridningsvinkeln i grader. |
+| **Aritmetik** | `+N` `−N` `×N` `÷N` `√` `^N`. En bricka bär operationen och talet. Den ändrar det sparade värdet för rörelse eller vridning. Om resultatet är negativt kör eller vänder roboten åt motsatt håll. |
+| **Funktion** | Anropar nedre raden som subprogram. Med en upprepningsbricka körs nedre raden angivet antal gånger. |
+| **Standardsteg** | Servicebricka. Tillsammans med ett tal ändrar den standardsteget. För ett rutnät på 10 cm lägger du till exempel talet 100 (i millimeter). Steget behålls efter avstängning. |
 
 ## 5. Standardvärden och sparat värde
 
 <Note>
-**Framåt = 150 mm (15 cm), vändning = 90°.** **«Standardsteg»**-brickan ändrar «standard»-sträckan och behåller den efter avstängning. Använd för spelplaner från andra robotar.
+**Framåt kör 150 mm (15 cm), en vändning är 90°.** **«Standardsteg»**-brickan ändrar standardsträckan och behåller den efter avstängning. Så anpassar sig kontrollpanelen till spelplaner från andra robotar.
 
-Under en session behåller varje rörelsekommando **sitt eget** sparade värde:
+Medan kontrollpanelen är på behåller varje rörelsekommando **sitt eget** värde:
 
-- **ett tal** i paret med kommandot → ersätter det senast sparade eller standardvärdet
-- **en aritmetisk bricka** → ändrar det (`+`, `−`, `×`, `÷`, `√`, `^`)
-- **tomt** i paret → tar det senast sparade eller standardvärdet
+- **ett tal** i paret med kommandot ersätter det senast sparade värdet eller standardvärdet;
+- **en aritmetisk bricka** ändrar det (`+`, `−`, `×`, `÷`, `√`, `^`);
+- en **tom** cell i paret behåller det senast sparade värdet eller standardvärdet.
 
-Sparade värden nollställs när kontrollpanelen stängs av; standardvärdet (standardsteg) finns kvar.
+När kontrollpanelen stängs av nollställs de sparade värdena. Standardsteget finns kvar.
 
 **Snabbreferens:**
 
-- `Framåt` ensam         → 150 mm (15 cm) — standard
-- `Framåt` + `100`       → 100 mm — ersätter
-- `Framåt` + `+50`       → 150 mm  (föregående 100 + 50) — ändrar
-- `Vänster` ensam        → 90° — standard
-- `Vänster` + `45`       → 45° — ersätter
-- `Vänster` + `−10`      → 35°  (föregående 45° − 10°) — ändrar
+| Par på kontrollpanelen | Resultat | Vad som hände |
+| --- | --- | --- |
+| `Framåt` ensam | 150 mm (15 cm) | standardvärde |
+| `Framåt` och `100` | 100 mm | talet ersatte värdet |
+| `Framåt` och `+50` | 150 mm (var 100, lade till 50) | aritmetiken ändrade värdet |
+| `Vänster` ensam | 90° | standardvärde |
+| `Vänster` och `45` | 45° | talet ersatte värdet |
+| `Vänster` och `−10` | 35° (var 45°, drog av 10°) | aritmetiken ändrade värdet |
 </Note>
 
 ## 6. Roboten ritar det du programmerar
 
-Prova dessa exempel — du ser vad enheten klarar. Sätt en penna mitt i roboten — den **ritar** medan den rör sig.
+Prova dessa exempel, så ser du vad enheten klarar. Sätt en penna mitt i roboten: den **ritar** medan den rör sig.
 
 <CardGroup cols={2}>
-  <Card title="Stjärna — tal + upprepning">
+  <Card title="Stjärna: tal och upprepning">
     <Frame>
       <img src="../images/mathdrawings/star5-board.svg" alt="Stjärnprogram på kontrollpanelen" />
     </Frame>
@@ -118,7 +120,7 @@ Prova dessa exempel — du ser vad enheten klarar. Sätt en penna mitt i roboten
     </Frame>
     [Kör i simulatorn](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
   </Card>
-  <Card title="Spiral — aritmetik i en loop">
+  <Card title="Spiral: aritmetik i en loop">
     <Frame>
       <img src="../images/mathdrawings/spiral-board.svg" alt="Spiralprogram på kontrollpanelen" />
     </Frame>
@@ -129,60 +131,65 @@ Prova dessa exempel — du ser vad enheten klarar. Sätt en penna mitt i roboten
   </Card>
 </CardGroup>
 
-Fler exempel i [Matematiska teckningar](/sv/mathdrawings).
+Fler exempel finns på sidan [Ritexempel](/sv/mathdrawings).
 
 ## 7. Så lär du ut med PrimaSTEM
 
 <Tip>
 **Inför kommandobrickor en i taget, i denna ordning:**
 
-**Framåt → Vändningar → Upprepningar → Funktion → Tal → Aritmetik.**
+1. Framåt
+2. Vändningar
+3. Upprepningar
+4. Funktion
+5. Tal
+6. Aritmetik
 
-Varje nästa — endast efter att den förra behärskas säkert. Den fullständiga 12-lektionsplanen med ålder, längd och material för de små — i [Bok 1](/sv/book-1/book-1).
+Gå vidare till nästa bricka när barnet säkert behärskar den förra. Den fullständiga planen med 12 lektioner för de små, med ålder, längd och material, finns i [Bok 1](/sv/book-1/book-1).
 
-**Grupparbete:** vi rekommenderar ett set per **2–3 barn**.
+**Grupparbete.** Vi rekommenderar ett set per **2–3 barn**.
 
-**Spelplaner:** alla rutnät gjorda för andra utbildningsrobotar fungerar. Cellstorleken ställs in med **«Standardsteg»**-brickan plus ett tal (t.ex. 100, 120, 150, 200 mm).
+**Spelplaner.** Spelplanen från vilken annan utbildningsrobot som helst fungerar. **«Standardsteg»**-brickan med ett tal bestämmer cellstorleken, till exempel 100, 120, 150 eller 200 mm.
 
-**Knep för 10 steg i stället för 6.** Placera brickan **Funktion [ ]** i sista (6:e) facket på övre raden och fäst den med målartejp. Programmet körs nu som en lång kedja: 5 steg upptill + 5 nedtill = **10 steg i rad**. Praktiskt för de små som behöver ett längre program men ännu inte är redo för funktionskonceptet.
+**Så får du 10 steg i stället för 6.** Lägg brickan **Funktion [ ]** i sista (6:e) paret på övre raden och fäst den med målartejp. Nu körs programmet som en kedja: 5 steg upptill och 5 nedtill, **10 steg i rad**. Det är praktiskt för de små som behöver ett längre program men ännu inte är redo för funktionskonceptet.
 </Tip>
 
 ## 8. Ytterligare möjligheter
 
 <CardGroup cols={2}>
   <Card title="Penna och rita" icon="pen-line">
-    Sätt en penna i roboten — den **ritar** sin bana på papper: från en enkel kurva till månghörningar, stjärnor, spiraler och fraktaler.
+    Sätt en penna i roboten: den **ritar** sin bana på papper. Det blir enkla linjer, månghörningar, stjärnor, spiraler och fraktaler.
   </Card>
   <Card title="Röst" icon="volume-2">
-    Kontrollpanelen säger varje bricka — röst **på vilket lokalt språk som helst**, för närvarande **21 stöds** (inklusive arabiska, finska, kroatiska och litauiska), vi lägger till fler på begäran! Hjälper små barn och dem som ännu inte läser. Innehåller alfabetsbokstäver och platser (Hus, Skola, Affär, Skog osv.)
+    Kontrollpanelen säger varje bricka högt. Rösten fungerar **på 21 språk**, bland dem arabiska, finska, kroatiska och litauiska. Fler språk lägger vi till på begäran. Rösten hjälper små barn som ännu inte läser. Det finns alfabetsbokstäver och platser: Hus, Skola, Affär, Skog med flera.
   </Card>
-  <Card title="Ljud-NFC-klistermärken och kartor" icon="map">
-    Klistra NFC-taggar på din karta, programmera från telefonen valfritt tillgängligt ljud. Roboten har en antenn undertill — stannar den på en tagg spelar den upp det inspelade ljudet.
+  <Card title="Ljud-NFC-klistermärken och spelplaner" icon="map">
+    Klistra NFC-taggar på din spelplan och lägg in valfritt tillgängligt ljud från telefonen. Roboten har en antenn undertill. När roboten stannar på en tagg spelar den upp det inspelade ljudet.
   </Card>
   <Card title="Öppen NFC-plattform" icon="nfc">
-    Skapa egna brickor — vilken 13.56 MHz NFC-tagg som helst (billig, säljs på alla marknadsplatser) + en textkod från vår dokumentation — allt tar 10 sekunder. Gratis telefonapp (NFC Tools).
+    Skapa egna brickor. Du behöver valfri NFC-tagg på 13,56 MHz (billiga, säljs på alla marknadsplatser) och en textkod från vår dokumentation. Skrivningen tar 10 sekunder i den gratis appen NFC Tools på telefonen.
   </Card>
 </CardGroup>
 
 ## Vad du läser härnäst
 
 <CardGroup cols={2}>
-  <Card title="Användarmanual" icon="book-open" href="/sv/usermanual">
-    Fullständiga tekniska specifikationer, parning, kalibrering, säkerhet.
+  <Card title="Enhet och inställningar" icon="book-open" href="/sv/usermanual">
+    Tekniska specifikationer, parning, kalibrering, säkerhet.
   </Card>
   <Card title="Lärarhandledning" icon="book" href="/sv/teachersguide">
-    Pedagogik, klassrumsanvändning, programmeringsbegrepp genom lek.
+    Pedagogik, användning i klassrummet, grunderna i programmering genom lek.
   </Card>
-  <Card title="Bok 1 — Lektioner" icon="graduation-cap" href="/sv/book-1/book-1">
-    12 färdiga lektioner för små barn — med ålder, längd och utskriftsmaterial.
+  <Card title="Bok 1. Lektioner" icon="graduation-cap" href="/sv/book-1/book-1">
+    12 färdiga lektioner för små barn, med ålder, längd och utskriftsmaterial.
   </Card>
   <Card title="Kommandobrickor" icon="nfc" href="/sv/nfc">
-    Alla NFC-koder — för att skapa egna brickor med telefonen.
+    Alla NFC-koder, för att skapa egna brickor med telefonen.
   </Card>
-  <Card title="Matematiska teckningar" icon="pen-line" href="/sv/mathdrawings">
-    Geometriska figurer, fraktaler, spiraler — program och resultat.
+  <Card title="Ritexempel" icon="pen-line" href="/sv/mathdrawings">
+    Geometriska figurer, fraktaler, spiraler: program och resultat.
   </Card>
-  <Card title="Ljudordbok" icon="volume-2" href="/sv/sounds_reference">
-    Ord — platser och begrepp, alfabet, musiknoter, systemljud. För att spela in egna brickor och avspela.
+  <Card title="Referens för ljudfiler" icon="volume-2" href="/sv/sounds_reference">
+    Ord (platser och begrepp), alfabet, musiknoter, systemljud. Behövs för att skapa egna brickor och ljud.
   </Card>
 </CardGroup>

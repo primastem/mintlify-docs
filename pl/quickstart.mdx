@@ -1,115 +1,117 @@
 ---
 title: "Szybki start"
-description: "Jak działa PrimaSTEM — robot, pilot, żetony. Szybki start."
+description: "Jak działają robot, pilot i żetony PrimaSTEM."
 icon: "rocket"
 mode: "wide"
 ---
 
-PrimaSTEM to zestaw edukacyjny bez ekranu do nauki programowania, logiki i matematyki, dla dzieci w wieku 4–10+ lat. Ta strona w skrócie wyjaśnia, **jak działa urządzenie**.
+PrimaSTEM uczy dzieci w wieku 4–10+ lat programowania, logiki i matematyki bez ekranu. Ta strona w skrócie wyjaśnia, **jak działa urządzenie**.
 
 <Note>
-**Nie mają Państwo jeszcze urządzenia? Mogą je Państwo wypróbować w przeglądarce.** Prosimy otworzyć **[symulator internetowy](https://simulator.primastem.com)** — działającą kopię pilota i robota. Po włożeniu żetonów i naciśnięciu **▶ Start** można obserwować, jak robot jedzie, podczas lektury tego przewodnika.
+**Nie mają Państwo jeszcze urządzenia? Mogą je Państwo wypróbować w przeglądarce.** Prosimy otworzyć **[symulator internetowy](https://simulator.primastem.com)**. To działająca kopia pilota i robota. Prosimy włożyć żetony, nacisnąć **▶ Start** i obserwować, jak robot wykonuje program. Można to robić w trakcie lektury tego przewodnika.
 </Note>
 
 ## 1. Co jest w pudełku
 
 <CardGroup cols={3}>
   <Card title="Robot" icon="bug">
-    Drewniany robot-biedronka na dwóch kołach. Na górze miejsce na pisak. Głośnik, USB-C, Bluetooth.
+    Drewniany robot w kształcie biedronki, na dwóch kołach. Na górze jest miejsce na pisak. Robot ma głośnik, USB-C i Bluetooth.
   </Card>
   <Card title="Pilot" icon="grid-3x3">
-    Pilot z parami gniazd na program. Wielokolorowe wskaźniki, przycisk ▶ Start/Stop, głośnik, USB-C, Bluetooth.
+    Na pilocie są pary gniazd na program i wielokolorowe wskaźniki. Pilot ma przycisk ▶ Start/Stop, głośnik, USB-C i Bluetooth.
   </Card>
-  <Card title="Żetony kodu" icon="square-stack">
-    Kartonowe kafelki z naklejkami NFC — każdy to jedno polecenie w programie robota.
+  <Card title="Żetony poleceń" icon="square-stack">
+    Kartonowe kafelki z naklejkami NFC. Jeden żeton to jedno polecenie w programie robota.
   </Card>
 </CardGroup>
 
-<Tip>Po otrzymaniu zestawu zalecamy zaktualizowanie robota i pilota do najnowszej wersji oprogramowania: [jak zaktualizować](/pl/update).</Tip>
+<Tip>Po otrzymaniu zestawu prosimy zaktualizować oprogramowanie robota i pilota do najnowszej wersji: [jak zaktualizować](/pl/update).</Tip>
 
 ## 2. Włączanie
 
 <Steps>
   <Step title="Włącz robota, potem pilota" icon="power">
-    Każde urządzenie odtwarza krótki dźwięk; zielony wskaźnik zasilania oznacza, że jest włączone.
+    Każde urządzenie odtwarza krótki dźwięk. Zielony wskaźnik zasilania oznacza, że urządzenie jest włączone.
   </Step>
-  <Step title="Połączone = biały" icon="check">
+  <Step title="Biały: jest połączenie" icon="check">
     Wolne gniazda na pilocie świecą na **biało**, oczy robota mrugają na **biało**. Można zaczynać.
   </Step>
-  <Step title="Błękitny = brak połączenia" icon="bluetooth">
-    Robot i pilot świecą na błękitno. Jeśli połączenie się nie pojawi, należy przytrzymać **▶ Start** na pilocie **dłużej niż 10 sekund**. W 5. sekundzie zabrzmi sygnał; nie puszczać przycisku, trzymać dalej: urządzenia się sparują, a robot uruchomi się ponownie.
+  <Step title="Błękitny: brak połączenia" icon="bluetooth">
+    Robot i pilot świecą na błękitno. Jeśli połączenie się nie pojawi, należy przytrzymać **▶ Start** na pilocie **dłużej niż 10 sekund**. W 5. sekundzie zabrzmi sygnał, nie należy puszczać przycisku. Urządzenia się sparują, a robot uruchomi się ponownie.
   </Step>
 </Steps>
 
-**Na początek:** prosimy włożyć żeton **Naprzód** do gniazda 1 (do dowolnego pola pary) i nacisnąć **▶ Start**. Robot przejedzie 15 cm do przodu i się zatrzyma. *To jest program — jedno polecenie.*
+**Na początek.** Prosimy włożyć żeton **Naprzód** do pierwszej pary, do dowolnego z dwóch pól, i nacisnąć **▶ Start**. Robot przejedzie 15 cm do przodu i się zatrzyma. *Napisali Państwo pierwszy program z jednego polecenia.*
 
 ## 3. Jak działa program
 
-Pilot ma **dwa rzędy gniazd połączonych w pary**. Żetony wkłada się do pól, które świecą na biało — to jest program. Po naciśnięciu **▶ Start** robot go wykona.
+Pilot ma **dwa rzędy gniazd połączonych w pary**. Żetony wkłada się do pól, które świecą na biało, i program jest gotowy. Po naciśnięciu **▶ Start** robot go wykona.
 
-<Frame caption="Układ pilota — oznaczenia A–F opisujemy niżej">
+<Frame caption="Układ pilota. Oznaczenia A–F opisujemy niżej">
   <img src="../images/book-1/control-labels.svg" alt="Schemat pilota z oznaczeniami od A do F" />
 </Frame>
 
 | Oznaczenie | Co to jest |
 | :---: | --- |
-| **A** | **Program główny** — 6 par gniazd, wykonywane od lewej → do prawej |
-| **B** | **▶ Start / Stop** — nacisnąć, aby uruchomić; nacisnąć ponownie w trakcie programu, aby zatrzymać |
-| **C** | **Funkcja** — 5 par gniazd, wywoływane żetonem Funkcja |
+| **A** | **Program główny**: 6 par gniazd, robot wykonuje je od lewej do prawej |
+| **B** | **▶ Start / Stop**: pierwsze naciśnięcie uruchamia program, naciśnięcie w trakcie programu go zatrzymuje |
+| **C** | **Funkcja**: 5 par gniazd, wywołuje je żeton Funkcja |
 | **D** | Jedno **pole** pary |
-| **E** | **Linia wykonania** łącząca sparowane pola |
-| **F** | **Wielokolorowy wskaźnik LED** przy każdym polu |
+| **E** | **Linia wykonania**, która łączy dwa pola w parę |
+| **F** | **Wielokolorowy wskaźnik** przy każdym polu |
 
-**Para to dwa logicznie połączone pola.** Kolejność góra/dół nie ma znaczenia — polecenie wkłada się do dowolnego pola pary, a żeton powtórzenia, liczby lub działania do drugiego. Jeśli drugie pole jest puste, używana jest ostatnia liczba, jaką to polecenie dostało od włączenia pilota (dopóki liczby nie ustawiono: krok 15 cm i obrót 90°) — to wystarcza małym dzieciom.
+**Para to dwa połączone pola.** Góra i dół nie mają znaczenia. Polecenie wkłada się do dowolnego pola pary, a żeton powtórzenia, liczby lub działania do drugiego. Jeśli drugie pole jest puste, polecenie używa ostatniej liczby, jaką dostało od włączenia pilota. Dopóki liczby nie ustawiono, robot robi krok 15 cm i obrót 90°. To wystarcza małym dzieciom.
 
-Kolory LED podczas wykonywania:
+Kolory wskaźników podczas pracy:
 
 | ⚪ Biały | 🟢 Zielony | 🔵 Niebieski | 🔴 Czerwony |
 | :---: | :---: | :---: | :---: |
-| Bezczynność (gniazdo wolne) | Polecenie ustawione | Polecenie + liczba / powtórzenie / działanie | Błąd — pomijane |
+| Gniazdo wolne | W parze jest polecenie | Polecenie z liczbą, powtórzeniem lub działaniem | Błąd, para jest pomijana |
 
-Puste gniazda i czerwone pary są pomijane przy układaniu programu. LED miga przy polu, które jest właśnie wykonywane.
+Robot pomija puste gniazda i czerwone pary. Wskaźnik miga przy polu, które robot właśnie wykonuje.
 
-## 4. Żetony — według grup
+## 4. Żetony według grup
 
 | Grupa | Co robią żetony |
 | --- | --- |
-| **Ruch** | Naprzód · Wstecz · Lewo · Prawo |
-| **Powtórzenie** | Dwie strzałki w pętli + w środku kropki 2–6 (jak na kostce, dla małych dzieci) lub cyfry. W parze z poleceniem powtarza je. |
-| **Liczby** | `1`–`999`. Ustawiają odległość ruchu w mm lub kąt obrotu w stopniach. |
-| **Działania** | `+N` `−N` `×N` `÷N` `√` `^N` — jeden żeton na działanie + liczbę. Zmienia zapamiętaną wartość ruchu lub obrotu. Wynik ujemny odwraca kierunek! |
-| **Funkcja** | Wywołuje dolny rząd jako podprogram. Z żetonem powtórzenia wykonuje go tyle razy. |
-| **Domyślny krok** | Żeton serwisowy + liczba = zmienia domyślną długość kroku (np. liczba 100, w milimetrach, dla siatki 10 cm). Zapisuje się po wyłączeniu zasilania. |
+| **Ruch** | Naprzód, Wstecz, Lewo, Prawo |
+| **Powtórzenie** | Dwie strzałki w pętli, w środku kropki od 2 do 6 (jak na kostce, dla małych dzieci) lub cyfry. W parze z poleceniem powtarza je. |
+| **Liczby** | Od `1` do `999`. Ustawiają odległość w milimetrach lub kąt obrotu w stopniach. |
+| **Działania** | `+N` `−N` `×N` `÷N` `√` `^N`. Jeden żeton zawiera działanie i liczbę. Zmienia on zapamiętaną wartość ruchu lub obrotu. Jeśli wynik jest ujemny, robot jedzie lub obraca się w przeciwną stronę. |
+| **Funkcja** | Wywołuje dolny rząd jako podprogram. Z żetonem powtórzenia dolny rząd wykonuje się zadaną liczbę razy. |
+| **Domyślny krok** | Żeton serwisowy. Razem z liczbą zmienia domyślną długość kroku. Na przykład dla siatki 10 cm należy włożyć liczbę 100 (w milimetrach). Krok zostaje zapisany po wyłączeniu zasilania. |
 
 ## 5. Wartości domyślne i zapamiętana wartość
 
 <Note>
-**Naprzód = 150 mm (15 cm), obrót = 90°.** Żeton **Domyślny krok** zmienia „domyślną” odległość, a zmiana zostaje po wyłączeniu zasilania. Przydaje się do map z siatką dla dowolnego robota.
+**Naprzód przejeżdża 150 mm (15 cm), obrót wynosi 90°.** Żeton **Domyślny krok** zmienia domyślną odległość, a zmiana zostaje po wyłączeniu zasilania. Przydaje się to do map z siatką dla dowolnego robota.
 
-W trakcie jednej sesji każde polecenie ruchu zachowuje **własną** zapamiętaną wartość:
+Dopóki pilot jest włączony, każde polecenie ruchu zachowuje **własną** wartość:
 
-- **liczba** w parze z poleceniem → zastępuje ostatnią zapamiętaną wartość lub wartość domyślną
-- **działanie arytmetyczne** → modyfikuje ją (`+`, `−`, `×`, `÷`, `√`, `^`)
-- **puste pole** w parze z poleceniem → używa ostatniej zapamiętanej wartości lub domyślnej
+- **liczba** w parze z poleceniem zastępuje ostatnią zapamiętaną wartość lub wartość domyślną;
+- **działanie arytmetyczne** zmienia ją (`+`, `−`, `×`, `÷`, `√`, `^`);
+- **puste pole** w parze z poleceniem zostawia ostatnią zapamiętaną wartość lub wartość domyślną.
 
-Zapamiętane wartości są kasowane po wyłączeniu pilota, wartość domyślna (Domyślny krok) zostaje.
+Po wyłączeniu pilota zapamiętane wartości są kasowane. Domyślny krok zostaje.
 
 **Krótka ściąga:**
 
-- `Naprzód` bez liczby    → 150 mm (15 cm) — domyślnie
-- `Naprzód` + `100`      → 100 mm — zastępuje poprzednią
-- `Naprzód` + `+50`      → 150 mm  (poprzednio 100 + 50) — modyfikuje
-- `Lewo` bez liczby      → 90° — domyślnie
-- `Lewo` + `45`          → 45° — zastępuje poprzednią
-- `Lewo` + `−10`         → 35°  (poprzednio 45° − 10°) — modyfikuje
+| Para na pilocie | Wynik | Co się stało |
+| --- | --- | --- |
+| `Naprzód` bez liczby | 150 mm (15 cm) | wartość domyślna |
+| `Naprzód` i `100` | 100 mm | liczba zastąpiła wartość |
+| `Naprzód` i `+50` | 150 mm (było 100, dodano 50) | działanie zmieniło wartość |
+| `Lewo` bez liczby | 90° | wartość domyślna |
+| `Lewo` i `45` | 45° | liczba zastąpiła wartość |
+| `Lewo` i `−10` | 35° (było 45°, odjęto 10°) | działanie zmieniło wartość |
 </Note>
 
 ## 6. Robot rysuje to, co zaprogramują Państwo
 
-Prosimy wypróbować te przykłady — zobaczą Państwo, do czego zdolne jest urządzenie. Pisak należy włożyć na środku robota — podczas jazdy **rysuje**.
+Prosimy wypróbować te przykłady, a zobaczą Państwo, co potrafi urządzenie. Pisak należy włożyć na środku robota. Wtedy robot **rysuje** podczas jazdy.
 
 <CardGroup cols={2}>
-  <Card title="Gwiazda — liczby + powtórzenie">
+  <Card title="Gwiazda: liczby i powtórzenie">
     <Frame>
       <img src="../images/mathdrawings/star5-board.svg" alt="Program gwiazdy na pilocie" />
     </Frame>
@@ -118,7 +120,7 @@ Prosimy wypróbować te przykłady — zobaczą Państwo, do czego zdolne jest u
     </Frame>
     [Uruchom w symulatorze](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
   </Card>
-  <Card title="Spirala — działania w pętli">
+  <Card title="Spirala: działania w pętli">
     <Frame>
       <img src="../images/mathdrawings/spiral-board.svg" alt="Program spirali na pilocie" />
     </Frame>
@@ -129,60 +131,65 @@ Prosimy wypróbować te przykłady — zobaczą Państwo, do czego zdolne jest u
   </Card>
 </CardGroup>
 
-Więcej przykładów w [Przykładach rysunków](/pl/mathdrawings).
+Więcej przykładów jest na stronie [Przykłady rysunków](/pl/mathdrawings).
 
 ## 7. Jak uczyć z PrimaSTEM
 
 <Tip>
 **Prosimy wprowadzać żetony poleceń po jednym, w tej kolejności:**
 
-**Naprzód → Obroty → Powtórzenie → Funkcja → Liczby → Działania.**
+1. Naprzód
+2. Obroty
+3. Powtórzenie
+4. Funkcja
+5. Liczby
+6. Działania
 
-Każdy kolejny należy dodawać dopiero wtedy, gdy poprzedni jest pewnie opanowany. Pełny plan 12 lekcji z wiekiem, czasem trwania i materiałami dla małych dzieci jest w [Książce 1](/pl/book-1/book-1).
+Kolejny żeton należy dodawać dopiero wtedy, gdy dziecko pewnie opanowało poprzedni. Pełny plan 12 lekcji dla małych dzieci, z wiekiem, czasem trwania i materiałami, jest w [Książce 1](/pl/book-1/book-1).
 
-**Praca w grupie:** zalecamy jeden zestaw na **2–3 dzieci**.
+**Praca w grupie.** Zalecamy jeden zestaw na **2–3 dzieci**.
 
-**Mapy:** sprawdzi się każda mapa z siatką, zrobiona dla dowolnego robota edukacyjnego. Rozmiar pola ustawia się żetonem **Domyślny krok** plus liczba (np. 100, 120, 150, 200 mm).
+**Mapy.** Sprawdzi się każda mapa z siatką, zrobiona dla dowolnego robota edukacyjnego. Rozmiar pola ustawia żeton **Domyślny krok** z liczbą, na przykład 100, 120, 150 lub 200 mm.
 
-**Sposób na 10 kroków zamiast 6.** Prosimy włożyć żeton **Funkcja [ ]** do ostatniego (6.) gniazda górnego rzędu i zabezpieczyć go taśmą malarską. Program działa wtedy jako jeden długi łańcuch: 5 kroków u góry + 5 na dole = **10 kroków z rzędu**. Przydaje się małym dzieciom, którym potrzebny jest dłuższy program, zanim będą gotowe zrozumieć pojęcie funkcji.
+**Jak zrobić 10 kroków zamiast 6.** Prosimy włożyć żeton **Funkcja [ ]** do ostatniej (6.) pary górnego rzędu i przykleić go taśmą malarską. Teraz program działa jako jeden łańcuch: 5 kroków u góry i 5 na dole, **10 kroków z rzędu**. To wygodne dla małych dzieci, którym potrzebny jest dłuższy program, ale na pojęcie funkcji jest jeszcze za wcześnie.
 </Tip>
 
 ## 8. Więcej możliwości
 
 <CardGroup cols={2}>
   <Card title="Pisak i rysowanie" icon="pen-line">
-    Po włożeniu pisaka robot **rysuje** swoją trasę na papierze: od prostej trajektorii po wielokąty, gwiazdy, spirale i fraktale.
+    Po włożeniu pisaka robot **rysuje** swoją trasę na papierze. Wychodzą proste linie, wielokąty, gwiazdy, spirale i fraktale.
   </Card>
   <Card title="Głos" icon="volume-2">
-    Pilot czyta każdy żeton na głos — głosem w **dowolnym lokalnym języku**, obecnie **obsługiwanych jest 21** (w tym arabski, fiński, chorwacki i litewski), dodamy każdy na życzenie. Pomaga małym dzieciom i tym, które jeszcze nie czytają. Zawiera litery alfabetu i miejsca (Dom, Szkoła, Sklep, Las itp.)
+    Pilot czyta na głos każdy żeton. Głos działa **w 21 językach**, w tym w arabskim, fińskim, chorwackim i litewskim. Inny język dodamy na życzenie. Głos pomaga małym dzieciom i tym, które jeszcze nie czytają. Są też litery alfabetu i miejsca: Dom, Szkoła, Sklep, Las i inne.
   </Card>
   <Card title="Dźwiękowe naklejki NFC i mapy" icon="map">
-    Można nakleić znaczniki NFC na mapę i zaprogramować dowolny dostępny dźwięk z telefonu. Robot ma od spodu antenę — gdy zatrzyma się na znaczniku, odtwarza nagrany dźwięk.
+    Można nakleić znaczniki NFC na mapę i zapisać na nich z telefonu dowolny dostępny dźwięk. Robot ma od spodu antenę. Gdy robot zatrzyma się na znaczniku, odtwarza nagrany dźwięk.
   </Card>
   <Card title="Otwarta platforma NFC" icon="nfc">
-    Można zapisywać własne żetony — dowolny znacznik NFC 13.56 MHz (tani, sprzedawany na każdym marketplace) + kod tekstowy z naszej dokumentacji — całość zajmuje 10 sekund. Darmowa aplikacja na telefon (NFC Tools).
+    Można robić własne żetony. Potrzebny jest dowolny znacznik NFC 13,56 MHz (tanie znaczniki różnych rodzajów są na każdym marketplace) i kod tekstowy z naszej dokumentacji. Zapis zajmuje 10 sekund w darmowej aplikacji NFC Tools na telefonie.
   </Card>
 </CardGroup>
 
 ## Co czytać dalej
 
 <CardGroup cols={2}>
-  <Card title="Instrukcja obsługi" icon="book-open" href="/pl/usermanual">
-    Pełne dane techniczne, parowanie, kalibracja, bezpieczeństwo.
+  <Card title="Urządzenie i konfiguracja" icon="book-open" href="/pl/usermanual">
+    Dane techniczne, parowanie, kalibracja, bezpieczeństwo.
   </Card>
   <Card title="Przewodnik dla nauczyciela" icon="book" href="/pl/teachersguide">
-    Pedagogika, praca w klasie, pojęcia programowania przez zabawę.
+    Pedagogika, praca w klasie, podstawy programowania przez zabawę.
   </Card>
-  <Card title="Książka 1 — Lekcje" icon="graduation-cap" href="/pl/book-1/book-1">
-    12 gotowych lekcji dla małych dzieci — z wiekiem, czasem trwania i materiałami do wydruku.
+  <Card title="Książka 1. Lekcje" icon="graduation-cap" href="/pl/book-1/book-1">
+    12 gotowych lekcji dla małych dzieci, z wiekiem, czasem trwania i materiałami do wydruku.
   </Card>
   <Card title="Żetony poleceń" icon="nfc" href="/pl/nfc">
-    Wszystkie kody NFC — do zapisywania własnych żetonów telefonem.
+    Wszystkie kody NFC do zapisywania własnych żetonów telefonem.
   </Card>
   <Card title="Przykłady rysunków" icon="pen-line" href="/pl/mathdrawings">
-    Figury geometryczne, fraktale, spirale — programy i wyniki.
+    Figury geometryczne, fraktale, spirale: programy i wyniki.
   </Card>
-  <Card title="Słownik audio" icon="volume-2" href="/pl/sounds_reference">
-    Słowa — miejsca i pojęcia, alfabet, nuty, dźwięki systemowe. Do nagrywania własnych żetonów i odtwarzania.
+  <Card title="Spis plików audio" icon="volume-2" href="/pl/sounds_reference">
+    Słowa (miejsca i pojęcia), alfabet, nuty, dźwięki systemowe. Potrzebny do zapisywania własnych żetonów i dźwięków.
   </Card>
 </CardGroup>

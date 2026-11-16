@@ -1,115 +1,117 @@
 ---
 title: "Hurtigstart"
-description: "Hvordan PrimaSTEM fungerer — robot, kontrollpanel, brikker. Hurtigstart."
+description: "Hvordan roboten, kontrollpanelet og brikkene i PrimaSTEM fungerer."
 icon: "rocket"
 mode: "wide"
 ---
 
-PrimaSTEM er et skjermfritt læringssett for programmering, logikk og matematikk, for barn fra 4 til 10+ år. Denne siden forklarer kort **hvordan enheten fungerer**.
+PrimaSTEM lærer barn fra 4 til 10+ år programmering, logikk og matematikk uten skjerm. Denne siden forklarer kort **hvordan enheten fungerer**.
 
 <Note>
-**Har du ikke enheten ennå? Prøv den i nettleseren.** Åpne **[nettsimulatoren](https://simulator.primastem.com)** — en fungerende kopi av kontrollpanelet og roboten. Legg ut brikker, trykk på **▶ Start** og se roboten kjøre mens du leser denne veiledningen.
+**Har du ikke enheten ennå? Prøv den i nettleseren.** Åpne **[nettsimulatoren](https://simulator.primastem.com)**. Det er en fungerende kopi av kontrollpanelet og roboten. Legg ut brikker, trykk på **▶ Start** og se roboten kjøre. Det kan du gjøre mens du leser denne veiledningen.
 </Note>
 
 ## 1. Hva er i esken
 
 <CardGroup cols={3}>
   <Card title="Robot" icon="bug">
-    Marihøne-robot i tre på to hjul. Tusjholder på toppen. Høyttaler, USB-C, Bluetooth.
+    Robot i tre formet som en marihøne, på to hjul. Tusjholder på toppen. Den har høyttaler, USB-C og Bluetooth.
   </Card>
   <Card title="Kontrollpanel" icon="grid-3x3">
-    Kontrollpanel med parede spor for programmet. Flerfargede indikatorer, ▶ Start/Stopp-knapp, høyttaler, USB-C, Bluetooth.
+    Kontrollpanelet har parede celler for programmet og flerfargede indikatorer. Det har også ▶ Start/Stopp-knapp, høyttaler, USB-C og Bluetooth.
   </Card>
-  <Card title="Kodebrikker" icon="square-stack">
-    Pappkvadrater med NFC-klistremerker — hver = én kommando i robotens program.
+  <Card title="Kommandobrikker" icon="square-stack">
+    Pappkvadrater med NFC-klistremerker. Én brikke gir én kommando i programmet.
   </Card>
 </CardGroup>
 
-<Tip>Når du har mottatt settet, anbefaler vi å oppdatere roboten og kontrollpanelet til den nyeste fastvaren: [slik oppdaterer du](/no/update).</Tip>
+<Tip>Når du har fått settet, oppdater fastvaren på roboten og kontrollpanelet til nyeste versjon: [slik oppdaterer du](/no/update).</Tip>
 
 ## 2. Slå på
 
 <Steps>
   <Step title="Slå på roboten først, så kontrollpanelet" icon="power">
-    Hver gir en kort lyd; det grønne strømlyset på hver enhet = på.
+    Hver enhet gir en kort lyd. Det grønne strømlyset betyr at enheten er på.
   </Step>
-  <Step title="Tilkoblet = hvit" icon="check">
-    Tilgjengelige spor på kontrollpanelet lyser **hvitt**, robotens øyne blinker **hvitt**. Klart.
+  <Step title="Hvitt lys: tilkoblet" icon="check">
+    Ledige celler på kontrollpanelet lyser **hvitt**, robotens øyne blinker **hvitt**. Du kan begynne.
   </Step>
-  <Step title="Lyseblå = ingen tilkobling" icon="bluetooth">
-    Roboten og kontrollpanelet lyser lyseblått. Hvis tilkoblingen ikke kommer, hold **▶ Start** på kontrollpanelet i **mer enn 10 sekunder**. Etter 5 sekunder kommer et signal, fortsett å holde: enhetene parer seg og roboten starter på nytt.
+  <Step title="Lyseblått lys: ingen tilkobling" icon="bluetooth">
+    Roboten og kontrollpanelet lyser lyseblått. Hvis tilkoblingen ikke kommer, hold **▶ Start** på kontrollpanelet i **mer enn 10 sekunder**. Etter 5 sekunder kommer et signal: ikke slipp knappen. Enhetene parer seg, og roboten starter på nytt.
   </Step>
 </Steps>
 
-**Prøv dette først:** legg et **Fremover**-kort i første spor (i en av cellene i paret). Trykk **▶ Start**. Roboten kjører 15 cm fremover og stopper. *Det er allerede et program — én kommando.*
+**Prøv dette først.** Legg en **Fremover**-brikke i første par, i en av de to cellene. Trykk **▶ Start**. Roboten kjører 15 cm fremover og stopper. *Du har skrevet ditt første program, med én kommando.*
 
 ## 3. Hvordan et program fungerer
 
-Kontrollpanelet har **to rader med parede spor**. Du plasserer brikker i sporene som lyser hvitt — det blir programmet. Trykk **▶ Start** — roboten utfører det.
+Kontrollpanelet har **to rader med parede celler**. Legg brikker i cellene som lyser hvitt, så er programmet klart. Trykk **▶ Start**, så utfører roboten det.
 
-<Frame caption="Skjema for kontrollpanelet — bokstavene A–F forklares under">
+<Frame caption="Skjema for kontrollpanelet. Bokstavene A–F forklares under">
   <img src="../images/book-1/control-labels.svg" alt="Kontrollpanel med merker A til F" />
 </Frame>
 
 | Merke | Hva det er |
 | :---: | --- |
-| **A** | **Hovedprogram** — 6 parede spor, kjøres fra venstre til høyre |
-| **B** | **▶ Start / Stopp** — start; trykk igjen mens roboten beveger seg = stopp |
-| **C** | **Funksjon** — 5 parede spor, kalles av «Funksjon»-brikken |
+| **A** | **Hovedprogram**: 6 par celler, roboten kjører dem fra venstre til høyre |
+| **B** | **▶ Start / Stopp**: første trykk starter programmet, et trykk mens roboten beveger seg stopper det |
+| **C** | **Funksjon**: 5 par celler, «Funksjon»-brikken kaller dem |
 | **D** | Én **celle** i et par |
-| **E** | **Utførelseslinje** som forbinder de parede cellene |
-| **F** | **Flerfarget LED** på hver celle |
+| **E** | **Utførelseslinje** som kobler to celler til et par |
+| **F** | **Flerfarget indikator** på hver celle |
 
-**Par = to logisk koblede celler.** Rekkefølgen topp/bunn spiller ingen rolle — kommandoen kan legges i hvilken som helst av de to cellene, gjentakelse/tall/regning i den andre. Hvis den andre cellen er tom, brukes det siste tallet denne kommandoen har fått siden kontrollpanelet ble slått på (så lenge ingen tall er satt: steg 15 cm og sving 90°) — nok for små barn.
+**Et par består av to koblede celler.** Topp og bunn spiller ingen rolle. Du legger kommandoen i en av cellene i paret, og gjentakelse, tall eller regning i den andre. Hvis den andre cellen er tom, bruker kommandoen det siste tallet den har fått siden kontrollpanelet ble slått på. Så lenge ingen tall er satt, tar roboten et steg på 15 cm og svinger 90°. Det er nok for små barn.
 
-LED-farger under utførelse:
+Indikatorfarger under utførelse:
 
 | ⚪ Hvit | 🟢 Grønn | 🔵 Blå | 🔴 Rød |
 | :---: | :---: | :---: | :---: |
-| Venter (spor ledig) | Kommando satt | Kommando + tall / gjentakelse / regning | Feil — hoppes over |
+| Cellen er ledig | Kommando i paret | Kommando med tall, gjentakelse eller regning | Feil, paret hoppes over |
 
-Tomme spor og røde par hoppes over når du legger ut brikkene. LED-ene blinker på cellen som kjøres akkurat nå.
+Roboten hopper over tomme celler og røde par. Indikatoren blinker ved cellen som roboten utfører akkurat nå.
 
-## 4. Brikker — etter gruppe
+## 4. Brikker etter gruppe
 
 | Gruppe | Hva brikkene gjør |
 | --- | --- |
-| **Bevegelse** | Fremover · Bakover · Venstre · Høyre |
-| **Gjentakelse** | To piler i sirkel + inni prikker 2–6 (som på en terning, for de små) eller med tall. I par med en kommando — gjentar den. |
-| **Tall** | `1`–`999`. Bestemmer bevegelsesavstand i mm eller dreievinkel i grader. |
-| **Regning** | `+N` `−N` `×N` `÷N` `√` `^N` — én brikke = operasjon + tall. Endrer den lagrede verdien for bevegelse eller dreining. Et negativt resultat reverserer retningen! |
-| **Funksjon** | Kaller den nederste raden som underprogram. Med gjentakelse-brikke — kjøres angitt antall ganger. |
-| **Standardsteg** | Servicebrikke + Tall = endrer standardsteget (f.eks. tall 100, i millimeter, for et 10-cm-rutenett). Bevares etter avslåing. |
+| **Bevegelse** | Fremover, Bakover, Venstre, Høyre |
+| **Gjentakelse** | To piler i sirkel, inni prikker fra 2 til 6 (som på en terning, for de små) eller tall. I par med en kommando gjentar de den. |
+| **Tall** | Fra `1` til `999`. Bestemmer avstanden i millimeter eller dreievinkelen i grader. |
+| **Regning** | `+N` `−N` `×N` `÷N` `√` `^N`. Én brikke har operasjonen og tallet. Den endrer den lagrede verdien for bevegelse eller dreining. Hvis resultatet er negativt, kjører eller svinger roboten i motsatt retning. |
+| **Funksjon** | Kaller den nederste raden som underprogram. Med en gjentakelsesbrikke kjøres den nederste raden angitt antall ganger. |
+| **Standardsteg** | Servicebrikke. Sammen med et tall endrer den standardsteget. For et rutenett på 10 cm legger du for eksempel tallet 100 (i millimeter). Steget bevares etter avslåing. |
 
 ## 5. Standardverdier og lagret verdi
 
 <Note>
-**Fremover = 150 mm (15 cm), sving = 90°.** «**Standardsteg**»-brikken endrer «standard»-avstanden og bevarer den etter avslåing. Praktisk for spillkart fra andre roboter.
+**Fremover kjører 150 mm (15 cm), en sving er 90°.** «**Standardsteg**»-brikken endrer standardavstanden og bevarer den etter avslåing. Slik tilpasser kontrollpanelet seg spillkart fra andre roboter.
 
-I løpet av én økt holder hver bevegelseskommando på **sin egen** lagrede verdi:
+Mens kontrollpanelet er på, holder hver bevegelseskommando på **sin egen** verdi:
 
-- **et tall** i paret med kommandoen → erstatter siste lagrede verdi eller standardverdi
-- **en regnebrikke** → endrer den (`+`, `−`, `×`, `÷`, `√`, `^`)
-- **tomt** i paret → tar siste lagrede verdi eller standardverdi
+- **et tall** i paret med kommandoen erstatter siste lagrede verdi eller standardverdien;
+- **en regnebrikke** endrer den (`+`, `−`, `×`, `÷`, `√`, `^`);
+- en **tom** celle i paret beholder siste lagrede verdi eller standardverdien.
 
-Lagrede verdier nullstilles når kontrollpanelet slås av; standardverdien (standardsteg) består.
+Når kontrollpanelet slås av, nullstilles de lagrede verdiene. Standardsteget består.
 
 **Hurtigreferanse:**
 
-- `Fremover` alene       → 150 mm (15 cm) — standard
-- `Fremover` + `100`     → 100 mm — erstatter
-- `Fremover` + `+50`     → 150 mm  (forrige 100 + 50) — endrer
-- `Venstre` alene        → 90° — standard
-- `Venstre` + `45`       → 45° — erstatter
-- `Venstre` + `−10`      → 35°  (forrige 45° − 10°) — endrer
+| Par på kontrollpanelet | Resultat | Hva som skjedde |
+| --- | --- | --- |
+| `Fremover` alene | 150 mm (15 cm) | standardverdi |
+| `Fremover` og `100` | 100 mm | tallet erstattet verdien |
+| `Fremover` og `+50` | 150 mm (var 100, la til 50) | regningen endret verdien |
+| `Venstre` alene | 90° | standardverdi |
+| `Venstre` og `45` | 45° | tallet erstattet verdien |
+| `Venstre` og `−10` | 35° (var 45°, trakk fra 10°) | regningen endret verdien |
 </Note>
 
 ## 6. Roboten tegner det du programmerer
 
-Prøv disse eksemplene — du ser hva enheten kan. Sett en tusj midt i roboten — den **tegner** mens den beveger seg.
+Prøv disse eksemplene, så ser du hva enheten kan. Sett en tusj midt i roboten: den **tegner** mens den beveger seg.
 
 <CardGroup cols={2}>
-  <Card title="Stjerne — tall + gjentakelse">
+  <Card title="Stjerne: tall og gjentakelse">
     <Frame>
       <img src="../images/mathdrawings/star5-board.svg" alt="Stjerneprogram på kontrollpanelet" />
     </Frame>
@@ -118,7 +120,7 @@ Prøv disse eksemplene — du ser hva enheten kan. Sett en tusj midt i roboten �
     </Frame>
     [Kjør i simulatoren](https://simulator.primastem.com/#top=cfun.r005&fn=cfor,crig.n144&s=l1047402&r=225-283-90&run)
   </Card>
-  <Card title="Spiral — regning i en løkke">
+  <Card title="Spiral: regning i en løkke">
     <Frame>
       <img src="../images/mathdrawings/spiral-board.svg" alt="Spiralprogram på kontrollpanelet" />
     </Frame>
@@ -129,60 +131,65 @@ Prøv disse eksemplene — du ser hva enheten kan. Sett en tusj midt i roboten �
   </Card>
 </CardGroup>
 
-Flere eksempler under [Matematiske tegninger](/no/mathdrawings).
+Flere eksempler finner du på siden [Tegneeksempler](/no/mathdrawings).
 
 ## 7. Hvordan undervise med PrimaSTEM
 
 <Tip>
 **Innfør kommandobrikker én og én, i denne rekkefølgen:**
 
-**Fremover → Svinger → Gjentakelser → Funksjon → Tall → Regning.**
+1. Fremover
+2. Svinger
+3. Gjentakelser
+4. Funksjon
+5. Tall
+6. Regning
 
-Hver neste — først etter at den forrige er trygt mestret. Den fullstendige planen med 12 økter med alder, varighet og materialer for de små — i [Bok 1](/no/book-1/book-1).
+Gå videre til neste brikke når barnet mestrer den forrige trygt. Den fullstendige planen med 12 økter for de små, med alder, varighet og materialer, finner du i [Bok 1](/no/book-1/book-1).
 
-**Gruppearbeid:** vi anbefaler ett sett per **2–3 barn**.
+**Gruppearbeid.** Vi anbefaler ett sett per **2–3 barn**.
 
-**Kart:** alle rutenett laget for andre læringsroboter fungerer. Cellestørrelsen settes med **«Standardsteg»**-brikken og et tall (f.eks. 100, 120, 150, 200 mm).
+**Spillkart.** Spillkartet til enhver annen læringsrobot fungerer. **«Standardsteg»**-brikken med et tall bestemmer cellestørrelsen, for eksempel 100, 120, 150 eller 200 mm.
 
-**Triks for 10 steg i stedet for 6.** Plasser **Funksjon [ ]**-brikken i siste (6.) spor i øvre rad og fest den med malertape. Programmet kjøres nå som én lang kjede: 5 øvre steg + 5 nedre = **10 steg etter hverandre**. Praktisk for de små som trenger et lengre program, men ennå er for unge for funksjonsbegrepet.
+**Slik får du 10 steg i stedet for 6.** Legg **Funksjon [ ]**-brikken i siste (6.) par i øvre rad og fest den med malertape. Nå kjøres programmet som én kjede: 5 steg øverst og 5 nederst, **10 steg etter hverandre**. Det er praktisk for de små som trenger et lengre program, men ennå er for unge for funksjonsbegrepet.
 </Tip>
 
 ## 8. Flere muligheter
 
 <CardGroup cols={2}>
   <Card title="Tusj og tegning" icon="pen-line">
-    Sett en tusj i roboten — den **tegner** sin bane på papir: fra en enkel kurve til mangekanter, stjerner, spiraler og fraktaler.
+    Sett en tusj i roboten: den **tegner** banen sin på papir. Det blir enkle linjer, mangekanter, stjerner, spiraler og fraktaler.
   </Card>
   <Card title="Stemme" icon="volume-2">
-    Kontrollpanelet sier hver brikke høyt — stemme **på hvilket som helst lokalt språk**, for tiden **21 støttet** (inkludert arabisk, finsk, kroatisk og litauisk), vi legger til flere på forespørsel! Hjelper små barn og de som ennå ikke leser. Inneholder alfabetbokstaver og steder (Hus, Skole, Butikk, Skog osv.)
+    Kontrollpanelet sier hver brikke høyt. Stemmen fungerer **på 21 språk**, blant dem arabisk, finsk, kroatisk og litauisk. Andre språk legger vi til på forespørsel. Stemmen hjelper små barn som ennå ikke leser. Det finnes alfabetbokstaver og steder: Hus, Skole, Butikk, Skog og flere.
   </Card>
-  <Card title="Lyd-NFC-klistremerker og kart" icon="map">
-    Lim NFC-merker på kartet ditt, programmer fra telefonen hvilken som helst tilgjengelig lyd. Roboten har en antenne under — stopper den på et merke, spiller den den innspilte lyden.
+  <Card title="Lyd-NFC-klistremerker og spillkart" icon="map">
+    Lim NFC-merker på spillkartet ditt og legg inn hvilken som helst tilgjengelig lyd fra telefonen. Roboten har en antenne under. Når roboten stopper på et merke, spiller den av den innspilte lyden.
   </Card>
   <Card title="Åpen NFC-plattform" icon="nfc">
-    Lag dine egne brikker — hvilken som helst 13.56 MHz NFC-tag (billige, selges på alle markedsplasser) + en tekstkode fra dokumentasjonen vår — alt sammen tar 10 sekunder. Gratis telefonapp (NFC Tools).
+    Lag dine egne brikker. Du trenger en hvilken som helst NFC-tag på 13,56 MHz (billige, selges på alle markedsplasser) og en tekstkode fra dokumentasjonen vår. Skrivingen tar 10 sekunder i den gratis appen NFC Tools på telefonen.
   </Card>
 </CardGroup>
 
 ## Hva du leser videre
 
 <CardGroup cols={2}>
-  <Card title="Brukerhåndbok" icon="book-open" href="/no/usermanual">
-    Fullstendige tekniske spesifikasjoner, paring, kalibrering, sikkerhet.
+  <Card title="Enhet og oppsett" icon="book-open" href="/no/usermanual">
+    Tekniske spesifikasjoner, paring, kalibrering, sikkerhet.
   </Card>
   <Card title="Lærerveiledning" icon="book" href="/no/teachersguide">
-    Pedagogikk, klasseromsbruk, programmeringsbegreper gjennom lek.
+    Pedagogikk, bruk i klasserommet, grunnleggende programmering gjennom lek.
   </Card>
-  <Card title="Bok 1 — Leksjoner" icon="graduation-cap" href="/no/book-1/book-1">
-    12 ferdige leksjoner for små barn — med alder, varighet og utskriftsmateriell.
+  <Card title="Bok 1. Leksjoner" icon="graduation-cap" href="/no/book-1/book-1">
+    12 ferdige leksjoner for små barn, med alder, varighet og utskriftsmateriell.
   </Card>
   <Card title="Kommandobrikker" icon="nfc" href="/no/nfc">
-    Alle NFC-koder — for å lage dine egne brikker med telefonen.
+    Alle NFC-koder, for å lage dine egne brikker med telefonen.
   </Card>
-  <Card title="Matematiske tegninger" icon="pen-line" href="/no/mathdrawings">
-    Geometriske figurer, fraktaler, spiraler — programmer og resultater.
+  <Card title="Tegneeksempler" icon="pen-line" href="/no/mathdrawings">
+    Geometriske figurer, fraktaler, spiraler: programmer og resultater.
   </Card>
-  <Card title="Lydordbok" icon="volume-2" href="/no/sounds_reference">
-    Ord — steder og begreper, alfabet, musikknoter, systemlyder. For å spille inn egne brikker og avspilling.
+  <Card title="Referanse for lydfiler" icon="volume-2" href="/no/sounds_reference">
+    Ord (steder og begreper), alfabet, musikknoter, systemlyder. Du trenger den for å lage egne brikker og lyder.
   </Card>
 </CardGroup>
