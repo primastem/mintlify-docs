@@ -1,6 +1,6 @@
 ---
 title: "Įrenginys ir nustatymai"
-description: "**PrimaSTEM** yra mokomasis rinkinys, padedantis vaikus nuo 4 metų mokyti logikos, programavimo ir matematikos pagrindų."
+description: "PrimaSTEM moko vaikus nuo 4 metų logikos, programavimo ir matematikos pagrindų."
 icon: "book-open"
 mode: "default"
 ---
@@ -11,7 +11,7 @@ mode: "default"
 
 - Žaidimų robotas
 - Roboto valdymo pultas
-- Komandų, reikšmių ir aritmetinių veiksmų žetonai programoms kurti
+- Komandų, reikšmių ir aritmetinių veiksmų žetonai, iš kurių sudedamos programos
 
 > Rinkinio turinys ir išvaizda gali šiek tiek skirtis. Pasitikrinkite pirkdami.
 
@@ -23,9 +23,9 @@ Matmenys: D=120 mm, H=44 mm.
 
 Robotas turi maitinimo mygtuką, šviesos diodus, garsiakalbį, funkcijų mygtuką ir USB-C jungtį akumuliatoriui įkrauti.
 
-Į roboto vidurį galima įstatyti iki 10 mm skersmens flomasterį: važiuodamas robotas piešia paprastas figūras.
+Į roboto vidurį galima įstatyti iki 10 mm skersmens flomasterį. Tada robotas važiuodamas piešia paprastas figūras.
 
-Išvaizda gali šiek tiek skirtis priklausomai nuo komplektacijos, bet pagrindinės funkcijos lieka tos pačios.
+Išvaizda gali šiek tiek skirtis priklausomai nuo komplektacijos. Funkcijos lieka tos pačios.
 
 ### Valdymo pultas
 
@@ -33,46 +33,48 @@ Matmenys: L=317 mm, W=217 mm, H=62 mm.
 
 ![valdymo pultas](../images/usermanual/control.png)
 
-Valdymo pulte yra 11 dvigubų lizdų komandų ir reikšmių žetonams: 6 pagrindinei programai (viršutinėje dalyje), 5 paprogramei (apatinėje dalyje). Pultas turi du mygtukus: kairėje yra maitinimo mygtukas, dešinėje **▶ Start / Stop** programai paleisti ir sustabdyti.
+Valdymo pulte yra 11 lizdų porų komandų ir reikšmių žetonams. 6 poros viršuje skirtos pagrindinei programai, 5 poros apačioje paprogramei.
 
-Sudėję komandų ir reikšmių žetonus į lizdus, paspauskite **▶ Start**: robotas įvykdys programą. Aktyvias komandas rodo šviesos diodai tarp lizdų.
+Pultas turi du mygtukus. Kairysis įjungia pultą. Dešinysis, **▶ Start / Stop**, paleidžia ir sustabdo programą.
 
-Jei žetonas padėtas neteisingai, valdymo pultas praneša raudonu šviesos diodu, bet programa vykdoma toliau (pavyzdžiui, kai reikšmės žetonas padėtas be komandos).
+Sudėkite komandų ir reikšmių žetonus į lizdus ir paspauskite **▶ Start**. Robotas įvykdys programą. Šviesos diodai tarp lizdų rodo, kuri komanda vykdoma.
 
-Valdymo pultas turi USB-C jungtį įkrovimui ir garsiakalbį garsui.
+Jei žetonas padėtas neteisingai, pavyzdžiui, reikšmės žetonas be komandos, prie lizdo užsidega raudonas šviesos diodas. Programa vis tiek vykdoma toliau.
 
-### Instrukcijų žetonai
+Valdymo pultas turi USB-C jungtį įkrovimui ir garsiakalbį.
 
-Matmenys: LxW=33 mm.
+### Žetonai
 
-Rinkinyje yra žetonai programoms kurti. Kiekvienas žetonas yra komanda su aiškia prasme ir nurodymu. Žetonų seka lemia roboto elgesį.
+Matmenys: 33 × 33 mm.
+
+Rinkinyje yra žetonai, iš kurių sudedamos programos. Kiekvienas žetonas nurodo vieną aiškios prasmės komandą. Žetonų seka lemia, ką darys robotas.
 
 ![programavimo žetonai](../images/usermanual/tokens.png)
 
-Žetonai skirstomi į **komandas**, **reikšmes** ir **aritmetiką**.
+Žetonai būna trijų rūšių: **komandos**, **reikšmės** ir **aritmetika**.
 
 #### Komandų žetonai
 
-Pagrindiniai valdymo programos blokai:
+Iš šių žetonų sudedama programa:
 
-- **Pirmyn**: judėjimas pirmyn (numatytasis atstumas 15 cm)
-- **Dešinėn**: 90° posūkis pagal laikrodžio rodyklę
-- **Kairėn**: 90° posūkis prieš laikrodžio rodyklę
-- **Atgal**: judėjimas atgal (numatytasis atstumas 15 cm)
-- **Funkcija**: vykdo paprogramę iš apatinės valdymo pulto dalies
-- **Pauzė**: robotas laukia N sekundžių (1–999 s; be skaičiaus 1 s)
-- **Atsitiktinis judesys**: vienas žingsnis pirmyn arba atgal, arba 90° posūkis kairėn ar dešinėn, po kurio iš karto seka numatytojo ilgio žingsnis pirmyn (posūkio vietoje be žingsnio nėra)
-- **Kartojimo žetonai (ciklai)**: žetonai su skaičiais nuo 2 iki 6 (pagal taškelių skaičių) ir kartojimo piktogramos su skaičiumi viduje. Žetonas su kauliuku reiškia atsitiktinį kartojimų skaičių nuo 1 iki 6.
+- **Pirmyn**: robotas važiuoja pirmyn (numatytasis atstumas 15 cm).
+- **Dešinėn**: robotas pasisuka 90° pagal laikrodžio rodyklę.
+- **Kairėn**: robotas pasisuka 90° prieš laikrodžio rodyklę.
+- **Atgal**: robotas važiuoja atgal (numatytasis atstumas 15 cm).
+- **Funkcija**: robotas vykdo paprogramę iš apatinės valdymo pulto eilės.
+- **Pauzė**: robotas laukia N sekundžių (1–999 s; be skaičiaus 1 s).
+- **Atsitiktinis judesys**: robotas žengia vieną žingsnį pirmyn arba atgal arba pasisuka 90° kairėn ar dešinėn ir iš karto žengia žingsnį pirmyn. Žingsnio ilgis lygus numatytajam žingsniui. Posūkio vietoje be žingsnio nėra.
+- **Kartojimo žetonai (ciklai)**: ant jų yra taškeliai nuo 2 iki 6 arba kartojimo ženklas su skaičiumi viduje. Žetonas su kauliuku nustato atsitiktinį kartojimų skaičių nuo 1 iki 6.
 
-> Skaitinių reikšmių ir aritmetikos žetonai taip pat praplečia programavimo galimybes: pavyzdžiui, leidžia pakartoti komandą arba pakeisti judėjimo kampą ar atstumą.
+> Skaičių ir aritmetikos žetonai praplečia programą. Su jais galima pakartoti komandą arba pakeisti kampą ir atstumą.
 
 #### Reikšmių žetonai
 
-Kampų ir atstumų žetonai: 30°, 36°, 45°, taip pat kartotiniai (60°, 72° ir t. t.). Kampai nurodomi laipsniais, atstumai milimetrais. Numatytosios reikšmės: 90° ir 150 mm (15 cm).
+Yra kampų ir atstumų žetonai: 30°, 36°, 45° ir jų kartotiniai (60°, 72° ir t. t.). Kampai nurodomi laipsniais, atstumai milimetrais. Pagal numatytuosius nustatymus robotas pasisuka 90° ir pavažiuoja 150 mm (15 cm).
 
 #### Aritmetinių veiksmų žetonai
 
-Keičia judėjimo komandų parametrus:
+Keičia judėjimo komandų reikšmes:
 
 - Sudėtis (\+)
 - Atimtis (−)
@@ -82,40 +84,46 @@ Keičia judėjimo komandų parametrus:
 - Kėlimas laipsniu (^)
 - Faktorialas (!)
 
-Aritmetika veikia intervale nuo −5000 iki 5000. Jei atsakymas didesnis nei 5000 arba mažesnis nei −5000, arba dalijate iš 0, traukiate šaknį iš neigiamo skaičiaus ar skaičiuojate didesnio nei 6 skaičiaus faktorialą, lizdas mirksi raudonai, o skaičius nesikeičia. Dalyba ir kvadratinė šaknis apvalinamos iki artimiausio sveikojo skaičiaus: 150 ÷ 4 = 37,5 → 38, 20 ÷ 3 = 6,67 → 7, √50 = 7,07 → 7. Lygiai pusė apvalinama tolyn nuo nulio: 37,5 → 38, −2,5 → −3.
+Aritmetika veikia intervale nuo −5000 iki 5000. Šiais atvejais lizdas mirksi raudonai, o skaičius nesikeičia:
+- atsakymas didesnis nei 5000 arba mažesnis nei −5000;
+- dalyba iš 0;
+- šaknis iš neigiamo skaičiaus;
+- didesnio nei 6 skaičiaus faktorialas.
+
+Dalyba ir kvadratinė šaknis apvalinamos iki artimiausio sveikojo skaičiaus. Pavyzdžiui, 150 ÷ 4 lygu 37,5, robotas ima 38. 20 ÷ 3 lygu 6,67, robotas ima 7. √50 lygu 7,07, robotas ima 7. Lygiai pusė apvalinama tolyn nuo nulio: 37,5 iki 38, −2,5 iki −3.
 
 ## Valdymo pulto ir roboto prijungimas
 
-Rekomenduojama pirmiausia įjungti robotą, o tada valdymo pultą.
+Pirmiausia įjunkite robotą, tada valdymo pultą.
 
-Prieš jungdami padėkite robotą ant lygaus paviršiaus: susiporavus šviesos diodai tampa balti. Kol ryšio nėra, robotas ir valdymo pultas šviečia žydrai.
+Prieš jungdami padėkite robotą ant lygaus paviršiaus. Kol ryšio nėra, robotas ir valdymo pultas šviečia žydrai. Kai ryšys atsiranda, šviesos diodai tampa balti.
 
 Patikrinkite ryšį: padėkite žetoną „Pirmyn“ ir paspauskite **▶ Start**.
 
-Jei ryšio nėra, iš naujo paleiskite abu įrenginius arba juos įkraukite. Ryšys gali laikinai dingti šalia stiprių elektromagnetinio lauko šaltinių (mobiliojo telefono, WiFi prieigos taško).
+Jei ryšio nėra, iš naujo paleiskite abu įrenginius arba juos įkraukite. Šalia stiprių elektromagnetinio lauko šaltinių (mobiliojo telefono, Wi-Fi prieigos taško) ryšys gali trumpam dingti.
 
-> **Atnaujinus įrenginio programinę įrangą**, gali tekti įrenginius suporuoti iš naujo: įjunkite robotą, tada valdymo pultą, paspauskite ir laikykite pulto mygtuką **▶ Start** ilgiau nei 10 sekundžių. 5-ąją sekundę išgirsite trumpą pyptelėjimą: toliau laikykite. 10-ąją sekundę prasideda suporavimas.
+> **Atnaujinus programinę įrangą**, gali tekti įrenginius suporuoti iš naujo. Įjunkite robotą, tada valdymo pultą. Paspauskite ir laikykite pulto mygtuką **▶ Start** ilgiau nei 10 sekundžių. 5-ąją sekundę išgirsite trumpą pyptelėjimą: mygtuko neatleiskite. 10-ąją sekundę prasideda suporavimas.
 
 ### Roboto valdymas pakreipiant valdymo pultą
 
-Kai tik valdymo pultas prisijungia prie roboto, robotą galite valdyti be žetonų, pakreipdami pultą. Tai veikia, kol ant pulto nėra žetonų ir dar nepaspaudėte **▶ Start**.
+Kai valdymo pultas prisijungia prie roboto, robotą galite valdyti be žetonų: tiesiog kreipkite pultą. Tai veikia, kol lizduose nėra žetonų ir dar nepaspaudėte **▶ Start**.
 
 - Pirmiausia sekundei padėkite valdymo pultą lygiai. Kol to nepadarysite, robotas į pakreipimus nereaguoja.
-- Pakreipkite valdymo pultą nuo savęs: robotas pavažiuoja 15 cm pirmyn. Į save: 15 cm atgal.
-- Pakreipkite jį kairėn arba dešinėn: robotas pasisuka 90° ta pačia kryptimi.
+- Pakreipkite valdymo pultą nuo savęs, ir robotas pavažiuos 15 cm pirmyn. Į save: 15 cm atgal.
+- Pakreipkite jį kairėn arba dešinėn, ir robotas pasisuks 90° ta pačia kryptimi.
 - Kiekvieno žingsnio metu valdymo pultas trumpai pypteli.
-- Kol valdymo pultas lieka pakreiptas, robotas daro žingsnį po žingsnio. Grąžinkite pultą į lygią padėtį: robotas baigia esamą žingsnį ir sustoja.
+- Kol valdymo pultas lieka pakreiptas, robotas daro žingsnį po žingsnio. Grąžinkite pultą į lygią padėtį, ir robotas baigs esamą žingsnį ir sustos.
 - Kreipkite aiškiai, daugiau nei 20°. Šiek tiek drebanti ranka roboto nepajudins.
 
-Valdymas pakreipiant išsijungia, kai tik padedate žetoną ant valdymo pulto arba paspaudžiate **▶ Start**. Jis vėl įsijungia, kai valdymo pultas iš naujo prisijungia prie roboto, pavyzdžiui, išjungus ir vėl įjungus robotą.
+Valdymas pakreipiant išsijungia, kai tik padedate žetoną į lizdą arba paspaudžiate **▶ Start**. Jis vėl įsijungia, kai valdymo pultas iš naujo prisijungia prie roboto, pavyzdžiui, išjungus ir vėl įjungus robotą.
 
-## Kaip tai veikia?
+## Kaip tai veikia
 
-Norėdami užprogramuoti judėjimą, sudėkite komandų žetonus į valdymo pulto lizdus (pavyzdžiui, „Pirmyn“, „Kairėn“, „Funkcija“ ir kt.). Galite nustatyti komandų reikšmes ir kartojimų skaičių, taip pat kampo, atstumo ir aritmetinių veiksmų reikšmes.
+Norėdami užprogramuoti judėjimą, sudėkite komandų žetonus į valdymo pulto lizdus, pavyzdžiui, „Pirmyn“, „Kairėn“, „Funkcija“. Prie komandų galite pridėti kartojimų skaičių, kampus, atstumus ir aritmetinius veiksmus.
 
-Kad komandą ir reikšmę (kartojimą) būtų galima dėti kartu, lizdai sujungti „tilteliais“ su indikatoriais.
+Lizdai sujungti į poras „tilteliais“ su indikatoriais. Į vieną poros lizdą dedama komanda, į kitą reikšmė arba kartojimas.
 
-_Žemiau pateikta programa su ciklu, kuris pakartoja panašią kodo dalį. Programa nubrėžia robotui kvadratinį kelią:_
+_Žemiau pateikta programa su ciklu: jis pakartoja tą pačią programos dalį. Robotas važiuoja kvadratu:_
 
 <Columns cols={2}>
   <Frame>
@@ -128,41 +136,41 @@ _Žemiau pateikta programa su ciklu, kuris pakartoja panašią kodo dalį. Progr
 
 [Paleisti simuliatoriuje](https://simulator.primastem.com/#top=cfor,crig,cfun.r003&fn=cfor,crig&s=l1144402&r=225-525-0&run)
 
-Komandos pirmiausia dedamos į viršutinę valdymo pulto dalį (6 lizdai) ir vykdomos iš kairės į dešinę. Tušti lizdai ir klaidos praleidžiami (pavyzdžiui, dvi komandos viename bloke arba reikšmė be komandos).
+Komandos pirmiausia dedamos į viršutinę valdymo pulto eilę (6 poros). Robotas jas vykdo iš kairės į dešinę. Tuščius lizdus ir klaidas robotas praleidžia. Klaida yra, pavyzdžiui, dvi komandos vienoje poroje arba reikšmė be komandos.
 
-Žetonų seka lemia roboto judėjimą.
+Žetonų seka lemia, kaip važiuos robotas.
 
 Paspauskite **▶ Start**, kad paleistumėte programą.
 
 Numatytosios reikšmės:
 
-- „Pirmyn“: 15 cm.
-- „Kairėn / Dešinėn“: 90°.
+- „Pirmyn“ pavažiuoja 15 cm.
+- „Kairėn“ ir „Dešinėn“ pasuka 90°.
 - Ciklai (kartojimai) pakartoja komandą kelis kartus.
-- „Funkcija“ iškviečia paprogramę iš apatinės valdymo pulto dalies (5 lizdai).
-- Paprogramę galite iškviesti kelis kartus ciklu: pridėkite kartojimo žetoną prie „Funkcijos“ (pavyzdys pateiktas aukščiau).
+- „Funkcija“ iškviečia paprogramę iš apatinės valdymo pulto eilės (5 poros).
+- Paprogramę galite iškviesti kelis kartus: įdėkite kartojimo žetoną į porą su „Funkcija“ (pavyzdys pateiktas aukščiau).
 
-### Svarbios funkcijos:
+### Svarbios funkcijos
 
-- **Nutraukite** programos vykdymą, dar kartą paspausdami **▶ Start**, kol robotas juda.
-- Valdymo pultas iki išjungimo įsimena paskutinę judėjimo komandos **nustatytą reikšmę** (atstumą ar kampą): pavyzdžiui, jei „Pirmyn“ = „200“, visos kitos komandos „Pirmyn“ vykdomos su šia reikšme.
+- Programą galite **sustabdyti**, jei dar kartą paspausite **▶ Start**, kol robotas juda.
+- Valdymo pultas iki išjungimo įsimena paskutinę kiekvienos judėjimo komandos **nustatytą reikšmę** (atstumą ar kampą). Pavyzdžiui, jei „Pirmyn“ gavo 200, visos kitos „Pirmyn“ komandos taip pat pavažiuos 200 mm.
 - Reikšmės po aritmetinių veiksmų taip pat išsaugomos.
-- „**Numatytąjį atstumą**“ pakeiskite tarnybiniu žetonu. Jis keičia žingsnį komandoms Pirmyn ir Atgal. Pavyzdžiui, 12,5 cm žingsniui padėkite žetoną „Numatytasis žingsnis“ su reikšme 125. Reikšmė išsaugoma ir išjungus. Tinka skaičiai nuo 1 iki 999. Žetonas be skaičiaus grąžina 150 mm žingsnį. Su aritmetika arba nuliu lizdas mirksi raudonai, o žingsnis nesikeičia.
-- Valdymo pultas ir robotas **išsijungia automatiškai**, jei 15 minučių niekas nevyksta.
-- Kol robotas laukia komandos, jis mirksi akimis, rodydamas, kad yra įjungtas ir pasiruošęs.
-- **Trumpai paspaudus roboto mygtuką**, robotas nuskaito po savimi esantį žetoną ir pasako, kas tai.
-- **Visus roboto garsus** galite išjungti ir įjungti, 5 sekundes laikydami nuspaudę roboto mygtuką: palaukite trumpo pyptelėjimo ir atleiskite. Robotas sumirksi raudonai, jei garsas dabar išjungtas, ir žaliai, jei įjungtas.
-- **Valdymo pulto garsą** galite išjungti ir įjungti, 5 sekundes laikydami nuspaudę mygtuką **▶ Start**: palaukite trumpo pyptelėjimo ir atleiskite. Kol vykdoma programa, tai neveikia.
+- **Numatytąjį žingsnį** keičia tarnybinis žetonas „Numatytasis žingsnis“. Jis keičia žingsnį komandoms „Pirmyn“ ir „Atgal“. Pavyzdžiui, 12,5 cm žingsniui padėkite jį su skaičiumi 125. Reikšmė išsaugoma ir išjungus. Tinka skaičiai nuo 1 iki 999. Žetonas be skaičiaus grąžina 150 mm žingsnį. Su aritmetika arba nuliu lizdas mirksi raudonai, o žingsnis nesikeičia.
+- Valdymo pultas ir robotas **išsijungia patys**, jei 15 minučių niekas nevyksta.
+- Kol robotas laukia komandos, jis mirksi akimis. Taip matyti, kad jis įjungtas ir pasiruošęs.
+- **Trumpai paspauskite roboto mygtuką**, ir robotas nuskaitys po savimi esantį žetoną ir pasakys, kas tai.
+- **Visus roboto garsus** galite išjungti ir įjungti, 5 sekundes laikydami nuspaudę roboto mygtuką. Palaukite trumpo pyptelėjimo ir atleiskite. Robotas sumirksi raudonai, jei garsas dabar išjungtas, ir žaliai, jei įjungtas.
+- **Valdymo pulto garsą** galite išjungti ir įjungti, 5 sekundes laikydami nuspaudę **▶ Start**. Palaukite trumpo pyptelėjimo ir atleiskite. Kol vykdoma programa, tai neveikia.
 - **Atnaujinus programinę įrangą**, gali reikėti iš naujo kalibruoti roboto judėjimą.
 - **Roboto nustatymų atkūrimas**: 10 sekundžių laikykite nuspaudę roboto mygtuką (išsamiau žr. „Roboto kalibravimas“ žemiau).
-- **Valdymo pultą ir robotą suporuoti** gali reikėti atnaujinus įrenginių programinę įrangą. Laikykite nuspaudę pulto mygtuką **▶ Start** ilgiau nei 10 sekundžių: pyptelėjimas 5-ąją sekundę reiškia, kad reikia laikyti toliau.
+- **Valdymo pultą ir robotą suporuoti** gali reikėti atnaujinus programinę įrangą. Laikykite nuspaudę pulto mygtuką **▶ Start** ilgiau nei 10 sekundžių. Pyptelėjimas 5-ąją sekundę reiškia, kad reikia laikyti toliau.
 
-### Roboto kalibravimas:
+### Roboto kalibravimas
 
 - Prieš kalibruodami atnaujinkite robotą ir valdymo pultą į naujausią stabilią programinę įrangą svetainėje [update.primastem.com](https://update.primastem.com) ([kaip atnaujinti](/en-lt/update)). Kalibravimas, atliktas su sena programine įranga, gali būti netikslus.
-- Pirmiausia paleiskite žetoną „Kalibravimas“ be skaičiaus: robotas išmatuoja variklių poliškumą, pašalina laisvumą ir nustato tiesiaeigį judėjimą. Žetonas veikia iki 2 minučių. Pirmąją pusę minutės robotas turi stovėti vietoje, jo nelieskite. Šiuo metu roboto mygtukas neveikia.
-- Tada kalibruokite posūkių kampus. Ant stalo paviršiaus pažymėkite tikslią roboto padėtį. Reikia 32 posūkių po 90° pagal laikrodžio rodyklę: sudėkite programą „Kartojimas 8 + Dešinėn“ ir paleiskite ją keturis kartus. Robotas turi apsisukti aštuonis kartus (90×32 = 2880°) ir grįžti į pradinę padėtį.
-- Įvertinkite nuokrypį nuo žymos ir įveskite pataisą žetonu „Kalibravimas“ kartu su skaičiaus žetonu: jei robotas sustoja nepasiekęs žymos, pridėkite „+“ (pavyzdžiui, „Kalibravimas“ + „+5“); jei pasisuka per toli, pridėkite „−“ (pavyzdžiui, „Kalibravimas“ + „−5“), tada **▶ Start**. Skaičius rodo, keliais laipsniais robotas suklydo per visus 32 posūkius kartu. Robotas priima skaičius iki 180. Jei skaičius didesnis arba robotas negali išsaugoti pataisos, lizdas mirksi raudonai. Paprastas skaičius be „+“ ar „−“ šalia „Kalibravimo“ neveikia: lizdas mirksi raudonai.
+- Pirmiausia paleiskite žetoną „Kalibravimas“ be skaičiaus. Robotas patikrina variklių poliškumą, pašalina laisvumą ir nustato tiesų judėjimą. Tai trunka iki 2 minučių. Pirmąją pusę minutės robotas turi stovėti vietoje, jo nelieskite. Šiuo metu roboto mygtukas neveikia.
+- Tada kalibruokite posūkių kampus. Ant stalo paviršiaus pažymėkite tikslią roboto padėtį. Reikia 32 posūkių po 90° pagal laikrodžio rodyklę: sudėkite programą iš žetonų „Kartojimas 8“ ir „Dešinėn“ ir paleiskite ją keturis kartus. Robotas turi apsisukti aštuonis kartus (90 × 32 = 2880°) ir grįžti į pradinę padėtį.
+- Įvertinkite nuokrypį nuo žymos ir įveskite pataisą žetonu „Kalibravimas“ su skaičiumi. Jei robotas sustoja nepasiekęs žymos, pridėkite „+“, pavyzdžiui, „Kalibravimas“ ir „+5“. Jei pasisuka per toli, pridėkite „−“, pavyzdžiui, „Kalibravimas“ ir „−5“. Tada paspauskite **▶ Start**. Skaičius rodo, keliais laipsniais robotas suklydo per visus 32 posūkius kartu. Robotas priima skaičius iki 180. Jei skaičius didesnis arba robotas negali išsaugoti pataisos, lizdas mirksi raudonai. Paprastas skaičius be „+“ ar „−“ šalia „Kalibravimo“ neveikia: lizdas mirksi raudonai.
 - Kartokite, kol robotas tiksliai grįš į pradinę padėtį.
 - Kalibravimas išsaugomas ir išjungus.
 - Dėmesio! Kalibravimo atkūrimas: 10 sekundžių laikykite nuspaudę roboto mygtuką, šviesos sumirksi raudonai, žaliai, mėlynai ir baltai. Atkūrimas ištrina visus kalibravimus, garsumą ir išjungtą garsą. Po atkūrimo išjunkite ir vėl įjunkite robotą, tada atlikite kalibravimą iš pradžių.
@@ -171,29 +179,29 @@ Numatytosios reikšmės:
   Šis būdas skirtas tik pirmajai versijai (MVP). Su nauja programine įranga „Kalibravimas“ su paprastu skaičiumi neveikia: lizdas mirksi raudonai.
 
   1. Norėdami kalibruoti giroskopą, padėkite robotą ant horizontalaus paviršiaus, įdėkite žetoną „Kalibravimas“ į valdymo pultą ir paspauskite **▶ Start**.
-  2. Norėdami kalibruoti judėjimo atstumą, išmatuokite tikrąjį kelią su komanda „Pirmyn“, padėkite žetoną „Kalibravimas“ ir žetoną su reikiama reikšme, tada **▶ Start**. Reikšmę į bet kurį skaitinį NFC žetoną galite įrašyti mobiliuoju telefonu su NFC kaip tekstą pavidalu nXXX (pavyzdžiui, n095 reiškia 95 mm). Po to roboto judėjimo atstumas bus tikslus.\*
+  2. Norėdami kalibruoti judėjimo atstumą, išmatuokite, kiek robotas iš tikrųjų pavažiavo su komanda „Pirmyn“. Padėkite žetoną „Kalibravimas“ ir žetoną su reikiama reikšme, tada paspauskite **▶ Start**. Reikšmę į bet kurį NFC žetoną galite įrašyti mobiliuoju telefonu su NFC: tekstu pavidalu nXXX (pavyzdžiui, n095 reiškia 95 mm). Po to robotas pavažiuos tikslų atstumą.
 </Accordion>
 
 ### NFC žetonų programavimas
 
-Galite pakeisti esamus arba **sukurti savo žetonus**: komandas, skaitines reikšmes ar aritmetinius veiksmus. Tam reikia telefono su NFC ir žymų skaitymo ir įrašymo programėlės, pavyzdžiui, „NFC Tools“. Reikšmę į tuščią skaitinę NFC žymą galite įrašyti mobiliuoju telefonu su NFC kaip paprastą 4 simbolių tekstą.
+Galite pakeisti esamus žetonus arba **sukurti savo**: komandas, skaičius ar aritmetinius veiksmus. Tam reikia telefono su NFC ir žymų skaitymo ir įrašymo programėlės, pavyzdžiui, „NFC Tools“. Kodas įrašomas į tuščią NFC žymą paprastu 4 simbolių tekstu.
 
-## Svarbu!
+## Svarbu
 
 Visi saugos įspėjimai ir teisinė informacija pateikti puslapyje [Naudotojo vadovas](/en-lt/safety).
 
-> Rinkinys **neskirtas jaunesniems nei 4 metų vaikams** ir jame yra smulkių dalių: **galima užspringti**! Naudokite **tik prižiūrint suaugusiesiems**!
+> Rinkinys **neskirtas jaunesniems nei 4 metų vaikams**. Jame yra smulkių dalių, **jomis galima užspringti**! Naudokite **tik prižiūrint suaugusiesiems**!
 
-Įrenginyje yra ličio jonų akumuliatoriai. **Įkraukite tik prižiūrint suaugusiesiems**, naudodami standartinį USB 5 V įkroviklį ir USB-C kabelį.
+Įrenginiuose yra ličio jonų akumuliatoriai. **Įkraukite juos tik prižiūrint suaugusiesiems**, per standartinį USB 5 V įkroviklį ir USB-C kabelį.
 
-Valdymo pulto ir roboto įkrovimo (1 valanda) pakanka 1–2 pamokoms; visiško įkrovimo (2–3 valandos) pakanka 3 pamokoms po 30–45 minutes. Laikui bėgant akumuliatorių talpa gali sumažėti, juos galima pakeisti naujais 16340 ličio jonų akumuliatoriais.
+Valdymo pulto ir roboto įkrovimo per 1 valandą pakanka 1–2 pamokoms. Visiško įkrovimo (2–3 valandos) pakanka 3 pamokoms po 30–45 minutes. Laikui bėgant akumuliatorių talpa gali sumažėti. Juos galima pakeisti naujais 16340 ličio jonų akumuliatoriais.
 
 Jei rinkinys ilgai nenaudojamas, akumuliatorius įkraukite **kas 2–3 mėnesius**. Visiškai išsikrovę akumuliatoriai gali sugesti, tada juos reikės pakeisti.
 
-**Neardykite įrenginio** patys: sugedus įrenginiui arba prireikus pakeisti akumuliatorius, kreipkitės į pardavėją arba į specializuotą elektronikos remonto centrą.
+**Neardykite įrenginio** patys. Jei įrenginys sugedo arba reikia pakeisti akumuliatorius, kreipkitės į pardavėją arba į elektronikos remonto dirbtuves.
 
-Rinkinį laikykite, naudokite ir kraukite sausoje patalpoje, esant \+5…\+35 °C temperatūrai. Saugokite nuo tiesioginių saulės spindulių, skysčių, dulkių ir staigių temperatūros ar drėgmės pokyčių, dėl kurių gali susidaryti kondensatas.
+Rinkinį laikykite, naudokite ir kraukite sausoje patalpoje, nuo \+5 iki \+35 °C temperatūroje. Saugokite nuo tiesioginių saulės spindulių, skysčių, dulkių ir staigių temperatūros ar drėgmės pokyčių: dėl jų susidaro kondensatas.
 
-Saugokite nuo smūgių ir vibracijos. Įrenginį gabenkite ir laikykite originalioje pakuotėje, esant \+5…\+35 °C temperatūrai, saugodami nuo mechaninių pažeidimų ir drėgmės.
+Saugokite nuo smūgių ir vibracijos. Įrenginį gabenkite ir laikykite originalioje pakuotėje, nuo \+5 iki \+35 °C temperatūroje, saugodami nuo pažeidimų ir drėgmės.
 
-P. S.: PrimaSTEM yra praktiška priemonė programuoti mokytis, kūrybiškam mąstymui ir logikai lavinti. Išsami informacija apie funkcijas pateikta **Mokytojo vadove**.
+Daugiau apie darbą su PrimaSTEM skaitykite [Mokytojo vadove](/en-lt/teachersguide).

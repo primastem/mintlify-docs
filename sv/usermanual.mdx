@@ -1,6 +1,6 @@
 ---
 title: "Enhet och inställningar"
-description: '**PrimaSTEM** — ett utbildningsset för att lära barn från 4 års ålder grunderna i logik, programmering och matematik.'
+description: 'PrimaSTEM lär barn från 4 år grunderna i logik, programmering och matematik.'
 icon: 'book-open'
 mode: "default"
 ---
@@ -11,7 +11,7 @@ mode: "default"
 
 - Lekrobot
 - Kontrollpanel för robot
-- Kommando-, värde- och aritmetiska operationsbrickor för att skapa program
+- Kommando-, värde- och aritmetikbrickor som du bygger programmet av
 
 > Paketinnehåll och utseende kan variera något. Vänligen kontrollera vid köp.
 
@@ -21,11 +21,11 @@ Dimensioner: D=120 mm, H=44 mm.
 
 ![robot](../images/usermanual/robot.png)
 
-Roboten är utrustad med en strömknapp, LED-lampor, en högtalare, en funktionsknapp och en USB-C-port för laddning av batteriet.
+Roboten har en strömknapp, LED-lampor, en högtalare, en funktionsknapp och en USB-C-port för laddning av batteriet.
 
-En markör med diameter på upp till 10 mm kan installeras i mitten av roboten för att rita enkla former under rörelse.
+I mitten av roboten kan du sätta en markör med diameter upp till 10 mm. Då ritar roboten enkla former medan den kör.
 
-Utseendet kan variera något beroende på konfiguration, men huvudfunktionaliteten behålls.
+Utseendet kan variera något mellan olika utföranden. Funktionerna är desamma.
 
 ### Kontrollpanel
 
@@ -33,50 +33,48 @@ Dimensioner: L=317 mm, W=217 mm, H=62 mm.
 
 ![control](../images/usermanual/control.png)
 
-Kontrollpanelen innehåller 11 dubbla fack för insättning av kommando- och värdebrickor: 6 för huvudprogrammet (övre delen), 5 för underprogrammet (nedre delen).
-Kontrollpanelen har två knappar: till vänster — ström, till höger — **▶ Start / Stopp** för att starta och stoppa programmet.
+Kontrollpanelen har 11 par celler för kommando- och värdebrickor. 6 par upptill är för huvudprogrammet, 5 par nedtill för underprogrammet.
 
-Efter att du har placerat kommando- och värdebrickor i facken, tryck **▶ Start**: roboten kommer att köra programmet. Aktiva kommandon belyses av LED-lampor mellan facken.
+Kontrollpanelen har två knappar. Den vänstra slår på kontrollpanelen. Den högra, **▶ Start / Stopp**, startar och stoppar programmet.
 
-Om en bricka är felaktigt installerad signalerar kontrollpanelen med en röd LED, men programmet fortsätter (till exempel när en värdebricka installeras utan kommando).
+Lägg kommando- och värdebrickor i cellerna och tryck **▶ Start**. Roboten kör programmet. LED-lamporna mellan cellerna visar vilket kommando som körs.
 
-Kontrollpanelen är utrustad med en USB-C-port för laddning och en högtalare för ljuduppspelning.
+Om en bricka ligger fel, till exempel en värdebricka utan kommando, tänds en röd LED vid cellen. Programmet fortsätter ändå.
 
-### Instruktionsbrickor
+Kontrollpanelen har en USB-C-port för laddning och en högtalare.
 
-Dimensioner: LxW=33 mm.
+### Brickor
 
-Setet inkluderar brickor för att skapa program.
-Varje bricka är ett kommando med en tydlig betydelse och instruktion. Sekvensen av block bestämmer robotens beteende.
+Dimensioner: 33 × 33 mm.
+
+Setet innehåller brickor som du bygger programmet av. Varje bricka ger ett kommando med tydlig betydelse. Ordningen på brickorna bestämmer vad roboten gör.
 
 ![coding chips](../images/usermanual/tokens.png)
 
-Brickorna är indelade i **kommandon**, **värden** och **aritmetiska**.
+Det finns tre sorters brickor: **kommandon**, **värden** och **aritmetik**.
 
 #### Kommandobrickor
 
-Grundläggande block för att komponera kontrollprogrammet:
+Med de här brickorna bygger du programmet:
 
-- **Framåt** — rörelse framåt (15 cm som standard)
-- **Höger** — sväng 90° medurs
-- **Vänster** — sväng 90° moturs
-- **Bakåt** — rörelse bakåt (15 cm som standard)
-- **Funktion** — kör underprogrammet från den nedre delen av kontrollpanelen
-- **Slumpmässig Rörelse** — ett steg framåt eller bakåt, eller en 90°-sväng åt vänster eller höger följd direkt av ett steg framåt med standardstegets längd (det finns ingen sväng på stället utan steg)
-- **Paus** — roboten står stilla i N sekunder (1–999 s; utan tal 1 s)
-- **Upprepningsbrickor (Loopar)** - Brickor med siffror från 2 till 6 (efter antalet prickar) och upprepningspiktogram med siffran inuti. Brickan med en tärning betyder ett slumpmässigt antal upprepningar från 1 till 6.
+- **Framåt**: roboten kör framåt (15 cm som standard).
+- **Höger**: roboten svänger 90° medurs.
+- **Vänster**: roboten svänger 90° moturs.
+- **Bakåt**: roboten kör bakåt (15 cm som standard).
+- **Funktion**: roboten kör underprogrammet från den nedre raden på kontrollpanelen.
+- **Slumpmässig Rörelse**: roboten tar ett steg framåt eller bakåt, eller svänger 90° åt vänster eller höger och tar direkt ett steg framåt. Steget har standardstegets längd. Det finns ingen sväng på stället utan steg.
+- **Paus**: roboten står stilla i N sekunder (1–999 s; utan tal 1 s).
+- **Upprepningsbrickor (Loopar)**: de har prickar från 2 till 6 eller en upprepningssymbol med siffran inuti. Brickan med en tärning ger ett slumpmässigt antal upprepningar från 1 till 6.
 
-> Numeriska värde- och aritmetikbrickor används också för att utöka programmeringen: till exempel att upprepa ett kommando eller ändra rörelsevinkel/distans.
+> Tal- och aritmetikbrickor utökar programmet. Med dem kan du upprepa ett kommando eller ändra vinkel och distans.
 
 #### Värdebrickor
 
-Vinkel- och distansbrickor: 30°, 36°, 45°, samt multipler (60°, 72°, etc.).
-Vinklar i grader, distanser i millimeter.
-Som standard — 90° och 150 mm (15 cm).
+Det finns vinkel- och distansbrickor: 30°, 36°, 45° och multipler av dem (60°, 72° och andra). Vinklar anges i grader, distanser i millimeter. Som standard svänger roboten 90° och kör 150 mm (15 cm).
 
 #### Aritmetiska Operationsbrickor
 
-Ändrar parametrarna för rörelsekommandon:
+De ändrar värdena för rörelsekommandon:
 
 - Addition (+)
 - Subtraktion (−)
@@ -86,41 +84,46 @@ Som standard — 90° och 150 mm (15 cm).
 - Potens (^)
 - Fakultet (!)
 
-Aritmetiken räknar mellan −5000 och 5000. Om svaret blir större än 5000 eller mindre än −5000, om du delar med 0, tar roten ur ett negativt tal eller fakulteten av ett tal större än 6, blinkar facket rött och talet ändras inte. Division och kvadratrot avrundas till närmaste heltal: 150 ÷ 4 = 37,5 → 38, 20 ÷ 3 = 6,67 → 7, √50 = 7,07 → 7. En exakt halv avrundas bort från noll: 37,5 → 38, −2,5 → −3.
+Aritmetiken räknar mellan −5000 och 5000. I de här fallen blinkar cellen rött och talet ändras inte:
+- svaret blir större än 5000 eller mindre än −5000;
+- division med 0;
+- roten ur ett negativt tal;
+- fakulteten av ett tal större än 6.
+
+Division och kvadratrot avrundas till närmaste heltal. Till exempel: 150 ÷ 4 ger 37,5, roboten tar 38. 20 ÷ 3 ger 6,67, roboten tar 7. √50 ger 7,07, roboten tar 7. En exakt halv avrundas bort från noll: 37,5 blir 38, −2,5 blir −3.
 
 ## Anslutning mellan Kontrollpanel och Robot
 
-Det rekommenderas att först slå på roboten, sedan kontrollpanelen.
+Slå först på roboten, sedan kontrollpanelen.
 
-Placera roboten på en plan yta före anslutning: efter parkoppling blir LED-lamporna vita. Medan anslutning saknas lyser roboten och kontrollpanelen ljusblått.
+Placera roboten på en plan yta före anslutning. Medan anslutning saknas lyser roboten och kontrollpanelen ljusblått. När anslutningen finns blir LED-lamporna vita.
 
-Kontrollera anslutningen: installera brickan "Framåt" och tryck **▶ Start**.
+Kontrollera anslutningen: lägg i brickan «Framåt» och tryck **▶ Start**.
 
-Om det inte finns någon anslutning, starta om båda enheterna eller ladda dem. Tillfällig anslutningsförlust kan uppstå nära starka elektromagnetiska fältkällor (mobiltelefon, WiFi-punkt).
+Om det inte finns någon anslutning, starta om båda enheterna eller ladda dem. Nära källor till starka elektromagnetiska fält (mobiltelefon, Wi-Fi-punkt) kan anslutningen försvinna en kort stund.
 
-> **Efter uppdatering av enheternas programvara** kan parkoppling krävas: slå på roboten, sedan kontrollpanelen, tryck och håll **▶ Start**-knappen på kontrollpanelen i mer än 10 sekunder. Vid 5:e sekunden hörs en kort signal: släpp inte, fortsätt hålla. Vid 10:e sekunden startar parkopplingen.
+> **Efter en firmwareuppdatering** kan du behöva parkoppla enheterna igen. Slå på roboten, sedan kontrollpanelen. Tryck och håll **▶ Start** på kontrollpanelen i mer än 10 sekunder. Vid 5:e sekunden hörs en kort signal: släpp inte knappen. Vid 10:e sekunden startar parkopplingen.
 
 ### Styr roboten genom att luta kontrollpanelen
 
-Så snart kontrollpanelen har anslutit till roboten kan du styra roboten utan brickor genom att luta kontrollpanelen. Det fungerar så länge inga brickor är isatta och du inte har tryckt på **▶ Start** än.
+Så snart kontrollpanelen har anslutit till roboten kan du styra roboten utan brickor: luta bara kontrollpanelen. Det fungerar så länge det inte ligger brickor i cellerna och du inte har tryckt på **▶ Start** än.
 
 - Lägg först kontrollpanelen plant i en sekund. Innan dess reagerar roboten inte på lutningar.
-- Luta kontrollpanelen bort från dig: roboten kör 15 cm framåt. Mot dig: 15 cm bakåt.
-- Luta åt vänster eller höger: roboten svänger 90° åt samma håll.
+- Luta kontrollpanelen bort från dig, så kör roboten 15 cm framåt. Mot dig: 15 cm bakåt.
+- Luta åt vänster eller höger, så svänger roboten 90° åt samma håll.
 - För varje steg piper kontrollpanelen kort.
-- Så länge kontrollpanelen är lutad tar roboten det ena steget efter det andra. För tillbaka kontrollpanelen till vågrätt läge: roboten avslutar det pågående steget och stannar.
+- Så länge kontrollpanelen är lutad tar roboten det ena steget efter det andra. För tillbaka kontrollpanelen till vågrätt läge, så avslutar roboten det pågående steget och stannar.
 - Luta tydligt, mer än 20°. Om handen darrar lite kör roboten inte.
 
-Lutningsstyrningen stängs av så snart du sätter i en bricka eller trycker på **▶ Start**. Den sätts på igen när kontrollpanelen ansluter till roboten på nytt, till exempel efter att du har stängt av och slagit på roboten.
+Lutningsstyrningen stängs av så snart du lägger en bricka i en cell eller trycker på **▶ Start**. Den sätts på igen när kontrollpanelen ansluter till roboten på nytt, till exempel efter att du har stängt av och slagit på roboten.
 
-## Hur Fungerar Det?
+## Hur Fungerar Det
 
-För att programmera rörelse, installera kommandobrickor i kontrollpanelens fack (till exempel "Framåt", "Vänster", "Funktion" etc.).
-Du kan ställa in kommandovärden och antal upprepningar, samt värden för vinklar, distanser och aritmetiska operationer.
+För att programmera rörelse lägger du kommandobrickor i kontrollpanelens celler, till exempel «Framåt», «Vänster», «Funktion». Till kommandona kan du lägga antal upprepningar, vinklar, distanser och aritmetiska operationer.
 
-För gemensam installation av ett kommando och värde (upprepning) är facken förenade med "broar" med indikatorer.
+Cellerna är kopplade i par med «broar» med indikatorer. I den ena cellen i paret lägger du kommandot, i den andra värdet eller upprepningen.
 
-  *Nedan visas ett program som använder en loop som exempel för att upprepa en liknande kodsektion. Programmet skapar en kvadratisk rörelserutt för roboten:*
+*Nedan finns ett exempelprogram med en loop: loopen upprepar samma del av programmet. Roboten kör i en kvadrat:*
 
 <Columns cols={2}>
   <Frame>
@@ -133,73 +136,72 @@ För gemensam installation av ett kommando och värde (upprepning) är facken f�
 
 [Kör i simulatorn](https://simulator.primastem.com/#top=cfor,crig,cfun.r003&fn=cfor,crig&s=l1144402&r=225-525-0&run)
 
-Kommandon installeras först i den övre delen av kontrollpanelen (6 fack) och körs från vänster till höger. Tomma fack eller fel ignoreras (till exempel två kommandon i ett block eller ett värde utan kommando).
+Lägg först kommandona i den övre raden på kontrollpanelen (6 par). Roboten kör dem från vänster till höger. Tomma celler och fel hoppar roboten över. Ett fel är till exempel två kommandon i ett par eller ett värde utan kommando.
 
-Sekvensen av block bestämmer robotens rörelse.
+Ordningen på brickorna bestämmer hur roboten kör.
 
 Tryck **▶ Start** för att starta programmet.
 
 Som standard:
-- "Framåt" — 15 cm.
-- "Vänster/Höger" — 90°.
+- «Framåt» kör 15 cm.
+- «Vänster» och «Höger» svänger 90°.
 - Loopar (upprepningar) upprepar kommandot flera gånger.
-- "Funktion" anropar underprogrammet från den nedre delen av kontrollpanelen (5 fack).
-- Du kan anropa ett underprogram flera gånger via en loop genom att lägga till en upprepningsbricka till "Funktion" (exempel visas ovan).
+- «Funktion» anropar underprogrammet från den nedre raden på kontrollpanelen (5 par).
+- Du kan anropa underprogrammet flera gånger: lägg en upprepningsbricka i paret med «Funktion» (exempel ovan).
 
-### Viktiga Funktioner:
+### Viktiga Funktioner
 
-- **Avbryt** programkörningen genom att trycka **▶ Start** igen under rörelse.
-- Kontrollpanelen kommer ihåg det senaste **inställda värdet** (distans/vinkel) för rörelsekommandot tills avstängning: till exempel, om "Framåt" = "200", körs alla efterföljande "Framåt"-kommandon med detta värde.
+- **Avbryt** programmet genom att trycka **▶ Start** igen under rörelse.
+- Kontrollpanelen kommer ihåg det senaste **inställda värdet** (distans eller vinkel) för varje rörelsekommando tills den stängs av. Till exempel: om «Framåt» fick 200, kör alla följande «Framåt» också 200 mm.
 - Värden efter aritmetik sparas också.
-- Ändra "**standardsteget**" kan göras med servicebrickan **Standardsteg**, som ändrar steget för Framåt och Bakåt: till exempel, för 12,5 cm, installera brickan "Standardsteg" med värdet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Brickan utan tal återställer 150 mm. Med aritmetik eller noll blinkar facket rött och steget förblir detsamma.
-- Kontrollpanelen och roboten **stängs av automatiskt** om ingenting händer på 15 minuter.
-- Medan roboten väntar på ett kommando blinkar den med ögonen: så syns det att den är på och redo.
-- **Kort tryck på robotknappen**: roboten läser brickan under sig och säger vad den är.
-- **Alla robotens ljud** kan slås av och på genom att hålla robotknappen i 5 sekunder: vänta på den korta signalen och släpp. Roboten blinkar rött om ljudet stängdes av och grönt om det slogs på.
-- **Kontrollpanelens ljud** kan slås av och på genom att hålla **▶ Start**-knappen i 5 sekunder: vänta på den korta signalen och släpp. Medan ett program körs fungerar det inte.
-- **Efter en programvaruuppdatering** kan kalibrering av robotrörelse behövas.
+- **Standardsteget** ändrar du med servicebrickan «Standardsteg». Den ändrar steget för «Framåt» och «Bakåt». Till exempel, för 12,5 cm lägger du den med talet 125. Värdet sparas efter avstängning. Tal från 1 till 999 fungerar. Utan tal återställer brickan 150 mm. Med aritmetik eller noll blinkar cellen rött och steget ändras inte.
+- Kontrollpanelen och roboten **stängs av av sig själva** om ingenting händer på 15 minuter.
+- Medan roboten väntar på ett kommando blinkar den med ögonen. Så syns det att den är på och redo.
+- **Tryck kort på robotknappen**, så läser roboten brickan under sig och säger vad den är.
+- **Alla robotens ljud** slås av och på när du håller robotknappen i 5 sekunder. Vänta på den korta signalen och släpp. Roboten blinkar rött om ljudet stängdes av och grönt om det slogs på.
+- **Kontrollpanelens ljud** slås av och på när du håller **▶ Start** i 5 sekunder. Vänta på den korta signalen och släpp. Medan ett program körs fungerar det inte.
+- **Efter en firmwareuppdatering** kan roboten behöva kalibrering av rörelsen.
 - **Återställning av robotens inställningar**: håll robotknappen i 10 sekunder (mer i avsnittet «Robotkalibrering»).
-- **Parkoppling av kontrollpanel och robot** kan vara nödvändig efter uppdatering av enheternas programvara. Håll **▶ Start**-knappen på kontrollpanelen i mer än 10 sekunder: signalen vid 5:e sekunden betyder att du ska fortsätta hålla.
+- **Parkoppling av kontrollpanel och robot** kan behövas efter en firmwareuppdatering. Håll **▶ Start** på kontrollpanelen i mer än 10 sekunder. Signalen vid 5:e sekunden betyder att du ska fortsätta hålla.
 
-### Robotkalibrering:
+### Robotkalibrering
 
-- Uppdatera roboten och kontrollpanelen till den senaste stabila firmwaren på [update.primastem.com](https://update.primastem.com) ([så uppdaterar du](/sv/update)) innan du kalibrerar. En kalibrering som görs med gammal firmware kan bli inexakt.
-- Kör först brickan «Kalibrering» utan siffra: roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram. Brickan arbetar i upp till 2 minuter. Den första halvminuten måste roboten stå stilla, rör den inte. Robotknappen fungerar inte under tiden.
-- Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordsytan. Det behövs 32 svängar på 90° medurs: skapa programmet «Upprepning 8 + högersväng» och kör det fyra gånger. Roboten ska göra åtta hela varv (90×32 = 2880°) och återgå till sin ursprungliga riktning.
-- Bedöm avvikelsen från markeringen och korrigera med brickan «Kalibrering» och en sifferbricka: om roboten stannar före markeringen, lägg till «+» (till exempel «Kalibrering» + «+5»); om den går förbi, lägg till «−» (till exempel «Kalibrering» + «−5»), sedan **▶ Start**. Talet anger hur många grader roboten missade under alla 32 svängar tillsammans. Roboten tar emot tal upp till 180. Om talet är större eller roboten inte kan spara korrigeringen blinkar facket rött. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: facket blinkar rött.
+- Uppdatera roboten och kontrollpanelen till den senaste stabila firmwaren på [update.primastem.com](https://update.primastem.com) ([så uppdaterar du](/sv/update)) innan du kalibrerar. Med gammal firmware kan kalibreringen bli inexakt.
+- Kör först brickan «Kalibrering» utan siffra. Roboten mäter motorpolariteten, tar bort glappet och ställer in rörelse rakt fram. Det tar upp till 2 minuter. Den första halvminuten måste roboten stå stilla, rör den inte. Robotknappen fungerar inte under tiden.
+- Kalibrera sedan svängvinklarna. Markera robotens exakta riktning på bordet. Det behövs 32 svängar på 90° medurs: bygg programmet «Upprepa 8» och «Höger» och kör det fyra gånger. Roboten ska göra åtta hela varv (90 × 32 = 2880°) och återgå till sin ursprungliga riktning.
+- Se hur mycket roboten avviker från markeringen och korrigera med brickan «Kalibrering» och ett tal. Om roboten stannar före markeringen, lägg till «+», till exempel «Kalibrering» och «+5». Om den går förbi, lägg till «−», till exempel «Kalibrering» och «−5». Tryck sedan **▶ Start**. Talet anger hur många grader roboten missade under alla 32 svängar tillsammans. Roboten tar emot tal upp till 180. Om talet är större eller roboten inte kan spara korrigeringen blinkar cellen rött. Ett vanligt tal utan «+» eller «−» tillsammans med «Kalibrering» fungerar inte: cellen blinkar rött.
 - Upprepa tills roboten återgår exakt till sin ursprungliga riktning.
 - Kalibreringen sparas efter avstängning.
 - Observera! Återställning av kalibreringen: håll robotknappen i 10 sekunder, lamporna blinkar rött, grönt, blått och vitt. Återställningen raderar alla kalibreringar, volymen och avstängt ljud. Stäng sedan av och slå på roboten och gör om kalibreringen från början.
 
 <Accordion icon="rectangle-terminal" title="Kalibrering av första enhetsversionen (MVP) med robot på 10 cm i diameter">
-Det här sättet gäller bara den första versionen (MVP). På nya firmwareversioner fungerar «Kalibrering» med ett vanligt tal inte, facket blinkar rött.
+Det här sättet gäller bara den första versionen (MVP). På nya firmwareversioner fungerar «Kalibrering» med ett vanligt tal inte, cellen blinkar rött.
 
-1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, sätt in brickan "Kalibrering" i kontrollpanelen och tryck **▶ Start**.
-2. För att kalibrera rörelsedistans, mät den faktiska banan med kommandot "Framåt", installera "Kalibrering" och brickan med nödvändigt värde, sedan **▶ Start**. Du kan skriva värdet till vilket digitalt NFC-chip som helst med hjälp av en mobiltelefon med NFC som text i formen nXXX (till exempel, n095 för 95 mm). Efter detta kommer robotens rörelsedistans att vara exakt.*
+1. För att kalibrera gyroskopet, placera roboten på en horisontell yta, lägg brickan «Kalibrering» i kontrollpanelen och tryck **▶ Start**.
+2. För att kalibrera distansen, mät hur långt roboten faktiskt kör med kommandot «Framåt». Lägg «Kalibrering» och brickan med önskat värde och tryck sedan **▶ Start**. Du kan skriva värdet på vilken NFC-bricka som helst med en mobiltelefon med NFC: som text i formen nXXX (till exempel n095 för 95 mm). Efter detta kör roboten exakt distans.
 </Accordion>
 
 ### Programmering av NFC-brickor
 
-Du kan ändra eller **skapa dina egna brickor** - kommandon, digitala värden eller aritmetiska operationer med hjälp av en telefon med NFC och ett program för läsning-skrivning av taggar, till exempel "NFC Tools". Du kan skriva ett värde till en tom digital NFC-tagg - chip med hjälp av en mobiltelefon med NFC som enkel text i form av 4 tecken.
+Du kan ändra brickor eller **skapa dina egna**: kommandon, tal eller aritmetiska operationer. Du behöver en telefon med NFC och en app för att läsa och skriva taggar, till exempel «NFC Tools». Koden skriver du på en tom NFC-tagg som enkel text med 4 tecken.
 
-## Viktigt!
+## Viktigt
 
 Alla säkerhetsvarningar och regelverksinformation finns på sidan [Bruksanvisning](/sv/safety).
 
-> Setet **är inte avsett för barn under 4 år** och innehåller små delar — **kvävningsrisk**! Använd **endast under uppsikt** av vuxna!
+> Setet **är inte avsett för barn under 4 år**. Det innehåller små delar, **kvävningsrisk**! Använd **endast under uppsikt** av vuxna!
 
-Enheten innehåller Li-ion-batterier. **Ladda endast under uppsikt** av vuxna med standard USB 5V och USB-C-kabel.
+Enheten innehåller Li-ion-batterier. **Ladda dem endast under uppsikt** av vuxna, med standard USB 5 V och USB-C-kabel.
 
-Laddning av kontrollpanel och robot (1 timme) räcker för 1–2 lektioner; full laddning (2–3 timmar) — för 3 lektioner på 30–45 minuter. Över tid kan batterikapaciteten minska, utbyte mot nya 16340 Li-ion-batterier är möjligt.
+En timmes laddning av kontrollpanel och robot räcker för 1–2 lektioner. Full laddning (2–3 timmar) räcker för 3 lektioner på 30–45 minuter. Med tiden kan batterikapaciteten minska. Batterierna kan bytas mot nya 16340 Li-ion-batterier.
 
-Om setet inte används på länge, ladda batterierna **varje 2-3 månad**. Vid djup urladdning kan batterierna skadas och behöva bytas ut.
+Om setet inte används på länge, ladda batterierna **var 2–3 månad**. Efter djup urladdning kan batterierna skadas och behöva bytas ut.
 
-**Öppna inte enheten** själv — vid fel eller behov av batteribyte, kontakta säljaren eller specialställen för elektronikreparation.
+**Öppna inte enheten** själv. Vid fel eller behov av batteribyte, kontakta säljaren eller en verkstad för elektronikreparation.
 
-Förvara, använd och ladda setet i ett torrt rum vid en temperatur på +5…+35°C. Undvik direkt solljus, vätskor, damm och plötsliga temperatur- eller fuktighetsförändringar som kan orsaka kondens.
+Förvara, använd och ladda setet i ett torrt rum vid en temperatur från +5 till +35 °C. Skydda det mot direkt solljus, vätskor, damm och plötsliga förändringar i temperatur eller fuktighet: de kan orsaka kondens.
 
-Undvik stötar och vibrationer. Transportera och förvara enheten i originalförpackningen vid en temperatur på +5…+35°C, skyddad från mekanisk skada och fukt.
+Undvik stötar och vibrationer. Transportera och förvara enheten i originalförpackningen vid en temperatur från +5 till +35 °C, skyddad från mekanisk skada och fukt.
 
-p.s.: PrimaSTEM är ett praktiskt verktyg för att lära sig programmering, som utvecklar kreativt tänkande och logik.
-Detaljerad information om funktionalitet finns i **Lärarhandledningen**.
+Läs mer om arbetet med PrimaSTEM i [Lärarhandledningen](/sv/teachersguide).
 
