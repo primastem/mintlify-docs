@@ -5,7 +5,7 @@ icon: 'book-open'
 mode: "default"
 ---
 
-## Specifiche Tecniche e Contenuto della Confezione
+## Specifiche tecniche e contenuto della confezione
 
 ![primastem](../images/usermanual/hello.png)
 
@@ -15,7 +15,7 @@ mode: "default"
 
 > Il contenuto e l'aspetto possono variare leggermente. Si prega di verificare al momento dell'acquisto.
 
-### Robot Giocattolo
+### Robot giocattolo
 
 Dimensioni: D=120 mm, H=44 mm.
 
@@ -53,7 +53,7 @@ Il kit contiene le tessere con cui si compone il programma. Ogni tessera dà un 
 
 Le tessere sono di tre tipi: **comandi**, **valori** e **aritmetica**.
 
-#### Tessere di Comandi
+#### Tessere di comandi
 
 Con queste tessere si compone il programma:
 
@@ -68,11 +68,11 @@ Con queste tessere si compone il programma:
 
 > Le tessere di numeri e di aritmetica ampliano il programma. Con loro si può ripetere un comando o cambiare l'angolo e la distanza.
 
-#### Tessere di Valori
+#### Tessere di valori
 
 Ci sono tessere di angoli e distanze: 30°, 36°, 45° e i loro multipli (60°, 72° e altri). Gli angoli si indicano in gradi, le distanze in millimetri. Per impostazione predefinita il robot ruota di 90° e avanza di 150 mm (15 cm).
 
-#### Tessere di Operazioni Aritmetiche
+#### Tessere di operazioni aritmetiche
 
 Modificano i valori dei comandi di movimento:
 
@@ -92,7 +92,7 @@ L'aritmetica calcola tra −5000 e 5000. In questi casi la cella lampeggia in ro
 
 La divisione e la radice si arrotondano all'intero più vicino. Ad esempio, 150 ÷ 4 dà 37,5 e il robot prende 38. 20 ÷ 3 dà 6,67 e il robot prende 7. √50 dà 7,07 e il robot prende 7. Una metà esatta si arrotonda allontanandosi dallo zero: 37,5 diventa 38, −2,5 diventa −3.
 
-## Connessione tra Pulsantiera e Robot
+## Connessione tra pulsantiera e robot
 
 Accendere prima il robot, poi la pulsantiera.
 
@@ -117,7 +117,7 @@ Appena la pulsantiera si collega al robot, si può guidare il robot senza tesser
 
 Il controllo con l'inclinazione si disattiva appena si inserisce una tessera in una cella o si preme **▶ Start**. Si riattiva quando la pulsantiera si ricollega al robot, ad esempio dopo aver spento e riacceso il robot.
 
-## Come Funziona
+## Come funziona
 
 Per programmare il movimento, inserire nelle celle della pulsantiera le tessere di comandi, ad esempio «Avanti», «Sinistra», «Funzione». Ai comandi si possono aggiungere il numero di ripetizioni, angoli, distanze e operazioni aritmetiche.
 
@@ -149,7 +149,7 @@ Per impostazione predefinita:
 - «Funzione» chiama il sottoprogramma dalla riga inferiore della pulsantiera (5 coppie).
 - Il sottoprogramma si può chiamare più volte: mettere una tessera di ripetizione in coppia con «Funzione» (esempio sopra).
 
-### Funzioni Importanti
+### Funzioni importanti
 
 - Per **interrompere** il programma, premere di nuovo **▶ Start** durante il movimento.
 - La pulsantiera ricorda l'ultimo **valore impostato** (distanza o angolo) per ogni comando di movimento finché non viene spenta. Ad esempio, se «Avanti» ha ricevuto 200, anche tutti i successivi «Avanti» percorrono 200 mm.
@@ -164,7 +164,7 @@ Per impostazione predefinita:
 - **Reset delle impostazioni del robot**: tenere premuto il pulsante del robot per 10 secondi (dettagli nella sezione «Calibrazione del Robot»).
 - **L'accoppiamento della pulsantiera e del robot** può servire dopo l'aggiornamento del firmware. Tenere premuto **▶ Start** sulla pulsantiera per più di 10 secondi. Il segnale al 5° secondo significa che bisogna continuare a tenere premuto.
 
-### Calibrazione del Robot
+### Calibrazione del robot
 
 - Prima di calibrare, aggiorni il robot e la pulsantiera all'ultimo firmware stabile su [update.primastem.com](https://update.primastem.com) ([come aggiornare](/it/update)). Con un firmware vecchio la calibrazione può risultare imprecisa.
 - Esegua prima la tessera «Calibrazione» senza numero. Il robot misura la polarità dei motori, elimina i giochi e imposta il movimento in linea retta. Ci vogliono fino a 2 minuti. Nel primo mezzo minuto il robot deve stare fermo: non lo tocchi. In questo tempo il pulsante del robot non funziona.
@@ -181,7 +181,7 @@ Questo metodo vale solo per la prima versione (MVP). Con il firmware nuovo «Cal
 2. Per calibrare la distanza, misurare quanto il robot ha percorso davvero con il comando «Avanti». Inserire «Calibrazione» e la tessera con il valore necessario, poi premere **▶ Start**. Il valore si può scrivere su qualsiasi tessera NFC con un telefono con NFC: come testo nella forma nXXX (ad esempio, n095 per 95 mm). Dopo questo il robot percorre la distanza esatta.
 </Accordion>
 
-### Programmazione delle Tessere NFC
+### Programmazione delle tessere NFC
 
 È possibile modificare le tessere o **creare le proprie**: comandi, numeri o operazioni aritmetiche. Serve un telefono con NFC e un'app per leggere e scrivere tag, ad esempio «NFC Tools». Il codice si scrive su un tag NFC vuoto come semplice testo di 4 caratteri.
 

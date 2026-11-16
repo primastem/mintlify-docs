@@ -5,7 +5,7 @@ icon: 'book-open'
 mode: "default"
 ---
 
-## Características Técnicas y Contenido del Paquete
+## Características técnicas y contenido del paquete
 
 ![primastem](../images/usermanual/hello.png)
 
@@ -15,7 +15,7 @@ mode: "default"
 
 > El contenido y el aspecto pueden variar ligeramente. Verifique al comprar.
 
-### Robot de Juego
+### Robot de juego
 
 Dimensiones: D=120 mm, H=44 mm.
 
@@ -53,7 +53,7 @@ El conjunto incluye fichas con las que se arman los programas. Cada ficha da un 
 
 Hay tres tipos de fichas: **comandos**, **valores** y **aritmética**.
 
-#### Fichas de Comandos
+#### Fichas de comandos
 
 Con estas fichas se arma el programa:
 
@@ -68,11 +68,11 @@ Con estas fichas se arma el programa:
 
 > Las fichas de números y de aritmética amplían el programa. Con ellas puede repetir un comando o cambiar el ángulo y la distancia.
 
-#### Fichas de Valores
+#### Fichas de valores
 
 Hay fichas de ángulos y distancias: 30°, 36°, 45° y sus múltiplos (60°, 72°, etc.). Los ángulos van en grados, las distancias en milímetros. Por defecto, el robot gira 90° y avanza 150 mm (15 cm).
 
-#### Fichas de Operaciones Aritméticas
+#### Fichas de operaciones aritméticas
 
 Cambian los valores de los comandos de movimiento:
 
@@ -92,7 +92,7 @@ La aritmética calcula entre −5000 y 5000. En estos casos, la celda parpadea e
 
 La división y la raíz se redondean al entero más cercano. Por ejemplo, 150 ÷ 4 da 37,5, y el robot toma 38. 20 ÷ 3 da 6,67, y el robot toma 7. √50 da 7,07, y el robot toma 7. Una mitad exacta se redondea alejándose del cero: 37,5 pasa a 38, −2,5 pasa a −3.
 
-## Conexión entre el Tablero y el Robot
+## Conexión entre el tablero y el robot
 
 Encienda primero el robot y luego el tablero.
 
@@ -117,7 +117,7 @@ En cuanto el tablero se conecta con el robot, puede manejar el robot sin fichas:
 
 El control por inclinación se desactiva en cuanto coloca una ficha en una celda o pulsa **▶ Inicio**. Vuelve a activarse cuando el tablero se conecta de nuevo con el robot, por ejemplo después de apagar y encender el robot.
 
-## Cómo Funciona
+## Cómo funciona
 
 Para programar el movimiento, coloque fichas de comandos en las celdas del tablero, por ejemplo «Adelante», «Izquierda», «Función». A los comandos puede añadir el número de repeticiones, ángulos, distancias y operaciones aritméticas.
 
@@ -149,7 +149,7 @@ Por defecto:
 - «Función» llama al subprograma de la fila de abajo del tablero (5 parejas).
 - Puede llamar al subprograma varias veces: coloque una ficha de repetición en la pareja de «Función» (ejemplo de arriba).
 
-### Funciones Importantes
+### Funciones importantes
 
 - **Detener** el programa: pulse **▶ Inicio** de nuevo mientras el robot se mueve.
 - El tablero recuerda el último **valor establecido** (distancia o ángulo) para cada comando de movimiento hasta que se apaga. Por ejemplo, si «Adelante» recibió 200, todos los siguientes «Adelante» también avanzan 200 mm.
@@ -164,7 +164,7 @@ Por defecto:
 - **Restablecimiento de los ajustes del robot**: mantenga el botón del robot 10 segundos (más detalles en «Calibración del Robot»).
 - **Emparejamiento del tablero y el robot** puede ser necesario después de actualizar el firmware. Mantenga **▶ Inicio** en el tablero más de 10 segundos. El pitido en el segundo 5 significa que hay que seguir pulsando.
 
-### Calibración del Robot
+### Calibración del robot
 
 - Antes de calibrar, actualice el robot y el tablero al último firmware estable en [update.primastem.com](https://update.primastem.com) ([cómo actualizar](/es/update)). Con un firmware antiguo, la calibración puede salir imprecisa.
 - Primero ejecute la ficha «Calibración» sin número. El robot comprueba la polaridad de los motores, elimina las holguras y ajusta el movimiento en línea recta. Esto tarda hasta 2 minutos. Durante el primer medio minuto el robot debe estar quieto, no lo toque. El botón del robot no funciona durante ese tiempo.
@@ -181,7 +181,7 @@ Este método sirve solo para la primera versión (MVP). Con el firmware nuevo, �
 2. Para calibrar la distancia, mida cuánto avanza de verdad el robot con el comando «Adelante». Coloque «Calibración» y la ficha con el valor necesario, luego pulse **▶ Inicio**. Puede escribir el valor en cualquier ficha NFC con un teléfono con NFC: como texto con la forma nXXX (por ejemplo, n095 para 95 mm). Después, el robot recorre la distancia exacta.
 </Accordion>
 
-### Programación de Fichas NFC
+### Programación de fichas NFC
 
 Puede modificar fichas o **crear las suyas**: comandos, números u operaciones aritméticas. Necesita un teléfono con NFC y una aplicación para leer y escribir etiquetas, por ejemplo "NFC Tools". Escriba el código en una etiqueta NFC en blanco como texto simple de 4 caracteres.
 
