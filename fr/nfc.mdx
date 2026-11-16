@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Mouvement
 
-| Commande | Jeton | NFC Code |
+| Commande | Jeton | Code NFC |
 | --- | --- | --- |
 | Avancer | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Gauche | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Répétition & contrôle
 
-| Commande | Jeton | NFC Code |
+| Commande | Jeton | Code NFC |
 | --- | --- | --- |
 | Répéter 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Répéter un nombre aléatoire de fois (de 1 à 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,46 +26,46 @@ mode: "default"
 
 ## 🔢 Nombres
 
-| Valeur | NFC Code |
+| Valeur | Code NFC |
 | --- | --- |
 | Nombres 1–999 | `n001`–`n999` |
 
 ## 🧮 Opérations mathématiques
 
-| Opération | NFC Code |
+| Opération | Code NFC |
 | --- | --- |
-| +1 à +999 | `a001`–`a999` |
-| −1 à −999 | `s001`–`s999` |
+| De +1 à +999 | `a001`–`a999` |
+| De −1 à −999 | `s001`–`s999` |
 | ×N | `m002`–`m999` |
 | ÷N | `d002`–`d999` |
 | X^N | `e002`–`e999` |
 | Racine carrée de X | `sqrt` |
 | Factorielle | `fact` |
 
-L'arithmétique compte jusqu'à 5000 dans les deux sens, la division et la racine sont arrondies à l'entier le plus proche. S'il n'y a pas de réponse (plus de 5000, division par 0, racine d'un nombre négatif, factorielle de plus de 6), la cellule clignote en rouge et le nombre reste le même.
+L'arithmétique compte de −5000 à 5000. La division et la racine sont arrondies à l'entier le plus proche. S'il n'y a pas de réponse (plus de 5000, division par 0, racine d'un nombre négatif, factorielle de plus de 6), la cellule clignote en rouge et le nombre reste le même.
 
 ## ⚙️ Paramètres
 
-| Commande | NFC Code |
+| Commande | Code NFC |
 | --- | --- |
-| Calibration (sans nombre : le robot règle ses moteurs et son gyroscope, environ 2 minutes, ne pas le toucher pendant la première demi-minute ; avec un jeton `+N` ou `−N` : correction des rotations après le test de 32 rotations ; ne fonctionne pas avec un nombre simple, la cellule devient rouge) | `ccal` |
-| Pas par défaut : longueur du pas pour Avancer et Reculer, utilisée aussi par Mouvement aléatoire (1–999 mm ; sans nombre, revient à 150 mm) | `clen` |
+| Calibration. Sans nombre, le robot règle ses moteurs et son gyroscope. Cela prend environ 2 minutes. Ne touchez pas le robot pendant la première demi-minute. Avec un jeton `+N` ou `−N`, le robot corrige ses rotations après le test de 32 rotations. Avec un nombre simple, le jeton ne fonctionne pas et la cellule devient rouge. | `ccal` |
+| Pas par défaut. Fixe la longueur du pas pour « Avancer » et « Reculer ». « Mouvement aléatoire » l'utilise aussi (1–999 mm). Sans nombre, le jeton remet le pas à 150 mm. | `clen` |
 
 ## 🔧 Avancé
 
-| Commande | NFC Code |
+| Commande | Code NFC |
 | --- | --- |
-| Échantillon audio (voir [Fichiers audio](/fr/sounds_reference)) | `xNNN` |
-| Phrase du robot (`csou` + nombre N : le robot dit la phrase xN des [fichiers audio](/fr/sounds_reference#-phrases-du-robot-réactions-et-messages-de-service-x001–x019)) | `csou` |
-| Niveau de volume (tableau de contrôle et robot : 0–100, au-delà de 100 = maximum) | `clvl` |
+| Son (voir [Référence des fichiers audio](/fr/sounds_reference)) | `xNNN` |
+| Phrase du robot. Placez `csou` avec un nombre N, et le robot dit la phrase xN des [fichiers audio](/fr/sounds_reference#-phrases-du-robot-réactions-et-messages-de-service-x001–x019) | `csou` |
+| Volume du tableau de contrôle et du robot (0–100, un nombre au-delà de 100 donne le maximum) | `clvl` |
 
 ## Comment écrire des données sur une étiquette NFC
 
-Vous pouvez créer votre propre jeton — il suffit d'écrire un code texte sur une étiquette NFC. Vous pouvez utiliser n'importe quels nombres (de 1 à 999), n'importe quelles répétitions et n'importe quels nombres pour les opérations arithmétiques.
+Vous pouvez créer votre propre jeton : écrivez un code texte sur une étiquette NFC. Tous les nombres de 1 à 999, toutes les répétitions et tous les nombres pour les opérations arithmétiques conviennent.
 
-Pour écrire des données texte sur une étiquette NFC, ouvrez le Google Play Store et installez l'application **RFID NFC Reader** ou **NFC Tools** sur votre téléphone.
+Pour écrire l'étiquette, installez sur votre téléphone l'application **RFID NFC Reader** ou **NFC Tools** depuis le Google Play Store.
 
-Les instructions pour écrire une étiquette NFC se trouvent ici — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+La vidéo montre comment écrire une étiquette NFC : [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

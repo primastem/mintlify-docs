@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Beweging
 
-| Commando | Kaartje | NFC Code |
+| Commando | Kaartje | NFC-code |
 | --- | --- | --- |
 | Vooruit | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Links | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Herhaling & bediening
 
-| Commando | Kaartje | NFC Code |
+| Commando | Kaartje | NFC-code |
 | --- | --- | --- |
 | Herhaal 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Herhaal een willekeurig aantal keer (van 1 tot 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,13 +26,13 @@ mode: "default"
 
 ## 🔢 Getallen
 
-| Waarde | NFC Code |
+| Waarde | NFC-code |
 | --- | --- |
 | Getallen 1–999 | `n001`–`n999` |
 
 ## 🧮 Wiskundige bewerkingen
 
-| Bewerking | NFC Code |
+| Bewerking | NFC-code |
 | --- | --- |
 | +1 t/m +999 | `a001`–`a999` |
 | −1 t/m −999 | `s001`–`s999` |
@@ -42,30 +42,30 @@ mode: "default"
 | Vierkantswortel van X | `sqrt` |
 | Faculteit | `fact` |
 
-De rekenkunde telt tot 5000 in beide richtingen, delen en worteltrekken worden afgerond op het dichtstbijzijnde hele getal. Is er geen antwoord (meer dan 5000, delen door 0, wortel uit een negatief getal, faculteit boven 6), dan knippert de cel rood en blijft het getal hetzelfde.
+De rekenkunde telt van −5000 tot 5000. Delen en worteltrekken worden afgerond op het dichtstbijzijnde hele getal. Is er geen antwoord (meer dan 5000, delen door 0, wortel uit een negatief getal, faculteit boven 6), dan knippert de cel rood en blijft het getal hetzelfde.
 
 ## ⚙️ Instellingen
 
-| Commando | NFC Code |
+| Commando | NFC-code |
 | --- | --- |
-| Kalibratie (zonder getal: de robot stelt motoren en gyroscoop af, ongeveer 2 minuten, de eerste halve minuut niet aanraken; met kaartje `+N` of `−N`: correctie van de draaiingen na de test met 32 draaiingen; met een gewoon getal werkt het niet, de cel wordt rood) | `ccal` |
-| Standaardstap: staplengte voor Vooruit en Achteruit, die ook Willekeurige beweging gebruikt (1–999 mm; zonder getal terug naar 150 mm) | `clen` |
+| Kalibratie. Zonder getal stelt de robot motoren en gyroscoop af. Dat duurt ongeveer 2 minuten. Raak de robot de eerste halve minuut niet aan. Met kaartje `+N` of `−N` corrigeert de robot de draaiingen na de test met 32 draaiingen. Met een gewoon getal werkt het kaartje niet en wordt de cel rood. | `ccal` |
+| Standaardstap. Stelt de staplengte in voor «Vooruit» en «Achteruit». Ook «Willekeurige beweging» gebruikt die (1–999 mm). Zonder getal zet het kaartje de stap terug op 150 mm. | `clen` |
 
 ## 🔧 Geavanceerd
 
-| Commando | NFC Code |
+| Commando | NFC-code |
 | --- | --- |
-| Audiovoorbeeld (zie [Audiobestanden](/nl/sounds_reference)) | `xNNN` |
-| Zin van de robot (`csou` + getal N: de robot zegt zin xN uit de [geluidentabel](/nl/sounds_reference#-robotzinnen-reacties-en-servicemeldingen-x001–x019)) | `csou` |
-| Volumeniveau (bediening en robot: 0–100, boven 100 = maximum) | `clvl` |
+| Geluid (zie [Audiobestandenreferentie](/nl/sounds_reference)) | `xNNN` |
+| Zin van de robot. Leg `csou` en een getal N neer, dan zegt de robot zin xN uit de [geluidentabel](/nl/sounds_reference#-robotzinnen-reacties-en-servicemeldingen-x001–x019) | `csou` |
+| Volume van de bediening en de robot (0–100, een getal boven 100 geeft het maximum) | `clvl` |
 
 ## Hoe gegevens naar een NFC-tag te schrijven
 
-U kunt uw eigen token maken — schrijf eenvoudig een tekstcode naar een NFC-tag. U kunt willekeurige getallen (van 1 tot 999), willekeurige herhalingen en willekeurige getallen voor rekenkundige bewerkingen gebruiken.
+U kunt uw eigen kaartje maken: schrijf een tekstcode naar een NFC-tag. Elk getal van 1 tot 999, elke herhaling en elk getal voor rekenkundige bewerkingen werkt.
 
-Om tekstgegevens naar een NFC-tag te schrijven, opent u de Google Play Store en installeert u de app **RFID NFC Reader** of **NFC Tools** op uw telefoon.
+Installeer hiervoor de app **RFID NFC Reader** of **NFC Tools** uit de Google Play Store op uw telefoon.
 
-Instructies voor het schrijven van een NFC-tag vindt u hier — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+De video laat zien hoe u een NFC-tag beschrijft: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

@@ -42,30 +42,30 @@ mode: "default"
 | Kvadratinė šaknis iš X | `sqrt` |
 | Faktorialas | `fact` |
 
-Aritmetika skaičiuoja iki 5000 į abi puses, dalyba ir kvadratinė šaknis apvalinamos iki artimiausio sveikojo skaičiaus. Jei atsakymo nėra (daugiau nei 5000, dalyba iš 0, šaknis iš neigiamo skaičiaus, didesnio nei 6 skaičiaus faktorialas), lizdas mirksi raudonai, o skaičius nesikeičia.
+Aritmetika skaičiuoja nuo −5000 iki 5000. Dalyba ir kvadratinė šaknis apvalinamos iki artimiausio sveikojo skaičiaus. Jei atsakymo nėra (daugiau nei 5000, dalyba iš 0, šaknis iš neigiamo skaičiaus, didesnio nei 6 skaičiaus faktorialas), lizdas mirksi raudonai, o skaičius nesikeičia.
 
 ## ⚙️ Nustatymai
 
 | Komanda | NFC kodas |
 | --- | --- |
-| Kalibravimas (be skaičiaus: robotas suderina variklius ir giroskopą, apie 2 minutes, pirmąją pusę minutės jo nelieskite; su žetonu `+N` arba `−N`: posūkio pataisa po patikros su 32 posūkiais; su paprastu skaičiumi neveikia, lizdas nusidažo raudonai) | `ccal` |
-| Numatytasis žingsnis: žingsnio ilgis komandoms Pirmyn ir Atgal, jį naudoja ir Atsitiktinis judesys (1–999 mm; be skaičiaus grąžina 150 mm) | `clen` |
+| Kalibravimas. Be skaičiaus robotas suderina variklius ir giroskopą, tai trunka apie 2 minutes. Pirmąją pusę minutės roboto nelieskite. Su žetonu `+N` arba `−N` robotas pataiso posūkius po patikros su 32 posūkiais. Su paprastu skaičiumi žetonas neveikia, lizdas šviečia raudonai. | `ccal` |
+| Numatytasis žingsnis. Nustato žingsnio ilgį komandoms „Pirmyn“ ir „Atgal“. Tą patį ilgį naudoja ir „Atsitiktinis judesys“ (1–999 mm). Be skaičiaus žetonas grąžina 150 mm. | `clen` |
 
 ## 🔧 Išplėstinės komandos
 
 | Komanda | NFC kodas |
 | --- | --- |
-| Garso įrašas (žr. [Garso failų sąrašas](/en-lt/sounds_reference)) | `xNNN` |
-| Roboto frazė: `csou` + skaičius N, robotas pasako frazę xN iš [garsų lentelės](/en-lt/sounds_reference#-roboto-frazės-reakcijos-ir-tarnybiniai-pranešimai-x001–x019) | `csou` |
-| Garsumas (valdymo pultas ir robotas: 0–100, daugiau nei 100 = didžiausias) | `clvl` |
+| Garsas (žr. [Garso failų sąrašas](/en-lt/sounds_reference)) | `xNNN` |
+| Roboto frazė. Padėkite `csou` ir skaičių N, ir robotas pasakys frazę xN iš [garsų lentelės](/en-lt/sounds_reference#-roboto-frazės-reakcijos-ir-tarnybiniai-pranešimai-x001–x019) | `csou` |
+| Valdymo pulto ir roboto garsumas (0–100, skaičius didesnis nei 100 duoda didžiausią garsumą) | `clvl` |
 
 ## Kaip įrašyti duomenis į NFC žymą
 
-Galite sukurti savo žetoną: tiesiog įrašykite tekstinį kodą į NFC žymą. Galite naudoti bet kokius skaičius (nuo 1 iki 999), bet kokius kartojimus ir bet kokius skaičius aritmetiniams veiksmams.
+Galite sukurti savo žetoną: įrašykite tekstinį kodą į NFC žymą. Tinka bet kokie skaičiai nuo 1 iki 999, bet kokie kartojimai ir bet kokie skaičiai aritmetiniams veiksmams.
 
-Norėdami įrašyti tekstinius duomenis į NFC žymą, atidarykite „Google Play“ parduotuvę ir įdiekite telefone programėlę **RFID NFC Reader** arba **NFC Tools**.
+Kodui įrašyti įdiekite telefone programėlę **RFID NFC Reader** arba **NFC Tools** iš „Google Play“ parduotuvės.
 
-NFC žymos įrašymo instrukcija: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+Kaip įrašyti NFC žymą, parodyta vaizdo įraše: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

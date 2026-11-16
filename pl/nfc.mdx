@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Ruch
 
-| Polecenie | Żeton | NFC Code |
+| Polecenie | Żeton | Kod NFC |
 | --- | --- | --- |
 | Naprzód | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Lewo | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Powtarzanie i sterowanie
 
-| Polecenie | Żeton | NFC Code |
+| Polecenie | Żeton | Kod NFC |
 | --- | --- | --- |
 | Powtórzenie 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Powtórz losową liczbę razy (od 1 do 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,46 +26,46 @@ mode: "default"
 
 ## 🔢 Liczby
 
-| Wartość | NFC Code |
+| Wartość | Kod NFC |
 | --- | --- |
 | Liczby 1–999 | `n001`–`n999` |
 
 ## 🧮 Działania matematyczne
 
-| Działanie | NFC Code |
+| Działanie | Kod NFC |
 | --- | --- |
-| +1 do +999 | `a001`–`a999` |
-| −1 do −999 | `s001`–`s999` |
+| Od +1 do +999 | `a001`–`a999` |
+| Od −1 do −999 | `s001`–`s999` |
 | ×N | `m002`–`m999` |
 | ÷N | `d002`–`d999` |
 | X^N | `e002`–`e999` |
 | Pierwiastek kwadratowy z X | `sqrt` |
 | Silnia | `fact` |
 
-Arytmetyka liczy do 5000 w obie strony, dzielenie i pierwiastek zaokrąglają wynik do najbliższej liczby całkowitej. Jeśli wyniku nie ma (ponad 5000, dzielenie przez 0, pierwiastek z liczby ujemnej, silnia ponad 6), pole mignie na czerwono, a liczba pozostanie bez zmian.
+Arytmetyka liczy w zakresie od −5000 do 5000. Dzielenie i pierwiastek zaokrąglają wynik do najbliższej liczby całkowitej. Jeśli wyniku nie ma (ponad 5000, dzielenie przez 0, pierwiastek z liczby ujemnej, silnia ponad 6), pole mignie na czerwono, a liczba pozostanie bez zmian.
 
 ## ⚙️ Ustawienia
 
-| Polecenie | NFC Code |
+| Polecenie | Kod NFC |
 | --- | --- |
-| Kalibracja (bez liczby: robot ustawia silniki i żyroskop, około 2 minut, przez pierwsze pół minuty nie dotykać go; z żetonem `+N` lub `−N`: poprawka obrotów po sprawdzeniu 32 obrotami; ze zwykłą liczbą nie działa, pole robi się czerwone) | `ccal` |
-| Domyślny krok: długość kroku dla Naprzód i Wstecz, używa jej też Losowy ruch (1–999 mm; bez liczby wraca do 150 mm) | `clen` |
+| Kalibracja. Bez liczby robot ustawia silniki i żyroskop, co trwa około 2 minut. Przez pierwsze pół minuty nie należy dotykać robota. Z żetonem `+N` lub `−N` robot poprawia obroty po sprawdzeniu 32 obrotami. Ze zwykłą liczbą żeton nie działa, pole świeci na czerwono. | `ccal` |
+| Domyślny krok. Ustawia długość kroku dla „Naprzód” i „Wstecz”. Tej samej długości używa „Losowy ruch” (1–999 mm). Bez liczby żeton przywraca 150 mm. | `clen` |
 
 ## 🔧 Zaawansowane
 
-| Polecenie | NFC Code |
+| Polecenie | Kod NFC |
 | --- | --- |
-| Próbka audio (zobacz [Spis plików audio](/pl/sounds_reference)) | `xNNN` |
-| Fraza robota (`csou` + liczba N: robot mówi frazę xN z [tabeli dźwięków](/pl/sounds_reference#-frazy-robota-reakcje-i-komunikaty-serwisowe-x001–x019)) | `csou` |
-| Poziom głośności (pilot i robot: 0–100, powyżej 100 = maksimum) | `clvl` |
+| Dźwięk (zobacz [Spis plików audio](/pl/sounds_reference)) | `xNNN` |
+| Fraza robota. Po włożeniu `csou` i liczby N robot mówi frazę xN z [tabeli dźwięków](/pl/sounds_reference#-frazy-robota-reakcje-i-komunikaty-serwisowe-x001–x019) | `csou` |
+| Głośność pilota i robota (0–100, liczba powyżej 100 daje maksimum) | `clvl` |
 
 ## Jak zapisać dane na tagu NFC
 
-Mogą Państwo zrobić własny żeton: wystarczy zapisać kod tekstowy na tagu NFC. Można użyć dowolnych liczb (od 1 do 999), dowolnych powtórzeń i dowolnych liczb w działaniach arytmetycznych.
+Mogą Państwo zrobić własny żeton: wystarczy zapisać kod tekstowy na tagu NFC. Można użyć dowolnych liczb od 1 do 999, dowolnych powtórzeń i dowolnych liczb w działaniach arytmetycznych.
 
-Aby zapisać dane tekstowe na tagu NFC, należy otworzyć Sklep Google Play i zainstalować na telefonie aplikację **RFID NFC Reader** lub **NFC Tools**.
+Do zapisu należy zainstalować na telefonie aplikację **RFID NFC Reader** lub **NFC Tools** ze Sklepu Google Play.
 
-Instrukcja zapisu tagu NFC jest tutaj — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+Film pokazuje, jak zapisać tag NFC: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

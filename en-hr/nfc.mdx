@@ -34,38 +34,38 @@ mode: "default"
 
 | Operacija | NFC kod |
 | --- | --- |
-| Plus: +1 do +999 | `a001`–`a999` |
-| Minus: −1 do −999 | `s001`–`s999` |
+| Plus: od +1 do +999 | `a001`–`a999` |
+| Minus: od −1 do −999 | `s001`–`s999` |
 | Puta: ×N | `m002`–`m999` |
 | Podijeljeno sa: ÷N | `d002`–`d999` |
 | Na potenciju: X^N | `e002`–`e999` |
 | Kvadratni korijen od X | `sqrt` |
 | Faktorijel | `fact` |
 
-Aritmetika računa do 5000 u oba smjera, a dijeljenje i korijen zaokružuju se na najbliži cijeli broj. Ako rezultata nema (iznad 5000, dijeljenje s 0, korijen negativnog broja, faktorijel iznad 6), polje treperi crveno, a broj ostaje isti.
+Aritmetika računa u rasponu od −5000 do 5000. Dijeljenje i korijen zaokružuju se na najbliži cijeli broj. Ako rezultata nema (iznad 5000, dijeljenje s 0, korijen negativnog broja, faktorijel iznad 6), polje treperi crveno, a broj ostaje isti.
 
 ## ⚙️ Postavke
 
 | Naredba | NFC kod |
 | --- | --- |
-| Kalibracija (bez broja: robot podešava motore i žiroskop, oko 2 minute, prvih pola minute ga nemojte dirati; sa žetonom `+N` ili `−N`: ispravak zakreta nakon provjere s 32 okreta; ne radi s običnim brojem, polje se zacrveni) | `ccal` |
-| Zadani korak: duljina koraka za Naprijed i Natrag, koju koristi i Nasumično kretanje (1–999 mm; bez broja vraća na 150 mm) | `clen` |
+| Kalibracija. Bez broja robot podešava motore i žiroskop, to traje oko 2 minute. Prvih pola minute nemojte dirati robota. Sa žetonom `+N` ili `−N` robot ispravlja zakrete nakon provjere s 32 okreta. S običnim brojem žeton ne radi, polje svijetli crveno. | `ccal` |
+| Zadani korak. Postavlja duljinu koraka za "Naprijed" i "Natrag". Istu duljinu koristi i "Nasumično kretanje" (1–999 mm). Bez broja žeton vraća korak na 150 mm. | `clen` |
 
 ## 🔧 Napredno
 
 | Naredba | NFC kod |
 | --- | --- |
-| Zvučni uzorak (vidi [Popis zvučnih datoteka](/en-hr/sounds_reference)) | `xNNN` |
-| Fraza robota (`csou` + broj N: robot izgovara frazu xN iz [tablice zvukova](/en-hr/sounds_reference#-fraze-robota-reakcije-i-servisne-poruke-x001–x019)) | `csou` |
-| Glasnoća (ploča i robot: 0–100, iznad 100 = maksimum) | `clvl` |
+| Zvuk (vidi [Popis zvučnih datoteka](/en-hr/sounds_reference)) | `xNNN` |
+| Fraza robota. Stavite `csou` i broj N, a robot izgovara frazu xN iz [tablice zvukova](/en-hr/sounds_reference#-fraze-robota-reakcije-i-servisne-poruke-x001–x019) | `csou` |
+| Glasnoća ploče i robota (0–100, broj iznad 100 daje maksimum) | `clvl` |
 
 ## Kako zapisati podatke na NFC naljepnicu
 
-Možete izraditi vlastiti žeton: dovoljno je zapisati tekstualni kod na NFC naljepnicu ili NFC čip. Možete koristiti bilo koje brojeve (od 1 do 999), bilo koja ponavljanja i bilo koje brojeve za aritmetičke operacije.
+Možete izraditi vlastiti žeton: zapišite tekstualni kod na NFC naljepnicu ili NFC čip. Možete koristiti bilo koje brojeve od 1 do 999, bilo koja ponavljanja i bilo koje brojeve za aritmetičke operacije.
 
-Za zapisivanje tekstualnih podataka na NFC naljepnicu otvorite trgovinu Google Play i na telefon instalirajte aplikaciju **RFID NFC Reader** ili **NFC Tools**.
+Za zapisivanje instalirajte na telefon aplikaciju **RFID NFC Reader** ili **NFC Tools** iz trgovine Google Play.
 
-Upute za zapisivanje NFC naljepnice nalaze se ovdje: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+Video pokazuje kako zapisati NFC naljepnicu: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

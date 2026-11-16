@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Movimiento
 
-| Comando | Ficha | NFC Code |
+| Comando | Ficha | Código NFC |
 | --- | --- | --- |
 | Adelante | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Izquierda | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Repetición y control
 
-| Comando | Ficha | NFC Code |
+| Comando | Ficha | Código NFC |
 | --- | --- | --- |
 | Repetir 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Repetir un número aleatorio de veces (de 1 a 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,46 +26,46 @@ mode: "default"
 
 ## 🔢 Números
 
-| Valor | NFC Code |
+| Valor | Código NFC |
 | --- | --- |
 | Números 1–999 | `n001`–`n999` |
 
 ## 🧮 Operaciones matemáticas
 
-| Operación | NFC Code |
+| Operación | Código NFC |
 | --- | --- |
-| +1 a +999 | `a001`–`a999` |
-| −1 a −999 | `s001`–`s999` |
+| De +1 a +999 | `a001`–`a999` |
+| De −1 a −999 | `s001`–`s999` |
 | ×N | `m002`–`m999` |
 | ÷N | `d002`–`d999` |
 | X^N | `e002`–`e999` |
 | Raíz cuadrada de X | `sqrt` |
 | Factorial | `fact` |
 
-La aritmética cuenta hasta 5000 en ambos sentidos, la división y la raíz se redondean al entero más cercano. Si no hay respuesta (más de 5000, división entre 0, raíz de un número negativo, factorial mayor que 6), la celda parpadea en rojo y el número no cambia.
+La aritmética cuenta de −5000 a 5000. La división y la raíz se redondean al entero más cercano. Si no hay respuesta (más de 5000, división entre 0, raíz de un número negativo, factorial mayor que 6), la celda parpadea en rojo y el número no cambia.
 
 ## ⚙️ Configuración
 
-| Comando | NFC Code |
+| Comando | Código NFC |
 | --- | --- |
-| Calibración (sin número: el robot ajusta los motores y el giroscopio, unos 2 minutos, no tocarlo durante el primer medio minuto; con una ficha `+N` o `−N`: corrección de los giros después de la prueba de 32 giros; no funciona con un número simple, la celda se pone roja) | `ccal` |
-| Paso predeterminado: longitud de paso para Adelante y Atrás, también la usa Movimiento aleatorio (1–999 mm; sin número vuelve a 150 mm) | `clen` |
+| Calibración. Sin número, el robot ajusta los motores y el giroscopio. Esto tarda unos 2 minutos. No toque el robot durante el primer medio minuto. Con una ficha `+N` o `−N`, el robot corrige los giros después de la prueba de 32 giros. Con un número simple, la ficha no funciona y la celda se pone roja. | `ccal` |
+| Paso predeterminado. Fija la longitud de paso para «Adelante» y «Atrás». «Movimiento aleatorio» también la usa (1–999 mm). Sin número, la ficha devuelve el paso a 150 mm. | `clen` |
 
 ## 🔧 Avanzado
 
-| Comando | NFC Code |
+| Comando | Código NFC |
 | --- | --- |
-| Muestra de audio (ver [Archivos de audio](/es/sounds_reference)) | `xNNN` |
-| Frase del robot (`csou` + número N: el robot dice la frase xN de la [tabla de sonidos](/es/sounds_reference#-frases-del-robot-reacciones-y-mensajes-de-servicio-x001–x019)) | `csou` |
-| Nivel de volumen (tablero y robot: 0–100, más de 100 = máximo) | `clvl` |
+| Sonido (ver [Referencia de archivos de audio](/es/sounds_reference)) | `xNNN` |
+| Frase del robot. Coloque `csou` con un número N, y el robot dice la frase xN de la [tabla de sonidos](/es/sounds_reference#-frases-del-robot-reacciones-y-mensajes-de-servicio-x001–x019) | `csou` |
+| Volumen del tablero y del robot (0–100, un número mayor que 100 da el máximo) | `clvl` |
 
 ## Cómo escribir datos en una etiqueta NFC
 
-Puede crear su propia ficha — simplemente escriba un código de texto en una etiqueta NFC. Puede usar cualquier número (del 1 al 999), cualquier repetición y cualquier número para operaciones aritméticas.
+Puede crear su propia ficha: escriba un código de texto en una etiqueta NFC. Sirve cualquier número del 1 al 999, cualquier repetición y cualquier número para operaciones aritméticas.
 
-Para escribir datos de texto en una etiqueta NFC, abra Google Play Store e instale la aplicación **RFID NFC Reader** o **NFC Tools** en su teléfono.
+Para grabar la etiqueta, instale en su teléfono la aplicación **RFID NFC Reader** o **NFC Tools** desde Google Play Store.
 
-Las instrucciones para escribir una etiqueta NFC están aquí — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+El vídeo muestra cómo escribir una etiqueta NFC: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

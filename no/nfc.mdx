@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Bevegelse
 
-| Kommando | Brikke | NFC Code |
+| Kommando | Brikke | NFC-kode |
 | --- | --- | --- |
 | Fremover | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Venstre | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Gjentakelse & kontroll
 
-| Kommando | Brikke | NFC Code |
+| Kommando | Brikke | NFC-kode |
 | --- | --- | --- |
 | Gjenta 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Gjenta et tilfeldig antall ganger (fra 1 til 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,46 +26,46 @@ mode: "default"
 
 ## 🔢 Tall
 
-| Verdi | NFC Code |
+| Verdi | NFC-kode |
 | --- | --- |
 | Tall 1–999 | `n001`–`n999` |
 
 ## 🧮 Matematiske operasjoner
 
-| Operasjon | NFC Code |
+| Operasjon | NFC-kode |
 | --- | --- |
-| +1 til +999 | `a001`–`a999` |
-| −1 til −999 | `s001`–`s999` |
+| Fra +1 til +999 | `a001`–`a999` |
+| Fra −1 til −999 | `s001`–`s999` |
 | ×N | `m002`–`m999` |
 | ÷N | `d002`–`d999` |
 | X^N | `e002`–`e999` |
 | Kvadratrot av X | `sqrt` |
 | Fakultet | `fact` |
 
-Aritmetikken regner opptil 5000 i begge retninger, divisjon og kvadratrot rundes av til nærmeste hele tall. Hvis det ikke finnes noe svar (over 5000, deling på 0, rot av et negativt tall, fakultet over 6), blinker cellen rødt og tallet forblir som før.
+Aritmetikken regner fra −5000 til 5000. Divisjon og kvadratrot rundes av til nærmeste hele tall. Hvis det ikke finnes noe svar (over 5000, deling på 0, rot av et negativt tall, fakultet over 6), blinker cellen rødt og tallet forblir som før.
 
 ## ⚙️ Innstillinger
 
-| Kommando | NFC Code |
+| Kommando | NFC-kode |
 | --- | --- |
-| Kalibrering (uten tall: roboten justerer motorer og gyroskop, ca. 2 minutter, ikke rør den det første halve minuttet; med brikken `+N` eller `−N`: korreksjon av svingene etter testen med 32 svinger; med et vanlig tall virker den ikke, cellen blir rød) | `ccal` |
-| Standardsteg: steglengde for Fremover og Bakover, brukes også av Tilfeldig bevegelse (1–999 mm; uten tall tilbake til 150 mm) | `clen` |
+| Kalibrering. Uten tall justerer roboten motorer og gyroskop, det tar ca. 2 minutter. Ikke rør roboten det første halve minuttet. Med brikken `+N` eller `−N` korrigerer roboten svingene etter testen med 32 svinger. Med et vanlig tall virker ikke brikken, cellen lyser rødt. | `ccal` |
+| Standardsteg. Angir steglengden for «Fremover» og «Bakover». «Tilfeldig bevegelse» bruker samme lengde (1–999 mm). Uten tall setter brikken steget tilbake til 150 mm. | `clen` |
 
 ## 🔧 Avansert
 
-| Kommando | NFC Code |
+| Kommando | NFC-kode |
 | --- | --- |
-| Lydeksempel (se [Lydfiler](/no/sounds_reference)) | `xNNN` |
-| Robotfrase (`csou` + tall N: roboten sier frasen xN fra [lydtabellen](/no/sounds_reference#-robot-fraser-reaksjoner-og-servicemeldinger-x001–x019)) | `csou` |
-| Volumnivå (kontrollpanel og robot: 0–100, over 100 = maks) | `clvl` |
+| Lyd (se [Referanse for lydfiler](/no/sounds_reference)) | `xNNN` |
+| Robotfrase. Legg inn `csou` og tallet N, så sier roboten frasen xN fra [lydtabellen](/no/sounds_reference#-robot-fraser-reaksjoner-og-servicemeldinger-x001–x019) | `csou` |
+| Volum for kontrollpanelet og roboten (0–100, et tall over 100 gir maks) | `clvl` |
 
 ## Hvordan skrive data til en NFC-tag
 
-Du kan lage din egen brikke — skriv ganske enkelt en tekstkode på en NFC-tag. Du kan bruke hvilke som helst tall (fra 1 til 999), hvilke som helst gjentakelser og hvilke som helst tall for aritmetiske operasjoner.
+Du kan lage din egen brikke: skriv en tekstkode på en NFC-tag. Du kan bruke alle tall fra 1 til 999, alle gjentakelser og alle tall for aritmetiske operasjoner.
 
-For å skrive tekstdata til en NFC-tag, åpne Google Play Store og installer appen **RFID NFC Reader** eller **NFC Tools** på telefonen din.
+Installer appen **RFID NFC Reader** eller **NFC Tools** fra Google Play Store på telefonen for å skrive koden.
 
-Instruksjoner for skriving av en NFC-tag finnes her — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+Videoen viser hvordan du skriver en NFC-tag: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

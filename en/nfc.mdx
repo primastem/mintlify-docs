@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Movement
 
-| Command | Token | NFC Code |
+| Command | Token | NFC code |
 | --- | --- | --- |
 | Forward | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Left | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Repeat & control
 
-| Command | Token | NFC Code |
+| Command | Token | NFC code |
 | --- | --- | --- |
 | Repeat 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Repeat a random number of times (1 to 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,13 +26,13 @@ mode: "default"
 
 ## 🔢 Numbers
 
-| Value | NFC Code |
+| Value | NFC code |
 | --- | --- |
 | Numbers 1–999 | `n001`–`n999` |
 
 ## 🧮 Math operations
 
-| Operation | NFC Code |
+| Operation | NFC code |
 | --- | --- |
 | +1 to +999 | `a001`–`a999` |
 | −1 to −999 | `s001`–`s999` |
@@ -42,30 +42,30 @@ mode: "default"
 | Square Root of X | `sqrt` |
 | Factorial | `fact` |
 
-Arithmetic counts up to 5000 in both directions, division and square root round to the nearest whole number. If there is no answer (above 5000, division by 0, root of a negative number, factorial above 6), the cell blinks red and the number stays the same.
+Arithmetic works in the range from −5000 to 5000. Division and square root round to the nearest whole number. If there is no answer (above 5000, division by 0, root of a negative number, factorial above 6), the cell blinks red and the number stays the same.
 
 ## ⚙️ Settings
 
-| Command | NFC Code |
+| Command | NFC code |
 | --- | --- |
-| Calibration (without a number: the robot tunes its motors and gyroscope, about 2 minutes, do not touch it for the first half minute; with a `+N` or `−N` token: turn correction after the 32-turn check; does not work with a plain number, the cell turns red) | `ccal` |
-| Default Step: step length for Forward and Backward, Random Movement uses it too (1–999 mm; without a number returns to 150 mm) | `clen` |
+| Calibration. Without a number, the robot tunes its motors and gyroscope. This takes about 2 minutes. Do not touch the robot for the first half minute. With a `+N` or `−N` token, the robot corrects its turns after the 32-turn check. With a plain number, the token does not work and the cell turns red. | `ccal` |
+| Default Step. Sets the step length for “Forward” and “Backward”. “Random Movement” uses it too (1–999 mm). Without a number, the token returns the step to 150 mm. | `clen` |
 
 ## 🔧 Advanced
 
-| Command | NFC Code |
+| Command | NFC code |
 | --- | --- |
-| Audio Sample (see [Audio files reference](/en/sounds_reference)) | `xNNN` |
-| Robot Phrase: `csou` + number N, the robot says phrase xN from the [sounds table](/en/sounds_reference#-robot-phrases-reactions-&-service-x001–x019) | `csou` |
-| Volume Level (control board and robot: 0–100, above 100 = maximum) | `clvl` |
+| Sound (see [Audio files reference](/en/sounds_reference)) | `xNNN` |
+| Robot Phrase. Place `csou` with a number N, and the robot says phrase xN from the [sounds table](/en/sounds_reference#-robot-phrases-reactions-&-service-x001–x019) | `csou` |
+| Volume of the control board and robot (0–100, a number above 100 gives the maximum) | `clvl` |
 
 ## How to write data to an NFC tag
 
-You can create your own token — simply write a text code to an NFC tag. You can use any numbers (from 1 to 999), any repetitions, and any numbers for arithmetic operations.
+You can make your own token: write a text code to an NFC tag. Any numbers from 1 to 999, any repeats and any numbers for arithmetic operations work.
 
-To write text data to an NFC tag, open the Google Play Store and install the **RFID NFC Reader** or **NFC Tools** app on your phone.
+To write a tag, install the **RFID NFC Reader** or **NFC Tools** app on your phone from the Google Play Store.
 
-Instructions for writing an NFC tag are here — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+This video shows how to write an NFC tag: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{

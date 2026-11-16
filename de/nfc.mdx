@@ -7,7 +7,7 @@ mode: "default"
 
 ## 🧭 Bewegung
 
-| Befehl | Token | NFC Code |
+| Befehl | Token | NFC-Code |
 | --- | --- | --- |
 | Vorwärts | <img src="../images/book-1/forward-tile.svg" width="56" /> | `cfor` |
 | Links | <img src="../images/book-1/left-tile.svg" width="56" /> | `clef` |
@@ -17,7 +17,7 @@ mode: "default"
 
 ## 🔁 Wiederholung & Steuerung
 
-| Befehl | Token | NFC Code |
+| Befehl | Token | NFC-Code |
 | --- | --- | --- |
 | Wiederholen 2–999 | <img src="../images/book-1/repeatN-tile.svg" width="56" /> | `r002`–`r999` |
 | Zufällig oft wiederholen (1 bis 6) | <img src="../images/book-1/repeat.random-tile.svg" width="56" /> | `rrnd` |
@@ -26,13 +26,13 @@ mode: "default"
 
 ## 🔢 Zahlen
 
-| Wert | NFC Code |
+| Wert | NFC-Code |
 | --- | --- |
 | Zahlen 1–999 | `n001`–`n999` |
 
 ## 🧮 Mathematische Operationen
 
-| Operation | NFC Code |
+| Operation | NFC-Code |
 | --- | --- |
 | +1 bis +999 | `a001`–`a999` |
 | −1 bis −999 | `s001`–`s999` |
@@ -42,30 +42,30 @@ mode: "default"
 | Quadratwurzel aus X | `sqrt` |
 | Fakultät | `fact` |
 
-Die Arithmetik rechnet bis 5000 in beide Richtungen, Division und Wurzel werden auf die nächste ganze Zahl gerundet. Gibt es kein Ergebnis (über 5000, Division durch 0, Wurzel aus einer negativen Zahl, Fakultät über 6), blinkt die Zelle rot und die Zahl bleibt unverändert.
+Die Arithmetik rechnet im Bereich von −5000 bis 5000. Division und Wurzel werden auf die nächste ganze Zahl gerundet. Gibt es kein Ergebnis (über 5000, Division durch 0, Wurzel aus einer negativen Zahl, Fakultät über 6), blinkt die Zelle rot und die Zahl bleibt unverändert.
 
 ## ⚙️ Einstellungen
 
-| Befehl | NFC Code |
+| Befehl | NFC-Code |
 | --- | --- |
-| Kalibrierung (ohne Zahl: Der Roboter stellt Motoren und Gyroskop ein, etwa 2 Minuten, in der ersten halben Minute nicht berühren; mit Token `+N` oder `−N`: Korrektur der Drehungen nach der Prüfung mit 32 Drehungen; mit einer einfachen Zahl funktioniert es nicht, die Zelle wird rot) | `ccal` |
-| Standardschritt: Schrittlänge für Vorwärts und Rückwärts, die auch die Zufällige Bewegung verwendet (1–999 mm; ohne Zahl zurück auf 150 mm) | `clen` |
+| Kalibrierung. Ohne Zahl stellt der Roboter Motoren und Gyroskop ein. Das dauert etwa 2 Minuten. Berühren Sie den Roboter in der ersten halben Minute nicht. Mit dem Token `+N` oder `−N` korrigiert der Roboter die Drehungen nach der Prüfung mit 32 Drehungen. Mit einer einfachen Zahl funktioniert der Token nicht, die Zelle wird rot. | `ccal` |
+| Standardschritt. Legt die Schrittlänge für „Vorwärts“ und „Rückwärts“ fest. Auch „Zufällige Bewegung“ verwendet sie (1–999 mm). Ohne Zahl setzt der Token den Schritt auf 150 mm zurück. | `clen` |
 
 ## 🔧 Erweitert
 
-| Befehl | NFC Code |
+| Befehl | NFC-Code |
 | --- | --- |
-| Audio-Beispiel (siehe [Audiodateien](/de/sounds_reference)) | `xNNN` |
-| Roboter-Satz (`csou` + Zahl N: der Roboter spricht den Satz xN aus den [Audiodateien](/de/sounds_reference#-roboter-sätze-reaktionen-und-servicemeldungen-x001–x019)) | `csou` |
-| Lautstärkepegel (Steuerboard und Roboter: 0–100, über 100 = Maximum) | `clvl` |
+| Klang (siehe [Audio-Datei-Referenz](/de/sounds_reference)) | `xNNN` |
+| Roboter-Satz. Legen Sie `csou` und eine Zahl N, dann spricht der Roboter den Satz xN aus den [Audiodateien](/de/sounds_reference#-roboter-sätze-reaktionen-und-servicemeldungen-x001–x019) | `csou` |
+| Lautstärke von Steuerboard und Roboter (0–100, eine Zahl über 100 ergibt das Maximum) | `clvl` |
 
 ## So schreiben Sie Daten auf einen NFC-Tag
 
-Sie können Ihren eigenen Token erstellen — schreiben Sie einfach einen Textcode auf einen NFC-Tag. Sie können beliebige Zahlen (von 1 bis 999), beliebige Wiederholungen und beliebige Zahlen für arithmetische Operationen verwenden.
+Sie können Ihren eigenen Token erstellen: Schreiben Sie einen Textcode auf einen NFC-Tag. Es passen beliebige Zahlen von 1 bis 999, beliebige Wiederholungen und beliebige Zahlen für arithmetische Operationen.
 
-Um Textdaten auf einen NFC-Tag zu schreiben, öffnen Sie den Google Play Store und installieren Sie die App **RFID NFC Reader** oder **NFC Tools** auf Ihrem Telefon.
+Installieren Sie dazu die App **RFID NFC Reader** oder **NFC Tools** aus dem Google Play Store auf Ihrem Telefon.
 
-Anleitungen zum Schreiben eines NFC-Tags finden Sie hier — [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
+Wie Sie einen NFC-Tag beschreiben, zeigt dieses Video: [youtu.be/UbKaQxZs8JA](https://youtu.be/UbKaQxZs8JA)
 
 <div
   style={{
