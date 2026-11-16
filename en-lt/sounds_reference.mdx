@@ -1,23 +1,23 @@
 ---
 title: "Garso failų sąrašas"
-description: "PrimaSTEM garso failų sąrašas"
+description: "PrimaSTEM programinės įrangos garsai ir jų kodai."
 icon: "volume-2"
 mode: "default"
 ---
 
-Kalbos: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR, LT, HE, AR, RU
+Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR, LT, HE, AR, RU
 
 ## Kaip NFC kodai susiję su garso failais
 
-Kiekvienas garso failas įrenginio programinėje įrangoje turi kodą, kuris sutampa su failo pavadinimu (pvz., `cfor` → `cfor.mp3`).
+Kiekvienas garso failas įrenginio programinėje įrangoje turi kodą, kuris sutampa su failo pavadinimu. Pavyzdžiui, kodą `cfor` atitinka failas `cfor.mp3`.
 Kai valdymo pultas arba robotas nuskaito NFC žetoną, jis suranda šį kodą ir paleidžia atitinkamą failą.
 
-Tačiau kai kurie NFC žetonų kodai yra **sudėtiniai**: jie neturi savo garso failo.
-Įrenginys juos išskaido į esamų failų seką, kad sutaupytų vietos atmintyje.
+Kai kurie žetonų kodai yra **sudėtiniai**: jie neturi savo garso failo.
+Įrenginys juos sudeda iš kelių esamų failų, kad sutaupytų vietos atmintyje.
 
 | NFC žetono kodas | Atkuriama kaip |
 |---|---|
-| `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
+| `r007` (Kartojimas 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
 | `s005` (−5) | `xmin.mp3` + `n005.mp3` |
 | `m002` (×2) | `xmul.mp3` + `n002.mp3` |
@@ -319,7 +319,7 @@ Visas fizinių NFC žetonų kodų sąrašas ir rinkinio turinys pateikti skyriuj
 | x749 | Yumuşak ge |
 | x850 | Şe |
 
-### Kirilica А–Я  (rusų + ukrainiečių)
+### Kirilica А–Я  (rusų ir ukrainiečių)
 
 | Code | UK | RU |
 |---|---|---|
@@ -494,7 +494,7 @@ Kroatų kalba naudoja x700–x725 be Q, W, X, Y. Ć naudoja tą patį failą x73
 
 ### Lietuvių kalbos specialiosios raidės  (Ą Č Ę Ė Į Š Ų Ū Ž)
 
-Lietuvių kalba naudoja x700–x725 be Q, W, X; Y skaitoma „i ilgoji“ (x724). Ą ir Ę naudoja tuos pačius failus kaip lenkų kalba, o Č, Š ir Ž naudoja kroatų kalbos failus.
+Lietuvių kalba naudoja x700–x725 be Q, W, X. Y skaitoma „i ilgoji“ (x724). Ą ir Ę naudoja tuos pačius failus kaip lenkų kalba, o Č, Š ir Ž naudoja kroatų kalbos failus.
 
 | Code | LT |
 |---|---|
@@ -512,7 +512,7 @@ Lietuvių kalba naudoja x700–x725 be Q, W, X; Y skaitoma „i ilgoji“ (x724)
 
 ## 🎵 Garso efektai  (addition/)
 
-> Šie garsai nesugeneruoti TTS. Į visų kalbų aplankus jie kopijuojami be pakeitimų.
+> Šie garsai nesukurti kalbos sinteze. Visų kalbų aplankuose jie vienodi.
 
 ### Muzikos natos  (C3–B5, 3 oktavos)
 

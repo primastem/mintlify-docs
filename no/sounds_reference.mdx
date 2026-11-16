@@ -1,6 +1,6 @@
 ---
 title: "Referanse for lydfiler"
-description: "PrimaSTEM Referanse for lydfiler"
+description: "Lydene i PrimaSTEM-fastvaren og kodene deres."
 icon: "volume-2"
 mode: "default"
 ---
@@ -9,15 +9,15 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 
 ## Hvordan NFC-koder og lydfiler henger sammen
 
-Hver lydfil i fastvaren har en kode som samsvarer med filnavnet (f.eks. `cfor` → `cfor.mp3`).
+Hver lydfil i fastvaren har en kode, og koden er lik filnavnet. For eksempel hører koden `cfor` til filen `cfor.mp3`.
 Når kontrollpanelet eller roboten leser en NFC-brikke, slår den opp denne koden og spiller av den tilsvarende filen.
 
-Noen NFC-brikke-koder er imidlertid **sammensatte** — de har ikke sin egen lydfil.
-I stedet deler enheten dem inn i en sekvens av eksisterende filer for å spare fastvare-plass.
+Noen brikkekoder er **sammensatte**: de har ingen egen lydfil.
+Enheten setter dem sammen av flere eksisterende filer for å spare plass i fastvaren.
 
 | NFC-brikkekode | Spilles som |
 |---|---|
-| `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
+| `r007` (Gjenta 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
 | `s005` (−5) | `xmin.mp3` + `n005.mp3` |
 | `m002` (×2) | `xmul.mp3` + `n002.mp3` |
@@ -319,7 +319,7 @@ Den fullstendige listen over fysiske NFC-brikkekoder og settets innhold finnes i
 | x749 | Yumuşak ge |
 | x850 | Şe |
 
-### Kyrillisk alfabet А–Я  (russisk + ukrainsk)
+### Kyrillisk alfabet А–Я  (russisk og ukrainsk)
 
 | Code | UK | RU |
 |---|---|---|
@@ -494,7 +494,7 @@ Kroatisk bruker x700–x725 uten Q, W, X, Y. Ć deler x739 med polsk.
 
 ### Litauiske spesialbokstaver  (Ą Č Ę Ė Į Š Ų Ū Ž)
 
-Litauisk bruker x700–x725 uten Q, W, X; Y uttales «i ilgoji» (x724). Ą og Ę deler filer med polsk, Č, Š og Ž med kroatisk.
+Litauisk bruker x700–x725 uten Q, W, X. Y uttales «i ilgoji» (x724). Ą og Ę deler filer med polsk, Č, Š og Ž med kroatisk.
 
 | Code | LT |
 |---|---|
@@ -512,7 +512,7 @@ Litauisk bruker x700–x725 uten Q, W, X; Y uttales «i ilgoji» (x724). Ą og �
 
 ## 🎵 Lydeffekter  (addition/)
 
-> Ikke TTS-generert. Kopiert uendret til alle språkmapper.
+> Disse lydene er ikke laget med talesyntese. De er like i alle språkmappene.
 
 ### Musikknotter  (C3–B5, 3 oktaver)
 

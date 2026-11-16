@@ -1,6 +1,6 @@
 ---
 title: "Referencia de archivos de audio"
-description: "Referencia de archivos de audio PrimaSTEM"
+description: "Sonidos del firmware PrimaSTEM y sus códigos."
 icon: "volume-2"
 mode: "default"
 ---
@@ -9,15 +9,15 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 
 ## Cómo se relacionan los códigos NFC y los archivos de audio
 
-Cada archivo de audio en el firmware tiene un código que coincide con su nombre de archivo (p. ej. `cfor` → `cfor.mp3`).
+Cada archivo de audio del firmware tiene un código que coincide con su nombre de archivo. Por ejemplo, al código `cfor` le corresponde el archivo `cfor.mp3`.
 Cuando el tablero o el robot lee una ficha NFC, busca este código y reproduce el archivo correspondiente.
 
-Sin embargo, algunos códigos de fichas NFC son **compuestos** — no tienen su propio archivo de audio.
-En cambio, el dispositivo los divide en una secuencia de archivos existentes para ahorrar espacio de firmware.
+Algunos códigos de fichas son **compuestos**: no tienen archivo de audio propio.
+El dispositivo los forma con varios archivos existentes para ahorrar espacio de firmware.
 
 | Código de la ficha NFC | Se reproduce como |
 |---|---|
-| `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
+| `r007` (Repetir 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
 | `s005` (−5) | `xmin.mp3` + `n005.mp3` |
 | `m002` (×2) | `xmul.mp3` + `n002.mp3` |
@@ -319,7 +319,7 @@ La lista completa de códigos de fichas NFC y el contenido del kit está en [Fic
 | x749 | Yumuşak ge |
 | x850 | Şe |
 
-### Alfabeto cirílico А–Я  (ruso + ucraniano)
+### Alfabeto cirílico А–Я  (ruso y ucraniano)
 
 | Code | UK | RU |
 |---|---|---|
@@ -494,7 +494,7 @@ El croata usa x700–x725 sin Q, W, X, Y. Ć comparte x739 con el polaco.
 
 ### Letras especiales lituanas  (Ą Č Ę Ė Į Š Ų Ū Ž)
 
-El lituano usa x700–x725 sin Q, W, X; la Y se lee «i ilgoji» (x724). Ą y Ę comparten archivos con el polaco, y Č, Š y Ž con el croata.
+El lituano usa x700–x725 sin Q, W, X. La Y se lee «i ilgoji» (x724). Ą y Ę comparten archivos con el polaco, y Č, Š y Ž con el croata.
 
 | Code | LT |
 |---|---|
@@ -512,7 +512,7 @@ El lituano usa x700–x725 sin Q, W, X; la Y se lee «i ilgoji» (x724). Ą y Ę
 
 ## 🎵 Efectos de sonido  (addition/)
 
-> No generado por TTS. Copiado tal cual en todas las carpetas de idioma.
+> Estos sonidos no se crean con síntesis de voz. Son iguales en todas las carpetas de idioma.
 
 ### Notas musicales  (C3–B5, 3 octavas)
 

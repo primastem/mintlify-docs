@@ -1,6 +1,6 @@
 ---
 title: "Audiobestandenreferentie"
-description: "PrimaSTEM Audiobestandenreferentie"
+description: "Geluiden van de PrimaSTEM-firmware en hun codes."
 icon: "volume-2"
 mode: "default"
 ---
@@ -9,15 +9,15 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 
 ## Hoe NFC-codes en audiobestanden samenhangen
 
-Elk audiobestand in de firmware heeft een code die overeenkomt met zijn bestandsnaam (bijv. `cfor` → `cfor.mp3`).
-Wanneer de bediening of robot een NFC-kaartje leest, zoekt het dit code op en speelt het overeenkomstige bestand af.
+Elk audiobestand in de firmware heeft een code die overeenkomt met de bestandsnaam. Bij de code `cfor` hoort bijvoorbeeld het bestand `cfor.mp3`.
+Wanneer de bediening of de robot een NFC-kaartje leest, zoekt die deze code op en speelt het juiste bestand af.
 
-Sommige NFC-kaartjescodes zijn echter **samengesteld** — ze hebben geen eigen audiobestand.
-In plaats daarvan splitst het apparaat ze op in een reeks bestaande bestanden om firmwareruimte te besparen.
+Sommige codes van kaartjes zijn **samengesteld**: ze hebben geen eigen audiobestand.
+Het apparaat bouwt ze op uit meerdere bestaande bestanden om firmwareruimte te besparen.
 
 | Code van het NFC-kaartje | Afgespeeld als |
 |---|---|
-| `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
+| `r007` (Herhaal 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
 | `s005` (−5) | `xmin.mp3` + `n005.mp3` |
 | `m002` (×2) | `xmul.mp3` + `n002.mp3` |
@@ -319,7 +319,7 @@ De volledige lijst met codes van NFC-kaartjes en de inhoud van de set staat in [
 | x749 | Yumuşak ge |
 | x850 | Şe |
 
-### Cyrillisch alfabet А–Я  (Russisch + Oekraïens)
+### Cyrillisch alfabet А–Я  (Russisch en Oekraïens)
 
 | Code | UK | RU |
 |---|---|---|
@@ -494,7 +494,7 @@ Kroatisch gebruikt x700–x725 zonder Q, W, X, Y. Ć deelt x739 met het Pools.
 
 ### Speciale Litouwse letters  (Ą Č Ę Ė Į Š Ų Ū Ž)
 
-Litouws gebruikt x700–x725 zonder Q, W, X; de Y heet „i ilgoji” (x724). Ą en Ę delen hun bestanden met het Pools, Č, Š en Ž met het Kroatisch.
+Litouws gebruikt x700–x725 zonder Q, W, X. De Y heet „i ilgoji” (x724). Ą en Ę delen hun bestanden met het Pools, Č, Š en Ž met het Kroatisch.
 
 | Code | LT |
 |---|---|
@@ -512,7 +512,7 @@ Litouws gebruikt x700–x725 zonder Q, W, X; de Y heet „i ilgoji” (x724). Ą
 
 ## 🎵 Geluidseffecten  (addition/)
 
-> Niet TTS-gegenereerd. Ongewijzigd gekopieerd naar alle taalmappen.
+> Deze geluiden zijn niet gemaakt met spraaksynthese. Ze zijn gelijk in alle taalmappen.
 
 ### Muzieknoten  (C3–B5, 3 octaven)
 

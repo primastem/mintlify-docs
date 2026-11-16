@@ -1,6 +1,6 @@
 ---
 title: "Popis zvučnih datoteka"
-description: "PrimaSTEM popis zvučnih datoteka"
+description: "Zvukovi PrimaSTEM firmvera i njihovi kodovi."
 icon: "volume-2"
 mode: "default"
 ---
@@ -9,15 +9,15 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 
 ## Kako se NFC kodovi odnose na zvučne datoteke
 
-Svaka zvučna datoteka u firmveru ima kod koji odgovara njezinu nazivu (npr. `cfor` → `cfor.mp3`).
+Svaka zvučna datoteka u firmveru ima kod koji je jednak njezinu nazivu. Na primjer, kodu `cfor` odgovara datoteka `cfor.mp3`.
 Kad upravljačka ploča ili robot očita NFC žeton, pronalazi taj kod i reproducira odgovarajuću datoteku.
 
-Neki su kodovi NFC žetona ipak **složeni** — nemaju vlastitu zvučnu datoteku.
-Umjesto toga uređaj ih rastavlja na niz postojećih datoteka kako bi uštedio prostor u firmveru.
+Neki su kodovi žetona **složeni**: nemaju vlastitu zvučnu datoteku.
+Uređaj ih slaže od nekoliko postojećih datoteka kako bi uštedio prostor u firmveru.
 
 | Kod NFC žetona | Reproducira se kao |
 |---|---|
-| `r007` (Repeat 7) | `xrep.mp3` + `n007.mp3` |
+| `r007` (Ponovi 7) | `xrep.mp3` + `n007.mp3` |
 | `a001` (+1) | `xplu.mp3` + `n001.mp3` |
 | `s005` (−5) | `xmin.mp3` + `n005.mp3` |
 | `m002` (×2) | `xmul.mp3` + `n002.mp3` |
@@ -319,7 +319,7 @@ Cjelovit popis fizičkih kodova NFC žetona i sadržaj kompleta nalaze se u pogl
 | x749 | Yumuşak ge |
 | x850 | Şe |
 
-### Ćirilica А–Я  (ruski + ukrajinski)
+### Ćirilica А–Я  (ruski i ukrajinski)
 
 | Code | UK | RU |
 |---|---|---|
@@ -494,7 +494,7 @@ Hrvatski koristi x700–x725 bez Q, W, X, Y. Ć dijeli x739 s poljskim.
 
 ### Litavska posebna slova  (Ą Č Ę Ė Į Š Ų Ū Ž)
 
-Litavski koristi x700–x725 bez Q, W, X; Y se čita „i ilgoji” (x724). Ą i Ę dijele datoteke s poljskim, a Č, Š i Ž s hrvatskim.
+Litavski koristi x700–x725 bez Q, W, X. Y se čita „i ilgoji” (x724). Ą i Ę dijele datoteke s poljskim, a Č, Š i Ž s hrvatskim.
 
 | Code | LT |
 |---|---|
@@ -512,7 +512,7 @@ Litavski koristi x700–x725 bez Q, W, X; Y se čita „i ilgoji” (x724). Ą i
 
 ## 🎵 Zvučni efekti  (addition/)
 
-> Nisu generirani TTS-om. Kopiraju se bez izmjena u sve jezične mape.
+> Ovi zvukovi nisu nastali sintezom govora. Isti su u svim jezičnim mapama.
 
 ### Glazbene note  (C3–B5, 3 oktave)
 

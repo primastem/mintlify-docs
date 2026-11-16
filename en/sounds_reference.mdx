@@ -1,6 +1,6 @@
 ---
 title: "Audio files reference"
-description: "PrimaSTEM Audio files reference"
+description: "PrimaSTEM firmware sounds and their codes."
 icon: "volume-2"
 mode: "default"
 ---
@@ -9,11 +9,11 @@ Languages: EN, DE, FR, ES, IT, JA, NB, NL, PL, SV, UK, PT-BR, TR, DA, CA, FI, HR
 
 ## How NFC codes and audio files relate
 
-Each audio file in the firmware has a code that matches its filename (e.g. `cfor` → `cfor.mp3`).
-When the board or robot reads an NFC token, it looks up this code and plays the corresponding file.
+Each audio file in the firmware has a code that matches its filename. For example, the code `cfor` matches the file `cfor.mp3`.
+When the control board or robot reads an NFC token, it looks up this code and plays the matching file.
 
-However, some NFC token codes are **composite** — they don't have their own audio file.
-Instead, the device splits them into a sequence of existing files to save firmware space.
+Some token codes are **composite**: they have no audio file of their own.
+The device builds them from several existing files to save firmware space.
 
 | NFC token code | Played as |
 |---|---|
@@ -319,7 +319,7 @@ The full list of physical NFC token codes and kit contents is in [Command tokens
 | x749 | Yumuşak ge |
 | x850 | Şe |
 
-### Cyrillic alphabet А–Я  (Russian + Ukrainian)
+### Cyrillic alphabet А–Я  (Russian and Ukrainian)
 
 | Code | UK | RU |
 |---|---|---|
@@ -494,7 +494,7 @@ Croatian uses x700–x725 without Q, W, X, Y. Ć shares x739 with Polish.
 
 ### Lithuanian special letters  (Ą Č Ę Ė Į Š Ų Ū Ž)
 
-Lithuanian uses x700–x725 without Q, W, X; Y is read “i ilgoji” (x724). Ą and Ę share their files with Polish, Č, Š and Ž with Croatian.
+Lithuanian uses x700–x725 without Q, W, X. Y is read “i ilgoji” (x724). Ą and Ę share their files with Polish, Č, Š and Ž with Croatian.
 
 | Code | LT |
 |---|---|
@@ -512,7 +512,7 @@ Lithuanian uses x700–x725 without Q, W, X; Y is read “i ilgoji” (x724). Ą
 
 ## 🎵 Sound effects  (addition/)
 
-> Not TTS-generated. Copied as-is to all language folders.
+> These sounds are not made with speech synthesis. They are the same in all language folders.
 
 ### Musical notes  (C3–B5, 3 octaves)
 
