@@ -1,11 +1,11 @@
 ---
-title: "Device & Setup"
+title: "Device & setup"
 description: "**PrimaSTEM** — an educational kit for teaching children from age 4 the basics of logic, programming, and mathematics."
 icon: "book-open"
 mode: "default"
 ---
 
-## Technical Specifications and Package Contents
+## Technical specifications and package contents
 
 ![primastem](../images/usermanual/hello.png)
 
@@ -15,7 +15,7 @@ mode: "default"
 
 > Package contents and appearance may vary slightly. Please verify at purchase.
 
-### Play Robot
+### Play robot
 
 Dimensions: D=120 mm, H=44 mm.
 
@@ -27,7 +27,7 @@ A marker with a diameter of up to 10 mm can be installed in the center of the ro
 
 Appearance may vary slightly depending on the configuration, but core functionality remains the same.
 
-### Control Board
+### Control board
 
 Dimensions: L=317 mm, W=217 mm, H=62 mm.
 
@@ -41,7 +41,7 @@ If a token is inserted incorrectly, the control board signals with a red LED, bu
 
 The control board is equipped with a USB-C port for charging and a speaker for sound output.
 
-### Instruction Tokens
+### Instruction tokens
 
 Dimensions: LxW=33 mm.
 
@@ -51,7 +51,7 @@ The set includes tokens for creating programs. Each token is a command with a cl
 
 Tokens are divided into **commands**, **values**, and **arithmetic**.
 
-#### Command Tokens
+#### Command tokens
 
 Basic blocks for composing the control program:
 
@@ -66,11 +66,11 @@ Basic blocks for composing the control program:
 
 > Numerical value and arithmetic tokens are also used to expand programming capabilities: for example, repeating a command or changing the movement angle/distance.
 
-#### Value Tokens
+#### Value tokens
 
 Angle and distance tokens: 30°, 36°, 45°, as well as multiples (60°, 72°, etc.). Angles in degrees, distances in millimeters. By default — 90° and 150 mm (15 cm).
 
-#### Arithmetic Operation Tokens
+#### Arithmetic operation tokens
 
 Modify movement command parameters:
 
@@ -84,7 +84,7 @@ Modify movement command parameters:
 
 Arithmetic works within the range from −5000 to 5000. If the answer is above 5000 or below −5000, or you divide by 0, take the root of a negative number or the factorial of a number above 6, the cell blinks red and the number stays the same. Division and square root round to the nearest whole number: 150 ÷ 4 = 37.5 → 38, 20 ÷ 3 = 6.67 → 7, √50 = 7.07 → 7. An exact half rounds away from zero: 37.5 → 38, −2.5 → −3.
 
-## Connecting the Control Board and Robot
+## Connecting the control board and robot
 
 It is recommended to turn on the robot first, then the control board.
 
@@ -109,7 +109,7 @@ As soon as the control board connects to the robot, you can drive the robot with
 
 Tilt driving switches off as soon as you put a token on the control board or press **▶ Start**. It switches back on when the control board connects to the robot again, for example after you turn the robot off and on.
 
-## How It Works?
+## How it works?
 
 To program movement, place command tokens in the control board slots (for example, "Forward", "Left", "Function", etc.). You can set command values and repeat counts, as well as angle, distance, and arithmetic operation values.
 
@@ -142,7 +142,7 @@ By default:
 - "Function" calls the subroutine from the lower part of the control board (5 slots).
 - You can call a subroutine multiple times via a loop by adding a repeat token to "Function" (example shown above).
 
-### Important Functions:
+### Important functions:
 
 - **Interrupt** program execution by pressing **▶ Start** again during movement.
 - The control board remembers the last **set value** (distance/angle) for the movement command until power-off: for example, if "Forward" = "200", all subsequent "Forward" commands are executed with this value.
@@ -157,7 +157,7 @@ By default:
 - **Robot settings reset**: hold the robot button for 10 seconds (details in "Robot Calibration" below).
 - **Control board and robot pairing** may be necessary after updating device software. Hold the **▶ Start** button on the control board for more than 10 seconds: the beep at the 5th second means keep holding.
 
-### Robot Calibration:
+### Robot calibration:
 
 - Before calibrating, update the robot and the control board to the latest stable firmware at [update.primastem.com](https://update.primastem.com) ([how to update](/en/update)). Calibration made on old firmware can be inaccurate.
 - First run the "Calibration" token without a number: the robot measures motor polarity, removes backlash and sets up straight-line movement. The token runs for up to 2 minutes. For the first half minute the robot must stand still, do not touch it. The robot button does not work during this time.
@@ -174,13 +174,13 @@ By default:
   2. To calibrate the movement distance, measure the actual path with the "Forward" command, place the "Calibration" token and the token with the required value, then **▶ Start**. You can write the value to any digital NFC token using a mobile phone with NFC as text in the form nXXX (for example, n095 for 95 mm). After this, the robot's movement distance will be accurate.\*
 </Accordion>
 
-### Programming NFC Tokens
+### Programming NFC tokens
 
 You can modify or **create your own tokens** - commands, digital values, or arithmetic operations using a phone with NFC and a tag read-write program, for example "NFC Tools". You can write a value to a blank digital NFC tag using a mobile phone with NFC as simple text in the form of 4 characters.
 
 ## Important!
 
-Full safety warnings and regulatory information are on the [User Manual](/en/safety) page.
+Full safety warnings and regulatory information are on the [User manual](/en/safety) page.
 
 > The kit **is not intended for children under 4 years** and contains small parts — **choking hazard**! Use **only under adult supervision**!
 
@@ -196,4 +196,4 @@ Store, use and charge the set in a dry room at a temperature of \+5…\+35°C. A
 
 Avoid shocks and vibrations. Transport and store the device in its original packaging at a temperature of \+5…\+35°C, protecting from mechanical damage and moisture.
 
-p.s.: PrimaSTEM is a practical tool for learning programming, developing creative thinking and logic. Detailed information about functionality is contained in the **Teacher's Guide**.
+p.s.: PrimaSTEM is a practical tool for learning programming, developing creative thinking and logic. Detailed information about functionality is contained in the **Teacher's guide**.

@@ -16,7 +16,7 @@
         "default": true,
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Getting started",
             "icon": "rocket",
             "pages": [
               "en/quickstart",
@@ -26,7 +26,7 @@
             ]
           },
           {
-            "group": "How to Teach",
+            "group": "How to teach",
             "icon": "graduation-cap",
             "pages": [
               "en/teachersguide",
@@ -46,7 +46,7 @@
             ]
           },
           {
-            "group": "Safety & Support",
+            "group": "Safety & support",
             "icon": "shield-check",
             "pages": [
               "en/safety",
