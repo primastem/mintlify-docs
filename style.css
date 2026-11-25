@@ -7,3 +7,9 @@ footer .nav-logo,
 #footer .nav-logo {
   height: 15px !important;
 }
+
+/* No focus frame anywhere (Andrei, 25.11.2026). The theme draws a green
+   outline on :focus-visible, e.g. around the top tabs after a key press. */
+:focus-visible {
+  outline: none !important;
+}
