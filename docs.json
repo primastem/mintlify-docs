@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "palm",
   "name": "docs.PrimaSTEM.com",
   "description": "PrimaSTEM is LOGO turtle programming made physical and screen-free. Children aged 4–10+ build a program from NFC tokens on a wooden control board, and a ladybug robot runs it and can draw with a marker. How each concept maps to LOGO: https://docs.primastem.com/en/logo",
   "colors": {
@@ -14,9 +14,9 @@
       {
         "language": "en",
         "default": true,
-        "groups": [
+        "tabs": [
           {
-            "group": "Getting started",
+            "tab": "Getting started",
             "icon": "rocket",
             "pages": [
               "en/quickstart",
@@ -26,7 +26,7 @@
             ]
           },
           {
-            "group": "How to teach",
+            "tab": "How to teach",
             "icon": "graduation-cap",
             "pages": [
               "en/teachersguide",
@@ -38,7 +38,7 @@
             ]
           },
           {
-            "group": "Reference",
+            "tab": "Reference",
             "icon": "book-marked",
             "pages": [
               "en/nfc",
@@ -46,7 +46,7 @@
             ]
           },
           {
-            "group": "Safety & support",
+            "tab": "Safety & support",
             "icon": "shield-check",
             "pages": [
               "en/safety",
@@ -58,9 +58,9 @@
       },
       {
         "language": "fr",
-        "groups": [
+        "tabs": [
           {
-            "group": "Prise en main",
+            "tab": "Prise en main",
             "icon": "rocket",
             "pages": [
               "fr/quickstart",
@@ -70,7 +70,7 @@
             ]
           },
           {
-            "group": "Comment enseigner",
+            "tab": "Comment enseigner",
             "icon": "graduation-cap",
             "pages": [
               "fr/teachersguide",
@@ -82,7 +82,7 @@
             ]
           },
           {
-            "group": "Référence",
+            "tab": "Référence",
             "icon": "book-marked",
             "pages": [
               "fr/nfc",
@@ -90,7 +90,7 @@
             ]
           },
           {
-            "group": "Sécurité et assistance",
+            "tab": "Sécurité et assistance",
             "icon": "shield-check",
             "pages": [
               "fr/safety",
@@ -102,9 +102,9 @@
       },
       {
         "language": "de",
-        "groups": [
+        "tabs": [
           {
-            "group": "Erste Schritte",
+            "tab": "Erste Schritte",
             "icon": "rocket",
             "pages": [
               "de/quickstart",
@@ -114,7 +114,7 @@
             ]
           },
           {
-            "group": "Lehren und Lernen",
+            "tab": "Lehren und Lernen",
             "icon": "graduation-cap",
             "pages": [
               "de/teachersguide",
@@ -126,7 +126,7 @@
             ]
           },
           {
-            "group": "Referenz",
+            "tab": "Referenz",
             "icon": "book-marked",
             "pages": [
               "de/nfc",
@@ -134,7 +134,7 @@
             ]
           },
           {
-            "group": "Sicherheit und Support",
+            "tab": "Sicherheit und Support",
             "icon": "shield-check",
             "pages": [
               "de/safety",
@@ -146,9 +146,9 @@
       },
       {
         "language": "es",
-        "groups": [
+        "tabs": [
           {
-            "group": "Primeros pasos",
+            "tab": "Primeros pasos",
             "icon": "rocket",
             "pages": [
               "es/quickstart",
@@ -158,7 +158,7 @@
             ]
           },
           {
-            "group": "Cómo enseñar",
+            "tab": "Cómo enseñar",
             "icon": "graduation-cap",
             "pages": [
               "es/teachersguide",
@@ -170,7 +170,7 @@
             ]
           },
           {
-            "group": "Referencia",
+            "tab": "Referencia",
             "icon": "book-marked",
             "pages": [
               "es/nfc",
@@ -178,7 +178,7 @@
             ]
           },
           {
-            "group": "Seguridad y soporte",
+            "tab": "Seguridad y soporte",
             "icon": "shield-check",
             "pages": [
               "es/safety",
@@ -190,9 +190,9 @@
       },
       {
         "language": "nl",
-        "groups": [
+        "tabs": [
           {
-            "group": "Aan de slag",
+            "tab": "Aan de slag",
             "icon": "rocket",
             "pages": [
               "nl/quickstart",
@@ -202,7 +202,7 @@
             ]
           },
           {
-            "group": "Lesgeven",
+            "tab": "Lesgeven",
             "icon": "graduation-cap",
             "pages": [
               "nl/teachersguide",
@@ -214,7 +214,7 @@
             ]
           },
           {
-            "group": "Naslag",
+            "tab": "Naslag",
             "icon": "book-marked",
             "pages": [
               "nl/nfc",
@@ -222,7 +222,7 @@
             ]
           },
           {
-            "group": "Veiligheid en ondersteuning",
+            "tab": "Veiligheid en ondersteuning",
             "icon": "shield-check",
             "pages": [
               "nl/safety",
@@ -234,9 +234,9 @@
       },
       {
         "language": "it",
-        "groups": [
+        "tabs": [
           {
-            "group": "Per iniziare",
+            "tab": "Per iniziare",
             "icon": "rocket",
             "pages": [
               "it/quickstart",
@@ -246,7 +246,7 @@
             ]
           },
           {
-            "group": "Come insegnare",
+            "tab": "Come insegnare",
             "icon": "graduation-cap",
             "pages": [
               "it/teachersguide",
@@ -258,7 +258,7 @@
             ]
           },
           {
-            "group": "Riferimento",
+            "tab": "Riferimento",
             "icon": "book-marked",
             "pages": [
               "it/nfc",
@@ -266,7 +266,7 @@
             ]
           },
           {
-            "group": "Sicurezza e assistenza",
+            "tab": "Sicurezza e assistenza",
             "icon": "shield-check",
             "pages": [
               "it/safety",
@@ -278,9 +278,9 @@
       },
       {
         "language": "no",
-        "groups": [
+        "tabs": [
           {
-            "group": "Kom i gang",
+            "tab": "Kom i gang",
             "icon": "rocket",
             "pages": [
               "no/quickstart",
@@ -290,7 +290,7 @@
             ]
           },
           {
-            "group": "Slik underviser du",
+            "tab": "Slik underviser du",
             "icon": "graduation-cap",
             "pages": [
               "no/teachersguide",
@@ -302,7 +302,7 @@
             ]
           },
           {
-            "group": "Referanse",
+            "tab": "Referanse",
             "icon": "book-marked",
             "pages": [
               "no/nfc",
@@ -310,7 +310,7 @@
             ]
           },
           {
-            "group": "Sikkerhet og støtte",
+            "tab": "Sikkerhet og støtte",
             "icon": "shield-check",
             "pages": [
               "no/safety",
@@ -322,9 +322,9 @@
       },
       {
         "language": "sv",
-        "groups": [
+        "tabs": [
           {
-            "group": "Kom igång",
+            "tab": "Kom igång",
             "icon": "rocket",
             "pages": [
               "sv/quickstart",
@@ -334,7 +334,7 @@
             ]
           },
           {
-            "group": "Så undervisar du",
+            "tab": "Så undervisar du",
             "icon": "graduation-cap",
             "pages": [
               "sv/teachersguide",
@@ -346,7 +346,7 @@
             ]
           },
           {
-            "group": "Referens",
+            "tab": "Referens",
             "icon": "book-marked",
             "pages": [
               "sv/nfc",
@@ -354,7 +354,7 @@
             ]
           },
           {
-            "group": "Säkerhet och support",
+            "tab": "Säkerhet och support",
             "icon": "shield-check",
             "pages": [
               "sv/safety",
@@ -366,9 +366,9 @@
       },
       {
         "language": "pl",
-        "groups": [
+        "tabs": [
           {
-            "group": "Pierwsze kroki",
+            "tab": "Pierwsze kroki",
             "icon": "rocket",
             "pages": [
               "pl/quickstart",
@@ -378,7 +378,7 @@
             ]
           },
           {
-            "group": "Jak uczyć",
+            "tab": "Jak uczyć",
             "icon": "graduation-cap",
             "pages": [
               "pl/teachersguide",
@@ -390,7 +390,7 @@
             ]
           },
           {
-            "group": "Informator",
+            "tab": "Informator",
             "icon": "book-marked",
             "pages": [
               "pl/nfc",
@@ -398,7 +398,7 @@
             ]
           },
           {
-            "group": "Bezpieczeństwo i wsparcie",
+            "tab": "Bezpieczeństwo i wsparcie",
             "icon": "shield-check",
             "pages": [
               "pl/safety",
@@ -410,9 +410,9 @@
       },
       {
         "language": "en-HR",
-        "groups": [
+        "tabs": [
           {
-            "group": "Prvi koraci",
+            "tab": "Prvi koraci",
             "icon": "rocket",
             "pages": [
               "en-hr/quickstart",
@@ -422,7 +422,7 @@
             ]
           },
           {
-            "group": "Kako poučavati",
+            "tab": "Kako poučavati",
             "icon": "graduation-cap",
             "pages": [
               "en-hr/teachersguide",
@@ -434,7 +434,7 @@
             ]
           },
           {
-            "group": "Priručnik",
+            "tab": "Priručnik",
             "icon": "book-marked",
             "pages": [
               "en-hr/nfc",
@@ -442,7 +442,7 @@
             ]
           },
           {
-            "group": "Sigurnost i podrška",
+            "tab": "Sigurnost i podrška",
             "icon": "shield-check",
             "pages": [
               "en-hr/safety",
@@ -454,9 +454,9 @@
       },
       {
         "language": "en-LT",
-        "groups": [
+        "tabs": [
           {
-            "group": "Pirmieji žingsniai",
+            "tab": "Pirmieji žingsniai",
             "icon": "rocket",
             "pages": [
               "en-lt/quickstart",
@@ -466,7 +466,7 @@
             ]
           },
           {
-            "group": "Kaip mokyti",
+            "tab": "Kaip mokyti",
             "icon": "graduation-cap",
             "pages": [
               "en-lt/teachersguide",
@@ -478,7 +478,7 @@
             ]
           },
           {
-            "group": "Žinynas",
+            "tab": "Žinynas",
             "icon": "book-marked",
             "pages": [
               "en-lt/nfc",
@@ -486,7 +486,7 @@
             ]
           },
           {
-            "group": "Sauga ir pagalba",
+            "tab": "Sauga ir pagalba",
             "icon": "shield-check",
             "pages": [
               "en-lt/safety",
@@ -498,9 +498,9 @@
       },
       {
         "language": "jp",
-        "groups": [
+        "tabs": [
           {
-            "group": "スタートガイド",
+            "tab": "スタートガイド",
             "icon": "rocket",
             "pages": [
               "jp/quickstart",
@@ -510,7 +510,7 @@
             ]
           },
           {
-            "group": "教え方",
+            "tab": "教え方",
             "icon": "graduation-cap",
             "pages": [
               "jp/teachersguide",
@@ -522,7 +522,7 @@
             ]
           },
           {
-            "group": "リファレンス",
+            "tab": "リファレンス",
             "icon": "book-marked",
             "pages": [
               "jp/nfc",
@@ -530,7 +530,7 @@
             ]
           },
           {
-            "group": "安全とサポート",
+            "tab": "安全とサポート",
             "icon": "shield-check",
             "pages": [
               "jp/safety",
@@ -542,9 +542,9 @@
       },
       {
         "language": "ru",
-        "groups": [
+        "tabs": [
           {
-            "group": "Начало работы",
+            "tab": "Начало работы",
             "icon": "rocket",
             "pages": [
               "ru/quickstart",
@@ -554,7 +554,7 @@
             ]
           },
           {
-            "group": "Как учить",
+            "tab": "Как учить",
             "icon": "graduation-cap",
             "pages": [
               "ru/teachersguide",
@@ -566,7 +566,7 @@
             ]
           },
           {
-            "group": "Справочник",
+            "tab": "Справочник",
             "icon": "book-marked",
             "pages": [
               "ru/nfc",
@@ -574,7 +574,7 @@
             ]
           },
           {
-            "group": "Безопасность и поддержка",
+            "tab": "Безопасность и поддержка",
             "icon": "shield-check",
             "pages": [
               "ru/safety",
@@ -594,24 +594,24 @@
   "navbar": {
     "links": [
       {
-        "label": "Web simulator PrimaSTEM",
-        "href": "https://simulator.primastem.com"
+        "label": "Web simulator",
+        "href": "https://simulator.primastem.com/"
       },
       {
-        "label": "Web control for robot",
-        "href": "https://control.primastem.com"
+        "label": "Web control",
+        "href": "https://control.primastem.com/"
       },
       {
-        "label": "Scratch for robot",
-        "href": "https://scratch.primastem.com"
+        "label": "Scratch",
+        "href": "https://scratch.primastem.com/"
       },
       {
-        "label": "Update firmware",
+        "label": "Update",
         "href": "https://update.primastem.com/"
       },
       {
         "label": "PrimaSTEM.com",
-        "href": "https://primastem.com"
+        "href": "https://primastem.com/"
       }
     ]
   },
